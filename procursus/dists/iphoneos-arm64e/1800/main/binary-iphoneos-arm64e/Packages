@@ -1,0 +1,3622 @@
+Package: apt-utils
+Architecture: iphoneos-arm64e
+Version: 2.6.0-1
+Priority: standard
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: libiosexec1 (>= 1.3.1), apt (=2.6.0-1), libdb18.1
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0)
+Filename: pool/main/iphoneos-arm64e/1800/apt/apt-utils_2.6.0-1_iphoneos-arm64e.deb
+Size: 317262
+MD5sum: ca92c03ce8681a15a35a4817a5e2dd02
+SHA1: cfa3730253e8900d7de5ef284e28ec850a8aae89
+SHA256: 006db1c11b43e1d8d9275eb8051e58d74d616f83c723d767f2e9ac7b972e771d
+SHA512: fb466816ee32660d6b81bfd5f159167802efe98df8bbdfa6dec6bb0cd0f2724147808c5ff92096681b64bc1dfb018a2a2ec35b64479701af9b5c3f815d1e43a3
+Description: package management related utility programs
+ This package contains some less used commandline utilities related
+ to package management with APT.
+ .
+  * apt-extracttemplates is used by debconf to prompt for configuration
+    questions before installation.
+  * apt-ftparchive is used to create Packages and other index files
+    needed to publish an archive of Debian packages
+  * apt-sortpkgs is a Packages/Sources file normalizer.
+
+Package: apt
+Architecture: iphoneos-arm64e
+Version: 2.6.0-1
+Priority: required
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4224
+Provides: apt1.8 (= 1:0), apt-lib (= 1:0), libapt (=1:0), apt-key (= 1:0)
+Pre-Depends: dpkg (>= 1.14.25-8), system-cmds (>= 854.40.2-2)
+Depends: libiosexec1 (>= 1.3.1), libapt-pkg6.0 (= 2.6.0-1), libgnutls30, gpgv, dpkg (>= 1.19.0), coreutils, procursus-keyring
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8, libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0)
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key
+Filename: pool/main/iphoneos-arm64e/1800/apt/apt_2.6.0-1_iphoneos-arm64e.deb
+Size: 1394414
+MD5sum: 730c6e08f767d042798e8fbb1340cdf3
+SHA1: 9b0ec9af3374e32e89c7f9a983efc915d8681d54
+SHA256: 45c1e8beffcbadb5eb1506a05c54657979e2a979f6ed8925f4a9cf38b99b6eb9
+SHA512: 9b3d7857545a50655dd96691485a16b790492a1f833eb60f200ef1e2d42dd2520c47739dad42a55e90c95d409cccdb9db7e3db2ae2c533c92a597eef28b2baf2
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: libapt-pkg-dev
+Architecture: iphoneos-arm64e
+Version: 2.6.0-1
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 608
+Depends: libapt-pkg6.0 (=2.6.0-1), libgcrypt20-dev, liblz4-dev, liblzma-dev, libxxhash-dev, libzstd-dev, libiosexec-dev
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0), apt-dev (<< 1:0)
+Replaces: apt-dev (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg-dev_2.6.0-1_iphoneos-arm64e.deb
+Size: 120604
+MD5sum: 1508ba64391d077bf05f882bad0e862f
+SHA1: 3aae674568d905d2f4b61b9ab7aedadc102002c0
+SHA256: 4d4dff298c11efbc81dc28b2bb23014a578d8fd5b63ecfa10461faaf72fe46fc
+SHA512: 86cbe0c86ef38793d1b69f217f2f4a6e020096312c0a9127f80510e2bb9ad467745d7bcbf50f5b202fb9f4719c3ab32bc47b12ef9ec795674b309102fa4ec969
+Description: development files for APT's libapt-pkg and libapt-inst
+ This package contains the header files and libraries for
+ developing with APT's libapt-pkg Debian package manipulation
+ library and the libapt-inst deb/tar/ar library.
+
+Package: libapt-pkg6.0
+Architecture: iphoneos-arm64e
+Version: 2.6.0-1
+Priority: required
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2896
+Provides: libapt-pkg (=2.6.0-1)
+Depends: libiosexec1 (>= 1.3.1), libgcrypt20, liblz4-1, liblzma5 (>= 5.2.5), libxxhash0, libzstd1
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8 (<<1:0), libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0), apt (<< 2.1.10-2)
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key, apt (<< 2.1.10-2)
+Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg6.0_2.6.0-1_iphoneos-arm64e.deb
+Size: 1044622
+MD5sum: b13c6aae1a2c0fdeaf51799d851df6b2
+SHA1: 875e9275cdcb1998bc2808c27457f1af26ac9710
+SHA256: 6b2d08362f7e93cdc4184ebae800d08af48d2fc1ef0dcb890219e9edc179260a
+SHA512: f78deb9d20e37fbf82801c7c087a7eae4154f240715315a50ca657ca0864b386d65599b2f51a89581be98ff676e48b9d67cefd6f07bfa9e24281ac4e7a1827a7
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: base
+Architecture: iphoneos-arm64e
+Version: 1-6
+Priority: required
+Essential: yes
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 12
+Filename: pool/main/iphoneos-arm64e/1800/base/base_1-6_iphoneos-arm64e.deb
+Size: 3432
+MD5sum: 3daff75c6e2a932def519f1bfb6d5c97
+SHA1: 998c4cca1622e806b0ea6514e14d29c841f860a3
+SHA256: 2f89e846228dfde9ae30eec55066b3d071f610ab0f3e7e4021ee266c5432b802
+SHA512: 212b2031f48fbe24f4622a9ff43583e6daba27f326b03a70276b305f46faa058c3badf1ddf97526bc4162c95b73a3ecc05ccd8e1907912f62589f999626bb939
+Description: underlying system directory structure
+
+Package: bash
+Architecture: iphoneos-arm64e
+Version: 5.2.15
+Priority: optional
+Section: Terminal_Support
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 3832
+Pre-Depends: dash (>= 0.5.11.3-1), libreadline8 (>= 8.2), profile.d (>= 0-5), debianutils (>= 4.11.2)
+Depends: libiosexec1 (>= 1.3.1), grep, libncursesw6, libreadline8 (>= 8.2), sed, debianutils (>= 4.11.2)
+Filename: pool/main/iphoneos-arm64e/1800/bash/bash_5.2.15_iphoneos-arm64e.deb
+Size: 659052
+MD5sum: 221076dbd6d5d1369be9cf9a8d89fa1a
+SHA1: 027dc455e918be582399bf269497031d4adaaf5c
+SHA256: 6ecc3fd94c7406a1d649780ab64fa2fafba88e7e0cf2972537aef09a86c35bae
+SHA512: 5a067b8be666adb4bc6ab5c3719bc76ea539b2fd416f953013a3be4f341bf93372bafcf4ebf894e7dfd5ca42d1d70c536beb3d268760d07c6c401c4628d84360
+Homepage: http://www.gnu.org/software/bash/
+Description: the best shell ever written by Brian Fox
+
+Package: brotli
+Architecture: iphoneos-arm64e
+Version: 1.0.9
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 860
+Depends: libiosexec1 (>= 1.3.1), libbrotli1 (= 1.0.9)
+Filename: pool/main/iphoneos-arm64e/1800/brotli/brotli_1.0.9_iphoneos-arm64e.deb
+Size: 400030
+MD5sum: 2686bacecbad1dbe402d578dc5d63211
+SHA1: 06fd0673cd05c1fe3cb25bd66d52238e5a384cb6
+SHA256: c18fcb84f46521d035b0ba4f4d1afb0d948ccf92e5af0ba15ae13f774e24e0a6
+SHA512: e561abb54fc71f4cb7f8d5b73b9b831a0825b0774797166e0e8ebe8728bd8a3c1869691dedbb2d9d79f7ea16f737e52fd80fb825d9fd0faeb25f7eb8530600d6
+Homepage: https://www.brotli.org/
+Description: Command line utility for the Brotli compression format
+
+Package: libbrotli-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.9
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1380
+Depends: libbrotli1 (= 1.0.9)
+Filename: pool/main/iphoneos-arm64e/1800/brotli/libbrotli-dev_1.0.9_iphoneos-arm64e.deb
+Size: 777598
+MD5sum: 23728cd39f1706d268f2e539f3abb26d
+SHA1: bc55d1dfcb6a3796cc595479f3f0be7b50c26832
+SHA256: b6b058efb1504d1f0bad4efd484679efcdb766b7cb78072d60f4098c206daa76
+SHA512: f1972b638842e9a25b73213356dc8664daf0821a4124ccaac04e832c5ff7bbc55a28a920ff7172f4a1a84b0ae768a64523ce6afdd9cb250a54cf90a466396a89
+Homepage: https://www.brotli.org/
+Description: Development files for the Brotli compression format
+
+Package: libbrotli1
+Architecture: iphoneos-arm64e
+Version: 1.0.9
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 920
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/brotli/libbrotli1_1.0.9_iphoneos-arm64e.deb
+Size: 392228
+MD5sum: a71d72ea8de95d41c6478c268cfad454
+SHA1: 2c60967215b4ad3b4d4dd3cf8f64c61dcad9b413
+SHA256: be08640efc06d2df23471de1c1d9a9a2ead7d33f86f71e040afdf8fd81a88462
+SHA512: 8aaf6f86f91a0b7563c072a7d0b8347dac29c193532d8f0b055addea7199c2419781490fd5263951d8e4fcff7be3e142cbe64fd30554e8ccbb5ea56122006842
+Homepage: https://www.brotli.org/
+Description: Shared libraries for the Brotli compression format
+
+Package: bzip2
+Architecture: iphoneos-arm64e
+Version: 1.0.8
+Priority: important
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 468
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/bzip2/bzip2_1.0.8_iphoneos-arm64e.deb
+Size: 61142
+MD5sum: 0e71210279e689cb66a1a1c7f14f7e59
+SHA1: c313b6ebd98c31fa873f0ba8d94f0c872ef41b15
+SHA256: 9b5cc77618267dd888352f5bbda9bb799bc8f59ccc7443b4e9977d422462f355
+SHA512: ea3e16b47af0f14c69d8f74e1af637eb88eb992ccac0fe82495aa85b1af5854be089557d7d671f40a4095e25334e6f5b1e95c37887881c23c7588ff05abf2ebe
+Homepage: http://www.bzip.org/
+Description: compression that's slightly better than gzip
+
+Package: ca-certificates
+Architecture: all
+Version: 20230902
+Multi-Arch: foreign
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 224
+Filename: pool/main/iphoneos-arm64e/1800/cacerts/ca-certificates_20230902_all.deb
+Size: 123802
+MD5sum: d7e06d89c61b62e2045835725da2a4d5
+SHA1: 6940eac5da9e6d361c5330106ccd49a11be5e435
+SHA256: 249767fc19ca543f0d88f5895995a43e0b66124e4c3c25393161a4bb98d859d8
+SHA512: 2fafbc97d0187fc2a1fbcca098e12d469b9f40e977d059f96ab648b0dffc67312994ef0f4430c4b8e3381eee7a00201159dfbb4490f078cd9a63a4fa46861bfd
+Description: Common CA certificates
+ Contains the certificate authorities shipped with Mozilla's browser to allow SSL-based applications to check for the authenticity of SSL connections.
+ .
+ Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
+
+Package: chariz-keyring
+Architecture: all
+Version: 2021.07.18
+Priority: optional
+Section: Keyrings
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4
+Conflicts: procursus-keyring (<< 2020.05.09-1)
+Replaces: procursus-keyring (<< 2020.05.09-1)
+Filename: pool/main/iphoneos-arm64e/1800/chariz-keyring/chariz-keyring_2021.07.18_all.deb
+Size: 3270
+MD5sum: 1edbad28069272d609df9d2db02338d1
+SHA1: 8ade423ab85c86a9272ed0c1fdc29c7a1d82c017
+SHA256: 5cc93d8880dbff4a600a764c230bd964d544becc48e77c558756d7a5b146207c
+SHA512: c7c9de30c307c97859b6905f6f111ce7143da3ee3413954f4762cf532b4fa7d42a3f1322e57b3614e9a8dfd811b062554b2627c40008bf456066f18e3451a49d
+Description: GnuPG keys for the Chariz repository
+
+Package: coreutils
+Architecture: iphoneos-arm64e
+Version: 9.3-1
+Priority: standard
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 24660
+Provides: md5sum, sha1sum, coreutils-bin (=9.3-1), dirname, kill, mktemp, su
+Depends: libiosexec1 (>= 1.3.1), sh, profile.d, libssl3, libintl8 (>= 0.20.0), libgmp10, libcrypt2
+Conflicts: coreutils-bin (<<1:0), shell-cmds (<< 207.40.1), text-cmds (<< 1:0), file-cmds (<< 272.250.1-1), system-cmds (<< 854.40.2-3)
+Replaces: netatalk (<= 2.0.3-6), coreutils-bin, shell-cmds (<< 207.40.1), text-cmds (<< 1:0), file-cmds (<< 272.250.1-1)
+Filename: pool/main/iphoneos-arm64e/1800/coreutils/coreutils_9.3-1_iphoneos-arm64e.deb
+Size: 4017278
+MD5sum: 5279a9402a56f8d8290b0fefea76cdbc
+SHA1: 94404ffa2424bf144ff298d4eb54a9249e136827
+SHA256: 7cddb5a75b6084099f7dfface514857887ee2d21307be7bcf1689d2fbfa21a7b
+SHA512: 1286fb506fa3ca3aeed5166cb3f8173c576fcd17d4d18ebb61945ad180b6348379e644a53b3f5b9907a7987b3b59d3aaebba260fa41c84b3d3521c3d8b42229e
+Homepage: http://www.gnu.org/software/coreutils/
+Description: GNU core utilities
+ This package contains the basic file, shell and text manipulation
+ utilities which are expected to exist on every operating system.
+ .
+ Specifically, this package includes: 
+ arch base64 basename cat chcon chgrp chmod chown chroot cksum comm cp
+ csplit cut date dd df dir dircolors dirname du echo env expand expr
+ factor false flock fmt fold groups head hostid id install join link ln
+ logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl nohup nproc numfmt
+ od paste pathchk pinky pr printenv printf ptx pwd readlink realpath rm 
+ rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac 
+ tail tee test timeout touch tr true truncate tsort tty uname unexpand 
+ uniq unlink users vdir wc who whoami yes
+
+Package: darwintools
+Architecture: iphoneos-arm64e
+Version: 1.6
+Priority: required
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 164
+Depends: libiosexec1 (>= 1.3.1), grep, coreutils (>= 8.32-12)
+Recommends: uikittools (>= 2.0.0)
+Filename: pool/main/iphoneos-arm64e/1800/darwintools/darwintools_1.6_iphoneos-arm64e.deb
+Size: 19456
+MD5sum: 53a0bee0fff9c9c71e283dd4a3f1ce54
+SHA1: 1ac2d6727b462e1f0bbfb8a7a0ade35591c5565b
+SHA256: e90f9a74e21ca6eeadab9c305ac9b9fc06554046a2b88da9b6c54f8ed0070128
+SHA512: 53c5b70b28e22b7ebb7cec76dbf95e56d1c964e1b04201142d4b6a9fc58bfa577f95a516e6cff8b5cbceec625e52a76d7c96028d5d7ca727979644af0047f569
+Description: Provides sw_vers, /usr/libexec/firmware, and /etc/resolv.conf
+
+Package: dash
+Architecture: iphoneos-arm64e
+Version: 0.5.12
+Priority: required
+Essential: yes
+Section: Terminal_Support
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 188
+Provides: sh
+Pre-Depends: debianutils (>= 4.11.2)
+Depends: libiosexec1 (>= 1.3.1), debianutils (>= 4.11.2), libedit0
+Filename: pool/main/iphoneos-arm64e/1800/dash/dash_0.5.12_iphoneos-arm64e.deb
+Size: 83996
+MD5sum: 30d24a1e23a38f91577a37214d475748
+SHA1: 43ae08feeda82b2900cd15f034cc609af99603e3
+SHA256: a1c5ea711a00a6388561cf665b8efe3318d6391bd386406d1b70650e8d22a048
+SHA512: 274893716ef2c8178733f4aa5254bcda5b03c13e92b2a078a488e4d4d611923dea0f41c723a0b1ffadd24a1f61bdde93673e7b9fd42fc870aa2cc2f6cfbabf27
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Description: POSIX-compliant shell
+ The Debian Almquist Shell (dash) is a POSIX-compliant shell derived
+ from ash.
+ .
+ Since it executes scripts faster than bash, and has fewer library
+ dependencies (making it more robust against software or hardware
+ failures), it is used as the default system shell on Debian systems.
+
+Package: debianutils
+Architecture: iphoneos-arm64e
+Version: 5.7-1
+Priority: required
+Essential: yes
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 300
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/debianutils/debianutils_5.7-1_iphoneos-arm64e.deb
+Size: 64096
+MD5sum: 24305dbbe1ae1519c50e0b672ecae51f
+SHA1: 730ec87b50f3671c6a5163d7a589605f93a11b52
+SHA256: f1d55f795c0909114ef1b51b281feeffaf4d6f5479095aa1f379ca860874cb1f
+SHA512: d5a4a5d20079a36df6dd3af21c3c9ee1a688bd68d5e5734812fa7ae632c8f84cea1830e2577ccbc8ab39504b1fce0d991a34ed7e217c0dd80d3b7f6dd49a4b5e
+Description: Miscellaneous utilities specific to Debian
+ This package provides a number of small utilities which are used
+ primarily by the installation scripts of Debian packages, although
+ you may use them directly.
+ .
+ The specific utilities included are:
+ add-shell remove-shell run-parts
+
+Package: diffutils
+Architecture: iphoneos-arm64e
+Version: 3.8
+Multi-Arch: foreign
+Priority: important
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1716
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/diffutils/diffutils_3.8_iphoneos-arm64e.deb
+Size: 376942
+MD5sum: 6f566a012e84a4ef1e4bccb8a69de147
+SHA1: 32040360cbe7287da56e49afa5716273303d3f5e
+SHA256: 1ce76171040b247b968ef0af3501d71b1eff8596dcfec6231c85c10ea8fd6f1e
+SHA512: 68d3af8d15932c53e8017afacdd0408734037ebc46f4392cd558a3d9d8a92f018657aa53189ceaeacd0b2c85246673c1d34157f1455e9c1c8800b3ed28baa1c0
+Homepage: http://www.gnu.org/software/diffutils/
+Description: compare two files for differences
+
+Package: dimentio
+Architecture: iphoneos-arm64e
+Version: 1:0~20230202.7ffffff
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 64
+Depends: libiosexec1 (>= 1.3.1), libdimentio0 (= 1:0~20230202.7ffffff)
+Conflicts: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Filename: pool/main/iphoneos-arm64e/1800/dimentio/dimentio_1:0~20230202.7ffffff_iphoneos-arm64e.deb
+Size: 6918
+MD5sum: c39ea8ee3e2e18b64ce1e9b7cd6980c8
+SHA1: a325f4493ed1c932b1e9a176f8ba50716fd5418c
+SHA256: 35c469b5b065ebad40d27f055970c3d35d8e312c5a46487f0674ca48912932ab
+SHA512: fc23d98f522998e4eac49acc86f3724ce6d5a56aeaaa83344cf3dea1b735cc21da03d529c5b40565b70eafa6791d46cf9600140e162f4353ad686c33efa3cee5
+Description: PoC tool for setting nonce without triggering KPP/KTRR/PAC.
+Author: 0x7ff
+
+Package: libdimentio-dev
+Architecture: iphoneos-arm64e
+Version: 1:0~20230202.7ffffff
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 68
+Depends: libdimentio0 (= 1:0~20230202.7ffffff)
+Conflicts: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Filename: pool/main/iphoneos-arm64e/1800/dimentio/libdimentio-dev_1:0~20230202.7ffffff_iphoneos-arm64e.deb
+Size: 41186
+MD5sum: 15edeec4f6325a8bfbef2d1f4e50324c
+SHA1: cfbbf7b271b773126bee0ff2715f9763b8285607
+SHA256: 5858ced304b3106507dc2b402b229a50c9770ca3568ade3636dc83c8ffb39dfb
+SHA512: fe734f3242dbc4abf1fb5ff9f03aa7d9e413406945b81eb11b50b1a52e5fbedfe0ab6b343c3d4c1dd27b37424d0d0938fd4a0d783f6c4ac96a48339a72af97d2
+Description: PoC tool for setting nonce without triggering KPP/KTRR/PAC. (Development files)
+Author: 0x7ff
+
+Package: libdimentio0
+Architecture: iphoneos-arm64e
+Version: 1:0~20230202.7ffffff
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 84
+Depends: libiosexec1 (>= 1.3.1), firmware (<< 14.0) | libkernrw0 | libkrw0
+Conflicts: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Replaces: com.michael.dimentio, com.kasiimh1.dimentio, com.0x7ff.dimentio
+Filename: pool/main/iphoneos-arm64e/1800/dimentio/libdimentio0_1:0~20230202.7ffffff_iphoneos-arm64e.deb
+Size: 18198
+MD5sum: bd4852f91f9c417af95aef99443284a5
+SHA1: a35b6730a7aa29b23780c39d43b18b262003b28f
+SHA256: 648dbbe15376082a61e6d7273906b52786098a4c2ffd1aa276eb2394a29a356f
+SHA512: 904cc32ce85a4d3631ac9803daa91baa32cb23c393008766de065102866c98a410930d195b02f2f1716f71f45dd63ed5dfad7fac11b82c3efc3996c587d1bb4c
+Description: PoC tool for setting nonce without triggering KPP/KTRR/PAC. (Runtime libraries)
+Author: 0x7ff
+
+Package: diskdev-cmds
+Architecture: iphoneos-arm64e
+Version: 697
+Priority: required
+Essential: yes
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 912
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/diskdev-cmds/diskdev-cmds_697_iphoneos-arm64e.deb
+Size: 85926
+MD5sum: c23ba926d171e222466a8b4b6a953242
+SHA1: 030a69b5efa71a8b790dbddab7847c262fc1a6e1
+SHA256: 8c86ef3b983d411585c3113673d17a7c100d65e86ca05114aae9c1508bbdaed4
+SHA512: fd57bd742d46d4b29523965e3785d62e22784a55dc14b24e3c6387b288f7c7a17bf0118932d4f493db944791b5d63cdeae51c93917929b599773099f39c450e9
+Description: mount, quota, fsck, fstyp, fdisk, tunefs
+
+Package: dpkg-dev
+Architecture: iphoneos-arm64e
+Version: 1.21.21
+Priority: optional
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1800
+Depends: dpkg (= 1.21.21), libdpkg-perl (= 1.21.21)
+Filename: pool/main/iphoneos-arm64e/1800/dpkg/dpkg-dev_1.21.21_iphoneos-arm64e.deb
+Size: 1069614
+MD5sum: 45114b306b4b7cbf168b7d690904abd0
+SHA1: 75808b0046d7e7275e416762ad44fea7c05491ad
+SHA256: 6b20e50cc38b85175e5c3e0b557182f4916231a7698306911d0e512f9516bcf6
+SHA512: 277bb37fc4ea3812941d25b99524b0c24827b5f6810599a7354f7b6976c3dc4e0d9dcf58d04c752f2e8bfddc904059f42dc013b24ce3cb4e785d842527bcf690
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: Debian package development tools
+ This package provides the development tools (including dpkg-source)
+ required to unpack, build and upload Debian source packages.
+
+Package: dpkg
+Architecture: iphoneos-arm64e
+Version: 1.21.21
+Priority: required
+Essential: yes
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 6164
+Pre-Depends: tar (>= 1.23), libintl8 (>= 0.20)
+Depends: libiosexec1 (>= 1.3.1), sh, coreutils, diffutils, tar, liblzma5 (>= 5.2.5), libintl8, libz-ng2, libzstd1, libmd0
+Filename: pool/main/iphoneos-arm64e/1800/dpkg/dpkg_1.21.21_iphoneos-arm64e.deb
+Size: 1550128
+MD5sum: 9cab6a1f774dc02346708e34c634f924
+SHA1: 01c7296834d8461979c465dba603072d408c7666
+SHA256: af6566996f21835a079bb67e7ef8842c6ef1cdaa13fac4569a91233d7cb6e735
+SHA512: a3faf3a1b7aae42c81d1ff175009567b393a4915679100a4c7db6794900c0e5a6c8fc944dbee9b1d31a05920379efee54a9d54da070835e19914d213d02bf3e6
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: package maintainance tools from Debian
+
+Package: libdpkg-dev
+Architecture: iphoneos-arm64e
+Version: 1.21.21
+Priority: optional
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 992
+Depends: liblzma-dev, libzstd-dev
+Filename: pool/main/iphoneos-arm64e/1800/dpkg/libdpkg-dev_1.21.21_iphoneos-arm64e.deb
+Size: 327988
+MD5sum: 7ab1787f469264d46c5f3c9952cc4e15
+SHA1: 03a0dc097cb73c6d4966fb667d0fcaacbeded272
+SHA256: 61edb2426a9cfc42066834f522e21d2eeaa107013540cf2fbe89090d1bea4afa
+SHA512: 96465a51389b27cb8fc229c0ce3cf2e005a54641ab465bcd036827625f43834f20791dfdfb3f40b790638e3363530544bfcc64b1c8d98eedf42d42bd5a9fea4d
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: Debian package management static library
+ This package provides the header files and static library necessary to
+ develop software using libdpkg, the same library used internally by dpkg.
+ .
+ Note though, that the API is to be considered volatile, and might change
+ at any time, use at your own risk.
+
+Package: libdpkg-perl
+Architecture: iphoneos-arm64e
+Version: 1.21.21
+Priority: optional
+Section: Packaging
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1832
+Provides: dpkg-perl (= 1.21.21)
+Depends: dpkg (= 1.21.21), perl
+Conflicts: dpkg-perl (<<1:0), dpkg-dev (<< 1.21.21)
+Replaces: dpkg-perl
+Filename: pool/main/iphoneos-arm64e/1800/dpkg/libdpkg-perl_1.21.21_iphoneos-arm64e.deb
+Size: 446380
+MD5sum: ea3de46b33fff12b3397a3ebe951fe8f
+SHA1: 12d216040d3097a4c754d36cda124ae78b6bea29
+SHA256: 92813f73babf6320cace98a6d6646d2dbfbe64a8640772e6bb065fcb51b5d908
+SHA512: 61b84241cd28904166e3bf1aadcdb5361552429ea4a8b940db1a1d94f3a9eee92e74d154dad7bb45370802a1d9230a37d98d22da2148c92ce8b1b6c795296339
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Description: Dpkg perl modules
+ This package provides the perl modules used by the scripts
+ in dpkg-dev. They cover a wide range of functionality. Among them
+ there are the following public modules:
+ .
+  - Dpkg: core variables
+  - Dpkg::Arch: architecture handling functions
+  - Dpkg::Build::Info: build information functions
+  - Dpkg::BuildFlags: set, modify and query compilation build flags
+  - Dpkg::BuildOptions: parse and manipulate DEB_BUILD_OPTIONS
+  - Dpkg::BuildProfiles: parse and manipulate build profiles
+  - Dpkg::Changelog: parse changelogs
+  - Dpkg::Changelog::Entry: represents a changelog entry
+  - Dpkg::Changelog::Parse: generic changelog parser for dpkg-parsechangelog
+  - Dpkg::Checksums: generate and parse checksums
+  - Dpkg::Compression: simple database of available compression methods
+  - Dpkg::Compression::FileHandle: transparently (de)compress files
+  - Dpkg::Compression::Process: wrapper around compression tools
+  - Dpkg::Conf: parse dpkg configuration files
+  - Dpkg::Control: parse and manipulate Debian control information
+    (.dsc, .changes, Packages/Sources entries, etc.)
+  - Dpkg::Control::Changelog: represent fields output by dpkg-parsechangelog
+  - Dpkg::Control::Fields: manage (list of known) control fields
+  - Dpkg::Control::Hash: parse and manipulate a block of RFC822-like fields
+  - Dpkg::Control::Info: parse files like debian/control
+  - Dpkg::Control::Tests: parse files like debian/tests/control
+  - Dpkg::Control::Tests::Entry: represents a debian/tests/control stanza
+  - Dpkg::Deps: parse and manipulate dependencies
+  - Dpkg::Deps::Simple: represents a single dependency statement
+  - Dpkg::Deps::Multiple: base module to represent multiple dependencies
+  - Dpkg::Deps::Union: list of unrelated dependencies
+  - Dpkg::Deps::AND: list of AND dependencies
+  - Dpkg::Deps::OR: list of OR dependencies
+  - Dpkg::Deps::KnownFacts: list of installed and virtual packages
+  - Dpkg::Exit: push, pop and run exit handlers
+  - Dpkg::Gettext: wrapper around Locale::gettext
+  - Dpkg::IPC: spawn sub-processes and feed/retrieve data
+  - Dpkg::Index: collections of Dpkg::Control (Packages/Sources files for
+    example)
+  - Dpkg::Interface::Storable: base object serializer
+  - Dpkg::Path: common path handling functions
+  - Dpkg::Source::Format: manipulate debian/source/format files
+  - Dpkg::Source::Package: extract Debian source packages
+  - Dpkg::Substvars: substitute variables in strings
+  - Dpkg::Vendor: identify current distribution vendor
+  - Dpkg::Version: parse and manipulate Debian package versions
+ .
+ All the packages listed in Suggests or Recommends are used by some of the
+ modules.
+
+Package: essential
+Architecture: iphoneos-arm64e
+Version: 0-5
+Priority: required
+Essential: yes
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 0
+Pre-Depends: bootstrap | dpkg (>= 1.19.0)
+Depends: org.coolstar.sileo (>= 2.1) | xyz.willy.zebra (>= 1.1.19) | me.apptapp.installer (>= 5.1) | cydia | openssh-server
+Filename: pool/main/iphoneos-arm64e/1800/essential/essential_0-5_iphoneos-arm64e.deb
+Size: 736
+MD5sum: ede378c693f28aef56277a93a3023047
+SHA1: 78edacd49d4cb695cd774e7d264cf8ad93c48dd0
+SHA256: 51f423bb70047596fc470ff9c4e33cfd99942dd714afc55da0a2a679b2f6832e
+SHA512: 991f9aec1a1fb1e7ad55b620521dd9d35eb38a5d26f5596dadd5f641b8bbbc6fdf65a63562eed591e8ffcb8421b9ac19d30b8d6a62ec2ee554e2707912fcfeca
+Description: Virtual package to keep you safe from uninstalling important packages.
+
+Package: file-cmds
+Architecture: iphoneos-arm64e
+Version: 400-1
+Priority: important
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 480
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/file-cmds/file-cmds_400-1_iphoneos-arm64e.deb
+Size: 99484
+MD5sum: 22cc46e4e966e6b2c583b845d9eba538
+SHA1: 6f180a14c22e4e90a789df954ba509aeb2c31220
+SHA256: 655113fd2b05eccff61523835083d08b975e8f6452000e8f4c1ee0f00277e14c
+SHA512: c5c86fbc4d1d4c351ac120fe9f059a3763dde5944093a23e900467985129ed01550b6e8492f614428b24df10095d5082dad8de0a8630efca331f5b268ad0b2a1
+Description: chflags, compress, ipcrm, ipcs, pax
+
+Package: findutils
+Architecture: iphoneos-arm64e
+Version: 4.8.0-1
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1960
+Depends: libiosexec1 (>= 1.3.1), sh, sed, shell-cmds, libintl8
+Conflicts: shell-cmds (<< 207.40.1)
+Replaces: shell-cmds (<< 207.40.1)
+Filename: pool/main/iphoneos-arm64e/1800/findutils/findutils_4.8.0-1_iphoneos-arm64e.deb
+Size: 502614
+MD5sum: 0a019ca3c488013c8d9189a2983ab85d
+SHA1: eb1d6865aea0212c950bd782b547505fc84da9c8
+SHA256: 788ed28457685248ed680e928f5de14b4c636069e1c1a738dbbea51ac7ebe550
+SHA512: e1eac0590066b7b650919c17946fc2c07d460768078cbca923d40b5e6fe24c6243c3fdb0e51a613f215e55d1e46096e9bd02319307b926e103dc16a72b2e1c27
+Homepage: http://www.gnu.org/software/findutils/
+Description: indexes and searches filesystems
+
+Package: autopoint
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 500
+Depends: liblzma5 (>= 5.2.5)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/autopoint_0.21.1_iphoneos-arm64e.deb
+Size: 461060
+MD5sum: 776d82654973934a0e3a06b302315c61
+SHA1: 264797a7603194e39270c759c7d263d1d11b8763
+SHA256: 9b0b35829a896a8f48af4f52c0ee686e3452ab2d590f9fff59b151321da3c389
+SHA512: 3030f8c5ffd6455b6cf664f0586a81709def979d13a8f286d06f235e972fddbd3724993271670b11f16b7883a611addea855048b7dfcf58b2cf765a19d44f6c7
+Homepage: http://www.gnu.org/software/gettext/
+Description: autopoint program from GNU gettext
+
+Package: gettext-base
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Priority: optional
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 388
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Conflicts: gettext (<< 0.21.1)
+Replaces: gettext (<< 0.21.1)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/gettext-base_0.21.1_iphoneos-arm64e.deb
+Size: 80014
+MD5sum: c8964b2d0ab33a4676f7cee2bbf94c87
+SHA1: 26b3a56d8e3bd24cccfd40377946797b75e226f0
+SHA256: fc515f35504a812b67f64e2c9ae281e3fd7da51b412d9f51e3bd0bc2d97db0dd
+SHA512: 16b1ad794921f25cd562bfb867812f78f74912bb73dbda167c4b26e9f76ba60ee584006e0e193d29a2d1f6633e63173c02d716edc280071216e5e89d4a29966b
+Homepage: http://www.gnu.org/software/gettext/
+Description: GNU Internationalization utilities for the base system
+
+Package: gettext
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Priority: optional
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2692
+Depends: libiosexec1 (>= 1.3.1), libncursesw6, gettext-base, libintl8, libtextstyle0v5, libunistring5
+Filename: pool/main/iphoneos-arm64e/1800/gettext/gettext_0.21.1_iphoneos-arm64e.deb
+Size: 629056
+MD5sum: 8332ab5249374fca9d775f9894e0021c
+SHA1: f993e32db999ac78129cc0a4cfb8e73ab14b0923
+SHA256: a8c852aefa7bdf4fa888754ccbdd3a30f08e02068f751434b5e1c98e1f2fd818
+SHA512: cfa535a2894c15b4c92a684013590fdd53d1505e1e8b0d3c95c6521de75fb8aa96b3a47999c77dd209da11e3d81a631f6f0b02ca7aede408426b7f5104b838e4
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings
+
+Package: libgettextpo-dev
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1160
+Depends: libgettextpo0 (= 0.21.1)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libgettextpo-dev_0.21.1_iphoneos-arm64e.deb
+Size: 476470
+MD5sum: e5c2fa45a1db8ce1446fff0b59b65e15
+SHA1: 19deab2e352baf50239ee074f41f0c212385a847
+SHA256: 0e75966f4b4718608eda942debc2d911f66e180015ed8778028ec934ee027fbf
+SHA512: b9ba8911dae8e2f1149fd26f3d231458a8ed85d4bd1a9a8870ccda9f1f89591782aefab862839c7e4f340151c624864de4ae2fe59703d340cfd5d6aaf2f9cd06
+Homepage: http://www.gnu.org/software/gettext/
+Description: process PO files - static libraries and headers
+
+Package: libgettextpo0
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 336
+Depends: libiosexec1 (>= 1.3.1), libunistring5, libintl8
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libgettextpo0_0.21.1_iphoneos-arm64e.deb
+Size: 148006
+MD5sum: 4668d598744f03b96e8c6780e05f4598
+SHA1: 31c3a71433136502547291ade8d57e2b902ea83c
+SHA256: 6adf0028fd35fd12afc0b2ab4b4ef4a4c23990fa938b701568a19c1d18755f9a
+SHA512: 7287e4d9bcc5f68deef62995bb6d9b0024b489b0d05946962b6fbaa76ef0ae8f6c642fb24639921e8e96ab0d76017a13adf74430396a11a8fa507d35bc01047c
+Homepage: http://www.gnu.org/software/gettext/
+Description: process PO files - shared library
+
+Package: libintl-dev
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 296
+Depends: libintl8 (= 0.21.1)
+Conflicts: gettext (<< 0.21.1)
+Replaces: gettext (<< 0.21.1)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libintl-dev_0.21.1_iphoneos-arm64e.deb
+Size: 122504
+MD5sum: eb041679011016b84d5be0348b40a415
+SHA1: 0cc70c7656ff4abd71a53c5b0351bbcd929694fd
+SHA256: a44c40bcd55d8746769d051a7802bf4836f51b5f89e4226a99d51d5c9c751d1a
+SHA512: 119f4a0751c9e1cae8cea124eb802990746c30a0759176c7eec2c232812bc4cd83a15ff62fe6e808699e0c82f93f9cb78763a3c25ca2c50eb3c827eadc8c9dd7
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings - development files
+
+Package: libintl8
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 156
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libintl8_0.21.1_iphoneos-arm64e.deb
+Size: 63572
+MD5sum: 76140e372a2237d34eb0ec62951a48f5
+SHA1: 8beee6c62316dd01adb391043f47c5faeb4738e2
+SHA256: e918641fcac516f5bd6befa1c7606450f4627cc2e841682cd3b023582f6f73cd
+SHA512: c6a4ba54fa4b719fe266c2750cbec4053076d5a2582f3f1173fe1bc37b838d0e023042927620b99e4b078eaab066ebd701b5bf1bb16dc1db57b3b720b5bdb806
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings
+Essental: yes
+
+Package: libtextstyle-dev
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1968
+Depends: libtextstyle0v5 (= 0.21.1)
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libtextstyle-dev_0.21.1_iphoneos-arm64e.deb
+Size: 901554
+MD5sum: 8b01f546b9ec0ec4e0503502371be13d
+SHA1: 11036b4c36f97adbe05ab1ff9228c8b629716c81
+SHA256: 83f360e1d9f037a6cb5e219f7b3af530520006bf638b7ebd22dcbdc2c0ebb599
+SHA512: ad49dec7503c0f8bbda9ee880a9451c97cdff85d7a95a86dd324ff66b305101a9b363c05396330c0845897d57c7abef210a5dd9570d5df299aab57a2fb856ad7
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings - development files
+
+Package: libtextstyle0v5
+Architecture: iphoneos-arm64e
+Version: 0.21.1
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 484
+Depends: libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/gettext/libtextstyle0v5_0.21.1_iphoneos-arm64e.deb
+Size: 220024
+MD5sum: d8b9dcbe97c59f18fa0dad59af58369c
+SHA1: e6750d9bc9473ee02155734e680179ace13b6866
+SHA256: 6f52efb276e38104fa9b44c5406438b99a8f78cae735dca014a8cc4e398243ba
+SHA512: 564562422b4aab267dd67ff023642bffb138a6fcd99ceebd47006c13a70e69324d7fe81256c565837c3d7c82befe80003d83fa6571ee2aaff5943c10ca5221f0
+Homepage: http://www.gnu.org/software/gettext/
+Description: internationalization helper for strings
+
+Package: dirmngr
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 612
+Depends: libiosexec1 (>= 1.3.1), gpgconf (= 2.3.6), libassuan0, libgcrypt20, libgnutls30, libgpg-error0, libksba8, libnpth0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/dirmngr_2.3.6_iphoneos-arm64e.deb
+Size: 285352
+MD5sum: 8cb8458e7300555d05e4a6f626e6cea6
+SHA1: 8ab392151a214a3d4141c085c2966d7a2fb60c7f
+SHA256: 074e9d21889b97f8d7da165fa95520a2142424b959440034a05d5b09f4b6e02d
+SHA512: 1dbe2bdc2fd70f0231f8df1b952c0c11220adf25252938fa68f6cc54ced054cc69c84d8bb432bf5ad0d2e3521166f718c8403fccc657d50081767939cb858746
+Description: GNU privacy guard - network certificate management service
+ dirmngr is a server for managing and downloading OpenPGP and X.509
+ certificates, as well as updates and status signals related to those
+ certificates.  For OpenPGP, this means pulling from the public
+ HKP/HKPS keyservers, or from LDAP servers.  For X.509 this includes
+ Certificate Revocation Lists (CRLs) and Online Certificate Status
+ Protocol updates (OCSP).  It is capable of using Tor for network
+ access.
+ .
+ dirmngr is used for network access by gpg, gpgsm, and dirmngr-client,
+ among other tools.  Unless this package is installed, the parts of
+ the GnuPG suite that try to interact with the network will fail.
+
+Package: gnupg-utils
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 660
+Depends: libiosexec1 (>= 1.3.1), libassuan0, libgcrypt20, libgpg-error0, libksba8, libnpth0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gnupg-utils_2.3.6_iphoneos-arm64e.deb
+Size: 187184
+MD5sum: 28bbb2fdbea9af4c80ea40a2d34bc2aa
+SHA1: 6c10f4694a21b017b96dee5c23bf9c2ec3716790
+SHA256: 3dfcc972c82ec12a55817a8a3edca949e6c83155a9af45b639611b3b365f1ab0
+SHA512: 08c07875299d97e9ec2fd2c4db607d4bbc4835017a1e267610ad3d907017254e458272b3909903b8e38142fd0b21926eb306556342d79fbf1428c5ddae7b9ed0
+Description: GNU privacy guard - utility programs
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ This package contains several useful utilities for manipulating
+ OpenPGP data and other related cryptographic elements.  It includes:
+ .
+  * addgnupghome -- create .gnupg home directories
+  * applygnupgdefaults -- run gpgconf --apply-defaults for all users
+  * gpgparsemail -- parse an e-mail message into annotated format
+  * gpgsplit -- split a sequence of OpenPGP packets into files
+  * gpgtar -- encrypt or sign files in an archive
+  * kbxutil -- list, export, import Keybox data
+  * watchgnupg -- watch socket-based logs
+
+Package: gnupg
+Architecture: all
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4212
+Depends: dirmngr (= 2.3.6), gnupg-utils (= 2.3.6), gpg (= 2.3.6), gpg-agent (= 2.3.6), gpg-wks-client (= 2.3.6), gpg-wks-server (= 2.3.6), gpgconf(= 2.3.6), gpgsm (= 2.3.6), gpgv (= 2.3.6), scdaemon (= 2.3.6), pinentry
+Conflicts: gnupg2
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gnupg_2.3.6_all.deb
+Size: 1008394
+MD5sum: 12a3653e3d20c2a2a65e6cd365aaba82
+SHA1: 52a28807fe5d65fcc0e3e41b8285659d724622be
+SHA256: 0e5c1502cb6c712c9538b93a38fe63d16e5b81766811b2405505a7308c160bf9
+SHA512: 8ed533860c3d664c8b12680957c5aed67c68e567fa60ef45a0229a6a3a16fe22d56263a4e203fdae49694c930630182f432c48cd2ade0aff2278db6af8859e8c
+Description: GNU privacy guard - a free PGP replacement
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package contains the full suite of GnuPG tools for cryptographic
+ communications and data storage.
+
+Package: gpg-agent
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 780
+Depends: libiosexec1 (>= 1.3.1), gpgconf (= 2.3.6), gpg (= 2.3.6), dirmngr (= 2.3.6), libassuan0, libgcrypt20, libgpg-error0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpg-agent_2.3.6_iphoneos-arm64e.deb
+Size: 290660
+MD5sum: 8add4eaead09b95852f9971f7e328010
+SHA1: b2a4b3296eade1545d0513b9afd513fbf916c71a
+SHA256: e87683f6888fafe09d1bd586f5e27c2e3be0fbe655ce43057e494aa2cbe66bfd
+SHA512: 392abea5bdeefd1a279c73e2d03318e046361437b9b091b5b7a3a83f43326f504121f71a14b14c5ec873d1041e72fae783682d31adc6cb92e15a58960987b389
+Description: GNU privacy guard - cryptographic agent
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package contains the agent program gpg-agent which handles all
+ secret key material for OpenPGP and S/MIME use.  The agent also
+ provides a passphrase cache, which is used by pre-2.1 versions of
+ GnuPG for OpenPGP operations.  Without this package, trying to do
+ secret-key operations with any part of the modern GnuPG suite will
+ fail.
+
+Package: gpg-wks-client
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 288
+Depends: libiosexec1 (>= 1.3.1), gpgconf (= 2.3.6), gpg (= 2.3.6), dirmngr (= 2.3.6), libassuan0, libgcrypt20, libgpg-error0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpg-wks-client_2.3.6_iphoneos-arm64e.deb
+Size: 147982
+MD5sum: 3c73f8f46213be14b433aba7c8dd0324
+SHA1: da1cd5ec4f71e86969a4951fe226905317096b1a
+SHA256: 1719246163e87e73746b7fa4609df7536e05afb842fa69b3b2db54bdc3b8d48a
+SHA512: 41ac4b429f594ecd1bc183771dfae3392d27988752387d6dc3357ee32f9580dda8def00a601cb9143deca53c6cd27b2249695f1af167587fa786f7f69ad5c365
+Description: GNU privacy guard - Web Key Service client
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package provides the GnuPG client for the Web Key Service
+ protocol.
+ .
+ A Web Key Service is a service that allows users to upload keys per
+ mail to be verified over https as described in
+ https://tools.ietf.org/html/draft-koch-openpgp-webkey-service
+ .
+ For more information see: https://wiki.gnupg.org/WKS
+
+Package: gpg-wks-server
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 280
+Depends: libiosexec1 (>= 1.3.1), gpgconf (= 2.3.6), gpg (= 2.3.6), libgcrypt20, libgpg-error0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpg-wks-server_2.3.6_iphoneos-arm64e.deb
+Size: 142660
+MD5sum: 5c8e8d39d1eaaf7553b821330bb47645
+SHA1: 6ef2c36377d2ae742b7ef77cf8927d0e5dbaf152
+SHA256: eeb7f6e0c96b96b4dbbd8228c1dcca7e2588c374c7e7f25ced2d1fb70080ee74
+SHA512: 9ef3060d3ba5de608e19c78ef6f2e11d33960f533ac3dcd67403cbd80b6b06cb7ab58cff94f93568df9029845797297df906e19381b37bbc0b01384dbb32e3da
+Description: GNU privacy guard - Web Key Service server
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package provides the GnuPG server for the Web Key Service
+ protocol.
+ .
+ A Web Key Service is a service that allows users to upload keys per
+ mail to be verified over https as described in
+ https://tools.ietf.org/html/draft-koch-openpgp-webkey-service
+ .
+ For more information see: https://wiki.gnupg.org/WKS
+
+Package: gpg
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1044
+Depends: libiosexec1 (>= 1.3.1), libassuan0, libgcrypt20, libgpg-error0, libreadline8, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpg_2.3.6_iphoneos-arm64e.deb
+Size: 578038
+MD5sum: 5626ed64bd006ddbd4b138583b1fcadd
+SHA1: 80c8b1f216eddb926f083b8cef1025e1595b68d7
+SHA256: 60d85ae7352faa260441f931f841be689de516474a797da709a0e806333e9578
+SHA512: 0eac748c46406f47f59fa385033600047e1318c449c9badc06772526e0eb66dd401ae6054d7e779718beda37b3b9cf718a233c62ab3db5730fa2b4bb4eb09aa5
+Description: GNU Privacy Guard -- minimalist public key operations
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package contains /usr/bin/gpg itself, and is useful on its own
+ only for public key operations (encryption, signature verification,
+ listing OpenPGP certificates, etc).  If you want full capabilities
+ (including secret key operations, network access, etc), please
+ install the "gnupg" package, which pulls in the full suite of tools.
+
+Package: gpgconf
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 396
+Depends: libiosexec1 (>= 1.3.1), libassuan0, libgcrypt20, libgpg-error0, libreadline8, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpgconf_2.3.6_iphoneos-arm64e.deb
+Size: 173610
+MD5sum: 4ab37dfd77392d5f8a0d26b1ed9762c1
+SHA1: b59be72121c69988dbdd62a3015d54ed7ac5aac8
+SHA256: 47421efe21d72c88b294ac1e4d5883423dcf0d10afb80b37d1dc330a7d6e4490
+SHA512: 338d46c4e62665ffd221b52ea50c0a5c5112aeaee27c391845854e6e470fcc38fabe6224947f72860eadf7a6f9ac4dc5de473b43680b9d9b45e14a85820ad77e
+Description: GNU privacy guard - core configuration utilities
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ This package contains core utilities used by different tools in the
+ suite offered by GnuPG.  It can be used to programmatically edit
+ config files for tools in the GnuPG suite, to launch or terminate
+ per-user daemons (if installed), etc.
+
+Package: gpgsm
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 564
+Depends: libiosexec1 (>= 1.3.1), gpgconf (= 2.3.6), libassuan0, libgcrypt20, libgpg-error0, libksba8, libreadline8, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpgsm_2.3.6_iphoneos-arm64e.deb
+Size: 298632
+MD5sum: 093bcca288ca1607bf39471f90501312
+SHA1: 4236fb041fe787f7cbd8e2de49838ea5a84ddb07
+SHA256: 694479753b74c975d90d30824aa7af009752c6f6bb1f76992c82c8a4c0d952b4
+SHA512: a73c750137afbe61ea2701fb9b722e12f820abd3412de11ec181dbf873a2501501cec9bea5ecab6dad485c1154881768adce877c49db461ee60655168efc4909
+Description: GNU privacy guard - S/MIME version
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package contains the gpgsm program. gpgsm is a tool to provide
+ digital encryption and signing services on X.509 certificates and the
+ CMS protocol. gpgsm includes complete certificate management.
+
+Package: gpgv
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 484
+Depends: libiosexec1 (>= 1.3.1), libassuan0, libgcrypt20, libgpg-error0, libintl8, libnpth0
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/gpgv_2.3.6_iphoneos-arm64e.deb
+Size: 254320
+MD5sum: c5d363bc5f998a9132da87119d18f739
+SHA1: 3362c98881ff6fa50de659849b069053b325cb4d
+SHA256: f4495fc868585f96fa7f12313bbcb39977495be9ec6ca804c48761c171f240dd
+SHA512: 8ef7205f6acf3a5bd4a4d7f6be669b54e8f01909fa0a413b26d58f14e6a5b58da35451da020249078dcb58b1b0af527373636d2742be963ea523939187f53ab8
+Description: GNU privacy guard - signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ .
+ gpgv is actually a stripped-down version of gpg which is only able
+ to check signatures. It is somewhat smaller than the fully-blown gpg
+ and uses a different (and simpler) way to check that the public keys
+ used to make the signature are valid. There are no configuration
+ files and only a few options are implemented.
+
+Package: scdaemon
+Architecture: iphoneos-arm64e
+Version: 2.3.6
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 724
+Depends: libiosexec1 (>= 1.3.1), gpg-agent (= 2.3.6), libassuan0, libgcrypt20, libgpg-error0, libksba8, libnpth0, libusb-1.0-0, libintl8
+Conflicts: gnupg2, gnupg (<< 2.3.6)
+Replaces: gnupg2
+Filename: pool/main/iphoneos-arm64e/1800/gnupg/scdaemon_2.3.6_iphoneos-arm64e.deb
+Size: 342618
+MD5sum: fb887a8ef120358dd3c8250999a24e74
+SHA1: 9ddba7a3173267bbb69dbe56fff47d636f5be5d6
+SHA256: 463473ae7a680f31961ddf229a1fffde059707984b9675cf5b0d213f3db84924
+SHA512: bf30a31106c4516b86f050dca56a0f0f9b6e21bd50f1b5c0f6de64a21827111c8a92be88d28daef095198b0008f09031b9e0744864330d444f4279cce9daeee5
+Description: GNU privacy guard - smart card support
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC4880.
+ .
+ This package contains the smart card program scdaemon, which is used
+ by gpg-agent to access OpenPGP smart cards.
+
+Package: gnutls-bin
+Architecture: iphoneos-arm64e
+Version: 3.8.0
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1128
+Depends: libiosexec1 (>= 1.3.1), libgnutls30 (>= 3.8.0), libintl8 (>= 0.20.0), libgmp10, libidn2-0, libunistring5, libnettle8, libhogweed6, libp11-kit0, libtasn1-6, libzstd1, libbrotli1
+Conflicts: gnutls (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/gnutls/gnutls-bin_3.8.0_iphoneos-arm64e.deb
+Size: 303842
+MD5sum: cd540578bbbece6783cd3fffff349823
+SHA1: b5be414c2c3dcf70c5bb8bc9c2d03bef5b080a4d
+SHA256: 61d4a7afb6aab5a757ca08e8256334ff53efeb4832ce0ea336286f733662a4ab
+SHA512: 608d8fefa928293f700742491f9748233834b82dfa3b1e891c0d1ce6eb9a7a4e47c8edd344675d00dc6c4c616e8aa548f9c25cbed78f4a652347116137fbabbd
+Description: GNU TLS library - commandline utilities
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains a commandline interface to the GNU TLS library, which
+ can be used to set up secure connections from e.g. shell scripts, debugging
+ connection issues or managing certificates.
+ .
+ Useful utilities include:
+  - TLS termination: gnutls-cli, gnutls-serv
+  - key and certificate management: certtool, ocsptool, p11tool
+  - credential management: srptool, psktool
+
+Package: libgnutls30-dev
+Architecture: iphoneos-arm64e
+Version: 3.8.0
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 524
+Depends: libgnutls30 (>= 3.8.0), libgnutlsxx30 (>= 3.8.0), libp11-kit-dev, libtasn1-6-dev, nettle-dev, libidn2-dev
+Conflicts: gnutls (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/gnutls/libgnutls30-dev_3.8.0_iphoneos-arm64e.deb
+Size: 183622
+MD5sum: 15ffea98c1d0699c0548bebb52301902
+SHA1: e13e39872d6fec67fc669e17d60c9c4057eac032
+SHA256: 28ded7e6c7ac0eb12fd08086287df7578458a2a72791ee326e7b3ac0b94f5367
+SHA512: 43592474a860f02525dd74fd102b438d2d4626881e8ab54dd9d1e3a1384ccb00cef86e8b3d6d370eeceb3dc8390b389ade5d578850a03bd97729d56c896393ec
+Homepage: http://www.gnu.org/software/gnutls/
+Description: GNU TLS library - development files
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the GnuTLS development files.
+
+Package: libgnutls30
+Architecture: iphoneos-arm64e
+Version: 3.8.0
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1884
+Provides: gnutls (= 1:0)
+Depends: libiosexec1 (>= 1.3.1), libintl8 (>= 0.20.0), libgmp10, libidn2-0, libunistring5, libnettle8, libhogweed6, libp11-kit0, libtasn1-6, libzstd1, libbrotli1
+Conflicts: gnutls (<< 1:0)
+Replaces: gnutls (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/gnutls/libgnutls30_3.8.0_iphoneos-arm64e.deb
+Size: 926474
+MD5sum: e8b8b8c57da91f12b36bbcd1e4b52435
+SHA1: 27b695372195de6d777c8d84c29393217ee5c928
+SHA256: ea53ec5773c63bb4430787ced03f0445a001b013d16dba4865ddcaee3a74b3cc
+SHA512: 86ae86ef34255f1f7e18dcec8032afd321721077ef3850f479dca2afe6a6a847013c281d35d207f3d61c2d72fb21a4eb8444b3f48d6e5d83fea841e12f6969c4
+Homepage: http://www.gnu.org/software/gnutls/
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the main runtime library.
+
+Package: libgnutlsxx30
+Architecture: iphoneos-arm64e
+Version: 3.8.0
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 200
+Depends: libiosexec1 (>= 1.3.1), libintl8 (>= 0.20.0), libgmp10, libidn2-0, libunistring5, libnettle8, libhogweed6, libp11-kit0, libtasn1-6, libgnutls30 (= 3.8.0), libzstd1, libbrotli1
+Conflicts: gnutls (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/gnutls/libgnutlsxx30_3.8.0_iphoneos-arm64e.deb
+Size: 121634
+MD5sum: 18eb643e42aee3f7777256e7ca84c541
+SHA1: 3fbd290edaa42276c9eae7ff9ab8d002b475c020
+SHA256: f2e938b1c82ad7f5c3322a1741402d24cadf47ac21521c903a17e9d10deaffe5
+SHA512: a5597b4990d81161ef6a6cd02f9ba48b89ef17ba2827c102e0ba536f3760103e19fc5fbf84bc4753a529cab3ebfc4b13108a4bf60c5be0d1727feec209e5cec3
+Homepage: http://www.gnu.org/software/gnutls/
+Description: GNU TLS library - C++ runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2, 1.3) and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - certificate path validation, as well as DANE and trust on first use.
+  - the Online Certificate Status Protocol (OCSP).
+  - public key methods, including RSA and Elliptic curves, as well as password
+    and key authentication methods such as SRP and PSK protocols.
+  - all the strong encryption algorithms, including AES and Camellia.
+  - CPU-assisted cryptography with VIA padlock and AES-NI instruction sets.
+  - HSMs and cryptographic tokens, via PKCS #11.
+ .
+ This package contains the C++ runtime libraries.
+
+Package: grep
+Architecture: iphoneos-arm64e
+Version: 3.10-1
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1120
+Depends: libiosexec1 (>= 1.3.1), libpcre2-8-0
+Conflicts: text-cmds (<< 1:0)
+Replaces: text-cmds (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/grep/grep_3.10-1_iphoneos-arm64e.deb
+Size: 306164
+MD5sum: 4e562fdb83d37794574dca8094dd996b
+SHA1: d8597d4f579fbc6c4cd71ebdd12a5bf27a043a9c
+SHA256: 46edc40f794cd94cee0e7b00d504a3be2cb70514185ef35e1edb89538b004274
+SHA512: e49c35a2b6158cc63157a4c9363825dfd037bfae7e46295e0296771dc2aa6ddf7e973a9caaee556c49f8a052db875ace82213c7b3532024dd4c6a32cf2887538
+Homepage: http://www.gnu.org/software/grep/
+Description: searches files for regular expressions
+
+Package: gzip
+Architecture: iphoneos-arm64e
+Version: 1.12
+Multi-Arch: foreign
+Priority: standard
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 324
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/gzip/gzip_1.12_iphoneos-arm64e.deb
+Size: 112872
+MD5sum: 0e63b5c12108eef8de9aebc42924eb54
+SHA1: 04bb42658edd1b1f8e89a82866e3c1ca06a3d2da
+SHA256: b30ef28e6c18f4dcb990766dccd982262d1a8f6bd8108106a02436b8c75afcd0
+SHA512: 03b76a143cc8b143bb4098cea17e28780f6884894557dfbef6e398fb6f1a7966083624e1e5adcfa1a9559ea5bedbabd5ac7c32e9698cb91ca8a1113e086ce650
+Homepage: http://www.gzip.org/
+Description: GNU compression utilities
+ This package provides the standard GNU file compression utilities, which
+ are also the default compression tools for Debian.  They typically operate
+ on files with names ending in '.gz', but can also decompress files ending
+ in '.Z' created with 'compress'.
+
+Package: havoc-keyring
+Architecture: all
+Version: 2022.06.03
+Priority: optional
+Section: Keyrings
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4
+Filename: pool/main/iphoneos-arm64e/1800/havoc-keyring/havoc-keyring_2022.06.03_all.deb
+Size: 1134
+MD5sum: b59499785f064126e3acbb4a06af158d
+SHA1: d225bc6ebaec200823ebec003a81ee82023ec651
+SHA256: 68e736eb48db8fcceb9e269f1e2dfd61a4dd0f8487627dfd3139f30fe586d7d6
+SHA512: 0857a0744859efe37e9ebe4a41ec1de89774314879acfc0c0db43f1699b335b1f89badca623f657d090339dab2ca349bea1e4333ff29c590ea3670641c0c67a6
+Description: GnuPG keys for the Havoc repository
+
+Package: procursus-keyring
+Architecture: all
+Version: 2020.05.09-4
+Priority: required
+Essential: yes
+Section: Keyrings
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4
+Depends: chariz-keyring, havoc-keyring
+Filename: pool/main/iphoneos-arm64e/1800/keyring/procursus-keyring_2020.05.09-4_all.deb
+Size: 2974
+MD5sum: 655f43d0f520248440b0608913351a43
+SHA1: 38e4744114b0a2fced1632b4c61b0c792b33236d
+SHA256: 8b43515c9f585b5b1f5ade20f49c544cda0c60583c076384aee5a13779f5e51a
+SHA512: 48391277aa4d2cfc4b97fdb2d12df7fba0358d759d5a8d74b87473334d68a4b78495677b337ad6ef8870a6b4075c08cd7f3a43ef377bfea2cff08355c4a90f1d
+Description: GnuPG keys for the Procursus repo
+
+Package: launchctl
+Architecture: iphoneos-arm64e
+Version: 1:1.1.1
+Priority: required
+Essential: yes
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 144
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/launchctl/launchctl_1:1.1.1_iphoneos-arm64e.deb
+Size: 46246
+MD5sum: ede17205c1875c8ec29affafbff5e7fc
+SHA1: 4e745cc6efbbd01f35d3c9dce93271ecb377ab1a
+SHA256: 63b4e57e65ed133236f505e9599ca14b9507ebec0467c22b845851c698ca43d9
+SHA512: 1e0a9df29d4787f207917c40a51fb41ea7be880985dd976ab7bbd269ac243b52b1ed3263919ba4bcc21650083acceaca50ba8ae9ec0642ae776105fa329b179b
+Homepage: https://github.com/ProcursusTeam/launchctl
+Description: Tells launchd what to do
+
+Package: ldid
+Architecture: iphoneos-arm64e
+Version: 2.1.5-procursus7
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 220
+Depends: libiosexec1 (>= 1.3.1), libssl3, libplist3 (>= 2.2.0)
+Filename: pool/main/iphoneos-arm64e/1800/ldid/ldid_2.1.5-procursus7_iphoneos-arm64e.deb
+Size: 79624
+MD5sum: bc83799e832bec5d258734d5966f63f7
+SHA1: 5bc36ab9765da2928aa5eb33f15e51f7e89a384d
+SHA256: 8fd8bfd6481a224c01d455d119b67229bc6c5d7f9a73618f7323f7f09567cafe
+SHA512: 2bf17377c3c904b8030a1b535024ebe844dac5a50772f87354af9da6b27464070bef5e243d499585bf07e5a0795aeb27ce6bebf7331bb59c4e5161d723513b59
+Description: pseudo-codesign Mach-O files
+Author: Jay Freeman (saurik) <saurik@saurik.com>
+
+Package: libassuan-dev
+Architecture: iphoneos-arm64e
+Version: 2.5.5
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 104
+Depends: libassuan0 (= 2.5.5), libgpg-error-dev
+Filename: pool/main/iphoneos-arm64e/1800/libassuan/libassuan-dev_2.5.5_iphoneos-arm64e.deb
+Size: 32584
+MD5sum: ba62fd3925fc187be6859194f96a3033
+SHA1: c9131bec5c986bb0ae1fedb93833ecfd0971dcd1
+SHA256: 00c412759ddf71dbfb7527963c613b9b0bf61bf8f2572aec2499636ab29e48b5
+SHA512: 80f00b34a7c78aea701be2cbb679da955e2a4e73055b2e5c6b120268ebf1879d3ed6077b493de97a5b35b8411aad7511f2d9966107d985ada8f753df56ced825
+Description: IPC library for the GnuPG components -- header files
+ Libassuan is a small library implementing the so-called "Assuan
+ protocol". This protocol is used for IPC between most newer GnuPG
+ components. Both server and client side functions are provided.
+ .
+ This package contains header files and static libraries for libassuan.
+
+Package: libassuan0
+Architecture: iphoneos-arm64e
+Version: 2.5.5
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 172
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0
+Filename: pool/main/iphoneos-arm64e/1800/libassuan/libassuan0_2.5.5_iphoneos-arm64e.deb
+Size: 52868
+MD5sum: 75edab03b516d2782465f287c4972728
+SHA1: 480bdae49f5546522b21f976bd605e2f4249ab25
+SHA256: f1861286d4dbb7d93ce1ec49d54ca341a899ab608106c78df666e0c6da1767bd
+SHA512: d36feb6d1ece9803134c34673780ba57770eb4be0ea5031f936b306c691a0a5ffb63c7cdcef8fb2758dac7762f0a0f4fe01e0c7daba1cf9d8cd8981a28037c9c
+Description: IPC library for the GnuPG components
+ Libassuan is a small library implementing the so-called "Assuan
+ protocol". This protocol is used for IPC between most newer GnuPG
+ components. Both server and client side functions are provided.
+
+Package: libedit-dev
+Architecture: iphoneos-arm64e
+Version: 3.1-20221030
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 560
+Depends: libedit0 (= 3.1-20221030), libncurses-dev (>= 6.0)
+Filename: pool/main/iphoneos-arm64e/1800/libedit/libedit-dev_3.1-20221030_iphoneos-arm64e.deb
+Size: 268730
+MD5sum: edd64e726804328a6e7ebf429710c36c
+SHA1: 0e5c38363636e79e947f1919b91c3c6aedb17c9c
+SHA256: 1f1f85f573e92d0c0dfd86bd257d0588b54b3ca574eaf15665f4bb6f648d9fda
+SHA512: 89d883dde4e616acd891581c12b0b257264f00a8eaba641e2faec58ef6e6cccb666a2dbe792ffd753c6639ee41f832c7a5d4f19dc35bcec45978e0736009b7ce
+Description: BSD editline and history libraries (development files)
+ Command line editor library provides generic line editing,
+ history, and tokenization functions.
+ .
+ It slightly resembles GNU readline.
+
+Package: libedit0
+Architecture: iphoneos-arm64e
+Version: 3.1-20221030
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 216
+Depends: libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0)
+Filename: pool/main/iphoneos-arm64e/1800/libedit/libedit0_3.1-20221030_iphoneos-arm64e.deb
+Size: 82210
+MD5sum: dfe2de06bd4226da6ca998880b2ecfa7
+SHA1: be55afb3d2c618b33b0e77b98ef24d704ea0da1a
+SHA256: 63b3388ca228c437b08acd1d3802d4ce709d1b620271bb2a2ed4b300586faaa8
+SHA512: 08186e47fddfd20fe326fad08e96c14e8b55b911d8578912211dee39c51afbb13a898735ebad89fcceb44f163dc74b7d3d15f9dfb460800e1efae7e06e8d98bc
+Description: BSD editline and history libraries
+ Command line editor library provides generic line editing,
+ history, and tokenization functions.
+ .
+ It slightly resembles GNU readline.
+
+Package: libffi-dev
+Architecture: iphoneos-arm64e
+Version: 3.4.2
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 124
+Depends: libffi8 (= 3.4.2)
+Filename: pool/main/iphoneos-arm64e/1800/libffi/libffi-dev_3.4.2_iphoneos-arm64e.deb
+Size: 33622
+MD5sum: 86cc618badea55a6fe2c64ce58173fbe
+SHA1: 9f7261d7c5f5de86ec7006413b62ca9eb9f1a47f
+SHA256: 9de1b1434ca9ef55abc260dbfdc147030d9fe66b3bd626fc3e6f4df5ddd00aa6
+SHA512: 03e384f0518837e198459b4a3431c2b69732028c8285deea10d29938f4274bc919161f2e045f1a4ee6eeb289771207e034f439e1497774b4ee8e4d47b7e5c923
+Description: Foreign Function Interface library (development files)
+ This package contains the headers and static library files necessary for
+ building programs which use libffi.
+ .
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libffi8
+Architecture: iphoneos-arm64e
+Version: 3.4.2
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 108
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libffi/libffi8_3.4.2_iphoneos-arm64e.deb
+Size: 9180
+MD5sum: 0ad60bb9509d19277698c2860c2c080c
+SHA1: 3100cb047f8f4ac9eb1a0c24eb24e10eb2018a2a
+SHA256: abbac106a97dfdd15dba14317b0e209cd48e1664f91c759acda21e6a9023a634
+SHA512: 3c294be43ec8a4ce421114cd9de06af3105885e3d3e0cb6006706931d3defa6ec80079ab57b66b72918e7063ebc925deea4e5461d2e0c1ee243e35966eeffca4
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libgcrypt20-dev
+Architecture: iphoneos-arm64e
+Version: 1.10.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2432
+Depends: libiosexec1 (>= 1.3.1), libgpg-error-dev (>= 1.37), libgcrypt20 (= 1.10.1)
+Filename: pool/main/iphoneos-arm64e/1800/libgcrypt/libgcrypt20-dev_1.10.1_iphoneos-arm64e.deb
+Size: 1150264
+MD5sum: 0d4b9e0987e36a3bab14a95d5229a719
+SHA1: e680918dacc9c9780a04d4f7b507167bb564aee5
+SHA256: 57ce6af5f2545f8560d287b1a92ba9258bc88b0ae0df03cbbff802258921ce8e
+SHA512: 31eb27e25f69cca38609c539719e3146989d8c9d41e281c0cd424c93b4834e59d454a0a1faa52bc9fae2732ca04c10360a9634e8283f0684589842c8385b0a74
+Description: LGPL cryptographic algorithm library (Development files)
+
+Package: libgcrypt20
+Architecture: iphoneos-arm64e
+Version: 1.10.1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 836
+Provides: gcrypt (=1.10.1), libgcrypt (=1.10.1)
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0 (>= 1.37)
+Conflicts: gcrypt (<<1:0), libgcrypt (<<1:0)
+Replaces: gcrypt, libgcrypt
+Filename: pool/main/iphoneos-arm64e/1800/libgcrypt/libgcrypt20_1.10.1_iphoneos-arm64e.deb
+Size: 451058
+MD5sum: 7e5642dd6481d3883e8eb9f749841f6d
+SHA1: ee31edab257459ac072257fc2dc29edba4bd09d2
+SHA256: 93f5d354682d3c02b016257d1807361edd35da7e87489f765519dd2ac234b3a3
+SHA512: 66d5b77777a1a7df668470168ccc31708721be0abc4cdffff29b057c3d08932188355e60f85f053c650e1994ef0456609b7f94656b9bbe7759c18ff4d9d6698e
+Description: LGPL cryptographic algorithm library (Libraries)
+
+Package: libgmp-dev
+Architecture: iphoneos-arm64e
+Version: 6.2.1-3
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2608
+Depends: libgmp10 (= 6.2.1-3), libgmpxx4ldbl (= 6.2.1-3)
+Filename: pool/main/iphoneos-arm64e/1800/libgmp10/libgmp-dev_6.2.1-3_iphoneos-arm64e.deb
+Size: 743082
+MD5sum: 53a31397151ba5acecf0d596ed434518
+SHA1: a3a869d9034d5f9614b75c1154982e85899d2d3f
+SHA256: aa7041be5a64dc2845d90f6b5ed13de6efcb7870f66e1b08f31f43347b57e29f
+SHA512: 708704d98e0f7b18961d3b70a7b7c1357f15d0964f7c738519eea031e03293dc7e9a2412857834518e9b5bd64538843c468265fe51eb00bd74b43943a3333286
+Homepage: https://gmplib.org/
+Description: Multiprecision arithmetic library developers tools
+ This development package provides the header files and the symbolic
+ links to allow compilation and linking of programs that use the libraries
+ provided in the libgmp10 package.
+ .
+ Both C and C++ bindings are present in this package.  Package
+ libstdc++-dev is required to use the C++ bindings.  
+ .
+ The MPFR library (multiple-precision floating-point) used to be
+ included, but has since been moved to package libmpfr-dev.
+
+Package: libgmp10
+Architecture: iphoneos-arm64e
+Version: 6.2.1-3
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 560
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libgmp10/libgmp10_6.2.1-3_iphoneos-arm64e.deb
+Size: 286716
+MD5sum: b16d37b11c53a53b18bae1d9a48b4718
+SHA1: 50908268bf4b992c3e0830c3e79334247017591f
+SHA256: 385a1e36f008c68b5c27030716dca86be2e8c800684ad398a58bd25d9aa13c8a
+SHA512: dd6b24237c826666b6a0f744b76cf30e56a7a206429954c6f928c676e2be02554a0a40d9b7ea594830033e4ccc7f9a336ac58fd59df4d5b838198dc461950c0e
+Homepage: https://gmplib.org/
+Description: Multiprecision arithmetic library
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+ .
+ It has a rich set of functions, and the functions have a regular
+ interface.
+
+Package: libgmpxx4ldbl
+Architecture: iphoneos-arm64e
+Version: 6.2.1-3
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 124
+Depends: libiosexec1 (>= 1.3.1), libgmp10 (= 6.2.1-3)
+Filename: pool/main/iphoneos-arm64e/1800/libgmp10/libgmpxx4ldbl_6.2.1-3_iphoneos-arm64e.deb
+Size: 38652
+MD5sum: 1a9b93ae8aef52809ef13ecb48a75989
+SHA1: de18032296cb665c9e62e61b964acb7bf61e8c95
+SHA256: 8a8a5c36e89e1261196dc16d2daf0fd6f9f522abf2c18f9c5cd38f346a0777d9
+SHA512: 2a81f958006b0e596ca4f012c5a9401a850ae49c3a9f440ee446faa925dd4e3aac302a7833f6b40b93d402fad383ae06b2a5f01e3e0afdecd9d4244e603b7616
+Homepage: https://gmplib.org/
+Description: Multiprecision arithmetic library (C++ bindings)
+ GNU MP is a programmer's library for arbitrary precision
+ arithmetic (ie, a bignum package).  It can operate on signed
+ integer, rational, and floating point numeric types.
+
+Package: gpgrt-tools
+Architecture: iphoneos-arm64e
+Version: 1.46
+Multi-Arch: foreign
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 900
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0 (= 1.46)
+Conflicts: libgpg-error (<< 1.46)
+Filename: pool/main/iphoneos-arm64e/1800/libgpg-error/gpgrt-tools_1.46_iphoneos-arm64e.deb
+Size: 207544
+MD5sum: 11c1ccec56004af806dd13aa32a70c82
+SHA1: 9c3cfebf6e5019aed650b43e141c40dfcf3d4fe7
+SHA256: f3564ef9f33da797492e060f2aca2c7009923b1cd2b3ec64ec160bc108d7a0d3
+SHA512: a6a6a26ba716ed0529d92d6d734cd63d36ab6d00a33af95b04340af045579fa00a8698a83124808b70d06e20b4804d2f746a467f2f9fad1c60a889f34ad8c220
+Description: gpgrt (also known as libgpg-error) defines common error values, messages, and common runtime functionality for all GnuPG components. This package contains yat2m, a Texinfo to nroff/troff converter useful for building manpages, and gpg-error, a binary for deciphering GnuPG/libgcrypt error codes.
+
+Package: libgpg-error-dev
+Architecture: iphoneos-arm64e
+Version: 1.46
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 532
+Filename: pool/main/iphoneos-arm64e/1800/libgpg-error/libgpg-error-dev_1.46_iphoneos-arm64e.deb
+Size: 212860
+MD5sum: 5f5347acbcac772a9d7a7ff3468f2cb5
+SHA1: de439498d0902f4dabc9aa7111be2ee534db7d53
+SHA256: ca67e4f7778124bad4ec62d2615c6860d93e9c2129aef96651e12e2c96d36e5a
+SHA512: cff8648fd04d532418b4f8487dd5ae876b305ef3dc5b5c410552c80b84283e2db56d0e7a0eed962478203c53905161263de7d29ba70833feba6c3d360cf8e365
+Description: GnuPG development runtime library (developer tools)
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+ .
+ This package contains the headers and other files needed to compile
+ against this library.
+
+Package: libgpg-error0
+Architecture: iphoneos-arm64e
+Version: 1.46
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 216
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/libgpg-error/libgpg-error0_1.46_iphoneos-arm64e.deb
+Size: 83938
+MD5sum: 2c4573244f9a0953e93ea4cbccd61079
+SHA1: a2aa772b227226c7db155ec78c7559476631f0cf
+SHA256: ae3c0996f789ff740963affa71a3764aa529559044e0fc215edbf96386509041
+SHA512: fa2467783e50b2bf2e189c44d570c76a4fc7d522d6130f234a08a4aeb1c756a8eb7bd074061702099a4cc606ac5c811cfa252bcf893a8e4349f9ecb249ff4723
+Description: GnuPG development runtime library
+ Library that defines common error values, messages, and common
+ runtime functionality for all GnuPG components.  Among these are GPG,
+ GPGSM, GPGME, GPG-Agent, libgcrypt, pinentry, SmartCard Daemon and
+ possibly more in the future.
+ .
+ It will likely be renamed "gpgrt" in the future.
+
+Package: idn2
+Architecture: iphoneos-arm64e
+Version: 2.3.4
+Multi-Arch: foreign
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 96
+Depends: libiosexec1 (>= 1.3.1), libidn2-0 (= 2.3.4)
+Conflicts: libidn2 (<< 2.3.4)
+Replaces: libidn2 (<< 2.3.4)
+Filename: pool/main/iphoneos-arm64e/1800/libidn2/idn2_2.3.4_iphoneos-arm64e.deb
+Size: 21964
+MD5sum: fb11828737fe1ce020302e427dd6527f
+SHA1: 2f00a390b8b98b6bc08c245d9c4e27f655225df1
+SHA256: c9f57599a26e6f18de25c5dc733bba5c2fe6c85d3d4217c91e3b4b0a2069c599
+SHA512: 6d003a59baae570ab167b41934e00d31970225f1cd4468890bd15101ad1ab6cc1448ac95fc236bdbf6edd5a9de27b0423386e54ca81bf3f61e3e867d89737d8f
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Internationalized domain names (IDNA2008/TR46) command line tool
+
+Package: libidn2-0
+Architecture: iphoneos-arm64e
+Version: 2.3.4
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 396
+Provides: libidn2 (= 2.3.4)
+Depends: libiosexec1 (>= 1.3.1), libintl8, libunistring5
+Conflicts: libidn2 (<< 2.3.4)
+Replaces: libidn2 (<< 2.3.4)
+Filename: pool/main/iphoneos-arm64e/1800/libidn2/libidn2-0_2.3.4_iphoneos-arm64e.deb
+Size: 118548
+MD5sum: 7f0fdcf755f985037826e78d34308948
+SHA1: 3d4ba6802b107bad4f49b0df20a2962aa9446f79
+SHA256: 7f7a4ebaac28ed59c120c54b5aec0008f9577ec982966687de0df9f64ab372f5
+SHA512: b3f1fb505a5e54862fbe20e28f270c3dddf2ab91d9c1b55aba70820e25c6909ea8c93e5d3ec20196198c8f5801ff3c3861f630383a6bdd589ec4f2b10d271bf0
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Internationalized domain names (IDNA2008/TR46) library
+
+Package: libidn2-dev
+Architecture: iphoneos-arm64e
+Version: 2.3.4
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 480
+Depends: libidn2-0 (= 2.3.4)
+Conflicts: libidn2 (<< 2.3.4)
+Replaces: libidn2 (<< 2.3.4)
+Filename: pool/main/iphoneos-arm64e/1800/libidn2/libidn2-dev_2.3.4_iphoneos-arm64e.deb
+Size: 216104
+MD5sum: 94275508cf17efd326d097bb1126094b
+SHA1: 28e0199b64af4aafd2fdd33ae2fbd58572f9ecaf
+SHA256: fab4601f6b4e0ce4f1666ddc4e24d43ab63781f4e0e1aebb9320061d9ec9a419
+SHA512: 8962a33faf919bbbd4c245ede593c6bb4ec772bddddb81590b2c5fdcc3dbbc1253d9a10d28df04dcc53fc119d0e54391ce5ec1af253673a51d873638a00adf91
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Description: Internationalized domain names (IDNA2008/TR46) development files
+
+Package: libiosexec-dev
+Architecture: iphoneos-arm64e
+Version: 1.3.1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 80
+Depends: libiosexec1 (= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libiosexec/libiosexec-dev_1.3.1_iphoneos-arm64e.deb
+Size: 30906
+MD5sum: 9525f77027bf34abe4afa68afa5d23b4
+SHA1: 643b772ca1bd2870eabcf9002756782d501137dc
+SHA256: bbcf1d05699b4f39f9d1f2b1a488a67f4d4952a0374613a8a9adaf58e8519db8
+SHA512: 0933853c299db9ee5f79579cc5557ee25cb30ad95f80a056f96b35176ea96f3e0181a1c5db69ddcb25afa50cd5494fbae5059d1d71ca2f1134d05c37e8e62e64
+Homepage: http://github.com/ProcursusTeam/libiosexec
+Description: development files for libiosexec
+
+Package: libiosexec1
+Architecture: iphoneos-arm64e
+Version: 1.3.1
+Priority: required
+Essential: yes
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 76
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libiosexec/libiosexec1_1.3.1_iphoneos-arm64e.deb
+Size: 10376
+MD5sum: 8b508fdd00f8e93adcf5743c73b41502
+SHA1: 9be629545417cb3263dd97f5dd9b05f6363e31b4
+SHA256: 3cdab3a7172131283ef2b6d733f3727d0f56e63bde8055c5ea85f0131b1d44c1
+SHA512: 43b2fd0fe63a22259572a0eea95a55affe9828b693b1e5ab3b7354f73be1fa96117bc70f529502eb809d9d27c6f5119b6254d8a2b254e2d3448b7151c136ddeb
+Homepage: http://github.com/ProcursusTeam/libiosexec
+Description: shim for execve w/ shell script support
+
+Package: libkrw-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 16
+Depends: libkrw0 (= 1.1.1)
+Filename: pool/main/iphoneos-arm64e/1800/libkrw/libkrw-dev_1.1.1_iphoneos-arm64e.deb
+Size: 4090
+MD5sum: badd5535b3e5fface93d39bce4a9f636
+SHA1: 3e5a32b904bdea779138599c6320e893f706d97c
+SHA256: 0fd43c2c03a8f7a63d767f04fcc6ca9409d6dc4d6b097bc4fa9ba1af4a37e2c8
+SHA512: 22052b37d63588d30c359daa39bc1a7ac1b9f8f1430c6577f79d38985298f52460f485ee76057db1cc0fcf0a977e91444034b869bbf145ef9b4b667f8658e7af
+Homepage: https://github.com/Siguza/libkrw
+Description: A kernel R/W API for jailbreaks (Development Files)
+Author: Siguza
+
+Package: libkrw0-tfp0
+Architecture: iphoneos-arm64e
+Version: 1.1.1
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 56
+Provides: libkrw0-plugin
+Depends: libiosexec1 (>= 1.3.1), libkrw0
+Filename: pool/main/iphoneos-arm64e/1800/libkrw/libkrw0-tfp0_1.1.1_iphoneos-arm64e.deb
+Size: 3856
+MD5sum: d9766d638c7edbc9824b85dfbe5ae740
+SHA1: f9e4b667d48b720494d912a1e19cb015cb617cd1
+SHA256: 41350938122303aaee7bdafdacbab2fd6cbeae3ea6cba84c348abb6f3c4bbe87
+SHA512: b3e7df8e15c6662c93bffec9e70ab9dcacba7a5558e72ed5e2b68258393565ccc21340f154ba7d860c4b7ddfa8741689d166ab77d1a0b946d828ec83c36569b0
+Homepage: https://github.com/Siguza/libkrw
+Description: Plugin for libkrw that interfaces with tfp0 (Shared Library)
+Author: Siguza
+
+Package: libkrw0
+Architecture: iphoneos-arm64e
+Version: 1.1.1
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 56
+Provides: libkrw (= 1.1.1)
+Depends: libiosexec1 (>= 1.3.1), libkrw0-plugin
+Filename: pool/main/iphoneos-arm64e/1800/libkrw/libkrw0_1.1.1_iphoneos-arm64e.deb
+Size: 4334
+MD5sum: 980a0d2cf84475daf8b34990403dbc23
+SHA1: f92f0d5f4842c06992420f02f4659de352b2521b
+SHA256: f7c5d51f65b4c053dfc4040b374180f483802d6fafde2d105df77cdac51942da
+SHA512: 2a39ebc648c5ee8f70e5b4f49ea400553bfd157cfb58704e29c7446caa165efa885c235aa52da983631063541035341b7ed79abcbc4bb7065d96d2e14527194a
+Homepage: https://github.com/Siguza/libkrw
+Description: A kernel R/W API for jailbreaks (Shared Library)
+Author: Siguza
+
+Package: libksba-dev
+Architecture: iphoneos-arm64e
+Version: 1.6.0
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 652
+Depends: libksba8 (= 1.6.0), libgpg-error-dev
+Filename: pool/main/iphoneos-arm64e/1800/libksba/libksba-dev_1.6.0_iphoneos-arm64e.deb
+Size: 335386
+MD5sum: 1bc404f5b492a00e84bc14db3d8c881b
+SHA1: 9a475a56d790fb433cce28f8b7e076d5c10b27a6
+SHA256: 15574d300ec827abbf5c1848c3669dce26fc0c09f3bdbda8265fa619495e3f62
+SHA512: 3b2d42637349097befd28790d70c4e9ba65495f248bd9e93ed4d1dcf4dd7d94352d7d04c452917f57094dd0acb6a5dde56b53565058c9c6311ba7ad22a9d3358
+Description: X.509 and CMS support library - development files
+ KSBA (pronounced Kasbah) is a library to make X.509 certificates as
+ well as the CMS easily accessible by other applications.  Both
+ specifications are building blocks of S/MIME and TLS.
+ .
+ KSBA provides these subsystems: ASN.1 Parser, BER Decoder, BER
+ Encoder, Certificate Handling and CMS Handling.
+ .
+ This package contains the development library files.
+
+Package: libksba8
+Architecture: iphoneos-arm64e
+Version: 1.6.0
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 284
+Depends: libiosexec1 (>= 1.3.1), libgpg-error0
+Filename: pool/main/iphoneos-arm64e/1800/libksba/libksba8_1.6.0_iphoneos-arm64e.deb
+Size: 111630
+MD5sum: 79a10975c43f2960f5bf7228373a6f92
+SHA1: 76ab0ce8b53ff4e1dcea2e84c56e0dc3bb4ec3f7
+SHA256: 9fedb9aba409239171ddcfdfefa29db83509e14944a4f8584f1bf5c6ad02b76b
+SHA512: 57f04d2bf2f2a4cb079a6a0109797406d2501b89842e1aa5d509a79ce02b5b24c44d5351891f9fb0160a6f198a402d8b32665105894035f2aa6f485b12aceecb
+Description: X.509 and CMS support library
+ KSBA (pronounced Kasbah) is a library to make X.509 certificates as
+ well as the CMS easily accessible by other applications.  Both
+ specifications are building blocks of S/MIME and TLS.
+ .
+ KSBA provides these subsystems: ASN.1 Parser, BER Decoder, BER
+ Encoder, Certificate Handling and CMS Handling.
+ .
+ This package contains the runtime library files.
+
+Package: libmd-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.4-1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 180
+Depends: libmd0 (= 1.0.4-1)
+Filename: pool/main/iphoneos-arm64e/1800/libmd/libmd-dev_1.0.4-1_iphoneos-arm64e.deb
+Size: 56994
+MD5sum: 8c7754aa2dd07786eeda2639677e2414
+SHA1: ea242804a649578be98fcd0badb2c2a9684f21c1
+SHA256: a6bfba154feedc7a38c10ac91746f7ddb4c3d0933de858473f36eb3d8e94dcf3
+SHA512: 542fe684ec64dd5a1d134df49597dc2de42095c24435c6f91ccf1c7034674baa2807990ac1dc02ba3e388733aa534fa5c32939db60a1c82b0494d0fb0b44b068
+Description: message digest functions from BSD systems - development files
+ This package contains the header files and static library needed to
+ compile applications that use libmd.
+ .
+ The currently provided hashing algorithms are:
+ .
+  * MD2
+  * MD4
+  * MD5
+  * RIPEMD-160
+  * SHA-1
+  * SHA-2 (SHA-256, SHA-384 and SHA-512)
+
+Package: libmd0
+Architecture: iphoneos-arm64e
+Version: 1.0.4-1
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 100
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libmd/libmd0_1.0.4-1_iphoneos-arm64e.deb
+Size: 22734
+MD5sum: 569e9148ab5d168a1d5a59198d924f4e
+SHA1: f6b8e915eb33b0625e8aac08fcd671f90c1a40f1
+SHA256: 4ee0e0199bbe40f5b742c206c1c8f982bff38d252988a1bfe492935937b6de1e
+SHA512: 9ae910b726184c98ff16964393af895cc2b423f3a567d6f725581bdb059b2d40d07c68d74b446123928420a454ee6b359ec97bf5196486f17df676323c918820
+Description: message digest functions from BSD systems - shared library
+ The libmd library provides various message digest ("hash") functions,
+ as found on various BSDs on a library with the same name and with a
+ compatible API.
+
+Package: libplist++-dev
+Architecture: iphoneos-arm64e
+Version: 2.2.0+git20230130.4b50a5a
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 256
+Depends: libplist++3v5 (= 2.2.0+git20230130.4b50a5a)
+Conflicts: libplist (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libplist/libplist++-dev_2.2.0+git20230130.4b50a5a_iphoneos-arm64e.deb
+Size: 73020
+MD5sum: ff6a1159af04c2747c13911c3965901e
+SHA1: 6bb5517b809dc3de1be3e94f1433f219cf04d4fe
+SHA256: 0bdd0af354309593309b212fbaa9ddc188d77d5ab87ad7284fc32ac840433f82
+SHA512: 7899e394680a3dc79443f3554ae5eeaef5314a37d1b47f2da385cc59dc8b3e9614bb94ab0857f4f4bdfbe82f5d13b7fb71d2aae8e6761f615aed5b6842ce9b69
+Description: C++ library for handling Apple binary and XML property lists - devel
+
+Package: libplist++3v5
+Architecture: iphoneos-arm64e
+Version: 2.2.0+git20230130.4b50a5a
+Priority: standard
+Section: Networking
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 116
+Depends: libiosexec1 (>= 1.3.1), libplist3 (>= 2.2.0)
+Conflicts: libplist (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libplist/libplist++3v5_2.2.0+git20230130.4b50a5a_iphoneos-arm64e.deb
+Size: 29842
+MD5sum: 97282523aad39bb8adad33532eddfde6
+SHA1: 624e26a94fa6078b914a37f4f481b8ce48c284b3
+SHA256: 7f6aca5a28366be68c66b0c01e70562c819ec4da009478a619942a3e4c7233af
+SHA512: 7dad8caeb0c82edeb45467928eff286f80efbf2d4b40c99eacf8d294f673ea5dc03abc6a762cf4c2029045b395b1efa2b1962e6301a98c84d91b41584abfe36d
+Description: C++ Library for handling Apple binary and XML property lists
+
+Package: libplist-dev
+Architecture: iphoneos-arm64e
+Version: 2.2.0+git20230130.4b50a5a
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 284
+Depends: libplist3 (= 2.2.0+git20230130.4b50a5a)
+Conflicts: libplist (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libplist/libplist-dev_2.2.0+git20230130.4b50a5a_iphoneos-arm64e.deb
+Size: 125438
+MD5sum: f20717df8368aad628a5872fad983669
+SHA1: 253a0a2856b080a78d7aa7d1a4aefba80b92cbe3
+SHA256: 660612a7c1de52c475c42a66320fd176664a19f7b4048048e75300ed54dccbf0
+SHA512: 62261373ec5d9bdb9d89cf47ac01493bb4c90a8bf4ac827192e748a3fe2af820c0bc7465aee68fc6e3679708dbf1cb72a175d9874754aea85dad4990f92df169
+Description: Library for handling Apple binary and XML property lists - devel
+
+Package: libplist-utils
+Architecture: iphoneos-arm64e
+Version: 2.2.0+git20230130.4b50a5a
+Priority: standard
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 84
+Depends: libiosexec1 (>= 1.3.1), libplist3 (>= 2.2.0)
+Conflicts: libplist (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libplist/libplist-utils_2.2.0+git20230130.4b50a5a_iphoneos-arm64e.deb
+Size: 17552
+MD5sum: c58ac8afc8cba91f7edef9e715f12d2b
+SHA1: f5b734a1506cf8ee5ec144039c7d3ded961ed79c
+SHA256: d97d9e0e7cb49eb8e0fbd00efa18fc8cf484e1c0ddea139a4a5bae7b7998d856
+SHA512: bbfd063b1473b7ad78ecd49bc0312534d74883c327e149a35ca4e55981400e235ccc0f4f37898c9667df35a2e745304e39676c24e2d7375ed317a7f2116d5e9a
+Description: Apple property list converter
+
+Package: libplist3
+Architecture: iphoneos-arm64e
+Version: 2.2.0+git20230130.4b50a5a
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 132
+Provides: libplist (= 99)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: libplist
+Replaces: libplist
+Filename: pool/main/iphoneos-arm64e/1800/libplist/libplist3_2.2.0+git20230130.4b50a5a_iphoneos-arm64e.deb
+Size: 44928
+MD5sum: c7892ff825d03c6ce77136b1622ec0ba
+SHA1: 7817a1a236dfc6d5761ebe28c6ae95cb0869cf47
+SHA256: 0079d4a5bfcc191ffed8d50b305f702b703d69a6f34e7680bef6374a31dff9a5
+SHA512: efec2685b5968ff971b3c3675c2b951d3db40afd0b3fa1bf04feafd9963980bdc0789935f3d2e9b3fbf509895cb3c0390effd28b72f52b6a3bc2289834e26222
+Description: Library for handling Apple binary and XML property lists
+
+Package: libtasn1-6-dev
+Architecture: iphoneos-arm64e
+Version: 4.18.0
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 392
+Depends: libtasn1-6 (>= 4.18.0)
+Conflicts: libtasn1 (<< 4.18.0)
+Filename: pool/main/iphoneos-arm64e/1800/libtasn1/libtasn1-6-dev_4.18.0_iphoneos-arm64e.deb
+Size: 156870
+MD5sum: f43a8b06baeb04d0df4729a7f43eb3b0
+SHA1: 81be3c0765d3764396cbd731f282d96e6ed8d193
+SHA256: 9544802bcdf80c0ea2530edfc5faa57c04a19c5bdee342395708f2485806edeb
+SHA512: f5c388d67ce06726f823ab68242a914c0f59863b54f8f061fff8b3b34933ea645262018a6b8deee9a80853732feb09a2046fbfb826f0a9082a8e591463e6327e
+Homepage: https://www.gnu.org/software/libtasn1
+Description: Manage ASN.1 structures (development)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains header files and libraries for static linking.
+
+Package: libtasn1-6
+Architecture: iphoneos-arm64e
+Version: 4.18.0
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 132
+Provides: libtasn1 (= 4.18.0)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: libtasn1 (<< 1:0)
+Replaces: libtasn1 (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/libtasn1/libtasn1-6_4.18.0_iphoneos-arm64e.deb
+Size: 44316
+MD5sum: e00e209bf3e158a08ef389256479c17a
+SHA1: 022d0bf4498f7f6b6a7d145df82f11ec32084eff
+SHA256: 66408dfe5f78a5036b1f016e13bf2d2f1a63723dcf672d2ff1910f45d614d1fd
+SHA512: 65b9c53520486a753cb26917774105428cb816ee8aa31929774c9c02931ccf20e32d5938fdada395eab31761c5175b0786c4266a156498d7028c79d9ce22ed55
+Homepage: https://www.gnu.org/software/libtasn1
+Description: Manage ASN.1 structures (runtime)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains runtime libraries.
+
+Package: libtasn1-bin
+Architecture: iphoneos-arm64e
+Version: 4.18.0
+Multi-Arch: foreign
+Priority: optional
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 204
+Depends: libiosexec1 (>= 1.3.1), libtasn1-6 (>= 4.18.0)
+Conflicts: libtasn1 (<< 4.18.0)
+Filename: pool/main/iphoneos-arm64e/1800/libtasn1/libtasn1-bin_4.18.0_iphoneos-arm64e.deb
+Size: 27190
+MD5sum: 5b3e7e3e8d1f4465bdcd199763795796
+SHA1: 11202489d1d76724e7049bf9be803dad8caf17a7
+SHA256: c724076f09b3a8ee158721e18454eadf2bdfc12c8e77de20128dbcc2461f7cf6
+SHA512: 041778e368f5eafe84690b8ec59f5f43fc082d8e39f9648c747fbccff7cac34aa2146042b54b53e86369a1a142ad6058b1e8661cd4c801f447d6c42bb9cd35b0
+Homepage: https://www.gnu.org/software/libtasn1
+Description: Manage ASN.1 structures (binaries)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains programs to encode, decode and parse asn1 data
+ structures.
+
+Package: libunistring-dev
+Architecture: iphoneos-arm64e
+Version: 1.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4132
+Depends: libunistring5 (>= 1.1)
+Conflicts: libunistring (<< 1.1)
+Replaces: libunistring (<< 1.1)
+Filename: pool/main/iphoneos-arm64e/1800/libunistring/libunistring-dev_1.1_iphoneos-arm64e.deb
+Size: 1331874
+MD5sum: 5f29cc34f9d67a2286a78c50acf1897f
+SHA1: ad7e71934b317200e7790b9550b5e8c7cf8f7fd9
+SHA256: 4ec6c8f0ca6d9029bdf5b8d07671d2201662cd8df73a0ae16a031a19d17f1b2c
+SHA512: 575adf151dde210594371a3a6ef11d12ab644dfbeefe170282c85f96af59938d9e683ae4a034e27ee1a659532a2e4b1c550e09b209cd0cbafe710347829a8ba8
+Homepage: https://www.gnu.org/software/libunistring/
+Description: Unicode string library for C - development files
+
+Package: libunistring5
+Architecture: iphoneos-arm64e
+Version: 1.1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1808
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libunistring/libunistring5_1.1_iphoneos-arm64e.deb
+Size: 722508
+MD5sum: 5bacaeb97bb140c01049f5f69d6f21a0
+SHA1: c37278a490cb01320da92e36aa9c429cc406b37f
+SHA256: 08123424ad3d6a0a9e4c5859ab10fcc3c4b437e45269cf2b1656c88ce0928090
+SHA512: f6ac4044a1ec71d8471689f5a037cec872384838563aceb554024e47b198e4f81ee619ffe67f6d270b455f309057d5b92302aff6d4ab5dee81c3900d0c291921
+Homepage: https://www.gnu.org/software/libunistring/
+Description: Unicode string library for C
+
+Package: libcrypt-dev
+Architecture: iphoneos-arm64e
+Version: 4.4.33
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 316
+Depends: libcrypt2 (= 4.4.33)
+Filename: pool/main/iphoneos-arm64e/1800/libxcrypt/libcrypt-dev_4.4.33_iphoneos-arm64e.deb
+Size: 129154
+MD5sum: dd326f9ce3cfcbfc39ecb70daad1d1a3
+SHA1: 6523d122cc25973fb468a81cdbaae0d3c1daf5df
+SHA256: 9162db228d1deee137b7bd242aebb0fb0fbd562870fcc11b945c1238a45f8c86
+SHA512: 93ba08ac7553d6a7f24ef3e9f273d97735cd0d036cb393f409c24beb95995faff8fa55aae5bc8ea4342c3eb9141b4f7df9bbdb70de889c0013fe2e22c180536a
+Description: libcrypt development files
+ This package contains the files needed for developing applications that
+ use libcrypt.
+
+Package: libcrypt2
+Architecture: iphoneos-arm64e
+Version: 4.4.33
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 252
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libxcrypt/libcrypt2_4.4.33_iphoneos-arm64e.deb
+Size: 102746
+MD5sum: 90aad7c3c6b379b03975085060ec4a4f
+SHA1: 8058e9ceb152b97f658354fcd4bbd64463662830
+SHA256: 0e50fb9650dbaf2bc713defe7ee7abb80f1345c5c14de4033e63fa01f358a3ad
+SHA512: e708c63aaaff890517edd86438c94bc44aaec7fcb9b1f264a5185797425e7bdad748b8e26fb56fef42dfe203e5e5eec1c745864fe6e74efcdb87d674c59695a8
+Description: libcrypt shared library
+ libxcrypt is a modern library for one-way hashing of passwords.
+ It supports DES, MD5, NTHASH, SUNMD5, SHA-2-256, SHA-2-512, and
+ bcrypt-based password hashes
+ It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
+ as well as a set of extended interfaces like 'crypt_gensalt'.
+
+Package: liblz4-1
+Architecture: iphoneos-arm64e
+Version: 1.9.3
+Priority: important
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 164
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: lz4 (<< 1.9.3)
+Filename: pool/main/iphoneos-arm64e/1800/lz4/liblz4-1_1.9.3_iphoneos-arm64e.deb
+Size: 57880
+MD5sum: baece35b5fb47f513c2ae3e48a03e096
+SHA1: 6c142aaf872e568cf4eb30b71faa7e35888ec55c
+SHA256: 89721d711e1cc20812ccbd2ebc97674147ce34229cb9ba777052a135d6d833c1
+SHA512: b42a61289dc91886be24743a460702369e016e41d370fe52c826f821325439ea9ff4fa6e584dc3b926fa64ee005148fb851f99e35d3df28f44d136b129df0045
+Homepage: http://tukaani.org/lzma/
+Description: Fast LZ compression algorithm library - runtime
+
+Package: liblz4-dev
+Architecture: iphoneos-arm64e
+Version: 1.9.3
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 344
+Depends: liblz4-1 (= 1.9.3)
+Conflicts: lz4 (<< 1.9.3)
+Filename: pool/main/iphoneos-arm64e/1800/lz4/liblz4-dev_1.9.3_iphoneos-arm64e.deb
+Size: 194408
+MD5sum: 7d957a20d54f26c71f86e8e4c4ef0ef1
+SHA1: e51d7f330a672d060c3bab7e56be8fe18f3c3853
+SHA256: e1642bd7552166cd516cdc3ff8b09f89d2b08805c14a30b6f3c2f9f242fcdad2
+SHA512: aea392330e1a687578c9c9b1c757b8cae8ce6e8522e99e3de51770bf1f82f7f6e8f36720aa24e33d5ded2c7d9e52c766eaee0eaa08b5cbafa5aa97f03a042965
+Homepage: http://tukaani.org/lzma/
+Description: Fast LZ compression algorithm library - development files
+
+Package: lz4
+Architecture: iphoneos-arm64e
+Version: 1.9.3
+Multi-Arch: foreign
+Priority: important
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 220
+Depends: libiosexec1 (>= 1.3.1), liblz4-1 (= 1.9.3)
+Filename: pool/main/iphoneos-arm64e/1800/lz4/lz4_1.9.3_iphoneos-arm64e.deb
+Size: 84748
+MD5sum: 4ac6697f4eef99ca0f63a26fca3b7b73
+SHA1: 7d1f762134916a89c57e06a4180bc02784779c16
+SHA256: 7c8c6e13ae805ee22a773eef9a668ee97d5cd898bf09500b3882305ed9d18b72
+SHA512: 9efa479a3cc8eb3782010260f9ad49fe5cef95b7d165529bbe1c74e6c50b53ffa775b7459557ac43a4d73baa2049ad080df295271280e18c22f67c86fef1d155
+Homepage: http://tukaani.org/lzma/
+Description: Fast LZ compression algorithm library - tool
+
+Package: libncurses-dev
+Architecture: iphoneos-arm64e
+Version: 6.4
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2848
+Depends: libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Filename: pool/main/iphoneos-arm64e/1800/ncurses/libncurses-dev_6.4_iphoneos-arm64e.deb
+Size: 1130630
+MD5sum: 3b7dcc89f12fb9161d6abc029abdb284
+SHA1: 89c3fb623e07bce85668bafba523fbc04992ab3c
+SHA256: afe8995ee45e787375dca7ba03c0d73e3d6af8554ebea0d5f2a23984ab2cbd22
+SHA512: 42e9a0788554b84fe7603c67b8e49957f7ca6c81ed2a6a4a318d4b0af0fef81ca8a3004695ae1b26af54c4de0f949fee6e6a7c78260bfdbd489cbfd82d4b384c
+Description: developer's libraries for ncurses
+
+Package: libncursesw6
+Architecture: iphoneos-arm64e
+Version: 6.4
+Priority: required
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 776
+Provides: ncurses (= 6.4)
+Depends: libiosexec1 (>= 1.3.1), ncurses-term (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Filename: pool/main/iphoneos-arm64e/1800/ncurses/libncursesw6_6.4_iphoneos-arm64e.deb
+Size: 394892
+MD5sum: 48ace69c203e7144e2b115c6552b3b37
+SHA1: cb333dc399790fa52331090974591d19e63b7ffc
+SHA256: 3f83ddb876087224b4119758ab77c1b9b3da137c14a98fe5b6caad09d7abd9e5
+SHA512: b630b004de0db5e5484192469ec0ee05dd0d87feab1daf8f0e56c60892fec40d5607c643fb558bdcf60af95aa8dbcb544cfa3c9dbe213a6402bf7d9845e28450
+Description: shared libraries for terminal handling (wide character support)
+
+Package: ncurses-bin
+Architecture: iphoneos-arm64e
+Version: 6.4
+Priority: important
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 820
+Depends: libiosexec1 (>= 1.3.1), libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Filename: pool/main/iphoneos-arm64e/1800/ncurses/ncurses-bin_6.4_iphoneos-arm64e.deb
+Size: 366138
+MD5sum: d5983503ffe54424fd9f2396e2a6c118
+SHA1: 63b65cbd9066da5db873121b6aa1c63472143326
+SHA256: 012718cfb61970c2c895154a5a20f4672404c129adaa11744c6a680018a0a674
+SHA512: 75f18a68a2b388ef744085ff08a68ec6307364208485dcca153e737cd6347148dc6f72b3a340e6be87696d388bfe86f2c386151cf499230aff6f2a79f13f5161
+Description: terminal-related programs and man pages
+
+Package: ncurses-doc
+Architecture: all
+Version: 6.4
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 752
+Depends: libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Filename: pool/main/iphoneos-arm64e/1800/ncurses/ncurses-doc_6.4_all.deb
+Size: 525366
+MD5sum: 9e542dcb482eb36a1918c5be329fedc4
+SHA1: 5965034d59fdda530c70b7fa3404d2c0bdbef91b
+SHA256: 7fcc0ebc62a96a90f13fcf0e5b726da57cec550e92978d26188fc1974838fb41
+SHA512: 1668bdf07e5b75632d47fd339f452d9b2e19980551de161c56059d58d1a1ffde4afdcf3c89918c2d0b8c1314ceee5a7db069035f73039db8ee55565db5a111a0
+Description: developer's guide and documentation for ncurses
+
+Package: ncurses-term
+Architecture: all
+Version: 6.4
+Priority: required
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 7452
+Depends: libncursesw6 (= 6.4)
+Conflicts: ncurses (<< 6.4)
+Replaces: ncurses (<< 6.4)
+Filename: pool/main/iphoneos-arm64e/1800/ncurses/ncurses-term_6.4_all.deb
+Size: 547278
+MD5sum: d3bd7b7da7c53ffaee85d829ee757b49
+SHA1: bccf000a612a728dc79a1830963409ed3f96819d
+SHA256: 71b7e45bc1417e34d23bae0343055b5ffbbdc1bfd5380530db1d06f44eb20110
+SHA512: 5613face20eba11db159a7e480cc3d6d3830d564460ba98e49e57b258c6fb36990dc5017eb83654175d1fa78ef5711b38e8b60ba536ad2022a7a85aa78c5ea7b
+Description: This package contains terminfo data files to support most types of terminals.
+
+Package: libhogweed6
+Architecture: iphoneos-arm64e
+Version: 3.8.1
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 312
+Depends: libiosexec1 (>= 1.3.1), libgmp10, libnettle8 (= 3.8.1)
+Filename: pool/main/iphoneos-arm64e/1800/nettle/libhogweed6_3.8.1_iphoneos-arm64e.deb
+Size: 214880
+MD5sum: 40590a73023453073092986a518e2342
+SHA1: c1c0f929b3857578e1e251d80d348e6e3394db14
+SHA256: 41d3e37777fe496b5b5788fd3544e863b9141e7c7a9619153a523779fbc7f5bc
+SHA512: 1f0329865223d6b4a157ad1f2d68272e6dfc6029da328679ff274c48a1160ce32904e162ff4e04652a7ec0da659c893f38918ba2a7c48531618e8e60f37b18b6
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (public-key cryptos)
+
+Package: libnettle8
+Architecture: iphoneos-arm64e
+Version: 3.8.1
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 320
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/nettle/libnettle8_3.8.1_iphoneos-arm64e.deb
+Size: 178622
+MD5sum: 1b2ddde166b2bc75610de2fa06110c54
+SHA1: eaa14bd1a7988598d76fc55cc977d10a7d877e3a
+SHA256: 0acdb699efa44c5dbe5f01e9bcdc8dc3c84fa7c5ffe817a96f1b34e5a5ee7c0a
+SHA512: 0a0599538cbb9bfda9a1094e1f20d91937c88ff215185f9a6d8033ef9febff7fde5c043cd44ab140efc5d95395c95af08f4100bec54ae5b752a335e42b935af2
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (symmetric and one-way cryptos)
+
+Package: nettle-bin
+Architecture: iphoneos-arm64e
+Version: 3.8.1
+Priority: optional
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 364
+Depends: libiosexec1 (>= 1.3.1), libgmp10, libnettle8, libhogweed6
+Conflicts: nettle
+Replaces: nettle
+Filename: pool/main/iphoneos-arm64e/1800/nettle/nettle-bin_3.8.1_iphoneos-arm64e.deb
+Size: 47430
+MD5sum: 9a2ea0fa07b7d73397dd923cfda0a3cb
+SHA1: f66e546a39aca748dc2aa7330036df0e454bbcc6
+SHA256: d9d2de7c0fb6df462c651ea7158010e68daf0deebdab79108bf6db7835d6134e
+SHA512: ca2f0b899097715950d50ad6c27a336a9444652cc62780fa0fd785301e9a5c23182171084251667309b53eeb2681832df38028ac0ae947b5d61580c20d1afba2
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (binary tools)
+
+Package: nettle-dev
+Architecture: iphoneos-arm64e
+Version: 3.8.1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 3900
+Depends: libnettle8 (= 3.8.1), libhogweed6 (= 3.8.1)
+Conflicts: nettle
+Replaces: nettle
+Filename: pool/main/iphoneos-arm64e/1800/nettle/nettle-dev_3.8.1_iphoneos-arm64e.deb
+Size: 1326492
+MD5sum: 17f45725a1bcc3f9bfa2104865449f15
+SHA1: d63a0efa65716f63473512b929cbfced2304e6e7
+SHA256: f47695469a5c96471a4c5884de33f0ef31bfbd58581117121b31d00d4438b050
+SHA512: 8f17833731a6ab3cf603e5d8d895c07d5922918d362cd941ebd5048ef509142366720c925ce952f62185b20e31db74a1f851980624b5895c4229050ec27d61f1
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+Description: low level cryptographic library (development files)
+
+Package: libnpth0-dev
+Architecture: iphoneos-arm64e
+Version: 1.6-2
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 36
+Depends: libnpth0 (= 1.6-2)
+Conflicts: npth (<< 1.6-2)
+Replaces: npth (<< 1.6-2)
+Filename: pool/main/iphoneos-arm64e/1800/npth/libnpth0-dev_1.6-2_iphoneos-arm64e.deb
+Size: 10940
+MD5sum: fb6403ec92a43e364bb6c1d60694a65e
+SHA1: 50735a75267a11255eb620ed711d1690dff6a23b
+SHA256: 0dc84dbca7822d94df7665d3a6f72d855876832dd750e85ca471ba39ea4bb5e0
+SHA512: c66bbbbaa569679f2ac0da87c215c1526f891d720aef9e959b6cea8c60cf70d24f81aa2163ccbe676a6fb6f610686a1d87ccf94fddd632b1e9a1c7c5cfcc443d
+Description: headers for libnpth0
+
+Package: libnpth0
+Architecture: iphoneos-arm64e
+Version: 1.6-2
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 68
+Provides: npth (= 1.6-2)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: gnupth, npth (<< 1.6-2)
+Replaces: npth (<< 1.6-2)
+Filename: pool/main/iphoneos-arm64e/1800/npth/libnpth0_1.6-2_iphoneos-arm64e.deb
+Size: 7646
+MD5sum: b49dc4a411268a8c9b53ed19cbbaeba0
+SHA1: 46f808b155e0f48e222063bfb0f48b20fc8a52cb
+SHA256: baf4aaa8189ff78894252d2d732c17e0916dba5ab97015a0b16db9dd12230722
+SHA512: 815b09df2d4d699406b58dea725d5e2d46655883269f3cb7fb885e1ce594429c2a8428d50653b42fe1615c387770dfcf312e3aabb9e1678ce62e0f9f586a5e05
+Description: replacement for GNU Pth using system threads
+
+Package: libpam-dev
+Architecture: iphoneos-arm64e
+Version: 20190224
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 504
+Depends: libpam2 (= 20190224), libcrypt-dev
+Filename: pool/main/iphoneos-arm64e/1800/openpam/libpam-dev_20190224_iphoneos-arm64e.deb
+Size: 131158
+MD5sum: fc69fe75532783af4656ef50f74c9f5c
+SHA1: fcb210847a07f2f5c3dcf1ee6733c2e60d38bb72
+SHA256: 250735d5da5bb0ea044fa0f5f47ea071101ba919b8aca04f916772f900ed38b2
+SHA512: a01e879babcd46d335e847cc1c5e8f1c82ce78b886dba7237e9b2be6051066f90f238f1ae18a1a0b7acff9265497ed8aeb559c250d41889fcee4c244ca91c127
+Description: Development files for PAM
+ Contains C header files and development libraries for libpam, the Pluggable
+ Authentication Modules, a library that enables the local system
+ administrator to choose how applications authenticate users.
+ .
+ PAM decouples applications from the authentication mechanism, making it
+ possible to upgrade the authentication system without recompiling or
+ rewriting the applications.
+
+Package: libpam2
+Architecture: iphoneos-arm64e
+Version: 20190224
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 104
+Depends: libiosexec1 (>= 1.3.1), libpam-modules
+Filename: pool/main/iphoneos-arm64e/1800/openpam/libpam2_20190224_iphoneos-arm64e.deb
+Size: 20172
+MD5sum: 336b20e6b4f628befd953a9cd0b5be4d
+SHA1: ca6eacef86d52d78a323fad3b1728f2d85b2375b
+SHA256: 01009fd2cc2f104c7eb030fdb5f54028c116659308151ba902181c31db3475f8
+SHA512: 33a7c0742e7199e2aa430919172bdb70b3a5936670b2a3a1322b6d9d18245d15145874d5c6d89707ed931b87711c5fecc9f4a26be451a5344bb87893d0cee958
+Description: Pluggable Authentication Modules library
+ Contains the shared library for OpenPAM, a library that enables the
+ local system administrator to choose how applications authenticate users.
+ In other words, without rewriting or recompiling a PAM-aware application,
+ it is possible to switch between the authentication mechanism(s) it uses.
+ One may entirely upgrade the local authentication system without touching
+ the applications themselves.
+
+Package: openssh-client
+Architecture: iphoneos-arm64e
+Version: 9.2p1
+Priority: important
+Section: Networking
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 3508
+Depends: libiosexec1 (>= 1.3.1), libssl3, libcrypt2, libmd0
+Conflicts: openssh (<< 1:0)
+Replaces: openssh (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/openssh/openssh-client_9.2p1_iphoneos-arm64e.deb
+Size: 754406
+MD5sum: 81c373ef63de44ba64eddcf24fda3bf8
+SHA1: c8acd2794a41391b8aa4feef6cbce94dcaf44fa7
+SHA256: 5d7582a096214a25dc46449adf998e948349699a7e2fd15adc1045429f7ce999
+SHA512: 64e4efa38b1a1786119b036dbb1de7432a8a33ab0ab90fe800c81f44fdf418093ecf298292d5b2e605d0e2ba8bb0cd9a1bc77b1b60613de628875f09fff1e4dd
+Description: secure shell (SSH) client, for secure access to remote machines
+
+Package: openssh-server
+Architecture: iphoneos-arm64e
+Version: 9.2p1
+Priority: important
+Section: Networking
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1356
+Depends: libiosexec1 (>= 1.3.1), libssl3, openssh-client (= 9.2p1), openssh-sftp-server, libcrypt2, libpam2, libmd0
+Conflicts: com.midnightchips.localhostssh, openssh (<< 1:0)
+Replaces: openssh (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/openssh/openssh-server_9.2p1_iphoneos-arm64e.deb
+Size: 388818
+MD5sum: 36189e7259c510201a9216a504818783
+SHA1: da24c0cfc5ce95b63cf6837a3102dce2197eb83a
+SHA256: 373fd6aa44671deb15290586f12b27bfed52be2749f092e6c4f1b721c1e364f7
+SHA512: 3d550e613a4cd987648cb0ba0ae490183e52ec06aad596ebae9214da2b0bde8a9c6416ed55c13e365f9d6201615534bec798ab24eb615208a3d04086cc5e2ef3
+Description: secure shell (SSH) server, for secure access from remote machines
+
+Package: openssh-sftp-server
+Architecture: iphoneos-arm64e
+Version: 9.2p1
+Priority: important
+Section: Networking
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 136
+Depends: libiosexec1 (>= 1.3.1), libssl3, openssh-client (= 9.2p1), libcrypt2, libmd0
+Conflicts: openssh (<< 1:0)
+Replaces: openssh (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/openssh/openssh-sftp-server_9.2p1_iphoneos-arm64e.deb
+Size: 41998
+MD5sum: 9657a34d4dd2522881f8e07e332fe053
+SHA1: 6e6a101ff9187a93f815251b3b73e80328faeedc
+SHA256: 2bdc66c6ef7accfe7b004e768d03e1dd77592189f74d052e78736f237c5c4a37
+SHA512: 1af417901b969d151cd6ab00f927fdf47c622288ae16f36ab0abccff0c87c35bd8bd5a0c5ed5dff978cb31f21907e86ffa563d859750685c8e6ae7c2794d5246
+Description: secure shell (SSH) sftp server module, for SFTP access from remote machines
+
+Package: openssh
+Architecture: iphoneos-arm64e
+Version: 1:0
+Priority: important
+Section: Networking
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 8
+Depends: openssh-client, openssh-server, openssh-sftp-server
+Filename: pool/main/iphoneos-arm64e/1800/openssh/openssh_9.2p1_iphoneos-arm64e.deb
+Size: 3386
+MD5sum: ebf9dd76b09b5de8b933a7b00f3950c3
+SHA1: 550790d700bedd0928954d7cfb0f2a9fc357f6fd
+SHA256: 6400a1cd6c2ef6fda63d7cdf75aa8be99f7e180ecd4e1d31bf2a23a8d5dd28c3
+SHA512: e02aee0e2b03866ac0c85d1b6a07476f2468790229bc0fd9331814bd4df7d90c7b6e7290982aaacd5125e4630a82953cd5cd9de69a564e7e77be8e800a557b0b
+Description: secure shell client and server (metapackage)
+
+Package: libssl-dev
+Architecture: iphoneos-arm64e
+Version: 3.0.8
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 14448
+Depends: libssl3 (= 3.0.8)
+Filename: pool/main/iphoneos-arm64e/1800/openssl/libssl-dev_3.0.8_iphoneos-arm64e.deb
+Size: 5703610
+MD5sum: d70d08ae6161e90556b9db6fd1fa8810
+SHA1: 9e9f02bbd2390906508dff70e5bcb71eaa253af6
+SHA256: dc3a5766b86b2b31b3faa64207610258ed3c4946c1a901e8425d668cbaf4f51d
+SHA512: 2d2e2f797da64672cc0a2cb72d1d97642481281bcedb48165c05750310e3d08b3f9519a195d0dcafaa9ab6da6d7b09e08644956c8c53fd9f2bde429caa7245d0
+Description: Secure Sockets Layer toolkit - development files
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains development libraries, header files, and manpages for libssl
+ and libcrypto.
+
+Package: libssl-doc
+Architecture: all
+Version: 3.0.8
+Section: Documentation
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 3936
+Filename: pool/main/iphoneos-arm64e/1800/openssl/libssl-doc_3.0.8_all.deb
+Size: 2869634
+MD5sum: e7f8680e9f26b731aaf918917a132006
+SHA1: 637664204e3c573363e461ba1f98700528501964
+SHA256: 302b3a085c3f8afc6004926167b63e4a03dd4f1b866025d0b0c4a8b252f31615
+SHA512: 0b53ce65f4fc346f72ef0d90945a6d8ec415b0a4bfb09652af129aab19af8c9c54685e9633e35d6f639b86d0bbaff1279c65248c79fba8d83b79139ebf3591de
+Description: Secure Sockets Layer toolkit - development documentation
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains manpages and demo files for libssl and libcrypto.
+
+Package: libssl3
+Architecture: iphoneos-arm64e
+Version: 3.0.8
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 4016
+Depends: libiosexec1 (>= 1.3.1), ca-certificates
+Filename: pool/main/iphoneos-arm64e/1800/openssl/libssl3_3.0.8_iphoneos-arm64e.deb
+Size: 1748442
+MD5sum: b76490a2e0a10d9ad876744021329ff3
+SHA1: 7ca617f9c7d68bd68d5d34966f8e5f3f50b7c8b5
+SHA256: 21b03c282095d8a1cdda8a9c0a5ddc9469cd966124cb918b9128c98f42d2b9da
+SHA512: c9b067e0aacfac3951b134bc4284926968de8cbe5f61052a23f95af8d1fb405d93cdf569f506fa630d84a5b0d6ada25a2c9ba9980161f6bb316d49159c3fb178
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+
+Package: openssl
+Architecture: iphoneos-arm64e
+Version: 3.0.8
+Priority: standard
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 812
+Depends: libiosexec1 (>= 1.3.1), libssl3 (= 3.0.8)
+Filename: pool/main/iphoneos-arm64e/1800/openssl/openssl_3.0.8_iphoneos-arm64e.deb
+Size: 333486
+MD5sum: 180b920961808a55f4475c1ae7b7177b
+SHA1: 9a280e9612b9cf85cb248e9e584c7032f94a9f78
+SHA256: 044cb365d3edc713eb3142632c990c223483d5fd5781810ee85312edd5969e8e
+SHA512: 1a16fbe6d82c5d1453108727d399d019260c569d869d4e2d8aee105b02509e68955439983c227a125a07b0ab419a3bf60371398ed335a875b6480f31b2511b98
+Description: Secure Sockets Layer toolkit - cryptographic utility
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It contains the general-purpose command line binary /usr/bin/openssl,
+ useful for cryptographic operations such as:
+  * creating RSA, DH, and DSA key parameters;
+  * creating X.509 certificates, CSRs, and CRLs;
+  * calculating message digests;
+  * encrypting and decrypting with ciphers;
+  * testing SSL/TLS clients and servers;
+  * handling S/MIME signed or encrypted mail.
+
+Package: libp11-kit-dev
+Architecture: iphoneos-arm64e
+Version: 0.24.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 652
+Depends: libp11-kit0 (>= 0.24.1), libintl-dev, libffi-dev
+Conflicts: p11-kit (<< 0.24.1)
+Filename: pool/main/iphoneos-arm64e/1800/p11-kit/libp11-kit-dev_0.24.1_iphoneos-arm64e.deb
+Size: 90972
+MD5sum: e9eac56880f1a6a61c5aa839087f327c
+SHA1: 3c08f1d9f2ddfa9c3be8f8e4550f5626b0970bc4
+SHA256: 78e6030f1b74cab53119229c290e28b84530ad26528bc27bd9f6ab72dbc82bb6
+SHA512: 1b6582e071d996bbc91de9d96b452c700e038b7090fabecb12ff818f8a1e13618146f4ad471afeba6a4b44654c87244a209bfe1c3549d8d15c8137e9f3eb9c14
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: library for loading and coordinating access to PKCS#11 modules - development
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the documentation and development headers required
+ to build applications using the p11-kit library.
+
+Package: libp11-kit0
+Architecture: iphoneos-arm64e
+Version: 0.24.1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 928
+Depends: libiosexec1 (>= 1.3.1), libintl8, libffi8, ca-certificates
+Conflicts: p11-kit (<< 0.24.1)
+Replaces: p11-kit (<< 0.24.1)
+Filename: pool/main/iphoneos-arm64e/1800/p11-kit/libp11-kit0_0.24.1_iphoneos-arm64e.deb
+Size: 210162
+MD5sum: e771a8111c0daf4a7a2daeebf0ca093c
+SHA1: 02ee2b61a95028d5d178240b93ca39848376a59a
+SHA256: d437f98e2697f018d72892675b8443f4d6ccde9149659092b326aec028807138
+SHA512: 7223bde42166c978c5bc4ca70eaeb5c6c20c57fca43ca3eea743f0258dcf94448f530f73126eccb32ccd9278d9fd48f7e07505cd809cdf30ab0ad73aa6a9e6ae
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: library for loading and coordinating access to PKCS#11 modules - runtime
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the shared library required for applications loading
+ and accessing PKCS#11 modules.
+
+Package: p11-kit-modules
+Architecture: iphoneos-arm64e
+Version: 0.24.1
+Multi-Arch: foreign
+Priority: optional
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1056
+Depends: libiosexec1 (>= 1.3.1), libp11-kit0 (= 0.24.1), libtasn1-6, libintl8, libffi8, ca-certificates
+Conflicts: p11-kit (<< 0.24.1)
+Replaces: p11-kit (<< 0.24.1)
+Filename: pool/main/iphoneos-arm64e/1800/p11-kit/p11-kit-modules_0.24.1_iphoneos-arm64e.deb
+Size: 234720
+MD5sum: 03eca1ede81f2062ae7eb626c9063a5a
+SHA1: a88c1314233eb4e4b47a4810dae05664fa0f61c8
+SHA256: d746c6b63e13692b3383207a2bb186e06c5096302a0b06b3c87702e423b6655e
+SHA512: ba7c14ea0666d94bcb18ad45959ebb567d4cf5e0a44b1ea3ee0ffa564983fa93a2010eeaa1012bff6de25b447637d9998faf874a912e524ba11bb48c99525fbb
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: p11-glue proxy and trust modules
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the p11-kit proxy module and the system trust
+ policy module.
+
+Package: p11-kit
+Architecture: iphoneos-arm64e
+Version: 0.24.1
+Multi-Arch: foreign
+Priority: optional
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 456
+Depends: libiosexec1 (>= 1.3.1), libp11-kit0 (>= 0.24.1), p11-kit-modules (>= 0.24.1), libtasn1-6, libintl8, ca-certificates
+Filename: pool/main/iphoneos-arm64e/1800/p11-kit/p11-kit_0.24.1_iphoneos-arm64e.deb
+Size: 97410
+MD5sum: 7d2f5cee065723354054ba35668dca55
+SHA1: 14b9cd70fe729f669a5469a42142ab77cee3ce1d
+SHA256: e4469c0eba4982fbb869b8244cfbca2f4f2290e6403ff77d61cc088007897cfb
+SHA512: 550e9eca4cce48791d523fe3a0b01e779089d951c3671a26ae606cb2c90f2894d2e5e608c8e95c8c9303009c2e26c9b848c7913b153d5c87f80648b8fdebcfa0
+Homepage: https://p11-glue.github.io/p11-glue/p11-kit.html
+Description: p11-glue utilities
+ The p11-kit library provides a way to load and enumerate Public-Key
+ Cryptography Standard #11 modules, along with a standard configuration
+ setup for installing PKCS#11 modules so that they're discoverable. It
+ also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the p11-kit tool for listing PKCS#11 modules.
+
+Package: libpam-modules
+Architecture: iphoneos-arm64e
+Version: 1000.0
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 616
+Depends: libiosexec1 (>= 1.3.1), libpam2
+Filename: pool/main/iphoneos-arm64e/1800/pam-modules/libpam-modules_1000.0_iphoneos-arm64e.deb
+Size: 42274
+MD5sum: cfe3cc2125efaf1ac4d1ea51c201b08b
+SHA1: ae87d7261d3f8a308edd565973ab21e7159d3c98
+SHA256: c1d091ccb105c7851a59d8aff08e7d76e5aa3526ee327f8edd73fff64c59779d
+SHA512: 1a2ca171f7d26f0172750933a45e4545a04aa4af782c91cc6aa0d90f4a953f143c8850a269cc2d65077f1418c84cd9e3f373312187a2ed366d6e256a8527e352
+Description: Pluggable Authentication Modules for PAM
+ This package completes the set of modules for PAM. It includes the
+  pam_unix.so module as well as some specialty modules.
+
+Package: libpcre1-dev
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2588
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcre1-dev_8.45-1_iphoneos-arm64e.deb
+Size: 1582836
+MD5sum: fa251eae6725d9890af8224f489841fb
+SHA1: 2ae9d03b77e4a9d5ed423c3b44de77d4f114c27a
+SHA256: 7979b17c13e9b2856494ef852fbffaee6b721030ad5ac4b4bdedd604cf6c3a15
+SHA512: 17b964da8fa3c013e38966ee119cdc8ffb02b558c66f7643a72239806eeea189272ad2dfc4627cdcbda0051b1b7fa189d5838669bfeb875b640862e682fd0089
+Description: Old Perl 5 Compatible Regular Expression Library - development files
+ This is a library of functions to support regular expressions whose syntax 
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ New packages should use the newer pcre2 packages, and existing
+ packages should migrate to pcre2.
+ .
+ This package contains the development files, including headers, static 
+ libraries, and documentation.
+
+Package: libpcre16-0
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 428
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcre16-0_8.45-1_iphoneos-arm64e.deb
+Size: 170602
+MD5sum: d00204e6c18685fed0f56173a25ac130
+SHA1: 3a7e14e9a84269dc45368fa539122b26c8320396
+SHA256: 8aeca40d22cd099b2611bc1fff63a8347ba3071250a6ff59c72347a148d57e2f
+SHA512: 37a53ca7afc3c33fdc0db6468f651ccad36594517d092dd7c7fd7e53672aee2870aea6fafab51aa4683eaac580863e5a14aebe0dfcabc8dc962e052c5525e5c8
+Description: Old Perl 5 Compatible Regular Expression Library - 16 bit runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the 16 bit runtime library.
+
+Package: libpcre1
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 460
+Provides: pcre (= 1:0), libpcre (= 8.45-1)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre (<< 1:0), libpcre (<< 1:0)
+Replaces: pcre, libpcre
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcre1_8.45-1_iphoneos-arm64e.deb
+Size: 177794
+MD5sum: 62c008cf5df0ad4c0acb47b748c40077
+SHA1: 2f82f1eeb55a5e0b62631ef58df7c9e110c32c4a
+SHA256: 399448b2b21fe78a2b26fdf2555b360fd4ae892ca86255cc87216f686a6c4a99
+SHA512: 43064d336994b308910bff4d4483ba5720e7986941357d6181ef2e17604a895ce82ae832346d21ac57a9c861955f9ef2bf6575291c569ad85f04678b71c23c11
+Description: Old Perl 5 Compatible Regular Expression Library - runtime library
+ This is a library of functions to support regular expressions whose syntax 
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ New packages should use the newer pcre2 packages, and existing
+ packages should migrate to pcre2.
+ .
+ This package contains the runtime library.
+
+Package: libpcre32-0
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 412
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcre32-0_8.45-1_iphoneos-arm64e.deb
+Size: 161712
+MD5sum: c6eed7e5adcd8b3a6486c2cbdc0daa2d
+SHA1: 1ad42cff1d558e84b8bcc57bf3620b2944a0160e
+SHA256: 392ef7413005a26e67abc26c549c2b92150e9ddefed5958d15e066819b6298c1
+SHA512: a3a70953c5c1f64be0d0690913d75c80470e236877cf5f71689843ef7a0a7813227be9b13b6292ff29c9eecf8fa8249c4a4623743f62299fbacdb481829f35a2
+Description: Old Perl 5 Compatible Regular Expression Library - 32 bit runtime files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the 32 bit runtime library.
+
+Package: libpcrecpp0
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 100
+Depends: libiosexec1 (>= 1.3.1), libpcre1 (= 8.45-1)
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcrecpp0_8.45-1_iphoneos-arm64e.deb
+Size: 39472
+MD5sum: c0b65b830bd6b540e347904fdc32b1c5
+SHA1: 145d9b6e8e14248227f9c31a08fe483a02cd5d34
+SHA256: 1eacc26c83583a7b79dc91805d3676a2ea0cca11523a6d0a82af4717c993ff60
+SHA512: 32b369c734591aefafd4c6489a97e5888bb89a0bb1d1c94368bcf3a74628647dab14e3892427839452f1a5d4f92885cd37213b6e144896a683f3a67c6c7152b2
+Description: Old Perl 5 Compatible Regular Expression Library - C++ runtime files
+ This is a C++ library of functions to support regular expressions whose syntax 
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the C++ runtime library.
+
+Package: libpcreposix0
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 88
+Depends: libiosexec1 (>= 1.3.1), libpcre1 (= 8.45-1)
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre/libpcreposix0_8.45-1_iphoneos-arm64e.deb
+Size: 28920
+MD5sum: 3b77b7bcdfb42d0b409e890c85a5f3de
+SHA1: 89ef06191c4e5cdacc26f91ed8397b90831a4f1b
+SHA256: 52a954af6c6dbf90d17f7c032625100666ada7f9167f66c914148b4f102acee2
+SHA512: b1270cb90b51a87dc60587eb4c8a25684e984e0b964f28b98223c17ed7eb7c8ed9e735db5e4561329ff0f674b82596bea4537074ae7d07cf297e7f0e07873fb3
+Description: Old Perl 5 Compatible Regular Expression Library - posix-compatible runtime files
+ This is a library of functions to support regular expressions whose syntax 
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ New packages should use the newer pcre2 packages, and existing
+ packages should migrate to pcre2.
+ .
+ This package contains the runtime library for the posix-compatible API.
+
+Package: pcregrep
+Architecture: iphoneos-arm64e
+Version: 8.45-1
+Multi-Arch: foreign
+Priority: standard
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 136
+Depends: libiosexec1 (>= 1.3.1), libpcre1 (= 8.45-1), libpcreposix0 (= 8.45-1)
+Conflicts: pcre (<<1:0), libpcre (<< 8.45-1)
+Replaces: pcre
+Filename: pool/main/iphoneos-arm64e/1800/pcre/pcregrep_8.45-1_iphoneos-arm64e.deb
+Size: 54646
+MD5sum: ce06e0efb8f38b9a00f6aed43f8bf712
+SHA1: 86f0dd058bb4d6fb0a3510932a3beeaca9a1ccdc
+SHA256: 6e18fb7674f6525032f174d80520876c93f3b92431689e24827eabd2d0b0fd3e
+SHA512: 519e358a26b41789227d9e64bf721ad297cd60899a386560e030afc88ffaab7a6150095058147b65dfe9293e1de850bdb4cc4dcea7f0ea6f6f35dcc96dc2157d
+Description: grep utility that uses perl 5 compatible regexes.
+ Perl-style regexps have many useful features that the standard POSIX ones
+ don't; this is basically the same as grep but with the different
+ regexp syntax.
+ .
+ The other reason for the existence of pcregrep is that its source code is an
+ example of programming with libpcre.
+
+Package: libpcre2-16-0
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 508
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre2 (<<1:0), libpcre2 (<< 10.40-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/libpcre2-16-0_10.40-1_iphoneos-arm64e.deb
+Size: 208176
+MD5sum: 3154c9e65666ec0a92892503f2a75fa0
+SHA1: c47da7c0e48d6c3054abced52ba4f5774e658637
+SHA256: b931574fb9c42829af23242f356d467765e1c6043c91720b8710d3c6858b084a
+SHA512: 74a1978d8c6d88209e469ada53945278e259f8a60f1d3cb72679853d83a6e893e267644628ca08c95463d59f03b7bd4e5cae6b981082a62454419547d4162758
+Description: New Perl Compatible Regular Expression Library - 16 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the 16 bit runtime library.
+
+Package: libpcre2-32-0
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 492
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre2 (<<1:0), libpcre2 (<< 10.40-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/libpcre2-32-0_10.40-1_iphoneos-arm64e.deb
+Size: 198266
+MD5sum: 2b3d17a841b8a1ff6e04fdbbb728df37
+SHA1: 8d3dc48a03aede641882c37cbbad9d5ea388f823
+SHA256: c6a825fe7879b4967ac82c17fedc5b9e5b5f6458b981a00b97771eb437aa54d3
+SHA512: d285f06c7d43f29a3ef5ad2e2273aa243e899a520c9ccc7e022145b41fbf45bf428a77a009b59ddc092f130b1c31583a3aba962b540e7bd3422d74e321fbf663
+Description: New Perl Compatible Regular Expression Library - 32 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the 32 bit runtime library.
+
+Package: libpcre2-8-0
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 556
+Provides: pcre2 (= 1:0), libpcre2 (= 10.40-1)
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: pcre2 (<< 1:0), libpcre2 (<< 1:0)
+Replaces: pcre2, libpcre2
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/libpcre2-8-0_10.40-1_iphoneos-arm64e.deb
+Size: 222486
+MD5sum: d5a1eacd154ab1fc671805317e9e88ac
+SHA1: 22cde09000486f1317eb35efede53b365c99f659
+SHA256: a2ccdba3af1b3fdfbab4c58dae34954ce209bc17d8ab5c47c0f996351c6bfcc7
+SHA512: 754fd491b111c2309ffb9e098abb64f963bf0189a89dbb689ab68f18fa3c6a208cb70e5dcd17d1faff89865ea107710b987b789a975c187cf935eac876da911b
+Description: New Perl Compatible Regular Expression Library- 8 bit runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the 8 bit runtime library.
+
+Package: libpcre2-dev
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 3224
+Conflicts: pcre2 (<<1:0), libpcre2 (<< 10.40-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/libpcre2-dev_10.40-1_iphoneos-arm64e.deb
+Size: 1891598
+MD5sum: 8e742a281d9401513ee0362f5da9d3ab
+SHA1: 6e7cfef36ecbda348c5dc7c5eb575b433aa5ce71
+SHA256: fd37c98a701d8e052a784bc2a0b5904810b94cd7ab9ad64278f965c26b2c7ab9
+SHA512: f2dfbe9d18b0142c2d9315b3e26e7c1ccad60d6eeec6bc5bcdc4476c258591307929a16ebef53a093c741f839ef28f1735b3ff27e2564a3e14f4a8d6716e5f93
+Description: New Perl Compatible Regular Expression Library - development files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the development files, including headers,
+ static libraries, and documentation.
+
+Package: libpcre2-posix3
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 84
+Depends: libiosexec1 (>= 1.3.1), libpcre2-8-0 (>= 10.40-1)
+Conflicts: pcre2 (<< 1:0), libpcre2 (<< 10.40-1)
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/libpcre2-posix3_10.40-1_iphoneos-arm64e.deb
+Size: 23960
+MD5sum: c8a410c389f71be452daeaf4a3aaab8c
+SHA1: 574fd16b921d15e5aa13bf2dcec4774753b8ed9d
+SHA256: 08cd0e94a46bdfb60488540a9a22c55900707d86f7e7bda13d75d5ab49aaa177
+SHA512: 828a365c4e83553502aedffa9fe3794bf375ec4833953acf98af6f0e69dab01e5d8b2d4e9b974788532805cb30d17a3112fad18acab4ff17f8e00de31138effa
+Description: New Perl Compatible Regular Expression Library - posix-compatible runtime files
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the runtime library for the posix-compatible API.
+
+Package: pcre2-utils
+Architecture: iphoneos-arm64e
+Version: 10.40-1
+Multi-Arch: foreign
+Priority: standard
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 348
+Depends: libiosexec1 (>= 1.3.1), libpcre2-8-0 (= 10.40-1), libpcre2-16-0 (= 10.40-1), libpcre2-32-0 (= 10.40-1), libpcre2-posix3 (= 10.40-1)
+Conflicts: pcre2 (<< 1:0), libpcre2 (<< 10.40-1)
+Replaces: pcre2
+Filename: pool/main/iphoneos-arm64e/1800/pcre2/pcre2-utils_10.40-1_iphoneos-arm64e.deb
+Size: 140696
+MD5sum: 502417d26a9cc9f053cc05fe85c2e882
+SHA1: b049294f6335727f328bdad9f7f8673f93e3d194
+SHA256: 15733da3091d42015a1516a3819d5ce49aa2a33628b4a0cbf8ab4eb73b9a119b
+SHA512: 1a25158c210a624a4e9c2aded28728f7a94a7f72e8f6e0cb7855adaa6c2b46e56c84433a615df547219e1e45b9c00ba3813da55018795a47227aa8185d9646d5
+Description: New Perl Compatible Regular Expression Library - utilities
+ This is PCRE2, the new implementation of PCRE, a library of functions
+ to support regular expressions whose syntax and semantics are as
+ close as possible to those of the Perl 5 language. New projects
+ should use this library in preference to the older library.
+ .
+ This package contains the utilities pcre2grep (like grep with PCRE)
+ and pcre2test (a test program for the library, but also useful for
+ experimenting with regular expressions). Both programs are also
+ useful examples of programming with libpcre2.
+
+Package: profile.d
+Architecture: iphoneos-arm64e
+Version: 0-7
+Priority: standard
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 12
+Pre-Depends: system-cmds (>=805.220.1)
+Depends: zsh
+Filename: pool/main/iphoneos-arm64e/1800/profile.d/profile.d_0-7_iphoneos-arm64e.deb
+Size: 1140
+MD5sum: 5a4c8c91f2d49b076130458ddc84f7f2
+SHA1: 4a1e99f6854f0e94e31cd5443f86fae815ab0c74
+SHA256: b8c72f88cfc9682092130a4790c969d5455bc6a18a353e33c7ec754f3e5a9cfa
+SHA512: b238d7890abca42f4d5fb670981fa96ec3fe3f387cc2563f58bf0ba13b2352a3295729c1e79e677a14b831e65226a5731efc1403220cb9c7015542fcff85dc0c
+Description: makes packaging for /etc/profile reasonable
+
+Package: libreadline-dev
+Architecture: iphoneos-arm64e
+Version: 8.2.0-1
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 728
+Depends: libreadline8 (= 8.2.0-1), libncursesw6
+Conflicts: readline (<< 8.2.0-1)
+Replaces: readline (<< 8.2.0-1)
+Filename: pool/main/iphoneos-arm64e/1800/readline/libreadline-dev_8.2.0-1_iphoneos-arm64e.deb
+Size: 336684
+MD5sum: 540bd3f05d7a31e6243e4770d879a964
+SHA1: bb5afbc4890146eb305b3784bc1022d14074e162
+SHA256: 23f785403475ab76b14e8c875d2bc1565b576367be4ee34cbe768fd3528e3506
+SHA512: 2cf3499cb05444e7f53abd17f9a93b7df025e9cbdcc08ecdcfc4a2d239604fe1003f6d7d12bfc41676eaeeb11c7f990df3ed54820331fe860b1fd2122d756314
+Description: GNU readline and history libraries, development files
+
+Package: libreadline8
+Architecture: iphoneos-arm64e
+Version: 8.2.0-1
+Priority: required
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 428
+Provides: readline (= 8.2.0-1)
+Depends: libiosexec1 (>= 1.3.1), libncursesw6
+Conflicts: readline (<< 8.2.0-1)
+Replaces: readline (<< 8.2.0-1)
+Filename: pool/main/iphoneos-arm64e/1800/readline/libreadline8_8.2.0-1_iphoneos-arm64e.deb
+Size: 153662
+MD5sum: 3acf45dbd2f714fe8dc4386d7b6772b8
+SHA1: 5dc2754a4e2018a5b92cda8f924a3513a1c04e0c
+SHA256: 109ff91f480f780e2797045964bc5e4114e41b1fa8334cc0b8d7cd25b371c57a
+SHA512: 59a0fb9de396684ce78cec086666ec06b69f2927d3acebdec18fc490072def154f9de9a3743cf1c1bcb5e94ec934310679de9033e0436541e73cfa99e31ba296
+Description: GNU readline and history libraries, run-time libraries
+
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.0.1
+Section: System
+Maintainer: roothide
+Installed-Size: 1120
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.1_iphoneos-arm64e.deb
+Size: 44134
+MD5sum: 6012c39030f4a34885424d7fe88fd830
+SHA1: 9d14da22fe31e669fa13014b6f281ce37d93a30b
+SHA256: 04d7be99e0180e623f52e1273f7848b46a3632eacb10670ba2a2e8ab0cf1cbd7
+SHA512: a466380e74626b46ca92a6e165204b1f793e25ad52545f82cc3c9bf9631b0d927f615ccb23602d1b944265dc8bce1405f4bcc75fe67df7267d87bb93862678d3
+Description: roothide core
+Name: roothide
+Author: roothide
+
+Package: sed
+Architecture: iphoneos-arm64e
+Version: 4.9
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 256
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Conflicts: text-cmds (<< 1:0)
+Replaces: text-cmds (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/sed/sed_4.9_iphoneos-arm64e.deb
+Size: 113286
+MD5sum: 1acb69d6c109ddd7dd9a6101dc9eff9c
+SHA1: d901e88dece3aff5211fe73e495c514f6a74e68c
+SHA256: 7623559e87fe8b5a0a43c1b550b24b7e129a0e6de2f26a3b445a67b183be00a7
+SHA512: 0ccf266824f97bb7a26db641dce08209ef82fa4844833f5f1294e02af6a64b6db9947e6e3e0c25769d6928b4943d2738ef52c28b4cf1a8babcf37e63170446e5
+Homepage: http://www.gnu.org/software/sed/
+Description: edits streams of text using patterns
+
+Package: shell-cmds
+Architecture: iphoneos-arm64e
+Version: 278-2
+Priority: important
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1036
+Provides: killall, which
+Depends: libiosexec1 (>= 1.3.1), libpam2
+Conflicts: coreutils (<< 8.32-9)
+Filename: pool/main/iphoneos-arm64e/1800/shell-cmds/shell-cmds_278-2_iphoneos-arm64e.deb
+Size: 90286
+MD5sum: 2d6d855920802c43bc22a26c87174c29
+SHA1: 286ac606cb3fb6c1b5b41e4410c0c0b3847d3c7d
+SHA256: ba48653ba5dcf9e2b47246b9d8a305bfac684f7020ef21e751ee74436bcffa77
+SHA512: 77104d1e2a691de17fd34e0c71202f027261539a70f838430223fc834a04b07844eb48c3269398d7db9a70c02225268d554e7ef5ac0bf781d6f2bfd710504216
+Description: killall, renice, script, time, which, getopt, what, hexdump, su
+
+Package: shshd
+Architecture: iphoneos-arm64e
+Version: 1.1.1.1
+Priority: standard
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 88
+Depends: libiosexec1 (>= 1.3.1), libdimentio0 (>= 99), firmware (>= 12.2) | org.swift.libswift (>= 5.0)
+Filename: pool/main/iphoneos-arm64e/1800/shshd/shshd_1.1.1.1_iphoneos-arm64e.deb
+Size: 12926
+MD5sum: f021bb5bee4dbc14f4ead5c56066ccf0
+SHA1: 7e675ac2e6f5d25f685fc4ac3861cc4a56ddd6f6
+SHA256: 3d256fed086f7efdca126faa60d79b65fb33cc4381022efa2586b2f736c689da
+SHA512: 3b5078e9a3b85a92854a98fcc61494c11ae5a88df612c9d32126c8c9f0427f5b29362036b7076c2eaa44d10932fbb6e133ab3e1f164b04c4e1935ad5d768e970
+Description: SHSH blob saving daemon
+ After installing, this package will automatically save your blobs
+ to 1Conan's TSSSaver. The link to your specific blobs can be retrieved
+ by manually running `/usr/sbin/shshd` as root (sudo/su) and copying the output, or by
+ visiting "https://tsssaver.1conan.com/shsh/(your ecid in decimal form)".
+ .
+ This should be compatible with all devices using Procursus, including
+ A12+ devices, as it saves blobs with the entangled apnonce. Requires
+ you to set nonce generator before using.
+Author: Hayden Seay <me@diatr.us>
+
+Package: snaputil
+Architecture: iphoneos-arm64e
+Version: 12.3
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 68
+Depends: libiosexec1 (>= 1.3.1), firmware (>= 10.3)
+Filename: pool/main/iphoneos-arm64e/1800/snaputil/snaputil_12.3_iphoneos-arm64e.deb
+Size: 9522
+MD5sum: f33ba01fa8a2ca4a54d1bf5b3360048d
+SHA1: 9d9b688378458f45f1bb41c7f6950c2da8fbde9d
+SHA256: 2b47c98191508ec8f657e1175f339052103155c5369f5e8e72212b578693ce74
+SHA512: 0dd9aacf5b4608cb2778b5ec9000f48fb1069b13e81ff2d7309a61e6b2abd71cabd6e0977b32f74b4c636bff86b48cb683d7b56f274e17fd946c7bcda0e9e661
+Homepage: https://github.com/ahl/apfs/
+Description: APFS Snapshot Tool.
+
+Package: sudo
+Architecture: iphoneos-arm64e
+Version: 1.9.12p2
+Priority: required
+Essential: yes
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 5492
+Depends: libiosexec1 (>= 1.3.1), libintl8, libpam2
+Filename: pool/main/iphoneos-arm64e/1800/sudo/sudo_1.9.12p2_iphoneos-arm64e.deb
+Size: 1511476
+MD5sum: 8a4e1d6ba6ce63f4c9aae22f6e17e1ec
+SHA1: 1c17a7024936432fa5f4c08efa0566dd5ea57a0c
+SHA256: 5014d3169eff303f75e4a083be2ba1accc19dcdf20e21a927cb63ca263af5bbe
+SHA512: 9dd5fdc0f148044e3d4033ea7c2ea3be1bd2a119c447a438988b615112bf678ad37dc473567b75a0c270536fbc1e9c6ae404f703bfd1e6ea86e7118b0a7fc1e2
+Description: temporarily assume root priviledges
+
+Package: system-cmds
+Architecture: iphoneos-arm64e
+Version: 950-2
+Priority: required
+Essential: yes
+Section: Administration
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2860
+Provides: login, passwd, reboot
+Depends: libiosexec1 (>= 1.3.1), file-cmds, libcrypt2, libpam2
+Recommends: vi
+Filename: pool/main/iphoneos-arm64e/1800/system-cmds/system-cmds_950-2_iphoneos-arm64e.deb
+Size: 370858
+MD5sum: 3a70b7c36a1b61e3fd793a3c57d5a22b
+SHA1: 533821bc1b5105ee2dc7d5cf7fc1f99f56d5584d
+SHA256: d501ecdc67976adcea466f07592807a40eaa60170a2f664c0ac3c7d155111be0
+SHA512: bd235798a6ecc10c63062be7cd2b183ab5e041ae96ba1e55ae7d5d060feed57ef3351d5cf2d2bff180550b8f100097cc32932b48b65caaf55569e295d6cb8fda
+Description: iostat, login, passwd, sync, sysctl, pw
+
+Package: tar
+Architecture: iphoneos-arm64e
+Version: 1.34
+Priority: required
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 2832
+Depends: libiosexec1 (>= 1.3.1), libintl8
+Recommends: bzip2, gzip, xz-utils, zstd
+Filename: pool/main/iphoneos-arm64e/1800/tar/tar_1.34_iphoneos-arm64e.deb
+Size: 762814
+MD5sum: dc52611520b2995bff60e21badbc59fa
+SHA1: e6492a3e0e40630e82b4b42ba1702d7b2eba005c
+SHA256: 0eb49bbc3c9d6eb65220df87ffd3517a65129b909ceb96f7fa1b0088ce4e6e0c
+SHA512: 552a1ad9c02c2e4453dc15c85ae61c7ef9668b611077d64e172eb53bf9de6208e3b7480ff2312c98160f6010958ca5df33e6f1ea2ad61246a8fe76cc71f3704c
+Homepage: http://www.gnu.org/software/tar/
+Description: tool for making tape archives
+
+Package: uikittools-extra
+Architecture: iphoneos-arm64e
+Version: 2.1.6-1
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 416
+Depends: libiosexec1 (>= 1.3.1), uikittools (= 2.1.6-1)
+Enhances: uikittools
+Filename: pool/main/iphoneos-arm64e/1800/uikittools/uikittools-extra_2.1.6-1_iphoneos-arm64e.deb
+Size: 32500
+MD5sum: 27b22aa3c31fd72b1063e5234ca92c8d
+SHA1: ffce95ac61eafcc0d998f188b6f2bd54d2eca5ee
+SHA256: 7ee3f003100703be798143e472379ee2b9c495d4fa359eeb492da51528a5ed39
+SHA512: 1d7752d814bf9c7eb6a7a81a41b82939de26075643d72c81d91d146079ba4952be3229071eb25acf7d462641c50436a9a667d64d1de97c4b345caab8017197c9
+Description: Extra Command line access for UIKit/LaunchServices/CoreServices
+
+Package: uikittools
+Architecture: iphoneos-arm64e
+Version: 2.1.6-1
+Priority: required
+Essential: yes
+Section: Utilities
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 760
+Depends: libiosexec1 (>= 1.3.1)
+Suggests: uikittools-extra (= 2.1.6-1)
+Breaks: uikittools-extra (<< 2.1.6)
+Filename: pool/main/iphoneos-arm64e/1800/uikittools/uikittools_2.1.6-1_iphoneos-arm64e.deb
+Size: 83048
+MD5sum: 9fe39673036ff04c6952542412f68939
+SHA1: 2b9f62f2043d59d01d3b3d91442741ed97cf9f85
+SHA256: 2c06a759f0edaa6b9207368ed2971edafe90db76ead4aa73b9b21e8c62e1ea33
+SHA512: 1ae94627043d9f5cddcce43e0596b7e5eb2b6339f8c10e6bc8b9580a6438b4aaff536b041f314814d209dd2adeb01defb1c6ab36e25e115d471fe14dc50b70a0
+Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: libuuid-dev
+Architecture: iphoneos-arm64e
+Version: 1.6.2-3
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 164
+Conflicts: uuid (<< 1.6.2-3)
+Replaces: uuid (<< 1.6.2-3)
+Filename: pool/main/iphoneos-arm64e/1800/uuid/libuuid-dev_1.6.2-3_iphoneos-arm64e.deb
+Size: 74866
+MD5sum: 254d66982a8ed942f3a2c9bf055f3b98
+SHA1: 0a36b01531d9d59fd8cad5a1091743dc1de1d32d
+SHA256: d0bed1d1bf7b0695efae8ddb8f0250212aba0632d839a16beb266dd3ed117d3d
+SHA512: 456291dfd70a7b38c12b987cd3dc8d07eb1a706be5bc4a900eafdcc947b8cca45d9b32821029b0e8ed186a9407f665059b02420c747c723b11db61445ad3e776
+Description: Universally Unique ID library - headers and static libraries
+ The libuuid library generates and parses 128-bit Universally Unique IDs
+ (UUIDs). See RFC 4122 for more information.
+ .
+ This package contains the development environment for the uuid library.
+
+Package: libuuid16
+Architecture: iphoneos-arm64e
+Version: 1.6.2-3
+Priority: important
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 108
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: uuid (<< 1.6.2-3)
+Replaces: uuid (<< 1.6.2-3)
+Filename: pool/main/iphoneos-arm64e/1800/uuid/libuuid16_1.6.2-3_iphoneos-arm64e.deb
+Size: 24820
+MD5sum: ba79db252cda47c07e6c101c3b487e60
+SHA1: 6ddb6a9aac9531470e05d13567526d9271b1b00f
+SHA256: 1eb40bc3068a80304c8ed5d9490b772d793a6cdefa9673dfe112d219b8d09ec6
+SHA512: fd8971b12e18c109b196f14dbf1ffc651330f4ed17e55064b05333e18d229f63b881e4d1c9c00b24f0df5f12fde5e0b7792c5c14d17c926a1f187604bcaf98e4
+Description: Universally Unique ID library
+ The libuuid library generates and parses 128-bit Universally Unique
+ IDs (UUIDs). A UUID is an identifier that is unique within the space
+ of all such identifiers across both space and time. It can be used for
+ multiple purposes, from tagging objects with an extremely short lifetime
+ to reliably identifying very persistent objects across a network.
+
+Package: uuid
+Architecture: iphoneos-arm64e
+Version: 1.6.2-3
+Priority: optional
+Section: System
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 80
+Depends: libiosexec1 (>= 1.3.1), libuuid16 (>= 1.6.2-3)
+Filename: pool/main/iphoneos-arm64e/1800/uuid/uuid_1.6.2-3_iphoneos-arm64e.deb
+Size: 13268
+MD5sum: dcb46a0486ba2be52a6fb5d5eb624856
+SHA1: f60e1acb7975905d18dd1147c38765270e942c20
+SHA256: 4ca857df91f60c6a9ed062790545243143f6f5bb7dd882adac304c49ec1ef727
+SHA512: dd1bfc8b91ec4378bccf40f71dcd40fcb08f837d4fe6072f295c13c840ca303daf6ef200a7431911da27c379fe5d0f309b0f33518f5dde136e1e73d00996a8fd
+Description: runtime components for the Universally Unique ID library
+ The libuuid library generates and parses 128-bit Universally Unique
+ IDs (UUIDs). A UUID is an identifier that is unique within the space
+ of all such identifiers across both space and time. It can be used for
+ multiple purposes, from tagging objects with an extremely short lifetime
+ to reliably identifying very persistent objects across a network.
+ .
+ See RFC 4122 for more information.
+ .
+ This package contains the uuid program.
+
+Package: vi
+Architecture: iphoneos-arm64e
+Version: 070224
+Priority: standard
+Section: Text_Editors
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 456
+Provides: ex
+Depends: libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/vi/vi_070224_iphoneos-arm64e.deb
+Size: 171108
+MD5sum: 1513e5c674a4b7c983f3de2ffc4d52d5
+SHA1: 74b1209262ca94e1c1d7c989dfbba9a2b07381f0
+SHA256: 24d1406efc2bf059eff9651a5389920eede168871c857a08bc4a0062e2c9c5c6
+SHA512: 469b962ee985b682c745d5f7e8aa5ea08f4022a3eae9d4bac38629711893a45dbff70b0ca386dad67fa247df69155d0a5c3821dd57db446bf821edcd46fe052e
+Description: The original ex/vi text editor
+
+Package: libxxhash-dev
+Architecture: iphoneos-arm64e
+Version: 0.8.1
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 264
+Depends: libxxhash0 (= 0.8.1)
+Filename: pool/main/iphoneos-arm64e/1800/xxhash/libxxhash-dev_0.8.1_iphoneos-arm64e.deb
+Size: 84026
+MD5sum: 249a9deb1289fb09f1d14c2a28380bf4
+SHA1: 0476cb91d1821f9d27acce401d514f661f854c7d
+SHA256: b686307d9f521e5bd187cdd2d919e918e06b5bc05d39baeb7dec37794d86cf11
+SHA512: 32a1d9f9c6e5362298ef64863bd974d51f9cf792e1443d51adee01b0869f9808e9ca45968f05fe3bbab730b8008da6bd6b3423c7c67ee4cdfcfa567c79a4e303
+Description: header files and a static library for libxxhash
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains xxHash static library and header files.
+
+Package: libxxhash0
+Architecture: iphoneos-arm64e
+Version: 0.8.1
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 56
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/xxhash/libxxhash0_0.8.1_iphoneos-arm64e.deb
+Size: 11692
+MD5sum: 53e96511e70bf91b9823f32483fc94cb
+SHA1: b3fa1ce7a0f94bd1ee1435770403ea7e1f56613b
+SHA256: a3fcb5dc458597c3b8bf420cbcc29666a8de42aef4bfe7d33862d51f2fb118b0
+SHA512: afb4f2af880d9d63f316e996e3563444d2cf9fc22d206cacb40e0d4ca06f9b7f71bdfda0e9e1af433a551f0675cda8642770814dc67e99f53533ea100edc17f3
+Description: shared library for xxhash
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+ .
+ This package contains the shared library.
+
+Package: xxhash
+Architecture: iphoneos-arm64e
+Version: 0.8.1
+Section: Security
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 96
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/xxhash/xxhash_0.8.1_iphoneos-arm64e.deb
+Size: 27578
+MD5sum: 148606f68a89e2ba72bb95f34f674fc0
+SHA1: 9cf6fb38100edcc691e6ff887a8dd9b0833e8e4e
+SHA256: c18fa509ea66dc56610bc41fdb2d98977f5e4bd2fb7cc4617801d24c4e8e7a54
+SHA512: fcd9edfd741408fcd42d0f84c6517b81dd22acae18fa499d39d32997b8f865d84b43a626d50950316b71d7ab062465a3b4944bff3968f078f3a2fe4b1806386b
+Description: Extremely fast hash algorithm
+ xxHash is an Extremely fast Hash algorithm, running at RAM speed limits.
+ It successfully completes the SMHasher test suite which evaluates collision,
+ dispersion and randomness qualities of hash functions. Code is highly portable,
+ and hashes are identical on all platforms (little / big endian).
+
+Package: liblzma-dev
+Architecture: iphoneos-arm64e
+Version: 5.4.1
+Priority: standard
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 908
+Depends: liblzma5 (>= 5.4.1)
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Filename: pool/main/iphoneos-arm64e/1800/xz/liblzma-dev_5.4.1_iphoneos-arm64e.deb
+Size: 360970
+MD5sum: 786c47b75886ab7693b08057e429d1ed
+SHA1: a2c422d12aec96bfe9b9b7685919136df7376b12
+SHA256: d62ccb6ff8f5f349c797eca403e6c05b46d340542fde9a230cf12d51002dc707
+SHA512: d9fb0c1b8c5ceb0f3fd0223de4aea324b6d92a81bbab33b3822129feee32606aecb44b5e22561e2539ed4fe0fd07ec984b952babeb8dca5cb5bde7d82eadfa96
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression library - development files
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.) This package provides the
+ development library needed to build programs using liblzma.
+
+Package: liblzma5
+Architecture: iphoneos-arm64e
+Version: 5.4.1
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 232
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Filename: pool/main/iphoneos-arm64e/1800/xz/liblzma5_5.4.1_iphoneos-arm64e.deb
+Size: 115368
+MD5sum: 0e48fbe64ae17be82a8415a6476b7408
+SHA1: e85b6f4704edc5997ee6df3c8e60cbd39d41a7b7
+SHA256: 3871475335c004d9a94701c2dcd972b8a0bc6bb2798941c8ffe8faaeb4f1e250
+SHA512: e0b734d97512842ee5cf0238cf3f6bf3cf3f346cb2573f0a162f02b409ca35ed02216532f1ffae8398b0afe25dfceac6020af025f3b57b16edf26aa500aafc01
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression library
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ The native format of liblzma is XZ; it also supports raw (headerless)
+ streams and the older LZMA format used by lzma. (For 7-Zip's related
+ format, use the p7zip package instead.)
+
+Package: xz-utils
+Architecture: iphoneos-arm64e
+Version: 5.4.1
+Priority: standard
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 888
+Provides: xz (=1:0), lzma (=3:0)
+Depends: libiosexec1 (>= 1.3.1), liblzma5 (>= 5.4.1), libintl8
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Filename: pool/main/iphoneos-arm64e/1800/xz/xz-utils_5.4.1_iphoneos-arm64e.deb
+Size: 214706
+MD5sum: 4939c9e8295b4b0275dc49d130f537bd
+SHA1: 10c1d760323ceead9f7dc5bd473de629ccd93b01
+SHA256: 9968007a1903896c5cc2309e939a561aa94d105c11547e69a9ba321158873a45
+SHA512: 733300b45470681237be9eae965aedb306cce49135243a7ff6fd4b43a24a2e489097f3b5abd44b7447f4ed4d039a90249eb7146e28d907054fcd77e705dcccd9
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression utilities
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ This package provides the command line tools for working with XZ
+ compression, including xz, unxz, xzcat, xzgrep, and so on. They can
+ also handle the older LZMA format, and if invoked via appropriate
+ symlinks will emulate the behavior of the commands in the lzma
+ package.
+ .
+ The XZ format is similar to the older LZMA format but includes some
+ improvements for general use:
+ .
+  * 'file' magic for detecting XZ files;
+  * crc64 data integrity check;
+  * limited random-access reading support;
+  * improved support for multithreading (not used in xz-utils);
+  * support for flushing the encoder.
+
+Package: xzdec
+Architecture: iphoneos-arm64e
+Version: 5.4.1
+Priority: optional
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 236
+Depends: libiosexec1 (>= 1.3.1)
+Conflicts: xz (<<1:0), lzma (<<3:0)
+Replaces: xz, lzma
+Filename: pool/main/iphoneos-arm64e/1800/xz/xzdec_5.4.1_iphoneos-arm64e.deb
+Size: 60298
+MD5sum: 24515b7734ade11ba25f0f725650e6d4
+SHA1: 20b41275e0e6a482e22d0b274a1a669041a6b19d
+SHA256: aa9e3e063148453b8e70f670171185b411226d5e593aea9cf7379e011388b356
+SHA512: fbd109031489b6d83a499964c473d7304d00bfca307d95f1982f99d07b67d07b9976e6031d1b7f50a0c127265c27713f7a3a9e13ccdeeaeadfd2bb168759143f
+Homepage: https://tukaani.org/xz/
+Description: XZ-format compression utilities - tiny decompressors
+ XZ is the successor to the Lempel-Ziv/Markov-chain Algorithm
+ compression format, which provides memory-hungry but powerful
+ compression (often better than bzip2) and fast, easy decompression.
+ .
+ This package provides the xzdec and lzmadec utilities, which write
+ the decompressed version of a compressed file to standard output. The
+ binaries are very small, so they can be easily stored on small media
+ with some compressed files, and they are linked statically against
+ liblzma so they can be used on machines without a compatible version
+ of liblzma installed. However, they have:
+ .
+   * no compression support;
+   * no support for writing to a file other than standard output;
+   * no translated messages;
+   * been optimized for size rather than speed.
+ .
+ For a full-featured xzcat command without these limitations, use
+ the xz-utils package instead.
+
+Package: libz-ng-dev
+Architecture: iphoneos-arm64e
+Version: 2.0.6
+Priority: optional
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 412
+Depends: libz-ng2 (= 2.0.6)
+Filename: pool/main/iphoneos-arm64e/1800/zlib-ng/libz-ng-dev_2.0.6_iphoneos-arm64e.deb
+Size: 209446
+MD5sum: 43907a17fb2a2c75e5eef8123dc50b3e
+SHA1: e6ae4df352293f6997936de0bf9b050f5eab4c39
+SHA256: 78a904509288552519249918960a9448359934768f8890841a8eae43d0078066
+SHA512: 7ce9f8b47bc2351b213069667993ddcb0ba99a6759fd119d25bce73564a8e7d710a73e7a7dffaf0421b6c2007a4bd1368456e2a4866d02535f807cb0885b787d
+Description: next gen compression library - development
+ next generation zlib library implementing the deflate compression method
+ found in gzip and PKZIP. This package includes the development support
+ files.
+
+Package: libz-ng2
+Architecture: iphoneos-arm64e
+Version: 2.0.6
+Priority: standard
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 152
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/zlib-ng/libz-ng2_2.0.6_iphoneos-arm64e.deb
+Size: 61808
+MD5sum: 9f24439b34ffa67d9c1cbb1f40f0636f
+SHA1: 125c6cf5bf24c06c20bedc2580b855dd5d687b01
+SHA256: 697c6f0bdb674b204b62b1338788cd1b5606dd20e97bc6997b4359e89f319904
+SHA512: 1e4c8b4b26fa921536a2bd9d843e319cde107d46156946394eebc35cfb40a7eb0152f960786f4d95728d0208d893ae300d24826aeb8e8ef7c6548bfc7937c54e
+Description: next gen zlib compression library - runtime
+ next generation zlib library implementing the deflate compression method
+ found in gzip and PKZIP. This package includes the shared library.
+
+Package: zsh
+Architecture: iphoneos-arm64e
+Version: 5.9
+Priority: required
+Essential: yes
+Section: Terminal_Support
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 9716
+Pre-Depends: debianutils (>= 4.11.2)
+Depends: libiosexec1 (>= 1.3.1), libncursesw6, libpcre1, debianutils (>= 4.11.2)
+Filename: pool/main/iphoneos-arm64e/1800/zsh/zsh_5.9_iphoneos-arm64e.deb
+Size: 2568458
+MD5sum: 3c4ee2aff913ae86cb185d897ae1d113
+SHA1: 77cc5ddebf0e2fb291ec14d03fe39195c04624e4
+SHA256: ae090a4b0274ab6cf6a9dc1ff534baf43e2570cdaa760405f3dab442b01fc1c5
+SHA512: 4aa87db2afced3ac16bbea7d17605507357b5e8af91003fb5286e4b05be9e244bd2aa6d7ebce23b4386300c2fcf48a5e78dc913de1af84b73c08ecb470535309
+Description: a shell with interactive features
+
+Package: libzstd-dev
+Architecture: iphoneos-arm64e
+Version: 1.5.5
+Section: Development
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 1620
+Depends: libzstd1 (= 1.5.5), liblzma-dev, liblz4-dev
+Filename: pool/main/iphoneos-arm64e/1800/zstd/libzstd-dev_1.5.5_iphoneos-arm64e.deb
+Size: 847252
+MD5sum: db1fc3c3fe58abd32e5346c4553e6266
+SHA1: a4e1e177329b87afe7f40f7ca98b7ec5170a6835
+SHA256: e49034dddef6030b1f22dd54eeee87064809901a56591a7fd84fc32c0e7ccdcf
+SHA512: a9615645eb595f27d27717c65aef0822b20bb59d791efc51935c2bc4256cd93fc6c085964e35a8f907572f48ab56c7026cf29f4366ec9cb874a3c0b609f320b1
+Description: fast lossless compression algorithm -- development files
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the headers and static library.
+
+Package: libzstd1
+Architecture: iphoneos-arm64e
+Version: 1.5.5
+Section: Libraries
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 668
+Depends: libiosexec1 (>= 1.3.1), liblz4-1, liblzma5 (>= 5.2.5)
+Filename: pool/main/iphoneos-arm64e/1800/zstd/libzstd1_1.5.5_iphoneos-arm64e.deb
+Size: 251516
+MD5sum: 68e51b544404c0db954350af89939aa1
+SHA1: 72a6dafa257eaea19f689e7f563654bc43f4c3c2
+SHA256: 5df738f3b2533bbd4d79eebe7f484a9624e5eb39feba427708bde177635849f2
+SHA512: af7fcac6390c977570c671bca8567897e72e8e78c43dfde24e952fa04d8812a43afabaa235cece1beb880c42727719f94c429e98a05207366f537713c46551f1
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+
+Package: zstd
+Architecture: iphoneos-arm64e
+Version: 1.5.5
+Priority: standard
+Section: Archiving
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 844
+Depends: libiosexec1 (>= 1.3.1), libzstd1 (= 1.5.5), liblz4-1, liblzma5 (>= 5.2.5)
+Filename: pool/main/iphoneos-arm64e/1800/zstd/zstd_1.5.5_iphoneos-arm64e.deb
+Size: 324650
+MD5sum: b5ab1854e3738ff0e497c77e367dcc0a
+SHA1: 9692790858c48e293b6551735016b26e7e5210b5
+SHA256: 1297fd6b881362b7b576081cf06b3a72ef8fcd1e297aa79fd9f5c3fbd5614b4a
+SHA512: ff9c7ff47af2b095b119ed4d36e690595460311fca0dc6da1312ff65f3b80059322034ff4cda55bfc0a38e879bddcaef96ada58e7f43dfdc561830bab24e046e
+Description: fast lossless compression algorithm -- CLI tool
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the CLI program implementing zstd.
+

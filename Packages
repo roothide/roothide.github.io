@@ -1,0 +1,301 @@
+Package: com.opa334.altlist
+Version: 1.0.10-3
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 340
+Depends: firmware (>=7.0)
+Filename: ./debfiles/com.opa334.altlist_1.0.10-3_iphoneos-arm64e.deb
+Size: 29424
+MD5sum: b335ef8fe1422cb70242a20c812fba29
+SHA1: a2d6b12800650902759da5f8fe57513fc82a8c86
+SHA256: 51dc382a266eba8ce2fbec2fa482541dd84968aae17f0dce9a868730c4725d6c
+Section: System
+Description: A modern AppList alternative
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+Name: AltList
+
+Package: com.opa334.ccsupport
+Version: 1.3.10-2-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 720
+Depends: mobilesubstrate, firmware (>=11.0)
+Conflicts: com.ioscreatix.silo
+Replaces: com.ioscreatix.silo
+Provides: com.ioscreatix.silo
+Filename: ./debfiles/com.opa334.ccsupport_1.3.10-2-2+debug_iphoneos-arm64e.deb
+Size: 78130
+MD5sum: d117f9e600d0bf8e54591961e3800b86
+SHA1: ad5556a31a2b9c01264b5b70a2937f7118c6f469
+SHA256: 6763b47731fe68f5804c118d73f7ae84d1efbdab9784df2f748c7c1953772cd8
+Section: Tweaks
+Description: Support tweak for CC modules!
+Author: opa334
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
+Name: CCSupport
+
+Package: com.opa334.choicy
+Version: 1.4.10-3-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334 <opa334@protonmail.com>
+Installed-Size: 1248
+Depends: mobilesubstrate, com.opa334.altlist (>=1.0.4), preferenceloader
+Filename: ./debfiles/com.opa334.choicy_1.4.10-3-1+debug_iphoneos-arm64e.deb
+Size: 154510
+MD5sum: 7f9541877145d3dfd65a93da0c5d5211
+SHA1: e99084bf67d7675b3fefd6a18acf2bb73caf1349
+SHA256: 3cf2d37f021a5ba2d7e2ad018324a968d7a2e00c73b4cf2e96104e5c2a92a6ff
+Section: Tweaks
+Description: Advanced Tweak Configuration!
+Author: opa334 <opa334@protonmail.com>
+Depiction: https://opa334.github.io/depic/Choicy/index.html
+Name: Choicy
+
+Package: com.opa334.libsandy
+Version: 1.1.3-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 416
+Conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
+Filename: ./debfiles/com.opa334.libsandy_1.1.3-1+debug_iphoneos-arm64e.deb
+Size: 20770
+MD5sum: bc5a6282381e606e1f576fff60ec5f15
+SHA1: b824a3906ab2de34a45b90b96c41d41cd2e90208
+SHA256: 49fde76ea85e91a2ecbc475f7b470c1809a181889764b0b00ca4c6de756cfae4
+Section: System
+Description: Securely extend the sandbox of system processes and user applications
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+Name: libSandy
+
+Package: com.opa334.libundirect
+Version: 1.1.5-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 204
+Filename: ./debfiles/com.opa334.libundirect_1.1.5-2+debug_iphoneos-arm64e.deb
+Size: 11114
+MD5sum: feec7e2bf76c5cdf6c3d8d7a15885a18
+SHA1: b9b3a7e727a69cecb02c80f5b039a4f463eec7d5
+SHA256: dd1c16e6d946bf7bb0c4bef8ae2ec0962980992f0492f550a4bcf9be0344fffb
+Section: System
+Description: Patchfinder and rebinder for objc_direct methods
+Tag: role::developer
+Author: opa334
+Name: libundirect
+
+Package: com.opa334.notrecording
+Version: 1.1.1-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 368
+Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
+Filename: ./debfiles/com.opa334.notrecording_1.1.1-2+debug_iphoneos-arm64e.deb
+Size: 20462
+MD5sum: 78a594c86101dfe9b889413ded8deb83
+SHA1: 8257d43bb2e955c94a87734713edecebe1de22b8
+SHA256: f9282ca9e40ffae437b64289cf2f327e55cfdb545feb85bbe8f67fa6ab78c000
+Section: Tweaks
+Description: Spoof screen recording detection!
+Author: opa334
+Name: NotRecording
+
+Package: com.opa334.timebomb
+Version: 1.0.1-20+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 136
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.opa334.timebomb_1.0.1-20+debug_iphoneos-arm64e.deb
+Size: 3702
+MD5sum: 67423504b55191db00f6319891cc521f
+SHA1: 8fd70b4f5b163ec854bcc804f5c0858ed1e120a8
+SHA256: 5717b265d860b4ce97991012378225d45e943237ea92dcb91d6bfdfe72e4f5cb
+Section: Tweaks
+Description: Spinlock timeout with ease!
+Author: opa334
+Name: TimeBomb
+
+Package: com.opa334.whitepointmodule
+Version: 1.2.2-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 248
+Depends: mobilesubstrate, com.opa334.ccsupport, firmware (>= 11.0)
+Filename: ./debfiles/com.opa334.whitepointmodule_1.2.2-1+debug_iphoneos-arm64e.deb
+Size: 19730
+MD5sum: 535d5df022619e60550a2fa29c01648f
+SHA1: 5b06f7055a2b615a797ff5d4e2a34a1243d6b7e6
+SHA256: 92bd44b38f465546af482369ddfb07a763a91a60e360b630e88043c99b2a49c0
+Section: Control Center (Modules)
+Description: Reduce White Point from Control Center!
+Author: opa334
+Depiction: https://opa334.github.io/depic/WhitePointModule/index.html
+Icon: https://opa334.github.io/depic/WhitePointModule/Resources/icon.png
+Name: White Point Module
+Sileodepiction: https://opa334.github.io/depic/WhitePointModule/sileo.json
+
+Package: com.roothide.manager
+Version: 0.1-214+debug
+Architecture: iphoneos-arm64e
+Maintainer: RootHide
+Installed-Size: 924
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/com.roothide.manager_0.1-214+debug_iphoneos-arm64e.deb
+Size: 733982
+MD5sum: 20697fa7f6d027da069bf67c327aef0e
+SHA1: 5cc7b27c84f61a70160d87193dc74ad629888494
+SHA256: a6e43c93ed6249da113f8dd3980e5f11b306ea9460b7b3f72988108678f4d0d3
+Section: System
+Description: RootHide Manager App
+Author: RootHide
+Depiction: https://github.com/RootHide/RootHideManagerApp
+Name: RootHideManagerApp
+Support: https://github.com/RootHide/RootHideManagerApp
+
+Package: ellekit
+Version: 1.0-18.8c90474
+Architecture: iphoneos-arm64e
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: ./debfiles/ellekit_1.0-18.8c90474_iphoneos-arm64e.deb
+Size: 479124
+MD5sum: 9fe48f902ae51afbb096df7385628dc6
+SHA1: 5436eb12473f9f8b458e88d03570f0430d3b9b61
+SHA256: 4866eff6a8ce757ece2372c66f9f0964544aaf45aa3b72effaf2d4675aa9003b
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
+Package: libkrw0-dopamine
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Procursus Team <support@procurs.us>
+Installed-Size: 60
+Depends: libiosexec1 (>= 1.3.1), firmware (>= 15.0), firmware (<= 15.5), libkrw0
+Provides: libkrw0-plugin
+Filename: ./debfiles/libjbdrw.deb
+Size: 5148
+MD5sum: dae19610fbd28cd19325181e2c5f18a4
+SHA1: ad7feb7cca3c27f557b11b46f3bae078c886ed12
+SHA256: 6beb9827cb6cbb55f2040028f2be93077b382096d877dd247063dd93600d4139
+Section: Libraries
+Priority: standard
+Homepage: https://github.com/Cryptiiiic/libjbdrw
+Description: Plugin for libkrw interfacing with iOS 15 dopamine jailbreakd (Shared Library)
+Author: Cryptiiiic <liamwqs@gmail.com>
+
+Package: oldabi
+Version: 0.3.1~1.ba6396b
+Architecture: iphoneos-arm64e
+Maintainer: Evelyn
+Depends: mobilesubstrate, cy+cpu.arm64e, firmware (>= 15.0)
+Filename: ./debfiles/oldabi_0.3.1~1.ba6396b_iphoneos-arm64e.deb
+Size: 16390
+MD5sum: 479a79d652a71552a08cd733d4afb31a
+SHA1: 402a39547142ef41e04664118f2047c91596c604
+SHA256: c35c46a313563c39d9baa68672dabc5decfafa7c17498f2c6d174aef52d8c008
+Description: Support for legacy arm64e ABI in iOS 15.0+
+Author: Evelyn
+Name: Legacy arm64e Support
+
+Package: org.coolstar.sileo
+Version: 2.5
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5_iphoneos-arm64e.deb
+Size: 4203528
+MD5sum: fbd062fcf6a1971d72b5b98a58a1059a
+SHA1: 6d0d4d1c43a62aee251b30aab5bab25ded7fa88e
+SHA256: 98a35d67000e2ed7ae83882709b5a7561d5e2d7e4fcfd6bf7b4f4964a7385316
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: preferenceloader
+Version: 2.2.6-7+debug
+Architecture: iphoneos-arm64e
+Maintainer: ProcursusTeam <support@procurs.us>
+Installed-Size: 264
+Depends: mobilesubstrate
+Filename: ./debfiles/preferenceloader_2.2.6-7+debug_iphoneos-arm64e.deb
+Size: 20010
+MD5sum: 182bac87ca02c76bf53baee5988cee3d
+SHA1: 964ef277225bd2a3d29ded7b60a66b7888b86dbe
+SHA256: 9c7c8876800b77f4539ce664e1d4fb9c9a73f09dd246eee1afc58ba0ef77812a
+Section: System
+Description: load preferences in style
+Author: Dhinak G <dhinak@dhinak.net>
+Name: PreferenceLoader
+
+Package: ru.domo.cocoatop64
+Version: 2.2.3
+Architecture: iphoneos-arm64e
+Maintainer: SXX, Domo
+Installed-Size: 892
+Conflicts: ru.domo.cocoatop
+Filename: ./debfiles/cocoatop.deb
+Size: 225020
+MD5sum: 03dd7fef8e94171ee5356b10fd20dcd4
+SHA1: fe5b61397f5b5953aa387656da7bc589610cdb7a
+SHA256: e9af1894f0da52bddee99d02e8b42b91c1a7cbf8f1522ba5824eb56c87c49d30
+Section: Utilities
+Description: Process Viewer for iOS GUI, updated for iOS 13 by SXX.
+Author: Domo, SXX
+Name: CocoaTop
+
+Package: ws.hbang.newterm3
+Version: 3.0~beta1-14+debug
+Architecture: iphoneos-arm64e
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 24264
+Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
+Recommends: gettext-localizations, iterm2-shell-integration, zsh-autosuggestions, zsh-syntax-highlighting
+Conflicts: ws.hbang.newterm, ws.hbang.newterm2
+Replaces: ws.hbang.newterm, ws.hbang.newterm2
+Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-14+debug_iphoneos-arm64e.deb
+Size: 4854058
+MD5sum: 3c548f8d6548d844424f91292bee4043
+SHA1: 932e6dd03164eb151c09f6cf62c0742bf5e040c4
+SHA256: 63db034c76cd1e3bc8d4e62175047fc5e73712b81db9adea47b187825074dacb
+Section: Terminal Support
+Description: Powerful terminal app for iOS
+Tag: compatible_min::ios14.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/newterm-beta
+Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
+Name: NewTerm 3 Beta
+Support: https://hashbang.productions/support/
+
+Package: xyz.willy.zebra
+Version: 1.1.35-69+debug
+Architecture: iphoneos-arm64e
+Maintainer: Zebra Team <team@getzbra.com>
+Installed-Size: 10840
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: ./debfiles/xyz.willy.zebra_1.1.35-69+debug_iphoneos-arm64e.deb
+Size: 4443722
+MD5sum: ad797a9755dcc0dded33ec44ddaa0ad2
+SHA1: b7bc6e448e4efb5d9771f2730159b9fe1aa7f890
+SHA256: 73dcd9858d884f808e2dc925fd3e0c93dce97b008f2eda6cb5720fa34a3a6943
+Section: Packaging
+Description: A Useful Package Manager
+Tag: compatible::9.0-16.4
+Author: Zebra Team <team@getzbra.com>
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Name: Zebra
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+

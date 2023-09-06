@@ -1,0 +1,9 @@
+Origin: RootHide's Repo
+Label: RootHide's Repo
+Suite: stable
+Version: 1.0
+Codename: RootHide
+Architectures: iphoneos-arm64e
+Components: main
+Description: RootHide's Repository
+Icon: file://RepoIcon.png
