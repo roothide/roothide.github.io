@@ -1,3 +1,19 @@
+Package: com.lnx.showtouch
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: LonestarX
+Installed-Size: 432
+Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Filename: ./debfiles/com.lnx.showtouch_1.0.3_iphoneos-arm64e.deb
+Size: 69964
+MD5sum: ea85bdc3b191996089e4c34065b37b9f
+SHA1: f84014405f2d3711f5de615bff59b7b08a75013a
+SHA256: 536a8dc9736664f1d2a52a174867f324ad86d35f8fd4ff263a3ae1d7a25f0290
+Section: Tweaks
+Description: Shows where you touch the screen
+Author: LonestarX
+Name: ShowTouch
+
 Package: com.opa334.altlist
 Version: 1.0.10-3
 Architecture: iphoneos-arm64e
@@ -255,6 +271,29 @@ Section: Utilities
 Description: Process Viewer for iOS GUI, updated for iOS 13 by SXX.
 Author: Domo, SXX
 Name: CocoaTop
+
+Package: ws.hbang.alderis
+Version: 1.2.3-8+debug
+Architecture: iphoneos-arm64e
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 6016
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), uikittools
+Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Provides: org.thebigboss.libcolorpicker (= 99.0), me.nepeta.libcolorpicker (= 99.0)
+Filename: ./debfiles/ws.hbang.alderis_1.2.3-8+debug_iphoneos-arm64e.deb
+Size: 857360
+MD5sum: 163162fd0db44b348478d1973d8576ea
+SHA1: ee9d931f1a598cbcc57a4757bb939fa2edd07204
+SHA256: 23338feb0fa8f0adbdd3ae843df1d191e18bd9450ef1e813983584cf0f094575
+Section: Development
+Description: Color picker support library for tweaks
+Tag: role::developer, compatible_min::ios12.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/alderis
+Dev: hbang
+Icon: https://img.chariz.cloud/icon/alderis/icon@3x.png
+Name: Alderis Color Picker
+Support: https://hashbang.productions/support/
 
 Package: ws.hbang.newterm3
 Version: 3.0~beta1-14+debug
