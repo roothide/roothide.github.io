@@ -1,3 +1,21 @@
+Package: com.fouadraheb.appdata
+Version: 1.3.6
+Architecture: iphoneos-arm64e
+Maintainer: Fouad Raheb <support@fouadraheb.com>
+Installed-Size: 788
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Filename: ./debfiles/com.fouadraheb.appdata_1.3.6_iphoneos-arm64e.deb
+Size: 114020
+MD5sum: 817575237d4d3687cf339f677755b652
+SHA1: 69104521378a6edb01e0f011b67dc17e40f96504
+SHA256: ae8c7edc076e7aa96ff274f835e072ba5a865cafb07774b6bb57c4e4fd2dfff6
+Section: Tweaks
+Description: View & Manage Applications Data from your Home Screen
+Author: Fouad Raheb <support@fouadraheb.com>
+Depiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata
+Name: AppData
+Sileodepiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata/sileo
+
 Package: com.lnx.showtouch
 Version: 1.0.3
 Architecture: iphoneos-arm64e
