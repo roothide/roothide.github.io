@@ -227,6 +227,21 @@ Homepage: https://github.com/Cryptiiiic/libjbdrw
 Description: Plugin for libkrw interfacing with iOS 15 dopamine jailbreakd (Shared Library)
 Author: Cryptiiiic <liamwqs@gmail.com>
 
+Package: netskao.actionbarreborn
+Version: 1.1-2
+Architecture: iphoneos-arm64e
+Maintainer: Nets
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debfiles/ActionBar.deb
+Size: 161008
+MD5sum: 5b20682b1b668af1fcad102dde33aeea
+SHA1: b5faa8f2d27c1995d8cf63323ae8cfff9be29af9
+SHA256: 98a0461194b65bb3012759f05592e6079b11693c6c7c354e9e4b07f014004ac5
+Section: Tweaks
+Description: Undo, redo, select all, copy, cut and paste actions on bottom of keyboard. ActionBar Free Reborn Edition
+Author: Netskao
+Name: ActionBar
+
 Package: oldabi
 Version: 0.3.1~1.ba6396b
 Architecture: iphoneos-arm64e
