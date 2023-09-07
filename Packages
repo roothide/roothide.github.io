@@ -209,6 +209,22 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: jp.akusio.backgrounderaction15
+Version: 0.1.0
+Architecture: iphoneos-arm64e
+Maintainer: @akusio_RR
+Depends: mobilesubstrate, com.opa334.ccsupport
+Filename: ./debfiles/backgrounderaction15.deb
+Size: 9228
+MD5sum: 83fb067029d0361f0eebf6a5727f0c97
+SHA1: 0f2969c9bce546218fbf4e2eb0da51d45ec878c2
+SHA256: d94028098aef08fbc24f8f12c6575baf221b4a5d437291da10b40bf9cf0f557e
+Section: Tweaks
+Description: [iOS15]Add "Toggle Background Mode" action to ControlCenter.
+Author: @akusio_RR
+Depiction: https://akusio.github.io/descriptions/backgrounderaction15/index.html
+Name: BackgrounderAction15 CCSupport
+
 Package: libkrw0-dopamine
 Version: 1.0.0
 Architecture: iphoneos-arm64e
