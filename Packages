@@ -242,6 +242,21 @@ Description: Undo, redo, select all, copy, cut and paste actions on bottom of ke
 Author: Netskao
 Name: ActionBar
 
+Package: netskao.hidescreenshotpreview-rootless
+Version: 1.2-1
+Architecture: iphoneos-arm64e
+Maintainer: Nets
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debfiles/HideScreenshotPreview.deb
+Size: 3124
+MD5sum: f60f5c6c02cb596ec3b9154b200f7b7b
+SHA1: 4475fc84fbbb8d939e35d65afc37f1a33e39a907
+SHA256: f0dbeed915dc5db14173c0283d0f0f7cbb56ac622efc2046615ee1ce2f13c4c3
+Section: Tweaks
+Description: Hide Screenshot Preview
+Author: Netskao
+Name: Hide Screenshot Preview
+
 Package: oldabi
 Version: 0.3.1~1.ba6396b
 Architecture: iphoneos-arm64e
