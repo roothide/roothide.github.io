@@ -243,6 +243,25 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: emt.paisseon.satella
+Version: 1.8.1
+Architecture: iphoneos-arm64e
+Maintainer: Lilliana
+Installed-Size: 500
+Depends: mobilesubstrate, firmware (>= 12.2), preferenceloader, com.opa334.altlist
+Filename: ./debfiles/emt.paisseon.satella_1.8.1_iphoneos-arm64e.deb
+Size: 90524
+MD5sum: 7182160bb772b580d0a639b75931af9c
+SHA1: af4b80442120e6b54e7ce4f24cded8a3a5e00665
+SHA256: 06e90c95575054dad54ff585fee47dc53083740ee9ab44dc38c9f3473ae700b0
+Section: Tweaks (Piracy)
+Description: Modern in-app purchase cracker
+Author: Lilliana
+Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Satella.json&name=Satella&dev=Lilliana
+Icon: https://paisseon.github.io/icons/Satella.png
+Name: Satella
+Sileodepiction: https://paisseon.github.io/depictions/Satella.json
+
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
 Architecture: iphoneos-arm64e
