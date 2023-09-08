@@ -1,13 +1,16 @@
 Package: FiveIconDock
 Version: 1
 Architecture: iphoneos-arm64e
+Maintainer: unknown
 Depends: mobilesubstrate (>= 0.9.5000), OldABI
 Filename: ./debfiles/FiveIconDock.deb
-Size: 3524
-MD5sum: 222aecf57812965618a4de44a5594fc8
-SHA1: 5d109dde524314d70e61786aacdad8baa522314a
-SHA256: 21f579d0d6efff21e51304086204b6b863ad5e1702ebcc6900805fee1ba5779a
+Size: 3556
+MD5sum: 1cd3c3d6fe64478e2efe018cc63fdcc3
+SHA1: 107213b2b105e11e2799ef85b6ef30d25e51fb57
+SHA256: ba24be83e84f164348de5553175790c12e1db2157ea0f234eecc76b6617c35f1
 Section: Tweaks
+Description: Five Icon Dock
+Author: unknown
 Name: Five Icon Dock
 
 Package: com.34306.dockpad
@@ -263,6 +266,22 @@ Depiction: https://opa334.github.io/depic/WhitePointModule/index.html
 Icon: https://opa334.github.io/depic/WhitePointModule/Resources/icon.png
 Name: White Point Module
 Sileodepiction: https://opa334.github.io/depic/WhitePointModule/sileo.json
+
+Package: com.p2kdev.underdock
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: P2KDev <p2kdev@gmail.com>
+Depends: mobilesubstrate
+Conflicts: com.restiveconch.actionbar,com.udevs.dockx
+Filename: ./debfiles/com.p2kdev.underdock_1.0_iphoneos-arm64e.deb
+Size: 18484
+MD5sum: 6e39d43da601d790e198707736d7fe47
+SHA1: 11ccc0ce102fa86e305281f056f4fe61685ce7f4
+SHA256: 4276cc620733ca9fab1a82968f41ab7e3ce05a74a82f7d48cb1f6213661170ec
+Section: Tweaks
+Description: Useful actions on the Keyboard Dock View!
+Author: P2KDev <p2kdev@gmail.com>
+Name: UnderDock (NoSettings)
 
 Package: com.ps.cconandoff
 Version: 1.1.0
