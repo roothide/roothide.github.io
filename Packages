@@ -1,3 +1,18 @@
+Package: com.34306.dockpad
+Version: 1.1
+Architecture: iphoneos-arm64e
+Maintainer: Little 34306
+Depends: mobilesubstrate
+Filename: ./debfiles/com.34306.dockpadrl_1.1_iphoneos-arm64e.deb
+Size: 3896
+MD5sum: 48a7ae6a1ed71079d0a861bfc1d68a72
+SHA1: f87318c4aa77c59e0aa2a6009ef7dc866eafd9f4
+SHA256: 4a36d7bfcedbc5a4350bd1a1c1aa1c44cf82cb689576e36c4141c0af4fcd1569
+Section: Tweaks
+Description: A simple tweak that turn your dock into iPadOS dock on iOS 15!
+Author: 34306
+Name: DockPad
+
 Package: com.fouadraheb.appdata
 Version: 1.3.6
 Architecture: iphoneos-arm64e
