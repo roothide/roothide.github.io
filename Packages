@@ -16,6 +16,23 @@ Depiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata
 Name: AppData
 Sileodepiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata/sileo
 
+Package: com.imkpatil.ezswipe
+Version: 1.1.1-4+debug
+Architecture: iphoneos-arm64e
+Maintainer: P2KDev <p2kdev@gmail.com>
+Installed-Size: 408
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debfiles/com.imkpatil.ezswipe_1.1.1-4+debug_iphoneos-arm64e.deb
+Size: 26432
+MD5sum: 5203a408edb526fce8ae7f7a35b7c43a
+SHA1: bada5b90b17a3bae69da480a922b41b424fd1a30
+SHA256: bec6918f3792b097ba1ed0737a5a3da409091edbb83543defe881838ef2d8ca7
+Section: Tweaks
+Description: Give your hand a rest by using gestures instead!
+Author: P2KDev <p2kdev@gmail.com>
+Icon: file:///Library/Application Support/EZSwipe/icon.png
+Name: EZSwipe
+
 Package: com.lnx.showtouch
 Version: 1.0.3
 Architecture: iphoneos-arm64e
