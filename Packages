@@ -1,3 +1,15 @@
+Package: FiveIconDock
+Version: 1
+Architecture: iphoneos-arm64e
+Depends: mobilesubstrate (>= 0.9.5000), OldABI
+Filename: ./debfiles/FiveIconDock.deb
+Size: 3524
+MD5sum: 222aecf57812965618a4de44a5594fc8
+SHA1: 5d109dde524314d70e61786aacdad8baa522314a
+SHA256: 21f579d0d6efff21e51304086204b6b863ad5e1702ebcc6900805fee1ba5779a
+Section: Tweaks
+Name: Five Icon Dock
+
 Package: com.34306.dockpad
 Version: 1.1
 Architecture: iphoneos-arm64e
@@ -12,6 +24,22 @@ Section: Tweaks
 Description: A simple tweak that turn your dock into iPadOS dock on iOS 15!
 Author: 34306
 Name: DockPad
+
+Package: com.chr1s.newtab
+Version: 1.1
+Architecture: iphoneos-arm64e
+Maintainer: Chr1s
+Installed-Size: 156
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.chr1s.newtab_1.1_iphoneos-arm64e.deb
+Size: 6254
+MD5sum: f6787bc6aa10b5f064289a386a4895a4
+SHA1: 8ec72bbac19b4cb133b61a7ed2aae4b0712b3fa0
+SHA256: 0f0c1cba1a0bb6a737798cea4d15e3b7eaa167942b7672881da963eeafe631aa
+Section: Tweaks
+Description: Add newtab shortcut to safari toolbar
+Author: Chr1s
+Name: NewTab
 
 Package: com.fouadraheb.appdata
 Version: 1.3.6
@@ -80,6 +108,21 @@ Section: Tweaks
 Description: Shows where you touch the screen
 Author: LonestarX
 Name: ShowTouch
+
+Package: com.mtac.uptime
+Version: 1.0.1
+Architecture: iphoneos-arm64e
+Maintainer: MTAC
+Depends: mobilesubstrate, com.opa334.ccsupport
+Filename: ./debfiles/com.mtac.uptime_1.0.1_iphoneos-arm64e.deb
+Size: 25564
+MD5sum: 0f92e141a16951b0f40d1cf4ea357153
+SHA1: 7fda4ea790dacc1b4605cd6e09c7ed53f72df789
+SHA256: 2c003d8ff380642aaaa82b12a7674f89e780707cda893095278f9e7338ab04f5
+Section: Tweaks
+Description: Control Center module to view time since boot
+Author: MTAC
+Name: Uptime
 
 Package: com.opa334.altlist
 Version: 1.0.10-3
@@ -221,6 +264,25 @@ Icon: https://opa334.github.io/depic/WhitePointModule/Resources/icon.png
 Name: White Point Module
 Sileodepiction: https://opa334.github.io/depic/WhitePointModule/sileo.json
 
+Package: com.ps.cconandoff
+Version: 1.1.0
+Architecture: iphoneos-arm64e
+Maintainer: PoomSmart
+Installed-Size: 156
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0)
+Conflicts: com.jakeashacks.realcc
+Filename: ./debfiles/com.ps.cconandoff_1.1.0_iphoneos-arm64e.deb
+Size: 7242
+MD5sum: 3ec60f284ef1450271f4ab1ba1f029b5
+SHA1: 97b021fae361e9a8ddbdf645d5901fa23999b871
+SHA256: c6d45aab104e50e55eeb277f9599a2b544e68a8a1965e10a9c2c40f47f8eb35c
+Section: Tweaks
+Description: Toggle Wi-Fi and Bluetooth On/Off from Control Center (iOS 11+).
+Author: PoomSmart
+Depiction: https://poomsmart.github.io/repo/depictions/cconoff.html
+Name: CC On & Off
+Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/cconoff.json
+
 Package: com.roothide.manager
 Version: 0.1-218+debug
 Architecture: iphoneos-arm64e
@@ -238,6 +300,42 @@ Author: RootHide
 Depiction: https://github.com/RootHide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
+
+Package: com.yan.anouk
+Version: 1.1.1
+Architecture: iphoneos-arm64e
+Maintainer: yan
+Installed-Size: 712
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.yan.anouk_1.1.1_iphoneos-arm64e.deb
+Size: 191364
+MD5sum: 6db7990a2a7341db92f5f9eb8f56740c
+SHA1: cf9c92586e0b7cde3478abc08f26c79e100d44e8
+SHA256: 14b743c44ab30cfcb3a15606571c7ed8cae442d54efd4b9f9965b3e03c0f5183
+Section: Tweaks
+Description: Authentication for the hidden album.
+Author: yan
+Depiction: https://yandevelop.github.io/depic/Anouk/index.html
+Icon: https://yandevelop.github.io/assets/icons/anouk/icon.png
+Name: Anouk
+Sileodepiction: https://yandevelop.github.io/depic/Anouk/AnoukDepiction.json
+
+Package: com.yourepo.cydiageek.nodockground
+Version: 1.0.6
+Architecture: iphoneos-arm64e
+Maintainer: CydiaGeek <lucaluca86@aol.com>
+Depends: mobilesubstrate
+Filename: ./debfiles/NoDockGround.deb
+Size: 65872
+MD5sum: d34fc00ce6738017de5a81ef4ae5ad3e
+SHA1: 83b6b3a3e2b932787eff042235561755122031bc
+SHA256: 45df37c3b3f0585c7b4361aa79589e3d36de220c2ad71e353131d82da0190d6a
+Section: Tweaks
+Description: Make Clear the Background of the Dock!
+Author: CydiaGeek <lucaluca86@aol.com>
+Depiction: https://cydiageek.yourepo.com/pack/nodockground
+Name: NoDockGround
+Sileodepiction: https://cydiageek.yourepo.com/sileo/depiction/nodockground
 
 Package: ellekit
 Version: 1.0-18.8c90474
