@@ -571,10 +571,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
 Filename: ./debfiles/org.coolstar.sileo_2.5_iphoneos-arm64e.deb
-Size: 4203324
-MD5sum: 54d779e21b8dfdc3ff7ef764be1de4b3
-SHA1: 8cde3cae2d9d10e3c4341dc8662023eb9e117914
-SHA256: 321e85f78d8b5e5d95a16f4e6614b6441fafa1380c73ab9105980e910e9f674e
+Size: 4203836
+MD5sum: 5eb6a6b1b7cc4dcddb5b91bde0d2f19a
+SHA1: 65a095ed34cdf875da3e4c3edeb6ef351f5d124d
+SHA256: db837639e9cf246f76ace50ec291c6f6f2fbc436f7c683f177994efa8f830bcb
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
@@ -638,16 +638,16 @@ Name: Alderis Color Picker
 Support: https://hashbang.productions/support/
 
 Package: ws.hbang.common
-Version: 2.0-12+debug
+Version: 2.0-10+debug
 Architecture: iphoneos-arm64e
 Maintainer: HASHBANG Productions <support@hbang.ws>
-Installed-Size: 4804
+Installed-Size: 5756
 Depends: firmware (>= 15.0)
-Filename: ./debfiles/ws.hbang.common_2.0-12+debug_iphoneos-arm64e.deb
-Size: 1257206
-MD5sum: 65a629c15dcdfed87a947f283b44a170
-SHA1: 89ef1cb0011e98d436ddb8190cd7c4921647a2a8
-SHA256: eb94ac9a350ec59bb352ca5ee5333a9bd888d0cc9d25fd9adc6ce2a07cfb0a80
+Filename: ./debfiles/ws.hbang.common_2.0-10+debug_iphoneos-arm64e.deb
+Size: 1336600
+MD5sum: af3a3df7e9157275486066884e206325
+SHA1: b5c9ed297a52b3d3e3e58c0afb79b23940070f9c
+SHA256: 86de082ec2a7a1c1998fd63fbc46d1b731b19e586fc4734a1602efdedf4c8cde
 Section: Development
 Description: Support library for tweaks
 Tag: role::developer, compatible_min::ios15.0
