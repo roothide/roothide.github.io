@@ -13,6 +13,21 @@ Description: Five Icon Dock
 Author: unknown
 Name: Five Icon Dock
 
+Package: com.34306.2nd
+Version: 2.0-3+debug
+Architecture: iphoneos-arm64e
+Maintainer: Little 34306
+Depends: oldabi, mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.34306.2nd_2.0-3+debug_iphoneos-arm64e.deb
+Size: 29492
+MD5sum: 02be7e925c94fb275f0756ed3491f2e1
+SHA1: 62f447982cbdbd5353d3e7bfb08679d827905c67
+SHA256: 65b81f9502c0f3b9495974dd45a870a2b460a2d57810ce1376076bf311d5ab01
+Section: Tweaks
+Description: Add second line to your time on statusbar
+Author: 34306
+Name: 2nd
+
 Package: com.34306.dockpad
 Version: 1.1
 Architecture: iphoneos-arm64e
@@ -27,6 +42,36 @@ Section: Tweaks
 Description: A simple tweak that turn your dock into iPadOS dock on iOS 15!
 Author: 34306
 Name: DockPad
+
+Package: com.34306.networkspeedrl
+Version: 1.0
+Architecture: iphoneos-arm64e
+Maintainer: Little 34306
+Depends: mobilesubstrate
+Filename: ./debfiles/com.34306.networkspeedrl_1.0_iphoneos-arm64e.deb
+Size: 13776
+MD5sum: 1caf47b06edc2c1931ac9b0206bad37d
+SHA1: 115d7979bfbdf1aa15a626b29de7dd91d9898dd9
+SHA256: 9def8da067c5b40f4e04351be493cee527d8d8be4b704aca14f1a99ff5bfcba5
+Section: Tweaks
+Description: A simple tweak that show network speed. Support notched iPhone and also rootless jailbreak.
+Author: 34306
+Name: NetworkSpeed
+
+Package: com.34306.swiped
+Version: 1.0-6+debug
+Architecture: iphoneos-arm64e
+Maintainer: Little 34306
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.34306.swiped_1.0-6+debug_iphoneos-arm64e.deb
+Size: 12028
+MD5sum: 9f0807f3c52cd293d125889aaa88467d
+SHA1: c5b4c5796439676cbb6565a054f1a69b19c6d2e2
+SHA256: a0a8f17d3437f984b6fb2b370dc469301ec86ea438a5b8b6949eaee465be9ab4
+Section: Tweaks
+Description: Swiped!
+Author: 34306
+Name: Swiped
 
 Package: com.chr1s.newtab
 Version: 1.1
@@ -95,6 +140,21 @@ Description: Give your hand a rest by using gestures instead!
 Author: P2KDev <p2kdev@gmail.com>
 Icon: file:///Library/Application Support/EZSwipe/icon.png
 Name: EZSwipe
+
+Package: com.lclrc.recordanywhere
+Version: 1.1.0
+Architecture: iphoneos-arm64e
+Maintainer: Muirey03 & lclrc
+Depends: mobilesubstrate
+Filename: ./debfiles/com.lclrc.recordanywhere_1.1.0_iphoneos-arm64e.deb
+Size: 4144
+MD5sum: a9bb294c3cc81cad761d83f079dbe7e5
+SHA1: e410ff423d2bcb54d0c0540c025d2edaa7f6a311
+SHA256: 90e68c71e28ae731e1ab915e97ea09d427460eb06b2b0dfd97d34a919eccfa78
+Section: Tweaks
+Description: enable screen recorder always work even on lock screen
+Author: Muirey03 & lclrc
+Name: RecordAnywhere
 
 Package: com.lnx.showtouch
 Version: 1.0.3
@@ -427,6 +487,21 @@ Priority: standard
 Homepage: https://github.com/Cryptiiiic/libjbdrw
 Description: Plugin for libkrw interfacing with iOS 15 dopamine jailbreakd (Shared Library)
 Author: Cryptiiiic <liamwqs@gmail.com>
+
+Package: me.34306.icontime
+Version: 1.0-12
+Architecture: iphoneos-arm64e
+Maintainer: Little 34306
+Depends: mobilesubstrate, preferenceloader, firmware (>= 12.0)
+Filename: ./debfiles/me.34306.icontime_1.0-12_iphoneos-arm64e.deb
+Size: 28496
+MD5sum: fa2b16d0eb6099cfc492888f58dc8e9f
+SHA1: 33a523662d768b3d56276a5dde9380434e9b7bd8
+SHA256: 0fc30e1f75fbd28cccee5e6d93554ecaa650c5ea3856af615cdf417b70317578
+Section: Tweaks
+Description: Display the time as icon
+Author: 34306
+Name: iconTime
 
 Package: netskao.actionbarreborn
 Version: 1.1-2
