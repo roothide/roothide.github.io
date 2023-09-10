@@ -631,6 +631,22 @@ Description: Process Viewer for iOS GUI, updated for iOS 13 by SXX.
 Author: Domo, SXX
 Name: CocoaTop
 
+Package: tf.festival.rescale2
+Version: 1.0.5-1
+Architecture: iphoneos-arm64e
+Maintainer: Sniper_GER <sniperger@festival.tf>
+Installed-Size: 1092
+Depends: mobilesubstrate, preferenceloader, firmware (>= 9.0)
+Filename: ./debfiles/tf.festival.rescale2_1.0.5-1_iphoneos-arm64e.deb
+Size: 149632
+MD5sum: 904ccfc8050d6834eeef9601e39a2d46
+SHA1: ee54455ec3f6d1094d6569305ba282be02cf28e3
+SHA256: e491602f01d968b5a2efb804b6954490b883b173a7c9b5dc6aadaea043135b44
+Section: Tweaks
+Description: A modern (and safe) Upscale alternative!
+Author: Sniper_GER <sniperger@festival.ml>
+Name: Re:Scale 2
+
 Package: ws.hbang.alderis
 Version: 1.2.3-8+debug
 Architecture: iphoneos-arm64e
