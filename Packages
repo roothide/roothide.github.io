@@ -2,12 +2,12 @@ Package: FiveIconDock
 Version: 1
 Architecture: iphoneos-arm64e
 Maintainer: unknown
-Depends: mobilesubstrate (>= 0.9.5000), OldABI
+Depends: mobilesubstrate (>= 0.9.5000), oldabi
 Filename: ./debfiles/FiveIconDock.deb
-Size: 3556
-MD5sum: 1cd3c3d6fe64478e2efe018cc63fdcc3
-SHA1: 107213b2b105e11e2799ef85b6ef30d25e51fb57
-SHA256: ba24be83e84f164348de5553175790c12e1db2157ea0f234eecc76b6617c35f1
+Size: 3560
+MD5sum: bda89336dbbfa7aa5986d6d7ea72dcd0
+SHA1: 33e1f0ecf6a51e56f1c573a05f9e36412922da70
+SHA256: 3ff6daf28930eeb0957ef8ce86cd7e70ca8b2d57fd195cf80949b8ae4c715279
 Section: Tweaks
 Description: Five Icon Dock
 Author: unknown
@@ -147,10 +147,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Muirey03 & lclrc
 Depends: mobilesubstrate
 Filename: ./debfiles/com.lclrc.recordanywhere_1.1.0_iphoneos-arm64e.deb
-Size: 4144
-MD5sum: a9bb294c3cc81cad761d83f079dbe7e5
-SHA1: e410ff423d2bcb54d0c0540c025d2edaa7f6a311
-SHA256: 90e68c71e28ae731e1ab915e97ea09d427460eb06b2b0dfd97d34a919eccfa78
+Size: 4152
+MD5sum: 029095d760719b9c50db9db981d9f5f0
+SHA1: fe128b636279e5661f616eaa670673e639edf953
+SHA256: 88e4167ef2a0fcaba26013c5ba2602b95a38c097dc30c88e6d8ca21044afed07
 Section: Tweaks
 Description: enable screen recorder always work even on lock screen
 Author: Muirey03 & lclrc
@@ -398,16 +398,16 @@ Name: CC On & Off
 Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/cconoff.json
 
 Package: com.roothide.manager
-Version: 0.1-223+debug
+Version: 0.1-224+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 920
 Depends: firmware (>= 15.0)
-Filename: ./debfiles/com.roothide.manager_0.1-223+debug_iphoneos-arm64e.deb
-Size: 733882
-MD5sum: 501173930972ab0cbc275ce52956e0b7
-SHA1: f88168a057e6906dac9145cfa3081fb833ee9f20
-SHA256: d0a0734ab062631937765638760fe080d2b4e0adfac62ef5796cbdb7b93dabfb
+Filename: ./debfiles/com.roothide.manager_0.1-224+debug_iphoneos-arm64e.deb
+Size: 734068
+MD5sum: ed912d0fc6bb981baf93089cb738c3c4
+SHA1: bd5e5c24dfe29f510a30cbc598e52438e44f9785
+SHA256: 4ab811d1e78dc9c2e06219caa50f49af020667acf50282168c54b579861c20e2
 Section: System
 Description: Configuare RootHide's Features
 Author: RootHide
@@ -469,25 +469,6 @@ Description: ElleKit tweak injection libraries and loader
 Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
-
-Package: emt.paisseon.satella
-Version: 1.8.1
-Architecture: iphoneos-arm64e
-Maintainer: Lilliana
-Installed-Size: 500
-Depends: mobilesubstrate, firmware (>= 12.2), preferenceloader, com.opa334.altlist
-Filename: ./debfiles/emt.paisseon.satella_1.8.1_iphoneos-arm64e.deb
-Size: 90524
-MD5sum: 7182160bb772b580d0a639b75931af9c
-SHA1: af4b80442120e6b54e7ce4f24cded8a3a5e00665
-SHA256: 06e90c95575054dad54ff585fee47dc53083740ee9ab44dc38c9f3473ae700b0
-Section: Tweaks (Piracy)
-Description: Modern in-app purchase cracker
-Author: Lilliana
-Depiction: https://pinpal.github.io/Sileo-Depiction-WebViews/?json=https://paisseon.github.io/depictions/Satella.json&name=Satella&dev=Lilliana
-Icon: https://paisseon.github.io/icons/Satella.png
-Name: Satella
-Sileodepiction: https://paisseon.github.io/depictions/Satella.json
 
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
@@ -588,10 +569,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
 Filename: ./debfiles/org.coolstar.sileo_2.5_iphoneos-arm64e.deb
-Size: 4203836
-MD5sum: 5eb6a6b1b7cc4dcddb5b91bde0d2f19a
-SHA1: 65a095ed34cdf875da3e4c3edeb6ef351f5d124d
-SHA256: db837639e9cf246f76ace50ec291c6f6f2fbc436f7c683f177994efa8f830bcb
+Size: 4202760
+MD5sum: d8840d8562a7e7d155c50759fab1d124
+SHA1: 9582902fa27c9858cb6ba209eea602ba55129bd8
+SHA256: 7f8a04d8a514b8df90c16456ec4f1d3938b06449396e772c38c39260de2836df
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
