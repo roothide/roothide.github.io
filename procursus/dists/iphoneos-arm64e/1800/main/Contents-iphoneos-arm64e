@@ -1370,6 +1370,7 @@ usr/lib/pkgconfig/p11-kit-1.pc				    libp11-kit-dev
 usr/lib/pkgconfig/panelw.pc				    libncurses-dev
 usr/lib/pkgconfig/uuid.pc				    libuuid-dev
 usr/lib/pkgconfig/zlib-ng.pc				    libz-ng-dev
+usr/lib/roothideinit.dylib				    roothide
 usr/lib/ssl/cacert.pem					    ca-certificates
 usr/lib/ssl/certs					    ca-certificates
 usr/lib/terminfo					    ncurses-term
