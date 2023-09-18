@@ -398,16 +398,16 @@ Name: CC On & Off
 Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/cconoff.json
 
 Package: com.roothide.manager
-Version: 0.1-224+debug
+Version: 0.1-225+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
-Installed-Size: 920
+Installed-Size: 940
 Depends: firmware (>= 15.0)
-Filename: ./debfiles/com.roothide.manager_0.1-224+debug_iphoneos-arm64e.deb
-Size: 734068
-MD5sum: ed912d0fc6bb981baf93089cb738c3c4
-SHA1: bd5e5c24dfe29f510a30cbc598e52438e44f9785
-SHA256: 4ab811d1e78dc9c2e06219caa50f49af020667acf50282168c54b579861c20e2
+Filename: ./debfiles/com.roothide.manager_0.1-225+debug_iphoneos-arm64e.deb
+Size: 738014
+MD5sum: d7bcc2806397d993e8d84c9263eef5cf
+SHA1: e3c399c71598e46747eed8de30d863cf08055331
+SHA256: d5c967ac4d6bb83e8071a02dbd1938b62b9d7ca5acf9a2c805632af78f9437be
 Section: System
 Description: Configuare RootHide's Features
 Author: RootHide
@@ -695,16 +695,16 @@ Name: NewTerm 3 Beta
 Support: https://hashbang.productions/support/
 
 Package: xyz.willy.zebra
-Version: 1.1.35-83+debug
+Version: 1.1.35-85+debug
 Architecture: iphoneos-arm64e
 Maintainer: Zebra Team <team@getzbra.com>
 Installed-Size: 10768
 Depends: dpkg, uikittools, firmware (>= 9.0)
-Filename: ./debfiles/xyz.willy.zebra_1.1.35-83+debug_iphoneos-arm64e.deb
-Size: 4437752
-MD5sum: 8c89569414f23d9e2f23a4c578c80166
-SHA1: 46517f76133b248e6fdae004950eef30ceeac707
-SHA256: dfc55db1928160d2ef6489e3e1567ff7d3b9a13612e36f26bc17018078470803
+Filename: ./debfiles/xyz.willy.zebra_1.1.35-85+debug_iphoneos-arm64e.deb
+Size: 4437778
+MD5sum: 437ea8fb66da7528dd81ed25bcb861a4
+SHA1: d3b606264fc4831469a80aeae4b24907b157915e
+SHA256: aca70afa770219621827aa55726504422de7f952f583897129121be6606eb516
 Section: Packaging
 Description: A Useful Package Manager
 Tag: compatible::9.0-16.4
