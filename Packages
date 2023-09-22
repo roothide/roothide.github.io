@@ -226,23 +226,6 @@ Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportD
 Name: CCSupport
 
 Package: com.opa334.choicy
-Version: 1.4.10-3-1+debug
-Architecture: iphoneos-arm64e
-Maintainer: opa334 <opa334@protonmail.com>
-Installed-Size: 1248
-Depends: mobilesubstrate, com.opa334.altlist (>=1.0.4), preferenceloader
-Filename: ./debfiles/com.opa334.choicy_1.4.10-3-1+debug_iphoneos-arm64e.deb
-Size: 154510
-MD5sum: 7f9541877145d3dfd65a93da0c5d5211
-SHA1: e99084bf67d7675b3fefd6a18acf2bb73caf1349
-SHA256: 3cf2d37f021a5ba2d7e2ad018324a968d7a2e00c73b4cf2e96104e5c2a92a6ff
-Section: Tweaks
-Description: Advanced Tweak Configuration!
-Author: opa334 <opa334@protonmail.com>
-Depiction: https://opa334.github.io/depic/Choicy/index.html
-Name: Choicy
-
-Package: com.opa334.choicy
 Version: 1.4.10-3-2
 Architecture: iphoneos-arm64e
 Maintainer: opa334 <opa334@protonmail.com>
@@ -260,34 +243,16 @@ Depiction: https://opa334.github.io/depic/Choicy/index.html
 Name: Choicy
 
 Package: com.opa334.libsandy
-Version: 1.1.3-1+debug
+Version: 1.1.3-3-1+debug
 Architecture: iphoneos-arm64e
 Maintainer: opa334
 Installed-Size: 416
 Conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
-Filename: ./debfiles/com.opa334.libsandy_1.1.3-1+debug_iphoneos-arm64e.deb
-Size: 20770
-MD5sum: bc5a6282381e606e1f576fff60ec5f15
-SHA1: b824a3906ab2de34a45b90b96c41d41cd2e90208
-SHA256: 49fde76ea85e91a2ecbc475f7b470c1809a181889764b0b00ca4c6de756cfae4
-Section: System
-Description: Securely extend the sandbox of system processes and user applications
-Tag: role::developer
-Author: opa334
-Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
-Name: libSandy
-
-Package: com.opa334.libsandy
-Version: 1.1.3-2-2+debug
-Architecture: iphoneos-arm64e
-Maintainer: opa334
-Installed-Size: 416
-Conflicts: ws.hbang.stopcrashingpls (<= 1.0.2)
-Filename: ./debfiles/com.opa334.libsandy_1.1.3-2-2+debug_iphoneos-arm64e.deb
-Size: 20834
-MD5sum: 80863218676b833f3f30d86f202a56bf
-SHA1: 889c151df15e0117340503d2082a002fa7e526b5
-SHA256: 5f5a682526f723cfbc02a4ebe415b33219b868e4ce8b1f2906654f73035eb6f3
+Filename: ./debfiles/com.opa334.libsandy_1.1.3-3-1+debug_iphoneos-arm64e.deb
+Size: 20950
+MD5sum: 08232087924064f25bb55cf652bb308e
+SHA1: 2ac0b33ba74db5ae9108b705c6329b66241179fb
+SHA256: 69f3dc5ab72ca278d24d65d54c73b583c03c81685dd6a651a94f0cacfed68b3f
 Section: System
 Description: Securely extend the sandbox of system processes and user applications
 Tag: role::developer
