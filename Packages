@@ -43,21 +43,6 @@ Description: A simple tweak that turn your dock into iPadOS dock on iOS 15!
 Author: 34306
 Name: DockPad
 
-Package: com.34306.networkspeedrl
-Version: 1.0
-Architecture: iphoneos-arm64e
-Maintainer: Little 34306
-Depends: mobilesubstrate
-Filename: ./debfiles/com.34306.networkspeedrl_1.0_iphoneos-arm64e.deb
-Size: 13776
-MD5sum: 1caf47b06edc2c1931ac9b0206bad37d
-SHA1: 115d7979bfbdf1aa15a626b29de7dd91d9898dd9
-SHA256: 9def8da067c5b40f4e04351be493cee527d8d8be4b704aca14f1a99ff5bfcba5
-Section: Tweaks
-Description: A simple tweak that show network speed. Support notched iPhone and also rootless jailbreak.
-Author: 34306
-Name: NetworkSpeed
-
 Package: com.34306.swiped
 Version: 1.0-6+debug
 Architecture: iphoneos-arm64e
