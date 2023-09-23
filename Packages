@@ -348,16 +348,16 @@ Name: CC On & Off
 Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/cconoff.json
 
 Package: com.roothide.manager
-Version: 0.3-1+debug
+Version: 0.3-8+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 940
 Depends: firmware (>= 15.0)
-Filename: ./debfiles/com.roothide.manager_0.3-1+debug_iphoneos-arm64e.deb
-Size: 737988
-MD5sum: ec1ac28c1c416d99cfc04460b1fe0801
-SHA1: 295dfa4804d5ac98252d83a1ecb493e78bacc145
-SHA256: 1e64ac6c99835f1c4aa9811db44d9c41f59873648898ad26b44c3eb8f397e588
+Filename: ./debfiles/com.roothide.manager_0.3-8+debug_iphoneos-arm64e.deb
+Size: 738164
+MD5sum: b2ac9699fdd2b58aa828e7fab17893f1
+SHA1: 7928381157cc40f3c56f08d288733968cf048c1e
+SHA256: dfcccd2e13ac06e7329428b6ce4e5b35009476c01de3afbc891702fbe9946827
 Section: System
 Description: Configuare RootHide's Features
 Author: RootHide
