@@ -550,15 +550,15 @@ Author: Evelyn
 Name: Legacy arm64e Support
 
 Package: org.coolstar.sileo
-Version: 2.5
+Version: 2.5-2
 Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Filename: ./debfiles/org.coolstar.sileo_2.5_iphoneos-arm64e.deb
-Size: 4202760
-MD5sum: d8840d8562a7e7d155c50759fab1d124
-SHA1: 9582902fa27c9858cb6ba209eea602ba55129bd8
-SHA256: 7f8a04d8a514b8df90c16456ec4f1d3938b06449396e772c38c39260de2836df
+Filename: ./debfiles/org.coolstar.sileo_2.5-2_iphoneos-arm64e.deb
+Size: 4206544
+MD5sum: 60a75c69092dbcda3cb82590ab30818f
+SHA1: 41ecd3eb22196874a68f1defc7f467dc6906ce2a
+SHA256: bdf2e9279f8b352e6262bf200d376797b999a0b2cc859e2ab64aca1214c87e70
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
