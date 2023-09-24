@@ -173,6 +173,42 @@ Author: MTAC
 Name: Uptime
 
 Package: com.opa334.altlist
+Version: 1.0.10
+Architecture: iphoneos-arm64
+Maintainer: opa334
+Installed-Size: 340
+Depends: firmware (>=7.0)
+Filename: ./debfiles/com.opa334.altlist_1.0.10_iphoneos-arm64.deb
+Size: 27752
+MD5sum: d56fbc22b9ed3f663fef1e48293efc1b
+SHA1: 86a27b2fab4266e4394494310e33a1177c02bb47
+SHA256: 83cb344b44fccb9187fc4bf75fa023df83ba1c24a768f4baf84c1d09daa6c9fe
+Section: System
+Description: A modern AppList alternative
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+Name: AltList
+
+Package: com.opa334.altlist
+Version: 1.0.10
+Architecture: iphoneos-arm
+Maintainer: opa334
+Installed-Size: 388
+Depends: firmware (>=7.0)
+Filename: ./debfiles/com.opa334.altlist_1.0.10_iphoneos-arm.deb
+Size: 46768
+MD5sum: 1667c6554431e6b6e5ef6af26bc70123
+SHA1: 414c8470bed7b498d60cf5ebb7228baacad2317f
+SHA256: d621b52c6180ada141b31cdc4389faed1ee8059c0961395a512779ee5f8d9f02
+Section: System
+Description: A modern AppList alternative
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+Name: AltList
+
+Package: com.opa334.altlist
 Version: 1.0.10-3
 Architecture: iphoneos-arm64e
 Maintainer: opa334
