@@ -17,12 +17,12 @@ Package: com.34306.2nd
 Version: 2.0-3+debug
 Architecture: iphoneos-arm64e
 Maintainer: Little 34306
-Depends: oldabi, mobilesubstrate (>= 0.9.5000)
+Depends: oldabi, mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: ./debfiles/com.34306.2nd_2.0-3+debug_iphoneos-arm64e.deb
-Size: 29492
-MD5sum: 02be7e925c94fb275f0756ed3491f2e1
-SHA1: 62f447982cbdbd5353d3e7bfb08679d827905c67
-SHA256: 65b81f9502c0f3b9495974dd45a870a2b460a2d57810ce1376076bf311d5ab01
+Size: 29532
+MD5sum: 734b59969c6fddcdae8352911893e306
+SHA1: 81776320d4f70a7b61cafd16543e87b3444a4454
+SHA256: e0b1d8db59c24d3fa17522e90b25b20a9bbaf3bf24782d63c3dbff2245f12536
 Section: Tweaks
 Description: Add second line to your time on statusbar
 Author: 34306
@@ -47,12 +47,12 @@ Package: com.34306.swiped
 Version: 1.0-6+debug
 Architecture: iphoneos-arm64e
 Maintainer: Little 34306
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: ./debfiles/com.34306.swiped_1.0-6+debug_iphoneos-arm64e.deb
-Size: 12028
-MD5sum: 9f0807f3c52cd293d125889aaa88467d
-SHA1: c5b4c5796439676cbb6565a054f1a69b19c6d2e2
-SHA256: a0a8f17d3437f984b6fb2b370dc469301ec86ea438a5b8b6949eaee465be9ab4
+Size: 12056
+MD5sum: 230a8b90b7577ed7339d924a0d5d4496
+SHA1: 253993aee03704f6122997360c59450f70f2ae25
+SHA256: 25948793c6d02811606385a37843555c669097fa5f0e933510961a12bde382c3
 Section: Tweaks
 Description: Swiped!
 Author: 34306
@@ -146,12 +146,12 @@ Version: 1.0.3
 Architecture: iphoneos-arm64e
 Maintainer: LonestarX
 Installed-Size: 432
-Depends: mobilesubstrate, org.thebigboss.libcolorpicker
+Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
 Filename: ./debfiles/com.lnx.showtouch_1.0.3_iphoneos-arm64e.deb
-Size: 70016
-MD5sum: 7b207f317776974b482d64c5b41740d5
-SHA1: 12dcb161fc1854974e345518c91056c7d12bbbcb
-SHA256: fd290a4a6866701076eb9669e35288ab0b324b266de98b1884780302e4df0ba2
+Size: 70144
+MD5sum: 86587e952917ecfcd7237678b8851c3e
+SHA1: d02056274f72d75c5b756bb320fdad56daa362db
+SHA256: 93eda1c2c584730a30de5cd457d08d4de0bfdd77282cefb5d3cdcd0fffbee166
 Section: Tweaks
 Description: Shows where you touch the screen
 Author: LonestarX
@@ -406,12 +406,12 @@ Version: 1.1.1
 Architecture: iphoneos-arm64e
 Maintainer: yan
 Installed-Size: 712
-Depends: mobilesubstrate (>= 0.9.5000)
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Filename: ./debfiles/com.yan.anouk_1.1.1_iphoneos-arm64e.deb
-Size: 191364
-MD5sum: 6db7990a2a7341db92f5f9eb8f56740c
-SHA1: cf9c92586e0b7cde3478abc08f26c79e100d44e8
-SHA256: 14b743c44ab30cfcb3a15606571c7ed8cae442d54efd4b9f9965b3e03c0f5183
+Size: 191512
+MD5sum: 04da7fa70b3a0eada8e780929ddc1273
+SHA1: 6da870fb3983743a58a6efd0b8dc5b0afe866a4f
+SHA256: eed554ae1d7273838d6274e037782485e2fca1bf8f59f49a3c6b53040ed56e76
 Section: Tweaks
 Description: Authentication for the hidden album.
 Author: yan
@@ -424,12 +424,12 @@ Package: com.yourepo.cydiageek.nodockground
 Version: 1.0.6
 Architecture: iphoneos-arm64e
 Maintainer: CydiaGeek <lucaluca86@aol.com>
-Depends: mobilesubstrate
+Depends: mobilesubstrate, preferenceloader
 Filename: ./debfiles/NoDockGround.deb
-Size: 65872
-MD5sum: d34fc00ce6738017de5a81ef4ae5ad3e
-SHA1: 83b6b3a3e2b932787eff042235561755122031bc
-SHA256: 45df37c3b3f0585c7b4361aa79589e3d36de220c2ad71e353131d82da0190d6a
+Size: 65936
+MD5sum: f5f189f09d898b02b5f7e18146858723
+SHA1: 9a6f50be8ae8fd2601f2774da7a35004b7bc6cee
+SHA256: 918daef565779a4bc0495c4b0fd4bae430b4f8f736ab55d76c38954e01d60645
 Section: Tweaks
 Description: Make Clear the Background of the Dock!
 Author: CydiaGeek <lucaluca86@aol.com>
@@ -577,6 +577,22 @@ Size: 20010
 MD5sum: 182bac87ca02c76bf53baee5988cee3d
 SHA1: 964ef277225bd2a3d29ded7b60a66b7888b86dbe
 SHA256: 9c7c8876800b77f4539ce664e1d4fb9c9a73f09dd246eee1afc58ba0ef77812a
+Section: System
+Description: load preferences in style
+Author: Dhinak G <dhinak@dhinak.net>
+Name: PreferenceLoader
+
+Package: preferenceloader
+Version: 2.2.6-8+debug
+Architecture: iphoneos-arm64e
+Maintainer: ProcursusTeam <support@procurs.us>
+Installed-Size: 264
+Depends: mobilesubstrate
+Filename: ./debfiles/preferenceloader_2.2.6-8+debug_iphoneos-arm64e.deb
+Size: 20082
+MD5sum: 7fcefcf468b4114d08dbbe29ce30159d
+SHA1: 38fc3d5d8a9ad3db14c3ac4133eecc6f154e69d5
+SHA256: 884a12b4003d69c1203e61307ea3c148db4263b3ba4cf4895359a9877c1404c3
 Section: System
 Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
