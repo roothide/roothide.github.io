@@ -605,10 +605,10 @@ Maintainer: SXX, Domo
 Installed-Size: 892
 Conflicts: ru.domo.cocoatop
 Filename: ./debfiles/cocoatop.deb
-Size: 225020
-MD5sum: 03dd7fef8e94171ee5356b10fd20dcd4
-SHA1: fe5b61397f5b5953aa387656da7bc589610cdb7a
-SHA256: e9af1894f0da52bddee99d02e8b42b91c1a7cbf8f1522ba5824eb56c87c49d30
+Size: 225116
+MD5sum: 3ca1d68508bc56731f00a9806e777a3c
+SHA1: 51aa5c12508998708cd9221868ec3c82aa3b815a
+SHA256: 3a26c6ecb590683b152eb108ed154d6ad2604dbed91bcd2e425cc6c8343b1ba6
 Section: Utilities
 Description: Process Viewer for iOS GUI, updated for iOS 13 by SXX.
 Author: Domo, SXX
