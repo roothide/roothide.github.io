@@ -4590,16 +4590,16 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 0
 Provides: org.theos.dependencies
-Depends: roothide (>= 0.0.1), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid
+Depends: roothide (>= 0.0.2), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid, gzip
 Recommends: plutil, swift
 Conflicts: org.theos.dependencies
 Replaces: org.theos.dependencies
 Filename: pool/main/iphoneos-arm64e/1800/theos-dependencies/theos-dependencies_0-1_all.deb
-Size: 772
-MD5sum: 40ff5e422d34b6251b878052c7b63323
-SHA1: 0d936a4a201f8968a2fd22a747da7cb027fe1309
-SHA256: 7252074ee2efe6de87230646ee31ce7590ec3c4b7c55b3b2891169140907c116
-SHA512: 508f259834cc68af584605c621a4fefea26416f0e9f2d68c087753bb0a4b6b6d09d604d94c70e6575ea4578e8ebd3718202067674faeec870fc93fe300f5fecf
+Size: 770
+MD5sum: 536d7cec2cd1bac92719e241857b19cf
+SHA1: 8dfaed6c1bab4dac6e6bd7f4aacc69e54ae2c83d
+SHA256: eac0ae17bce241a1cc2a4d38b31557a83546373bd14f1fa7727f6a320bea76c6
+SHA512: b01d393bd95ba8c7ed325f16267d6aed7fe8862a243a04a06b6acfae474b3397d1cfc793e823c8795d54579cd7c16c1abbc638bd345b0addb2538a56bf825d0b
 Description: What Theos needs.
  This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 
