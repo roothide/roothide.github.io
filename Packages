@@ -401,25 +401,6 @@ Depiction: https://github.com/RootHide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
-Package: com.yan.anouk
-Version: 1.1.1
-Architecture: iphoneos-arm64e
-Maintainer: yan
-Installed-Size: 712
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Filename: ./debfiles/com.yan.anouk_1.1.1_iphoneos-arm64e.deb
-Size: 191512
-MD5sum: 04da7fa70b3a0eada8e780929ddc1273
-SHA1: 6da870fb3983743a58a6efd0b8dc5b0afe866a4f
-SHA256: eed554ae1d7273838d6274e037782485e2fca1bf8f59f49a3c6b53040ed56e76
-Section: Tweaks
-Description: Authentication for the hidden album.
-Author: yan
-Depiction: https://yandevelop.github.io/depic/Anouk/index.html
-Icon: https://yandevelop.github.io/assets/icons/anouk/icon.png
-Name: Anouk
-Sileodepiction: https://yandevelop.github.io/depic/Anouk/AnoukDepiction.json
-
 Package: com.yourepo.cydiageek.nodockground
 Version: 1.0.6
 Architecture: iphoneos-arm64e
@@ -576,6 +557,23 @@ Size: 4211944
 MD5sum: db52bd2ce6518682d52a7a25e366b014
 SHA1: 713169b099f2520fcf936e5a1720857b64cfd0ff
 SHA256: f2f398a44cde11fde97e135b39763758bd4d845ccb0f9ccbf1ee6d13c3c43384
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: org.coolstar.sileo
+Version: 2.5-4
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5-4_iphoneos-arm64e.deb
+Size: 4214136
+MD5sum: 55418549e56e61d3b2a1e6c0e9b625d9
+SHA1: b08609aaaa8a5bafcc942b52a1aca9b3a050891d
+SHA256: 4e2cbe49b785afb28d631abacbd295055f9d300472fd7094ab834f52e40f439a
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
