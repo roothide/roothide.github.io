@@ -419,17 +419,17 @@ Name: NoDockGround
 Sileodepiction: https://cydiageek.yourepo.com/sileo/depiction/nodockground
 
 Package: ellekit
-Version: 1.0-18.8c90474
+Version: 1.0-18.8c90474-2
 Architecture: iphoneos-arm64e
 Maintainer: Dhinak G <dhinak@dhinak.net>
 Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
 Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
 Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
-Filename: ./debfiles/ellekit_1.0-18.8c90474_iphoneos-arm64e.deb
-Size: 479450
-MD5sum: 6d852fefed63bdf00b10d91a3c83e8a6
-SHA1: 6c50339f85695125d9769f9ed32632bc2751123f
-SHA256: 8c16097c1891f8668be41e43ca5c1321abcd44dda58c2de05954c13c013978a3
+Filename: ./debfiles/ellekit_1.0-18.8c90474-2_iphoneos-arm64e.deb
+Size: 481370
+MD5sum: 7e7488db3bb92d3d8aaf647611d15007
+SHA1: dac279d09b4e1fcb1576f2a9e8606a19d16c0ced
+SHA256: f3f05c483fb15ec5a62f6fae10f1092ca52f04fae7fbf3a98f1ce1b9669440e8
 Section: Tweak Injection
 Priority: optional
 Description: ElleKit tweak injection libraries and loader
@@ -529,40 +529,6 @@ SHA256: f934818d4a74ff08372ebbe8ad3996b6f0a257eac14d41df29a2ee37285a9d08
 Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
 Name: Legacy arm64e Support
-
-Package: org.coolstar.sileo
-Version: 2.5-2
-Architecture: iphoneos-arm64e
-Maintainer: Amy While <me@anamy.gay>
-Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Filename: ./debfiles/org.coolstar.sileo_2.5-2_iphoneos-arm64e.deb
-Size: 4206544
-MD5sum: 60a75c69092dbcda3cb82590ab30818f
-SHA1: 41ecd3eb22196874a68f1defc7f467dc6906ce2a
-SHA256: bdf2e9279f8b352e6262bf200d376797b999a0b2cc859e2ab64aca1214c87e70
-Section: Packaging
-Description: A modern APT package manager frontend
-Author: Amy While <me@anamy.gay>
-Icon: https://getsileo.app/img/icon.png
-Name: Sileo
-Sileodepiction: https://featuredpage.getsileo.app/depiction.json
-
-Package: org.coolstar.sileo
-Version: 2.5-3
-Architecture: iphoneos-arm64e
-Maintainer: Amy While <me@anamy.gay>
-Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Filename: ./debfiles/org.coolstar.sileo_2.5-3_iphoneos-arm64e.deb
-Size: 4211944
-MD5sum: db52bd2ce6518682d52a7a25e366b014
-SHA1: 713169b099f2520fcf936e5a1720857b64cfd0ff
-SHA256: f2f398a44cde11fde97e135b39763758bd4d845ccb0f9ccbf1ee6d13c3c43384
-Section: Packaging
-Description: A modern APT package manager frontend
-Author: Amy While <me@anamy.gay>
-Icon: https://getsileo.app/img/icon.png
-Name: Sileo
-Sileodepiction: https://featuredpage.getsileo.app/depiction.json
 
 Package: org.coolstar.sileo
 Version: 2.5-4
@@ -702,6 +668,29 @@ Size: 4854058
 MD5sum: 3c548f8d6548d844424f91292bee4043
 SHA1: 932e6dd03164eb151c09f6cf62c0742bf5e040c4
 SHA256: 63db034c76cd1e3bc8d4e62175047fc5e73712b81db9adea47b187825074dacb
+Section: Terminal Support
+Description: Powerful terminal app for iOS
+Tag: compatible_min::ios14.0
+Author: HASHBANG Productions <support@hbang.ws>
+Depiction: https://chariz.com/get/newterm-beta
+Icon: https://img.chariz.cloud/icon/newterm-beta/icon@3x.png
+Name: NewTerm 3 Beta
+Support: https://hashbang.productions/support/
+
+Package: ws.hbang.newterm3
+Version: 3.0~beta1-15+debug
+Architecture: iphoneos-arm64e
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Installed-Size: 24264
+Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
+Recommends: gettext-localizations, iterm2-shell-integration, zsh-autosuggestions, zsh-syntax-highlighting
+Conflicts: ws.hbang.newterm, ws.hbang.newterm2
+Replaces: ws.hbang.newterm, ws.hbang.newterm2
+Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-15+debug_iphoneos-arm64e.deb
+Size: 4854132
+MD5sum: eb5d641e8ef8956d1f21dc67d17e1968
+SHA1: 2ce87bda52d693ecaa95220b50c158a6de74c3a0
+SHA256: 6aa9fe16290a2746a7912f151d682ebfb06138abd21606e973e62bae137f74c1
 Section: Terminal Support
 Description: Powerful terminal app for iOS
 Tag: compatible_min::ios14.0
