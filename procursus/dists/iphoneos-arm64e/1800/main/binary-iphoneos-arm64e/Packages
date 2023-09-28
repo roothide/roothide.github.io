@@ -176,6 +176,22 @@ SHA512: fa224ba73ffb255f32e526e38f9c075dc5ce106ad49dcac9440b4a9964d4985f74a01502
 Homepage: https://www.brotli.org/
 Description: Shared libraries for the Brotli compression format
 
+Package: build-essential
+Architecture: iphoneos-arm64e
+Version: 16.1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 50756
+Depends: roothide (>= 0.0.1), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/build-essential/build-essential_16.1_iphoneos-arm64e.deb
+Size: 16700398
+MD5sum: 37ce1bf92a46ad5cdab19cdc21f8d4f2
+SHA1: ae4525073e5ffa5a367d1de9712ee5dfec6ab1c4
+SHA256: 4324987fc6a43d9ce15dad504f85d4a796ac3e2035c5f2a1729d280a40851fc9
+SHA512: ebfbc267ee331285adb47937b05158c15870e380429b4d106056173dbcf69ed600c929caa65457d5555c8e00099529c5b8851bd96118ede5abdec215eb576193
+Description: Contains an SDK for your platform.
+
 Package: bzip2
 Architecture: iphoneos-arm64e
 Version: 1.0.8
@@ -253,6 +269,43 @@ Description: Common CA certificates
  .
  Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
 
+Package: ld64
+Architecture: iphoneos-arm64e
+Version: 609-3
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 2888
+Provides: org.coolstar.ld64
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libuuid16, libxar1, llvm-dev, libtapi
+Conflicts: org.coolstar.ld64
+Replaces: org.coolstar.ld64
+Filename: pool/main/iphoneos-arm64e/1800/cctools/ld64_609-3_iphoneos-arm64e.deb
+Size: 799308
+MD5sum: 4e3efa9898ae24e1fb93d4a80b7d05e7
+SHA1: 61e25fb66c2863d00d9a28c925ed34e8c5038902
+SHA256: d43c33d5815ff1b14c5bff87fc24ba86f80748dc36dd69c399b518a2febdc220
+SHA512: 53395e8465482921dd2dfd6839c30ace3d68a48f54d1c3cfa7eda410dd33ff5eb517137247ffccc48083f7e5cacafba2a20597e69b0bed88c8becd4820446765
+Homepage: https://github.com/apple-oss-distributions/cctools/
+Description: 64-bit Apple linker
+
+Package: odcctools
+Architecture: iphoneos-arm64e
+Version: 973.0.1-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 6500
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libuuid16, libxar1, llvm-dev, libtapi
+Filename: pool/main/iphoneos-arm64e/1800/cctools/odcctools_973.0.1-1_iphoneos-arm64e.deb
+Size: 1071406
+MD5sum: e74a6596215fedc884bdfba2a344d9ec
+SHA1: a468910dfd039b989fc2e3c1c62ef47339818dac
+SHA256: 3f4cdbef177b06f62e3e9e279fec36fa06cfc423c2aaa099c23e6bcdaf870c97
+SHA512: 4a71731625098a66815c1ba700957c01a36c199978f6dc46ec99d5fd44a0b23668e05273afd87e8a14a6134beed94fd89e8639ba170ec06503723cc0761bf593
+Homepage: https://github.com/tpoechtrager/cctools-port
+Description: linker and assembler for the iPhone
+
 Package: chariz-keyring
 Architecture: all
 Version: 2021.07.18
@@ -302,6 +355,81 @@ Description: GNU core utilities
  rmdir runcon sha*sum seq shred sleep sort split stat stty sum sync tac 
  tail tee test timeout touch tr true truncate tsort tty uname unexpand 
  uniq unlink users vdir wc who whoami yes
+
+Package: curl
+Architecture: iphoneos-arm64e
+Version: 8.0.1
+Priority: standard
+Section: Networking
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 320
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libcurl4 (= 8.0.1), libc-ares2, libnghttp2-14, libidn2-0, librtmp1, libgmp10, libgnutls30, libhogweed6, libnettle8, libssh2-1, libssl3, libzstd1, libbrotli1
+Filename: pool/main/iphoneos-arm64e/1800/curl/curl_8.0.1_iphoneos-arm64e.deb
+Size: 204024
+MD5sum: a144e018cde111015e4ebeb79e026cfd
+SHA1: 289b80f531af0a33e0d96f505160894127a7408c
+SHA256: bd3b6f71b4e0a6cb0e465d0346fb771f9109427faf1c143b0a7b4c91d30b94f4
+SHA512: b840500f02cf91e6e059d303067521daed4acb12d914c4b9d8f4b0989feadb90c6e2b4d90ebc8214ff21c6675d017f02331e8ca9ba44aa72701e36e289f1b742
+Homepage: http://curl.haxx.se/
+Description: command line tool for transferring data with URL syntax
+ curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks.
+
+Package: libcurl4-openssl-dev
+Architecture: iphoneos-arm64e
+Version: 8.0.1
+Priority: standard
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 4436
+Provides: libcurl-dev (= 8.0.1)
+Depends: roothide (>= 0.0.2), libcurl4 (= 8.0.1), libidn2-dev, libssl-dev, libssh2-dev, libnghttp2-dev, librtmp-dev
+Conflicts: curl (<< 8.0.1)
+Replaces: curl (<< 8.0.1)
+Filename: pool/main/iphoneos-arm64e/1800/curl/libcurl4-openssl-dev_8.0.1_iphoneos-arm64e.deb
+Size: 1908584
+MD5sum: 54a944472fec8e11fc0b959a94a66b34
+SHA1: c1ce73b340541f57ae920950170f0df3645affe7
+SHA256: 08291ba95f3c517f5a66d3d5094446890cb1192473f05fdf78f1b6d3109e9711
+SHA512: 77e88d5963737e53640f679968bc0d37fd6fe23b86dd7336438e663c46e14a5ecfbc866fd1de870c74cee1b8f2da3670fb4ba8ed6b2fc9db2dab6b21f0ec41b5
+Homepage: http://curl.haxx.se/
+Description: development files and documentation for libcurl (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported, fast, thoroughly documented and is already used by many known, big and successful companies and numerous applications.
+ .
+ This package provides the development files (ie. includes, static library, manual pages) that allow one to build software which uses libcurl.
+ .
+ SSL support is provided by OpenSSL.
+
+Package: libcurl4
+Architecture: iphoneos-arm64e
+Version: 8.0.1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 528
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libcurl4 (= 8.0.1), libc-ares2, libnghttp2-14, libidn2-0, librtmp1, libgmp10, libgnutls30, libhogweed6, libnettle8, libssh2-1, libssl3, libzstd1, libbrotli1
+Conflicts: curl (<< 8.0.1)
+Replaces: curl (<< 8.0.1)
+Filename: pool/main/iphoneos-arm64e/1800/curl/libcurl4_8.0.1_iphoneos-arm64e.deb
+Size: 255440
+MD5sum: b62a20a3437d622fb54bbf5c42a3b023
+SHA1: ac31222b8aeca437781018ba8642000d99eee3a0
+SHA256: 38130425bf76829dbe4835d6eb904c308b44dc2f0a348432f9add544445c82bd
+SHA512: 7c0e758b68e1a361f77f84fda4b3a28b2c25782fe81320230d1a6926c18738dfafdbb60243a638de7108d83c570ff1472fbea7c3cae6361bba941fa06297082a
+Homepage: http://curl.haxx.se/
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported, fast, thoroughly documented and is already used by many known, big and successful companies and numerous applications.
+ . 
+ SSL support is provided by OpenSSL
 
 Package: darwintools
 Architecture: iphoneos-arm64e
@@ -792,6 +920,30 @@ SHA256: cc112f419093d5ac0e1d6bf348c921b1191457b4b167409178db803e9e68cbbf
 SHA512: f3c82d0f86d8efc2b8c5c4140454a5ecaffa32440ec6d794b9ae5685ef581209b0691217252c57a689226d961830f4f0aa4b4e071c3ac55371fbdc8540359fe6
 Homepage: http://www.gnu.org/software/gettext/
 Description: internationalization helper for strings
+
+Package: git
+Architecture: iphoneos-arm64e
+Version: 2.39.1
+Priority: optional
+Section: Data_Storage
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 29680
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libcurl4, libssl3, libintl8, libpcre2-8-0, libidn2-0, firmware (>= 14.0) | libexpat1, pager
+Filename: pool/main/iphoneos-arm64e/1800/git/git_2.39.1_iphoneos-arm64e.deb
+Size: 10037444
+MD5sum: f8f18603f0b363ed7e74b84df5f903c3
+SHA1: fbba34c1c9b7e5edf62e3130c0e7a333135206ed
+SHA256: 691db08c197b9fe1daf43e52be9ac1d78ec35ea15efafed9bf50ba7ae707a0b2
+SHA512: b15e2a566ce5f3291973eaf3340ea667b8eb65219a7910e6261fd0a6c7e6c22c057bce3f3b72a60c74db61081b186f335fe3ff04dd6b1ec103153a05833db0bf
+Description: fast, scalable, distributed revision control system
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
 
 Package: dirmngr
 Architecture: iphoneos-arm64e
@@ -1342,6 +1494,24 @@ SHA512: ffab3b291438740abf4e4a91a42e8ce7e59a40a08e19834fb27ce8b8e4830af81b7c11db
 Description: pseudo-codesign Mach-O files
 Author: Jay Freeman (saurik) <saurik@saurik.com>
 
+Package: less
+Architecture: iphoneos-arm64e
+Version: 608
+Priority: important
+Section: Utilities
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 468
+Provides: more, pager
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libncursesw6, libpcre2-8-0
+Replaces: system-cmds (<= 433.4-11)
+Filename: pool/main/iphoneos-arm64e/1800/less/less_608_iphoneos-arm64e.deb
+Size: 156684
+MD5sum: a6552892742d57c0ccee9e8102ba4ec5
+SHA1: e96633d614695a4d81ce9096fa121e12a70430ef
+SHA256: 9cfd78978478543de154b54e01cbe0c18b40c575ef7fb99e98a119733ec0e045
+SHA512: 3901a8c0f749ecfab7f5ee39028eed7f6cfc57382b7fd07e0cd4076470b2c4ed3fda19a80f9405946d0456d27e4e6ca4bc84d9ab722f06c6ed6ad7d072bbfd08
+Description: provides less information than more does
+
 Package: libassuan-dev
 Architecture: iphoneos-arm64e
 Version: 2.5.5
@@ -1381,6 +1551,40 @@ Description: IPC library for the GnuPG components
  Libassuan is a small library implementing the so-called "Assuan
  protocol". This protocol is used for IPC between most newer GnuPG
  components. Both server and client side functions are provided.
+
+Package: libc-ares-dev
+Architecture: iphoneos-arm64e
+Version: 1.19.0
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 660
+Depends: roothide (>= 0.0.2), libc-ares2 (= 1.19.0)
+Filename: pool/main/iphoneos-arm64e/1800/libc-ares/libc-ares-dev_1.19.0_iphoneos-arm64e.deb
+Size: 227382
+MD5sum: 347692d680792c85ec3fc5c6b4c1acb7
+SHA1: 03930bc82b29717e32b0447fb917b193dcf92351
+SHA256: 508bfd38ed55b1beef229f113bde0b76fd3466c0bcf3897613f935cec7b3fcc0
+SHA512: 061a2a8ff7901fb7274ae71a53ffd1435f126bbedb9d14602576076e77c6da483f57e6ddfa38a39c79b3b5f3ed85c429ed130624adf974592ba76edb1e7db618
+Homepage: https://c-ares.haxx.se/
+Description: Development files for the c-ares asynchronous name resolver library.
+
+Package: libc-ares2
+Architecture: iphoneos-arm64e
+Version: 1.19.0
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 132
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libc-ares/libc-ares2_1.19.0_iphoneos-arm64e.deb
+Size: 36772
+MD5sum: 542fc9335813f8611c5138ce15699598
+SHA1: efd33278936e6b1ec9cab9f4f65e01ef8ad90f71
+SHA256: 0d542aeb1ee1aec44f8729a66b5f73694671c8ea56b4c85157fe8377c86f283e
+SHA512: b1ad2bbee5f9085fd7c902474a3f1391d6094041381ab1383e9e7394505e79b66a552bb0af5c8b9bc85a577298ec59fbf6e25387631a936b0766d061c40be52f
+Homepage: https://c-ares.haxx.se/
+Description: Shared libraries for the c-ares asynchronous name resolver library.
 
 Package: libedit-dev
 Architecture: iphoneos-arm64e
@@ -1969,6 +2173,44 @@ SHA1: cabc1a08322b85d346ad6958df75871c5071fe3c
 SHA256: 3560f4ae806e3576b15d495b426b68e3f1ebe89271b85ba84f980cd75b0d289d
 SHA512: 10fa28b5bb2565d8b550a7f3921f52fcf3fd52af2601ed46f74857f58ea8cd9b718182189917f3bdb36748a243d22740eeb760d55da52ed92eac248404bd4b07
 Description: Library for handling Apple binary and XML property lists
+
+Package: libssh2-1
+Architecture: iphoneos-arm64e
+Version: 1.10.0-1
+Priority: optional
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 324
+Provides: libssh2 (= 1.10.0-1)
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: libssh2 (<< 1.10.0-1)
+Replaces: libssh2 (<< 1.10.0-1)
+Filename: pool/main/iphoneos-arm64e/1800/libssh2/libssh2-1_1.10.0-1_iphoneos-arm64e.deb
+Size: 161228
+MD5sum: 7881d2261a35db36a907e9556b3668b9
+SHA1: 66385556e5db3eb7750936c278efc518bc22ed89
+SHA256: 0ba5ea3d3addac2ecdb7ed1f65e812cafe0a99e7a143a9b3e598ac809360a403
+SHA512: 2712e1bc430400d234aedb62ccbd23678b451fb5a86450724dad36df857dd87f93f3ec9c8932e6eeb0343ac7d50ad9b2d205ddd2a0b0132c42e0b35a49e40ebb
+Homepage: https://www.libssh2.org/
+Description: SSH2 client-side library
+
+Package: libssh2-dev
+Architecture: iphoneos-arm64e
+Version: 1.10.0-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 1464
+Depends: roothide (>= 0.0.2), libssh2-1 (>= 1.10.0-1)
+Conflicts: libssh2 (<< 1.10.0-1)
+Filename: pool/main/iphoneos-arm64e/1800/libssh2/libssh2-dev_1.10.0-1_iphoneos-arm64e.deb
+Size: 534620
+MD5sum: b4b95d78270fad4906248ddab3e45e32
+SHA1: c3804c075351c248ebdbf6fa4f80a1ce6ed71661
+SHA256: 1aead2745fbab7008d8764541be6d1a530cc1342af8fe4e904e89731ddac84a1
+SHA512: 79fa250c3c16cddbdeb60952b28dd6c9005aaf149bc51135f4f01dafbd8f4a973e3f9126a97c583858fa90ca7752c89c9c85c6e1aba0d199f62d5c8aef5b395f
+Homepage: https://www.libssh2.org/
+Description: SSH2 client-side library (development headers)
 
 Package: libtasn1-6-dev
 Architecture: iphoneos-arm64e
@@ -2921,6 +3163,31 @@ SHA512: aff44e7eb621f61cc714b98fee84a922e4af7acd39a7c3bbffa272108b87b86a6c9f71f9
 Homepage: http://tukaani.org/lzma/
 Description: Fast LZ compression algorithm library - tool
 
+Package: make
+Architecture: iphoneos-arm64e
+Version: 4.4.1
+Priority: important
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 1644
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/make/make_4.4.1_iphoneos-arm64e.deb
+Size: 442426
+MD5sum: 6f50d1b6f5063c5372fd1889f630d386
+SHA1: 252838e3272623133282e234efcec7c298f47dbe
+SHA256: 63986411f91dab626f66865c58aef4afe52a4fbb98606ab9be9f58001a17101c
+SHA512: 127ec3adfb4b56d68e654c5c12e26fe30e6f7d1926e47ea17b261215bac957a717ba7710e88e4405694f7d68b3888327fd775e88dcc135e890893a1154f82949
+Description: utility for directing compilation
+ GNU Make is a utility which controls the generation of executables
+ and other target files of a program from the program's source
+ files. It determines automatically which pieces of a large program
+ need to be (re)created, and issues the commands to (re)create
+ them. Make can be used to organize any task in which targets (files)
+ are to be automatically updated based on input files whenever the
+ corresponding input is newer --- it is not limited to building
+ computer programs. Indeed, Make is a general purpose dependency
+ solver.
+
 Package: libncurses-dev
 Architecture: iphoneos-arm64e
 Version: 6.4
@@ -3083,6 +3350,110 @@ SHA256: 14c0e22099d613b4527d89e349631ce9214fcf6802e7ecfaf403893f737560ae
 SHA512: 8f2e126ac1b6e6045e55164be91f25d37cf53077ebd547b091ca2d2582fb7e97b34c981f38ee90e14248fbe31c0a185ab32ca2ecea02190deb8bf996d38b9ae0
 Homepage: http://www.lysator.liu.se/~nisse/nettle/
 Description: low level cryptographic library (development files)
+
+Package: libnghttp2-14
+Architecture: iphoneos-arm64e
+Version: 1.52.0
+Priority: standard
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 192
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/nghttp2/libnghttp2-14_1.52.0_iphoneos-arm64e.deb
+Size: 70756
+MD5sum: f1421d65d16ba00b880e874e50b8a9f8
+SHA1: 1865d2e16396c36a1d15040b18cb2f450de2f417
+SHA256: 34792e2db72aa8c627db1465910a874380daf1ccfb1d22e0de547355efa79dff
+SHA512: c494e2c20fdb0f64a385bcea396065d53ec3c4dd46a64ecd9445ca89a0f994b377dfbbd1586f3e1e86d96195c636444ff66cda26d02eebd3c509d4e77a55dfec
+Homepage: https://nghttp2.org/
+Description: library implementing HTTP/2 protocol (shared library)
+ This is an implementation of the Hypertext Transfer Protocol version
+ 2 in C. The framing layer of HTTP/2 is implemented as a reusable C
+ library.
+ .
+ This package installs a shared library.
+
+Package: libnghttp2-dev
+Architecture: iphoneos-arm64e
+Version: 1.52.0
+Priority: standard
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 664
+Depends: roothide (>= 0.0.2), libnghttp2-14 (= 1.52.0)
+Filename: pool/main/iphoneos-arm64e/1800/nghttp2/libnghttp2-dev_1.52.0_iphoneos-arm64e.deb
+Size: 273024
+MD5sum: 85075192e202c0cc4a14ff45793303ce
+SHA1: 9d617cd71bb4c0d516bc34ef95f49d3d55132e09
+SHA256: 0553ce1dd9aff7186b754c56544679acd4f4524323964bbf7c994d0723212a12
+SHA512: d0eceabeb2ed6421b8605773a983b646c172d29c8df377cc42cd71049fd35182658a90f4b07e68e30f651a75ab2eda5788c3e18b159c7468c9014fa29cd399e1
+Homepage: https://nghttp2.org/
+Description: library implementing HTTP/2 protocol (development files)
+ This is an implementation of the Hypertext Transfer Protocol version
+ 2 in C. The framing layer of HTTP/2 is implemented as a reusable C
+ library.
+ .
+ This package installs development files.
+
+Package: nghttp2-client
+Architecture: iphoneos-arm64e
+Version: 1.52.0
+Priority: standard
+Section: Networking
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 244
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libnghttp2-14 (= 1.52.0), libc-ares2, libev4, libjansson4, libjemalloc2, libssl3, libnghttp3-3, libngtcp2-10
+Filename: pool/main/iphoneos-arm64e/1800/nghttp2/nghttp2-client_1.52.0_iphoneos-arm64e.deb
+Size: 86722
+MD5sum: 1c1ffb4f5b7798f3e33f357af98f9940
+SHA1: 72acf334a9fd34a20b8d3fad61406ffba856d539
+SHA256: e1d5c4e5cdebd63511bbfb5da6f9ce077285a485591e79b8ca71fc32361b792a
+SHA512: e033213db838a4cb483177047f6ccd95ec4397fd5301aa85c0cce357fd7119b1d9262acaf6fd46e2f5a16796e6c102d2fe4a4cac571c98500cb9d2f610907938
+Homepage: https://nghttp2.org/
+Description: client implementing HTTP/2 protocol
+ This is a command line client implementing the HTTP/2 protocol. It
+ gives access to many low-level and advanced aspects of the protocol
+ and therefore is useful for debugging.
+
+Package: nghttp2-proxy
+Architecture: iphoneos-arm64e
+Version: 1.52.0
+Priority: standard
+Section: Networking
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 964
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libnghttp2-14 (= 1.52.0), libc-ares2, libev4, libjansson4, libjemalloc2, libssl3, libngtcp2-10, libnghttp3-3
+Filename: pool/main/iphoneos-arm64e/1800/nghttp2/nghttp2-proxy_1.52.0_iphoneos-arm64e.deb
+Size: 382418
+MD5sum: 033e282fb818e125128a53948b4b25bd
+SHA1: 73c5f9cee7ad320e4bd683e6711d1f255ae617bf
+SHA256: 5ebfdd2b8c15a6578716f0e8a209280e3c208920d4f6af6bcdbc395608641ee2
+SHA512: 83d607be3912d4d061f0838a9421d58d1a571c99c282a23e183d4df5e7b58792c07477a8c23f3c034582853e80cacd25ffd82d040ae9ff152e9860bb47f51dbd
+Homepage: https://nghttp2.org/
+Description: reverse proxy implementing HTTP/2 protocol
+ This is a standalone server implementing the HTTP/2 protocol with
+ HTTP/1.1 fallback for clients that do not support it. It can be used
+ as a frontend in front of web servers that do not support HTTP/2.
+
+Package: nghttp2-server
+Architecture: iphoneos-arm64e
+Version: 1.52.0
+Priority: standard
+Section: Networking
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 196
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libnghttp2-14 (= 1.52.0), libc-ares2, libev4, libjansson4, libjemalloc2, libssl3, libnghttp3-3, libngtcp2-10
+Filename: pool/main/iphoneos-arm64e/1800/nghttp2/nghttp2-server_1.52.0_iphoneos-arm64e.deb
+Size: 76512
+MD5sum: 3fe593dde903fbda1663a5e552170370
+SHA1: b32e4072d6fbd5e4f1c7db5f9e678ba17ba95f07
+SHA256: c808a08a2dfd0e9803f97a984d2d70e6911e332f1a45d448e3172f1384f3cd1d
+SHA512: e49aa26497192de74b76ea6427076f47d256c4ed1d603732f0a31f0d7734c033bb3cfe47c178d7892ae6335d75c49e353bb1d0c3706b8e5426ddda886d8fe97e
+Homepage: https://nghttp2.org/
+Description: server implementing HTTP/2 protocol
+ This is a standalone server implementing the HTTP/2 protocol with
+ HTTP/1.1 fallback for clients that do not support it. It can be used
+ to serve files from a local directory.
 
 Package: libnpth0-dev
 Architecture: iphoneos-arm64e
@@ -3772,6 +4143,98 @@ Description: New Perl Compatible Regular Expression Library - utilities
  experimenting with regular expressions). Both programs are also
  useful examples of programming with libpcre2.
 
+Package: perl
+Architecture: iphoneos-arm64e
+Version: 5.32.1
+Priority: optional
+Section: Scripting
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 50736
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/perl/perl_5.32.1_iphoneos-arm64e.deb
+Size: 10914460
+MD5sum: 7312b9debb2fcb80ce9aab8966ed76a7
+SHA1: 8ea2f92f31117dcd5a874a58aed54e94b8bab93f
+SHA256: ebdbacc9d41b9a5f206aaebb9b26f6582637f87e0b5922370df724ea984be086
+SHA512: 25c65269dfd96a50161ccf1d3745bda494ca96f2c6de3ac5dbdfceed412acb95a6534212492a75237878ff522131f68a08a3808a8ac587060a57dadba139f192
+Homepage: http://dev.perl.org/perl5/
+Description: Larry Wall's Practical Extraction and Report Language
+ Perl is a highly capable, feature-rich programming language with over
+ 20 years of development. Perl 5 runs on over 100 platforms from
+ portables to mainframes. Perl is suitable for both rapid prototyping
+ and large scale development projects.
+ .
+ Perl 5 supports many programming styles, including procedural,
+ functional, and object-oriented. In addition to this, it is supported
+ by an ever-growing collection of reusable modules which accelerate
+ development. Some of these modules include Web frameworks, database
+ integration, networking protocols, and encryption. Perl provides
+ interfaces to C and C++ for custom extension development.
+
+Package: plutil
+Architecture: iphoneos-arm64e
+Version: 0.2.2
+Section: System
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 124
+Provides: com.bingner.plutil (=0.2.2)
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Conflicts: com.ericasadun.utilities, com.bingner.plutil
+Filename: pool/main/iphoneos-arm64e/1800/plutil/plutil_0.2.2_iphoneos-arm64e.deb
+Size: 29488
+MD5sum: 9ed129a5ab014a2531bf3c395ec42979
+SHA1: 3d7bf4fca5885107d6ac76f1516b2f50ba0b9adb
+SHA256: 2f68bb10a18e1ceef7ca314d15c17f48f5bb60872b4d1b5a72159cb45f946ada
+SHA512: ae614a0edf0ac1767c9087a5b5248c9f1fe489f5dd749e528c14058b69960723e6c5ed085b30585920faaf873ec1f39d12cf4a5fdf6b8fc2d323702a735cbb06
+Description: Utility for creating and editing Apple property list files.
+Author: Samuel Bingner
+
+Package: libpopt-dev
+Architecture: iphoneos-arm64e
+Version: 1.18
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 152
+Depends: roothide (>= 0.0.2), libpopt0
+Filename: pool/main/iphoneos-arm64e/1800/popt/libpopt-dev_1.18_iphoneos-arm64e.deb
+Size: 79828
+MD5sum: c2a561198cc91967e149290b657b6aef
+SHA1: 1c074c40bc23748437df1b3dfd68be5dd508d173
+SHA256: dc0459e1ced19bcfded2e30506306f26a8dbd00ac913ee5ca6e6dccc9b709476
+SHA512: ee647d0ba356e5109595c9cc0e8a0fcfedbba41138bbd1a910a2b7b87dee15d17a57e63a0e4f3d38d7d27c405e5879d04190dc88dab9836831b82058448eefa1
+Description: lib for parsing cmdline parameters - development files
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the popt static library and header file.
+
+Package: libpopt0
+Architecture: iphoneos-arm64e
+Version: 1.18
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 224
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/popt/libpopt0_1.18_iphoneos-arm64e.deb
+Size: 40920
+MD5sum: 29e0dabefd019e26377aa9d96f436ad8
+SHA1: 646752d9a86a9b4bad1e7ae29de2a590c39ca683
+SHA256: 2bf02e92daecc2c9a323e6a3c518ee522e838e52e47669a59a07060e78a5a211
+SHA512: 9450721a60eeb4cb1657819b4b679bd07f046db51a4e44715f818781fb02cdeddc2c437bebe1de540715c066f8a860480cd9567d5647937c655156b0eb73b832
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library.
+
 Package: profile.d
 Architecture: iphoneos-arm64e
 Version: 0-7
@@ -3844,6 +4307,97 @@ SHA512: 86d2bf190e28af425df40cf8569dad51a9a0eec4b0402f22a07c0d5f1ba8d5981fa45124
 Description: roothide core
 Name: roothide
 Author: roothide
+
+Package: rsync
+Architecture: iphoneos-arm64e
+Version: 3.2.4-1
+Priority: important
+Section: Networking
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 628
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libssl3, libzstd1, liblz4-1, libxxhash0, libpopt0
+Suggests: openssh-client, openssh-server
+Filename: pool/main/iphoneos-arm64e/1800/rsync/rsync_3.2.4-1_iphoneos-arm64e.deb
+Size: 346644
+MD5sum: 786545109bf94a9969babf033a6fcccf
+SHA1: 6f578712211e414675e75023eccb7d0b5795d60a
+SHA256: 11b4ef93fa03f31171737bdddc31e5faf530fb7d730fe00e1f4ddfde8d680cd4
+SHA512: 222ffe9a1a483fbdb0bd393a3943936f072178e2956c568aa5ad1fbea635ad2ad72d91259215663a70751508bac30990f52357cde9f5139d7f30aa9869cea7b7
+Homepage: http://rsync.samba.org/
+Description: fast, versatile, remote (and local) file-copying tool
+ rsync is a fast and versatile file-copying tool which can copy locally
+ and to/from a remote host. It offers many options to control its behavior,
+ and its remote-update protocol can minimize network traffic to make
+ transferring updates between machines fast and efficient.
+ .
+ It is widely used for backups and mirroring and as an improved copy
+ command for everyday use.
+ .
+ This package provides both the rsync command line tool and optional
+ daemon functionality.
+
+Package: librtmp-dev
+Architecture: iphoneos-arm64e
+Version: 2.4+20151223.gitfa8646d.1
+Priority: standard
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 304
+Depends: roothide (>= 0.0.2), libgnutls30-dev, nettle-dev, libgmp-dev, librtmp1 (= 2.4+20151223.gitfa8646d.1)
+Filename: pool/main/iphoneos-arm64e/1800/rtmpdump/librtmp-dev_2.4+20151223.gitfa8646d.1_iphoneos-arm64e.deb
+Size: 174286
+MD5sum: cb0bc6e9fe8010ffd04291806a00e032
+SHA1: b2d31de3e364af03f9599bdcd47559d0c35acfc2
+SHA256: 80815ce2fc00f80b8f8196a4b281797e4139e38c584bc70bca4a783c84c3fbf3
+SHA512: 0198ca242e2e0adcc0af8caf99a02ee1aa0ed295cbebc9ce2abc9dcf2f0aedfa0dc7fe461beff1192b6ec728d9bed24355ce4b138fc2d8b9a4400b4c58149557
+Description: toolkit for RTMP streams (development files)
+ A small dumper for media content streamed over the RTMP protocol (like BBC's
+ iPlayer high quality streams). Supplying an RTMP URL will result in a dumped
+ flv file, which can be played/transcoded with standard tools.
+ .
+ This package contains the development libraries, header files needed by
+ programs that want to compile with librtmp.
+
+Package: librtmp1
+Architecture: iphoneos-arm64e
+Version: 2.4+20151223.gitfa8646d.1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 200
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libgnutls30, libhogweed6, libnettle8, libgmp10
+Filename: pool/main/iphoneos-arm64e/1800/rtmpdump/librtmp1_2.4+20151223.gitfa8646d.1_iphoneos-arm64e.deb
+Size: 76750
+MD5sum: 4d7b2d8fdd1fe0efdf70aa3eaba52bf3
+SHA1: bffe3f52c10092dfce9d1dd5376be319ba4d8fa4
+SHA256: a059354038346653fc483b75e1d48df55b7e608636dcbefe7f664126137fc9aa
+SHA512: 95a544fa20b3eb1ba3dd535ca455e03345274ad638a4a28dddb3827bb6d6250973da57581659ee98d29ba825adc57dec3f4bcef520578aaabd9b8d251209266a
+Description: toolkit for RTMP streams (shared library)
+ A small dumper for media content streamed over the RTMP protocol (like BBC's
+ iPlayer high quality streams). Supplying an RTMP URL will result in a dumped
+ flv file, which can be played/transcoded with standard tools.
+ .
+ This package contains the shared libraries, header files needed by
+ programs that want to use librtmp.
+
+Package: rtmpdump
+Architecture: iphoneos-arm64e
+Version: 2.4+20151223.gitfa8646d.1
+Priority: standard
+Section: Utilities
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 260
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libgnutls30, libhogweed6, libnettle8, libgmp10, librtmp1
+Filename: pool/main/iphoneos-arm64e/1800/rtmpdump/rtmpdump_2.4+20151223.gitfa8646d.1_iphoneos-arm64e.deb
+Size: 56506
+MD5sum: 8566901bb2de002e473d88fdd16a8d14
+SHA1: a5827c4b08064dc17a9d68e4db220a35f76a7c1e
+SHA256: b0a46ee68163f7fdf2e82a8d69fce6a675b7bcb66d095ab85264a6deac43c241
+SHA512: d5f3cec58d119089fb6ab07bee78e402cd35959c69be2530d8c4b6e1d8bc28f56bbdcbd2eda57dea359f48d3cc36c737aafa9e15086fb34abb6c13caad3ef282
+Description: small dumper for media content streamed over the RTMP protocol
+ A small dumper for media content streamed over the RTMP protocol (like BBC's
+ iPlayer high quality streams). Supplying an RTMP URL will result in a dumped
+ flv file, which can be played/transcoded with standard tools.
 
 Package: sed
 Architecture: iphoneos-arm64e
@@ -3960,6 +4514,56 @@ SHA256: dc99c48ab0ddb6b403142582abdd5f223e4dc95348f2a7560a8d5e996951f760
 SHA512: c73efabe09adb93730fdd2236bfae0216352c61aed44bc6d1778dd8ce69ebcb4e88fe34ebf1201524f10535865c7ce9210d3bf1f1308e627b3f699abf0552e66
 Description: iostat, login, passwd, sync, sysctl, pw
 
+Package: libtapi-dev
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 6868
+Depends: roothide (>= 0.0.2), libtapi
+Filename: pool/main/iphoneos-arm64e/1800/tapi/libtapi-dev_1100.0.11-1_iphoneos-arm64e.deb
+Size: 566374
+MD5sum: 1f4d962dbf4ecec220ce40d9cd8e8d79
+SHA1: 765b946b2492a75d5948aa5364f0b0c6b9d3298b
+SHA256: 72ba1fa68242afd8fc392134f769d3736bfa127736b7ed67d139dd60789dfca8
+SHA512: f603b24bc4570abb8728aa71cf3f60dc7df04d1c7c9e4deb3676d34c46fdd7f01842c88973803e26a64ccc8f423ef3ab63fd0c2a782a88e13ac66ea44d0dbdeb
+Description: Text-based Application Programming Interface (library) - development files
+
+Package: libtapi
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 388
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0)
+Conflicts: libtapi10
+Replaces: libtapi10
+Filename: pool/main/iphoneos-arm64e/1800/tapi/libtapi_1100.0.11-1_iphoneos-arm64e.deb
+Size: 161746
+MD5sum: 4942e4feff7f0d99fce6cb01b0d01e16
+SHA1: bafd0650918e552baae6cb82d66faef37f59ed9a
+SHA256: fa0e726edece474e83a8d86238191e784235b2df70844b7de62373a6df079f86
+SHA512: 6ff4468fde1d016e7e2683b41c1a5d57bb296e6d5a7d2cf346e812c62c4c391957253b21c4e87d07693025c2d09ed091ead2f718fb06db39b21fd1100e188c0c
+Description: Text-based Application Programming Interface (library)
+
+Package: tapi
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 18856
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/tapi/tapi_1100.0.11-1_iphoneos-arm64e.deb
+Size: 6749306
+MD5sum: 8f945cac4d912d8d2483c6e6fb4b6a0f
+SHA1: 9ea9f1980e3cd2900d3197f9e317736b2e09708f
+SHA256: c68f0a5c4036576e59621f9a68e91f396b8937f5cefcbb55b6d7d7c23729b523
+SHA512: fe41128ae7508c494529a27d7120351e61ad6b932a33dba900f575ad8c9657c0d260833cdc329bb074dcf08be7a08b5a79fe2a3c6864558b53e7328d4707fc5a
+Description: Text-based Application Programming Interface frontend
+
 Package: tar
 Architecture: iphoneos-arm64e
 Version: 1.34
@@ -3977,6 +4581,27 @@ SHA256: 67cce9cb0d12cc20eddc33c9c859afc7ce1c558ec1a6c8db7d67cb00275dd9cb
 SHA512: 4e88afe2ba3215c1c6bb311a8d7a15754bc4e11c5fd03ac862e2b8ac4667542f788ceef7e549f365e651b741ba31f021c7ae58eaf977c9c01be1440b278c6465
 Homepage: http://www.gnu.org/software/tar/
 Description: tool for making tape archives
+
+Package: theos-dependencies
+Architecture: all
+Version: 0-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 0
+Provides: org.theos.dependencies
+Depends: roothide (>= 0.0.1), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid
+Recommends: plutil, swift
+Conflicts: org.theos.dependencies
+Replaces: org.theos.dependencies
+Filename: pool/main/iphoneos-arm64e/1800/theos-dependencies/theos-dependencies_0-1_all.deb
+Size: 772
+MD5sum: 40ff5e422d34b6251b878052c7b63323
+SHA1: 0d936a4a201f8968a2fd22a747da7cb027fe1309
+SHA256: 7252074ee2efe6de87230646ee31ce7590ec3c4b7c55b3b2891169140907c116
+SHA512: 508f259834cc68af584605c621a4fefea26416f0e9f2d68c087753bb0a4b6b6d09d604d94c70e6575ea4578e8ebd3718202067674faeec870fc93fe300f5fecf
+Description: What Theos needs.
+ This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 
 Package: uikittools-extra
 Architecture: iphoneos-arm64e
@@ -4012,6 +4637,22 @@ SHA1: a1221eb9525f6e7a0353f7942ae8bdff32982738
 SHA256: dbc00b6202d8acce775ec731fd8dcd85941129370c2fe29ac0980a4423cf24ae
 SHA512: af0de9335d177bde53042bee208c9bada1f6154c405aac1f59a24695f1c7aa8bbb17812170a5a3e53f43dbd0c4dd9d4def1be9dfd7efc5b5513dd629106c8a40
 Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: unzip
+Architecture: iphoneos-arm64e
+Version: 6.0-28
+Priority: important
+Section: Archiving
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 620
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/unzip/unzip_6.0-28_iphoneos-arm64e.deb
+Size: 148634
+MD5sum: 9c4291a9c256dfe71bb480a51077a523
+SHA1: 63e7f77024dfc2f7d899b5b860b7b4bca3dbe672
+SHA256: 8bc90e073330333a990b504d3c464741a15c7206daee217425bfce5a625f5d54
+SHA512: e91fb7a30b18b6fb47e6c80d5ea53f2686ddafba289bf5061882442c2777979a61df6f9d0138d9cb093b2e29aececf09e3dd99891a646c0735d6ffb06bfe3763
+Description: de-compesses files in zip format
 
 Package: libuuid-dev
 Architecture: iphoneos-arm64e
@@ -4099,6 +4740,61 @@ SHA1: 615419c08e13afab998b13f6c487a9b85b92fd42
 SHA256: 467ff5135d81aa82dfe6be934477c94506cb4626693befb944da402a8799bb45
 SHA512: 6480e454cef211a8f8b3751c6f0b8f7af384a216b529ba88c099f0c6c84b6461d813969dc767ad8c4690f8b8d373889013e2a72a92f011fc65752ef732458c8c
 Description: The original ex/vi text editor
+
+Package: libxar-dev
+Architecture: iphoneos-arm64e
+Version: 1.8.0.487.100.1-1
+Priority: optional
+Section: Development
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 320
+Depends: roothide (>= 0.0.2), libxar1 (>= 1.8.0.487.100.1-1), libssl-dev
+Conflicts: xar (<< 1.8.0.487.100.1-1)
+Replaces: xar (<< 1.8.0.487.100.1-1)
+Filename: pool/main/iphoneos-arm64e/1800/xar/libxar-dev_1.8.0.487.100.1-1_iphoneos-arm64e.deb
+Size: 143036
+MD5sum: 064779a743fb20a670cca20009bbdb08
+SHA1: a426555268fa9c39a6a909cd3993bcedb2a8247d
+SHA256: 73c98d61b285a350131bbfe77a031800058d1116071d4740a869946a6019c395
+SHA512: c5d99b4f49fb64434902b691c78548f177413677f31ab7b15cff7b316374d4ec7f0d0d107ef166f5d13d26900cd8972128d1ea70e08c91af9d4782ba1b285fcf
+Homepage: https://mackyle.github.io/xar/
+Description: eXtensible ARchive format - Development files
+
+Package: libxar1
+Architecture: iphoneos-arm64e
+Version: 1.8.0.487.100.1-1
+Priority: optional
+Section: Libraries
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 144
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: xar (<< 1.8.0.487.100.1-1)
+Replaces: xar (<< 1.8.0.487.100.1-1)
+Filename: pool/main/iphoneos-arm64e/1800/xar/libxar1_1.8.0.487.100.1-1_iphoneos-arm64e.deb
+Size: 41954
+MD5sum: 7be8bc80678a56eda93ca2b65d9f753d
+SHA1: 27c4f4e2fe76d196119770dbaedabbac5e9292f0
+SHA256: 85010d94fddcf0b71f528e07e046aba850a37250f42b2a81471876b2c02d5809
+SHA512: 060cf9274bf6a4d2188ed2afa5a76567dbeccc9275da1ad4803d7bef5e0a59b94a896e6ab6be705a602fcb72738a1a51680255b80ccb604f1febea09dd2ab487
+Homepage: https://mackyle.github.io/xar/
+Description: eXtensible ARchive format - dynamic library
+
+Package: xar
+Architecture: iphoneos-arm64e
+Version: 1.8.0.487.100.1-1
+Priority: optional
+Section: Archiving
+Maintainer: RootHide (@RootHideDev on twitter)
+Installed-Size: 68
+Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libxar1 (>= 1.8.0.487.100.1-1), libssl3
+Filename: pool/main/iphoneos-arm64e/1800/xar/xar_1.8.0.487.100.1-1_iphoneos-arm64e.deb
+Size: 16284
+MD5sum: 0358a20571093801ae216cfe3ff6895b
+SHA1: 023108ed4da1d027dac5ca6555118949ec378bd3
+SHA256: 5ee0d55fc0c48558687e3c612f682b2730b9f6a577b7e80af8840674bdf22c9c
+SHA512: a5277b13bb1297402529ae0f12522931d283092824fd84062b0ebd787d5f44a3a8dc70493e1ffcc4809daeed6a272e2755d5cb282866f484acdef3ae12a09893
+Homepage: https://mackyle.github.io/xar/
+Description: eXtensible ARchive format
 
 Package: libxxhash-dev
 Architecture: iphoneos-arm64e
