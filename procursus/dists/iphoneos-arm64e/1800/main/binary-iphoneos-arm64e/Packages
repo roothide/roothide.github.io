@@ -4289,25 +4289,6 @@ SHA256: 943cda4f520168f9a4db84a0b9689e5d08526bc4a9b957d2ec2f7b36b2ecdd75
 SHA512: 9f9a8effcdfb28e7dd4b640cc62cd001df1163c369de0dcb642104eb0bfe29ad01f1ea6dc708dd69d29075d2b5377b787869bdedf6b68848df953d00f10b9c5d
 Description: GNU readline and history libraries, run-time libraries
 
-Package: roothide
-Architecture: iphoneos-arm64e
-Version: 0.0.2
-Priority: required
-Essential: yes
-Section: System
-Maintainer: roothide
-Installed-Size: 916
-Depends: libiosexec1 (>= 1.3.1)
-Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.2_iphoneos-arm64e.deb
-Size: 51516
-MD5sum: 166d05eaeceda252c94e77c79de2ad51
-SHA1: eb596aaf0ce906b8a7ba43724524a8a60bc80b1d
-SHA256: 41b1c116a9bd9ec8575fb4fd51702d6c29ddb53be78e133a0597a620dd04948f
-SHA512: 86d2bf190e28af425df40cf8569dad51a9a0eec4b0402f22a07c0d5f1ba8d5981fa451242577fdebb06ac6b6c23550b898e6ef41ce99c533638adb7074ad851b
-Description: roothide core
-Name: roothide
-Author: roothide
-
 Package: rsync
 Architecture: iphoneos-arm64e
 Version: 3.2.4-1
@@ -4590,16 +4571,16 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 0
 Provides: org.theos.dependencies
-Depends: roothide (>= 0.0.2), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid, gzip
+Depends: roothide (>= 0.0.3), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid, gzip
 Recommends: plutil, swift
 Conflicts: org.theos.dependencies
 Replaces: org.theos.dependencies
 Filename: pool/main/iphoneos-arm64e/1800/theos-dependencies/theos-dependencies_0-1_all.deb
-Size: 770
-MD5sum: 536d7cec2cd1bac92719e241857b19cf
-SHA1: 8dfaed6c1bab4dac6e6bd7f4aacc69e54ae2c83d
-SHA256: eac0ae17bce241a1cc2a4d38b31557a83546373bd14f1fa7727f6a320bea76c6
-SHA512: b01d393bd95ba8c7ed325f16267d6aed7fe8862a243a04a06b6acfae474b3397d1cfc793e823c8795d54579cd7c16c1abbc638bd345b0addb2538a56bf825d0b
+Size: 772
+MD5sum: c0287bcc95d9c05c9edb6c8d206d8fbf
+SHA1: 91bed2c81736b488cb6c1f3751fa9220491bb5e1
+SHA256: f111dc8f6836a823cc9e6a9869d20f1c5a8fc510056a15104974971d5e8625f5
+SHA512: 8a506523f11c9da846ea016ec93b42a40f011f64d61e0ff9e94c1aaf903000174be4dc982988fdab636763ae1aa72b4fe67dc31e25a709d9f28fff7b7bfc76c4
 Description: What Theos needs.
  This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 

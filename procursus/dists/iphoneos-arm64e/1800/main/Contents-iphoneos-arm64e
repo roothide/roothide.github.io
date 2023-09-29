@@ -1,7 +1,6 @@
 Library/LaunchDaemons/com.apple.atrun.plist		    system-cmds
 Library/LaunchDaemons/com.openssh.sshd.plist		    openssh-server
 Library/LaunchDaemons/us.diatr.shshd.plist		    shshd
-System/Library/CoreServices/SystemVersion.plist		    roothide
 bin/bash						    bash
 bin/bunzip2						    bzip2
 bin/bzcat						    bzip2
@@ -20,7 +19,6 @@ bin/chown						    coreutils
 bin/cp							    coreutils
 bin/date						    coreutils
 bin/dd							    coreutils
-bin/df							    roothide
 bin/dir							    coreutils
 bin/echo						    coreutils
 bin/false						    coreutils
@@ -72,8 +70,6 @@ etc/apt/trusted.gpg.d/memo.gpg				    procursus-keyring
 etc/dpkg/origins/default				    dpkg
 etc/dpkg/origins/procursus				    dpkg
 etc/group						    base
-etc/hosts						    roothide
-etc/hosts.equiv						    roothide
 etc/localtime						    base
 etc/master.passwd					    base
 etc/pam.d/login						    system-cmds
@@ -108,13 +104,10 @@ etc/sudoers						    sudo
 etc/sudoers.d/procursus					    sudo
 etc/sudoers.dist					    sudo
 etc/zprofile						    profile.d
-private/preboot						    roothide
-private/var						    roothide
 rootfs							    base
 sbin/dmesg						    system-cmds
 sbin/dynamic_pager					    system-cmds
 sbin/halt						    system-cmds
-sbin/mount						    roothide
 sbin/nologin						    system-cmds
 sbin/reboot						    system-cmds
 sbin/shutdown						    system-cmds
@@ -344,8 +337,6 @@ usr/bin/instmodsh					    perl
 usr/bin/intercept-build					    clang-tools
 usr/bin/ipcrm						    file-cmds
 usr/bin/ipcs						    file-cmds
-usr/bin/jbrand						    roothide
-usr/bin/jbroot						    roothide
 usr/bin/join						    coreutils
 usr/bin/jot						    shell-cmds
 usr/bin/json_pp						    perl
@@ -570,7 +561,6 @@ usr/bin/renice						    shell-cmds
 usr/bin/reset						    ncurses-bin
 usr/bin/rm						    coreutils
 usr/bin/rmdir						    coreutils
-usr/bin/rootfs						    roothide
 usr/bin/rrsync						    rsync
 usr/bin/rsync						    rsync
 usr/bin/rsync-ssl					    rsync
@@ -1556,7 +1546,6 @@ usr/lib/libpopt.dylib					    libpopt-dev
 usr/lib/libreadline.8.2.dylib				    libreadline8
 usr/lib/libreadline.8.dylib				    libreadline8
 usr/lib/libreadline.dylib				    libreadline-dev
-usr/lib/libroothide.dylib				    roothide
 usr/lib/librtmp.1.dylib					    librtmp1
 usr/lib/librtmp.a					    librtmp-dev
 usr/lib/librtmp.dylib					    librtmp-dev
@@ -1579,8 +1568,6 @@ usr/lib/libunistring.dylib				    libunistring-dev
 usr/lib/libuuid.16.dylib				    libuuid16
 usr/lib/libuuid.a					    libuuid-dev
 usr/lib/libuuid.dylib					    libuuid-dev
-usr/lib/libvroot.dylib					    roothide
-usr/lib/libvrootapi.dylib				    roothide
 usr/lib/libxar.1.dylib					    libxar1
 usr/lib/libxar.a					    libxar-dev
 usr/lib/libxar.dylib					    libxar-dev
@@ -7957,7 +7944,6 @@ usr/lib/pkgconfig/panelw.pc				    libncurses-dev
 usr/lib/pkgconfig/popt.pc				    libpopt-dev
 usr/lib/pkgconfig/uuid.pc				    libuuid-dev
 usr/lib/pkgconfig/zlib-ng.pc				    libz-ng-dev
-usr/lib/roothideinit.dylib				    roothide
 usr/lib/ssl/cacert.pem					    ca-certificates
 usr/lib/ssl/certs					    ca-certificates
 usr/lib/swift/FrameworkABIBaseline			    swift
@@ -8348,8 +8334,6 @@ usr/libexec/sudo/libsudo_util.dylib			    sudo
 usr/libexec/sudo/sudo_intercept.so			    sudo
 usr/libexec/sudo/sudo_noexec.so				    sudo
 usr/libexec/sudo/system_group.so			    sudo
-usr/libexec/updatelink					    roothide
-usr/libexec/updatelinks.sh				    roothide
 usr/local/lib/liblzma.5.dylib				    liblzma5
 usr/local/lib/liblzma.a					    liblzma-dev
 usr/local/lib/liblzma.dylib				    liblzma-dev
@@ -24912,7 +24896,6 @@ usr/share/man/zh_TW/man1/uinotify.1.zst			    uikittools-extra
 usr/share/man/zh_TW/man1/uiopen.1.zst			    uikittools
 usr/share/man/zh_TW/man1/uisave.1.zst			    uikittools-extra
 usr/share/man/zh_TW/man1/uishoot.1.zst			    uikittools-extra
-usr/share/misc/trace.codes				    roothide
 usr/share/nghttp2/fetch-ocsp-response			    nghttp2-proxy
 usr/share/p11-kit/modules/p11-kit-trust.module		    p11-kit
 usr/share/perl5/Dpkg.pm					    libdpkg-perl
@@ -27916,7 +27899,6 @@ usr/share/terminfo/z/zt-1				    ncurses-term
 usr/share/terminfo/z/ztx				    ncurses-term
 usr/share/terminfo/z/ztx-1-a				    ncurses-term
 usr/share/terminfo/z/ztx11				    ncurses-term
-usr/share/zoneinfo					    roothide
 usr/share/zsh/functions/Calendar/after			    zsh
 usr/share/zsh/functions/Calendar/age			    zsh
 usr/share/zsh/functions/Calendar/before			    zsh
@@ -29229,10 +29211,5 @@ usr/share/zsh/help/zstyle				    zsh
 usr/share/zsh/help/ztcp					    zsh
 usr/share/zsh/scripts/newuser				    zsh
 usr/share/zsh/site-functions/_ldid			    ldid
-var/containers						    roothide
-var/db/timezone						    roothide
 var/lib/dpkg						    dpkg
-var/mobile/Containers					    roothide
 var/run/utmp						    base
-var/run/utmpx						    roothide
-var/tmp							    roothide
