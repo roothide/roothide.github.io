@@ -4289,6 +4289,25 @@ SHA256: 943cda4f520168f9a4db84a0b9689e5d08526bc4a9b957d2ec2f7b36b2ecdd75
 SHA512: 9f9a8effcdfb28e7dd4b640cc62cd001df1163c369de0dcb642104eb0bfe29ad01f1ea6dc708dd69d29075d2b5377b787869bdedf6b68848df953d00f10b9c5d
 Description: GNU readline and history libraries, run-time libraries
 
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.0.3
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide
+Installed-Size: 916
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.3_iphoneos-arm64e.deb
+Size: 52208
+MD5sum: 6b18a10ff52d9c9db7f526493a97d61c
+SHA1: c8a381c737522fe7400119b06f0b7da7b21bfd2b
+SHA256: 047540f649275b6dd066c472438eb7bd9cd4fc99ec4fb0976184e25508926e0d
+SHA512: 97f86789d3f2e46e8dfe14e1b53481bc3ade839caf4f76e01c84055f2f6b5019f073b6bc37978e182f8b8016d716c9ac2587bfbe4657936c18c98114c0364e4c
+Description: roothide core
+Name: roothide
+Author: roothide
+
 Package: rsync
 Architecture: iphoneos-arm64e
 Version: 3.2.4-1
