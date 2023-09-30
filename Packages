@@ -364,6 +364,26 @@ Description: Useful actions on the Keyboard Dock View!
 Author: P2KDev <p2kdev@gmail.com>
 Name: UnderDock (NoSettings)
 
+Package: com.pantsthief.flexing
+Version: 1.5.0-9+debug
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 164
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex, mobilesubstrate
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debfiles/com.pantsthief.flexing_1.5.0-9+debug_iphoneos-arm64e.deb
+Size: 13614
+MD5sum: b150bf11cc4a0d77892176323fdc26e3
+SHA1: cfc803db12a55889620af5ee6bca78246373043d
+SHA256: 5653ce3afd4c9d44ab833585d5769459feda6c90e605f77d134e4571cfefaef0
+Section: Tweaks
+Description: Open FLEX anywhere!
+Author: Tanner Bennett <thepantsthief@me.com>
+Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
+Name: FLEXing
+Sileodepiction: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
+
 Package: com.ps.cconandoff
 Version: 1.1.0
 Architecture: iphoneos-arm64e
@@ -452,6 +472,24 @@ Description: [iOS15]Add "Toggle Background Mode" action to ControlCenter.
 Author: @akusio_RR
 Depiction: https://akusio.github.io/descriptions/backgrounderaction15/index.html
 Name: BackgrounderAction15 CCSupport
+
+Package: libflex
+Version: 4.7.0~b4-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <tannerbennett@me.com>
+Installed-Size: 6084
+Pre-Depends: firmware (>= 9.0)
+Filename: ./debfiles/libflex_4.7.0~b4-1+debug_iphoneos-arm64e.deb
+Size: 1397822
+MD5sum: cf9dc96f5d2ba5bc53cd893d3fcda72a
+SHA1: 8a4db772cdd8452e2d0f7bada01035c536414454
+SHA256: 4c57623e67c4ba593713d7ecc13d13d92b01321ad11032c157ac2b0bfb72b9a5
+Section: Tweaks
+Description: A library for Flipboard Explorer.
+Author: Tanner Bennett <tannerbennett@me.com>
+Depiction: https://nscake.github.io/package.html?package=libflex
+Name: libFLEX
+Sileodepiction: https://nscake.github.io/depictions/libflex.sileo.json
 
 Package: libkrw0-dopamine
 Version: 1.0.0
