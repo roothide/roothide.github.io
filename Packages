@@ -421,6 +421,24 @@ Depiction: https://github.com/RootHide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
+Package: com.simplycode.PostBox
+Version: 0.8.1
+Architecture: iphoneos-arm64e
+Maintainer: PostBox Team <getpostboxapp@gmail.com>
+Filename: ./debfiles/PostBox-0.8.1.deb
+Size: 4089492
+MD5sum: 44778dfa261f383e644e9a0bf9c3b89a
+SHA1: 593bd4ebad51efa706c899b037b925f9296a88c5
+SHA256: 2c8b844f3d62406053a22306cd1c707daf79c195f3354f9bc90685c95720bca4
+Section: Apps
+Homepage: https://postbox.news
+Description: News, package lists, and repo lists, all community centered.
+Author: PostBox Team <getpostboxapp@gmail.com>
+Depiction: https://postbox.news/depicts/app
+Icon: https://postbox.news/depicts/app/icon.png
+Name: PostBox
+Sileodepiction: https://postbox.news/depicts/app/fancydeps.json
+
 Package: com.yourepo.cydiageek.nodockground
 Version: 1.0.6
 Architecture: iphoneos-arm64e
