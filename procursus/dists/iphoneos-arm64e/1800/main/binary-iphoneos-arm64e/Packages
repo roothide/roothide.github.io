@@ -4331,17 +4331,17 @@ Package: plutil
 Architecture: iphoneos-arm64e
 Version: 0.2.2
 Section: System
-Maintainer: RootHide (@RootHideDev on twitter)
+Maintainer: RootHide <RootHideDev@twitter>
 Installed-Size: 124
 Provides: com.bingner.plutil (=0.2.2)
-Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1)
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
 Conflicts: com.ericasadun.utilities, com.bingner.plutil
 Filename: pool/main/iphoneos-arm64e/1800/plutil/plutil_0.2.2_iphoneos-arm64e.deb
-Size: 29488
-MD5sum: 9ed129a5ab014a2531bf3c395ec42979
-SHA1: 3d7bf4fca5885107d6ac76f1516b2f50ba0b9adb
-SHA256: 2f68bb10a18e1ceef7ca314d15c17f48f5bb60872b4d1b5a72159cb45f946ada
-SHA512: ae614a0edf0ac1767c9087a5b5248c9f1fe489f5dd749e528c14058b69960723e6c5ed085b30585920faaf873ec1f39d12cf4a5fdf6b8fc2d323702a735cbb06
+Size: 29620
+MD5sum: 770b598a215a2c8168972baf2a1476ba
+SHA1: 177650d24d6e187af48ded928580834d54aaec48
+SHA256: 71dd3eb4503476a9a149cdfca74a5e226a375557080113911ba52b30aa04a0a6
+SHA512: 19bd734dabb93fa507bb9c02ed6c13ee1f534b9bd18d8c461be274a9d7e023bc0b3b2c6add1cbcb2b82c0297fa1a68a215942a378d7887073fee93e77facf628
 Description: Utility for creating and editing Apple property list files.
 Author: Samuel Bingner
 
