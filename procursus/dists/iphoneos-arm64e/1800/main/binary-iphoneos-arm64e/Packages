@@ -749,6 +749,68 @@ SHA256: 8d11ccae2bb90e92cce992990d4748bbc5d3f402487b9f4539a815987c3d9149
 SHA512: b96ca11f3e4546ee0d002ee7ff7c5ee93e299f00b21359bd603cc1906ef66511dfd1033e380a13c7ae9e09614820204a6ac87b6fa853e67e6ee06c106715d11c
 Description: chflags, compress, ipcrm, ipcs, pax
 
+Package: file
+Architecture: iphoneos-arm64e
+Version: 5.43
+Priority: important
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 100
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libmagic1 (= 5.43), liblzma5 (>= 5.2.5)
+Filename: pool/main/iphoneos-arm64e/1800/file/file_5.43_iphoneos-arm64e.deb
+Size: 21126
+MD5sum: 6ef64b72058a16c4353997e801dcf4dc
+SHA1: 486a0650550de86b0be126bf4e879a6200308531
+SHA256: f3499b4608ef82e796999bd3ba6e7d595c4c82269000bbf901af47797b78aad1
+SHA512: 7cbb7d34cdedc56fe85565fbb5d2c6b34078e7d52e9456480d79b666f45252af2d51fdbf5d98b28d9549678b8b4bed7f578b838f82c05830c55098fd5e30b5b0
+Description: Recognize the type of data in a file using "magic" numbers
+ The file command is "a file type guesser", a command-line tool that
+ tells you in words what kind of data a file contains.
+ .
+ This package contains the file program itself.
+
+Package: libmagic-dev
+Architecture: iphoneos-arm64e
+Version: 5.43
+Priority: important
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 400
+Depends: roothide (>= 0.0.3), libmagic1 (= 5.43), liblzma-dev
+Conflicts: file (<< 5.43)
+Replaces: file (<< 5.43)
+Filename: pool/main/iphoneos-arm64e/1800/file/libmagic-dev_5.43_iphoneos-arm64e.deb
+Size: 216636
+MD5sum: 036651ac99ba9a83937937b04491bb38
+SHA1: 43d653c4de48bd9ca72c5c21bdccbaf3bff84b46
+SHA256: eb2c35acf5e74623ccd9abb027fd51bf16aa4c54c9a8bba738cf47e364331215
+SHA512: 0ac193e6a2da133d8c287ed61f1589156b4e567152417adfe269e0c3f4f3994ed9548b675a73da46e9b17679ecd3c01b3ab138e131cae3b6fd87e181305c25bb
+Description: Recognize the type of data in a file using "magic" numbers - development
+ This library can be used to classify files according to magic number
+ tests.
+ .
+ This package contains the development files.
+
+Package: libmagic1
+Architecture: iphoneos-arm64e
+Version: 5.43
+Priority: important
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 7996
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), liblzma5 (>= 5.2.5)
+Conflicts: file (<< 5.43)
+Replaces: file (<< 5.43)
+Filename: pool/main/iphoneos-arm64e/1800/file/libmagic1_5.43_iphoneos-arm64e.deb
+Size: 430182
+MD5sum: d0207407f7d6922a312a3ce9c2ba9a39
+SHA1: a2d73d5c5f76965cafc3e931e2c54ec770158bb7
+SHA256: 4dda7fbb69fe739b8b37789eeb6f7e66a01450d5df25eb52328c265b58919002
+SHA512: 98701118fdacf458715a5679690dce8827ca80ef7223998e9ce482bf4a4894cebf961368d76667ec3c3720a0723ed11e0ef35dbe6b53bb4d416e2a2925757991
+Description: Recognize the type of data in a file using "magic" numbers - library
+ This library can be used to classify files according to magic number
+ tests. It implements the core functionality of the file command.
+
 Package: findutils
 Architecture: iphoneos-arm64e
 Version: 4.8.0-1
@@ -768,6 +830,35 @@ SHA256: 15768dcacd789849c06c7ee397727edc8b096e679f3bea74b8ac3e67eb66d8f3
 SHA512: 0821187c4bb2bf8120c06bdc2d47b3c08e7dfd6f959fd43e3785d30e218f3be1a50a62389d29f0d4e100206b7186510a273d008673478d7f744e7f8f0ea6d4c6
 Homepage: http://www.gnu.org/software/findutils/
 Description: indexes and searches filesystems
+
+Package: gawk
+Architecture: iphoneos-arm64e
+Version: 5.1.0-2
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 3236
+Provides: awk
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libintl8, libreadline8, libmpfr6, libgmp10
+Filename: pool/main/iphoneos-arm64e/1800/gawk/gawk_5.1.0-2_iphoneos-arm64e.deb
+Size: 742242
+MD5sum: 29829864327eb5a5562e626ab00da7b6
+SHA1: 89fe002377e33a35606967daa9f47697002ea69a
+SHA256: c13f0ae827727171c651b36a0bd57dc78a1591048e271c104648f7eaa05aff96
+SHA512: cdb8cf3add88fbd17f099f5f7ee7be6ebf1bfbf0a376f4fa92c1ec98c600512408a0a39fc1238781c9896d12c5724de2743fd2d10d29334ff18633183d2dc4b2
+Homepage: http://www.gnu.org/software/gawk/
+Description: GNU awk, a pattern scanning and processing language
+ `awk', a program that you can use to select particular records in a
+ file and perform operations upon them.
+ .
+ Gawk is the GNU Project's implementation of the AWK programming language.
+ It conforms to the definition of the language in the POSIX 1003.2 Command
+ Language And Utilities Standard. This version in turn is based on the
+ description in The AWK Programming Language, by Aho, Kernighan, and
+ Weinberger, with the additional features defined in the System V Release
+ 4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
+ extensions, and some GNU-specific extensions.
 
 Package: autopoint
 Architecture: iphoneos-arm64e
@@ -3110,6 +3201,23 @@ SHA512: afd8e3965f9a26256965a01789930d170413993d3f9d8bb573fadf79efc881f381dc11b1
 Homepage: https://swift.org/
 Description: Swift developer package
 
+Package: lsof
+Architecture: iphoneos-arm64e
+Version: 62
+Multi-Arch: foreign
+Priority: standard
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 232
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/lsof/lsof_62_iphoneos-arm64e.deb
+Size: 112318
+MD5sum: 63c71e9539f6256bb31fb9e995ab038f
+SHA1: bed38a3b19df2c8638a9d72aec6c0764530b9cb5
+SHA256: 528568b729e02702cff16843c240fd4a84182d53cf2a2d62fba040bdbbc0a0f8
+SHA512: 433b96adc47f96e0ad7820f5053849852d4a59c3bff721cf81f22dae8a74845f3d143cedd9b94ad0ff3b236722b639742490d3597229c9c19dfa59674e6614e0
+Description: shows what files programs have open
+
 Package: liblz4-1
 Architecture: iphoneos-arm64e
 Version: 1.9.3
@@ -3187,6 +3295,54 @@ Description: utility for directing compilation
  corresponding input is newer --- it is not limited to building
  computer programs. Indeed, Make is a general purpose dependency
  solver.
+
+Package: libmpfr-dev
+Architecture: iphoneos-arm64e
+Version: 4.1.0
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1640
+Depends: roothide (>= 0.0.3), libmpfr6 (= 4.1.0), libgmp-dev
+Filename: pool/main/iphoneos-arm64e/1800/mpfr4/libmpfr-dev_4.1.0_iphoneos-arm64e.deb
+Size: 626182
+MD5sum: cd4629fdfafda6352d5b495ec3d12b1e
+SHA1: b0b4ec08e50afa5185d07b20fbd497ed2c8127d5
+SHA256: d83736459f3f3e1b1817d5b95a3e8fc38e4cdf59e8b768284b64cd4990d90555
+SHA512: 595bb23df3e94671ab38e1546c8d223b0fe999c9618c4756187978caf6605dbb876bbfdb6e76475ecf26ec47a16d200d7d300e5f3855028950b4d6ec75deed66
+Homepage: https://www.mpfr.org
+Description: multiple precision floating-point computation developers tools
+ This development package provides the header files and the symbolic
+ links to allow compilation and linking of programs that use the libraries
+ provided in the libmpfr4 package.
+ .
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+
+Package: libmpfr6
+Architecture: iphoneos-arm64e
+Version: 4.1.0
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 516
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libgmp10
+Filename: pool/main/iphoneos-arm64e/1800/mpfr4/libmpfr6_4.1.0_iphoneos-arm64e.deb
+Size: 243118
+MD5sum: 5555573e70d1f39943c0bfd22d530cb1
+SHA1: 9f4cded49389d09784f4b2e2ba40e76c07adcc13
+SHA256: b6e3d56e16cb0a38ae0862de1885e1d70a9372b18109c4d924862b88f3c2cc7c
+SHA512: 91799d77cd51ae96e9346b63ec409678247ef00e13b634eccdaebd6da12a88e77cee33746aae1a1ec436a648cf181c1c416b053b1eb94768822e3a07df539522
+Homepage: https://www.mpfr.org
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
 
 Package: libncurses-dev
 Architecture: iphoneos-arm64e
