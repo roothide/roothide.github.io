@@ -441,14 +441,14 @@ Name: RootHide Patcher
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.simplycode.PostBox
-Version: 0.8.1
+Version: 0.8.1-2
 Architecture: iphoneos-arm64e
 Maintainer: PostBox Team <getpostboxapp@gmail.com>
-Filename: ./debfiles/PostBox-0.8.1.deb
-Size: 4089492
-MD5sum: 44778dfa261f383e644e9a0bf9c3b89a
-SHA1: 593bd4ebad51efa706c899b037b925f9296a88c5
-SHA256: 2c8b844f3d62406053a22306cd1c707daf79c195f3354f9bc90685c95720bca4
+Filename: ./debfiles/PostBox-0.8.1-2.deb
+Size: 3416348
+MD5sum: 0e272f7350f2f00669f184b11796918d
+SHA1: 0e8c3ae6a1c7176b45bb6f1354ce49660c9b25cd
+SHA256: 1e52f251335ddfed1bce039cbd14fe16d2ce00b64dcb316eb88b1f9165b55ef9
 Section: Apps
 Homepage: https://postbox.news
 Description: News, package lists, and repo lists, all community centered.
