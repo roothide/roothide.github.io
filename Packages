@@ -795,3 +795,20 @@ Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
 Name: Zebra
 Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
 
+Package: zp.stopautolaunchapps
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: zqbb
+Installed-Size: 168
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/zp.stopautolaunchapps_1.0.2_iphoneos-arm64e-1.deb
+Size: 3824
+MD5sum: 383ed509d1d013a5a069ae7176fd97e0
+SHA1: 792e9c99b89696766cf60d9e029282f03566fe78
+SHA256: 6343d4b30eacf318b617384d611dee6a22f7ce4ccc1223bc4a5dc2a82656853e
+Section: Tweaks
+Description: stop auto launch apps on ios15
+Author: zqbb
+Name: StopAutoLaunchApps
+Sileodepiction: https://github.com/w2599/stopAutoLaunchApps
+
