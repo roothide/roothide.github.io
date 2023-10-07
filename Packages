@@ -58,6 +58,29 @@ Description: Swiped!
 Author: 34306
 Name: Swiped
 
+Package: com.cannathea.afc2d-arm64e
+Version: 1.1.7-21
+Architecture: iphoneos-arm64e
+Maintainer: Cannathea <csupport@cannathea.com>
+Installed-Size: 212
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: cy+cpu.arm64, mobilesubstrate, firmware (>= 11.0), ldid | firmware (>= 15.0)
+Conflicts: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Replaces: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Provides: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11, repo.feng.afc2add11, us.scw.afctwoadd, net.angelxwind.afc2ios70, afc2.25pp, afc2.25pp7, afc2.91, app.taig.afc2
+Filename: ./debfiles/com.cannathea.afc2d-arm64e_1.1.7-21_iphoneos-arm64e.deb
+Size: 12778
+MD5sum: 4e462efe49097a6fe5f7a0699cc201d4
+SHA1: f16bbbc395ff09169d946b832152822f31967f24
+SHA256: a7ff4383a5cd8356144fbb136b5ca41006de34a90e59abad85621b592fd6cf32
+Section: System
+Homepage: https://cannathea.com/
+Description: Allow full file-system access over USB for all arm64 devices, especially useful for those on RootHide. by Shadow-
+Tag: purpose::daemon, role::enduser
+Author: saurik, Cannathea, i_82, Shadow-
+Depiction: https://cydia.akemi.ai/?page/com.cannathea.afc2d-arm64
+Name: Apple File Conduit "2" (RootHide)
+
 Package: com.chr1s.newtab
 Version: 1.1
 Architecture: iphoneos-arm64e
