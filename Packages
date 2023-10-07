@@ -13,6 +13,21 @@ Description: Five Icon Dock
 Author: unknown
 Name: Five Icon Dock
 
+Package: ceserver
+Version: 0.1
+Architecture: iphoneos-arm64e
+Maintainer: DoranekoSystems
+Filename: ./debfiles/ceserver_iphoneos-arm64e.deb
+Size: 64180
+MD5sum: e37e6f6b35f166e2df9f63e13ed6448b
+SHA1: 161cf38e6004fee75c85cf6383f2e3639a855f6d
+SHA256: fd37555fbd3a1b36e5f51fe23308b85548815424e67db9de5d9aa8e8c65b49f8
+Section: Development
+Description: ceserver on ios
+Author: DoranekoSystems
+Name: ceserver
+Sileodepiction: https://github.com/DoranekoSystems/ceserver-ios
+
 Package: com.34306.2nd
 Version: 2.0-3+debug
 Architecture: iphoneos-arm64e
