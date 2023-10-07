@@ -3435,6 +3435,30 @@ SHA256: 0d2a3b20e5d57c975bf046a62422b995ea91ac4aa5345c0873158938dc22eb12
 SHA512: 34568e0e8c7d2006cc24b6199fc674f202d0d407c59d553ef1d79c4836b254bc0b98707ca7f694b57342bffeb9dc45dd92d5467cdb03ab8b46fe5c151bfdab2f
 Description: This package contains terminfo data files to support most types of terminals.
 
+Package: neofetch
+Architecture: iphoneos-arm64e
+Version: 7.1.0+20220216.ccd5d9f
+Priority: optional
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 384
+Depends: roothide (>= 0.0.3), bash (>= 5.0), awk
+Conflicts: com.matdev.neofetch-ios
+Replaces: com.matdev.neofetch-ios
+Filename: pool/main/iphoneos-arm64e/1800/neofetch/neofetch_7.1.0+20220216.ccd5d9f_iphoneos-arm64e.deb
+Size: 108830
+MD5sum: d677b184fc18eaa73d44a36a4acf7323
+SHA1: 2d174bdd99575fa969fe0be9831e0f35070f294b
+SHA256: 971b4ac06a0cf2f54b9d8ecb7b3086668655cce81dd537afe3dcde05d2db002a
+SHA512: 1458bfac831faae0836c34863a850ee5588a243aa990da95b6c2703de488a510fd9e0132585c2a0385e940f0cd518fd2f7438cf1c14dee2fe391c59cf57fea13
+Homepage: https://github.com/dylanaraps/neofetch
+Description: Shows System Information with Distribution Logo
+ Neoftech is a cross-platform and easy-to-use system information
+ command line script that collects your system information
+ and display it on the terminal next to an image, it could be your
+ distributions logo or any ascii art of your choice.
+Author: Dylan Araps <dylan.araps@gmail.com>
+
 Package: libhogweed6
 Architecture: iphoneos-arm64e
 Version: 3.8.1

@@ -501,6 +501,7 @@ usr/bin/mtoc						    odcctools
 usr/bin/mtor						    odcctools
 usr/bin/mv						    coreutils
 usr/bin/ncursesw6-config				    libncurses-dev
+usr/bin/neofetch					    neofetch
 usr/bin/nettle-hash					    nettle-bin
 usr/bin/nettle-lfib-stream				    nettle-bin
 usr/bin/nettle-pbkdf2					    nettle-bin
@@ -16793,6 +16794,7 @@ usr/share/man/man1/msguniq.1.zst			    gettext
 usr/share/man/man1/mtoc.1.zst				    odcctools
 usr/share/man/man1/mv.1.zst				    coreutils
 usr/share/man/man1/ncursesw6-config.1.zst		    libncurses-dev
+usr/share/man/man1/neofetch.1.zst			    neofetch
 usr/share/man/man1/newgrp.1.zst				    system-cmds
 usr/share/man/man1/ngettext.1.zst			    gettext-base
 usr/share/man/man1/nghttp.1.zst				    nghttp2-client
