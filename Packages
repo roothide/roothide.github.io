@@ -478,6 +478,22 @@ Icon: https://github.com/RootHide/RootHidePatcher/blob/master/derootifier-2-modi
 Name: RootHide Patcher
 Support: https://github.com/RootHide/RootHideManagerApp
 
+Package: com.roothide.patchloader
+Version: 0.0.1-17+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 148
+Filename: ./debfiles/com.roothide.patchloader_0.0.1-17+debug_iphoneos-arm64e.deb
+Size: 3928
+MD5sum: f0dcdc1b56a098a37c0489491734d571
+SHA1: 95961267e700bc80380c0bed96c8543d4ae09355
+SHA256: e1a388e4950916b747ae1cff5bdc78e443886367390b8e273e5272ea3907ec14
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
 Package: com.simplycode.PostBox
 Version: 0.8.1-3
 Architecture: iphoneos-arm64e
@@ -495,6 +511,23 @@ Depiction: https://postbox.news/depicts/app
 Icon: https://postbox.news/depicts/app/icon.png
 Name: PostBox
 Sileodepiction: https://postbox.news/depicts/app/fancydeps.json
+
+Package: com.tigisoftware.filza64bit
+Version: 4.0.1-4-roothide
+Architecture: iphoneos-arm64e
+Maintainer: TIGI Software
+Pre-Depends: patches-com.tigisoftware.filza64bit(= 4.0.1-4-roothide)
+Recommends: zip, unzip, gzip, p7zip, unrar, xz-utils
+Conflicts: com.tigisoftware.filza, com.tigisoftware.filza39
+Filename: ./debfiles/com.tigisoftware.filza64bit_4.0.1-4_iphoneos-arm64e.deb
+Size: 41755176
+MD5sum: 42f2a803b41bdfbbcca9b31e9eca9029
+SHA1: 4de1d59bdacac2bd4461324802e4c61d0fcf57b7
+SHA256: 564f0d73e18d14a442712848eade7dde7ce01dc9cc95df3a49224860c37368d3
+Section: Utilities
+Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This version only supports 64-bit devices
+Author: TIGI Software
+Name: Filza File Manager 64-bit
 
 Package: com.yourepo.cydiageek.nodockground
 Version: 1.0.6
@@ -692,6 +725,25 @@ Section: System
 Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
 Name: PreferenceLoader
+
+Package: roothide.patches.filza
+Version: 0.1-15+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 360
+Depends: com.roothide.patchloader
+Recommends: com.tigisoftware.filza64bit(= 4.0.1-4-roothide)
+Conflicts: com.tigisoftware.filza64bit(>> 4.0.1-4-roothide), com.tigisoftware.filza64bit(<< 4.0.1-4-roothide)
+Provides: patches-com.tigisoftware.filza64bit(= 4.0.1-4-roothide)
+Filename: ./debfiles/roothide.patches.filza_0.1-15+debug_iphoneos-arm64e.deb
+Size: 47518
+MD5sum: 210c9313e331d4a61d07f1a35ba51531
+SHA1: f3c9a0c04f7231175852e5c6d5611a5661ed8be3
+SHA256: 84a728b96d7d538ce6732b769beec3213d19765de937080cd19618d881bbbb67
+Section: RootHide Patches
+Description: RootHide Dynamic Patches For Filza
+Author: roothide
+Name: Patches for Filza 64bit
 
 Package: ru.domo.cocoatop64
 Version: 2.2.3
