@@ -860,6 +860,25 @@ Description: GNU awk, a pattern scanning and processing language
  4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
  extensions, and some GNU-specific extensions.
 
+Package: gettext-localizations
+Architecture: iphoneos-arm64e
+Version: 2020.10.07
+Priority: important
+Section: Localizations
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 2628
+Provides: com.linusyang.localeutf8 (= 99.9)
+Depends: roothide (>= 0.0.3), libintl8 (>= 0.20.0)
+Conflicts: com.linusyang.localeutf8
+Replaces: com.linusyang.localeutf8
+Filename: pool/main/iphoneos-arm64e/1800/gettext-localizations/gettext-localizations_2020.10.07_iphoneos-arm64e.deb
+Size: 339018
+MD5sum: 4cb1779334b9b392f3d6ee7181fde52d
+SHA1: bd0d16c5c01f3cf7e50a4379cedec4591b482ed8
+SHA256: f3e8acac489ab7d11019833212c864acd1e52a9c3f28093af9780d482838ea6a
+SHA512: 58879407426e2ee64e0184c7cab7e462e72ac342594fa30ff43040cf976afdf8b43cdcdf0207084dabe4c9438294b8c65e817d6718766740274788a4feb92083
+Description: Locale files necessary for command line tool translation.
+
 Package: autopoint
 Architecture: iphoneos-arm64e
 Version: 0.21.1
@@ -1717,6 +1736,162 @@ Description: BSD editline and history libraries
  .
  It slightly resembles GNU readline.
 
+Package: libevent-2.1-7
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 372
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libevent-core-2.1-7 (= 2.1.12-3)
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-2.1-7_2.1.12-3_iphoneos-arm64e.deb
+Size: 141100
+MD5sum: 221becf899a1c1351037d022016286aa
+SHA1: cff83075b6a0f5a4cd249d4ff1c8e8f63f388c58
+SHA256: a0752eaf203d73e4e43cb7137e265bd151cbaddb51cf4bbce119e4bd32222546
+SHA512: ff94734fc5fe5acae48331f7aa10240dd76522ac0d300702fa2eedb2934bfc66cb67bd5eb69337e8529fd66dfc092df8d4d28a987e7fcdf6651f2ec5642ff7bc
+Description: Asynchronous event notification library
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ For backward compatibility and to transition to "libevent_core only"
+ or "libevent_core + libevent_extra", the libevent source package builds
+ the libevent library that includes everything in libevent_core and
+ libevent_extra.
+
+Package: libevent-core-2.1-7
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 228
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-core-2.1-7_2.1.12-3_iphoneos-arm64e.deb
+Size: 79442
+MD5sum: 3f833dbb3ebb4c4feeae058836ff34fb
+SHA1: 533eb3fbf6eba09f55368f7d52c2d6548059708b
+SHA256: ae918b3187938615949400599f351330902d3363948790dac5b50b78d6055e8b
+SHA512: f2a6d1539224bfca51699be06a5c189053b9f96b5359d4013479b12f288cfa4fc5e77430ca15e36e95e83638a7b8140ad631082f27c29a90c12c1fd0ccb129a5
+Description: Asynchronous event notification library (core)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ The libevent_core library includes event loops, timers, buffer code,
+ and various small compatibility functions.
+ .
+ If you're writing software that only uses libevent's event loop, you
+ should link against only the libevent_core library.
+
+Package: libevent-dev
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1756
+Depends: roothide (>= 0.0.3), libevent-2.1-7, libevent-core-2.1-7, libevent-extra-2.1-7, libevent-pthreads-2.1-7, libevent-openssl-2.1-7
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-dev_2.1.12-3_iphoneos-arm64e.deb
+Size: 448330
+MD5sum: c2338f6255eb3995c911757b5def0030
+SHA1: f92bcbb83b7fcf43c950bc46126a95dda1488d1f
+SHA256: 77f10f453427b7eec8f025f2ece301b5cd4642011f94f49868f8cd2c2552c848
+SHA512: 67d8546865ba085af12f12ee5ce24e91c151655f3d16a9e9d68315da26074c8bb5a61fc67b95a861aeb1863464554a3e2e075d97c68735c947236a7d1f64025b
+Description: Asynchronous event notification library (development files)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ This package includes development files for compiling against libevent.
+
+Package: libevent-extra-2.1-7
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 176
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libevent-core-2.1-7
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-extra-2.1-7_2.1.12-3_iphoneos-arm64e.deb
+Size: 57758
+MD5sum: 3bdf6fb1db0f87181b80beb7feb53a79
+SHA1: cea39c6d89e4f58f34a62c966d688c49d153b47b
+SHA256: fa397f79c400cd1df5d297fa2f0b20555a3646863a8083ed38af8b632f0b1120
+SHA512: 33cfddc8a5a8c3732797c1a72e0cb195bad795d3343d8b7ef05fe357494601501cd68379d62682dd9a3aad0bde6eea081dae844eb6a2d82a86b5f97c495d0e47
+Description: Asynchronous event notification library (extra)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ The libevent_extra library includes code for HTTP, DNS, RPC, and so
+ on.
+ .
+ If you're writing software that uses libevent's protocol support, you
+ need to link libevent_core and libevent_extra as well.
+
+Package: libevent-openssl-2.1-7
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libevent-core-2.1-7, libssl3
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-openssl-2.1-7_2.1.12-3_iphoneos-arm64e.deb
+Size: 12030
+MD5sum: d2d376c913f3509e7b40d3286fde3ba2
+SHA1: 1d2d81ec64819abfc30b39b097fbebedd8c916c8
+SHA256: 4aeb995d0bf06488e3ff45969f9374acd2c69aca3751a2da8c8daf9223c320d4
+SHA512: 7b5232eb9fab0d23879c7f5f8f14d2337f88f04f7b8af302f6c91c7cc486aa18828a8c89a3ba619a62c8118eaafa25781f89ec22dd49968f4c32e943ece9c1b0
+Description: Asynchronous event notification library (openssl)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ There is now a bufferevent type that supports SSL/TLS using the
+ OpenSSL library.  The code for this is build in a separate
+ library, libevent_openssl, so that your programs don't need to
+ link against OpenSSL unless they actually want SSL support.
+
+Package: libevent-pthreads-2.1-7
+Architecture: iphoneos-arm64e
+Version: 2.1.12-3
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1), libevent-core-2.1-7
+Filename: pool/main/iphoneos-arm64e/1800/libevent/libevent-pthreads-2.1-7_2.1.12-3_iphoneos-arm64e.deb
+Size: 5384
+MD5sum: 900e8fcb38ef4306ccfc43045cac3185
+SHA1: 4edb1f15b972f855d33243342dd3546a4434ae24
+SHA256: c036d04e2785ddf28cd81f74d52b5d0f5a8a67eec549c7acf266980d37411c98
+SHA512: 5e5e949f32f175b7177633a1bf421ab8075c2568d5c06fcaa2634214fd46362553848a504e20c1ef7255753369dea285e4de0691c2aafb98853269e361d33b81
+Description: Asynchronous event notification library (pthreads)
+ Libevent is an asynchronous event notification library that provides a
+ mechanism to execute a callback function when a specific event occurs
+ on a file descriptor or after a timeout has been reached.
+ .
+ It is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ If you want threading support and you're using pthreads, you'll need
+ to link against the libevent_pthreads library in addition to
+ libevent_core.
+
 Package: libffi-dev
 Architecture: iphoneos-arm64e
 Version: 3.4.2
@@ -2430,6 +2605,57 @@ SHA256: 7e8d8f23476517e8ffcae3fd5d366f211a58df8880df710a906a234f07fb851d
 SHA512: 0dfa88f9c1f080ce05707f1dae37c9b61a107c4d99420bec0e97c3c02edb9ecf6800caba95879d08f3f2efafdfdb1b718d0172d2facaecf041e7dbaacc83c728
 Homepage: https://www.gnu.org/software/libunistring/
 Description: Unicode string library for C
+
+Package: libutf8proc-dev
+Architecture: iphoneos-arm64e
+Version: 2.5.0-2
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 352
+Depends: roothide (>= 0.0.3), libutf8proc2
+Conflicts: libutf8proc (<< 2.5.0-2)
+Replaces: libutf8proc (<< 2.5.0-2)
+Filename: pool/main/iphoneos-arm64e/1800/libutf8proc/libutf8proc-dev_2.5.0-2_iphoneos-arm64e.deb
+Size: 130332
+MD5sum: 7edb4a53ba116eb8120b5b36270f2725
+SHA1: 3af6920aaabb856a7e2b94322dfcdd759b749c4c
+SHA256: 257cfeb1f05221748e8ea8dd9c37cb7751f5d21608a15a0c8ef0f2fc28bef232
+SHA512: e798500fc33c155e85a8d31fa79779921aaa35a62eacd6a4522a63f2280ae4cb4e058c5f707de88f9fba1d2a93a249d888e43b30b9480a1c81188b2a7a5fdb07
+Homepage: http://juliastrings.github.io/utf8proc/
+Description: C library for processing UTF-8 Unicode data (development files)
+ utf8proc is a small, clean C library that provides Unicode normalization,
+ case-folding, and other operations for data in the UTF-8 encoding, supporting
+ Unicode version 8.0.
+ .
+ This package contains the development files needed to compile software using
+ utf8proc.
+
+Package: libutf8proc2
+Architecture: iphoneos-arm64e
+Version: 2.5.0-2
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 344
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Conflicts: libutf8proc (<< 2.5.0-2)
+Replaces: libutf8proc (<< 2.5.0-2)
+Filename: pool/main/iphoneos-arm64e/1800/libutf8proc/libutf8proc2_2.5.0-2_iphoneos-arm64e.deb
+Size: 74868
+MD5sum: 7115e0cba2478cb32b657f565bc47139
+SHA1: 5d5be834f90cf2d1b9c28bc53849851f259d61a2
+SHA256: 48f2df216fb7067822e35f60588e3a91a13f566fad9ebf81c87afe29a334194b
+SHA512: 85cbd9db6922cca196ab006c763ce6baaa6b88ed69193d18407c75caf8544d0baf4eaa02194bd1c78e9240e559ad90e275b229e58482b7a18a04a2550e9b272a
+Homepage: http://juliastrings.github.io/utf8proc/
+Description: C library for processing UTF-8 Unicode data (shared library)
+ utf8proc is a small, clean C library that provides Unicode normalization,
+ case-folding, and other operations for data in the UTF-8 encoding, supporting
+ Unicode version 8.0.
+ .
+ This package contains a shared version of the library.
 
 Package: libcrypt-dev
 Architecture: iphoneos-arm64e
@@ -3986,6 +4212,36 @@ Description: p11-glue utilities
  .
  This package contains the p11-kit tool for listing PKCS#11 modules.
 
+Package: p7zip
+Architecture: iphoneos-arm64e
+Version: 17.04
+Multi-Arch: foreign
+Priority: optional
+Section: Archiving
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 9764
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/p7zip/p7zip_17.04_iphoneos-arm64e.deb
+Size: 4355154
+MD5sum: 8fea43874035e731f0d0c3ec1770effb
+SHA1: f5e382212e62ec02903339eec454d8b892319e2e
+SHA256: 710440d254fb0cf1aada22f98c61cc9ff9ef6a6d9ca34b30728309a51e5b7d4a
+SHA512: 28246c7365ba2da62acbd1fc78a1db5bddf548e803ec12a1a5d26c59a6b9671d2092b577f7f07ec4170c7daf1807661678bb7b01114ee60e7a3698975014f98e
+Description: 7z and 7za file archivers with high compression ratio
+ .
+ p7zip is the Unix command-line port of 7-Zip, a file archiver that handles the 7z format which features very high compression ratios.
+ .
+ p7zip provides utilities to pack and unpack 7z archives within a shell or using a GUI (such as Ark, File  Roller or Nautilus).
+ .
+ Installing p7zip-full allows File Roller to use the very efficient 7z compression format for packing and unpacking files and directories. Additionally, it provides the 7z and 7za commands.
+ .
+ List of supported formats:
+ . 
+  - Packing / unpacking: 7z, ZIP, GZIP, BZIP2, XZ and TAR
+  - Unpacking only: APM, ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT,
+    HFS, ISO, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RPM, SquashFS, UDF,
+    VHD, WIM, XAR and Z.
+
 Package: libpam-modules
 Architecture: iphoneos-arm64e
 Version: 1000.0
@@ -4432,6 +4688,28 @@ SHA256: 71c7c08262a11303027e640707d0e094655b2cd6d4dbc8440eee5291a70e887d
 SHA512: 05237af7223b0d5d6684b6552cc7dea120eaf05832d17da09267277851445908f8f9e145df90393675324aea6223a2877e814861c005edb4b506bf5cb1000b05
 Description: makes packaging for /etc/profile reasonable
 
+Package: rar
+Architecture: iphoneos-arm64e
+Version: 6.1
+Priority: optional
+Section: Archiving
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 848
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Suggests: unrar
+Filename: pool/main/iphoneos-arm64e/1800/rar/rar_6.1_iphoneos-arm64e.deb
+Size: 365960
+MD5sum: 3664119e447977553ffccd949461d917
+SHA1: 0c5081cf05862599ba6e07d72cfad4270fc0e735
+SHA256: ce3a8179e057c68d5d89adf9b6692a6769d94502e705284b35826324928aad57
+SHA512: 75b762b2e1e80de09774cf7fa2c6b1054fb35739fbff6b67dd9b3ae2ae3d8d96dce1fec8d583c98f3b811030ebe3540e21b1130827d38358c9b782dede7f651d
+Homepage: https://www.rarlabs.com/
+Description: Archiver for .rar files (non-free)
+ This is the RAR archiver from Eugene Roshal. It supports multiple volume archives and damage protection. It can also create 
+ SFX-archives. There are versions which run on DOS, Windows (3.1x,95,NT), FreeBSD, BSDI.
+ .
+ This program is shareware and you must register it after 40 days of use.
+
 Package: libreadline-dev
 Architecture: iphoneos-arm64e
 Version: 8.2.0-1
@@ -4479,11 +4757,30 @@ Maintainer: roothide
 Installed-Size: 916
 Depends: libiosexec1 (>= 1.3.1)
 Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.3_iphoneos-arm64e.deb
-Size: 52208
-MD5sum: 6b18a10ff52d9c9db7f526493a97d61c
-SHA1: c8a381c737522fe7400119b06f0b7da7b21bfd2b
-SHA256: 047540f649275b6dd066c472438eb7bd9cd4fc99ec4fb0976184e25508926e0d
-SHA512: 97f86789d3f2e46e8dfe14e1b53481bc3ade839caf4f76e01c84055f2f6b5019f073b6bc37978e182f8b8016d716c9ac2587bfbe4657936c18c98114c0364e4c
+Size: 52538
+MD5sum: 7f96a523d3796b85951619c2c14e7aef
+SHA1: 70566d839b62dcbc6e791ba284d79427ae0ab24b
+SHA256: 9c24d7949ef40df1b6bb04e1696c42f05730c660df495f3dbb7ba016c1bf4a07
+SHA512: 6f5ea61fbb496b6ac6e7a9aade5a522e5434528c0e7ffffc0ffbb2967dbecc732faf4f21198275e565cb9cfd57dbe20f743c07fa3cbd31a08afb7b28eaddb65d
+Description: roothide core
+Name: roothide
+Author: roothide
+
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.0.4
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide
+Installed-Size: 916
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.4_iphoneos-arm64e.deb
+Size: 52212
+MD5sum: dbad3cee2063c6d241b1654717dec73e
+SHA1: 115e39c5ded3b78012992dfc509168b37eb3076b
+SHA256: c51833221d0f91df26950ac7349bf2d67f6e8883c7b758b34e40fcf6d7d73384
+SHA512: 73ccb7fb5db99415e5218692214e2d1d1adaa07dd19b530dc199c8435beaaba279009c26dd50e4d0bb32ad70252df48ef1ecc2bbbce5783779ef40d2d087e757
 Description: roothide core
 Name: roothide
 Author: roothide
@@ -4783,6 +5080,22 @@ SHA512: 8a506523f11c9da846ea016ec93b42a40f011f64d61e0ff9e94c1aaf903000174be4dc98
 Description: What Theos needs.
  This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 
+Package: tmux
+Architecture: iphoneos-arm64e
+Version: 3.3a
+Priority: important
+Section: Terminal_Support
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 868
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libevent-2.1-7, libutf8proc2, libncursesw6, gettext-localizations
+Filename: pool/main/iphoneos-arm64e/1800/tmux/tmux_3.3a_iphoneos-arm64e.deb
+Size: 399554
+MD5sum: 51b580ee6f7594d9b04daa5a715221a2
+SHA1: 7b45455a972aeff0ce489caa611b826483ba8c33
+SHA256: 90d8c9cd4dad882161bc824befaad61628815f6992d46d6b228c1d7f5ffea578
+SHA512: 7bf8f3e299d68be2bd7cf803e9e64ed3d686724f050d3777cd61b0663ce8b0306201ff59afd9313b4635a2b317033de117db2daa5c62417755d288ccbbb5aa19
+Description: multiplexes a terminal into many
+
 Package: uikittools-extra
 Architecture: iphoneos-arm64e
 Version: 2.1.6-1
@@ -4817,6 +5130,64 @@ SHA1: a1221eb9525f6e7a0353f7942ae8bdff32982738
 SHA256: dbc00b6202d8acce775ec731fd8dcd85941129370c2fe29ac0980a4423cf24ae
 SHA512: af0de9335d177bde53042bee208c9bada1f6154c405aac1f59a24695f1c7aa8bbb17812170a5a3e53f43dbd0c4dd9d4def1be9dfd7efc5b5513dd629106c8a40
 Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: libunrar-dev
+Architecture: iphoneos-arm64e
+Version: 6.2.6
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1224
+Depends: roothide (>= 0.0.3), libunrar5 (= 6.2.6)
+Filename: pool/main/iphoneos-arm64e/1800/unrar/libunrar-dev_6.2.6_iphoneos-arm64e.deb
+Size: 532722
+MD5sum: 47c642ed48dc46f59ebbddab18c2e58f
+SHA1: b29bb6dabda369b4d085ab02331002a02a5c1308
+SHA256: 0d9c4c39cec8ad044400677b469b43fe95aac4cdab31efe658983925ffa6b34f
+SHA512: d68ba10af7c74553ac792910214e2ac09ec8b24d1ae01dfcfbc39de8b32171e7f83eeadb050700f49029a95c4d13727f72eb4f6a3d7a476389138957835b1c05
+Homepage: http://www.rarlab.com/rar_add.htm
+Description: Unarchiver for .rar files (non-free version) - development files
+ This package contains the static library for the libunrar library.
+
+Package: libunrar5
+Architecture: iphoneos-arm64e
+Version: 6.2.6
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 400
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/unrar/libunrar5_6.2.6_iphoneos-arm64e.deb
+Size: 177884
+MD5sum: 57623d2757d802a4f35f2b0d50f331b7
+SHA1: 9ced3921dc79d3f4322c98a0e3ff45c42bdc1007
+SHA256: 1f55bce536e8b40191b61dba6ddf2027bf43c2f1b50aa5b2eb341c7e48401520
+SHA512: 548df59c654766d589ce1d8f0fba1124d19c98f861490c6737040aff8969d959a4f9627442cc5387d7605f119bdf83f18143101e4b5a98955be898e1ef4ef4d4
+Homepage: http://www.rarlab.com/rar_add.htm
+Description: Unarchiver for .rar files (non-free version) - shared library
+ library for unarchiving .rar files
+
+Package: unrar
+Architecture: iphoneos-arm64e
+Version: 6.2.6
+Multi-Arch: foreign
+Priority: optional
+Section: Archiving
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 420
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/unrar/unrar_6.2.6_iphoneos-arm64e.deb
+Size: 194692
+MD5sum: 94e7189fbb3216a2e5ca56b9deb90938
+SHA1: 470a60c9609569b0426bf6c19ec816545635dac5
+SHA256: 8228603362b63e9baf43ba27493337cce6e7fbc687dfc8f103fd3e2c7b820c31
+SHA512: 42cf89fcdbe45ee98ba19811a9e9cad3b822c3149c42722959e4e09113716eaf8fdb65be8e593075fad0c50f97bd974894af57c69794a9705af31c26970f2330
+Homepage: http://www.rarlab.com/rar_add.htm
+Description: Unarchiver for .rar files (non-free version)
+ Unrar can extract files from .rar archives. If you want to create .rar
+ archives, install package rar.
 
 Package: unzip
 Architecture: iphoneos-arm64e
@@ -5164,6 +5535,23 @@ Description: XZ-format compression utilities - tiny decompressors
  .
  For a full-featured xzcat command without these limitations, use
  the xz-utils package instead.
+
+Package: zip
+Architecture: iphoneos-arm64e
+Version: 3.0-12
+Multi-Arch: foreign
+Priority: important
+Section: Archiving
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 592
+Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/zip/zip_3.0-12_iphoneos-arm64e.deb
+Size: 158144
+MD5sum: 801d8fd1837af3d655424a97459cf9ea
+SHA1: b4fefddd21b08733b6526984fbc24413fcb25d92
+SHA256: e5fbf6d1ddd1c5f094bf0277eba1f6ef0d0c2734184157469a4d59c46d344209
+SHA512: a1f943eb1adf0a467050e2cc02e6f39a47e503a66411a9b585a7527d7f0f5fe7375b2ea1fd542b4f2cb79b1eea62d0d449ac1f4920f4ba8b3bde7381f85efb56
+Description: standard Windows compression tool
 
 Package: libz-ng-dev
 Architecture: iphoneos-arm64e
