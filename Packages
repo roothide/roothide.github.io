@@ -635,10 +635,11 @@ Architecture: iphoneos-arm64e
 Maintainer: Evelyn
 Depends: mobilesubstrate, cy+cpu.arm64e, firmware (>= 15.0)
 Filename: ./debfiles/oldabi_0.3.1~1.ba6396b_iphoneos-arm64e.deb
-Size: 16542
-MD5sum: 3efc5fb40ef039eb2146af3768c9caee
-SHA1: 67d3503073d2a9ee1c77fe7a582b9354c12ba974
-SHA256: f934818d4a74ff08372ebbe8ad3996b6f0a257eac14d41df29a2ee37285a9d08
+Size: 16572
+MD5sum: 89e136650caded34f86b7ae4b29b3c47
+SHA1: e492f315061d7908adf4ff2429b21d106005ea29
+SHA256: 50284a54b70decbb86d2cbdbf0ad9ed5c63e202b32b722ce53dea406c6d40eec
+Section: Tweak Injection
 Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
 Name: Legacy arm64e Support
