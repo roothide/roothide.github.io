@@ -726,6 +726,24 @@ Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
 Name: PreferenceLoader
 
+Package: re.frida.server
+Version: 16.1.4
+Architecture: iphoneos-arm64e
+Maintainer: Ole André Vadla Ravnås <oleavr@nowsecure.com>
+Installed-Size: 60104
+Conflicts: re.frida.server64
+Filename: ./debfiles/frida_16.1.4_iphoneos-arm64e.deb
+Size: 17921048
+MD5sum: df0bde2b0f5effaf281f6b4bb7a2d080
+SHA1: 78e64d873887c4ee9a70151f77238b724bd94da0
+SHA256: 17df02e20574cc55d26b4226cd95e71018b153eb8f2b9219f4b1b23e2c83f46d
+Section: Development
+Priority: optional
+Homepage: https://frida.re/
+Description: Observe and reprogram running programs.
+Author: Frida Developers <oleavr@nowsecure.com>
+Name: Frida
+
 Package: roothide.patches.filza
 Version: 0.1-15+debug
 Architecture: iphoneos-arm64e
