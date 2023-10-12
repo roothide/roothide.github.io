@@ -745,19 +745,19 @@ Author: Frida Developers <oleavr@nowsecure.com>
 Name: Frida
 
 Package: roothide.patches.filza
-Version: 0.1-15+debug
+Version: 0.1-19+debug
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 360
-Depends: com.roothide.patchloader
+Depends: com.roothide.patchloader, mobilesubstrate
 Recommends: com.tigisoftware.filza64bit(= 4.0.1-4-roothide)
 Conflicts: com.tigisoftware.filza64bit(>> 4.0.1-4-roothide), com.tigisoftware.filza64bit(<< 4.0.1-4-roothide)
 Provides: patches-com.tigisoftware.filza64bit(= 4.0.1-4-roothide)
-Filename: ./debfiles/roothide.patches.filza_0.1-15+debug_iphoneos-arm64e.deb
-Size: 47518
-MD5sum: 210c9313e331d4a61d07f1a35ba51531
-SHA1: f3c9a0c04f7231175852e5c6d5611a5661ed8be3
-SHA256: 84a728b96d7d538ce6732b769beec3213d19765de937080cd19618d881bbbb67
+Filename: ./debfiles/roothide.patches.filza_0.1-19+debug_iphoneos-arm64e.deb
+Size: 47528
+MD5sum: be3906c7bd044f48d9c6ec4467c62dac
+SHA1: 3615b91d2245b9468e8b25716d5548e84039c659
+SHA256: a1e9f7e3d1618e22943e5775ae537ce1601412494adc9ae061d8f26038abe7b2
 Section: RootHide Patches
 Description: RootHide Dynamic Patches For Filza
 Author: roothide
