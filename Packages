@@ -130,6 +130,22 @@ Depiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata
 Name: AppData
 Sileodepiction: https://apt.fouadraheb.com/package/com.fouadraheb.appdata/sileo
 
+Package: com.ginsu.comet
+Version: 1.0.5
+Architecture: iphoneos-arm64e
+Maintainer: Ginsu
+Installed-Size: 2432
+Depends: dev.theos.orion14, firmware (>= 14.0)
+Filename: ./debfiles/com.ginsu.comet-_1.0.5_iphoneos-arm64e.deb
+Size: 258420
+MD5sum: 720ea265946ea3f8964f23c1cb3bcfaa
+SHA1: 6bf982c02dab296df5f25a20ea01c4b3361f0552
+SHA256: ca8ae29c8a8e763df75e1085c52d59578723789f4591f97e71a19522b2f90c0a
+Section: Tweaks
+Description: A SwiftUI Prefs Framework
+Author: Ginsu
+Name: Comet
+
 Package: com.imkpatil.colormybattery
 Version: 1.3.4
 Architecture: iphoneos-arm64e
@@ -545,6 +561,24 @@ Author: CydiaGeek <lucaluca86@aol.com>
 Depiction: https://cydiageek.yourepo.com/pack/nodockground
 Name: NoDockGround
 Sileodepiction: https://cydiageek.yourepo.com/sileo/depiction/nodockground
+
+Package: dev.theos.orion14
+Version: 1.0.1-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: Theos Team <theos@kabiroberai.com>
+Installed-Size: 1220
+Depends: firmware (>= 14.0), firmware (<< 17.0), mobilesubstrate (>= 0.9.5000)
+Provides: dev.theos.orion (= 1.0.1-2+debug)
+Filename: ./debfiles/dev.theos.orion14_1.0.1-2+debug_iphoneos-arm64e.deb
+Size: 181074
+MD5sum: 91f8f4734aa92fa42c694de5b3a5325c
+SHA1: c9affb318e7c69078dc10c21ae725b698fe96bce
+SHA256: 34ee6ae68e80fb07bb3a1b55e9708fc56ed16e53dd8e193d812f26e2a18f15f9
+Section: System
+Description: Runtime for tweaks built using Orion and Swift
+Tag: role::developer
+Author: Theos Team <theos@kabiroberai.com>
+Name: Orion (iOS 14-16)
 
 Package: ellekit
 Version: 1.0-18.8c90474-2
