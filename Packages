@@ -458,16 +458,16 @@ Name: CC On & Off
 Sileodepiction: https://poomsmart.github.io/repo/sileodepictions/cconoff.json
 
 Package: com.roothide.manager
-Version: 0.6-2+debug
+Version: 0.6-3+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 944
 Depends: firmware (>= 15.0)
-Filename: ./debfiles/com.roothide.manager_0.6-2+debug_iphoneos-arm64e.deb
-Size: 739616
-MD5sum: d61b9e683a3d80c9f74c447bfd3a5dc8
-SHA1: 454d0ff7adf844c065e36cc53550b40508dfb744
-SHA256: 00c2df4b290690ee245a95245bfa1035d92e14c79d09771212ba14e5e847f8ab
+Filename: ./debfiles/com.roothide.manager_0.6-3+debug_iphoneos-arm64e.deb
+Size: 739620
+MD5sum: dd63e6c6e7a83981f49f09240765aa5c
+SHA1: bc0a678ffe15f348b689b17a23d4a69489a98ec6
+SHA256: f70621e8010b860fd9ee52165b8e60e5962ec307cce4daa4c506bd8b1e29ec53
 Section: System
 Description: Configuare RootHide's Features
 Author: RootHide
@@ -476,16 +476,16 @@ Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patcher
-Version: 0.4-9+debug
+Version: 0.5-1+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
-Installed-Size: 3100
-Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk
-Filename: ./debfiles/com.roothide.patcher_0.4-9+debug_iphoneos-arm64e.deb
-Size: 964300
-MD5sum: cd20af476dd22d5c516425b0b994a668
-SHA1: 7abeff251051b1b5e8807364dd7c98491a5d7408
-SHA256: bde7f15392a48fc55cef48ea882a8214b7ea559490c4a5463c4595bc6b5dc00c
+Installed-Size: 3156
+Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1)
+Filename: ./debfiles/com.roothide.patcher_0.5-1+debug_iphoneos-arm64e.deb
+Size: 971086
+MD5sum: a9e088da9157d16a6b9b2d73a308d89d
+SHA1: 70adf3d97cbbf073925b69997c237df12e134880
+SHA256: f5b4494ba31752aad0e23e65feaddeff7099145390b2fd05081430935ab4f6ee
 Section: Utilities
 Description: patch rootless package to roothide, not work for all packages.
 Author: haxi0
@@ -495,15 +495,15 @@ Name: RootHide Patcher
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patchloader
-Version: 0.0.1-17+debug
+Version: 0.0.2-4+debug
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 148
-Filename: ./debfiles/com.roothide.patchloader_0.0.1-17+debug_iphoneos-arm64e.deb
-Size: 3928
-MD5sum: f0dcdc1b56a098a37c0489491734d571
-SHA1: 95961267e700bc80380c0bed96c8543d4ae09355
-SHA256: e1a388e4950916b747ae1cff5bdc78e443886367390b8e273e5272ea3907ec14
+Filename: ./debfiles/com.roothide.patchloader_0.0.2-4+debug_iphoneos-arm64e.deb
+Size: 4312
+MD5sum: 55ff9f67d3974074a3d921dd2e72a5fb
+SHA1: 1db78e5bbd42bd9b2b894e2b776a1fb672867a1c
+SHA256: 5c9962695e104bcb5c23abfd0ee51b0e245c33d12c73b9c8dd7a45534575be2d
 Section: System
 Description: RootHide Dynamic Patches Loader
 Tag: role::developer
@@ -511,14 +511,14 @@ Author: roothide
 Name: PatchLoader
 
 Package: com.simplycode.PostBox
-Version: 0.8.1-3
+Version: 0.8.1-4
 Architecture: iphoneos-arm64e
 Maintainer: PostBox Team <getpostboxapp@gmail.com>
 Filename: ./debfiles/PostBox-0.8.1.deb
-Size: 3421524
-MD5sum: 45949555910980c7cf8cc4a844fb9e7e
-SHA1: 6ec4761b84ef5f9e45f823276ddf04daa845b426
-SHA256: a99a82294202f4303a3ff66d85fa66ad3d72a5cb3b9e13bd28a71d7a7b140b8f
+Size: 4089952
+MD5sum: 389b434ee2152a6fae52182a1b9b23f2
+SHA1: dcc845507acb8129a81bbe8139f4159e728655d5
+SHA256: a54eeda08184bc0c02b08ab414041030f1856c1353874b660f997bb33a40a1a8
 Section: Apps
 Homepage: https://postbox.news
 Description: News, package lists, and repo lists, all community centered.
@@ -712,37 +712,21 @@ Author: Evelyn
 Name: Legacy arm64e Support
 
 Package: org.coolstar.sileo
-Version: 2.5-5
+Version: 2.5-6
 Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Filename: ./debfiles/org.coolstar.sileo_2.5-5_iphoneos-arm64e.deb
-Size: 4215096
-MD5sum: 4244f6e37cdcdfef22d36d5120835a9c
-SHA1: 759866fb3dcdc26a4d6a7f60d97b3a96950eb5c3
-SHA256: 1a970b48822765fd608e012742dd20d9e7675dfdc274e1f09fd973714150a4f7
+Filename: ./debfiles/org.coolstar.sileo_2.5-6_iphoneos-arm64e.deb
+Size: 4205636
+MD5sum: 89d6c8d5ea6538abafce3d1fcc06abac
+SHA1: 9b5e734cb27de60b070133fb6ef7db6742aa0882
+SHA256: c4ca53e00800c82b4729f3dec8937263a12fa311cf3618003a2263e3cf2cb354
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
 Icon: https://getsileo.app/img/icon.png
 Name: Sileo
 Sileodepiction: https://featuredpage.getsileo.app/depiction.json
-
-Package: preferenceloader
-Version: 2.2.6-7+debug
-Architecture: iphoneos-arm64e
-Maintainer: ProcursusTeam <support@procurs.us>
-Installed-Size: 264
-Depends: mobilesubstrate
-Filename: ./debfiles/preferenceloader_2.2.6-7+debug_iphoneos-arm64e.deb
-Size: 20010
-MD5sum: 182bac87ca02c76bf53baee5988cee3d
-SHA1: 964ef277225bd2a3d29ded7b60a66b7888b86dbe
-SHA256: 9c7c8876800b77f4539ce664e1d4fb9c9a73f09dd246eee1afc58ba0ef77812a
-Section: System
-Description: load preferences in style
-Author: Dhinak G <dhinak@dhinak.net>
-Name: PreferenceLoader
 
 Package: preferenceloader
 Version: 2.2.6-8+debug
@@ -796,6 +780,22 @@ Section: RootHide Patches
 Description: RootHide Dynamic Patches For Filza
 Author: roothide
 Name: Patches for Filza 64bit
+
+Package: rootless-compat
+Version: 0.1-25
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 252
+Depends: com.roothide.patchloader(>= 0.0.2)
+Filename: ./debfiles/rootless-compat_0.1-25_iphoneos-arm64e.deb
+Size: 28464
+MD5sum: beb4be15d7d9d5e8c021c485b447cd3c
+SHA1: d8ea5e225e19d2ec2b0e53e8b4ee1a329a4911a6
+SHA256: f7aba40afb9fa6ecc5fde5af39970774ac9897b17b15fb677e9e659c2cb7ab55
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
 
 Package: ru.domo.cocoatop64
 Version: 2.2.3
