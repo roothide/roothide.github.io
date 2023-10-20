@@ -4609,19 +4609,19 @@ Description: Larry Wall's Practical Extraction and Report Language
 
 Package: plutil
 Architecture: iphoneos-arm64e
-Version: 0.2.2
+Version: 0.2.2+1
 Section: System
 Maintainer: RootHide <RootHideDev@twitter>
 Installed-Size: 124
-Provides: com.bingner.plutil (=0.2.2)
-Depends: roothide (>= 0.0.3), libiosexec1 (>= 1.3.1)
+Provides: com.bingner.plutil (=0.2.2+1)
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1)
 Conflicts: com.ericasadun.utilities, com.bingner.plutil
-Filename: pool/main/iphoneos-arm64e/1800/plutil/plutil_0.2.2_iphoneos-arm64e.deb
-Size: 29620
-MD5sum: 770b598a215a2c8168972baf2a1476ba
-SHA1: 177650d24d6e187af48ded928580834d54aaec48
-SHA256: 71dd3eb4503476a9a149cdfca74a5e226a375557080113911ba52b30aa04a0a6
-SHA512: 19bd734dabb93fa507bb9c02ed6c13ee1f534b9bd18d8c461be274a9d7e023bc0b3b2c6add1cbcb2b82c0297fa1a68a215942a378d7887073fee93e77facf628
+Filename: pool/main/iphoneos-arm64e/1800/plutil/plutil_0.2.2+1_iphoneos-arm64e.deb
+Size: 29630
+MD5sum: 1c7e30dcb2d673ad88ae06e49662bfc8
+SHA1: 7c8d0eb543aef1441bb5d54f118cc9eaea2c7530
+SHA256: 00d4465032e36a731f8c87b076316f4b9bcec41014b3fe394ee1a29edc9c2981
+SHA512: 93382318df3dbb1709e2e36971b49689953392b85b991f9328c2850c576e7603ad1e8403e8de2e3c14ac1e2580ae62caafc0f006d5e5710cf00fee2342adb4be
 Description: Utility for creating and editing Apple property list files.
 Author: Samuel Bingner
 
