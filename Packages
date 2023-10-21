@@ -873,19 +873,19 @@ Name: Cephei Tweak Support
 Support: https://hashbang.productions/support/
 
 Package: ws.hbang.newterm3
-Version: 3.0~beta1-1+debug
-Architecture: iphoneos-arm64
+Version: 3.0~beta1-18+debug
+Architecture: iphoneos-arm64e
 Maintainer: HASHBANG Productions <support@hbang.ws>
-Installed-Size: 24244
+Installed-Size: 24280
 Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
 Recommends: gettext-localizations, iterm2-shell-integration, zsh-autosuggestions, zsh-syntax-highlighting
 Conflicts: ws.hbang.newterm, ws.hbang.newterm2
 Replaces: ws.hbang.newterm, ws.hbang.newterm2
-Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-1+debug_iphoneos-arm64.deb
-Size: 4849348
-MD5sum: 25a213e42099b7f3eeb0b49917191251
-SHA1: 6f4b53637f4f634a7aef85960ef1d3ff2bf9edbc
-SHA256: adb4e35068360e5348b6198a18acf6a7c56bea54aa2d4ea0c3b0eb9a3d622c9e
+Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-18+debug_iphoneos-arm64e.deb
+Size: 4854336
+MD5sum: f771e39ad16220384c3b8a2713b4bbc3
+SHA1: 16044095fe88d72c304f1ff7ac23906c85b13541
+SHA256: bef2312bbc8980a98ef459f34b9cabcc0e32690c9f4ad7432b681081adb270af
 Section: Terminal Support
 Description: Powerful terminal app for iOS
 Tag: compatible_min::ios14.0
@@ -896,19 +896,19 @@ Name: NewTerm 3 Beta
 Support: https://hashbang.productions/support/
 
 Package: ws.hbang.newterm3
-Version: 3.0~beta1-15+debug
-Architecture: iphoneos-arm64e
+Version: 3.0~beta1-3+debug
+Architecture: iphoneos-arm64
 Maintainer: HASHBANG Productions <support@hbang.ws>
-Installed-Size: 24264
+Installed-Size: 24244
 Depends: firmware (>= 14.0), zsh | bash | fish, coreutils, ncurses, system-cmds
 Recommends: gettext-localizations, iterm2-shell-integration, zsh-autosuggestions, zsh-syntax-highlighting
 Conflicts: ws.hbang.newterm, ws.hbang.newterm2
 Replaces: ws.hbang.newterm, ws.hbang.newterm2
-Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-15+debug_iphoneos-arm64e.deb
-Size: 4854132
-MD5sum: eb5d641e8ef8956d1f21dc67d17e1968
-SHA1: 2ce87bda52d693ecaa95220b50c158a6de74c3a0
-SHA256: 6aa9fe16290a2746a7912f151d682ebfb06138abd21606e973e62bae137f74c1
+Filename: ./debfiles/ws.hbang.newterm3_3.0~beta1-3+debug_iphoneos-arm64.deb
+Size: 4849520
+MD5sum: cbbeb22943eaee661e7089c8e6e5e542
+SHA1: 936d009f93e7b01e43bee9f90e21ce7ca481ce24
+SHA256: 7dadd4a0dc51618945407ae97b4137d9587fdb9615d9fb9e4d9b4539916451f5
 Section: Terminal Support
 Description: Powerful terminal app for iOS
 Tag: compatible_min::ios14.0
