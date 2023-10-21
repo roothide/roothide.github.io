@@ -110,6 +110,7 @@ etc/sudo_logsrvd.conf					    sudo
 etc/sudoers						    sudo
 etc/sudoers.d/procursus					    sudo
 etc/sudoers.dist					    sudo
+etc/wgetrc						    wget
 etc/zprofile						    profile.d
 private/preboot						    roothide
 private/var						    roothide
@@ -321,6 +322,9 @@ usr/bin/gpg-error-config				    gpgrt-tools
 usr/bin/gpg-wks-client					    gpg-wks-client
 usr/bin/gpg-wks-server					    gpg-wks-server
 usr/bin/gpgconf						    gpgconf
+usr/bin/gpgme-config					    libgpgme-dev
+usr/bin/gpgme-json					    libgpgme-dev
+usr/bin/gpgme-tool					    libgpgme-dev
 usr/bin/gpgparsemail					    gnupg-utils
 usr/bin/gpgrt-config					    gpgrt-tools
 usr/bin/gpgsm						    gpgsm
@@ -341,6 +345,7 @@ usr/bin/hmac256						    libgcrypt20-dev
 usr/bin/hmaptool					    clang-tools
 usr/bin/hostid						    coreutils
 usr/bin/hostinfo					    system-cmds
+usr/bin/hsts						    libhsts-dev
 usr/bin/id						    coreutils
 usr/bin/idn2						    idn2
 usr/bin/infocmp						    ncurses-bin
@@ -704,6 +709,8 @@ usr/bin/w						    shell-cmds
 usr/bin/wasm-ld						    lld
 usr/bin/watchgnupg					    gnupg-utils
 usr/bin/wc						    coreutils
+usr/bin/wget						    wget
+usr/bin/wget2						    wget2
 usr/bin/what						    shell-cmds
 usr/bin/whereis						    shell-cmds
 usr/bin/which						    shell-cmds
@@ -1046,6 +1053,48 @@ usr/include/gnutls/urls.h				    libgnutls30-dev
 usr/include/gnutls/x509-ext.h				    libgnutls30-dev
 usr/include/gnutls/x509.h				    libgnutls30-dev
 usr/include/gpg-error.h					    libgpg-error-dev
+usr/include/gpgme++/configuration.h			    libgpgmepp-dev
+usr/include/gpgme++/context.h				    libgpgmepp-dev
+usr/include/gpgme++/data.h				    libgpgmepp-dev
+usr/include/gpgme++/decryptionresult.h			    libgpgmepp-dev
+usr/include/gpgme++/defaultassuantransaction.h		    libgpgmepp-dev
+usr/include/gpgme++/editinteractor.h			    libgpgmepp-dev
+usr/include/gpgme++/encryptionresult.h			    libgpgmepp-dev
+usr/include/gpgme++/engineinfo.h			    libgpgmepp-dev
+usr/include/gpgme++/error.h				    libgpgmepp-dev
+usr/include/gpgme++/eventloopinteractor.h		    libgpgmepp-dev
+usr/include/gpgme++/exception.h				    libgpgmepp-dev
+usr/include/gpgme++/global.h				    libgpgmepp-dev
+usr/include/gpgme++/gpgaddexistingsubkeyeditinteractor.h    libgpgmepp-dev
+usr/include/gpgme++/gpgadduserideditinteractor.h	    libgpgmepp-dev
+usr/include/gpgme++/gpgagentgetinfoassuantransaction.h	    libgpgmepp-dev
+usr/include/gpgme++/gpggencardkeyinteractor.h		    libgpgmepp-dev
+usr/include/gpgme++/gpgmefw.h				    libgpgmepp-dev
+usr/include/gpgme++/gpgmepp_export.h			    libgpgmepp-dev
+usr/include/gpgme++/gpgmepp_version.h			    libgpgmepp-dev
+usr/include/gpgme++/gpgsetexpirytimeeditinteractor.h	    libgpgmepp-dev
+usr/include/gpgme++/gpgsetownertrusteditinteractor.h	    libgpgmepp-dev
+usr/include/gpgme++/gpgsignkeyeditinteractor.h		    libgpgmepp-dev
+usr/include/gpgme++/importresult.h			    libgpgmepp-dev
+usr/include/gpgme++/interfaces/assuantransaction.h	    libgpgmepp-dev
+usr/include/gpgme++/interfaces/dataprovider.h		    libgpgmepp-dev
+usr/include/gpgme++/interfaces/passphraseprovider.h	    libgpgmepp-dev
+usr/include/gpgme++/interfaces/progressprovider.h	    libgpgmepp-dev
+usr/include/gpgme++/interfaces/statusconsumer.h		    libgpgmepp-dev
+usr/include/gpgme++/key.h				    libgpgmepp-dev
+usr/include/gpgme++/keygenerationresult.h		    libgpgmepp-dev
+usr/include/gpgme++/keylistresult.h			    libgpgmepp-dev
+usr/include/gpgme++/notation.h				    libgpgmepp-dev
+usr/include/gpgme++/result.h				    libgpgmepp-dev
+usr/include/gpgme++/scdgetinfoassuantransaction.h	    libgpgmepp-dev
+usr/include/gpgme++/signingresult.h			    libgpgmepp-dev
+usr/include/gpgme++/statusconsumerassuantransaction.h	    libgpgmepp-dev
+usr/include/gpgme++/swdbresult.h			    libgpgmepp-dev
+usr/include/gpgme++/tofuinfo.h				    libgpgmepp-dev
+usr/include/gpgme++/trustitem.h				    libgpgmepp-dev
+usr/include/gpgme++/verificationresult.h		    libgpgmepp-dev
+usr/include/gpgme++/vfsmountresult.h			    libgpgmepp-dev
+usr/include/gpgme.h					    libgpgme-dev
 usr/include/gpgrt.h					    libgpg-error-dev
 usr/include/hash.hpp					    libunrar-dev
 usr/include/headers.hpp					    libunrar-dev
@@ -1054,6 +1103,7 @@ usr/include/histedit.h					    libedit-dev
 usr/include/isnt.hpp					    libunrar-dev
 usr/include/ksba.h					    libksba-dev
 usr/include/libdimentio.h				    libdimentio-dev
+usr/include/libhsts.h					    libhsts-dev
 usr/include/libintl.h					    libintl-dev
 usr/include/libiosexec.h				    libiosexec-dev
 usr/include/libkrw.h					    libkrw-dev
@@ -1455,6 +1505,8 @@ usr/include/utf8proc.h					    libutf8proc-dev
 usr/include/uuid.h					    libuuid-dev
 usr/include/version.hpp					    libunrar-dev
 usr/include/volume.hpp					    libunrar-dev
+usr/include/wget.h					    libwget1
+usr/include/wgetver.h					    libwget1
 usr/include/xxh3.h					    libxxhash-dev
 usr/include/xxhash.h					    libxxhash-dev
 usr/include/zconf-ng.h					    libz-ng-dev
@@ -1503,6 +1555,8 @@ usr/lib/bash/uname					    bash
 usr/lib/bash/unlink					    bash
 usr/lib/bash/whoami					    bash
 usr/lib/clang/14.0.0					    libclang-common-14-dev
+usr/lib/cmake/Gpgmepp/GpgmeppConfig.cmake		    libgpgmepp-dev
+usr/lib/cmake/Gpgmepp/GpgmeppConfigVersion.cmake	    libgpgmepp-dev
 usr/lib/default.sfx					    rar
 usr/lib/engines-3/capi.dylib				    libssl3
 usr/lib/engines-3/loader_attic.dylib			    libssl3
@@ -1624,6 +1678,10 @@ usr/lib/libgnutlsxx.dylib				    libgnutls30-dev
 usr/lib/libgpg-error.0.dylib				    libgpg-error0
 usr/lib/libgpg-error.a					    libgpg-error-dev
 usr/lib/libgpg-error.dylib				    libgpg-error-dev
+usr/lib/libgpgme.11.dylib				    libgpgme11
+usr/lib/libgpgme.dylib					    libgpgme-dev
+usr/lib/libgpgmepp.6.dylib				    libgpgmepp6
+usr/lib/libgpgmepp.dylib				    libgpgmepp-dev
 usr/lib/libhistory.8.2.dylib				    libreadline8
 usr/lib/libhistory.8.dylib				    libreadline8
 usr/lib/libhistory.dylib				    libreadline-dev
@@ -1631,6 +1689,9 @@ usr/lib/libhogweed.6.6.dylib				    libhogweed6
 usr/lib/libhogweed.6.dylib				    libhogweed6
 usr/lib/libhogweed.a					    nettle-dev
 usr/lib/libhogweed.dylib				    nettle-dev
+usr/lib/libhsts.0.dylib					    libhsts0
+usr/lib/libhsts.a					    libhsts-dev
+usr/lib/libhsts.dylib					    libhsts-dev
 usr/lib/libidn2.0.dylib					    libidn2-0
 usr/lib/libidn2.a					    libidn2-dev
 usr/lib/libidn2.dylib					    libidn2-dev
@@ -1754,6 +1815,9 @@ usr/lib/libuuid.a					    libuuid-dev
 usr/lib/libuuid.dylib					    libuuid-dev
 usr/lib/libvroot.dylib					    roothide
 usr/lib/libvrootapi.dylib				    roothide
+usr/lib/libwget.1.dylib					    libwget1
+usr/lib/libwget.a					    wget2-dev
+usr/lib/libwget.dylib					    wget2-dev
 usr/lib/libxar.1.dylib					    libxar1
 usr/lib/libxar.a					    libxar-dev
 usr/lib/libxar.dylib					    libxar-dev
@@ -8092,6 +8156,8 @@ usr/lib/pkgconfig/gmp.pc				    libgmp-dev
 usr/lib/pkgconfig/gmpxx.pc				    libgmp-dev
 usr/lib/pkgconfig/gnutls.pc				    libgnutls30-dev
 usr/lib/pkgconfig/gpg-error.pc				    libgpg-error-dev
+usr/lib/pkgconfig/gpgme-glib.pc				    libgpgme-dev
+usr/lib/pkgconfig/gpgme.pc				    libgpgme-dev
 usr/lib/pkgconfig/hogweed.pc				    nettle-dev
 usr/lib/pkgconfig/ksba.pc				    libksba-dev
 usr/lib/pkgconfig/libassuan.pc				    libassuan-dev
@@ -8105,6 +8171,7 @@ usr/lib/pkgconfig/libcurl.pc				    libcurl4-openssl-dev
 usr/lib/pkgconfig/libdpkg.pc				    libdpkg-dev
 usr/lib/pkgconfig/libedit.pc				    libedit-dev
 usr/lib/pkgconfig/libffi.pc				    libffi-dev
+usr/lib/pkgconfig/libhsts.pc				    libhsts-dev
 usr/lib/pkgconfig/libidn2.pc				    libidn2-dev
 usr/lib/pkgconfig/liblz4.pc				    liblz4-dev
 usr/lib/pkgconfig/libmagic.pc				    libmagic-dev
@@ -8125,6 +8192,7 @@ usr/lib/pkgconfig/libssh2.pc				    libssh2-dev
 usr/lib/pkgconfig/libssl.pc				    libssl-dev
 usr/lib/pkgconfig/libtasn1.pc				    libtasn1-6-dev
 usr/lib/pkgconfig/libutf8proc.pc			    libutf8proc-dev
+usr/lib/pkgconfig/libwget.pc				    wget2-dev
 usr/lib/pkgconfig/libxcrypt.pc				    libcrypt-dev
 usr/lib/pkgconfig/libxxhash.pc				    libxxhash-dev
 usr/lib/pkgconfig/libzstd.pc				    libzstd-dev
@@ -14813,6 +14881,7 @@ usr/share/SDKs/iPhoneOS.sdk/usr/lib/swift/~libswiftPencilKit.tbd build-essential
 usr/share/SDKs/iPhoneOS.sdk/usr/share/sandbox/playground.sb build-essential
 usr/share/aclocal/gettext.m4				    gettext
 usr/share/aclocal/gpg-error.m4				    gpgrt-tools
+usr/share/aclocal/gpgme.m4				    libgpgme-dev
 usr/share/aclocal/gpgrt.m4				    gpgrt-tools
 usr/share/aclocal/iconv.m4				    gettext
 usr/share/aclocal/intlmacosx.m4				    gettext
@@ -14858,6 +14927,10 @@ usr/share/common-lisp/source/gpg-error/gpg-error-codes.lisp gpgrt-tools
 usr/share/common-lisp/source/gpg-error/gpg-error-package.lisp gpgrt-tools
 usr/share/common-lisp/source/gpg-error/gpg-error.asd	    gpgrt-tools
 usr/share/common-lisp/source/gpg-error/gpg-error.lisp	    gpgrt-tools
+usr/share/common-lisp/source/gpgme/gpgme-grovel.lisp	    libgpgme-dev
+usr/share/common-lisp/source/gpgme/gpgme-package.lisp	    libgpgme-dev
+usr/share/common-lisp/source/gpgme/gpgme.asd		    libgpgme-dev
+usr/share/common-lisp/source/gpgme/gpgme.lisp		    libgpgme-dev
 usr/share/debianutils/shells				    debianutils
 usr/share/doc/apt-utils/AUTHORS				    apt-utils
 usr/share/doc/apt-utils/COPYING				    apt-utils
@@ -15169,9 +15242,39 @@ usr/share/doc/libgpg-error0/COPYING			    libgpg-error0
 usr/share/doc/libgpg-error0/NEWS.zst			    libgpg-error0
 usr/share/doc/libgpg-error0/README.zst			    libgpg-error0
 usr/share/doc/libgpg-error0/THANKS.zst			    libgpg-error0
+usr/share/doc/libgpgme-dev/AUTHORS			    libgpgme-dev
+usr/share/doc/libgpgme-dev/COPYING			    libgpgme-dev
+usr/share/doc/libgpgme-dev/NEWS.zst			    libgpgme-dev
+usr/share/doc/libgpgme-dev/README.zst			    libgpgme-dev
+usr/share/doc/libgpgme-dev/THANKS.zst			    libgpgme-dev
+usr/share/doc/libgpgme-dev/TODO.zst			    libgpgme-dev
+usr/share/doc/libgpgme11/AUTHORS			    libgpgme11
+usr/share/doc/libgpgme11/COPYING			    libgpgme11
+usr/share/doc/libgpgme11/NEWS.zst			    libgpgme11
+usr/share/doc/libgpgme11/README.zst			    libgpgme11
+usr/share/doc/libgpgme11/THANKS.zst			    libgpgme11
+usr/share/doc/libgpgme11/TODO.zst			    libgpgme11
+usr/share/doc/libgpgmepp-dev/AUTHORS			    libgpgmepp-dev
+usr/share/doc/libgpgmepp-dev/COPYING			    libgpgmepp-dev
+usr/share/doc/libgpgmepp-dev/NEWS.zst			    libgpgmepp-dev
+usr/share/doc/libgpgmepp-dev/README.zst			    libgpgmepp-dev
+usr/share/doc/libgpgmepp-dev/THANKS.zst			    libgpgmepp-dev
+usr/share/doc/libgpgmepp-dev/TODO.zst			    libgpgmepp-dev
+usr/share/doc/libgpgmepp6/AUTHORS			    libgpgmepp6
+usr/share/doc/libgpgmepp6/COPYING			    libgpgmepp6
+usr/share/doc/libgpgmepp6/NEWS.zst			    libgpgmepp6
+usr/share/doc/libgpgmepp6/README.zst			    libgpgmepp6
+usr/share/doc/libgpgmepp6/THANKS.zst			    libgpgmepp6
+usr/share/doc/libgpgmepp6/TODO.zst			    libgpgmepp6
 usr/share/doc/libhogweed6/AUTHORS			    libhogweed6
 usr/share/doc/libhogweed6/NEWS.zst			    libhogweed6
 usr/share/doc/libhogweed6/README.zst			    libhogweed6
+usr/share/doc/libhsts-dev/AUTHORS			    libhsts-dev
+usr/share/doc/libhsts-dev/LICENSE			    libhsts-dev
+usr/share/doc/libhsts-dev/NEWS.zst			    libhsts-dev
+usr/share/doc/libhsts0/AUTHORS				    libhsts0
+usr/share/doc/libhsts0/LICENSE				    libhsts0
+usr/share/doc/libhsts0/NEWS.zst				    libhsts0
 usr/share/doc/libidn2-0/AUTHORS				    libidn2-0
 usr/share/doc/libidn2-0/COPYING				    libidn2-0
 usr/share/doc/libidn2-0/NEWS.zst			    libidn2-0
@@ -15420,6 +15523,10 @@ usr/share/doc/libuuid16/NEWS.zst			    libuuid16
 usr/share/doc/libuuid16/README.zst			    libuuid16
 usr/share/doc/libuuid16/THANKS.zst			    libuuid16
 usr/share/doc/libuuid16/TODO.zst			    libuuid16
+usr/share/doc/libwget1/AUTHORS				    libwget1
+usr/share/doc/libwget1/COPYING				    libwget1
+usr/share/doc/libwget1/NEWS.zst				    libwget1
+usr/share/doc/libwget1/README.zst			    libwget1
 usr/share/doc/libxar-dev/LICENSE			    libxar-dev
 usr/share/doc/libxar-dev/TODO.zst			    libxar-dev
 usr/share/doc/libxar1/LICENSE				    libxar1
@@ -15553,6 +15660,18 @@ usr/share/doc/uuid/TODO.zst				    uuid
 usr/share/doc/vi/LICENSE				    vi
 usr/share/doc/vi/README.zst				    vi
 usr/share/doc/vi/TODO.zst				    vi
+usr/share/doc/wget/AUTHORS				    wget
+usr/share/doc/wget/COPYING				    wget
+usr/share/doc/wget/NEWS.zst				    wget
+usr/share/doc/wget/README.zst				    wget
+usr/share/doc/wget2-dev/AUTHORS				    wget2-dev
+usr/share/doc/wget2-dev/COPYING				    wget2-dev
+usr/share/doc/wget2-dev/NEWS.zst			    wget2-dev
+usr/share/doc/wget2-dev/README.zst			    wget2-dev
+usr/share/doc/wget2/AUTHORS				    wget2
+usr/share/doc/wget2/COPYING				    wget2
+usr/share/doc/wget2/NEWS.zst				    wget2
+usr/share/doc/wget2/README.zst				    wget2
 usr/share/doc/xar/LICENSE				    xar
 usr/share/doc/xar/TODO.zst				    xar
 usr/share/doc/xxhash/LICENSE				    xxhash
@@ -15689,6 +15808,7 @@ usr/share/gtk-doc/html/p11-kit/trust-nss.html		    libp11-kit-dev
 usr/share/gtk-doc/html/p11-kit/trust.html		    libp11-kit-dev
 usr/share/gtk-doc/html/p11-kit/up-insensitive.png	    libp11-kit-dev
 usr/share/gtk-doc/html/p11-kit/up.png			    libp11-kit-dev
+usr/share/hstspreload/hsts.dafsa			    hstspreload
 usr/share/libgpg-error/errorref.txt			    gpgrt-tools
 usr/share/locale/UTF-8/LC_CTYPE				    gettext-localizations
 usr/share/locale/af/LC_MESSAGES/coreutils.mo		    coreutils
@@ -15819,6 +15939,7 @@ usr/share/locale/ca/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/ca/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ca/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/ca/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/ca/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/ca/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/ca_ES.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/ca_ES.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -15861,6 +15982,7 @@ usr/share/locale/cs/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/cs/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/cs/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/cs/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/cs/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/cs/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/cs_CZ.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/cs_CZ.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -15947,6 +16069,7 @@ usr/share/locale/de/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/de/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/de/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/de/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/de/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/de/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/de_AT.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/de_AT.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -16233,6 +16356,7 @@ usr/share/locale/eo/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/eo/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/eo/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/eo/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/eo/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/eo/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/es/LC_MESSAGES/apt-utils.mo		    apt-utils
 usr/share/locale/es/LC_MESSAGES/apt.mo			    apt
@@ -16253,6 +16377,7 @@ usr/share/locale/es/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/es/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/es/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/es/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/es/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/es/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/es_ES.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/es_ES.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -16284,6 +16409,7 @@ usr/share/locale/et/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/et/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/et/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/et/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/et/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/et_EE.ISO8859-15/LC_COLLATE		    gettext-localizations
 usr/share/locale/et_EE.ISO8859-15/LC_CTYPE		    gettext-localizations
 usr/share/locale/et_EE.ISO8859-15/LC_MESSAGES/LC_MESSAGES   gettext-localizations
@@ -16351,6 +16477,7 @@ usr/share/locale/fi/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/fi/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/fi/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/fi/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/fi/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/fi/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/fi_FI.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/fi_FI.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -16397,6 +16524,7 @@ usr/share/locale/fr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/fr/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/fr/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/fr/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/fr/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/fr/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/fr_BE.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/fr_BE.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -16504,6 +16632,7 @@ usr/share/locale/ga/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/ga/LC_MESSAGES/make.mo			    make
 usr/share/locale/ga/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ga/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/ga/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/gl/LC_MESSAGES/apt-utils.mo		    apt-utils
 usr/share/locale/gl/LC_MESSAGES/apt.mo			    apt
 usr/share/locale/gl/LC_MESSAGES/coreutils.mo		    coreutils
@@ -16549,6 +16678,7 @@ usr/share/locale/hr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/hr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/hr/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/hr/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/hr/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/hr/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/hr_HR.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/hr_HR.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -16583,6 +16713,7 @@ usr/share/locale/hu/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/hu/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/hu/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/hu/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/hu/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/hu/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/hu_HU.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/hu_HU.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -16633,6 +16764,7 @@ usr/share/locale/id/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/id/LC_MESSAGES/make.mo			    make
 usr/share/locale/id/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/id/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/id/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/is/LC_MESSAGES/git.mo			    git
 usr/share/locale/is/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/is_IS.ISO8859-1/LC_COLLATE		    gettext-localizations
@@ -16678,6 +16810,7 @@ usr/share/locale/it/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/it/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/it/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/it/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/it/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/it/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/it_CH.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/it_CH.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -16745,6 +16878,7 @@ usr/share/locale/ja/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ja/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/ja/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/ja/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/ja/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/ja_JP.SJIS/LC_COLLATE			    gettext-localizations
 usr/share/locale/ja_JP.SJIS/LC_CTYPE			    gettext-localizations
 usr/share/locale/ja_JP.SJIS/LC_MESSAGES/LC_MESSAGES	    gettext-localizations
@@ -16918,6 +17052,7 @@ usr/share/locale/nb/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/nb/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/nb/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/nb/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/nb/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/ne/LC_MESSAGES/apt-utils.mo		    apt-utils
 usr/share/locale/ne/LC_MESSAGES/apt.mo			    apt
 usr/share/locale/ne/LC_MESSAGES/dpkg.mo			    dpkg
@@ -16941,6 +17076,7 @@ usr/share/locale/nl/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/nl/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/nl/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/nl/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/nl/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/nl_BE.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/nl_BE.ISO8859-1/LC_CTYPE		    gettext-localizations
 usr/share/locale/nl_BE.ISO8859-1/LC_MESSAGES/LC_MESSAGES    gettext-localizations
@@ -17043,6 +17179,7 @@ usr/share/locale/pl/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/pl/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/pl/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/pl/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/pl/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/pl/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/pl_PL.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/pl_PL.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -17108,6 +17245,7 @@ usr/share/locale/pt_BR/LC_MESSAGES/make.mo		    make
 usr/share/locale/pt_BR/LC_MESSAGES/sudo.mo		    sudo
 usr/share/locale/pt_BR/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/pt_BR/LC_MESSAGES/tar.mo		    tar
+usr/share/locale/pt_BR/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/pt_BR/LC_MESSAGES/xz.mo		    xz-utils
 usr/share/locale/pt_BR/LC_MONETARY			    gettext-localizations
 usr/share/locale/pt_BR/LC_NUMERIC			    gettext-localizations
@@ -17155,6 +17293,7 @@ usr/share/locale/ro/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ro/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/ro/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/ro/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/ro/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/ro/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/ro_RO.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/ro_RO.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -17194,6 +17333,7 @@ usr/share/locale/ru/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/ru/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/ru/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/ru/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/ru/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/ru_RU.CP1251/LC_COLLATE		    gettext-localizations
 usr/share/locale/ru_RU.CP1251/LC_CTYPE			    gettext-localizations
 usr/share/locale/ru_RU.CP1251/LC_MESSAGES/LC_MESSAGES	    gettext-localizations
@@ -17242,6 +17382,7 @@ usr/share/locale/sk/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/sk/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sk/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/sk/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/sk/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/sk_SK.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/sk_SK.ISO8859-2/LC_CTYPE		    gettext-localizations
 usr/share/locale/sk_SK.ISO8859-2/LC_MESSAGES/LC_MESSAGES    gettext-localizations
@@ -17298,6 +17439,7 @@ usr/share/locale/sr/LC_MESSAGES/make.mo			    make
 usr/share/locale/sr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/sr/LC_MESSAGES/tar.mo			    tar
+usr/share/locale/sr/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/sr/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/sr_YU.ISO8859-2/LC_COLLATE		    gettext-localizations
 usr/share/locale/sr_YU.ISO8859-2/LC_CTYPE		    gettext-localizations
@@ -17343,6 +17485,7 @@ usr/share/locale/sv/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sv/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/sv/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/sv/LC_MESSAGES/texinfo.mo		    gettext-localizations
+usr/share/locale/sv/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/sv/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/sv_SE.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/sv_SE.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -17398,6 +17541,7 @@ usr/share/locale/tr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/tr/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/tr/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/tr/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/tr/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/tr/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/tr_TR.ISO8859-9/LC_COLLATE		    gettext-localizations
 usr/share/locale/tr_TR.ISO8859-9/LC_CTYPE		    gettext-localizations
@@ -17433,6 +17577,7 @@ usr/share/locale/uk/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/uk/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/uk/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/uk/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/uk/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/uk/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/uk_UA.ISO8859-5/LC_COLLATE		    gettext-localizations
 usr/share/locale/uk_UA.ISO8859-5/LC_CTYPE		    gettext-localizations
@@ -17476,6 +17621,7 @@ usr/share/locale/vi/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/vi/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/vi/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/vi/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/vi/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/vi/LC_MESSAGES/xz.mo			    xz-utils
 usr/share/locale/wa/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/zh_CN.GB18030/LC_COLLATE		    gettext-localizations
@@ -17531,6 +17677,7 @@ usr/share/locale/zh_CN/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/zh_CN/LC_MESSAGES/tar.mo		    tar
 usr/share/locale/zh_CN/LC_MESSAGES/texinfo.mo		    gettext-localizations
 usr/share/locale/zh_CN/LC_MESSAGES/uikittools-ng.mo	    uikittools
+usr/share/locale/zh_CN/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/zh_CN/LC_MESSAGES/xz.mo		    xz-utils
 usr/share/locale/zh_CN/LC_MONETARY			    gettext-localizations
 usr/share/locale/zh_CN/LC_NUMERIC			    gettext-localizations
@@ -18437,6 +18584,7 @@ usr/share/man/man1/w.1.zst				    shell-cmds
 usr/share/man/man1/wait4path.1.zst			    system-cmds
 usr/share/man/man1/watchgnupg.1.zst			    gnupg-utils
 usr/share/man/man1/wc.1.zst				    coreutils
+usr/share/man/man1/wget.1.zst				    wget
 usr/share/man/man1/what.1.zst				    shell-cmds
 usr/share/man/man1/whereis.1.zst			    shell-cmds
 usr/share/man/man1/which.1.zst				    shell-cmds

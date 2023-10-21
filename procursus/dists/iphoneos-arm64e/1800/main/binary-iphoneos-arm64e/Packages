@@ -1494,6 +1494,66 @@ Description: GNU TLS library - C++ runtime library
  .
  This package contains the C++ runtime libraries.
 
+Package: libgpgme-dev
+Architecture: iphoneos-arm64e
+Version: 1.17.1
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 496
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libassuan-dev, libgpg-error0, libgpg-error-dev, libgpgme11 (= 1.17.1)
+Filename: pool/main/iphoneos-arm64e/1800/gpgme/libgpgme-dev_1.17.1_iphoneos-arm64e.deb
+Size: 133400
+MD5sum: d439e8bd766689e5781708944fd0e302
+SHA1: 29f7bcfc9166ae22ca5e6eab7762fd9be2c5e5c7
+SHA256: a0d3f41481ca14231e5c274a4f1d2ed8bbab1680b9022226f39719a9c7506030
+SHA512: 452d148257993f483c7b33ef9f336ed00ad51b2e14a7d6409813502fb93a57efe99ae83ccd6aed382095a24fc7ddadc8ed3c8db6d2acc8311b39ebcf0d73df9e
+Description: GPGME is a wrapper library which provides a C API to access some of the GnuPG functions, such as encrypt, decrypt, sign, verify, etc. (Development files)
+
+Package: libgpgme11
+Architecture: iphoneos-arm64e
+Version: 1.17.1
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 372
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), gpg | gnupg, libassuan0, libgpg-error0
+Filename: pool/main/iphoneos-arm64e/1800/gpgme/libgpgme11_1.17.1_iphoneos-arm64e.deb
+Size: 162908
+MD5sum: 707664f923f927bad9d5c34982ffd265
+SHA1: fa952ffd7463c8a3cffeef148b5d5323f32cec32
+SHA256: 4519fd8596767adb1ef0b1fb58c5ebb8feb4e01144ad5527270ba1bbc758f42e
+SHA512: 8c430dfa0fbc996cd9f4543f3d5f3773cd54a06c4f23c8e647e026d15032d33ff4e86cfa2e5512810af4bc7aefd1dd904fe1709bc0a45c6917e2334b8c79d8d4
+Description: GPGME is a wrapper library which provides a C API to access some of the GnuPG functions, such as encrypt, decrypt, sign, verify, etc. (Libraries)
+
+Package: libgpgmepp-dev
+Architecture: iphoneos-arm64e
+Version: 1.17.1
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 292
+Depends: roothide (>= 0.0.4), libgpgmepp6 (= 1.17.1)
+Filename: pool/main/iphoneos-arm64e/1800/gpgme/libgpgmepp-dev_1.17.1_iphoneos-arm64e.deb
+Size: 71434
+MD5sum: c2a486515100db8fcb2ae1063b59196f
+SHA1: a0908dc123b6b3031264770e5915884696244686
+SHA256: 53b60596b7d98cf9bb00fb792d63fac77d3d112fe7424cf3129437d17f73bc36
+SHA512: 09619edc44be6c6ced406d7adaa794748dec50d5d5ffe68f6a22bfc10640b8eb01ee492b81e621f9c4e7063d9f78b58638be9693678b112335607b7bb99e7613
+Description: GpgME++ (aka GpgMEpp) is a C++ wrapper (or C++ bindings) for the GnuPG project's GPGME (GnuPG Made Easy) library. (Development files)
+
+Package: libgpgmepp6
+Architecture: iphoneos-arm64e
+Version: 1.17.1
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 368
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), gpg | gnupg, libassuan0, libgpg-error0, libgpgme11 (= 1.17.1)
+Filename: pool/main/iphoneos-arm64e/1800/gpgme/libgpgmepp6_1.17.1_iphoneos-arm64e.deb
+Size: 136490
+MD5sum: 8f22ca293ff7a7d8c2208ab6a39bef5b
+SHA1: 8f072c5cc7ee955b2d10133a96e6234a81d1ad3d
+SHA256: b6257efd9472554692d6fd2308dab80e7ef83ee3bfc66115bdaf6cd311cf014e
+SHA512: 9f69cfb3551cfbb36a3a846840987b3daaaf15c8f263da4dec48f2f405039ac5e81742f21986152f5956f1fc019b03e9bd287a81d10611aaebbc5fc4928560ca
+Description: GpgME++ (aka GpgMEpp) is a C++ wrapper (or C++ bindings) for the GnuPG project's GPGME (GnuPG Made Easy) library. (Libraries)
+
 Package: grep
 Architecture: iphoneos-arm64e
 Version: 3.10-1
@@ -1551,6 +1611,22 @@ SHA1: 3f240d8cb087d05cfd87b0e2b482916151ee2ab0
 SHA256: d8dfd1c8195ce9e28867a9acc390b83a19d96ac82734ed674ff94304cee6593e
 SHA512: f5f3702687543a6d2d65dd7ba395b1cb4419a7ae692a2a9c04c88897ca5f49a4136dc0cfd8fda0338c6f8df4363d276dad206bb4b14361c5577bd9ecde2adfc7
 Description: GnuPG keys for the Havoc repository
+
+Package: hstspreload
+Architecture: all
+Version: 20220710
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1000
+Depends: roothide (>= 0.0.4)
+Filename: pool/main/iphoneos-arm64e/1800/hstspreload/hstspreload_20220710_all.deb
+Size: 901606
+MD5sum: 3577f5d0f71311c76c0e7f9a8eb637c4
+SHA1: 47a13ba5544a97a1862a1ffbe445c45e5c51c8bc
+SHA256: 91c9ebf233ff92ca350bce955dfb2c7c37acd739eb8445c73b5121d9f2b7932c
+SHA512: 40c33dc3ff89211d91fa4de96ce1461cb535144b0a23d649a9aa9fbf3f949bd46332c9281c5ac2611c474949455050a03cc7051299df2b810ccf5a67650a87c4
+Description: HSTS preload list in DAFSA format
 
 Package: procursus-keyring
 Architecture: all
@@ -2105,6 +2181,51 @@ Description: GnuPG development runtime library
  possibly more in the future.
  .
  It will likely be renamed "gpgrt" in the future.
+
+Package: libhsts-dev
+Architecture: iphoneos-arm64e
+Version: 0.1.0
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 88
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libhsts0 (= 0.1.0)
+Filename: pool/main/iphoneos-arm64e/1800/libhsts/libhsts-dev_0.1.0_iphoneos-arm64e.deb
+Size: 15050
+MD5sum: e7651d12520d246e2946a621e4efcd71
+SHA1: 09553b3e08740fa937164b3e155f08beb85ebaa9
+SHA256: ba2cf92ad56c6b901ad4a63c4b92a4587655558771031d8fd57f8c6bd3d7372a
+SHA512: 9f2357851a410cfb2fb430c3634676b839073c0961b919387c57ae5280560977df89593b1c88bd1b3a43962bdb335032f5b04ccb4268ff2584abcf7dd5776bec
+Homepage: https://gitlab.com/rockdaboot/libhsts/
+Description: C library to access the HSTS preload list
+ C library to access the HSTS preload list. The HSTS preload
+ list is a list of domains that support HTTPS. The list is compiled
+ by Google and is utilised by Chrome, Firefox and others.
+ .
+ This package contains the development files.
+
+Package: libhsts0
+Architecture: iphoneos-arm64e
+Version: 0.1.0
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1)
+Recommends: hstspreload
+Filename: pool/main/iphoneos-arm64e/1800/libhsts/libhsts0_0.1.0_iphoneos-arm64e.deb
+Size: 5252
+MD5sum: e94fbdd2a4faeb8cf6ff93292cd4fb98
+SHA1: 72cfac74fa35c2dd29bf65b9ca4b4a0f456d44d1
+SHA256: f2f8422740b0faedc408d46c4233785a2bc2059a04116b7a41c4acab0eed6465
+SHA512: 4b19e183c682b2f4c43f52db391b7b70d4e9919a66b0df19f3379ff766c39139719d5c7ce22723f823fded35282dbac35684c25f6979fa2d56212aa1638c4ff4
+Homepage: https://gitlab.com/rockdaboot/libhsts/
+Description: C library to access the HSTS preload list
+ C library to access the HSTS preload list. The HSTS preload
+ list is a list of domains that support HTTPS. The list is compiled
+ by Google and is utilised by Chrome, Firefox and others.
+ .
+ This package contains the shared library files.
 
 Package: idn2
 Architecture: iphoneos-arm64e
@@ -5291,6 +5412,114 @@ SHA1: deaa2979a06cac700d70dcfc627aa05249ccf6b4
 SHA256: 30de4fef7e2afdc56f61cc1751ffbe6aeb160d2da51dc1c62569ea3d4c670467
 SHA512: 0de81826acca6933ebd8b4f3039cec2ab0ce055222403c482596484780ce3013f52fd3084fc66c17f7efec9c84b63001a876b8a706d8e908f2d153735fad26d4
 Description: The original ex/vi text editor
+
+Package: wget
+Architecture: iphoneos-arm64e
+Version: 1.21.3-1
+Priority: important
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 596
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libssl3, libpcre2-8-0, libintl8, libunistring5, libidn2-0
+Filename: pool/main/iphoneos-arm64e/1800/wget/wget_1.21.3-1_iphoneos-arm64e.deb
+Size: 313206
+MD5sum: 0ee127036d21dbeeeb45c523dbefca09
+SHA1: 9c527455cbda65871d677e94dffefe1cd7d6aa7f
+SHA256: 9d053799e4b75c387d39145f444d80a85546aba25e2df9659fd158c6d4c8c1d5
+SHA512: 12961c0feccbc094c41b976cc4b8bae6b2303fa8f24880bcbe433c84b2519c43874980effb744eed8e6e45d5e32da810859d01b814d4400c6c31c84d311923a5
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web using HTTP(S) and FTP, the two most widely used internet protocols. It works non-interactively, so it will work in the background, after having logged off. The program supports recursive retrieval of web-authoring pages as well as FTP sites -- you can use Wget to make mirrors of archives and home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections by continuing to retrieve a document until the document is fully downloaded. Re-getting files from where it left off works on servers (both HTTP and FTP) that support it. Both HTTP and FTP retrievals can be time stamped, so Wget can see if the remote file has changed since the last retrieval and automatically retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load, speed up retrieval, and provide access behind firewalls.
+
+Package: libwget1
+Architecture: iphoneos-arm64e
+Version: 2.0.1
+Priority: important
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 536
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libssl3, libpcre2-8-0, libintl8, liblzma5 (>= 5.2.5), libnghttp2-14, libidn2-0, libintl8, libzstd1, libbrotli1, libgpgme11, libhsts0
+Filename: pool/main/iphoneos-arm64e/1800/wget2/libwget1_2.0.1_iphoneos-arm64e.deb
+Size: 214544
+MD5sum: a350531a7c74f2c894ff77cd66941350
+SHA1: 549c0f217a9d04a898884f66cbdf340de46f903f
+SHA256: b4add3c0cd9808679f8f630ed46f1f3d96a070f8f4e1cbdcabb2df5448165a10
+SHA512: 03379d0cd1957ee49451e22bfba1e30ddc4a3f15e3e0d568b0103126623b6771d5b4917b6a20385e476ceece6ec0752dbd6aa816bdb2013d03aac47f3c6356ea
+Description: Download library for files and recursive websites
+ GNU Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ This is the library that provides the basic functions needed by
+ a webclient.
+
+Package: wget2-dev
+Architecture: iphoneos-arm64e
+Version: 2.0.1
+Priority: important
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1620
+Depends: roothide (>= 0.0.4), wget2 (= 2.0.1)
+Filename: pool/main/iphoneos-arm64e/1800/wget2/wget2-dev_2.0.1_iphoneos-arm64e.deb
+Size: 633472
+MD5sum: 95f172c500d7e245ebdf39d830279b77
+SHA1: 0a517f0dab1a72414cfb325c18301bc9a1fee005
+SHA256: 28821328c4633780acdb32a50d5ccfa7cc90d33eb735c99d8ec7c209c324c4e3
+SHA512: e49e38492fff509974d2fc527e5d6af0b8322d7a0240e654bbea547d6561a239e21c38ac5573bc13658427ad28a0efec1342b3cd7a67b61c1806c18f9cf25d70
+Description: development file for libwget2
+ GNU Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ These are the development files to build software with libwget.
+
+Package: wget2
+Architecture: iphoneos-arm64e
+Version: 2.0.1
+Priority: important
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1008
+Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libwget1 (= 2.0.1)
+Filename: pool/main/iphoneos-arm64e/1800/wget2/wget2_2.0.1_iphoneos-arm64e.deb
+Size: 275414
+MD5sum: e59d829f1ed13fade6bec7a8217befa9
+SHA1: 871260d44699a03508702086d443262d38bc818e
+SHA256: d388a794f4e6e22d8676bd468d8ebc7d62eade048ead2a48f4f242c7b299db39
+SHA512: 67dae8c98a7e21402267b6833ae926e9c3aee53bc12357c59b8042c367edf156f76db52efd008750b116e10d038f327c157fd9629e335e3af4bfd0b0f20968a6
+Description: file and recursive website downloader
+ GNU Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
+ .
+ GNU Wget2 is the successor of GNU Wget.
 
 Package: libxar-dev
 Architecture: iphoneos-arm64e
