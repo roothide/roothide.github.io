@@ -287,6 +287,8 @@ usr/bin/ex-vi						    vi
 usr/bin/expand						    coreutils
 usr/bin/expr						    coreutils
 usr/bin/factor						    coreutils
+usr/bin/faked						    fakeroot
+usr/bin/fakeroot					    fakeroot
 usr/bin/false						    coreutils
 usr/bin/fgrep						    grep
 usr/bin/file						    file
@@ -1651,6 +1653,9 @@ usr/lib/libevent_pthreads-2.1.7.dylib			    libevent-pthreads-2.1-7
 usr/lib/libevent_pthreads.a				    libevent-dev
 usr/lib/libevent_pthreads.dylib				    libevent-dev
 usr/lib/libevent_pthreads.pc				    libevent-dev
+usr/lib/libfakeroot-0.dylib				    fakeroot
+usr/lib/libfakeroot.a					    fakeroot
+usr/lib/libfakeroot.dylib				    fakeroot
 usr/lib/libffi.8.dylib					    libffi8
 usr/lib/libffi.a					    libffi-dev
 usr/lib/libffi.dylib					    libffi-dev
@@ -14999,6 +15004,10 @@ usr/share/doc/dpkg/NEWS.zst				    dpkg
 usr/share/doc/dpkg/README.zst				    dpkg
 usr/share/doc/dpkg/THANKS.zst				    dpkg
 usr/share/doc/dpkg/TODO.zst				    dpkg
+usr/share/doc/fakeroot/AUTHORS				    fakeroot
+usr/share/doc/fakeroot/COPYING				    fakeroot
+usr/share/doc/fakeroot/NEWS.zst				    fakeroot
+usr/share/doc/fakeroot/README.zst			    fakeroot
 usr/share/doc/file/AUTHORS				    file
 usr/share/doc/file/COPYING				    file
 usr/share/doc/file/NEWS.zst				    file
@@ -17768,6 +17777,8 @@ usr/share/man/de/man1/dpkg-statoverride.1.zst		    dpkg
 usr/share/man/de/man1/dpkg-trigger.1.zst		    dpkg
 usr/share/man/de/man1/dpkg-vendor.1.zst			    dpkg-dev
 usr/share/man/de/man1/dpkg.1.zst			    dpkg
+usr/share/man/de/man1/faked.1.zst			    fakeroot
+usr/share/man/de/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/de/man1/update-alternatives.1.zst		    dpkg
 usr/share/man/de/man5/apt.conf.5.zst			    apt
 usr/share/man/de/man5/apt_auth.conf.5.zst		    apt
@@ -17818,6 +17829,8 @@ usr/share/man/es/man1/apt-ftparchive.1.zst		    apt-utils
 usr/share/man/es/man1/apt-sortpkgs.1.zst		    apt-utils
 usr/share/man/es/man1/dpkg-distaddfile.1.zst		    dpkg-dev
 usr/share/man/es/man1/dpkg-split.1.zst			    dpkg
+usr/share/man/es/man1/faked.1.zst			    fakeroot
+usr/share/man/es/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/es/man5/apt_preferences.5.zst		    apt
 usr/share/man/es/man5/deb-old.5.zst			    dpkg-dev
 usr/share/man/es/man5/dpkg.cfg.5.zst			    dpkg-dev
@@ -17859,6 +17872,8 @@ usr/share/man/fr/man1/dpkg-statoverride.1.zst		    dpkg
 usr/share/man/fr/man1/dpkg-trigger.1.zst		    dpkg
 usr/share/man/fr/man1/dpkg-vendor.1.zst			    dpkg-dev
 usr/share/man/fr/man1/dpkg.1.zst			    dpkg
+usr/share/man/fr/man1/faked.1.zst			    fakeroot
+usr/share/man/fr/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/fr/man1/update-alternatives.1.zst		    dpkg
 usr/share/man/fr/man5/apt.conf.5.zst			    apt
 usr/share/man/fr/man5/apt_auth.conf.5.zst		    apt
@@ -18071,6 +18086,8 @@ usr/share/man/man1/exa.1.zst				    vi
 usr/share/man/man1/expand.1.zst				    coreutils
 usr/share/man/man1/expr.1.zst				    coreutils
 usr/share/man/man1/factor.1.zst				    coreutils
+usr/share/man/man1/faked.1.zst				    fakeroot
+usr/share/man/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/man1/false.1.zst				    coreutils
 usr/share/man/man1/file.1.zst				    file
 usr/share/man/man1/find.1.zst				    findutils
@@ -26389,6 +26406,8 @@ usr/share/man/nl/man1/dpkg-statoverride.1.zst		    dpkg
 usr/share/man/nl/man1/dpkg-trigger.1.zst		    dpkg
 usr/share/man/nl/man1/dpkg-vendor.1.zst			    dpkg-dev
 usr/share/man/nl/man1/dpkg.1.zst			    dpkg
+usr/share/man/nl/man1/faked.1.zst			    fakeroot
+usr/share/man/nl/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/nl/man1/update-alternatives.1.zst		    dpkg
 usr/share/man/nl/man5/apt.conf.5.zst			    apt
 usr/share/man/nl/man5/apt_auth.conf.5.zst		    apt
@@ -26476,6 +26495,8 @@ usr/share/man/pt/man1/dpkg-statoverride.1.zst		    dpkg
 usr/share/man/pt/man1/dpkg-trigger.1.zst		    dpkg
 usr/share/man/pt/man1/dpkg-vendor.1.zst			    dpkg-dev
 usr/share/man/pt/man1/dpkg.1.zst			    dpkg
+usr/share/man/pt/man1/faked.1.zst			    fakeroot
+usr/share/man/pt/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/pt/man1/update-alternatives.1.zst		    dpkg
 usr/share/man/pt/man5/apt.conf.5.zst			    apt
 usr/share/man/pt/man5/apt_auth.conf.5.zst		    apt
@@ -26551,6 +26572,8 @@ usr/share/man/sv/man1/dpkg-statoverride.1.zst		    dpkg
 usr/share/man/sv/man1/dpkg-trigger.1.zst		    dpkg
 usr/share/man/sv/man1/dpkg-vendor.1.zst			    dpkg-dev
 usr/share/man/sv/man1/dpkg.1.zst			    dpkg
+usr/share/man/sv/man1/faked.1.zst			    fakeroot
+usr/share/man/sv/man1/fakeroot.1.zst			    fakeroot
 usr/share/man/sv/man1/update-alternatives.1.zst		    dpkg
 usr/share/man/sv/man5/deb-buildinfo.5.zst		    dpkg-dev
 usr/share/man/sv/man5/deb-changelog.5.zst		    dpkg-dev

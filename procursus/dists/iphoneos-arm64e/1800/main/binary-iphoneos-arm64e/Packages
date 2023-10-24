@@ -733,6 +733,22 @@ SHA256: 7d51f6a64d9ab1751d1ea237b8961d08e94294a6f55bee387ff5bae71284da3c
 SHA512: 74706b7bdcd25e3b970fe44be440f3d34e18453fb12eb7a35a6559699d010f4cd416898669814cc5600dfe6f4f5629b7ddea794875768766fafb8953c1174d56
 Description: Virtual package to keep you safe from uninstalling important packages.
 
+Package: fakeroot
+Architecture: iphoneos-arm64e
+Version: 1.31-1
+Priority: important
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 348
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), sh
+Filename: pool/main/iphoneos-arm64e/1800/fakeroot/fakeroot_1.31-1_iphoneos-arm64e.deb
+Size: 109700
+MD5sum: 6549b1e199107668dfdcf22e963dfd48
+SHA1: 45fd523cbe9d7f673eb9d94c68c2afb3bc8b94b4
+SHA256: 298026991906b85a5abf44963bb2f9dbe1712a8ec32eef41821fa421a6b674a9
+SHA512: 05ce1ab31e67b0c0f1335042adb900effdb890a005897df33deaf9f63b2c0b64cfe5e71f283ecafc1d7c6b03883ee85a2b67b0722fd486d340814937df76a041
+Description: tool for simulating superuser privileges
+
 Package: file-cmds
 Architecture: iphoneos-arm64e
 Version: 400-1
@@ -4870,38 +4886,19 @@ Description: GNU readline and history libraries, run-time libraries
 
 Package: roothide
 Architecture: iphoneos-arm64e
-Version: 0.0.3
+Version: 0.0.5
 Priority: required
 Essential: yes
 Section: System
 Maintainer: roothide
 Installed-Size: 916
 Depends: libiosexec1 (>= 1.3.1)
-Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.3_iphoneos-arm64e.deb
-Size: 52538
-MD5sum: 7f96a523d3796b85951619c2c14e7aef
-SHA1: 70566d839b62dcbc6e791ba284d79427ae0ab24b
-SHA256: 9c24d7949ef40df1b6bb04e1696c42f05730c660df495f3dbb7ba016c1bf4a07
-SHA512: 6f5ea61fbb496b6ac6e7a9aade5a522e5434528c0e7ffffc0ffbb2967dbecc732faf4f21198275e565cb9cfd57dbe20f743c07fa3cbd31a08afb7b28eaddb65d
-Description: roothide core
-Name: roothide
-Author: roothide
-
-Package: roothide
-Architecture: iphoneos-arm64e
-Version: 0.0.4
-Priority: required
-Essential: yes
-Section: System
-Maintainer: roothide
-Installed-Size: 916
-Depends: libiosexec1 (>= 1.3.1)
-Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.4_iphoneos-arm64e.deb
-Size: 52198
-MD5sum: 59ea1cf786f6085bbebcdc1a6fbbe48f
-SHA1: 74bb141a306291ae4674a9e3f0461364da4748e2
-SHA256: 94dcd82d089d6296aab9ad2f684f159a832f850d7065572d7419cf277284e0b4
-SHA512: 84249c5c63814fe484ad891849bdd9d378465128e1db4d23618e3829b70af7aca7288426c24c703967bf126301dc9c41495a5187626759c66650a6e14f5e8202
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.5_iphoneos-arm64e.deb
+Size: 52518
+MD5sum: 5b48c786a1fd0a4c1ba5c85954e9e6ba
+SHA1: ce9b191cb4032eac7655ebe4aec1f36fc50a8685
+SHA256: 7837a6ec64ada54ef93c7a5dc5d1b1414f3dbe0a08c53ddae43f1dc1f5d11340
+SHA512: 252996ce084f8e887976ce001fe93c4424d621f2009813a5fa31fdec166a333c2a63366171944a761c9b8bf663e7e4320ed91b8296b34a965c0db2015a2d4231
 Description: roothide core package
 Name: roothide core
 Author: roothide
