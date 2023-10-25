@@ -28,6 +28,22 @@ Author: DoranekoSystems
 Name: ceserver
 Sileodepiction: https://github.com/DoranekoSystems/ceserver-ios
 
+Package: com.0xkuj.3dappversionspoofer
+Version: 1.3
+Architecture: iphoneos-arm64e
+Maintainer: 0xkuj
+Installed-Size: 424
+Depends: com.opa334.altlist
+Filename: ./debfiles/com.0xkuj.3dappversionspoofer_1.3_iphoneos-arm64e.deb
+Size: 51736
+MD5sum: 577fce55475ef825a11f4fab83c17a7b
+SHA1: d2f5e153ddd18aa7a5c06da3a544b98d78f14140
+SHA256: 9e10961ac0dca691b1096fd040911892346466ed8fb0d367efe9c48bccae9200
+Section: Tweaks
+Description: A tweak to add app spoofing capabilities right from your 3D menu and prefs
+Author: 0xkuj
+Name: 3DAppVersionSpoofer
+
 Package: com.34306.2nd
 Version: 2.0-3+debug
 Architecture: iphoneos-arm64e
@@ -801,16 +817,16 @@ Author: roothide
 Name: Patches for Filza 64bit
 
 Package: rootless-compat
-Version: 0.2-1
+Version: 0.3-1
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 252
 Depends: com.roothide.patchloader(>= 0.0.2)
-Filename: ./debfiles/rootless-compat_0.2-1_iphoneos-arm64e.deb
-Size: 29162
-MD5sum: cdba1aeffc6b26c36331d3dbedff14a8
-SHA1: 61261cc65e7d7a0e3a17e712e00359a18e2907ee
-SHA256: bed10d6249886080cd498ea2a2514c8a67663ef0ed6c175cd2fcf77e4a22a67f
+Filename: ./debfiles/rootless-compat_0.3-1_iphoneos-arm64e.deb
+Size: 29302
+MD5sum: 937d912bcab599a530cfce3195ece061
+SHA1: ee23ba9d4ba6bc36b68d108cb72788edbe435c1d
+SHA256: 370b51ed967ca8e95ad4d461691608611440dacbf03c197db5810d38001ad85a
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
