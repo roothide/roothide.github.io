@@ -476,16 +476,16 @@ Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patcher
-Version: 0.7-1+debug
+Version: 0.8-2+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 3160
 Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
-Filename: ./debfiles/com.roothide.patcher_0.7-1+debug_iphoneos-arm64e.deb
-Size: 971672
-MD5sum: 0f53d55838f71c7473a52000b9bdaacc
-SHA1: 9413866e5479f0981fa2bf0080a8f75ff8ff2538
-SHA256: 0c961e57335a9679cacf99d44b8c84b1425d5d4d88fdd68b13f3533be7e1eb6f
+Filename: ./debfiles/com.roothide.patcher_0.8-2+debug_iphoneos-arm64e.deb
+Size: 971680
+MD5sum: ce8869310625dbb667e8f099040e30cf
+SHA1: b22e6e93645890091e9a6331dce31594abb6ee00
+SHA256: ab0a790d38f3594ff4f75b645a81b8fede3b6d0db3d6f5854ecafe6bbbed9900
 Section: Utilities
 Description: patch rootless package to roothide, not work for all packages.
 Author: haxi0
@@ -801,16 +801,16 @@ Author: roothide
 Name: Patches for Filza 64bit
 
 Package: rootless-compat
-Version: 0.1-25
+Version: 0.2-1
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 252
 Depends: com.roothide.patchloader(>= 0.0.2)
-Filename: ./debfiles/rootless-compat_0.1-25_iphoneos-arm64e.deb
-Size: 28464
-MD5sum: beb4be15d7d9d5e8c021c485b447cd3c
-SHA1: d8ea5e225e19d2ec2b0e53e8b4ee1a329a4911a6
-SHA256: f7aba40afb9fa6ecc5fde5af39970774ac9897b17b15fb677e9e659c2cb7ab55
+Filename: ./debfiles/rootless-compat_0.2-1_iphoneos-arm64e.deb
+Size: 29162
+MD5sum: cdba1aeffc6b26c36331d3dbedff14a8
+SHA1: 61261cc65e7d7a0e3a17e712e00359a18e2907ee
+SHA256: bed10d6249886080cd498ea2a2514c8a67663ef0ed6c175cd2fcf77e4a22a67f
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
