@@ -236,6 +236,7 @@ usr/bin/date						    coreutils
 usr/bin/dd						    coreutils
 usr/bin/debugserver					    debugserver
 usr/bin/debugserver-14					    debugserver-14
+usr/bin/defaults-procursus				    defaults
 usr/bin/deviceinfo					    uikittools
 usr/bin/diagtool					    clang-tools
 usr/bin/diff						    diffutils
@@ -14979,6 +14980,7 @@ usr/share/doc/curl/README.zst				    curl
 usr/share/doc/dash/COPYING				    dash
 usr/share/doc/debugserver-14/LICENSE.TXT.zst		    debugserver-14
 usr/share/doc/debugserver/LICENSE.TXT.zst		    debugserver
+usr/share/doc/defaults/LICENSE				    defaults
 usr/share/doc/diffutils/AUTHORS				    diffutils
 usr/share/doc/diffutils/COPYING				    diffutils
 usr/share/doc/diffutils/NEWS.zst			    diffutils

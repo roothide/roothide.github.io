@@ -497,6 +497,22 @@ Description: Miscellaneous utilities specific to Debian
  The specific utilities included are:
  add-shell remove-shell run-parts
 
+Package: defaults
+Architecture: iphoneos-arm64e
+Version: 1.0.1
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 92
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1)
+Conflicts: ws.hbang.common (<= 1.17)
+Filename: pool/main/iphoneos-arm64e/1800/defaults/defaults_1.0.1_iphoneos-arm64e.deb
+Size: 16092
+MD5sum: 2d81f5ccbfa0691c669fd18deeb622ab
+SHA1: e8dce6cffad2fd3839080263fe008e4b26eebbe2
+SHA256: c91c5daacdb9b347bdcf8ffc9f386d02cf9a1f3f687eed64de4f9f36da1fd579
+SHA512: 2e1ec9c208befb6ae7890f842e855fd449dab1c9637d62cd989c9161c23ccb73ea77a772f22ca7c4be8128b4806be8852e034e76749218e0757403cf779a6486
+Description: Opensource re-implementation of defaults(1)
+
 Package: diffutils
 Architecture: iphoneos-arm64e
 Version: 3.8
