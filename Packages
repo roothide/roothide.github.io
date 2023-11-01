@@ -13,6 +13,22 @@ Description: Five Icon Dock
 Author: unknown
 Name: Five Icon Dock
 
+Package: apt.tinyapps.Renet
+Version: 1.2.1
+Architecture: iphoneos-arm64e
+Maintainer: Tinyapps.cn
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/apt.tinyapps.Renet-v1.2.1-arm64e.deb
+Size: 245344
+MD5sum: 893816434b977b856f806b0825580ca9
+SHA1: 31c3728e152dc2e8964f416015cbd03b6f049343
+SHA256: 88a5e2e2f45fbff384a826ab91da3f8478f4bd960afaff644095b7a1cd731519
+Section: System
+Priority: optional
+Description: Fix Network Issue for CN Device
+Author: Tinyapps.cn
+Name: Renet - Network Fix
+
 Package: ceserver
 Version: 0.1
 Architecture: iphoneos-arm64e
@@ -508,16 +524,16 @@ Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patcher
-Version: 1.1-1+debug
+Version: 1.2-1+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 3160
 Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
-Filename: ./debfiles/com.roothide.patcher_1.1-1+debug_iphoneos-arm64e.deb
-Size: 971696
-MD5sum: c76ea89f0a4b9045c43480fab1e98ae9
-SHA1: b9dbda2916e89d68ed740a25833ab29b6c96f305
-SHA256: b983a1e6de4df33630d4434a657da14965da88e76f2931b11a65513f3a30e171
+Filename: ./debfiles/com.roothide.patcher_1.2-1+debug_iphoneos-arm64e.deb
+Size: 971768
+MD5sum: 43de803b0334c0742b3f976abbd05064
+SHA1: 5441c5eaae44dd34debb532a0b384189ea6d8efa
+SHA256: c51bb518996b3b4ac4f090ba854de9a962d3002ff8970d6990af48da560a4e89
 Section: Utilities
 Description: patch rootless package to roothide, not work for all packages.
 Author: RootHide
