@@ -849,16 +849,16 @@ Author: roothide
 Name: Patches for Filza 64bit
 
 Package: rootless-compat
-Version: 0.3-1
+Version: 0.4-2
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 252
 Depends: com.roothide.patchloader(>= 0.0.2)
-Filename: ./debfiles/rootless-compat_0.3-1_iphoneos-arm64e.deb
-Size: 29302
-MD5sum: 937d912bcab599a530cfce3195ece061
-SHA1: ee23ba9d4ba6bc36b68d108cb72788edbe435c1d
-SHA256: 370b51ed967ca8e95ad4d461691608611440dacbf03c197db5810d38001ad85a
+Filename: ./debfiles/rootless-compat_0.4-2_iphoneos-arm64e.deb
+Size: 29478
+MD5sum: 15172a2faf54e4ac0f4ab82e41ade8c8
+SHA1: 369560c049d4dc414e5115ccf31fbc93562a47b0
+SHA256: c3be42a15699b01ecadbaa7f0d52b3459fdab26b8f190bb778bcbd2917f03b2a
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
