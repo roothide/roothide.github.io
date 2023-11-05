@@ -2320,6 +2320,86 @@ SHA512: f87c36840becd1a4e7d922c59598d8d5f92b9b03e2eaff105b69d323c76f06b8cc55272b
 Homepage: https://www.gnu.org/software/libidn/#libidn2
 Description: Internationalized domain names (IDNA2008/TR46) development files
 
+Package: libimobiledevice-glue-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220522.d2ff796
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 164
+Depends: roothide (>= 0.0.5), libimobiledevice-glue1.0-0 (= 1.0.0+git20220522.d2ff796), libplist-dev (>= 2.2.0)
+Filename: pool/main/iphoneos-arm64e/1800/libimobiledevice-glue/libimobiledevice-glue-dev_1.0.0+git20220522.d2ff796_iphoneos-arm64e.deb
+Size: 59896
+MD5sum: 42ff6feb5ff0d054dc77fe2c178df31b
+SHA1: e76d9a67ab04e585d2cc8e9fd8f89b387507aff9
+SHA256: da482ddc55ec1439cb41f70fb48f6b2f83c3ef344f0588201674f4ef5e0b336c
+SHA512: 60d3934eecc0e3503769cf8b133719dd3519d7c38ca858bb86e8e6fe999960362cf5e4888843870cf7f3e1143a0797db627cd882ef2fdcb3e45360c24968072d
+Description: A library with common code used by libraries and tools around the libimobiledevice project - devel
+
+Package: libimobiledevice-glue1.0-0
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220522.d2ff796
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 120
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libplist3 (>= 2.2.0)
+Filename: pool/main/iphoneos-arm64e/1800/libimobiledevice-glue/libimobiledevice-glue1.0-0_1.0.0+git20220522.d2ff796_iphoneos-arm64e.deb
+Size: 26948
+MD5sum: 374b8aaec1d195554f8edd55b2afaf7f
+SHA1: ec57031bb8d3b8dd6a3d47d278fce4ab57c5ca3d
+SHA256: e3f97f23a90f44d02a4234c4e242472d62e5b6f26cf5260d4d9c3cd62a7c69dd
+SHA512: a7a403ee0b6574ebef19c17d133900297fe4a524d388d2d77a18ff35c8820eb0932a2c1850883ae6706dd641eba85a20a62e076bef114ad646ba87b4ae4149ab
+Description: A library with common code used by libraries and tools around the libimobiledevice project
+
+Package: libimobiledevice-dev
+Architecture: iphoneos-arm64e
+Version: 1.3.0+git20220702.2eec1b9-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1004
+Depends: roothide (>= 0.0.5), libimobiledevice6 (= 1.3.0+git20220702.2eec1b9-1), libplist-dev (>= 2.2.0), libimobiledevice-glue-dev (>= 1.0.0), libusbmuxd-dev (>= 2.0.2)
+Filename: pool/main/iphoneos-arm64e/1800/libimobiledevice/libimobiledevice-dev_1.3.0+git20220702.2eec1b9-1_iphoneos-arm64e.deb
+Size: 356278
+MD5sum: 3547d0fff4042ea93a95db5a46d37a5b
+SHA1: cecae707dff1c0d3cc4542bdabcca309cbac10be
+SHA256: a371bb329a732141961d7fbf4a8c996d6cfc9fbe69cb54ef89b21d356ac13810
+SHA512: d380fe975fb9400022b7010bcfbbdc271e0c5783111543969d488df72c0e34e335eb7ba0d47e21f60d90e163c0089ad0b0f693e3c553fdf98d136f27697f7815
+Description: A library for communicating with iPhone and other Apple devices - devel
+
+Package: libimobiledevice-utils
+Architecture: iphoneos-arm64e
+Version: 1.3.0+git20220702.2eec1b9-1
+Priority: standard
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1212
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libimobiledevice6 (= 1.3.0+git20220702.2eec1b9-1), libssl3 (>= 1.1.0), libplist3 (>= 2.2.0), libimobiledevice-glue1.0-0 (>= 1.0.0), libusbmuxd6 (>= 2.0.2)
+Filename: pool/main/iphoneos-arm64e/1800/libimobiledevice/libimobiledevice-utils_1.3.0+git20220702.2eec1b9-1_iphoneos-arm64e.deb
+Size: 110086
+MD5sum: cd62914b72c5fa767c9b5fcaf0eb23ec
+SHA1: c2a98f653fcd48d617ae1c0119020a40eb054dc6
+SHA256: 62adafea1f0ef11633950ef13d57cf3fef53a9a63a71280d3e6dc21023247dec
+SHA512: 189a6d860be5d342295db30086d760c173d2a683b7e1d6c2e0e9577d13abe18471831854ad647641de0558d2e2bd003405a8d7992efd5ecbf5755fd62a639dc9
+Description: A library for communicating with iPhone and other Apple devices - tools
+
+Package: libimobiledevice6
+Architecture: iphoneos-arm64e
+Version: 1.3.0+git20220702.2eec1b9-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 284
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libssl3 (>= 1.1.0), libplist3 (>= 2.2.0), libimobiledevice-glue1.0-0 (>= 1.0.0), libusbmuxd6 (>= 2.0.2)
+Filename: pool/main/iphoneos-arm64e/1800/libimobiledevice/libimobiledevice6_1.3.0+git20220702.2eec1b9-1_iphoneos-arm64e.deb
+Size: 127542
+MD5sum: a76a7a5d0d3ca874e8398ebe590771e2
+SHA1: c44435dde829581f471019cb5356661e72a7f43e
+SHA256: 40d2a4dcf3035986fa5b16e2e77f348ae79d6d33b193753a55e426b73d6ad8ea
+SHA512: ef5dd9eb5d74e7f49af4e0638adec43808667993222a29af38c949be02287bceab2e5ea7d87a661e8c1394fc59815fd4d09068e4d89a16989f789dd17065149a
+Description: A library for communicating with iPhone and other Apple devices
+
 Package: libiosexec-dev
 Architecture: iphoneos-arm64e
 Version: 1.3.1
@@ -2758,6 +2838,92 @@ SHA256: f38da48cb62a150bf3248629239ba1d3fc1892ccd797850cfc0810c57f08ad60
 SHA512: 6c9697eae5cc43164983007d8fd83560ef966716af9f3d2843c46ea5b9cec963f11a0671ceec8cbdcfd6735bd31b6aecbcf94401052c7c927e59f071d9b10dab
 Homepage: https://www.gnu.org/software/libunistring/
 Description: Unicode string library for C
+
+Package: libusb-1.0-0-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.26
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 388
+Depends: roothide (>= 0.0.5), libusb-1.0-0 (= 1.0.26)
+Filename: pool/main/iphoneos-arm64e/1800/libusb/libusb-1.0-0-dev_1.0.26_iphoneos-arm64e.deb
+Size: 182638
+MD5sum: fd4b1c566efeaea219445d6427b2504e
+SHA1: af4d66ea37a8374b0d1639f96c597117aa214243
+SHA256: a33e5cab1a35ae2f91312d821a5a21a464a9aacc871f95c4e1971c7c23a84ce2
+SHA512: 7075497949d46f499c8fb0a948342f8857c52bcb3ee039a67e6abf55e437b8d9c95ff36c79aa79e63ad10ed2dc415edee6e3d33676a43e1118956fa2c5be78fe
+Description: userspace USB programming library development files
+ Library for programming USB applications.
+ .
+ This package contains what you need for compiling sources that
+ use this library in your own code.
+
+Package: libusb-1.0-0
+Architecture: iphoneos-arm64e
+Version: 1.0.26
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 188
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libusb/libusb-1.0-0_1.0.26_iphoneos-arm64e.deb
+Size: 57742
+MD5sum: 379762693778a4cd6a7778c0d3ddeb2d
+SHA1: aa13e4ce3c4ef01660e39bb7043168580d2f091d
+SHA256: 58aa2cb07bdeba981e71bf53948d2a72a580322c2d2146dabec4e5a67f3366ea
+SHA512: 18efea00e50b9e25c1a21a9f71051c5a3fcd93d2b1d0f02454ccc1352ac7a8782232f1b087c39ba13f371feb5e3ba1256cb840e9f93050bd140cbdb46f864a12
+Description: userspace USB programming library
+ Library for programming USB applications.
+ .
+ This package contains what you need to run programs that use this
+ library.
+
+Package: libusbmuxd-dev
+Architecture: iphoneos-arm64e
+Version: 2.0.2+git20220504.36ffb7a
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 108
+Depends: roothide (>= 0.0.5), libusbmuxd6 (= 2.0.2+git20220504.36ffb7a), libimobiledevice-glue-dev (>= 1.0.0), libplist-dev (>= 2.2.0)
+Filename: pool/main/iphoneos-arm64e/1800/libusbmuxd/libusbmuxd-dev_2.0.2+git20220504.36ffb7a_iphoneos-arm64e.deb
+Size: 49478
+MD5sum: df2ebd1a2e6000ac959f5b8ce64c4cd2
+SHA1: 7daf38a0d8da3fda09e89a7e778229b03971c947
+SHA256: 2102d3b972968691b1d2b7b8777dd5379843a2f9767857ad41042da975599421
+SHA512: c20303b72125b2616f815ef5dd8875c3fbf1e9391dd092e009fabf2a0f859998f2b8816d69cf588a184a8efa376625b17fffc7bb09c903a0fd14d7d4bcc90e67
+Description: A client library to multiplex connections from and to iOS devices  - devel
+
+Package: libusbmuxd-tools
+Architecture: iphoneos-arm64e
+Version: 2.0.2+git20220504.36ffb7a
+Priority: standard
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 148
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libplist3, libimobiledevice-glue1.0-0 (>= 1.0.0), libusbmuxd6
+Filename: pool/main/iphoneos-arm64e/1800/libusbmuxd/libusbmuxd-tools_2.0.2+git20220504.36ffb7a_iphoneos-arm64e.deb
+Size: 23490
+MD5sum: b624d143752241fcd14f722ed8c7a9f3
+SHA1: c0d63532cf25a22378efc8bea0b6f843c4d6abd6
+SHA256: 2d676062179cc86d60f98192e6e5db6b2c8c55213c75a32739ce054334ba8c66
+SHA512: 53407a2c86931affb95a7f76cfa81841ba994e14fd0cd2b634134b9bff15570fa1b94c668d3e9431cf9baa50efb51e6a56a7008636572ffca498e4eb84bb4a08
+Description: A client library to multiplex connections from and to iOS devices  - tools
+
+Package: libusbmuxd6
+Architecture: iphoneos-arm64e
+Version: 2.0.2+git20220504.36ffb7a
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 124
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libplist3, libimobiledevice-glue1.0-0 (>= 1.0.0)
+Filename: pool/main/iphoneos-arm64e/1800/libusbmuxd/libusbmuxd6_2.0.2+git20220504.36ffb7a_iphoneos-arm64e.deb
+Size: 25834
+MD5sum: d9eae5b39e82f3a4bb6da4f96b4a97ed
+SHA1: d4fdf7939eb017f970fe2449714a8ad33baac32e
+SHA256: 0b22d1c6e1cae2d7c3c2e7dcf155b899668254e02d98edaab03a6e7fa577d519
+SHA512: fc519a95f37979d7b31a7dbf49037dc93ee507715dbbd07d1d21d2b2d6b4341940a6c9b70839dda3370333373c3a2ddbe723c19fda5aa0b55f5ccff1f5979ae9
+Description: A client library to multiplex connections from and to iOS devices
 
 Package: libutf8proc-dev
 Architecture: iphoneos-arm64e
@@ -5338,6 +5504,22 @@ SHA1: 63e7f77024dfc2f7d899b5b860b7b4bca3dbe672
 SHA256: 8bc90e073330333a990b504d3c464741a15c7206daee217425bfce5a625f5d54
 SHA512: e91fb7a30b18b6fb47e6c80d5ea53f2686ddafba289bf5061882442c2777979a61df6f9d0138d9cb093b2e29aececf09e3dd99891a646c0735d6ffb06bfe3763
 Description: de-compesses files in zip format
+
+Package: usbmuxd
+Architecture: iphoneos-arm64e
+Version: 1.1.1+git20220619.f50e52f-2
+Priority: standard
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 144
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libplist3 (>= 2.2.0), libusb-1.0-0 (>= 1.0.9), libimobiledevice-glue1.0-0 (>= 1.0.0), libimobiledevice6 (>= 1.3.0)
+Filename: pool/main/iphoneos-arm64e/1800/usbmuxd/usbmuxd_1.1.1+git20220619.f50e52f-2_iphoneos-arm64e.deb
+Size: 38856
+MD5sum: 4e98daf2e1614742922665de5a8077d8
+SHA1: d1bb8efd87de2fa8fb05aa9fb299f7c1cc0cb936
+SHA256: 0c30e22fd7a0fd2f01af75dc9f158a8f19f8affdc354a560be24a8eec3998ee6
+SHA512: 3dfcb133fd7c70127387b1c6083dd16ea640f4cae68bd5890e53b3dfdb85623381e6f7a80901f96542faeb727dcd5e7d97e113c6b6504731f4c2b99710cf18fd
+Description: USB multiplexor daemon for iPhone and iPod Touch devices
 
 Package: libuuid-dev
 Architecture: iphoneos-arm64e
