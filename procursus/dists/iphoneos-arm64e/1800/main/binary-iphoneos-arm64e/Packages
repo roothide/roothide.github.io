@@ -1660,6 +1660,57 @@ SHA256: 91c9ebf233ff92ca350bce955dfb2c7c37acd739eb8445c73b5121d9f2b7932c
 SHA512: 40c33dc3ff89211d91fa4de96ce1461cb535144b0a23d649a9aa9fbf3f949bd46332c9281c5ac2611c474949455050a03cc7051299df2b810ccf5a67650a87c4
 Description: HSTS preload list in DAFSA format
 
+Package: jq
+Architecture: iphoneos-arm64e
+Version: 1.6
+Priority: optional
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 740
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libjq1 (= 1.6), libonig5
+Filename: pool/main/iphoneos-arm64e/1800/jq/jq_1.6_iphoneos-arm64e.deb
+Size: 295926
+MD5sum: 4b135e4d85740549418ea6f1086a6c6c
+SHA1: f84459d81a51e99a6479cd554dca599dbec8efb3
+SHA256: 216e34a521a708cac60376a09135f1b0590228d344e220b0c52065899b90739c
+SHA512: 9652e47fdf80efec802fc52e2b8a00101726da8164ee9f0b2e9297cf80a2fee470b0bfe8c5d714dcedc1a774ed465192d06ad2073f59c83dff02e129051473a6
+Homepage: https://stedolan.github.io/jq/
+Description: a lightweight and flexible command-line JSON processor
+
+Package: libjq-dev
+Architecture: iphoneos-arm64e
+Version: 1.6
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 604
+Depends: roothide (>= 0.0.5), libjq1 (= 1.6)
+Filename: pool/main/iphoneos-arm64e/1800/jq/libjq-dev_1.6_iphoneos-arm64e.deb
+Size: 315862
+MD5sum: 383a87cde4fa332646660f98e6c88cc9
+SHA1: 42cb126f4565248233cc4a9af9fc6b4098e39075
+SHA256: 9f7f5627ec5bbccbdafdb86d1ffbe4128a9f7f875c38c1dae61eadd49cfc3eb7
+SHA512: 44797f5aa08ad89fd3c5357cd06c7a48946d695b77b4c2e30b815abb69eedfa62aa5352548d68fcc1cdbffe990789b33f7c3bfc243766b7d05df766b7ec0f6af
+Homepage: https://stedolan.github.io/jq/
+Description: a lightweight and flexible command-line JSON processor - development files
+
+Package: libjq1
+Architecture: iphoneos-arm64e
+Version: 1.6
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 296
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libonig5
+Filename: pool/main/iphoneos-arm64e/1800/jq/libjq1_1.6_iphoneos-arm64e.deb
+Size: 115604
+MD5sum: f19b9317c9e6064616a4c9284768065d
+SHA1: e7926d078bc4e3b06ed6f71455d219fd92203c1c
+SHA256: 3acac016b76253dd8a4d7e14f7c381d70385f924b6e5ebfa5f68f698ae99597c
+SHA512: 661eae5219f81009ccedcbdef490881d9761953e4e48138e2dcc31f830e216f666b3bb24b05162714336a845d85e976375f8968b044c78f517ceb73721f17199
+Homepage: https://stedolan.github.io/jq/
+Description: a lightweight and flexible command-line JSON processor - shared library
+
 Package: procursus-keyring
 Architecture: all
 Version: 2020.05.09-4
@@ -2585,6 +2636,38 @@ Description: message digest functions from BSD systems - shared library
  The libmd library provides various message digest ("hash") functions,
  as found on various BSDs on a library with the same name and with a
  compatible API.
+
+Package: libonig-dev
+Architecture: iphoneos-arm64e
+Version: 6.9.6
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 988
+Depends: roothide (>= 0.0.5), libonig5 (= 6.9.6)
+Filename: pool/main/iphoneos-arm64e/1800/libonig/libonig-dev_6.9.6_iphoneos-arm64e.deb
+Size: 524620
+MD5sum: f81c9a10ac07478204a2d488601113f2
+SHA1: a3caba8abedac8eb74c965ad2f74de86f3782d9d
+SHA256: d1ddd0e45a079a3d9ed9ce115f647b644c2bcff41cd0738c595615df9645ceda
+SHA512: 6abb5faae49ab2ec50917149bdfe7cfde969fa288c40a11c9da73bab92840b6ce8e2d913cbc9fa4a7c4849259f7837c96958a7c5f02755d647641e1ae255f28e
+Description: regular expression library - development files
+
+Package: libonig5
+Architecture: iphoneos-arm64e
+Version: 6.9.6
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 560
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libonig/libonig5_6.9.6_iphoneos-arm64e.deb
+Size: 174544
+MD5sum: 82a43f6919d79ba13946aa06bc5d4b41
+SHA1: 2236aca6c982d3458803b70ea6fb7a41de2000f6
+SHA256: 1159e5d36d4dd6b75301d1b3c4465d0e305877db2a94e21e49d6629857b5b536
+SHA512: fe52bc88d1e17870a20bc20677527774f4c532c715eae34000ec2b34b689e1e38a3ef95756489294d667b541c7a67d79908ab0081551b3cd18e7ef36ccf5df7b
+Description: regular expression library
 
 Package: libplist++-dev
 Architecture: iphoneos-arm64e
@@ -5358,6 +5441,22 @@ SHA256: df28e0ba2888576fd844b6367ddc17e58ef6ecfb853186d1c0a3df440eb3344c
 SHA512: 0a422d43fed51f65d99fe59136c385543a4a73eb53d4de182f417238d8b0c5b12776431b01c66161f7acc4f33bbef8d758a535423b5a039e80e96e1cb8c90f7d
 Homepage: http://www.gnu.org/software/tar/
 Description: tool for making tape archives
+
+Package: text-cmds
+Architecture: iphoneos-arm64e
+Version: 1:154
+Priority: standard
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 900
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/text-cmds/text-cmds_1:154_iphoneos-arm64e.deb
+Size: 96670
+MD5sum: 79424a53fbdeb7674b6ef0af6728d5fb
+SHA1: 3b0aa5dc109ab064095197ac7b94e26a419f83f3
+SHA256: 0ba32f34432f188146675c4262df944526dc92909b082bd6cf3b342de39fadca
+SHA512: b799d4c9be2f984f2f03ef4809860bf2967c6a0087836fe050bbc0d4e73002c5c358a855a8b208c1db743aac733a92716b9630af8768ce1f864a015433423906
+Description: md5, ee, ul, banner
 
 Package: theos-dependencies
 Architecture: all

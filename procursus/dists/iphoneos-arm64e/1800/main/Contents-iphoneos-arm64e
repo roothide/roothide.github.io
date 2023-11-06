@@ -119,9 +119,13 @@ rootfs							    base
 sbin/dmesg						    system-cmds
 sbin/dynamic_pager					    system-cmds
 sbin/halt						    system-cmds
+sbin/md5						    text-cmds
 sbin/mount						    roothide
 sbin/nologin						    system-cmds
 sbin/reboot						    system-cmds
+sbin/rmd160						    text-cmds
+sbin/sha1						    text-cmds
+sbin/sha256						    text-cmds
 sbin/shutdown						    system-cmds
 usr/bin/7z						    p7zip
 usr/bin/7za						    p7zip
@@ -149,6 +153,7 @@ usr/bin/asn1Parser					    libtasn1-bin
 usr/bin/at						    system-cmds
 usr/bin/autopoint					    autopoint
 usr/bin/b2sum						    coreutils
+usr/bin/banner						    text-cmds
 usr/bin/base32						    coreutils
 usr/bin/base64						    coreutils
 usr/bin/basename					    coreutils
@@ -220,6 +225,9 @@ usr/bin/clear						    ncurses-bin
 usr/bin/cmp						    diffutils
 usr/bin/cmpdylib					    odcctools
 usr/bin/codesign_allocate				    odcctools
+usr/bin/col						    text-cmds
+usr/bin/colrm						    text-cmds
+usr/bin/column						    text-cmds
 usr/bin/comm						    coreutils
 usr/bin/compress					    file-cmds
 usr/bin/corelist					    perl
@@ -280,6 +288,7 @@ usr/bin/dumpsexp					    libgcrypt20-dev
 usr/bin/dyldinfo					    ld64
 usr/bin/echo						    coreutils
 usr/bin/ecidecid					    uikittools
+usr/bin/ee						    text-cmds
 usr/bin/egrep						    grep
 usr/bin/enc2xs						    perl
 usr/bin/encguess					    perl
@@ -386,11 +395,13 @@ usr/bin/jbrand						    roothide
 usr/bin/jbroot						    roothide
 usr/bin/join						    coreutils
 usr/bin/jot						    shell-cmds
+usr/bin/jq						    jq
 usr/bin/json_pp						    perl
 usr/bin/kbxutil						    gnupg-utils
 usr/bin/kill						    coreutils
 usr/bin/killall						    shell-cmds
 usr/bin/ksba-config					    libksba-dev
+usr/bin/lam						    text-cmds
 usr/bin/lastcomm					    shell-cmds
 usr/bin/latency						    system-cmds
 usr/bin/launchctl					    launchctl
@@ -484,6 +495,7 @@ usr/bin/ln						    coreutils
 usr/bin/locate						    findutils
 usr/bin/login						    system-cmds
 usr/bin/logname						    coreutils
+usr/bin/look						    text-cmds
 usr/bin/ls						    coreutils
 usr/bin/lskq						    system-cmds
 usr/bin/lsmp						    system-cmds
@@ -608,10 +620,12 @@ usr/bin/recode-sr-latin					    gettext
 usr/bin/redo_prebinding					    odcctools
 usr/bin/renice						    shell-cmds
 usr/bin/reset						    ncurses-bin
+usr/bin/rev						    text-cmds
 usr/bin/rm						    coreutils
 usr/bin/rmdir						    coreutils
 usr/bin/rootfs						    roothide
 usr/bin/rrsync						    rsync
+usr/bin/rs						    text-cmds
 usr/bin/rsync						    rsync
 usr/bin/rsync-ssl					    rsync
 usr/bin/rtmpdump					    rtmpdump
@@ -708,6 +722,7 @@ usr/bin/uinotify					    uikittools-extra
 usr/bin/uiopen						    uikittools
 usr/bin/uisave						    uikittools-extra
 usr/bin/uishoot						    uikittools-extra
+usr/bin/ul						    text-cmds
 usr/bin/uname						    coreutils
 usr/bin/uncompress					    gzip
 usr/bin/unexpand					    coreutils
@@ -716,6 +731,7 @@ usr/bin/unlink						    coreutils
 usr/bin/unlz4						    lz4
 usr/bin/unlzma						    xz-utils
 usr/bin/unrar-nonfree					    unrar
+usr/bin/unvis						    text-cmds
 usr/bin/unwinddump					    ld64
 usr/bin/unxz						    xz-utils
 usr/bin/unzip						    unzip
@@ -729,6 +745,7 @@ usr/bin/uuid						    uuid
 usr/bin/uuid-config					    libuuid-dev
 usr/bin/vdir						    coreutils
 usr/bin/verify-uselistorder				    llvm
+usr/bin/vis						    text-cmds
 usr/bin/vtool						    odcctools
 usr/bin/w						    shell-cmds
 usr/bin/wasm-ld						    lld
@@ -1127,6 +1144,8 @@ usr/include/headers.hpp					    libunrar-dev
 usr/include/headers5.hpp				    libunrar-dev
 usr/include/histedit.h					    libedit-dev
 usr/include/isnt.hpp					    libunrar-dev
+usr/include/jq.h					    libjq-dev
+usr/include/jv.h					    libjq-dev
 usr/include/ksba.h					    libksba-dev
 usr/include/libdimentio.h				    libdimentio-dev
 usr/include/libhsts.h					    libhsts-dev
@@ -1303,6 +1322,8 @@ usr/include/nettle/yarrow.h				    nettle-dev
 usr/include/nghttp2/nghttp2.h				    libnghttp2-dev
 usr/include/nghttp2/nghttp2ver.h			    libnghttp2-dev
 usr/include/npth.h					    libnpth0-dev
+usr/include/oniggnu.h					    libonig-dev
+usr/include/oniguruma.h					    libonig-dev
 usr/include/openssl/aes.h				    libssl-dev
 usr/include/openssl/asn1.h				    libssl-dev
 usr/include/openssl/asn1_mac.h				    libssl-dev
@@ -1775,6 +1796,9 @@ usr/lib/libintl.dylib					    libintl-dev
 usr/lib/libiosexec.1.dylib				    libiosexec1
 usr/lib/libiosexec.a					    libiosexec-dev
 usr/lib/libiosexec.dylib				    libiosexec-dev
+usr/lib/libjq.1.dylib					    libjq1
+usr/lib/libjq.a						    libjq-dev
+usr/lib/libjq.dylib					    libjq-dev
 usr/lib/libkrw.0.dylib					    libkrw0
 usr/lib/libkrw.dylib					    libkrw-dev
 usr/lib/libkrw/libkrw-tfp0.dylib			    libkrw0-tfp0
@@ -1810,6 +1834,9 @@ usr/lib/libnghttp2.a					    libnghttp2-dev
 usr/lib/libnghttp2.dylib				    libnghttp2-dev
 usr/lib/libnpth.0.dylib					    libnpth0
 usr/lib/libnpth.dylib					    libnpth0-dev
+usr/lib/libonig.5.dylib					    libonig5
+usr/lib/libonig.a					    libonig-dev
+usr/lib/libonig.dylib					    libonig-dev
 usr/lib/libp11-kit.0.dylib				    libp11-kit0
 usr/lib/libp11-kit.dylib				    libp11-kit-dev
 usr/lib/libpam.2.dylib					    libpam2
@@ -8285,6 +8312,7 @@ usr/lib/pkgconfig/mpfr.pc				    libmpfr-dev
 usr/lib/pkgconfig/ncurses++w.pc				    libncurses-dev
 usr/lib/pkgconfig/ncursesw.pc				    libncurses-dev
 usr/lib/pkgconfig/nettle.pc				    nettle-dev
+usr/lib/pkgconfig/oniguruma.pc				    libonig-dev
 usr/lib/pkgconfig/openssl.pc				    libssl-dev
 usr/lib/pkgconfig/p11-kit-1.pc				    libp11-kit-dev
 usr/lib/pkgconfig/panelw.pc				    libncurses-dev
@@ -15194,6 +15222,10 @@ usr/share/doc/idn2/AUTHORS				    idn2
 usr/share/doc/idn2/COPYING				    idn2
 usr/share/doc/idn2/NEWS.zst				    idn2
 usr/share/doc/idn2/README.zst				    idn2
+usr/share/doc/jq/AUTHORS				    jq
+usr/share/doc/jq/COPYING				    jq
+usr/share/doc/jq/NEWS.zst				    jq
+usr/share/doc/jq/README.zst				    jq
 usr/share/doc/launchctl/LICENSE				    launchctl
 usr/share/doc/ld64/AUTHORS				    ld64
 usr/share/doc/ld64/COPYING				    ld64
@@ -15396,6 +15428,14 @@ usr/share/doc/libintl8/README.zst			    libintl8
 usr/share/doc/libintl8/THANKS.zst			    libintl8
 usr/share/doc/libiosexec-dev/LICENSE			    libiosexec-dev
 usr/share/doc/libiosexec1/LICENSE			    libiosexec1
+usr/share/doc/libjq-dev/AUTHORS				    libjq-dev
+usr/share/doc/libjq-dev/COPYING				    libjq-dev
+usr/share/doc/libjq-dev/NEWS.zst			    libjq-dev
+usr/share/doc/libjq-dev/README.zst			    libjq-dev
+usr/share/doc/libjq1/AUTHORS				    libjq1
+usr/share/doc/libjq1/COPYING				    libjq1
+usr/share/doc/libjq1/NEWS.zst				    libjq1
+usr/share/doc/libjq1/README.zst				    libjq1
 usr/share/doc/libkrw-dev/LICENSE			    libkrw-dev
 usr/share/doc/libkrw0-tfp0/LICENSE			    libkrw0-tfp0
 usr/share/doc/libkrw0/LICENSE				    libkrw0
@@ -15479,6 +15519,14 @@ usr/share/doc/libnpth0-dev/README.zst			    libnpth0-dev
 usr/share/doc/libnpth0/AUTHORS				    libnpth0
 usr/share/doc/libnpth0/NEWS.zst				    libnpth0
 usr/share/doc/libnpth0/README.zst			    libnpth0
+usr/share/doc/libonig-dev/AUTHORS			    libonig-dev
+usr/share/doc/libonig-dev/COPYING			    libonig-dev
+usr/share/doc/libonig-dev/NEWS.zst			    libonig-dev
+usr/share/doc/libonig-dev/README.zst			    libonig-dev
+usr/share/doc/libonig5/AUTHORS				    libonig5
+usr/share/doc/libonig5/COPYING				    libonig5
+usr/share/doc/libonig5/NEWS.zst				    libonig5
+usr/share/doc/libonig5/README.zst			    libonig5
 usr/share/doc/libp11-kit-dev/AUTHORS			    libp11-kit-dev
 usr/share/doc/libp11-kit-dev/COPYING			    libp11-kit-dev
 usr/share/doc/libp11-kit-dev/NEWS.zst			    libp11-kit-dev
@@ -18134,6 +18182,9 @@ usr/share/man/man1/cmp.1ssl.zst				    libssl-doc
 usr/share/man/man1/cmpdylib.1.zst			    odcctools
 usr/share/man/man1/cms.1ssl.zst				    libssl-doc
 usr/share/man/man1/codesign_allocate.1.zst		    odcctools
+usr/share/man/man1/col.1.zst				    text-cmds
+usr/share/man/man1/colrm.1.zst				    text-cmds
+usr/share/man/man1/column.1.zst				    text-cmds
 usr/share/man/man1/comm.1.zst				    coreutils
 usr/share/man/man1/compress.1.zst			    file-cmds
 usr/share/man/man1/cp.1.zst				    coreutils
@@ -18190,6 +18241,7 @@ usr/share/man/man1/dyldinfo.1.zst			    ld64
 usr/share/man/man1/ec.1ssl.zst				    libssl-doc
 usr/share/man/man1/echo.1.zst				    coreutils
 usr/share/man/man1/ecparam.1ssl.zst			    libssl-doc
+usr/share/man/man1/ee.1.zst				    text-cmds
 usr/share/man/man1/enc.1ssl.zst				    libssl-doc
 usr/share/man/man1/engine.1ssl.zst			    libssl-doc
 usr/share/man/man1/env.1.zst				    coreutils
@@ -18434,9 +18486,11 @@ usr/share/man/man1/ipcs.1.zst				    file-cmds
 usr/share/man/man1/iproxy.1.zst				    libusbmuxd-tools
 usr/share/man/man1/join.1.zst				    coreutils
 usr/share/man/man1/jot.1.zst				    shell-cmds
+usr/share/man/man1/jq.1.zst				    jq
 usr/share/man/man1/kdf.1ssl.zst				    libssl-doc
 usr/share/man/man1/kill.1.zst				    coreutils
 usr/share/man/man1/killall.1.zst			    shell-cmds
+usr/share/man/man1/lam.1.zst				    text-cmds
 usr/share/man/man1/lastcomm.1.zst			    shell-cmds
 usr/share/man/man1/latency.1.zst			    system-cmds
 usr/share/man/man1/launchctl.1.zst			    launchctl
@@ -18455,6 +18509,7 @@ usr/share/man/man1/ln.1.zst				    coreutils
 usr/share/man/man1/locate.1.zst				    findutils
 usr/share/man/man1/login.1.zst				    system-cmds
 usr/share/man/man1/logname.1.zst			    coreutils
+usr/share/man/man1/look.1.zst				    text-cmds
 usr/share/man/man1/ls.1.zst				    coreutils
 usr/share/man/man1/lskq.1.zst				    system-cmds
 usr/share/man/man1/lsmp.1.zst				    system-cmds
@@ -18477,6 +18532,7 @@ usr/share/man/man1/lzmore.1.zst				    xz-utils
 usr/share/man/man1/mac.1ssl.zst				    libssl-doc
 usr/share/man/man1/machine.1.zst			    system-cmds
 usr/share/man/man1/make.1.zst				    make
+usr/share/man/man1/md5.1.zst				    text-cmds
 usr/share/man/man1/md5sum.1.zst				    coreutils
 usr/share/man/man1/memory_pressure.1.zst		    system-cmds
 usr/share/man/man1/mgask.1.zst				    uikittools
@@ -18615,9 +18671,12 @@ usr/share/man/man1/redo_prebinding.1.zst		    odcctools
 usr/share/man/man1/rehash.1ssl.zst			    libssl-doc
 usr/share/man/man1/req.1ssl.zst				    libssl-doc
 usr/share/man/man1/reset.1.zst				    ncurses-bin
+usr/share/man/man1/rev.1.zst				    text-cmds
 usr/share/man/man1/rm.1.zst				    coreutils
+usr/share/man/man1/rmd160.1.zst.zst			    text-cmds
 usr/share/man/man1/rmdir.1.zst				    coreutils
 usr/share/man/man1/rrsync.1.zst				    rsync
+usr/share/man/man1/rs.1.zst				    text-cmds
 usr/share/man/man1/rsa.1ssl.zst				    libssl-doc
 usr/share/man/man1/rsautl.1ssl.zst			    libssl-doc
 usr/share/man/man1/rsync-ssl.1.zst			    rsync
@@ -18640,8 +18699,10 @@ usr/share/man/man1/segedit.1.zst			    odcctools
 usr/share/man/man1/seq.1.zst				    coreutils
 usr/share/man/man1/sess_id.1ssl.zst			    libssl-doc
 usr/share/man/man1/sftp.1.zst				    openssh-client
+usr/share/man/man1/sha1.1.zst.zst			    text-cmds
 usr/share/man/man1/sha1sum.1.zst			    coreutils
 usr/share/man/man1/sha224sum.1.zst			    coreutils
+usr/share/man/man1/sha256.1.zst.zst			    text-cmds
 usr/share/man/man1/sha256sum.1.zst			    coreutils
 usr/share/man/man1/sha384sum.1.zst			    coreutils
 usr/share/man/man1/sha512sum.1.zst			    coreutils
@@ -18708,6 +18769,7 @@ usr/share/man/man1/uinotify.1.zst			    uikittools-extra
 usr/share/man/man1/uiopen.1.zst				    uikittools
 usr/share/man/man1/uisave.1.zst				    uikittools-extra
 usr/share/man/man1/uishoot.1.zst			    uikittools-extra
+usr/share/man/man1/ul.1.zst				    text-cmds
 usr/share/man/man1/uname.1.zst				    coreutils
 usr/share/man/man1/unexpand.1.zst			    coreutils
 usr/share/man/man1/uniq.1.zst				    coreutils
@@ -18715,6 +18777,7 @@ usr/share/man/man1/unlink.1.zst				    coreutils
 usr/share/man/man1/unlz4.1.zst				    lz4
 usr/share/man/man1/unlzma.1.zst				    xz-utils
 usr/share/man/man1/unrar-nonfree.1.zst			    unrar
+usr/share/man/man1/unvis.1.zst				    text-cmds
 usr/share/man/man1/unwinddump.1.zst			    ld64
 usr/share/man/man1/unxz.1.zst				    xz-utils
 usr/share/man/man1/unzip.1.zst				    unzip
@@ -18730,6 +18793,7 @@ usr/share/man/man1/vdir.1.zst				    coreutils
 usr/share/man/man1/verify.1ssl.zst			    libssl-doc
 usr/share/man/man1/version.1ssl.zst			    libssl-doc
 usr/share/man/man1/via.1.zst				    vi
+usr/share/man/man1/vis.1.zst				    text-cmds
 usr/share/man/man1/vm_stat.1.zst			    system-cmds
 usr/share/man/man1/w.1.zst				    shell-cmds
 usr/share/man/man1/wait4path.1.zst			    system-cmds
@@ -26241,6 +26305,7 @@ usr/share/man/man5/terminfo.5.zst			    ncurses-bin
 usr/share/man/man5/ttys.5.zst				    system-cmds
 usr/share/man/man5/user_caps.5.zst			    ncurses-bin
 usr/share/man/man5/x509v3_config.5ssl.zst		    libssl-doc
+usr/share/man/man6/banner.6.zst				    text-cmds
 usr/share/man/man7/EVP_ASYM_CIPHER-RSA.7ssl.zst		    libssl-doc
 usr/share/man/man7/EVP_ASYM_CIPHER-SM2.7ssl.zst		    libssl-doc
 usr/share/man/man7/EVP_CIPHER-AES.7ssl.zst		    libssl-doc
