@@ -244,16 +244,16 @@ Author: Muirey03 & lclrc
 Name: RecordAnywhere
 
 Package: com.lnx.showtouch
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64e
 Maintainer: LonestarX
 Installed-Size: 432
 Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
-Filename: ./debfiles/com.lnx.showtouch_1.0.3_iphoneos-arm64e.deb
-Size: 70144
-MD5sum: 86587e952917ecfcd7237678b8851c3e
-SHA1: d02056274f72d75c5b756bb320fdad56daa362db
-SHA256: 93eda1c2c584730a30de5cd457d08d4de0bfdd77282cefb5d3cdcd0fffbee166
+Filename: ./debfiles/com.lnx.showtouch_1.0.4_iphoneos-arm64e.deb
+Size: 69908
+MD5sum: 4905770b32b6199cfd1b48853c8211c7
+SHA1: cb66bc65776313ffcb73a966d1d02bba4c53df41
+SHA256: e1fb208a3e0b510d5d06176a61f549d916ff98f34e926497f1c343541905ca10
 Section: Tweaks
 Description: Shows where you touch the screen
 Author: LonestarX
