@@ -524,16 +524,16 @@ Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patcher
-Version: 1.3-2+debug
+Version: 1.4-1+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 3120
 Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
-Filename: ./debfiles/com.roothide.patcher_1.3-2+debug_iphoneos-arm64e.deb
-Size: 971082
-MD5sum: 5debf2a3ddccc56909b2dd1d12e2e239
-SHA1: 030866d07f7f51f7e7982064564c88e31d5873b9
-SHA256: aa5717bf26b9c1257ddc79d0d12b38e5ab42b83862d3717a1da9688490b6c744
+Filename: ./debfiles/com.roothide.patcher_1.4-1+debug_iphoneos-arm64e.deb
+Size: 971058
+MD5sum: 6205a5481202a963235d7b0a87f90978
+SHA1: 208521e5055f82ffa2e79cad86f7031ff84865d1
+SHA256: c1be53addb9e8ef5e23a4c54ead2a49bb12ef8b7b0012221d103e7379f931224
 Section: Utilities
 Description: patch rootless package to roothide, not work for all packages.
 Author: RootHide
@@ -779,15 +779,15 @@ Author: Evelyn
 Name: Legacy arm64e Support
 
 Package: org.coolstar.sileo
-Version: 2.5-9
+Version: 2.5-10
 Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
-Filename: ./debfiles/org.coolstar.sileo_2.5-9_iphoneos-arm64e.deb
-Size: 4216640
-MD5sum: b7c74a968b605c49c70b229ce5a1c0aa
-SHA1: d612c52c57a187f3b4a8c09c15c7f9d3c29fef6d
-SHA256: 7d8a95c05c58d95374b3d142f8fbd4f65c0b06bc533a73fe759f086c61905751
+Filename: ./debfiles/org.coolstar.sileo_2.5-10_iphoneos-arm64e.deb
+Size: 4218656
+MD5sum: 2938f1626967081f1bc8a9c5dfcd57ba
+SHA1: 3c9c7db0807b4753bd686eaf5ac0069d727285ce
+SHA256: 2b8217fc411d6d8334f6df59759280d2f2ecc50204de247b53a1bc7e3560f9fa
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
