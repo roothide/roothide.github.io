@@ -524,16 +524,16 @@ Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
 
 Package: com.roothide.patcher
-Version: 1.4-1+debug
+Version: 1.4-2+debug
 Architecture: iphoneos-arm64e
 Maintainer: RootHide
 Installed-Size: 3120
 Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
-Filename: ./debfiles/com.roothide.patcher_1.4-1+debug_iphoneos-arm64e.deb
-Size: 971058
-MD5sum: 6205a5481202a963235d7b0a87f90978
-SHA1: 208521e5055f82ffa2e79cad86f7031ff84865d1
-SHA256: c1be53addb9e8ef5e23a4c54ead2a49bb12ef8b7b0012221d103e7379f931224
+Filename: ./debfiles/com.roothide.patcher_1.4-2+debug_iphoneos-arm64e.deb
+Size: 971084
+MD5sum: 06fb8c26abc091811f296f5aeb766bc5
+SHA1: 3c7ebfa13c73f941cec851c4ddc548c6e42270b0
+SHA256: 6ca8f93ba227c32819413ca7c96fc5c5a5dda325caccc36d0c2c6a2caadf5bd9
 Section: Utilities
 Description: patch rootless package to roothide, not work for all packages.
 Author: RootHide
