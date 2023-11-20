@@ -403,6 +403,8 @@ usr/bin/install						    coreutils
 usr/bin/install_name_tool				    odcctools
 usr/bin/instmodsh					    perl
 usr/bin/intercept-build					    clang-tools
+usr/bin/ioalloccount					    iokittools
+usr/bin/ioclasscount					    iokittools
 usr/bin/ipcrm						    file-cmds
 usr/bin/ipcs						    file-cmds
 usr/bin/iproxy						    libusbmuxd-tools
@@ -26808,6 +26810,9 @@ usr/share/man/man8/halt.8.zst				    system-cmds
 usr/share/man/man8/hostinfo.8.zst			    system-cmds
 usr/share/man/man8/ifconfig.8.zst			    network-cmds
 usr/share/man/man8/inetd.8.zst				    inetutils
+usr/share/man/man8/ioalloccount.8.zst			    iokittools
+usr/share/man/man8/ioclasscount.8.zst			    iokittools
+usr/share/man/man8/ioreg.8.zst				    iokittools
 usr/share/man/man8/iostat.8.zst				    system-cmds
 usr/share/man/man8/ip6addrctl.8.zst			    network-cmds
 usr/share/man/man8/kdumpd.8.zst				    network-cmds

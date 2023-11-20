@@ -1678,6 +1678,23 @@ SHA512: 7f2581ebb537f090aebcfc3c1fb2a115cbd8607783a0341bb5881f9f0269b1e4e9d33c5f
 Homepage: http://www.gnu.org/software/inetutils/
 Description: ftp, inetd, ping, rlogin, telnet, tftp
 
+Package: iokittools
+Architecture: iphoneos-arm64e
+Version: 122
+Priority: optional
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 124
+Depends: roothide (>= 0.0.5), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/iokittools/iokittools_122_iphoneos-arm64e.deb
+Size: 16644
+MD5sum: f4c523f1199565a738b5fd4ca8706f04
+SHA1: 026c212b11f082a13637807cf2355e3ecd84d577
+SHA256: 3b7d5d38db54159e0596f1337b24a4829d6ebd67c1cb128d8dfce636572f6d53
+SHA512: cc6910882c9afca61d48a61002cdbb6c0b2a35f381959861698b1922ee4e735ae329b352e9bad0a276e38f3b0e3bcf8bc36f1e05deb1f1397dbc7b4e2c88fa6d
+Homepage: https://github.com/apple-oss-distributions/IOKitTools
+Description: IOKit tools - ioclasscount, ioallocount and ioreg manpage
+
 Package: jo
 Architecture: iphoneos-arm64e
 Version: 1.6
