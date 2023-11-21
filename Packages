@@ -415,22 +415,6 @@ Description: Spoof screen recording detection!
 Author: opa334
 Name: NotRecording
 
-Package: com.opa334.timebomb
-Version: 1.0.1-20+debug
-Architecture: iphoneos-arm64e
-Maintainer: opa334
-Installed-Size: 136
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: ./debfiles/com.opa334.timebomb_1.0.1-20+debug_iphoneos-arm64e.deb
-Size: 3702
-MD5sum: 67423504b55191db00f6319891cc521f
-SHA1: 8fd70b4f5b163ec854bcc804f5c0858ed1e120a8
-SHA256: 5717b265d860b4ce97991012378225d45e943237ea92dcb91d6bfdfe72e4f5cb
-Section: Tweaks
-Description: Spinlock timeout with ease!
-Author: opa334
-Name: TimeBomb
-
 Package: com.opa334.whitepointmodule
 Version: 1.2.2-1+debug
 Architecture: iphoneos-arm64e
