@@ -3481,15 +3481,15 @@ Architecture: iphoneos-arm64e
 Version: 14.0.0~5.7.2~RELEASE
 Priority: optional
 Section: Development
-Maintainer: RootHide (@RootHideDev on twitter)
+Maintainer: RootHide <RootHideDev@twitter>
 Installed-Size: 512
-Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE)
 Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/debugserver-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
-Size: 219004
-MD5sum: a9a588945bc1ca3d79fd984d8d63b59d
-SHA1: a3578062683ac2480d41dbbe9565032415959d95
-SHA256: b7e41867b2e5269292e82346a50d563bbc6d977e70718da8699123d45be7e47e
-SHA512: 8411449215fe825553f8db1fd8364dda5d9ed0b16bec5799d60053a5f3efc1575657cd518fc0de9fc2fd7dae84749fb7a2cb0162e17628ebe7699f4047c01c3b
+Size: 219014
+MD5sum: f32ba3d85630fd00d58644fea86ede6a
+SHA1: cee1378a8e5340d3079275c191c22e42015eb2c1
+SHA256: bb301c4422d0142b869e1d41b3a9fb0f97086d8f3e664005fb24c776d9b43874
+SHA512: 60c9ee6180ecd529a500debfa6e20f41e76a69213542f70e701ff1369aa730c36d2e5d568d76ec82d7826ce6678854d1bd18e18594c5d17a86746a10f591eb6a
 Homepage: https://www.llvm.org/
 Description: Next generation, high-performance debugger (debugserver)
 
