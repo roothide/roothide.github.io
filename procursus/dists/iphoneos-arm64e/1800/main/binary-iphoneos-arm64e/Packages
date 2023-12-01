@@ -2193,6 +2193,85 @@ SHA256: 96cb24d48bcef1f9da7585570a1b5d6f0a910e0353d7e76e66124fbf50d61c79
 SHA512: 195cd8a1e602572f20b65c58730962c440ae2b8c5afa60f4902fd5efe21da6d055d2803a1ce208e7030bf612aef81b261a4aa49a166e1d2b4d22532976760d5f
 Description: LGPL cryptographic algorithm library (Libraries)
 
+Package: gdbmtool
+Architecture: iphoneos-arm64e
+Version: 1.19
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 344
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libreadline8 (>= 8.0), libintl8, libncursesw6
+Suggests: libgdbm6-locale
+Conflicts: libgdbm (<< 1.19)
+Filename: pool/main/iphoneos-arm64e/1800/libgdbm/gdbmtool_1.19_iphoneos-arm64e.deb
+Size: 78684
+MD5sum: 9e9c2eba69fe03b0b9421dd5ee4bd4f5
+SHA1: c650f6933758733a6b95b44c8c6752a30a0f8d23
+SHA256: 87e6edd1fdf7c3b69d251043d474fcaee907e1c09be317e3a9dfeac090d45aac
+SHA512: 1260f06d33bdd1f4d7e8c9682bb202a48e7244e418a9bd7ccbe0da0d6124dc2911f37a45eae1d592ee594c45f5293602764d22fc4e9dc1fc87f4cba0b386e84e
+Description: GNU dbm database routines (command line tools) 
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+ .
+ This package includes following command line tools:
+ .
+  * gdbm_dump -- dump database content into system-independant format
+  * gdbm_load -- recreate database from dump, created by gdbm_dump
+  * gdbmtool -- view and modify an existing database or to create a new one.
+
+Package: libgdbm-dev
+Architecture: iphoneos-arm64e
+Version: 1.19
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 276
+Depends: roothide (>= 0.0.6), libgdbm6
+Conflicts: libgdbm (<< 1.19)
+Filename: pool/main/iphoneos-arm64e/1800/libgdbm/libgdbm-dev_1.19_iphoneos-arm64e.deb
+Size: 117052
+MD5sum: a2e28bb9f7a89db1f266eabeed03e4b3
+SHA1: 2b6d54bd17496df627a18a3df2e123f0470de47b
+SHA256: 259bb7033c20532dd0ccd32abd516802e039acde518ae95ca0abefc0fdcff330
+SHA512: c3490dc52a52af6b4e1fda2b006eadbaecc92881c32fd11e58df6fddc9c550ff97636291cf86fc7b346cfd7fdf171d3d790bf7f9bf8b211b7b6a6aeac49ec4d5
+Description: GNU dbm database routines (development files) 
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+ .
+ Note, that to build old programs, that use legacy 'dbm' interface,
+ you have to install libgdbm-compat-dev binary package.
+
+Package: libgdbm6
+Architecture: iphoneos-arm64e
+Version: 1.19
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 424
+Provides: libgdbm (= 1.19)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libintl8
+Suggests: libgdbm6-locale
+Conflicts: libgdbm (<< 1.19)
+Replaces: libgdbm (<< 1.19)
+Filename: pool/main/iphoneos-arm64e/1800/libgdbm/libgdbm6_1.19_iphoneos-arm64e.deb
+Size: 104380
+MD5sum: 9470176315322a2e152c06ae08d311c3
+SHA1: a7994892fd516a9b70a07a6f506c8933857d1b05
+SHA256: 56b871fb96675fd877f21ace6604e3d06f7ce4021bb4a1ffcbcc925feaa00280
+SHA512: dc15b55640828b7af9c29cba28e6a936ed3141940ae4ff42fc5ace19e0be125a6be8c3971ebf70814de8e9e218ea52ad327a27df8f25dbe1f76e30bf9a75aed0
+Description: GNU dbm database routines (runtime version) 
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+
 Package: libgmp-dev
 Architecture: iphoneos-arm64e
 Version: 6.2.1-3
@@ -5272,6 +5351,74 @@ SHA1: d65802a0262a703a3b4b92916c6c04af11d48112
 SHA256: 51f5c7aa91d01d04cd8fa03b3b6f5114355dec06f095a9f463798c2dbb5aab3e
 SHA512: 2e12b8297ac7df02175a5705d1e39adc90c4834b502c873ff34ea459bd25012a6fe094842deda806b496b543f58db222d93b2c08069e0be064d4326dfe024a23
 Description: makes packaging for /etc/profile reasonable
+
+Package: libpython3.9-dev
+Architecture: iphoneos-arm64e
+Version: 3.9.9-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1108
+Depends: roothide (>= 0.0.6), libpython3.9 (= 3.9.9-1), libcrypt-dev, firmware (>= 14.0) | libexpat1-dev
+Filename: pool/main/iphoneos-arm64e/1800/python3/libpython3.9-dev_3.9.9-1_iphoneos-arm64e.deb
+Size: 192510
+MD5sum: 92e0198685f9e3cfbfbbad49726357c3
+SHA1: 812ab9b5ae6239ff11cc7494cbf6d9c64cccdf8e
+SHA256: a42186cde9406b1a45bc719b00e973e71e1d9f8de2114515f974954ee7476f54
+SHA512: d086f69eaa8382066474b9668f61dee079d6654901291c103591eb3dbfcb222e296818ce36442071652d729b7178a6c7388ff2e85ec3bbd7964fc7a39a8eb084
+Description: Interpreted, interactive, object-oriented programming language. Contains the header files necessary for developing.
+
+Package: libpython3.9
+Architecture: iphoneos-arm64e
+Version: 3.9.9-1
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 71428
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0), libreadline8 (>= 8.0), libssl3, libffi8, liblzma5 (>= 5.2.5), libgdbm6, libintl8, firmware (>= 14.0) | libexpat1, libcrypt2
+Conflicts: python3.9 (<< 3.9.5)
+Replaces: python3.9 (<< 3.9.5)
+Filename: pool/main/iphoneos-arm64e/1800/python3/libpython3.9_3.9.9-1_iphoneos-arm64e.deb
+Size: 22061558
+MD5sum: 858f800894ad1c19d109e343ad1c8a35
+SHA1: 8ec82cfb90b699ecb16d069796ada1c30cf00aea
+SHA256: aca0eb9a915c0c9faea37bd0c08ec0ff2dda3a2e800a8c4c560795d4ffb962bf
+SHA512: d07b27faf635265057e722048e0afc3f4fecddfbb0886ef0792a75934a8fdbf39454c4e31df763d7882a9005f3e583731e3365238f1f8c3de2f9232642b10b92
+Description: Interpreted, interactive, object-oriented programming language. Contains the standard library and other shared libraries.
+
+Package: python3.9
+Architecture: iphoneos-arm64e
+Version: 3.9.9-1
+Priority: optional
+Section: Scripting
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 92
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libpython3.9 (= 3.9.9-1)
+Filename: pool/main/iphoneos-arm64e/1800/python3/python3.9_3.9.9-1_iphoneos-arm64e.deb
+Size: 15602
+MD5sum: 931681428c171bc93cbe91ed4db0c470
+SHA1: 6bf610bebe232d8aec460262480a8a93dacca1a1
+SHA256: d98f234e6a1a133e5114426ebb21b51ac3474c0983587b19740868427bc9c299
+SHA512: 73052c68ecac7fe9b19abd8cf6981f754effaf89caf4a28974c75bdaf8e77bb2dedbeaba36369fc4ebe1b6e620a701a3e952de09902bdfabb2e83192aeca3424
+Description: Interpreted, interactive, object-oriented programming language.
+
+Package: python3
+Architecture: iphoneos-arm64e
+Version: 3.9.9-1
+Priority: optional
+Section: Scripting
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 16
+Depends: roothide (>= 0.0.6), python3.9
+Filename: pool/main/iphoneos-arm64e/1800/python3/python3_3.9.9-1_iphoneos-arm64e.deb
+Size: 5826
+MD5sum: e86f513096912dffed709d44fe764bae
+SHA1: 91a7b60bca59a8e75cb12f2090e69b0e4c6dcd0a
+SHA256: 1eabfeec28f869e9340a8b9c8f33b2ec1fdcc16c5b3eb18936dec93b33fcf026
+SHA512: 1e6b127e0b2877f59f972b40a905d22dec07133d438a851b8129cfa3085e0ab9da1c4071f56803ce2fc88a294f55ec38038333d9166d434a602b6f1e0ac5be72
+Description: Interpreted, interactive, object-oriented programming language.
+ Installing pip from the command line can be done with the `sudo python -m ensurepip` command.
+ After installing pip, place an SDK for your platform in /usr/share/SDKs. (e.g. /usr/share/SDKs/iPhoneOS.sdk)
 
 Package: rar
 Architecture: iphoneos-arm64e
