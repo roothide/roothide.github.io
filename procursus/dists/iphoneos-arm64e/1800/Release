@@ -1,0 +1,45 @@
+Architectures: iphoneos-arm64e
+Codename: 1800
+Components: main testing
+Date: Mon, 11 Dec 2023 21:27:20 +0000
+Description: Distribution of essential tools for iPhoneOS
+Label: Procursus(roothide)
+Origin: Procursus(roothide)
+Suite: stable
+Version: 1.0a1
+MD5Sum:
+ 1a15d6f17ef17d21529d26fa2ef15e94              251 Release
+ 0041bfc216dd1fd747bad7b947a5757d          2438583 main/Contents-iphoneos-arm64e
+ 48c1b0b6896026456c0651d6d1544040           174828 main/Contents-iphoneos-arm64e.xz
+ 6fcfa782962c8fd03d645bab1434e9ec           180848 main/Contents-iphoneos-arm64e.zst
+ 5e58025bdc9f80fd7e23cc34201a594d           303275 main/binary-iphoneos-arm64e/Packages
+ 9ffe6dab2a82dd07790ed33b0336b2a3            77640 main/binary-iphoneos-arm64e/Packages.xz
+ 798c796a386ab65b34f5634873fd577e            79729 main/binary-iphoneos-arm64e/Packages.zst
+ 61508f1e04e32cadcb04411813771899             1682 main/binary-iphoneos-arm64e/Release
+SHA1:
+ bccce72f4e5a66ac15ba3cb746af3d4e7412912d              251 Release
+ 8c4e45ce37733a7c8ce5036b73db841336c9edc8          2438583 main/Contents-iphoneos-arm64e
+ 5525465f1344fab12f9ec65671aa45518ea818a4           174828 main/Contents-iphoneos-arm64e.xz
+ ac1d04682a10692e41ae043a3fd40e92847b231d           180848 main/Contents-iphoneos-arm64e.zst
+ b69b7f9b57679a08eac4b18141cacb7d56007679           303275 main/binary-iphoneos-arm64e/Packages
+ 191aba8d526f6463476c4a310e82b6fe92d4d3cc            77640 main/binary-iphoneos-arm64e/Packages.xz
+ e06e1ceea46838e2e654164c840e24949177e0ec            79729 main/binary-iphoneos-arm64e/Packages.zst
+ f5089d590d7c7b9a2a8401dae2b7a7fc69aeefdf             1682 main/binary-iphoneos-arm64e/Release
+SHA256:
+ 9a74bd27796cf33acf4c32ce7dc66ec56584a63274aefecf638b6ccd42eccaa9              251 Release
+ 5e8858f9079698d0a5198c8370cbb60b641dd4c53f9d6b97d8b6d2e05398a0f5          2438583 main/Contents-iphoneos-arm64e
+ f1a93f183c47774cb8edc3900e7cca34a35172c2b06f4a806ad491be64e47b9c           174828 main/Contents-iphoneos-arm64e.xz
+ 8cd28eb2d73115e499fb4aa0357fbe69b19c4bf5b983964f5323db8ddc6a30cc           180848 main/Contents-iphoneos-arm64e.zst
+ d13eda2b81c02d55adee4d0c69414972c45a733ebed950b200cf8a5c1b255d20           303275 main/binary-iphoneos-arm64e/Packages
+ a4d86a463f652ce2ae7f118d7cb017a7c9c4aa57eb3337ba5442f47d7273790d            77640 main/binary-iphoneos-arm64e/Packages.xz
+ 94bde72049dda703ea4b9372d0e13a4cc3cb0a7f3687e0566844b27dec41240d            79729 main/binary-iphoneos-arm64e/Packages.zst
+ f1a19f37b8068adae4f7d6c124f9839ebf4c54265d24d86992776a2344f34dd2             1682 main/binary-iphoneos-arm64e/Release
+SHA512:
+ 2c6426a7ef1f3ac10d63c37799762edc3b628229322ed021a7643ee1c3d4de5a28cd9b0d06b49079ba860dcb3430dd1cd42dbd869b2d10b14878351fabd88f6f              251 Release
+ 4d2f6ca14203d441a784d583778f888d5f6e09f835b6f564d4ef57e6cbb382bc77bd0bb30452275a3622518fb15cf5852726c20f442f8207b5500da6853bda67          2438583 main/Contents-iphoneos-arm64e
+ 487007f06487328be3f128dbffec24dd9b1f1e3f4716e22da1dc3a733239e4e1642ca0dde303cc4d45bfaf0c92ae6279d5fbb0d97b39e6d33437da8e5dfb5dc5           174828 main/Contents-iphoneos-arm64e.xz
+ a192777fa6a56bf251d2c2bd5b0497308ba8d779bc4c6fb52778888264218e95d5d4e5e23b416c0c59b38356503e55d1376652aaa581cf9c4e4585a8b3812591           180848 main/Contents-iphoneos-arm64e.zst
+ b1985753ad76d3986171c307bbcea1ef9ad245392b33283298f480f0ac66381c8469b9eda57b5e5b0a46a3a81f1e119ac151325ccdb60a8f92473e0a63ff6247           303275 main/binary-iphoneos-arm64e/Packages
+ 272fe28135d4a82c4a868a5f8ef0decb360ff9ef74dbf094d1f1f7adb8e62e5ec82c44deaa68109334e2e66345ed721cdc8bc162498d5b453fad9942bfe6d5f8            77640 main/binary-iphoneos-arm64e/Packages.xz
+ 23308c7befff210537388bc11a1541db2abd4a2cf355e9fab5406026f6afdc9b6618ffb42b064a50e128a589df5e9fefdf7a63568cdd75912576a265f9880ec6            79729 main/binary-iphoneos-arm64e/Packages.zst
+ 79ce0ad5d197e865928f144481ee63d8aa57f1ca773f53e66964a12f5a106dcba170fcfb20fe8fa6f8b3756db5939772d6c09128fc510be04adba0c15747b277             1682 main/binary-iphoneos-arm64e/Release
