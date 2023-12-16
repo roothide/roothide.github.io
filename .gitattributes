@@ -33,3 +33,4 @@ procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tools-14_14.0.0~5.7.2~RELEAS
 procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb filter=lfs diff=lfs merge=lfs -text
 procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-cpp14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb filter=lfs diff=lfs merge=lfs -text
 procursus/pool/main/iphoneos-arm64e/1800/llvm/liblldb-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb filter=lfs diff=lfs merge=lfs -text
+procursus/pool/main/iphoneos-arm64e/1900/llvm/** filter=lfs diff=lfs merge=lfs -text
