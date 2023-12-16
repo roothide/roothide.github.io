@@ -250,10 +250,10 @@ Maintainer: LonestarX
 Installed-Size: 432
 Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
 Filename: ./debfiles/com.lnx.showtouch_1.0.4_iphoneos-arm64e.deb
-Size: 69908
-MD5sum: 4905770b32b6199cfd1b48853c8211c7
-SHA1: cb66bc65776313ffcb73a966d1d02bba4c53df41
-SHA256: e1fb208a3e0b510d5d06176a61f549d916ff98f34e926497f1c343541905ca10
+Size: 70764
+MD5sum: 943ff7c9863f21c6ff238a2fa9e22a50
+SHA1: 578eb17dc4431917ccc9f53c8977a12025f626eb
+SHA256: dc6566f5bfa5434df2c924a6da7916e47134b17ec0eb76c797128c7a4e928b56
 Section: Tweaks
 Description: Shows where you touch the screen
 Author: LonestarX
@@ -751,6 +751,24 @@ Size: 1397822
 MD5sum: cf9dc96f5d2ba5bc53cd893d3fcda72a
 SHA1: 8a4db772cdd8452e2d0f7bada01035c536414454
 SHA256: 4c57623e67c4ba593713d7ecc13d13d92b01321ad11032c157ac2b0bfb72b9a5
+Section: Tweaks
+Description: A library for Flipboard Explorer.
+Author: Tanner Bennett <tannerbennett@me.com>
+Depiction: https://nscake.github.io/package.html?package=libflex
+Name: libFLEX
+Sileodepiction: https://nscake.github.io/depictions/libflex.sileo.json
+
+Package: libflex
+Version: 4.7.0~b4-4+debug
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <tannerbennett@me.com>
+Installed-Size: 6232
+Pre-Depends: firmware (>= 9.0)
+Filename: ./debfiles/libflex_4.7.0~b4-4+debug_iphoneos-arm64e.deb
+Size: 1423362
+MD5sum: 851fd4cb0f9879c37d9852bf60df4e2c
+SHA1: a29bc4c17aea5a3b3b7a2ee827de7b660cc0d3c6
+SHA256: 77a4cd1be1b241c5dd35c69e3df893b1924997ea1c17afe6b5c34a8bd1e9ec12
 Section: Tweaks
 Description: A library for Flipboard Explorer.
 Author: Tanner Bennett <tannerbennett@me.com>
