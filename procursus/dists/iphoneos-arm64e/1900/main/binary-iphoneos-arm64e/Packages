@@ -176,6 +176,22 @@ SHA512: 4a1e47ecc28245ab0f5b4e6b3b501cfd15d1b621ecea6614576227e35504a7b91f0d4ac0
 Homepage: https://www.brotli.org/
 Description: Shared libraries for the Brotli compression format
 
+Package: build-essential
+Architecture: iphoneos-arm64e
+Version: 16.1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 50756
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/build-essential/build-essential_16.1_iphoneos-arm64e.deb
+Size: 16700388
+MD5sum: ede6da49b24736e620fa22040e965bb7
+SHA1: 591dbe0b8a689c85e5e2e4be2858326e4b83ca54
+SHA256: 854e42336a195db17085d29bcec9b21a19f6d29a93ef98b0dace9ab7519062fa
+SHA512: efb7069c0d4425822c2eb1edd30939b8d2b5d0fa62e492d46f7b7b2d88464eede44af1e17f678bca6b3b39fa4ad8abc4a16bb122a719ccb56b9bc34d75ede729
+Description: Contains an SDK for your platform.
+
 Package: bzip2
 Architecture: iphoneos-arm64e
 Version: 1.0.8
@@ -212,6 +228,43 @@ Description: Common CA certificates
  Contains the certificate authorities shipped with Mozilla's browser to allow SSL-based applications to check for the authenticity of SSL connections.
  .
  Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
+
+Package: ld64
+Architecture: iphoneos-arm64e
+Version: 609-3
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 2888
+Provides: org.coolstar.ld64
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libuuid16, libxar1, llvm-dev, libtapi
+Conflicts: org.coolstar.ld64
+Replaces: org.coolstar.ld64
+Filename: pool/main/iphoneos-arm64e/1900/cctools/ld64_609-3_iphoneos-arm64e.deb
+Size: 799298
+MD5sum: e6639219fe1f56ced7db07aece15b995
+SHA1: 9c68f7d883f6639a78047b89b4fcd955d922f395
+SHA256: f2d483b2968f8734ac23b522a860abd4282a4c8be872d5b667e8d974966028e2
+SHA512: 6b65bb73ac6dc838bdf915e16c8a6dfd0b700f95ecc83ee26d7aef3aaad7bde0af9155783677920b8313f337ff097a39bb126ecf6cdc42f3e667b3e0b748ef79
+Homepage: https://github.com/apple-oss-distributions/cctools/
+Description: 64-bit Apple linker
+
+Package: odcctools
+Architecture: iphoneos-arm64e
+Version: 973.0.1-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 6500
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libuuid16, libxar1, llvm-dev, libtapi
+Filename: pool/main/iphoneos-arm64e/1900/cctools/odcctools_973.0.1-1_iphoneos-arm64e.deb
+Size: 1071830
+MD5sum: 5f263f5c09f51fdf0afe83e2a9b8b3d0
+SHA1: daf44a6d925e2dabc9c2c75057e49a88bb3a4d10
+SHA256: c064887c85be25732eb31a8b68b0dea904cfb39e78d4ea7b2c3edd9a1dea5d4f
+SHA512: 64018a3b4a5e1467a5b38efe7cebc77ee1a8132d79d6205a82c9e06ae160da16c9493d177771ea76379be9534645fb795cd1bd7b83bf414c8158389d0bcd9a54
+Homepage: https://github.com/tpoechtrager/cctools-port
+Description: linker and assembler for the iPhone
 
 Package: chariz-keyring
 Architecture: all
@@ -5611,6 +5664,56 @@ SHA256: 233a397b0358c48f785e38131e7dfb1b4162f7e26eef26f4958a7dd6cdd5d0e5
 SHA512: 7b714158de307f3c5ddfb07aeafe7ff8f68d09d412b9fdc9916df5c3af2b4440d8bfe2a84e44886a1a1cdce9d83e7c3859324b4be7ee4a00e9a9598dd6bc756b
 Description: iostat, login, passwd, sync, sysctl, pw
 
+Package: libtapi-dev
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 6868
+Depends: roothide (>= 0.0.6), libtapi
+Filename: pool/main/iphoneos-arm64e/1900/tapi/libtapi-dev_1100.0.11-1_iphoneos-arm64e.deb
+Size: 566706
+MD5sum: 0751a5fbe90875bbf027489d47d23e8a
+SHA1: 8e1257ca65550172d9c09e3e1723ccfeadadc8bd
+SHA256: bde1f60afd3ce184095f494791f8a96c580d7124ad974b16ecddb96c1d49dd87
+SHA512: ef14e3b808ed45839dd6dd27094e14a957fea72424d34cfd4889c929497cf1ce7fc64c12bced6a4831ec77641de79591965fc73f2181d5f56cab33b19e48b463
+Description: Text-based Application Programming Interface (library) - development files
+
+Package: libtapi
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 388
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0)
+Conflicts: libtapi10
+Replaces: libtapi10
+Filename: pool/main/iphoneos-arm64e/1900/tapi/libtapi_1100.0.11-1_iphoneos-arm64e.deb
+Size: 161742
+MD5sum: 74360704c406fbb1a09dc4d0b05a5d42
+SHA1: ee916109936d70deaa52ef70e35851f352a5ab44
+SHA256: 96724b6d94b461d237fcb190a51073be8f3a4925b6d4de5f473dc408fd7ca4df
+SHA512: 71c998d50eb9f532fd54e58423947855ed600a14a1d24438040da70c5761b33f5f3af31673a81b695cce1e0789041b20f673e05052550261181c3e1fc924abaa
+Description: Text-based Application Programming Interface (library)
+
+Package: tapi
+Architecture: iphoneos-arm64e
+Version: 1100.0.11-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 18856
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/tapi/tapi_1100.0.11-1_iphoneos-arm64e.deb
+Size: 6749276
+MD5sum: 93dc1410c7b6f8b7e84cfe5833b2931c
+SHA1: bab61a94a3e13808630884e5cb56edc11dc3058c
+SHA256: 671148d1466b7e669d5b1a09b032d401996b1f17c50a10136eed80ca187ce335
+SHA512: 303e887071f068cea469f0f3e2b61da18325ad10bde299427ca084916c8d05c8fdadb36aaec3993a0499caf2100de70c42aed039d516a7cfb6e93e9465aadaee
+Description: Text-based Application Programming Interface frontend
+
 Package: tar
 Architecture: iphoneos-arm64e
 Version: 1.34
@@ -5644,6 +5747,27 @@ SHA1: d3bf976ac2d2d8c182d86ce49b0d974d646d031e
 SHA256: 43bd80a3b7ce299830a9ca6a1bca2473168bb518bf46d7eaddf394b6c5325560
 SHA512: cfec7d701cfb951f276a1ac6da1b55ca655d31c1380713ce7de0d089dbac3a782793c55a5fd58d1cded5f01c86230426e4eb9202d7e5ca60ba8521afc08f523c
 Description: md5, ee, ul, banner
+
+Package: theos-dependencies
+Architecture: all
+Version: 0-1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 0
+Provides: org.theos.dependencies
+Depends: roothide (>= 0.0.6), clang, odcctools, curl, git, grep, perl, rsync, unzip, xz-utils, make, ldid, gzip
+Recommends: plutil, swift
+Conflicts: org.theos.dependencies
+Replaces: org.theos.dependencies
+Filename: pool/main/iphoneos-arm64e/1900/theos-dependencies/theos-dependencies_0-1_all.deb
+Size: 776
+MD5sum: 29557c3cf7d0147d14b82869d71200e0
+SHA1: cdd831edbf7d70bb3fd559cecfc9a9192d838331
+SHA256: c88c8c7f67f8dda9545834e2de540434adb2f3a35c03cc6fc9b2e78fb45f58ec
+SHA512: 5c305889eff9bd390d38d9f8a46019b71aafba1dc2d19d9d6e0dcac877ad90ed5c4e10d27c6a95fc0ea60e07bcfc85feba77576e704e29354dae625c79d70e10
+Description: What Theos needs.
+ This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 
 Package: tmux
 Architecture: iphoneos-arm64e
