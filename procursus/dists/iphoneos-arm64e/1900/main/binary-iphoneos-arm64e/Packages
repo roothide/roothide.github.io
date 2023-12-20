@@ -5810,11 +5810,11 @@ Installed-Size: 420
 Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), uikittools (= 2.1.6-1)
 Enhances: uikittools
 Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools-extra_2.1.6-1_iphoneos-arm64e.deb
-Size: 33194
-MD5sum: c29414019395ee10cae4087e4d867566
-SHA1: ca731a53bda84ce893d2c20ee7f3d2f343428607
-SHA256: b681ccc90ea19821aaf7c15ca6fba08b40fec3607b517cfc489faad68224fe89
-SHA512: a0b61a87d34b1b711b4bd5331d2e8a6f6a52748978f8cf2af62ac088ccfbdfe69de30e751be5880aae51ca819d11a28560f1125806c2ccf05b0ff31f7b8b5290
+Size: 33196
+MD5sum: 203266b848a1a2dde7039ea5bacfe185
+SHA1: 5befc504b03b0284a2cab505ee349e1efda113f9
+SHA256: a558c42a9a6f1dd4333344e815a6009179b9739cce6e61395f95d30e0ef4fa65
+SHA512: d53f5f08d35e285a347f0ce846c162c8c9d3ab07d454de6749ea18a2becd10a572295c848cdd6237b9d8a1daa010dd7631bfb04221d04fcc02fdcbb1488841fe
 Description: Extra Command line access for UIKit/LaunchServices/CoreServices
 
 Package: uikittools
@@ -5829,11 +5829,11 @@ Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
 Suggests: uikittools-extra (= 2.1.6-1)
 Breaks: uikittools-extra (<< 2.1.6)
 Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools_2.1.6-1_iphoneos-arm64e.deb
-Size: 83538
-MD5sum: 9622f0f0ca21015926168de69b368298
-SHA1: 8e38265a99ac3a19c96a0536dd0bab3daca95ed6
-SHA256: 544b0672eb3f708db17b461d752e8b3538a15d53fe34b4629d710f7616b6c66a
-SHA512: 46b085d3fbac77610c1af6bedadef39aad45e9a0b50de0f1d04655cb2631519eda5d1f3b1c7c4f897599f3aaf6427deaa65673e90f076efd0290837922515fa9
+Size: 83326
+MD5sum: 6799e3e5b31cdfd10239ff2ba5bc0af8
+SHA1: fde91b66facb00d7cedf502a2de9a78dbd8f628a
+SHA256: 43a8a79e580ad4628efb2c93733d971d890a8744434d8eba4ba0ca82088b4b2b
+SHA512: db87c7387b18e1eee15019d789839934bdce73b3eb9fc4c4ef57e978330700e053fff19cd0baa031019aa7c5b18bd21cf5c28e65eed5622d130f31f620bf11bd
 Description: Command line access for UIKit/LaunchServices/CoreServices
 
 Package: libunrar-dev
