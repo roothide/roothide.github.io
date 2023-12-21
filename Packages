@@ -904,6 +904,22 @@ Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
 Name: PreferenceLoader
 
+Package: preferenceloader
+Version: 2.2.6-9+debug
+Architecture: iphoneos-arm
+Maintainer: ProcursusTeam <support@procurs.us>
+Installed-Size: 456
+Depends: mobilesubstrate
+Filename: ./debfiles/preferenceloader_2.2.6-9+debug_iphoneos-arm.deb
+Size: 27898
+MD5sum: bc33dfc991394978632559ea6e2a5bb2
+SHA1: c84f8e6571217f59f69ccacb8a74f86b6111865a
+SHA256: db0779aa7cb828c4c6e784a95dbf14d939078ec751a2514c37112929ae0140d6
+Section: System
+Description: load preferences in style
+Author: Dhinak G <dhinak@dhinak.net>
+Name: PreferenceLoader
+
 Package: re.frida.server
 Version: 16.1.4
 Architecture: iphoneos-arm64e
