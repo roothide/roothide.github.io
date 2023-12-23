@@ -81,6 +81,7 @@ etc/hosts						    roothide
 etc/hosts.equiv						    roothide
 etc/localtime						    base
 etc/master.passwd					    base
+etc/nanorc						    nano
 etc/pam.d/login						    system-cmds
 etc/pam.d/login.term					    system-cmds
 etc/pam.d/other						    libpam2
@@ -580,6 +581,7 @@ usr/bin/msguniq						    gettext
 usr/bin/mtoc						    odcctools
 usr/bin/mtor						    odcctools
 usr/bin/mv						    coreutils
+usr/bin/nano						    nano
 usr/bin/ncursesw6-config				    libncurses-dev
 usr/bin/neofetch					    neofetch
 usr/bin/nettle-hash					    nettle-bin
@@ -670,6 +672,7 @@ usr/bin/rexec						    inetutils
 usr/bin/rlogin						    inetutils
 usr/bin/rm						    coreutils
 usr/bin/rmdir						    coreutils
+usr/bin/rnano						    nano
 usr/bin/rootfs						    roothide
 usr/bin/rrsync						    rsync
 usr/bin/rs						    text-cmds
@@ -21632,6 +21635,12 @@ usr/share/doc/make/AUTHORS				    make
 usr/share/doc/make/COPYING				    make
 usr/share/doc/make/NEWS.zst				    make
 usr/share/doc/make/README.zst				    make
+usr/share/doc/nano/AUTHORS				    nano
+usr/share/doc/nano/COPYING				    nano
+usr/share/doc/nano/NEWS.zst				    nano
+usr/share/doc/nano/README.zst				    nano
+usr/share/doc/nano/THANKS.zst				    nano
+usr/share/doc/nano/TODO.zst				    nano
 usr/share/doc/ncurses-bin/AUTHORS			    ncurses-bin
 usr/share/doc/ncurses-bin/COPYING			    ncurses-bin
 usr/share/doc/ncurses-bin/NEWS.zst			    ncurses-bin
@@ -21992,6 +22001,7 @@ usr/share/locale/bg/LC_MESSAGES/git.mo			    git
 usr/share/locale/bg/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/bg/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/bg/LC_MESSAGES/make.mo			    make
+usr/share/locale/bg/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/bg/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/bg_BG.CP1251/LC_COLLATE		    gettext-localizations
 usr/share/locale/bg_BG.CP1251/LC_CTYPE			    gettext-localizations
@@ -22027,6 +22037,7 @@ usr/share/locale/ca/LC_MESSAGES/git.mo			    git
 usr/share/locale/ca/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/ca/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/ca/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
+usr/share/locale/ca/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ca/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ca/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/ca/LC_MESSAGES/tar.mo			    tar
@@ -22068,6 +22079,7 @@ usr/share/locale/cs/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/cs/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/cs/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/cs/LC_MESSAGES/make.mo			    make
+usr/share/locale/cs/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/cs/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/cs/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/cs/LC_MESSAGES/sudoers.mo		    sudo
@@ -22110,6 +22122,7 @@ usr/share/locale/da/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/da/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/da/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/da/LC_MESSAGES/make.mo			    make
+usr/share/locale/da/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/da/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/da/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/da/LC_MESSAGES/sudoers.mo		    sudo
@@ -22156,6 +22169,7 @@ usr/share/locale/de/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/de/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/de/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/de/LC_MESSAGES/make.mo			    make
+usr/share/locale/de/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/de/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/de/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/de/LC_MESSAGES/sudoers.mo		    sudo
@@ -22445,6 +22459,7 @@ usr/share/locale/eo/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/eo/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/eo/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/eo/LC_MESSAGES/libidn2.mo		    libidn2-0
+usr/share/locale/eo/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/eo/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/eo/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/eo/LC_MESSAGES/sudoers.mo		    sudo
@@ -22468,6 +22483,7 @@ usr/share/locale/es/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/es/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/es/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/es/LC_MESSAGES/make.mo			    make
+usr/share/locale/es/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/es/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/es/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/es/LC_MESSAGES/sudoers.mo		    sudo
@@ -22529,6 +22545,7 @@ usr/share/locale/eu/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/eu/LC_MESSAGES/dpkg.mo			    dpkg
 usr/share/locale/eu/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/eu/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
+usr/share/locale/eu/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/eu/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/eu/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/eu/LC_MESSAGES/tar.mo			    tar
@@ -22569,6 +22586,7 @@ usr/share/locale/fi/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/fi/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/fi/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/fi/LC_MESSAGES/make.mo			    make
+usr/share/locale/fi/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/fi/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/fi/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/fi/LC_MESSAGES/sudoers.mo		    sudo
@@ -22615,6 +22633,7 @@ usr/share/locale/fr/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/fr/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/fr/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/fr/LC_MESSAGES/make.mo			    make
+usr/share/locale/fr/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/fr/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/fr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/fr/LC_MESSAGES/sudoers.mo		    sudo
@@ -22727,6 +22746,7 @@ usr/share/locale/ga/LC_MESSAGES/diffutils.mo		    diffutils
 usr/share/locale/ga/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/ga/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/ga/LC_MESSAGES/make.mo			    make
+usr/share/locale/ga/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ga/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ga/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/ga/LC_MESSAGES/wget2.mo		    wget2
@@ -22740,6 +22760,7 @@ usr/share/locale/gl/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/gl/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/gl/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/gl/LC_MESSAGES/make.mo			    make
+usr/share/locale/gl/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/gl/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/gl/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/gl/LC_MESSAGES/tar.mo			    tar
@@ -22771,6 +22792,7 @@ usr/share/locale/hr/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/hr/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/hr/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/hr/LC_MESSAGES/make.mo			    make
+usr/share/locale/hr/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/hr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/hr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/hr/LC_MESSAGES/tar.mo			    tar
@@ -22806,6 +22828,7 @@ usr/share/locale/hu/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/hu/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/hu/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/hu/LC_MESSAGES/libidn2.mo		    libidn2-0
+usr/share/locale/hu/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/hu/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/hu/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/hu/LC_MESSAGES/sudoers.mo		    sudo
@@ -22859,10 +22882,12 @@ usr/share/locale/id/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/id/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/id/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/id/LC_MESSAGES/make.mo			    make
+usr/share/locale/id/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/id/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/id/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/id/LC_MESSAGES/wget2.mo		    wget2
 usr/share/locale/is/LC_MESSAGES/git.mo			    git
+usr/share/locale/is/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/is/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/is_IS.ISO8859-1/LC_COLLATE		    gettext-localizations
 usr/share/locale/is_IS.ISO8859-1/LC_CTYPE		    gettext-localizations
@@ -22902,6 +22927,7 @@ usr/share/locale/it/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/it/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/it/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/it/LC_MESSAGES/make.mo			    make
+usr/share/locale/it/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/it/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/it/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/it/LC_MESSAGES/sudoers.mo		    sudo
@@ -22971,6 +22997,7 @@ usr/share/locale/ja/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/ja/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/ja/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/ja/LC_MESSAGES/make.mo			    make
+usr/share/locale/ja/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ja/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ja/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ja/LC_MESSAGES/sudoers.mo		    sudo
@@ -23004,6 +23031,7 @@ usr/share/locale/ja_JP/LC_TIME				    gettext-localizations
 usr/share/locale/ka/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/ka/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/ka/LC_MESSAGES/libidn2.mo		    libidn2-0
+usr/share/locale/ka/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ka/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/kk/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/kk_KZ.PT154/LC_COLLATE			    gettext-localizations
@@ -23039,6 +23067,7 @@ usr/share/locale/ko/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/ko/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/ko/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/ko/LC_MESSAGES/make.mo			    make
+usr/share/locale/ko/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ko/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ko/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ko/LC_MESSAGES/sudoers.mo		    sudo
@@ -23135,6 +23164,7 @@ usr/share/locale/ms/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/ms/LC_MESSAGES/diffutils.mo		    diffutils
 usr/share/locale/ms/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/ms/LC_MESSAGES/gawk.mo			    gawk
+usr/share/locale/ms/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ms/LC_MESSAGES/tar.mo			    tar
 usr/share/locale/nb/LC_MESSAGES/apt-utils.mo		    apt-utils
 usr/share/locale/nb/LC_MESSAGES/apt.mo			    apt
@@ -23145,6 +23175,7 @@ usr/share/locale/nb/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/nb/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/nb/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/nb/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
+usr/share/locale/nb/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/nb/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/nb/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/nb/LC_MESSAGES/sudoers.mo		    sudo
@@ -23168,6 +23199,7 @@ usr/share/locale/nl/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/nl/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/nl/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/nl/LC_MESSAGES/make.mo			    make
+usr/share/locale/nl/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/nl/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/nl/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/nl/LC_MESSAGES/sudoers.mo		    sudo
@@ -23272,6 +23304,7 @@ usr/share/locale/pl/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/pl/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/pl/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/pl/LC_MESSAGES/make.mo			    make
+usr/share/locale/pl/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/pl/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/pl/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/pl/LC_MESSAGES/sudoers.mo		    sudo
@@ -23310,6 +23343,7 @@ usr/share/locale/pt/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/pt/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/pt/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/pt/LC_MESSAGES/make.mo			    make
+usr/share/locale/pt/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/pt/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/pt/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/pt/LC_MESSAGES/sudoers.mo		    sudo
@@ -23342,6 +23376,7 @@ usr/share/locale/pt_BR/LC_MESSAGES/grep.mo		    grep
 usr/share/locale/pt_BR/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/pt_BR/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/pt_BR/LC_MESSAGES/make.mo		    make
+usr/share/locale/pt_BR/LC_MESSAGES/nano.mo		    nano
 usr/share/locale/pt_BR/LC_MESSAGES/sudo.mo		    sudo
 usr/share/locale/pt_BR/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/pt_BR/LC_MESSAGES/tar.mo		    tar
@@ -23388,6 +23423,7 @@ usr/share/locale/ro/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/ro/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/ro/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/ro/LC_MESSAGES/make.mo			    make
+usr/share/locale/ro/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ro/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ro/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ro/LC_MESSAGES/sudoers.mo		    sudo
@@ -23428,6 +23464,7 @@ usr/share/locale/ru/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/ru/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/ru/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/ru/LC_MESSAGES/make.mo			    make
+usr/share/locale/ru/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/ru/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/ru/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/ru/LC_MESSAGES/sudoers.mo		    sudo
@@ -23479,6 +23516,7 @@ usr/share/locale/sk/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/sk/LC_MESSAGES/gnupg2.mo		    gnupg
 usr/share/locale/sk/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/sk/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
+usr/share/locale/sk/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/sk/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/sk/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sk/LC_MESSAGES/sudoers.mo		    sudo
@@ -23508,6 +23546,7 @@ usr/share/locale/sl/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/sl/LC_MESSAGES/findutils.mo		    findutils
 usr/share/locale/sl/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/sl/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
+usr/share/locale/sl/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/sl/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/sl/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sl/LC_MESSAGES/sudoers.mo		    sudo
@@ -23530,6 +23569,7 @@ usr/share/locale/sl_SI/LC_MESSAGES/LC_MESSAGES		    gettext-localizations
 usr/share/locale/sl_SI/LC_MONETARY			    gettext-localizations
 usr/share/locale/sl_SI/LC_NUMERIC			    gettext-localizations
 usr/share/locale/sl_SI/LC_TIME				    gettext-localizations
+usr/share/locale/sq/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/sr/LC_MESSAGES/coreutils.mo		    coreutils
 usr/share/locale/sr/LC_MESSAGES/diffutils.mo		    diffutils
 usr/share/locale/sr/LC_MESSAGES/findutils.mo		    findutils
@@ -23538,6 +23578,7 @@ usr/share/locale/sr/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/sr/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/sr/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/sr/LC_MESSAGES/make.mo			    make
+usr/share/locale/sr/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/sr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sr/LC_MESSAGES/sudoers.mo		    sudo
 usr/share/locale/sr/LC_MESSAGES/tar.mo			    tar
@@ -23583,6 +23624,7 @@ usr/share/locale/sv/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/sv/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/sv/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/sv/LC_MESSAGES/make.mo			    make
+usr/share/locale/sv/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/sv/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/sv/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sv/LC_MESSAGES/sudoers.mo		    sudo
@@ -23638,6 +23680,7 @@ usr/share/locale/tr/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/tr/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/tr/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/tr/LC_MESSAGES/make.mo			    make
+usr/share/locale/tr/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/tr/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/tr/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/tr/LC_MESSAGES/sudoers.mo		    sudo
@@ -23676,6 +23719,7 @@ usr/share/locale/uk/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/uk/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/uk/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/uk/LC_MESSAGES/make.mo			    make
+usr/share/locale/uk/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/uk/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/uk/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/uk/LC_MESSAGES/sudoers.mo		    sudo
@@ -23721,6 +23765,7 @@ usr/share/locale/vi/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/vi/LC_MESSAGES/libgpg-error.mo		    gpgrt-tools
 usr/share/locale/vi/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/vi/LC_MESSAGES/make.mo			    make
+usr/share/locale/vi/LC_MESSAGES/nano.mo			    nano
 usr/share/locale/vi/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/vi/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/vi/LC_MESSAGES/sudoers.mo		    sudo
@@ -23776,6 +23821,7 @@ usr/share/locale/zh_CN/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/zh_CN/LC_MESSAGES/libgpg-error.mo	    gpgrt-tools
 usr/share/locale/zh_CN/LC_MESSAGES/libidn2.mo		    libidn2-0
 usr/share/locale/zh_CN/LC_MESSAGES/make.mo		    make
+usr/share/locale/zh_CN/LC_MESSAGES/nano.mo		    nano
 usr/share/locale/zh_CN/LC_MESSAGES/popt.mo		    libpopt0
 usr/share/locale/zh_CN/LC_MESSAGES/sudo.mo		    sudo
 usr/share/locale/zh_CN/LC_MESSAGES/sudoers.mo		    sudo
@@ -23832,6 +23878,7 @@ usr/share/locale/zh_TW/LC_MESSAGES/grep.mo		    grep
 usr/share/locale/zh_TW/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/zh_TW/LC_MESSAGES/libgpg-error.mo	    gpgrt-tools
 usr/share/locale/zh_TW/LC_MESSAGES/make.mo		    make
+usr/share/locale/zh_TW/LC_MESSAGES/nano.mo		    nano
 usr/share/locale/zh_TW/LC_MESSAGES/popt.mo		    libpopt0
 usr/share/locale/zh_TW/LC_MESSAGES/sudo.mo		    sudo
 usr/share/locale/zh_TW/LC_MESSAGES/sudoers.mo		    sudo
@@ -24520,6 +24567,7 @@ usr/share/man/man1/msgunfmt.1.zst			    gettext
 usr/share/man/man1/msguniq.1.zst			    gettext
 usr/share/man/man1/mtoc.1.zst				    odcctools
 usr/share/man/man1/mv.1.zst				    coreutils
+usr/share/man/man1/nano.1.zst				    nano
 usr/share/man/man1/ncursesw6-config.1.zst		    libncurses-dev
 usr/share/man/man1/neofetch.1.zst			    neofetch
 usr/share/man/man1/netstat.1.zst			    network-cmds
@@ -24648,6 +24696,7 @@ usr/share/man/man1/rlogin.1.zst				    inetutils
 usr/share/man/man1/rm.1.zst				    coreutils
 usr/share/man/man1/rmd160.1.zst.zst			    text-cmds
 usr/share/man/man1/rmdir.1.zst				    coreutils
+usr/share/man/man1/rnano.1.zst				    nano
 usr/share/man/man1/rrsync.1.zst				    rsync
 usr/share/man/man1/rs.1.zst				    text-cmds
 usr/share/man/man1/rsa.1ssl.zst				    libssl-doc
@@ -32379,6 +32428,7 @@ usr/share/man/man5/libarchive-formats.5.zst		    libarchive-dev
 usr/share/man/man5/locatedb.5.zst			    findutils
 usr/share/man/man5/moduli.5.zst				    openssh-server
 usr/share/man/man5/mtree.5.zst				    libarchive-dev
+usr/share/man/man5/nanorc.5.zst				    nano
 usr/share/man/man5/nologin.5.zst			    system-cmds
 usr/share/man/man5/pam.conf.5.zst			    libpam-dev
 usr/share/man/man5/pcap-savefile.5.zst			    libpcapa-dev
@@ -32984,6 +33034,53 @@ usr/share/man/zh_TW/man1/uisave.1.zst			    uikittools-extra
 usr/share/man/zh_TW/man1/uishoot.1.zst			    uikittools-extra
 usr/share/misc/magic.mgc				    libmagic1
 usr/share/misc/trace.codes				    roothide
+usr/share/nano/asm.nanorc				    nano
+usr/share/nano/autoconf.nanorc				    nano
+usr/share/nano/awk.nanorc				    nano
+usr/share/nano/c.nanorc					    nano
+usr/share/nano/changelog.nanorc				    nano
+usr/share/nano/cmake.nanorc				    nano
+usr/share/nano/css.nanorc				    nano
+usr/share/nano/debian.nanorc				    nano
+usr/share/nano/debian/debian.nanorc			    nano
+usr/share/nano/default.nanorc				    nano
+usr/share/nano/elisp.nanorc				    nano
+usr/share/nano/email.nanorc				    nano
+usr/share/nano/extra/ada.nanorc				    nano
+usr/share/nano/extra/fortran.nanorc			    nano
+usr/share/nano/extra/haskell.nanorc			    nano
+usr/share/nano/extra/povray.nanorc			    nano
+usr/share/nano/extra/spec.nanorc			    nano
+usr/share/nano/go.nanorc				    nano
+usr/share/nano/groff.nanorc				    nano
+usr/share/nano/guile.nanorc				    nano
+usr/share/nano/html.nanorc				    nano
+usr/share/nano/java.nanorc				    nano
+usr/share/nano/javascript.nanorc			    nano
+usr/share/nano/json.nanorc				    nano
+usr/share/nano/lua.nanorc				    nano
+usr/share/nano/makefile.nanorc				    nano
+usr/share/nano/man.nanorc				    nano
+usr/share/nano/markdown.nanorc				    nano
+usr/share/nano/nanohelp.nanorc				    nano
+usr/share/nano/nanorc.nanorc				    nano
+usr/share/nano/nftables.nanorc				    nano
+usr/share/nano/objc.nanorc				    nano
+usr/share/nano/ocaml.nanorc				    nano
+usr/share/nano/patch.nanorc				    nano
+usr/share/nano/perl.nanorc				    nano
+usr/share/nano/php.nanorc				    nano
+usr/share/nano/po.nanorc				    nano
+usr/share/nano/python.nanorc				    nano
+usr/share/nano/ruby.nanorc				    nano
+usr/share/nano/rust.nanorc				    nano
+usr/share/nano/sh.nanorc				    nano
+usr/share/nano/sql.nanorc				    nano
+usr/share/nano/tcl.nanorc				    nano
+usr/share/nano/tex.nanorc				    nano
+usr/share/nano/texinfo.nanorc				    nano
+usr/share/nano/xml.nanorc				    nano
+usr/share/nano/yaml.nanorc				    nano
 usr/share/nghttp2/fetch-ocsp-response			    nghttp2-proxy
 usr/share/p11-kit/modules/p11-kit-trust.module		    p11-kit
 usr/share/perl5/Dpkg.pm					    libdpkg-perl

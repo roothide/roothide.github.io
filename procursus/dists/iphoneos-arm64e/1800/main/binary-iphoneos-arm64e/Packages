@@ -4537,6 +4537,41 @@ Description: multiple precision floating-point computation
  ANSI/IEEE-754 standard for double-precision floating-point arithmetic
  (53-bit mantissa).
 
+Package: nano
+Architecture: iphoneos-arm64e
+Version: 7.2
+Priority: standard
+Section: Text_Editors
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 2764
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libmagic1, libncursesw6, libintl8
+Filename: pool/main/iphoneos-arm64e/1800/nano/nano_7.2_iphoneos-arm64e.deb
+Size: 769052
+MD5sum: ac0b8339860e643954c5c217c5e487e3
+SHA1: 67afe1141c689cfe90b4d5734131af11651eb8e2
+SHA256: e29a89295c0b813dccbc9e6b497d392d51c5c49e285125964483ab25f9249cfd
+SHA512: ee1627950c4b4097c4843d8cd94fda5a3d35faf6951a6be5f1398672b0ebebb3e99a7e51dfd06463946248cded892af1865632d8c7ac8d207d58efbbc4b1828d
+Homepage: https://www.nano-editor.org/
+Description: Completely free, modern clone of Pico.
+ GNU nano is an easy-to-use text editor originally
+ designed as a replacement for Pico, the ncurses-based
+ editor from the non-free mailer package Pine (itself now
+ available under the Apache License as Alpine). However,
+ GNU nano also implements many features missing ih Pico,
+ including:
+ - Undo/redo
+ - Line numbering
+ - Syntax coloring
+ - Soft-wrapping of overlong lines
+ - Selecting text by holding Shift
+ - Interactive search and replace
+ - A go-to line (and column) command
+ - Support for multiple file buffers
+ - Auto-identation
+ - Tab completion of filenames and search terms
+ - Toggling features while running
+ - Full internationalization support
+
 Package: libncurses-dev
 Architecture: iphoneos-arm64e
 Version: 6.4
