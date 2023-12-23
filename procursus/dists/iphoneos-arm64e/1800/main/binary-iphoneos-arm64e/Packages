@@ -476,6 +476,57 @@ SHA256: af15249ad03dcf522357e31861b54e7f661fdb1dc2f8153f54a09740f0bd0165
 SHA512: b8a5d61624bb2e32231a1a82f5d20bd984f3f08c8787b5eac3fba66236cc3410939e7e2ff5f4de554fe48eab93575216ea44a19c0bb92feb0bd8fd83d866eb36
 Description: GnuPG keys for the Chariz repository
 
+Package: cmake-curses-gui
+Architecture: iphoneos-arm64e
+Version: 3.26.3
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 6840
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), cmake (= 3.26.3), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/cmake/cmake-curses-gui_3.26.3_iphoneos-arm64e.deb
+Size: 2835570
+MD5sum: 30cdaa3c4b784f2d4e888f2580c82fbd
+SHA1: e084aade257db9f41197bd49ac559c9bf80ec3e1
+SHA256: 7f4b6913f20f8670d747131a21ed9dc7ce881fe693a084113b60a871846b1940
+SHA512: 679a9e15e71d39b25c4b73c1e5d65b3d006fc84915b02fcec066cc23dbf83ee4c874ff8f7398998da12c7e8d13d66cd4bc24eba4fa57eb7e8a781f91509b303a
+Homepage: https://cmake.org/
+Description: curses based user interface for CMake (ccmake)
+
+Package: cmake-data
+Architecture: iphoneos-arm64e
+Version: 3.26.3
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 20868
+Depends: roothide (>= 0.0.6)
+Filename: pool/main/iphoneos-arm64e/1800/cmake/cmake-data_3.26.3_iphoneos-arm64e.deb
+Size: 2477006
+MD5sum: 543119c3ad621bd6e6cd57f2f72782c0
+SHA1: 690db708be5807d83389de23a4d312e920f3d938
+SHA256: 2f223c87a6a2b8007b1ebd89a6419105126cec73906acf585f4ec859a7327f09
+SHA512: 518a2b6da7fe0a941d497c3d0d445af07016cb8e2fb745d05137924acded81ed299aef16295ddb2f87a5e5e444753ecfe187b11768e84d42b92e9a3563e16358
+Homepage: https://cmake.org/
+Description: CMake data files (modules, templates and documentation)
+
+Package: cmake
+Architecture: iphoneos-arm64e
+Version: 3.26.3
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 22772
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), cmake-data (= 3.26.3), libuv1, firmware (>= 14.0) | libexpat1, libarchive13, libcurl4, libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/cmake/cmake_3.26.3_iphoneos-arm64e.deb
+Size: 9489880
+MD5sum: 6b54d8e75de4d6f519a723706391a18c
+SHA1: 9ebfbbb7af1a3d7357bdf1eb2ae0e5a11f75f10e
+SHA256: 1d553b6764ed73c4c87374574a8ad3f7eae81ba2ea2f280edf4fe1db64a1c55f
+SHA512: e9651e6daad66d0db4c71985fe5dc83c36ebebb068c77d7b6c815913390f7646f2308a8dafe86feed214bc489c6ca91ef2548b0d942b7f14791daae0833d9ac0
+Homepage: https://cmake.org/
+Description: cross-platform, open-source make system
+
 Package: coreutils
 Architecture: iphoneos-arm64e
 Version: 9.3-1
@@ -1995,6 +2046,58 @@ SHA256: 9cfd78978478543de154b54e01cbe0c18b40c575ef7fb99e98a119733ec0e045
 SHA512: 3901a8c0f749ecfab7f5ee39028eed7f6cfc57382b7fd07e0cd4076470b2c4ed3fda19a80f9405946d0456d27e4e6ca4bc84d9ab722f06c6ed6ad7d072bbfd08
 Description: provides less information than more does
 
+Package: libarchive-dev
+Architecture: iphoneos-arm64e
+Version: 3.6.1
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 312
+Depends: roothide (>= 0.0.6), libarchive13 (>= 3.6.1), liblz4-dev, liblzma-dev, libzstd-dev, nettle-dev, liblzo2-dev
+Filename: pool/main/iphoneos-arm64e/1800/libarchive/libarchive-dev_3.6.1_iphoneos-arm64e.deb
+Size: 151758
+MD5sum: c95beeb66fa36f5f7c8b53eda8b5a91c
+SHA1: ba021be15d78406ff4f9b745c806dcc51e4f988f
+SHA256: 540bf790000f90e40799ff941a90259b03e40098dbecfcc22f6f8a499d958827
+SHA512: 6065131df9e5fbee0cbd05a0af888bdceb39448005f6937f4c6659a15358f311a167fef153af6146a414ee135170b127e532bbecfa3333228f33745fa8501b90
+Description: Multi-format archive and compression library - devel
+
+Package: libarchive-tools
+Architecture: iphoneos-arm64e
+Version: 3.6.1
+Priority: optional
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 236
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libarchive13 (>= 3.6.1)
+Conflicts: libarchive (<< 3.6.1)
+Filename: pool/main/iphoneos-arm64e/1800/libarchive/libarchive-tools_3.6.1_iphoneos-arm64e.deb
+Size: 68696
+MD5sum: 59147092856f633c7f8df0d138b0b22a
+SHA1: e40b912ad4fce65ee69ce372c10a659d67ee1a24
+SHA256: d0e1ed5d86e3a94154f2130c97ba72cbb1adb1818040c3c7ba43ac9932e276c2
+SHA512: 259b0fca53aa453add8f250ecbe77817f74fb68a6fa42df47b1c0b5f40fabd188cee63134bf1b0dacd0d2cb82527bcf0312944fe10071caa95fbe46fb87b46a7
+Description: FreeBSD implementations of 'tar' and 'cpio' and other archive tools
+
+Package: libarchive13
+Architecture: iphoneos-arm64e
+Version: 3.6.1
+Priority: optional
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 684
+Provides: libarchive (= 3.6.1)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblz4-1, liblzma5 (>= 5.2.5), libzstd1, libnettle8, liblzo2-2
+Conflicts: libarchive
+Replaces: libarchive
+Filename: pool/main/iphoneos-arm64e/1800/libarchive/libarchive13_3.6.1_iphoneos-arm64e.deb
+Size: 342980
+MD5sum: 71a430183689fd063224be23c22a2c0b
+SHA1: a4a67060ec9ac7d29db86b0b5f7755f9a67a6d18
+SHA256: b06dc11dcb56163c16ab5f8da589dd41bd20e4a38614134d8b40e3999d9c8377
+SHA512: e3afe5bc119de7e16b883fe19e6ef0280bee7401dcc379d22104bbcf2194320bb1410b5b500626c15d30f8a1a0eb935abc567d022a84fbf53ceb23525319b040
+Description: Multi-format archive and compression library
+
 Package: libassuan-dev
 Architecture: iphoneos-arm64e
 Version: 2.5.5
@@ -2884,6 +2987,36 @@ Description: X.509 and CMS support library
  .
  This package contains the runtime library files.
 
+Package: liblzo2-2
+Architecture: iphoneos-arm64e
+Version: 2.10
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 180
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/liblzo2/liblzo2-2_2.10_iphoneos-arm64e.deb
+Size: 55600
+MD5sum: 8414aad789d4cfe4cc4efcbdbdfa4c73
+SHA1: 21718b57f0bc3522d68ac101b661e4d6a3820212
+SHA256: c07958afd184cd1c8c3fabbc3fdc2cc864e634969124ada7610867d3438b52f7
+SHA512: 5b5e2b723c060a3b8f5c6aa85e538a1bda37bea39a1e8cac92414e1b5649ffbf39f9452a1e548ab410ee9727aa37f69ced93d0d71883fb2385a9c9aa0ba6b0f9
+Description: Portable lossless data compression library
+
+Package: liblzo2-dev
+Architecture: iphoneos-arm64e
+Version: 2.10
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 664
+Depends: roothide (>= 0.0.6), liblzo2-2 (= 2.10)
+Filename: pool/main/iphoneos-arm64e/1800/liblzo2/liblzo2-dev_2.10_iphoneos-arm64e.deb
+Size: 174536
+MD5sum: 6542cd76e558cb2dd4ca12204373ce1e
+SHA1: 197426e3c655d67d0c356e728f7ead72c89d5f97
+SHA256: 06ec44ce4846f35867c78a52b9d03401390750f7477e4a571e9df048219a9eab
+SHA512: 7dffab2da364e77b968e9b34b0da93053ecc1e3ae866e51ec6f8b2d434d2469d10b0c3cd95a8d71a0808bfdc45e50095f10226d8ec5db996365a04fb01a28e0d
+Description: Portable lossless data compression library
+
 Package: libmd-dev
 Architecture: iphoneos-arm64e
 Version: 1.0.4-1
@@ -3456,6 +3589,40 @@ Description: C library for processing UTF-8 Unicode data (shared library)
  Unicode version 8.0.
  .
  This package contains a shared version of the library.
+
+Package: libuv1-dev
+Architecture: iphoneos-arm64e
+Version: 1.44.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 648
+Depends: roothide (>= 0.0.6), libuv1 (= 1.44.1)
+Filename: pool/main/iphoneos-arm64e/1800/libuv1/libuv1-dev_1.44.1_iphoneos-arm64e.deb
+Size: 284478
+MD5sum: 49d735958a8e6799177e5f58da2b593e
+SHA1: daf0ceab284bdb6072cfa1477c9e6fd83aa377d8
+SHA256: 5172eeeccc695c2005f4de964c155ad436505c6209af244fdeb1a7a0a7a04994
+SHA512: cf5ba801208dcba4e60cf105be3282750aab029f4cbe13dc21f79bc9a503878fb343b0c3a3e51bcbc07c7775f21e63be0009de2cd1d78c074a25c9b8762ba96b
+Description: asynchronous event notification library - development files
+
+Package: libuv1
+Architecture: iphoneos-arm64e
+Version: 1.44.1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 216
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libiosexec1
+Filename: pool/main/iphoneos-arm64e/1800/libuv1/libuv1_1.44.1_iphoneos-arm64e.deb
+Size: 80298
+MD5sum: be288f8c217907580994ad30eba15189
+SHA1: 101e98e193e7a2a07c9e05d0f0357b2e4bd875e2
+SHA256: 7199757f2fcd1b222a7922e3ebc02b312623a4304e9202942d37f22806cbae23
+SHA512: 2db6660dd31595276c38b8aceac0ad7af7930dd9cbaa6509903ad3d77fcdd1deb93d302135f222f7f56fef0c0df2e251f5038ce2226520f0ce8eb2b3d178b6e7
+Description: asynchronous event notification library - runtime library
 
 Package: libcrypt-dev
 Architecture: iphoneos-arm64e
