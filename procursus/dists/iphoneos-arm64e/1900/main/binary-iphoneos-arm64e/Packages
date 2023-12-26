@@ -1671,6 +1671,25 @@ SHA256: 669c75c7957b03c0b6e0157190ecb1393462942154be8c0ebc9da4ef216295a2
 SHA512: 1411357ebb5e513ef8c214ae7f64df99cc6266b536c70ee1ca7c70eb261d68458b91f6adb30c74e8803de9e2077efcc8aeb733df859fa0de00e012499a9eff3d
 Description: HSTS preload list in DAFSA format
 
+Package: htop
+Architecture: iphoneos-arm64e
+Version: 3.2.2
+Priority: important
+Section: Administration
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 276
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0)
+Filename: pool/main/iphoneos-arm64e/1900/htop/htop_3.2.2_iphoneos-arm64e.deb
+Size: 110350
+MD5sum: 6293372d9e97301fd794abac58f4dd02
+SHA1: f7403be52d1b7c4103ccdc6aa103af7625457954
+SHA256: 97da8bc02b8220263aabe7ecbaaff75d786b88df36b338dcb306731fbd9b9eab
+SHA512: 8d148af65d80547367f8432bf5609f30696e5d6245815b17d4d43e712ad443a32469b24f88f0d50aa88627b613ecb49119fe7775f9af7475442f7ecfd8d9e636
+Description: interactive processes viewer
+ Htop is an ncursed-based process viewer similar to top, but it allows one to scroll the list vertically and horizontally to see all processes and their full command lines.
+ .
+ Tasks related to processes (killing, renicing) can be done without entering their PIDs.
+
 Package: inetutils
 Architecture: iphoneos-arm64e
 Version: 2.0-1

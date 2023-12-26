@@ -387,6 +387,7 @@ usr/bin/hostid						    coreutils
 usr/bin/hostinfo					    system-cmds
 usr/bin/hostname					    inetutils
 usr/bin/hsts						    libhsts-dev
+usr/bin/htop						    htop
 usr/bin/id						    coreutils
 usr/bin/idevice_id					    libimobiledevice-utils
 usr/bin/idevicebackup					    libimobiledevice-utils
@@ -21080,6 +21081,10 @@ usr/share/doc/gzip/NEWS.zst				    gzip
 usr/share/doc/gzip/README.zst				    gzip
 usr/share/doc/gzip/THANKS.zst				    gzip
 usr/share/doc/gzip/TODO.zst				    gzip
+usr/share/doc/htop/AUTHORS				    htop
+usr/share/doc/htop/COPYING				    htop
+usr/share/doc/htop/NEWS.zst				    htop
+usr/share/doc/htop/README.zst				    htop
 usr/share/doc/idn2/AUTHORS				    idn2
 usr/share/doc/idn2/COPYING				    idn2
 usr/share/doc/idn2/NEWS.zst				    idn2
@@ -21909,6 +21914,7 @@ usr/share/gtk-doc/html/p11-kit/trust.html		    libp11-kit-dev
 usr/share/gtk-doc/html/p11-kit/up-insensitive.png	    libp11-kit-dev
 usr/share/gtk-doc/html/p11-kit/up.png			    libp11-kit-dev
 usr/share/hstspreload/hsts.dafsa			    hstspreload
+usr/share/icons/hicolor/scalable/apps/htop.svg		    htop
 usr/share/libgpg-error/errorref.txt			    gpgrt-tools
 usr/share/locale/UTF-8/LC_CTYPE				    gettext-localizations
 usr/share/locale/af/LC_MESSAGES/coreutils.mo		    coreutils
@@ -24461,6 +24467,7 @@ usr/share/man/man1/hexdump.1.zst			    shell-cmds
 usr/share/man/man1/hmac256.1.zst			    libgcrypt20-dev
 usr/share/man/man1/hostid.1.zst				    coreutils
 usr/share/man/man1/hostname.1.zst			    inetutils
+usr/share/man/man1/htop.1.zst				    htop
 usr/share/man/man1/id.1.zst				    coreutils
 usr/share/man/man1/idevice_id.1.zst			    libimobiledevice-utils
 usr/share/man/man1/idevicebackup.1.zst			    libimobiledevice-utils
