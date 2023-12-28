@@ -250,10 +250,10 @@ Maintainer: LonestarX
 Installed-Size: 432
 Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
 Filename: ./debfiles/com.lnx.showtouch_1.0.4_iphoneos-arm64e.deb
-Size: 70764
-MD5sum: 943ff7c9863f21c6ff238a2fa9e22a50
-SHA1: 578eb17dc4431917ccc9f53c8977a12025f626eb
-SHA256: dc6566f5bfa5434df2c924a6da7916e47134b17ec0eb76c797128c7a4e928b56
+Size: 70828
+MD5sum: 5d9332db064373708f37c724dd82b644
+SHA1: e1f534e8d67db5d5c19a9b8f18baa44f9fd940c3
+SHA256: ae22233c1c854d338f64be847a7ebe77cbfebabb00a8eb57351876723fc7d293
 Section: Tweaks
 Description: Shows where you touch the screen
 Author: LonestarX
