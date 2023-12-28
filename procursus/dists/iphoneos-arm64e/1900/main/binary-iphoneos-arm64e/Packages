@@ -5670,11 +5670,11 @@ Maintainer: roothide
 Installed-Size: 936
 Depends: libiosexec1 (>= 1.3.1)
 Filename: pool/main/iphoneos-arm64e/1900/roothide/roothide_0.0.6_iphoneos-arm64e.deb
-Size: 55150
-MD5sum: dc855b532aee147cb86788cf732dfe67
-SHA1: 1f780f1b97057cd671527125ef18a19e85da42fd
-SHA256: 1f6c0a4a16a8759f9ef58211faf9a8c6819b5e7c67caa0023e457cd458084366
-SHA512: ddaea5ce0a8e7801e59ca2bc337a4bbba9b09c6a3e9fa96d1bfc4635781e1ccb4e01c8b1f83e9ca35980ccdefb654cfd2c3b53b548c0524f552d2630bd449414
+Size: 55148
+MD5sum: e82abd99b7c7595199f3e6e2ecb55297
+SHA1: 3a6362c289ecaa505f47dab2bdcfbd5616ab1ad6
+SHA256: c6959f84d8d4ca3294ca9cf2efc102bc6a24c7a7176b05b41c1fb841f1137503
+SHA512: 4420fb370516ad7863ffc77e709e680a52f671806e599ff5338f31431afe6c725ef0280f61cfeaac9e318c505d9b7f40985f76f9e497a423289801b456623d01
 Description: roothide core package
 Name: roothide core
 Author: roothide
