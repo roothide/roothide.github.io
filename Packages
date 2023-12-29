@@ -889,6 +889,22 @@ Name: Sileo
 Sileodepiction: https://featuredpage.getsileo.app/depiction.json
 
 Package: preferenceloader
+Version: 2.2.6-11+debug
+Architecture: iphoneos-arm64e
+Maintainer: ProcursusTeam <support@procurs.us>
+Installed-Size: 456
+Depends: mobilesubstrate
+Filename: ./debfiles/preferenceloader_2.2.6-11+debug_iphoneos-arm64e.deb
+Size: 27818
+MD5sum: a2e0ba8d486df80c3deebee923f9081e
+SHA1: d232922d88a46ee8bf70af7fb7d036a4736ebd5b
+SHA256: 2713b727e8d14c553e6d39a3ef10f967073240f995d40a471026f36dc50c0fea
+Section: System
+Description: load preferences in style
+Author: Dhinak G <dhinak@dhinak.net>
+Name: PreferenceLoader
+
+Package: preferenceloader
 Version: 2.2.6-8+debug
 Architecture: iphoneos-arm64e
 Maintainer: ProcursusTeam <support@procurs.us>
@@ -899,22 +915,6 @@ Size: 20082
 MD5sum: 7fcefcf468b4114d08dbbe29ce30159d
 SHA1: 38fc3d5d8a9ad3db14c3ac4133eecc6f154e69d5
 SHA256: 884a12b4003d69c1203e61307ea3c148db4263b3ba4cf4895359a9877c1404c3
-Section: System
-Description: load preferences in style
-Author: Dhinak G <dhinak@dhinak.net>
-Name: PreferenceLoader
-
-Package: preferenceloader
-Version: 2.2.6-9+debug
-Architecture: iphoneos-arm
-Maintainer: ProcursusTeam <support@procurs.us>
-Installed-Size: 456
-Depends: mobilesubstrate
-Filename: ./debfiles/preferenceloader_2.2.6-9+debug_iphoneos-arm.deb
-Size: 27898
-MD5sum: bc33dfc991394978632559ea6e2a5bb2
-SHA1: c84f8e6571217f59f69ccacb8a74f86b6111865a
-SHA256: db0779aa7cb828c4c6e784a95dbf14d939078ec751a2514c37112929ae0140d6
 Section: System
 Description: load preferences in style
 Author: Dhinak G <dhinak@dhinak.net>
