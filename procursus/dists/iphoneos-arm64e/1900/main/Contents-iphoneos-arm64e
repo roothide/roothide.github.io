@@ -748,6 +748,7 @@ usr/bin/tac						    coreutils
 usr/bin/tail						    coreutils
 usr/bin/tapi						    tapi
 usr/bin/tar						    tar
+usr/bin/tcpdump						    tcpdump
 usr/bin/tee						    coreutils
 usr/bin/telnet						    inetutils
 usr/bin/tempfile					    debianutils
@@ -21738,6 +21739,7 @@ usr/share/doc/tar/NEWS.zst				    tar
 usr/share/doc/tar/README.zst				    tar
 usr/share/doc/tar/THANKS.zst				    tar
 usr/share/doc/tar/TODO.zst				    tar
+usr/share/doc/tcpdump/LICENSE				    tcpdump
 usr/share/doc/tmux/COPYING				    tmux
 usr/share/doc/tmux/README.zst				    tmux
 usr/share/doc/tree/LICENSE				    tree
@@ -24774,6 +24776,7 @@ usr/share/man/man1/tapi-reexport.1.zst			    tapi
 usr/share/man/man1/tapi-stubify.1.zst			    tapi
 usr/share/man/man1/tapi.1.zst				    tapi
 usr/share/man/man1/tar.1.zst				    tar
+usr/share/man/man1/tcpdump.1.zst			    tcpdump
 usr/share/man/man1/tee.1.zst				    coreutils
 usr/share/man/man1/telnet.1.zst				    inetutils
 usr/share/man/man1/test.1.zst				    coreutils

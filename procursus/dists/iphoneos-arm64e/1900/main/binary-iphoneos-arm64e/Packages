@@ -5953,6 +5953,32 @@ SHA512: 7060360ada36435fbbd0aafb12e6ed0beff1a478801ec482557e0257d9620d7f5629f206
 Homepage: http://www.gnu.org/software/tar/
 Description: tool for making tape archives
 
+Package: tcpdump
+Architecture: iphoneos-arm64e
+Version: 4.99.1-1
+Priority: optional
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1220
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3, libpcapa
+Filename: pool/main/iphoneos-arm64e/1900/tcpdump/tcpdump_4.99.1-1_iphoneos-arm64e.deb
+Size: 535508
+MD5sum: 52b78fb4784f1218df1b968ab3a28e17
+SHA1: 56629c464a75602414830b9de4dfecff80075757
+SHA256: 67af0b6cdfad21241bf49713fbbaaf98bededc23950bb8a488bb202ed22439ae
+SHA512: e834f34f1ea704bcb103e0523cd1a72bde333fb9315c29db9ff3a48ded45f503609ae5f4f79d09d7e9e9297cc0296bd7c3af8e51384c497bfda78cc748229e34
+Homepage: http://www.tcpdump.org/
+Description: command-line network traffic analyzer
+ This program allows you to dump the traffic on a network. tcpdump
+ is able to examine IPv4, ICMPv4, IPv6, ICMPv6, UDP, TCP, SNMP, AFS
+ BGP, RIP, PIM, DVMRP, IGMP, SMB, OSPF, NFS and many other packet
+ types.
+ .
+ It can be used to print out the headers of packets on a network
+ interface, filter packets that match a certain expression. You can
+ use this tool to track down network problems, to detect attacks
+ or to monitor network activities.
+
 Package: text-cmds
 Architecture: iphoneos-arm64e
 Version: 1:154
