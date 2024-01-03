@@ -4430,6 +4430,82 @@ SHA256: 528568b729e02702cff16843c240fd4a84182d53cf2a2d62fba040bdbbc0a0f8
 SHA512: 433b96adc47f96e0ad7820f5053849852d4a59c3bff721cf81f22dae8a74845f3d143cedd9b94ad0ff3b236722b639742490d3597229c9c19dfa59674e6614e0
 Description: shows what files programs have open
 
+Package: liblua5.3-0
+Architecture: iphoneos-arm64e
+Version: 5.3.3-1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 236
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.3/liblua5.3-0_5.3.3-1_iphoneos-arm64e.deb
+Size: 92886
+MD5sum: a11c79c74b6b2cd046716cc200d24868
+SHA1: 6f0960096fea3a628ca55e605ea6a5d10332d5f7
+SHA256: 57b9b5842498b167e1ef9cefdc2f6d7cec6ba209184dcfd363ed829a6ee6d3e8
+SHA512: a42498dab4d480bd66e7a5dc8afe6ddabff9f6d6f2a04cce8efdb99492f470ddc3464cb069c8ef497124811491c5f3fc88aa4035e5f4bb550b2fbda45fa38138
+Description: Shared library for the Lua interpreter version 5.3
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+
+Package: liblua5.3-dev
+Architecture: iphoneos-arm64e
+Version: 5.3.3-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.6), liblua5.3-0 (= 5.3.3-1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.3/liblua5.3-dev_5.3.3-1_iphoneos-arm64e.deb
+Size: 15258
+MD5sum: 9467dbce4511986b1252efe4047e7715
+SHA1: 1e286593c6480572e46a508eaf24b13737540c6e
+SHA256: d20bf2413650a66cdae241b8a44012adeebebc6c2d843a03b2f5dd6a1609c0c3
+SHA512: baa578e48720f1eaa61d33276c6c8d6407c00926bb5b337460423c954ec24e2c9ae437f879b2a0410823d53261678f225e7e3d4155af45ba4111500d984d81a3
+Description: Development files for the Lua language version 5.3
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains developer resources for using the Lua library.
+ Install it if you are developing programs which use the Lua C API.
+ .
+ This package also contains the official manual covering the Lua language
+ and C API.
+
+Package: lua5.3
+Architecture: iphoneos-arm64e
+Version: 5.3.3-1
+Priority: standard
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 152
+Provides: lua
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblua5.3-0 (= 5.3.3-1), libreadline8
+Filename: pool/main/iphoneos-arm64e/1800/lua5.3/lua5.3_5.3.3-1_iphoneos-arm64e.deb
+Size: 14208
+MD5sum: ab02bc56f3004464c722d174919c6530
+SHA1: 061f99ce400d3defc3b20d10d30bf71dbf0fdefc
+SHA256: 7951a1857e2f4f0d75c8e9ac701264fa52c488077178ef85befafe9cc5b0c081
+SHA512: 1f362c43735a9913bf7a81c829161a1967eb33bbb77a763ac3e0657bfb86f920ebe787555687d3dd1217904a47d24397cbc75f7d94e1f385d6cfccb5d9434aa5
+Description: Simple, extensible, embeddable programming language
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains the Lua command line interpreter and bytecode compiler.
+ Install it if you are developing or using Lua scripts.
+
 Package: liblz4-1
 Architecture: iphoneos-arm64e
 Version: 1.9.3
@@ -4897,6 +4973,83 @@ Description: server implementing HTTP/2 protocol
  This is a standalone server implementing the HTTP/2 protocol with
  HTTP/1.1 fallback for clients that do not support it. It can be used
  to serve files from a local directory.
+
+Package: ncat
+Architecture: iphoneos-arm64e
+Version: 7.92
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 264
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libpcre1, libssl3, nmap-common (= 7.92), liblua5.3-0
+Conflicts: nmap-utils
+Replaces: nmap-utils
+Filename: pool/main/iphoneos-arm64e/1800/nmap/ncat_7.92_iphoneos-arm64e.deb
+Size: 107366
+MD5sum: 36e517dfe2be60dd072b6440b520ba53
+SHA1: fb87a3fb3f14a593f8cbcb927f1eed9f5ffbbbb9
+SHA256: 51a8cddf7cda67497bc356641ef79fc0798849e09abc8a17967bc79e43a4d365
+SHA512: 2ba7aff156c00993757cbd949fff4b8242b258866f8c75d3c33f5b8613048b02ee06ef8c370b27595cd21e7f1807a6b7e40db204f714ec4c2990f0becce80110
+Description: NMAP netcat reimplementation
+ ncat is a reimplementation of Netcat by the NMAP project, providing 
+ most of the features present in the original implementations, along 
+ with some new features such as IPv6 and SSL support. Port scanning 
+ support has been removed.
+
+Package: nmap-common
+Architecture: all
+Version: 7.92
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 21800
+Depends: roothide (>= 0.0.6)
+Recommends: nmap
+Filename: pool/main/iphoneos-arm64e/1800/nmap/nmap-common_7.92_all.deb
+Size: 5021902
+MD5sum: 1f03ee6dc185e797b6cf5ca745e26ca4
+SHA1: 8316206e4e845e0ab135eed947ebe50d2507dfcc
+SHA256: 358ffddd9bc240a507fb62a59e100af35f11146b4c2cc7d874b3b49effa883bc
+SHA512: 4b5cdeb3088b7a8b27a1b54f27981b7a7dac47af31dafef3265b950de00134bc32badc05da8a3b62a6ab4d1f0eab78c43281a5d182d9046701ad7fae7ea31b3d
+Description: Architecture independent files for nmap
+ Nmap is a utility for network exploration or security auditing. It 
+ supports ping scanning (determine which hosts are up), many port 
+ scanning techniques, version detection (determine service protocols and 
+ application versions listening behind ports), and TCP/IP fingerprinting 
+ (remote host OS or device identification). Nmap also offers flexible 
+ target and port specification, decoy/stealth scanning, sunRPC scanning, 
+ and more. Most Unix and Windows platforms are supported in both GUI and 
+ commandline modes. Several popular handheld devices are also supported, 
+ including the Sharp Zaurus and the iPAQ.
+ .
+ This package contains the nmap files shared by all architectures.
+
+Package: nmap
+Architecture: iphoneos-arm64e
+Version: 7.92
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 3676
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libpcre1, libssl3, nmap-common (= 7.92), liblua5.3-0, libssh2-1, libpcapa
+Conflicts: nmap-utils
+Replaces: nmap-utils
+Filename: pool/main/iphoneos-arm64e/1800/nmap/nmap_7.92_iphoneos-arm64e.deb
+Size: 1585576
+MD5sum: 2823fcfdcde189fba6bf16e20ebdba43
+SHA1: ed99786267a081c055e3937b91a12e9e14f7c244
+SHA256: 38b79e4fb2f46258acb4fc60a2bcbafccf5652981eb42fc2ba2e1699f8d542f2
+SHA512: 5e0c77b03cf6b4fca82100aa35a570fdc7e6cf1a89b18f683eecfdea372a346990a9c018d912ee776b6887e5ae37c8bcc283586d7b77d68b21859e480c156271
+Description: The Network Mapper
+ Nmap is a utility for network exploration or security auditing. It 
+ supports ping scanning (determine which hosts are up), many port 
+ scanning techniques, version detection (determine service protocols and 
+ application versions listening behind ports), and TCP/IP fingerprinting 
+ (remote host OS or device identification). Nmap also offers flexible 
+ target and port specification, decoy/stealth scanning, sunRPC scanning, 
+ and more. Most Unix and Windows platforms are supported in both GUI and 
+ commandline modes. Several popular handheld devices are also supported, 
+ including the Sharp Zaurus and the iPAQ.
 
 Package: libnpth0-dev
 Architecture: iphoneos-arm64e
