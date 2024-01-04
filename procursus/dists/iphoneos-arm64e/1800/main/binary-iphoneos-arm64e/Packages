@@ -90,6 +90,23 @@ Description: commandline package manager
  managing as well as querying information about packages
  as a low-level access to all features of the libapt-pkg library.
 
+Package: arpoison
+Architecture: iphoneos-arm64e
+Version: 0.7
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 72
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libnet9
+Filename: pool/main/iphoneos-arm64e/1800/arpoison/arpoison_0.7_iphoneos-arm64e.deb
+Size: 10616
+MD5sum: d457669751bad1184a21d88197e3a065
+SHA1: edde225fba0f02a5a97fa2040085af432d83be3d
+SHA256: b71a17241d2cb53e6359f2212bc40948139aa738fbc4e6158c9f1fb38d33166a
+SHA512: c218386e146d53a7ff1c934be549ecd137c8056aac6e723b93df0ceae660341b177c80c63398ff9336b26e85b512822fb8191d951bce78b8e50e939f1838486a
+Homepage: http://www.arpoison.net/
+Description: Generates user-defined ARP packets
+
 Package: base
 Architecture: iphoneos-arm64e
 Version: 1-6
@@ -3081,6 +3098,63 @@ Description: message digest functions from BSD systems - shared library
  The libmd library provides various message digest ("hash") functions,
  as found on various BSDs on a library with the same name and with a
  compatible API.
+
+Package: libnet-dev
+Architecture: iphoneos-arm64e
+Version: 1.2
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 556
+Depends: roothide (>= 0.0.6), libnet9 (= 1.2)
+Filename: pool/main/iphoneos-arm64e/1800/libnet/libnet-dev_1.2_iphoneos-arm64e.deb
+Size: 169584
+MD5sum: 696ed6110a946e39260f37b2c91df43b
+SHA1: 0bac87863524b0a941aaeb5328c8a63d46d06758
+SHA256: 133aec2f8f902cf05beedd06975875187bdfff04cbfcca3f8879b80e2c0b8b16
+SHA512: 9847c88ed5738e7ae5cf4c5ef46f247d118c487a0938f7caf2c96846d375f45b22dd0cd0f877f4dd1dca5ae8770efa05428163e218d25d9dd357d5267c187e83
+Description: development files for libnet
+ libnet provides a portable framework for low-level network packet
+ writing and handling.
+ .
+ libnet features portable packet creation interfaces at the IP layer
+ and link layer, as well as a host of supplementary functionality.
+ .
+ Using libnet, quick and simple packet assembly applications can be
+ whipped up with little effort. With a bit more time, more complex
+ programs can be written (Traceroute and ping were easily rewritten
+ using libnet and libpcap).
+ .
+ This package contains the files needed to compile and link programs
+ that use libnet.
+
+Package: libnet9
+Architecture: iphoneos-arm64e
+Version: 1.2
+Priority: optional
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 116
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libnet/libnet9_1.2_iphoneos-arm64e.deb
+Size: 34042
+MD5sum: 9373a559461b7ad6e675c9fd84c5356e
+SHA1: 207bb214210e0a37181fd2381ba7bf3167264a1e
+SHA256: eaebcf1147943a452968ffd5f75731b71aedc1a870b603a0bc338dd72da6cea9
+SHA512: 316c0980ee62fd5b76350dd4226e1a06257854d5caf96d16fe09587ffca031ece5864a735f5ae54e442d0bbdf1e43f055945a24a64a4b8ad15f60aa18a8569ee
+Description: library for the construction and handling of network packets
+ libnet provides a portable framework for low-level network packet
+ writing and handling.
+ .
+ libnet features portable packet creation interfaces at the IP layer
+ and link layer, as well as a host of supplementary functionality.
+ .
+ Using libnet, quick and simple packet assembly applications can be
+ whipped up with little effort. With a bit more time, more complex
+ programs can be written (Traceroute and ping were easily rewritten
+ using libnet and libpcap).
+ .
+ This package contains the shared library.
 
 Package: libonig-dev
 Architecture: iphoneos-arm64e

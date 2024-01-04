@@ -160,6 +160,7 @@ usr/bin/apt-mark					    apt
 usr/bin/apt-sortpkgs					    apt-utils
 usr/bin/ar						    odcctools
 usr/bin/arch						    system-cmds
+usr/bin/arpoison					    arpoison
 usr/bin/as						    odcctools
 usr/bin/asn1Coding					    libtasn1-bin
 usr/bin/asn1Decoding					    libtasn1-bin
@@ -1254,6 +1255,13 @@ usr/include/libintl.h					    libintl-dev
 usr/include/libiosexec.h				    libiosexec-dev
 usr/include/libkrw.h					    libkrw-dev
 usr/include/libkrw_plugin.h				    libkrw-dev
+usr/include/libnet.h					    libnet-dev
+usr/include/libnet/libnet-asn1.h			    libnet-dev
+usr/include/libnet/libnet-functions.h			    libnet-dev
+usr/include/libnet/libnet-headers.h			    libnet-dev
+usr/include/libnet/libnet-macros.h			    libnet-dev
+usr/include/libnet/libnet-structures.h			    libnet-dev
+usr/include/libnet/libnet-types.h			    libnet-dev
 usr/include/librtmp/amf.h				    librtmp-dev
 usr/include/librtmp/http.h				    librtmp-dev
 usr/include/librtmp/log.h				    librtmp-dev
@@ -2164,6 +2172,9 @@ usr/lib/libncurses++w.a					    libncurses-dev
 usr/lib/libncursesw.6.dylib				    libncursesw6
 usr/lib/libncursesw.a					    libncurses-dev
 usr/lib/libncursesw.dylib				    libncurses-dev
+usr/lib/libnet.9.dylib					    libnet9
+usr/lib/libnet.a					    libnet-dev
+usr/lib/libnet.dylib					    libnet-dev
 usr/lib/libnettle.8.6.dylib				    libnettle8
 usr/lib/libnettle.8.dylib				    libnettle8
 usr/lib/libnettle.a					    nettle-dev
@@ -8637,6 +8648,7 @@ usr/lib/pkgconfig/libimobiledevice-1.0.pc		    libimobiledevice-dev
 usr/lib/pkgconfig/libimobiledevice-glue-1.0.pc		    libimobiledevice-glue-dev
 usr/lib/pkgconfig/liblz4.pc				    liblz4-dev
 usr/lib/pkgconfig/libmagic.pc				    libmagic-dev
+usr/lib/pkgconfig/libnet.pc				    libnet-dev
 usr/lib/pkgconfig/libnghttp2.pc				    libnghttp2-dev
 usr/lib/pkgconfig/libpcap.pc				    libpcapa-dev
 usr/lib/pkgconfig/libpcre.pc				    libpcre1-dev
@@ -20921,6 +20933,8 @@ usr/share/doc/apt-utils/AUTHORS				    apt-utils
 usr/share/doc/apt-utils/COPYING				    apt-utils
 usr/share/doc/apt/AUTHORS				    apt
 usr/share/doc/apt/COPYING				    apt
+usr/share/doc/arpoison/LICENSE				    arpoison
+usr/share/doc/arpoison/README.zst			    arpoison
 usr/share/doc/autopoint/AUTHORS				    autopoint
 usr/share/doc/autopoint/COPYING				    autopoint
 usr/share/doc/autopoint/NEWS.zst			    autopoint
@@ -21421,6 +21435,8 @@ usr/share/doc/libncursesw6/AUTHORS			    libncursesw6
 usr/share/doc/libncursesw6/COPYING			    libncursesw6
 usr/share/doc/libncursesw6/NEWS.zst			    libncursesw6
 usr/share/doc/libncursesw6/README.zst			    libncursesw6
+usr/share/doc/libnet-dev/LICENSE			    libnet-dev
+usr/share/doc/libnet9/LICENSE				    libnet9
 usr/share/doc/libnettle8/AUTHORS			    libnettle8
 usr/share/doc/libnettle8/NEWS.zst			    libnettle8
 usr/share/doc/libnettle8/README.zst			    libnettle8
