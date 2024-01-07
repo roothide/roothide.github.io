@@ -1,3 +1,32 @@
+Package: aircrack-ng
+Architecture: iphoneos-arm64e
+Version: 1.7
+Priority: optional
+Section: Networking
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 2684
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3, libpcre1, libpcapa
+Filename: pool/main/iphoneos-arm64e/1800/aircrack-ng/aircrack-ng_1.7_iphoneos-arm64e.deb
+Size: 543248
+MD5sum: 1ff8c7b0ca845d0504af0738841f4800
+SHA1: 296a50cacb4366a4e4adeb42ff6305735fefd5ba
+SHA256: 162bd96d6c346b010ebee9df5f3734c30a2aacc5b561628d80d5bc46903fc963
+SHA512: 20df481d47e10e649995c0d7194595e9fa76db5882cf92cbe653f5c4c3984140e9bb0bbef0c83bfb23666d9ea1817adf2f7c42c2c7efb0df68b68166ec4eba85
+Homepage: https://www.aircrack-ng.org/
+Description: wireless WEP/WPA cracking utilities
+ aircrack-ng is an 802.11a/b/g WEP/WPA cracking program that can recover a
+ 40-bit, 104-bit, 256-bit or 512-bit WEP key once enough encrypted packets
+ have been gathered. Also it can attack WPA1/2 networks with some advanced
+ methods or simply by brute force.
+ .
+ It implements the standard FMS attack along with some optimizations,
+ thus making the attack much faster compared to other WEP cracking tools.
+ It can also fully use a multiprocessor system to its full power in order
+ to speed up the cracking process.
+ .
+ aircrack-ng is a fork of aircrack, as that project has been stopped by
+ the upstream maintainer.
+
 Package: apt-utils
 Architecture: iphoneos-arm64e
 Version: 2.6.0-1
