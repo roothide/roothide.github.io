@@ -1307,6 +1307,87 @@ Description: fast, scalable, distributed revision control system
  revision tracking capabilities, not dependent on network access or a
  central server.
 
+Package: libglib2.0-0
+Architecture: iphoneos-arm64e
+Version: 2.68.2-1
+Multi-Arch: foreign
+Priority: important
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 12144
+Provides: glib (= 1:0)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libffi8, libintl8, libpcre1
+Conflicts: glib (<< 1:0)
+Replaces: glib (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/glib2.0/libglib2.0-0_2.68.2-1_iphoneos-arm64e.deb
+Size: 3076642
+MD5sum: e9f23331fcb08f7a26d8620953e5fc33
+SHA1: 9f0e2a3f858a30ded97375a39349e9fac76d4c77
+SHA256: ff475745759be7aa07ae2ec3dcec9fdba94a3952378c52eb236b35a79f90b022
+SHA512: eb87b9a2021392c4467d97614bc0bff39abfe563dfc09f0b4149355672658fc7da6d2a328947b18305294e94b3529abac1b867351517b16e8af9c9d00a690157
+Homepage: http://www.gtk.org/
+Description: GLib library of C routines
+
+Package: libglib2.0-bin
+Architecture: iphoneos-arm64e
+Version: 2.68.2-1
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 604
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libglib2.0-0 (= 2.68.2-1)
+Conflicts: glib (<< 1:0)
+Replaces: glib (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/glib2.0/libglib2.0-bin_2.68.2-1_iphoneos-arm64e.deb
+Size: 235896
+MD5sum: 064867e69f8bf1f690063542568c3b65
+SHA1: 43006a6d0245a0f5ab7a4288e183499c42483d4a
+SHA256: e8a3e6ef3b5423af11c019f89fd5bf6a0fa3714d6721b475b7e0991208faf40b
+SHA512: ccda925e34d0e0d65fb150b0b33ae2dc9fbf74284e570d7ab9be881df78b61f87281465c5a5b93301ad93217018c041c7d2fe051a14782a4ee09e1d416c67248
+Homepage: http://www.gtk.org/
+Description: Programs for the GLib library
+
+Package: libglib2.0-dev-bin
+Architecture: iphoneos-arm64e
+Version: 2.68.2-1
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 868
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libglib2.0-0 (>= 2.65.0)
+Conflicts: glib (<< 1:0)
+Replaces: glib (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/glib2.0/libglib2.0-dev-bin_2.68.2-1_iphoneos-arm64e.deb
+Size: 271460
+MD5sum: f683187a0c1b2b825420e8a13008dba0
+SHA1: 4f6a1fa6f1c76fc6831e55658bb51b4dea16ce44
+SHA256: da32442bf95789e454e1efa117ac2fe57d5aaeef12decdf2854f78b09e18327e
+SHA512: 27afcf4115ea1aa62937536353cd60f4c7af24cb16b18636e97c3c96d2f84663f39f0c1e4767754e4626f642f835e69079a947a5d7ac4c3035d6663549d1a2eb
+Homepage: http://www.gtk.org/
+Description: Development utilities for the GLib library
+
+Package: libglib2.0-dev
+Architecture: iphoneos-arm64e
+Version: 2.68.2-1
+Multi-Arch: foreign
+Priority: important
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 2964
+Depends: roothide (>= 0.0.6), libglib2.0-0 (= 2.68.2-1), libglib2.0-dev-bin (= 2.68.2-1), libffi-dev, libpcre1-dev, libintl-dev
+Conflicts: glib (<< 1:0)
+Replaces: glib (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/glib2.0/libglib2.0-dev_2.68.2-1_iphoneos-arm64e.deb
+Size: 520284
+MD5sum: 78e4656ba38b91aee69694e46ec397e7
+SHA1: aad082f68d6c6116a39cab761aff068e8261293f
+SHA256: 45f9fb80b40e0d2c67c38c31e5db0248568a056261b73638ddae9e8c86a5010c
+SHA512: 59d239ad069e4c0160136bb5f5a0950be6b5fd09de0af22c020f727e369614d36662bdf9b3e494a86a77a6a38fb6944788b020cb1c4bb0c9d6c49bcf70b49f18
+Homepage: http://www.gtk.org/
+Description: Development files for the GLib library
+
 Package: dirmngr
 Architecture: iphoneos-arm64e
 Version: 2.3.6
@@ -5870,6 +5951,24 @@ Description: Larry Wall's Practical Extraction and Report Language
  development. Some of these modules include Web frameworks, database
  integration, networking protocols, and encryption. Perl provides
  interfaces to C and C++ for custom extension development.
+
+Package: pkg-config
+Architecture: iphoneos-arm64e
+Version: 0.29.2-3
+Multi-Arch: foreign
+Priority: important
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 148
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libglib2.0-0 (>= 2.65.0), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/pkg-config/pkg-config_0.29.2-3_iphoneos-arm64e.deb
+Size: 46674
+MD5sum: d214c6d881945d1ef9df1ff52da42b2f
+SHA1: 9b8f701b573bc074c6443687b175712b5907a302
+SHA256: f22f2dceeb960f495c757976cd8e19f2724d06e7bcbcaf274c9dbf6c6db7d9e1
+SHA512: 94afee5363d34d4553e4de6d27b9572af002ac610bf316fbf66bfcd4fae5595d3ff33ab34ceac1a57601ec04f2a601ab95bb8ef14ff5a7e52f7356a7e7c52a2d
+Homepage: https://www.freedesktop.org/wiki/Software/pkg-config/
+Description: manage compile and link flags for libraries
 
 Package: plutil
 Architecture: iphoneos-arm64e

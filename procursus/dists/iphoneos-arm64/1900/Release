@@ -1,17 +1,17 @@
 Architectures: iphoneos-arm64
 Codename: 1800
 Components: main testing
-Date: Thu, 04 Jan 2024 05:51:59 +0000
+Date: Sun, 07 Jan 2024 01:07:24 +0000
 Description: Distribution of essential tools for iPhoneOS
 Label: Procursus(roothide)
 Origin: Procursus(roothide)
 Suite: stable
 Version: 1.0a1
 MD5Sum:
- 4993a6df2a302ce4b6323cc223cec2d6              250 Release
+ 9268054c0e4793e79bfe12b9e46a314a              250 Release
 SHA1:
- 48825640ea49c4e0c02420e73b06bb60ffaf8085              250 Release
+ d17d0fc3851d37596920d0dde30970765026b346              250 Release
 SHA256:
- a20fc949d3e208f1165cb0a28263510cdc99875301bb6a382bd8db420728d427              250 Release
+ 6b3db0886b0549fd82bf48ea998ae49572e29d766a032cf5b5123bbd5f5091af              250 Release
 SHA512:
- f9161751df2f743710692d83baad82f8a186c939fb5bbee3309ffe53eafc70e65fcab15320349cb5b01903d09130ca398109cb79bc0fadd6c8eebfd5366b67d0              250 Release
+ 85fabe8f4dd290ac4a6a9c0ce1e78b192fd8c1159b51b569bea418a0d80f743b96b482558acfff95a25023a7ea639cf62c64b2fdf393948f09fc19b2ecdc8a8a              250 Release
