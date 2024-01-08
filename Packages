@@ -1212,6 +1212,26 @@ Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
 Name: Zebra
 Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
 
+Package: xyz.willy.zebra
+Version: 1.1.35-91+debug
+Architecture: iphoneos-arm64e
+Maintainer: Zebra Team <team@getzbra.com>
+Installed-Size: 10768
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: ./debfiles/xyz.willy.zebra_1.1.35-91+debug_iphoneos-arm64e.deb
+Size: 4437750
+MD5sum: 495a848e4ca041af331b7368fda2bec2
+SHA1: 7a4d93a1df613f28372320f5ea7f9624ad8dbcd4
+SHA256: 9b0763a401c5b334c1355f3f8b2607c8438677637c43585f9d3e1ad45ebcfff8
+Section: Packaging
+Description: A Useful Package Manager
+Tag: compatible::9.0-16.4
+Author: Zebra Team <team@getzbra.com>
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Name: Zebra
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+
 Package: zp.stopautolaunchapps
 Version: 1.0.2
 Architecture: iphoneos-arm64e

@@ -171,6 +171,158 @@ SHA512: b51ff2c115da3ecf427f5a375e7c1444f46ce6262c2e68218415c3a7ae93ac79da3a5324
 Homepage: http://www.gnu.org/software/bash/
 Description: the best shell ever written by Brian Fox
 
+Package: db18.1-util
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 832
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3, libdb18.1
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/db18.1-util_18.1.40-1_iphoneos-arm64e.deb
+Size: 66852
+MD5sum: 7a1865536b74be9c5a15a71058079268
+SHA1: 52bf81bf4d3cbcfb6c3f8f77716b2e1b7b6662ca
+SHA256: ba5921487eede4d43c9613fd2d89c304f628e1f96ae829eac09a4015863b88c3
+SHA512: a9a6762091b369c7d03d324f01207d7a14145ecdf667c5825f34b081b183a36e3c62c8644bd1c3d40605c015c0cc49adf6d11d54f80a18c607ce11845e181bf3
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Berkeley v18.1 Database Utilities
+ This package provides different tools for manipulating databases
+ in the Berkeley v18.1 database format, and includes:
+  - db_archive: write the pathnames of the log files no longer in use.
+  - db_checkpoint: daemon process to monitor the database log and
+    checkpoint it periodically.
+  - db_deadlock: traverse the database environment lock region and
+    abort lock requests when a deadlock is detected.
+  - db_load: loads (and creates) a database from standard input.
+  - db_dump: read a database file and write it in a format understood
+    by db4.{2..8}_load.
+  - db_printlog: dump log files in human readable format.
+  - db_stat: display statistics for Berkeley DB environments.
+  - db_upgrade: upgrades the version of files and the databases they
+    contain.
+  - db_verify: check the structure of files and their databases.
+
+Package: libdb18.1++-dev
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 7784
+Depends: roothide (>= 0.0.6), libdb18.1++ (>= 18.1.40-1)
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1++-dev_18.1.40-1_iphoneos-arm64e.deb
+Size: 4507166
+MD5sum: d03563decbaa55efa8e26ead65439348
+SHA1: 94b772d6281238331996ddbb23e580d56c7adffe
+SHA256: 48e7a5828b6439d725542fb250274b5c69f2582be1f0afcc89bc4118f824d0b0
+SHA512: d263782b242b6ae318a2f152ec3daf12250724bc2055285f1483ec464fed8ddc36b5ca8c729d629405c21f01537b3752243509ebd2899538d794626507784fe0
+Description: Berkeley v5.3 Database Libraries for C++ [development]
+ This is the development package which contains headers and static
+ libraries for the Berkeley v5.3 database library.  This is only for
+ programs which will use the C++ interface.
+
+Package: libdb18.1++
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1660
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: berkeleydb (<< 18.1.40-1)
+Replaces: berkeleydb (<< 18.1.40-1)
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1++_18.1.40-1_iphoneos-arm64e.deb
+Size: 789058
+MD5sum: c4126e71fe386c368cb5b50c34d4cc6e
+SHA1: dc4cf618d7b17a86c2e9f0fc979c5efcf149942f
+SHA256: ec548cee1499bafd1c4457f0acbd4409ccde3a9fd895cf590e0cb6bc43327a8a
+SHA512: 80eba52c0429d7d3169889ef9b1f6387882c463496996bb17443991d886c4bac15e5b9324b5b9747312be51d9a207318732b14e6eab5305fa64a3c4931de821a
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Berkeley v5.3 Database Libraries for C++ [runtime]
+ This is the runtime package for programs that use the Berkeley v5.3
+ database library.  This is only for programs which use the C++ interface.
+
+Package: libdb18.1-dev
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 7388
+Depends: roothide (>= 0.0.6), libdb18.1 (>= 18.1.40-1)
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1-dev_18.1.40-1_iphoneos-arm64e.deb
+Size: 4332060
+MD5sum: 377a06f863150aced9d214a5eb501354
+SHA1: d3f6bf240f63c6ed0ca6877707fb212591862938
+SHA256: 996681fcfc7aee35ae588fa5cd177731eafa2f8bd4ae75d8cc0877d3106dc104
+SHA512: 32a679f3347304ebd879b7f7e49c61cf19c312b7852b7f62869de3896a28a774c9eeb58966f48a8d9a321295b7a8a9b8544c4c8de6aff5ae4aa7e8eb873c545b
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Berkeley v18.1 Database Libraries [development]
+ This is the development package which contains headers and static
+ libraries for the Berkeley v18.1 database library.
+
+Package: libdb18.1-stl-dev
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 8372
+Depends: roothide (>= 0.0.6), libdb18.1-stl (>= 18.1.40-1)
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1-stl-dev_18.1.40-1_iphoneos-arm64e.deb
+Size: 4677238
+MD5sum: 3b4c20061bd38346c3371ba782c48b5f
+SHA1: 51c736996a9eca56d879c020b042787456f968e2
+SHA256: 37106c27c7efe0b0acba871385cb7bd26daf0abdc261806e7fd11e92e34bb31e
+SHA512: d40bd6f4f733abb168968d0472d9aa7ddc70bd85d85eb023f3d0f12ab7053014c18b1f15d365bccb6e0dbcff8c3505010d7a84f5a392feaee476c8c9374dae8f
+Description: Berkeley v5.3 Database Libraries [STL development]
+ This is the development package which contains headers and static
+ libraries for the Berkeley v5.3 database library.
+
+Package: libdb18.1-stl
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1720
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: berkeleydb (<< 18.1.40-1)
+Replaces: berkeleydb (<< 18.1.40-1)
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1-stl_18.1.40-1_iphoneos-arm64e.deb
+Size: 805074
+MD5sum: 555eb2dbdcf4525b69985f309596e8d4
+SHA1: 1afc809478bec7691a4044de7a2d811872296f75
+SHA256: 1809cf4f5a0dc7696e07266571aae49440d700e1df7a0847039f2b6e54f90309
+SHA512: 92fb112a75b9bc352f3a7f9eb2e9e2bded1482a7fee45e4ffb6abd32ea6ef80559c2e6f6c141ead537bae845e9a78c7832943113874469bc6372b4c13bc5799b
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Berkeley v5.3 Database Libraries [STL runtime]
+ This is the runtime package for programs that use the v5.3 Berkeley
+ database STL library.
+
+Package: libdb18.1
+Architecture: iphoneos-arm64e
+Version: 18.1.40-1
+Priority: standard
+Section: Libraries
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 1540
+Provides: berkeleydb (= 18.1.40-1)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: berkeleydb
+Replaces: berkeleydb
+Filename: pool/main/iphoneos-arm64e/1900/berkeleydb/libdb18.1_18.1.40-1_iphoneos-arm64e.deb
+Size: 749856
+MD5sum: 5771eb949270dcc4113381bed8dc3b42
+SHA1: c26f5b365c88ca030d12dd43cfffdbca071ff508
+SHA256: b8f189299e9203aa5fdd07131d151e0be7291cae063896ee434ed80d0e8e79bc
+SHA512: 0ff06ee9a2a7170d172208f806fbc976b4377d621ad0472e002fc3e0697c540de3253ae5aeb9fd59bf04ea058d1e3a18f56bb101a84de90ecc653850d2656bc9
+Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
+Description: Berkeley v18.1 Database Libraries [runtime]
+ This is the runtime package for programs that use the v18.1 Berkeley
+ database library.
+
 Package: brotli
 Architecture: iphoneos-arm64e
 Version: 1.0.9
