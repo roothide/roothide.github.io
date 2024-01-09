@@ -4811,6 +4811,25 @@ Description: Completely free, modern clone of Pico.
  - Toggling features while running
  - Full internationalization support
 
+Package: ncdu
+Architecture: iphoneos-arm64e
+Version: 1.15.1
+Section: Utilities
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 124
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1900/ncdu/ncdu_1.15.1_iphoneos-arm64e.deb
+Size: 44092
+MD5sum: 77b4288c5c75fd195bb1f4eb2c9e3906
+SHA1: 44d0dc42ae451dc99338b811979f0bbdcdd6d4e3
+SHA256: 371674d6093b0f36e3d3d3d05006179003577fd7c44168527ade87e6f355cd9e
+SHA512: 40077c7059ce78ecdd61b7947a8b48911d91a46ffc4b0f9479064e2db49911f1c26c59591b655e6623a1e0ede7b921945c9889e053f3106c8f197cc235a25889
+Homepage: http://dev.yorhel.nl/ncdu/
+Description: ncurses disk usage viewer
+ Ncdu is a ncurses-based du viewer. It provides a fast and easy-to-use interface
+ through famous du utility. It allows one to browse through the directories and
+ show percentages of disk usage with ncurses library.
+
 Package: libncurses-dev
 Architecture: iphoneos-arm64e
 Version: 6.4

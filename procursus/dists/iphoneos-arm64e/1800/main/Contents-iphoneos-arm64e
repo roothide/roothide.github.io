@@ -624,6 +624,7 @@ usr/bin/mtor						    odcctools
 usr/bin/mv						    coreutils
 usr/bin/nano						    nano
 usr/bin/ncat						    ncat
+usr/bin/ncdu						    ncdu
 usr/bin/ncursesw6-config				    libncurses-dev
 usr/bin/neofetch					    neofetch
 usr/bin/nettle-hash					    nettle-bin
@@ -22146,6 +22147,8 @@ usr/share/doc/nano/README.zst				    nano
 usr/share/doc/nano/THANKS.zst				    nano
 usr/share/doc/nano/TODO.zst				    nano
 usr/share/doc/ncat/LICENSE				    ncat
+usr/share/doc/ncdu/COPYING				    ncdu
+usr/share/doc/ncdu/README.zst				    ncdu
 usr/share/doc/ncurses-bin/AUTHORS			    ncurses-bin
 usr/share/doc/ncurses-bin/COPYING			    ncurses-bin
 usr/share/doc/ncurses-bin/NEWS.zst			    ncurses-bin
@@ -25216,6 +25219,7 @@ usr/share/man/man1/mtoc.1.zst				    odcctools
 usr/share/man/man1/mv.1.zst				    coreutils
 usr/share/man/man1/nano.1.zst				    nano
 usr/share/man/man1/ncat.1.zst				    ncat
+usr/share/man/man1/ncdu.1.zst				    ncdu
 usr/share/man/man1/ncursesw6-config.1.zst		    libncurses-dev
 usr/share/man/man1/neofetch.1.zst			    neofetch
 usr/share/man/man1/netstat.1.zst			    network-cmds
