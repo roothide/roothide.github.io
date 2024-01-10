@@ -1112,6 +1112,29 @@ SHA512: 826240c76e530d5191af2ec2eb3e283f8119f08a14dd3416dcd101005e2822b8925095d5
 Homepage: http://www.gnu.org/software/findutils/
 Description: indexes and searches filesystems
 
+Package: fish
+Architecture: iphoneos-arm64e
+Version: 3.4.1
+Multi-Arch: foreign
+Priority: optional
+Section: Terminal_Support
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 15456
+Pre-Depends: debianutils (>= 4.11.2)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6, libintl8, libpcre2-32-0, debianutils (>= 4.11.2), awk
+Recommends: python3, lynx, man-db
+Filename: pool/main/iphoneos-arm64e/1800/fish/fish_3.4.1_iphoneos-arm64e.deb
+Size: 2798384
+MD5sum: 82cb9f62d791cbdd15d16f17370c5141
+SHA1: 546f85042fa203176b6db7f7d899992a0418113d
+SHA256: 886124b8e0bb9f485c8954c21810e28538ceae5ac80e5fe5180fab34c149f049
+SHA512: a681e17bb14296c355528eaf265f2499a4ee96a710a16d1687a7bfabaf3939bd73f22a830d5acc9049dc721335d1ccaa212d0f092c1d17c7a037cbdac5283612
+Homepage: https://fishshell.com
+Description: friendly interactive shell
+ Fish is a shell geared towards interactive use.  Its features are focused on
+ user friendliness and discoverability.  The language syntax is simple but
+ incompatible with other shell languages.
+
 Package: gawk
 Architecture: iphoneos-arm64e
 Version: 5.1.0-2
