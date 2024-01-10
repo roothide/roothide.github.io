@@ -1839,6 +1839,185 @@ Description: GNU TLS library - C++ runtime library
  .
  This package contains the C++ runtime libraries.
 
+Package: golang-1.20-go
+Architecture: iphoneos-arm64e
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 88724
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), golang-1.20-src (>= 1.20), clang
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.20-go_1.20_iphoneos-arm64e.deb
+Size: 35533428
+MD5sum: 0933eed41580c122faf9c0e02648379b
+SHA1: fc0aeadbd980487ac9c1d02c09d75ccb80d9876d
+SHA256: 7312ff5ba61a5fe98195248070bf882277ced08d02d01e6f0baf4cdad97f3896
+SHA512: 11e1f5998dd8dc985e949b807cb39c39c8cd11d400ede9e43c9fcd93b01c31ac91c1947bb1afdc32befdd60352eb5a483c5609adbbac071c2ac1b22855cc0e7f
+Homepage: https://golang.org
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This package provides an assembler, compiler, linker, and compiled libraries
+ for the Go programming language.
+ .
+ To use this version, instead of the default one provided by golang-go package,
+ add /usr/lib/go-1.18/bin/ to PATH, or invoke /usr/lib/go-1.18/bin/go directly.
+
+Package: golang-1.20-src
+Architecture: iphoneos-arm64e
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 141344
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libiosexec-dev
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.20-src_1.20_iphoneos-arm64e.deb
+Size: 23805144
+MD5sum: a9a8e02a19b289ee9c98a14cb72450f8
+SHA1: f1eaf7a962c6c25d30b18ceb07026a0f3df6ca6d
+SHA256: 90d96b4ff8c57b3f1bf1d290a92fad9a3eb607f3d7f7faadb8b439c4065842a5
+SHA512: 02a1a40b1eb20816fb792d8eb792ebfffcfac53a9fa1797f2ef35672edf60e93eb8a4c7cbbf0f2823cabeafc33fadb1c062b71813b077cb684bc61ec48384fbc
+Homepage: https://golang.org
+Description: Go programming language - source files
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This package provides the Go programming language source files needed for
+ compilation.
+
+Package: golang-1.20
+Architecture: all
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.6), golang-1.20-go (>= 1.20), golang-1.20-src (>= 1.20)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.20_1.20_all.deb
+Size: 2078
+MD5sum: 6a4a07ecb216acae42df214928622c99
+SHA1: 9943379910a6437b3bdebc9d98022776c0bdf990
+SHA256: 3ca6e35cc6b7ab99606e7ec775f2387b16989e8b38a2c6403e4ee107393e770e
+SHA512: 518582e0b19bdfa943ea2609914f79d579625441e6232d1d03126d3c1169c4eb55a516bfe1e0f7ee9583075df58f206efe12694318d484c2a1e286a01a1f7319
+Homepage: https://golang.org
+Description: Go programming language compiler - metapackage
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a
+ dynamically typed, interpreted language.
+ .
+ This package is a metapackage that, when installed, guarantees
+ that (most of) a full Go development environment is installed.
+ .
+ To use this version, instead of the default one provided by golang-go
+ package, add /usr/lib/go-1.18/bin/ to PATH, or invoke /usr/lib/go-1.18/bin/go
+ directly.
+
+Package: golang-go
+Architecture: all
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 100
+Depends: roothide (>= 0.0.6), golang-1.20-go (>= 1.20)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-go_1.20_all.deb
+Size: 40566
+MD5sum: 6314caa22ed4e1de5519f77db95ef57a
+SHA1: a58d7c8d639bb7fff842b42c2cda341c359a5123
+SHA256: 1d832091af11396a39de6739379048c24e0074cbc1ec9f533e29e286c70928b9
+SHA512: 5f4e3a0a4bd2a0c840d05aa4b2a58c71a1ae10173961054bac8ee55efee33e3da0548211c532994f62ab614fdae6b716374f350043b7f4744037c3998a2efe7f
+Homepage: https://golang.org
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go toolchain and
+ compiled standard library. It is only built on architectures that have a
+ native toolchain ("gc compiler"). Packages that want to build with whichever
+ of gc or gccgo is available should depend on golang-any.
+
+Package: golang-src
+Architecture: all
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.6), golang-1.20-src (>= 1.20)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-src_1.20_all.deb
+Size: 2056
+MD5sum: adfe1c0c1eeb2760b1b6e0dd45108bb1
+SHA1: 88fa5c2d9db4babe35d1f63c89028cb3203c6a7f
+SHA256: 602de79700d12616f4381be3e32d5dc7efb5738415b63e6687b88cae88ecfcb1
+SHA512: 662c636033983b3c3d8ba91e875703cfcb6e5870db4b6cf5818fc4800861408148aba827139fc20813de3f04c9a40e830950f974d9f653dd8234b101d7311867
+Homepage: https://golang.org
+Description: Go programming language - source files
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go standard library
+ source code, which is needed for the go build process.
+
+Package: golang
+Architecture: all
+Version: 1.20
+Priority: optional
+Section: Development
+Maintainer: RootHide <RootHideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.6), golang-go (>= 1.20), golang-src (>= 1.20)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang_1.20_all.deb
+Size: 1984
+MD5sum: 67e0d7eb4b49b2513b34e42c86908338
+SHA1: 3d894d62ec17fead2d9cd02c8843d8d2e58396c1
+SHA256: 5dd74ec2e087b5abecd4a9764bfdfd9bea8a4f2ecaade066b12a29b1135106a7
+SHA512: cb6af4e11e89929e3f893af9464df5db9fd5b8949f5cdd4e8d937011237071438518d71047513395b623b546ba7f8c5971b093325766f12f38a20a9ea2ae58a0
+Homepage: https://golang.org
+Description: Go programming language compiler - metapackage
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a
+ dynamically typed, interpreted language.
+ .
+ This package is a metapackage that, when installed, guarantees
+ that (most of) a full Go development environment is installed.
+
 Package: libgpgme-dev
 Architecture: iphoneos-arm64e
 Version: 1.17.1
