@@ -427,6 +427,84 @@ Description: Common CA certificates
  .
  Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
 
+Package: capstone-tool
+Architecture: iphoneos-arm64e
+Version: 5.0~git20230223.6e6e602
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 92
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/capstone/capstone-tool_5.0~git20230223.6e6e602_iphoneos-arm64e.deb
+Size: 18622
+MD5sum: 4a87e09e3d15a622688433bf12351a91
+SHA1: d49744c86bab0b673657ec3c8ec8b01d7b8aca36
+SHA256: fe1d706cb707967e50908c5d887e2e79c611e4c4e2a4275c4a7cbb2631de5f86
+SHA512: ad06ee069b6b274673c79f312a50fc83996ea53f925e951df0b2bb04c22de72d8a308d24fd2ff274339bf597770b7750c6662ca7d0ea0a932947078d1269d5e4
+Homepage: https://www.capstone-engine.org/
+Description: lightweight multi-architecture disassembly framework - command line tool
+ Capstone is a lightweight multi-platform, multi-architecture disassembly
+ framework.
+ .
+ This package contains cstool, a command-line tool to disassemble
+ hexadecimal strings.
+
+Package: libcapstone-dev
+Architecture: iphoneos-arm64e
+Version: 5.0~git20230223.6e6e602
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 5540
+Depends: roothide (>= 0.0.6), libcapstone5 (= 5.0~git20230223.6e6e602)
+Filename: pool/main/iphoneos-arm64e/1900/capstone/libcapstone-dev_5.0~git20230223.6e6e602_iphoneos-arm64e.deb
+Size: 2365598
+MD5sum: afcbeb41ddb3746da7181b5c716af389
+SHA1: ede5191efd0d7bbbcd8015031664ca86216a8f96
+SHA256: 5f875c2fbafd4df88a0ad9fd582cb38f9d0fd7e987e90a17ba4e38fb37f88b17
+SHA512: d6cb06f1552169567ce34c613571fc9f87f0bbf3c3e243fe60086874fc969f6f53db0901eb280644c5d5ea9aac7b30f7495c63bb50f701997f08b1b57f05d8fc
+Homepage: https://www.capstone-engine.org/
+Description: lightweight multi-architecture disassembly framework - devel files
+ Capstone is a lightweight multi-platform, multi-architecture disassembly
+ framework.
+ .
+ These are the development headers and libraries.
+
+Package: libcapstone5
+Architecture: iphoneos-arm64e
+Version: 5.0~git20230223.6e6e602
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 6156
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/capstone/libcapstone5_5.0~git20230223.6e6e602_iphoneos-arm64e.deb
+Size: 875290
+MD5sum: eeb2a27b9d2810d970509b247708c349
+SHA1: bfddbfafb1d9f7b405a6330576a9cec5176860aa
+SHA256: 0cda03bce32ab8ccf0e2ec08413ed9a42db26e789b96bd1ce4c576eff54cd208
+SHA512: 8fbc1e4ff8d6ef21c9ac8019e4206c19cc812bffb93502af58802e04d54accee03c4fe86dd1b427461e4a81392e0fa5f1c0ed0a9cbaf5374a190854799d080aa
+Homepage: https://www.capstone-engine.org/
+Description: lightweight multi-architecture disassembly framework - library
+ Capstone is a lightweight multi-platform, multi-architecture disassembly
+ framework.
+ .
+ Features:
+  - Support hardware architectures: ARM, ARM64 (aka ARMv8), Mips, PowerPC &
+ Intel.
+  - Clean/simple/lightweight/intuitive architecture-neutral API.
+  - Provide details on disassembled instructions (called "decomposer" by some
+ others).
+  - Provide some semantics of the disassembled instruction, such as list of
+ implicit registers read & written.
+  - Implemented in pure C language, with bindings for Java, OCaml and Python
+ ready to use and Ruby, C#, GO & Vala available on git repos.
+  - Native support for Windows & *nix (with OS X, Linux, *BSD & Solaris
+ confirmed).
+  - Thread-safe by design.
+  - Special support for embedding into firmware or OS kernel.
+  - Distributed under the open source BSD license.
+
 Package: ld64
 Architecture: iphoneos-arm64e
 Version: 609-3
@@ -3601,6 +3679,24 @@ SHA256: c1d7d425141db10c15382cbde703206e44aef0977094d72f91c52d37c4118c33
 SHA512: 49852b836e26f9cb81a7e5579604c482945ec233fe724e03bf4c00bae67f012d141090ae64c926fa19296b1cdad1ffb1cb3056c78283a5485c0de1fd59db52f4
 Description: Library for handling Apple binary and XML property lists
 
+Package: libpthread-stubs0-dev
+Architecture: iphoneos-arm64e
+Version: 0.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 12
+Depends: roothide (>= 0.0.6)
+Filename: pool/main/iphoneos-arm64e/1900/libpthread-stubs/libpthread-stubs0-dev_0.4_iphoneos-arm64e.deb
+Size: 4022
+MD5sum: 12d91b246ef9f2cdb152402b07f5540f
+SHA1: 1db6b44b6537f3cd840a3a2181731cf74240c1a1
+SHA256: 3dbac947707eec08755f1a11dc8b74056d96ed33c7a95631476900893d6e9740
+SHA512: 73589108dd735d98a9489abb87d9b79d77d1c875ac8f57308ecca41a028e61a9a9f2df50f93b56aa12e81ab436ce6c0d483bb4c18de0a3e57b33ef1967e47fdf
+Description: pthread stubs not provided by native libc, development files
+ This library provides weak aliases for pthread functions not provided in libc or otherwise available by default. Libraries like libxcb rely on pthread stubs to use pthreads optionally, becoming thread-safe when linked to libpthread, while avoiding any performance hit when running single-threaded. libpthread-stubs supports this behavior even on platforms which do not supply all the necessary pthread stubs.
+ On platforms which already supply all the necessary pthread stubs, this package ships only the pkg-config file pthread-stubs.pc, to allow libraries to unconditionally express a dependency on pthread-stubs and still obtain correct behavior.
+
 Package: libsodium-dev
 Architecture: iphoneos-arm64e
 Version: 1.0.18
@@ -4027,6 +4123,108 @@ Description: libcrypt shared library
  bcrypt-based password hashes
  It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
  as well as a set of extended interfaces like 'crypt_gensalt'.
+
+Package: libzip-dev
+Architecture: iphoneos-arm64e
+Version: 1.9.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 564
+Depends: roothide (>= 0.0.6), libzip5 (= 1.9.2), liblzma-dev, libssl-dev, libzstd-dev
+Conflicts: libzip (<< 1.9.2)
+Filename: pool/main/iphoneos-arm64e/1900/libzip/libzip-dev_1.9.2_iphoneos-arm64e.deb
+Size: 167404
+MD5sum: 5bbe4d3bef4f25edbca22e3f0f61e768
+SHA1: 3916df32abce787895a08f718a50ebfe13e2af7e
+SHA256: 7f23eea51b1bb0d4855a37fd6521be51b65b2ad680134e287845905c0daf162a
+SHA512: fcd7b5c402c9f174745677639d846cd3ece988ae4e6012c589cb55db2d7f34039d4a8338f0c178cd9cc7e70def28f976bc2642178433bd80861fc936b7468d17
+Description: library for reading, creating, and modifying zip archives (development)
+ libzip is a C library for reading, creating, and modifying zip archives. Files
+ can be added from data buffers, files, or compressed data copied directly from
+ other zip archives. Changes made without closing the archive can be reverted.
+ .
+ This package contains the static libraries and headers for developing
+ applications that use the libzip library API.
+
+Package: libzip5
+Architecture: iphoneos-arm64e
+Version: 1.9.2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 188
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblzma5 (>= 5.2.5), libzstd1, libssl3
+Filename: pool/main/iphoneos-arm64e/1900/libzip/libzip5_1.9.2_iphoneos-arm64e.deb
+Size: 65694
+MD5sum: 50f3ddf974ccd868bdaf6077e65a0579
+SHA1: e3c5439e8ef04a93cfa3871bea7be0de7ba09f49
+SHA256: aedc3292f6681f2577094eaaffa8983e9e1eea83f67bdaa88ecf6db959f77136
+SHA512: 6539d03ba4132e93d2ac21842c0bf345807925affd1fe7c4325fe308dd6d76f883f7a94027d787c0a3f91655e002a83fdbb4ce1a76adbd091c1791d3faf002fc
+Description: library for reading, creating, and modifying zip archives (runtime)
+ libzip is a C library for reading, creating, and modifying zip archives. Files
+ can be added from data buffers, files, or compressed data copied directly from
+ other zip archives. Changes made without closing the archive can be reverted.
+ .
+ This package contains the files necessary for running applications that
+ use the libzip library.
+
+Package: zipcmp
+Architecture: iphoneos-arm64e
+Version: 1.9.2
+Priority: optional
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 104
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libzip5 (>= 1.9.2)
+Filename: pool/main/iphoneos-arm64e/1900/libzip/zipcmp_1.9.2_iphoneos-arm64e.deb
+Size: 18276
+MD5sum: 67c3a6519a81c711b21c2b04a8a13a80
+SHA1: 024d25886e82309080f0b1a865a216f769c17aab
+SHA256: a162710357eb1bf99ff1bc220c4804b4c93d82e406507ad374aedab8283121ff
+SHA512: ad26989df8e396a8a2f7faf6228e254dcae24876d685a65350a9faeb205722c0e184e9d4bc0409fbec6366ad23f60e48a845b5b7eb1aced5e9c5a09c041c93ec
+Description: compare contents of zip archives
+ zipcmp compares two zip archives and checks if they contain the same files,
+ comparing their names, uncompressed sizes, and CRCs. File order and compressed
+ size differences are ignored.
+
+Package: zipmerge
+Architecture: iphoneos-arm64e
+Version: 1.9.2
+Priority: optional
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 84
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libzip5 (>= 1.9.2)
+Filename: pool/main/iphoneos-arm64e/1900/libzip/zipmerge_1.9.2_iphoneos-arm64e.deb
+Size: 10040
+MD5sum: 5c599a8898e3eb54d89c6ea2e6ede6ce
+SHA1: c4da33660b6b0ac6ce5813c9f9250d6f804291fa
+SHA256: 7b5d3fb6e6cf72b7def85f94c504de24b54027a06d84067f5c36740eee70c509
+SHA512: ac747088ae3bb034a074b5e9dbc17020d8d0107d56cb094c45d777265f58147e984618e0d40bf0049b44184fe4ea117bcee0e2309c83c225255486068492b744
+Description: merge zip archives
+ zipmerge merges a source zip archives into a target zip archive.
+ By default, files in the source zip archives overwrite existing files of the
+ same name in the target zip archive.
+
+Package: ziptool
+Architecture: iphoneos-arm64e
+Version: 1.9.2
+Priority: optional
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 88
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libzip5 (>= 1.9.2)
+Filename: pool/main/iphoneos-arm64e/1900/libzip/ziptool_1.9.2_iphoneos-arm64e.deb
+Size: 18606
+MD5sum: 473b5392167651d21e0b6d43721c4c38
+SHA1: 06ce149b8a63ba7efed675d990df94a79db6e521
+SHA256: 5173b5a08fe00dfb96446f0862b7e6831965a0676fa6c60b888baeeae46e2cd1
+SHA512: 2ff3684f1c97772bfe4a25d194cf2b0e547e4b5289c61e4319ad2f40572361a2a8ebb4916e818fc01dd95946d73c826ad56cda9105702fe46364dc786d96d1d6
+Description: modify zip archives
+ ziptool is a utility for working with zip archives.  It can modify
+ details of zip archives according to the commands given, including
+ timestamps and other metadata about the included files.
 
 Package: clang-14
 Architecture: iphoneos-arm64e
@@ -6329,6 +6527,124 @@ Description: Interpreted, interactive, object-oriented programming language.
  Installing pip from the command line can be done with the `sudo python -m ensurepip` command.
  After installing pip, place an SDK for your platform in /usr/share/SDKs. (e.g. /usr/share/SDKs/iPhoneOS.sdk)
 
+Package: libradare2-5.8
+Architecture: iphoneos-arm64e
+Version: 5.8.2-1
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 12792
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libradare2-common (= 5.8.2-1), libcapstone5, libssl3, libuv1, libzip5, liblz4-1, libxxhash0, libmagic1
+Filename: pool/main/iphoneos-arm64e/1900/radare2/libradare2-5.8_5.8.2-1_iphoneos-arm64e.deb
+Size: 4203618
+MD5sum: c1cb83dfe026024184056ab3abd2b8b9
+SHA1: fe997177ea0e317431c1d245be51d15b28390e8c
+SHA256: 15593816bda3101602489104b99e6799a77dfe52f5490c58c9bca744c25aa5f4
+SHA512: b63c4920f0e352da8549660aef2e7835ef4a4709adb7e305e64632ef4093d8aa5252e14c28374be80ad077899a5e211b84e75f29237eefea4574f53113f58ee5
+Homepage: https://www.radare.org
+Description: libraries from the radare2 suite
+ The project aims to create a complete, portable, multi-architecture,
+ unix-like toolchain for reverse engineering.
+ .
+ It is composed by an hexadecimal editor (radare) with a wrapped IO
+ layer supporting multiple backends for local/remote files, debugger
+ (OS X, BSD, Linux, W32), stream analyzer, assembler/disassembler (rasm)
+ for x86, ARM, PPC, m68k, Java, MSIL, SPARC, code analysis modules and
+ scripting facilities. A bindiffer named radiff, base converter (rax),
+ shellcode development helper (rasc), a binary information extractor
+ supporting PE, mach0, ELF, class, etc. named rabin, and a block-based
+ hash utility called rahash.
+ .
+ This package provides the libraries from radare2.
+
+Package: libradare2-common
+Architecture: all
+Version: 5.8.2-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 10556
+Depends: roothide (>= 0.0.6)
+Filename: pool/main/iphoneos-arm64e/1900/radare2/libradare2-common_5.8.2-1_all.deb
+Size: 3122196
+MD5sum: 6cc524b1a407139c036621e08d55230b
+SHA1: 38f44f8737535150afe4b04a42862bf81ba5b9a9
+SHA256: 37b82f4e17e20335243de95e08ac154db03cbf234ba0abe5c05737fb55dadf97
+SHA512: 195d1d014054fff39c2fbc7f44617d2be7e6a494f4b710d119b2eee992c62b2975bf12fe67a2ce804fc82a163e4d7b31eb2aa3558c35c1d1bac80bb8d7cdf1bf
+Homepage: https://www.radare.org
+Description: arch independent files from the radare2 suite
+ The project aims to create a complete, portable, multi-architecture,
+ unix-like toolchain for reverse engineering.
+ .
+ It is composed by an hexadecimal editor (radare) with a wrapped IO
+ layer supporting multiple backends for local/remote files, debugger
+ (OS X, BSD, Linux, W32), stream analyzer, assembler/disassembler (rasm)
+ for x86, ARM, PPC, m68k, Java, MSIL, SPARC, code analysis modules and
+ scripting facilities. A bindiffer named radiff, base converter (rax),
+ shellcode development helper (rasc), a binary information extractor
+ supporting PE, mach0, ELF, class, etc. named rabin, and a block-based
+ hash utility called rahash.
+ .
+ This package provides the arch independent files from radare2.
+
+Package: libradare2-dev
+Architecture: iphoneos-arm64e
+Version: 5.8.2-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1560
+Depends: roothide (>= 0.0.6), libradare2-5.8 (= 5.8.2-1), libcapstone-dev, libssl-dev, libuv1-dev, libzip-dev, liblz4-dev, libxxhash-dev, libmagic-dev
+Filename: pool/main/iphoneos-arm64e/1900/radare2/libradare2-dev_5.8.2-1_iphoneos-arm64e.deb
+Size: 264106
+MD5sum: 82fe0f5974cb0193977b6d1830f3837e
+SHA1: fd491c8810715a1d8a9750daca6f530fc8d15621
+SHA256: ff356e74d5b427e4c41135f32b41622a8c938b033af366ca8350bf0b33ce509c
+SHA512: 101be090843a92fe2811fe3a45f5d6a08c240459dcfee2684fcf07e6a566cd6540fa83547e7633fb0d95bb95c64c0808901ac14207d071aefd69b1f9d91ded15
+Homepage: https://www.radare.org
+Description: devel files from the radare2 suite
+ The project aims to create a complete, portable, multi-architecture,
+ unix-like toolchain for reverse engineering.
+ .
+ It is composed by an hexadecimal editor (radare) with a wrapped IO
+ layer supporting multiple backends for local/remote files, debugger
+ (OS X, BSD, Linux, W32), stream analyzer, assembler/disassembler (rasm)
+ for x86, ARM, PPC, m68k, Java, MSIL, SPARC, code analysis modules and
+ scripting facilities. A bindiffer named radiff, base converter (rax),
+ shellcode development helper (rasc), a binary information extractor
+ supporting PE, mach0, ELF, class, etc. named rabin, and a block-based
+ hash utility called rahash.
+ .
+ This package provides the devel files from radare2.
+
+Package: radare2
+Architecture: iphoneos-arm64e
+Version: 5.8.2-1
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 868
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libradare2-5.8 (= 5.8.2-1)
+Filename: pool/main/iphoneos-arm64e/1900/radare2/radare2_5.8.2-1_iphoneos-arm64e.deb
+Size: 62680
+MD5sum: 2d1610953634c56fe066eb793d786800
+SHA1: 601694a320016f95d7746aa8f0290b55a340432e
+SHA256: 4e56d2a89959cf61550483f0a3be55033ff0f5c3e9b1bb964d539160b7fb3db7
+SHA512: 49da30e3222ad71aae5a4427a22fc6171b0cc67ea3c0eafa3cb2b680f285cb1b5bdaf3fef1370d5f2a6ad2bc63c0e546ecce99e3a029db1167a84de68954d699
+Homepage: https://www.radare.org
+Description: free and advanced command line hexadecimal editor
+ The project aims to create a complete, portable, multi-architecture,
+ unix-like toolchain for reverse engineering.
+ .
+ It is composed by an hexadecimal editor (radare) with a wrapped IO
+ layer supporting multiple backends for local/remote files, debugger
+ (OS X, BSD, Linux, W32), stream analyzer, assembler/disassembler (rasm)
+ for x86, ARM, PPC, m68k, Java, MSIL, SPARC, code analysis modules and
+ scripting facilities. A bindiffer named radiff, base converter (rax),
+ shellcode development helper (rasc), a binary information extractor
+ supporting PE, mach0, ELF, class, etc. named rabin, and a block-based
+ hash utility called rahash.
+
 Package: rar
 Architecture: iphoneos-arm64e
 Version: 6.1
@@ -6387,6 +6703,40 @@ SHA1: 226436258952eb656296949f2b085306716d1166
 SHA256: 0fc7b5369799029b5cd34ac5687108642fdf5577c979032e2d41e771ee2b0d12
 SHA512: e709a522f71bf11dcad579b1d8de40b553030e8fd8bcd3806b07339c72cc683e5e7b0d368dff46139641e09edda787eb7b93c3b754b399405bc0ba684cbc881c
 Description: GNU readline and history libraries, run-time libraries
+
+Package: ripgrep
+Architecture: iphoneos-arm64e
+Version: 12.1.1-1
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 3824
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libpcre2-8-0
+Filename: pool/main/iphoneos-arm64e/1900/ripgrep/ripgrep_12.1.1-1_iphoneos-arm64e.deb
+Size: 1460134
+MD5sum: 8a0800457d544e477fd89c5152909bc3
+SHA1: 8acb6121640274bcae6b3b7fd0db18b8b5ff55ff
+SHA256: d9bacbf2c8f19219ba003f964f83368673c153858d371615969c5577c641fb5d
+SHA512: 16a09924d8445e5a81041903f5c546e65bacd4430002303dbe7fe8712acf234f08793f2f4692dbf4823a34757764202c5b11352cd621c7feb8d384bd060890ba
+Description: Recursively searches directories for a regex pattern
+ ripgrep is a line-oriented search tool that recursively searches your current
+ directory for a regex pattern while respecting your gitignore rules and
+ automatically skip hidden files/directories (smart filtering) and binary files.
+ ripgrep is similar to other popular search tools like The Silver Searcher, ack
+ and grep.
+ .
+ ripgrep is generally faster than both The Silver Searcher and GNU grep. It
+ defaults to recursive directory search and won't search files ignored by your
+ `.gitignore` files. Use ripgrep if you like speed, filtering by default, fewer
+ bugs, and Unicode support.
+ .
+ On the other hand, if you like multiline search, then ripgrep may not quite
+ meet your needs (yet), and it will never support fancy regex features such as
+ backreferences or lookaround
+ .
+ This package contains the following binaries built from the Rust crate
+ "ripgrep":
+  - rg
 
 Package: roothide
 Architecture: iphoneos-arm64e
