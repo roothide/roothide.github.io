@@ -209,7 +209,9 @@ usr/bin/bitcode_strip					    odcctools
 usr/bin/brotli						    brotli
 usr/bin/bsdcat						    libarchive-tools
 usr/bin/bsdcpio						    libarchive-tools
+usr/bin/bsdiff						    bsdiff
 usr/bin/bsdtar						    libarchive-tools
+usr/bin/bspatch						    bsdiff
 usr/bin/buddy-ng					    aircrack-ng
 usr/bin/bugpoint					    llvm
 usr/bin/bunzip2						    bzip2
@@ -507,6 +509,7 @@ usr/bin/idevicediagnostics				    libimobiledevice-utils
 usr/bin/ideviceenterrecovery				    libimobiledevice-utils
 usr/bin/ideviceimagemounter				    libimobiledevice-utils
 usr/bin/ideviceinfo					    libimobiledevice-utils
+usr/bin/ideviceinstaller				    ideviceinstaller
 usr/bin/idevicename					    libimobiledevice-utils
 usr/bin/idevicenotificationproxy			    libimobiledevice-utils
 usr/bin/idevicepair					    libimobiledevice-utils
@@ -35176,6 +35179,9 @@ usr/share/doc/htop/AUTHORS				    htop
 usr/share/doc/htop/COPYING				    htop
 usr/share/doc/htop/NEWS.zst				    htop
 usr/share/doc/htop/README.zst				    htop
+usr/share/doc/ideviceinstaller/AUTHORS			    ideviceinstaller
+usr/share/doc/ideviceinstaller/COPYING			    ideviceinstaller
+usr/share/doc/ideviceinstaller/NEWS.zst			    ideviceinstaller
 usr/share/doc/idn2/AUTHORS				    idn2
 usr/share/doc/idn2/COPYING				    idn2
 usr/share/doc/idn2/NEWS.zst				    idn2
@@ -40195,7 +40201,9 @@ usr/share/man/man1/bitcode_strip.1.zst			    odcctools
 usr/share/man/man1/brotli.1				    brotli
 usr/share/man/man1/bsdcat.1.zst				    libarchive-tools
 usr/share/man/man1/bsdcpio.1.zst			    libarchive-tools
+usr/share/man/man1/bsdiff.1.zst				    bsdiff
 usr/share/man/man1/bsdtar.1.zst				    libarchive-tools
+usr/share/man/man1/bspatch.1.zst			    bsdiff
 usr/share/man/man1/buddy-ng.1.zst			    aircrack-ng
 usr/share/man/man1/bzcmp.1.zst				    bzip2
 usr/share/man/man1/bzdiff.1.zst				    bzip2
@@ -40572,6 +40580,7 @@ usr/share/man/man1/idevicediagnostics.1.zst		    libimobiledevice-utils
 usr/share/man/man1/ideviceenterrecovery.1.zst		    libimobiledevice-utils
 usr/share/man/man1/ideviceimagemounter.1.zst		    libimobiledevice-utils
 usr/share/man/man1/ideviceinfo.1.zst			    libimobiledevice-utils
+usr/share/man/man1/ideviceinstaller.1.zst		    ideviceinstaller
 usr/share/man/man1/idevicename.1.zst			    libimobiledevice-utils
 usr/share/man/man1/idevicenotificationproxy.1.zst	    libimobiledevice-utils
 usr/share/man/man1/idevicepair.1.zst			    libimobiledevice-utils

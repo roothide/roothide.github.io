@@ -440,6 +440,27 @@ SHA512: 4a1e47ecc28245ab0f5b4e6b3b501cfd15d1b621ecea6614576227e35504a7b91f0d4ac0
 Homepage: https://www.brotli.org/
 Description: Shared libraries for the Brotli compression format
 
+Package: bsdiff
+Architecture: iphoneos-arm64e
+Version: 4.3
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 112
+Provides: bspatch
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/bsdiff/bsdiff_4.3_iphoneos-arm64e.deb
+Size: 10354
+MD5sum: 33b881e7056a0c17a13a6697af67a564
+SHA1: f0a31e4e9ccb72ac5c3b67ae203c4bdd691eea4f
+SHA256: 8ccf95a560222f1737db8a08bdc39d80fad04d2bb42bec8361a70a0f5f51fd06
+SHA512: 09a464c9f7e5ce8133d4ff8424eb367705c9b1fb6563bc3787918e9aec9ad6e8dcc909e6f7d9a3384ab7ad9ad755310b4ecdb7f60ba98abc70aa02ec00937877
+Description: generate/apply a patch between two binary files
+ bsdiff and bspatch are tools for building and applying patches to binary files.
+ By using suffix sorting (specifically, Larsson and Sadakane's qsufsort) and
+ taking advantage of how executable files change, bsdiff routinely produces
+ binary patches 50-80% smaller than those produced by Xdelta, and 15% smaller
+ than those produced by .RTPatch (a commercial patch tool).
+
 Package: build-essential
 Architecture: iphoneos-arm64e
 Version: 16.1
@@ -3370,6 +3391,22 @@ Description: interactive processes viewer
  Htop is an ncursed-based process viewer similar to top, but it allows one to scroll the list vertically and horizontally to see all processes and their full command lines.
  .
  Tasks related to processes (killing, renicing) can be done without entering their PIDs.
+
+Package: ideviceinstaller
+Architecture: iphoneos-arm64e
+Version: 1.1.1-1
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 124
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libimobiledevice6, usbmuxd, libplist3, libzip5 (>= 1.7.3)
+Filename: pool/main/iphoneos-arm64e/1900/ideviceinstaller/ideviceinstaller_1.1.1-1_iphoneos-arm64e.deb
+Size: 25090
+MD5sum: 5a66f224039d594eb2bb4ac441469e2d
+SHA1: 92c99aa224e51d28892e757f4bce3a97c2df5755
+SHA256: 1a1029c35c34b8b9c19c51062c17f1cf034a570a6eb7e433fc7c580c3987dcda
+SHA512: e3755f54f00a8eaa9398f644b4ad9404549e93d01f64f0176d0ee48faaf72fc649d6c7eea5b7cb1a3067a0c990e4e325ebccee9e007f9bb5d420f71537c641c6
+Homepage: https://libimobiledevice.org/
+Description: A command-line application to manage apps and app archives on iOS devices.
 
 Package: inetutils
 Architecture: iphoneos-arm64e
