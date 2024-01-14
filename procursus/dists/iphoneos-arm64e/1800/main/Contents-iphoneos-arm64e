@@ -344,6 +344,7 @@ usr/bin/dircolors					    coreutils
 usr/bin/dirmngr						    dirmngr
 usr/bin/dirmngr-client					    dirmngr
 usr/bin/dirname						    coreutils
+usr/bin/disarm						    jtool2
 usr/bin/djpeg						    libjpeg-turbo-progs
 usr/bin/dnsdomainname					    inetutils
 usr/bin/dpkg						    dpkg
@@ -569,6 +570,7 @@ usr/bin/jot						    shell-cmds
 usr/bin/jpegtran					    libjpeg-turbo-progs
 usr/bin/jq						    jq
 usr/bin/json_pp						    perl
+usr/bin/jtool2						    jtool2
 usr/bin/kbxutil						    gnupg-utils
 usr/bin/kill						    coreutils
 usr/bin/killall						    shell-cmds

@@ -3539,6 +3539,24 @@ SHA512: ffb905fa1a9295abfdf8e7c45cbe0fb51972be77520e3998dc8259194bf11e4f01a8a865
 Homepage: https://stedolan.github.io/jq/
 Description: a lightweight and flexible command-line JSON processor - shared library
 
+Package: jtool2
+Architecture: iphoneos-arm64e
+Version: 2020.12.21
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 960
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/jtool2/jtool2_2020.12.21_iphoneos-arm64e.deb
+Size: 294858
+MD5sum: f8add92eb15abce01edf4403fed033af
+SHA1: 067f0eabd74d714093cb6abb28c309eb8d71dea8
+SHA256: 65bbc06c808e35362374259db5904a9f317282a4c86658102d88a5fd7c5dcb95
+SHA512: a1d3835eeb4b6e6d118909c3c343fedf9fe228b1dc1b3a3110687a7a98e035f58fb6e8e471acb9016a1ccf9ec50832a8c4a9ecd4f0b52864793fdc491456a61a
+Homepage: http://newosxbook.com/tools/jtool.html
+Description: otool, but better (non-opensource)
+Author: Jonathan Levin
+
 Package: procursus-keyring
 Architecture: all
 Version: 2020.05.09-4
@@ -11384,16 +11402,16 @@ Architecture: iphoneos-arm64e
 Version: 6.1
 Priority: optional
 Section: Archiving
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 848
 Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
 Suggests: unrar
 Filename: pool/main/iphoneos-arm64e/1900/rar/rar_6.1_iphoneos-arm64e.deb
-Size: 366060
-MD5sum: d4599ae825b8050c705ad2600fe2879c
-SHA1: 20b3458292d31e94f76dd8846e2612eecedcc4df
-SHA256: 4c049d8abcee028307fa25847faed8c940b5b36ad5ef440ecb5d988e70bf84f3
-SHA512: 2c3c07b5eca41ee500599dce4f72a7f9f9ecca03d58a222a733cbaed2d40c82feb2716bcc703175f8206fb91895aae1f4c73dfa15bdb2e9b68bc808d6e132468
+Size: 366146
+MD5sum: 789c8f0fa98f61e8e80579989db86995
+SHA1: 548dd47be9258fffa7ad09f8f3702deb0614b1f3
+SHA256: 5d732a129d19435d6cd88e481a7fae01e532f3ab45789b334aec4cce56efbe4c
+SHA512: 347d85fd9906be8cc945dd59cc74f5c2792f7b7c8e1ed445265496f68774e8d247c563020151b710a9730d687570d79233b1d262a68142b8dd3c996a3dd0597f
 Homepage: https://www.rarlabs.com/
 Description: Archiver for .rar files (non-free)
  This is the RAR archiver from Eugene Roshal. It supports multiple volume archives and damage protection. It can also create 
