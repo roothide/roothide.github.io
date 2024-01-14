@@ -644,6 +644,7 @@ usr/bin/llvm-windres					    llvm
 usr/bin/llvm-xray					    llvm
 usr/bin/ln						    coreutils
 usr/bin/locate						    findutils
+usr/bin/locsim						    locsim
 usr/bin/logger						    inetutils
 usr/bin/login						    system-cmds
 usr/bin/logname						    coreutils
@@ -36192,6 +36193,7 @@ usr/share/doc/llvm-14-runtime/LICENSE.TXT.zst		    llvm-14-runtime
 usr/share/doc/llvm-14/LICENSE.TXT.zst			    llvm-14
 usr/share/doc/llvm-dev/LICENSE.TXT.zst			    llvm-dev
 usr/share/doc/llvm/LICENSE.TXT.zst			    llvm
+usr/share/doc/locsim/LICENSE				    locsim
 usr/share/doc/lua5.3/README.zst				    lua5.3
 usr/share/doc/lz4/LICENSE				    lz4
 usr/share/doc/lz4/NEWS.zst				    lz4

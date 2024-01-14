@@ -9560,6 +9560,24 @@ SHA512: afd8e3965f9a26256965a01789930d170413993d3f9d8bb573fadf79efc881f381dc11b1
 Homepage: https://swift.org/
 Description: Swift developer package
 
+Package: locsim
+Architecture: iphoneos-arm64e
+Version: 1.1.8-1
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 140
+Provides: com.udevs.locsim (= 1.1.8-1)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/locsim/locsim_1.1.8-1_iphoneos-arm64e.deb
+Size: 34770
+MD5sum: 075c59c38a42e43cd3004671c1f94d8f
+SHA1: 94052e2e97aeadc668094ba2a31e12bbfe113091
+SHA256: 7556a56cc11005818b5a0f54af9f4de06729cfc2fbe2bfd7affcbbb6b4bdfddd
+SHA512: 1347f1d69cdf2cc44ad4cf489e56c04ba8eb8d03b7c10fd20e600ccfa736e6819b8f6d334b3952c1c99ca42904aaf506b2dae0489535ba827158e9a319da0df1
+Description: Simulate GPS location system-wide
+Author: udevs
+
 Package: lsof
 Architecture: iphoneos-arm64e
 Version: 62
