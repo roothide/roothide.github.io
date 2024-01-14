@@ -3232,6 +3232,24 @@ SHA512: 82ad368dc6c3086a7c453d667d3924b2a61d3a4303be52963b7cade27206cae259abd64f
 Homepage: http://www.gnu.org/software/grep/
 Description: searches files for regular expressions
 
+Package: groff
+Architecture: iphoneos-arm64e
+Version: 1.22.4
+Multi-Arch: foreign
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 10356
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/groff/groff_1.22.4_iphoneos-arm64e.deb
+Size: 2277024
+MD5sum: 9d3503a876f64d5f3bc955da870499a4
+SHA1: 6f311ab5221f6a03391d71ea020ad031735949ae
+SHA256: c590e402ea06c85fae638ee44d49d11f0242466fbf6f571b7dd35950c85dc7f6
+SHA512: 0d306ab41a3501ecfb503faf0e7f603f51a9e41ba3a8f5f260319663e095404f85904978c73b4974b13dc7dcba58020a56e37ccddb4b3f3136bb63032180fcda
+Homepage: https://www.gnu.org/software/groff/
+Description: GNU troff text-formatting system
+
 Package: gzip
 Architecture: iphoneos-arm64e
 Version: 1.12
@@ -5417,6 +5435,53 @@ Description: system interface for user-level packet capture
  functionality, the libpcap authors created this system-independent API
  to ease in porting and to alleviate the need for several
  system-dependent packet capture modules in each application.
+
+Package: libpipeline-dev
+Architecture: iphoneos-arm64e
+Version: 1.5.3
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.6)
+Conflicts: libpipeline
+Replaces: libpipeline
+Filename: pool/main/iphoneos-arm64e/1800/libpipeline/libpipeline-dev_1.5.3_iphoneos-arm64e.deb
+Size: 33252
+MD5sum: 3209254776fd4ee2e9bda50a95672cce
+SHA1: d4d2472a2b5998f4a2c2ef7f323a7f42e6637a7b
+SHA256: fa3cb36567954baa9fa2984ab2f7725b6f7c1ef39b5596daf573ac0346ca48ff
+SHA512: 302576962ab89990b28a26d5708df7b18f0c4724f76cc7660a2e4382eeb259215df3019bb5ab9b1ffe685906880b38d91d29f1d9c646de239377e6831d47bda3
+Homepage: https://nongnu.org/libpipeline/
+Description: Unix process pipeline manipulation library (development files)
+ This is a C library for setting up and running pipelines of processes,
+ without needing to involve shell command-line parsing which is often
+ error-prone and insecure.
+ .
+ This package contains files needed for developing with libpipeline.
+
+Package: libpipeline1
+Architecture: iphoneos-arm64e
+Version: 1.5.3
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 136
+Provides: libpipeline (= 1.5.3)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Conflicts: libpipeline
+Replaces: libpipeline
+Filename: pool/main/iphoneos-arm64e/1800/libpipeline/libpipeline1_1.5.3_iphoneos-arm64e.deb
+Size: 40946
+MD5sum: 4721ec472ae91e33a03cdb45f3746743
+SHA1: 0b36d34f308c29c03ee0ecc90123435508303a1c
+SHA256: fadfaf2208711cc7d27c34b463015f02cca20190356be034ea1eff5709fc7367
+SHA512: b0a86cf076548850d4a564671d499d90f44d5d3e18aa3b8c287193eb7b72f2d4ef19adc7609158eae73b0974a2cddd7fdebbcdf3fa053e8d0f580676a10e7082
+Homepage: https://nongnu.org/libpipeline/
+Description: Unix process pipeline manipulation library
+ This is a C library for setting up and running pipelines of processes,
+ without needing to involve shell command-line parsing which is often
+ error-prone and insecure.
 
 Package: libpixman-1-0
 Architecture: iphoneos-arm64e
@@ -9748,6 +9813,23 @@ Description: utility for directing compilation
  corresponding input is newer --- it is not limited to building
  computer programs. Indeed, Make is a general purpose dependency
  solver.
+
+Package: man-db
+Architecture: iphoneos-arm64e
+Version: 2.9.4-4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4108
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libgdbm6, libpipeline1, groff, less, libintl8, zstd
+Filename: pool/main/iphoneos-arm64e/1800/man-db/man-db_2.9.4-4_iphoneos-arm64e.deb
+Size: 1439230
+MD5sum: c62b87dfc954a712142d77ea512f8979
+SHA1: 4bc6ddd240213bb716d4db3a252c26d4952e545f
+SHA256: a796ac6eb2f9b7484c1b420fd2b9074b6723f6e984331684d74b0da768b36029
+SHA512: d3632c93cb1db61ac03d8eed3c318410fd1bd5bca9744bb7f450fe1773b396de65f28b409f4608db4b0516f924342767245c4c46863d56ff270c2272f7e1bd9c
+Homepage: https://nongnu.org/man-db/
+Description: tools for reading manual pages
 
 Package: libmpfr-dev
 Architecture: iphoneos-arm64e
