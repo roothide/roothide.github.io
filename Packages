@@ -909,6 +909,21 @@ Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
 Name: Legacy arm64e Support
 
+Package: oldabi
+Version: 0.3.1~2.d9eaf63
+Architecture: iphoneos-arm64e
+Maintainer: Evelyn
+Depends: mobilesubstrate, cy+cpu.arm64e, firmware (>= 15.0)
+Filename: ./debfiles/oldabi_0.3.1~2.d9eaf63_iphoneos-arm64e.deb
+Size: 16700
+MD5sum: c2921d868048f6cf7388e7304ea8a2c9
+SHA1: 34de6f93136bea249823f5b4716c9b85c40ce3da
+SHA256: 66e919f0ab0bfc825c1d0fb92045c988b549142e1aac1602a82903f4892bdb9e
+Section: Tweak Injection
+Description: Support for legacy arm64e ABI in iOS 15.0+
+Author: Evelyn
+Name: Legacy arm64e Support
+
 Package: org.coolstar.sileo
 Version: 2.5-10
 Architecture: iphoneos-arm64e
