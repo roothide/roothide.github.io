@@ -1978,6 +1978,147 @@ Description: friendly interactive shell
  user friendliness and discoverability.  The language syntax is simple but
  incompatible with other shell languages.
 
+Package: flac
+Architecture: iphoneos-arm64e
+Version: 1.3.3
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 388
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libogg0, libflac8
+Filename: pool/main/iphoneos-arm64e/1800/flac/flac_1.3.3_iphoneos-arm64e.deb
+Size: 129486
+MD5sum: f37484ad0b740c0a9af6f59d8db64a30
+SHA1: 7e3d0e55f4485c60d4ac3ec2c96b0beb486fc327
+SHA256: 177577161945ed85b2f2c0d0234d04a496318a5510b98b0429b8da5ba7c5aefd
+SHA512: b39fb6e0ff99a95d4d498e51b76ecd2409b7b0f2e66fb5b45f5ebbfe02cd4da059857b2dac063a2b0b457adf4bf16966a5cdb5d637d8fb3525058bdd398bf515
+Description: Free Lossless Audio Codec - command line tools
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the command-line tools flac (used for encoding and
+ decoding FLACs) and metaflac (used for manipulating FLAC metadata.)
+
+Package: libflac++-dev
+Architecture: iphoneos-arm64e
+Version: 1.3.3
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 116
+Depends: roothide (>= 0.0.6), libflac-dev, libflac++6v5 (= 1.3.3)
+Filename: pool/main/iphoneos-arm64e/1800/flac/libflac++-dev_1.3.3_iphoneos-arm64e.deb
+Size: 23356
+MD5sum: 224cd0b73d75cc564994cc9a153be081
+SHA1: 5c132c8313aac3063d8141d165e539e91e662335
+SHA256: 6fe4a4d1beb2e29bb365d0a92c2de04c4aca603fd39fc0bb001c114e14ccb459
+SHA512: 9b9c6b85c074d2f47c98b11db869b35d62fa96827805d9a3bcbcbcfc4396a3e9e66b40fe460c290f4400f20d07ff8ff8d574762f28e5768666023af3460f0db7
+Description: Free Lossless Audio Codec - C++ development library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the development library libFLAC++.
+
+Package: libflac++6v5
+Architecture: iphoneos-arm64e
+Version: 1.3.3
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 140
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libflac8
+Filename: pool/main/iphoneos-arm64e/1800/flac/libflac++6v5_1.3.3_iphoneos-arm64e.deb
+Size: 30498
+MD5sum: 14eb6922dd814ca5344961231bd2bcd4
+SHA1: ca6fccdd3dc58ef4cea63a4bd9381e66af2868c0
+SHA256: 88111dd175a1280f3fa82e001eea7e4d71e43d3396848987e8c881cb7ece2b8d
+SHA512: 574e15dcacc3b39a5ecf7988fe0ec4bfc76381933aecdc9a7292fcf4a36dfc149c7b422d36dd6d39ca1bd969e08f1adf091fb31b8b6c2c2a5c95241d06d0a748
+Description: Free Lossless Audio Codec - C++ runtime library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC++.
+
+Package: libflac-dev
+Architecture: iphoneos-arm64e
+Version: 1.3.3
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 356
+Depends: roothide (>= 0.0.6), libogg-dev, libflac8 (= 1.3.3)
+Filename: pool/main/iphoneos-arm64e/1800/flac/libflac-dev_1.3.3_iphoneos-arm64e.deb
+Size: 65486
+MD5sum: 1239d48147b6309ec33f2c54fe78c740
+SHA1: b6efeaa38cfe0f62a0b4395f40956c28cb4be40c
+SHA256: c10300257ce1f9d47d4dacca316f289482e76bf8b6317e5284a02304fd3f139b
+SHA512: 00a83e116aae9baa4b24efd0f07160e16e2fbb2732bab5781c5b18d28f4dbfec6be72a0d5f27978f64f1547a060b20082adbc47cf2064fd97b6ab60118834d89
+Description: Free Lossless Audio Codec - C development library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the development library libFLAC.
+
+Package: libflac8
+Architecture: iphoneos-arm64e
+Version: 1.3.3
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 244
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libogg0
+Filename: pool/main/iphoneos-arm64e/1800/flac/libflac8_1.3.3_iphoneos-arm64e.deb
+Size: 96930
+MD5sum: b09d3229dc55dd1f2eb173ffd56fa49a
+SHA1: 36283a036dbc36515fb75a04cbe3973fa560afe6
+SHA256: e568150b07559ef2149a289e94740140bd89aded68cec0127cd1f5249c2e9f29
+SHA512: 26dc98da9934fdf25c6673b057275f083d2ef358f54cc9a43af3bbbeaa19a2130b2563522036170b46bf7ffee6aaffcbe3c1245f61cf211dfac6ed1418c96f1d
+Description: Free Lossless Audio Codec - runtime C library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC.
+
 Package: fontconfig-config
 Architecture: iphoneos-arm64e
 Version: 2.14.0
@@ -3697,6 +3838,80 @@ SHA256: 614e76aa5a6bd2f3582fa5c1e1f77e4ae0e590972d79fe05b6572c5d6ce05d45
 SHA512: d1463bebb9e733431674f9f35a78d7b8760b30e2c45fecb3d99937420dc8d7fecae7cf12c486301ba5dc25c1c0b42e7dae750fb8b75f60ba61dbd84e6f6ad53b
 Homepage: https://github.com/ProcursusTeam/launchctl
 Description: Tells launchd what to do
+
+Package: liblcms2-2
+Architecture: iphoneos-arm64e
+Version: 2.12
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 340
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/lcms2/liblcms2-2_2.12_iphoneos-arm64e.deb
+Size: 142944
+MD5sum: b2ce180db4159a807b79084367e6a2ae
+SHA1: f89f7ffce560ce92cc8f95356de5a4c7d390d0be
+SHA256: f54fcf73b71e3616d57f16559061412b3ec1feaa3ee701635e684cddccf2e0b7
+SHA512: cf829d50d38880fb34d04356ffae6c7a4535f76374d4311a02b4debaf1bf289fe55af711fbb84da5c79474bb069374ba0775acf06f79689969a87c57bc8c1179
+Description: Little CMS 2 color management library
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. LittleCMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+ .
+ This package contains the shared library of liblcms2.
+
+Package: liblcms2-dev
+Architecture: iphoneos-arm64e
+Version: 2.12
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 888
+Depends: roothide (>= 0.0.6), liblcms2-2 (= 2.12)
+Filename: pool/main/iphoneos-arm64e/1800/lcms2/liblcms2-dev_2.12_iphoneos-arm64e.deb
+Size: 421846
+MD5sum: 11bd8640d0cd85121d4de16caec83dce
+SHA1: fbca6f955c48125be7591f8201e0c8d4cd7e9889
+SHA256: d31b2edbb8ce78b1ecf5204ad676306e4447d2ae0f8c3a6c16e0177f820d8b26
+SHA512: 2cdc7bee8ff29029a57bfa638eba18e25732291dacc2228bb818bde2937565e52630d81f1c1dd629fdc1223b3a02919eb29ad070b28edfd4b5dfdba00c119652
+Description: Little CMS 2 color management library development headers
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. Little CMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+ .
+ This package contains the development headers used for building software that
+ uses Little CMS.
+
+Package: liblcms2-utils
+Architecture: iphoneos-arm64e
+Version: 2.12
+Priority: standard
+Section: Multimedia
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 404
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblcms2-2 (>= 2.12), libjpeg62-turbo, libtiff5
+Filename: pool/main/iphoneos-arm64e/1800/lcms2/liblcms2-utils_2.12_iphoneos-arm64e.deb
+Size: 42696
+MD5sum: 9bd3f912e0ba2a027daee9c69bbcf2b1
+SHA1: 10b3880cd43ae7b24c73873bc0c86b6c947da7c3
+SHA256: 69597b5550b5cf6473ccfaf630c4e135dc47105f18c7b75425be13a3e0e544d8
+SHA512: cef33944a746bd7c5520df96ec489ceb33bdc6a9d22922c6209dccb93afe3528d986ab0d7781a34ab5abfc3f6c7384bd000035a634d65c662143f3e4e1ca3052
+Description: Little CMS 2 color management library (utilities)
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. LittleCMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+ .
+ This package contains additional utilities (jpegicc, linkicc, psicc, tificc
+ and transicc).
 
 Package: ldid
 Architecture: iphoneos-arm64e
@@ -5822,6 +6037,77 @@ Description: fast compression/decompression library
  compressed files are anywhere from 20% to 100% bigger. On a single core
  of a Core i7 processor in 64-bit mode, Snappy compresses at about 250  
  MB/sec or more and decompresses at about 500 MB/sec or more.
+
+Package: libsndfile1-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.31
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1408
+Depends: roothide (>= 0.0.6), libsndfile1 (= 1.0.31), libflac-dev, libvorbis-dev, libopus-dev, libogg-dev
+Filename: pool/main/iphoneos-arm64e/1800/libsndfile/libsndfile1-dev_1.0.31_iphoneos-arm64e.deb
+Size: 656674
+MD5sum: e620ad62cfba8505c065d393c76660f6
+SHA1: d8b4a28e0b24a2d01496bba6d08d2a7ad35dbaca
+SHA256: a971ca27c6a9dc2e5a7a43f974abc85a8416c6e6e279b0687e8a54a353a157c3
+SHA512: 188861bd48e29082d8666e508bcca96710ae065e80b3fd954aa104375caa36fdf22e832cba9ed3abe3841ff2869ed728f25314105ec978a045027e85af40ea65
+Description: Development files for libsndfile; a library for reading/writing audio files
+ libsndfile is a library of C routines for reading and writing files containing
+ sampled audio data.
+ .
+ This is the development version of libsndfile. You will need this only if you
+ intend to compile programs that use this library.
+
+Package: libsndfile1
+Architecture: iphoneos-arm64e
+Version: 1.0.31
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 488
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libflac8, libvorbis0a, libvorbisenc2, libopus0, libogg0
+Filename: pool/main/iphoneos-arm64e/1800/libsndfile/libsndfile1_1.0.31_iphoneos-arm64e.deb
+Size: 205898
+MD5sum: 5429fd6a83db036e238f937a8be2a547
+SHA1: e8d8ba936e65b756cb8bde5c246dc065f2a115df
+SHA256: 8990790c93b8e7014fa3787caa2801423c8c36b912fc8ad8405f467de1b525e3
+SHA512: 7b1bfc037642bea0eb92b9a4d26e36d6d41b5b938eb2cefdf6f095dcb722b43fa5da948dc1295b4d3a97f7c920358afdf67733be3926de83900326cfa286d3e1
+Description: Library for reading/writing audio files
+ libsndfile is a library of C routines for reading and writing files containing
+ sampled audio data.
+ .
+ Various versions of WAV (integer, floating point, GSM, and compressed formats);
+ Microsoft PCM, A-law and u-law formats; AIFF, AIFC and RIFX; various AU/SND
+ formats (Sun/NeXT, Dec AU, G721 and G723 ADPCM); RAW header-less PCM files;
+ Amiga IFF/8SVX/16SV PCM files; Ensoniq PARIS  (.PAF); Apple's Core Audio Format
+ (CAF) and others.
+
+Package: sndfile-programs
+Architecture: iphoneos-arm64e
+Version: 1.0.31
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 612
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libsndfile1 (>= 1.0.31), libflac8, libvorbis0a, libvorbisenc2, libopus0, libogg0
+Filename: pool/main/iphoneos-arm64e/1800/libsndfile/sndfile-programs_1.0.31_iphoneos-arm64e.deb
+Size: 59232
+MD5sum: 09f06cfc75313292443aed32c161bff6
+SHA1: 0281e6fc95238de6591e2bbf7dd4eea30a59d719
+SHA256: 19c797cdec28d63369115c4779bb58cda205e903514b205b074bf546ab77afca
+SHA512: 774285364a93ea104d04b9a5e99fbece5661b7781bad00162dade78b539a405a1a361ccbf661e05f501d9db294726f47760af771f1a1c1d9a716a1ae9794284c
+Description: Sample programs that use libsndfile
+ This package contains simple programs which use libsndfile for operating on
+ sound files.
+ .
+ Programs include:
+   - sndfile-cmp : compare the audio data of two files
+   - sndfile-concat : concatenate two or more files
+   - sndfile-convert : convert between sound file formats
+   - sndfile-info : print information about files
+   - sndfile-metadata-get/set : get and set file metadata
+   - sndfile-play : play a sound file
 
 Package: libsodium-dev
 Architecture: iphoneos-arm64e
@@ -12766,6 +13052,57 @@ SHA256: 5ee0d55fc0c48558687e3c612f682b2730b9f6a577b7e80af8840674bdf22c9c
 SHA512: a5277b13bb1297402529ae0f12522931d283092824fd84062b0ebd787d5f44a3a8dc70493e1ffcc4809daeed6a272e2755d5cb282866f484acdef3ae12a09893
 Homepage: https://mackyle.github.io/xar/
 Description: eXtensible ARchive format
+
+Package: x11proto-dev
+Architecture: all
+Version: 2021.5
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1492
+Depends: roothide (>= 0.0.6)
+Filename: pool/main/iphoneos-arm64e/1800/xorgproto/x11proto-dev_2021.5_all.deb
+Size: 209916
+MD5sum: 8e2105aa62465067f24c3e8701f0d197
+SHA1: a54fb52b37797e45e57ed61f05e10b030dc6e835
+SHA256: 87984a04561d458478b96049b2dc97580485ad702f7820c9ff152949faa0cddd
+SHA512: 5e1b20f66756e133b7ed5d05587bcc14dafd815a0ead65749d7beb31341543c260794dd4103dad52606d64773b9974d8a88cff1e5f915ca027daa236dfeda2f3
+Description: X11 extension protocols and auxiliary headers
+ This package provides development headers describing the wire protocol
+ for the X11 core and extension protocols, and also provides a number of
+ utility headers, used to abstract OS-specific functions.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This package is built from the X.org xorgproto module.
+
+Package: xtrans-dev
+Architecture: all
+Version: 1.4.0-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 220
+Depends: roothide (>= 0.0.6)
+Filename: pool/main/iphoneos-arm64e/1800/xtrans/xtrans-dev_1.4.0-1_all.deb
+Size: 45058
+MD5sum: 2597046c84c388649336e85f625af268
+SHA1: 8c96b028c5f9997c1154e1c8e137e6334cfa7a7a
+SHA256: 77e24c95b30308538c5184d1881337e9c55b95586ad124d60bba784c80fb4a9f
+SHA512: 89046a8fef6ad88367b2ba53e31f93f61b7345514e47d561999318ae502c8fdcf4f89802b351fab8ba91f4866ea2ee167fffc72c786f2110ee0e46796886dd4a
+Description: X transport library (development files)
+ xtrans includes a number of routines to make X implementations
+ transport-independent; at time of writing, it includes support for UNIX
+ sockets, IPv4, IPv6, and DECnet.
+ .
+ xtrans is not actually a library in itself; it includes .c files which are
+ then used in the compilation of X servers, libraries, et al.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://cgit.freedesktop.org/xorg/lib/libxtrans/
 
 Package: libxxhash-dev
 Architecture: iphoneos-arm64e
