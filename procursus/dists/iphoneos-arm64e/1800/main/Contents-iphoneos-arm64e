@@ -540,6 +540,7 @@ usr/bin/idevicename					    libimobiledevice-utils
 usr/bin/idevicenotificationproxy			    libimobiledevice-utils
 usr/bin/idevicepair					    libimobiledevice-utils
 usr/bin/ideviceprovision				    libimobiledevice-utils
+usr/bin/idevicerestore					    idevicerestore
 usr/bin/idevicescreenshot				    libimobiledevice-utils
 usr/bin/idevicesetlocation				    libimobiledevice-utils
 usr/bin/idevicesyslog					    libimobiledevice-utils
@@ -562,6 +563,7 @@ usr/bin/ioclasscount					    iokittools
 usr/bin/ipcrm						    file-cmds
 usr/bin/ipcs						    file-cmds
 usr/bin/iproxy						    libusbmuxd-tools
+usr/bin/irecovery					    libirecovery-utils
 usr/bin/ivstools					    aircrack-ng
 usr/bin/jbrand						    roothide
 usr/bin/jbroot						    roothide
@@ -2437,6 +2439,7 @@ usr/include/libimobiledevice/syslog_relay.h		    libimobiledevice-dev
 usr/include/libimobiledevice/webinspector.h		    libimobiledevice-dev
 usr/include/libintl.h					    libintl-dev
 usr/include/libiosexec.h				    libiosexec-dev
+usr/include/libirecovery.h				    libirecovery-dev
 usr/include/libkrw.h					    libkrw-dev
 usr/include/libkrw_plugin.h				    libkrw-dev
 usr/include/libnet.h					    libnet-dev
@@ -15767,6 +15770,9 @@ usr/lib/libintl.dylib					    libintl-dev
 usr/lib/libiosexec.1.dylib				    libiosexec1
 usr/lib/libiosexec.a					    libiosexec-dev
 usr/lib/libiosexec.dylib				    libiosexec-dev
+usr/lib/libirecovery-1.0.3.dylib			    libirecovery3
+usr/lib/libirecovery-1.0.a				    libirecovery-dev
+usr/lib/libirecovery-1.0.dylib				    libirecovery-dev
 usr/lib/libjpeg.62.3.0.dylib				    libjpeg62-turbo
 usr/lib/libjpeg.62.dylib				    libjpeg62-turbo
 usr/lib/libjpeg.a					    libjpeg62-turbo-dev
@@ -22638,6 +22644,7 @@ usr/lib/pkgconfig/libhsts.pc				    libhsts-dev
 usr/lib/pkgconfig/libidn2.pc				    libidn2-dev
 usr/lib/pkgconfig/libimobiledevice-1.0.pc		    libimobiledevice-dev
 usr/lib/pkgconfig/libimobiledevice-glue-1.0.pc		    libimobiledevice-glue-dev
+usr/lib/pkgconfig/libirecovery-1.0.pc			    libirecovery-dev
 usr/lib/pkgconfig/libjpeg.pc				    libjpeg62-turbo-dev
 usr/lib/pkgconfig/liblz4.pc				    liblz4-dev
 usr/lib/pkgconfig/libmagic.pc				    libmagic-dev
@@ -35455,6 +35462,9 @@ usr/share/doc/htop/README.zst				    htop
 usr/share/doc/ideviceinstaller/AUTHORS			    ideviceinstaller
 usr/share/doc/ideviceinstaller/COPYING			    ideviceinstaller
 usr/share/doc/ideviceinstaller/NEWS.zst			    ideviceinstaller
+usr/share/doc/idevicerestore/AUTHORS			    idevicerestore
+usr/share/doc/idevicerestore/COPYING			    idevicerestore
+usr/share/doc/idevicerestore/NEWS.zst			    idevicerestore
 usr/share/doc/idn2/AUTHORS				    idn2
 usr/share/doc/idn2/COPYING				    idn2
 usr/share/doc/idn2/NEWS.zst				    idn2
@@ -35844,6 +35854,12 @@ usr/share/doc/libintl8/README.zst			    libintl8
 usr/share/doc/libintl8/THANKS.zst			    libintl8
 usr/share/doc/libiosexec-dev/LICENSE			    libiosexec-dev
 usr/share/doc/libiosexec1/LICENSE			    libiosexec1
+usr/share/doc/libirecovery-dev/COPYING			    libirecovery-dev
+usr/share/doc/libirecovery-dev/NEWS.zst			    libirecovery-dev
+usr/share/doc/libirecovery-utils/COPYING		    libirecovery-utils
+usr/share/doc/libirecovery-utils/NEWS.zst		    libirecovery-utils
+usr/share/doc/libirecovery3/COPYING			    libirecovery3
+usr/share/doc/libirecovery3/NEWS.zst			    libirecovery3
 usr/share/doc/libjq-dev/AUTHORS				    libjq-dev
 usr/share/doc/libjq-dev/COPYING				    libjq-dev
 usr/share/doc/libjq-dev/NEWS.zst			    libjq-dev
@@ -41421,6 +41437,7 @@ usr/share/man/man1/idevicename.1.zst			    libimobiledevice-utils
 usr/share/man/man1/idevicenotificationproxy.1.zst	    libimobiledevice-utils
 usr/share/man/man1/idevicepair.1.zst			    libimobiledevice-utils
 usr/share/man/man1/ideviceprovision.1.zst		    libimobiledevice-utils
+usr/share/man/man1/idevicerestore.1.zst			    idevicerestore
 usr/share/man/man1/idevicescreenshot.1.zst		    libimobiledevice-utils
 usr/share/man/man1/idevicesetlocation.1.zst		    libimobiledevice-utils
 usr/share/man/man1/idevicesyslog.1.zst			    libimobiledevice-utils

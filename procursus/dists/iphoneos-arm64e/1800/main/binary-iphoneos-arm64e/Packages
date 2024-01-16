@@ -3607,6 +3607,22 @@ SHA512: 459d28b29c35333251aab4bd777e0a28a006169230ff57eddad71c22f950755ae285c1bf
 Homepage: https://libimobiledevice.org/
 Description: A command-line application to manage apps and app archives on iOS devices.
 
+Package: idevicerestore
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220628.7d622d9
+Priority: standard
+Section: Administration
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 256
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libplist3 (>= 2.2.0), libimobiledevice-glue1.0-0 (>= 1.0.0), libimobiledevice6 (>= 1.3.0), libssl3 (>= 1.1.0), libirecovery3 (>= 1.0.0), libcurl4, libzip5 (>= 1.7.3)
+Filename: pool/main/iphoneos-arm64e/1800/idevicerestore/idevicerestore_1.0.0+git20220628.7d622d9_iphoneos-arm64e.deb
+Size: 91476
+MD5sum: a1da5b13bd445f12dfaa5aa828b8d72f
+SHA1: c540e1bda6cb43bedf74303fbeb18a9e6e05a4e5
+SHA256: acf9c00752fcc6d22baef80e8c5744ebd66b2bfab13bce75480bf144235ae004
+SHA512: 296c8fc37d373f7ad6f872c0b4ab2fc83f7a92c1b65cfabbe3dd08370d0ccbf0348b4052aafe2efee6a174394119debda39b39a1c04db1e13d071e08788e1a30
+Description: Restore/upgrade firmware of iOS devices
+
 Package: inetutils
 Architecture: iphoneos-arm64e
 Version: 2.0-1
@@ -5028,6 +5044,59 @@ SHA256: 29c8305b4fc95ff31f7ebc356d43a1831b3116240fe13abbb48e35e1cb7d050f
 SHA512: f5fe1f561615254534834eecddd4a337287ff71ff6c190c767613e0d47dbacc011c7883d1a1b35bbb1f8aea25c41fcc33354f0cbb75ecbd79f761a66aceb60af
 Homepage: http://github.com/ProcursusTeam/libiosexec
 Description: shim for execve w/ shell script support
+
+Package: libirecovery-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220628.ab5b4d8-1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 152
+Depends: roothide (>= 0.0.6), libirecovery3 (= 1.0.0+git20220628.ab5b4d8-1), libimobiledevice-glue-dev (>= 1.0.0)
+Conflicts: libirecovery (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libirecovery/libirecovery-dev_1.0.0+git20220628.ab5b4d8-1_iphoneos-arm64e.deb
+Size: 69086
+MD5sum: 5314083e95080f9c3a1a33239e970a2c
+SHA1: 310e92a783557b54ce4507b83d4ab9eaeede37e1
+SHA256: a3a977502f731f19aa3ad4a84da9d0413e53c76c5cffbfdd4e7be2cdb0381465
+SHA512: 2f01dd46f701111b423366d90a2fc6ef5001d170e6347e6be002531ce4677a21d6b52392743cbbc87ab2ae7d320f88a580e0be96a4a1e322a36a4e62b45c78f4
+Description: Library allowing communication with iBoot/iBSS of iOS devices via USB - development files
+
+Package: libirecovery-utils
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220628.ab5b4d8-1
+Priority: standard
+Section: Administration
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 104
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libirecovery3 (>= 1.0.0), libimobiledevice-glue1.0-0 (>= 1.0.0)
+Conflicts: libirecovery (<< 99)
+Filename: pool/main/iphoneos-arm64e/1800/libirecovery/libirecovery-utils_1.0.0+git20220628.ab5b4d8-1_iphoneos-arm64e.deb
+Size: 19438
+MD5sum: e0b902a398ea4e25d929deda396f3a4a
+SHA1: e111cc08076153b05fabb9f5c25d25a549fa2164
+SHA256: d5f78da7972f88b0124a15e8390c0578a246a804e42adb895d8c4d1d768881e3
+SHA512: 242d8385f4f6761e11246e619cbff4cc6ca64cde307222384bd26e5566f9e54fd59eef5219b262e7a42421357497bbe9d2d2244a0be0ed2e01e566e974aa0184
+Description: Communicate with iBoot/iBSS of iOS devices via USB
+
+Package: libirecovery3
+Architecture: iphoneos-arm64e
+Version: 1.0.0+git20220628.ab5b4d8-1
+Priority: standard
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 120
+Provides: libirecovery (= 99)
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libreadline8 (>= 8.0), libusb-1.0-0, libimobiledevice-glue1.0-0 (>= 1.0.0)
+Conflicts: libirecovery
+Replaces: libirecovery
+Filename: pool/main/iphoneos-arm64e/1800/libirecovery/libirecovery3_1.0.0+git20220628.ab5b4d8-1_iphoneos-arm64e.deb
+Size: 30520
+MD5sum: ae82f545a4af0451528e1d2f5d18e1ea
+SHA1: 7b8d81fd55be80ef191a01867e50f33d8d27cf3b
+SHA256: 3bbe9277ca0b6e822db79e31bee3e657c735e3f4ddf8e265629be8e588cd1552
+SHA512: d6591c9ef3280255e15c1064f20295ad39e2b2890c5a473b1d83df2fe21b57f91bcea0734d2246e01631cbbbc34c62c62294a918c01753b51fe42c7a34612431
+Description: Library allowing communication with iBoot/iBSS of iOS devices via USB
 
 Package: libjpeg-turbo-progs
 Architecture: iphoneos-arm64e
