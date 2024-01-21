@@ -745,11 +745,13 @@ usr/bin/mtoc						    odcctools
 usr/bin/mtor						    odcctools
 usr/bin/mv						    coreutils
 usr/bin/nano						    nano
+usr/bin/nc						    netcat
 usr/bin/ncat						    ncat
 usr/bin/ncdu						    ncdu
 usr/bin/ncursesw6-config				    libncurses-dev
 usr/bin/neofetch					    neofetch
 usr/bin/neqn						    groff
+usr/bin/netcat						    netcat
 usr/bin/nettle-hash					    nettle-bin
 usr/bin/nettle-lfib-stream				    nettle-bin
 usr/bin/nettle-pbkdf2					    nettle-bin
@@ -760,6 +762,7 @@ usr/bin/nghttpd						    nghttp2-server
 usr/bin/nghttpx						    nghttp2-proxy
 usr/bin/nice						    coreutils
 usr/bin/nl						    coreutils
+usr/bin/nload						    nload
 usr/bin/nm						    odcctools
 usr/bin/nmap						    nmap
 usr/bin/nmedit						    odcctools
@@ -36544,6 +36547,11 @@ usr/share/doc/ncurses-term/AUTHORS			    ncurses-term
 usr/share/doc/ncurses-term/COPYING			    ncurses-term
 usr/share/doc/ncurses-term/NEWS.zst			    ncurses-term
 usr/share/doc/ncurses-term/README.zst			    ncurses-term
+usr/share/doc/netcat/AUTHORS				    netcat
+usr/share/doc/netcat/COPYING				    netcat
+usr/share/doc/netcat/NEWS.zst				    netcat
+usr/share/doc/netcat/README.zst				    netcat
+usr/share/doc/netcat/TODO.zst				    netcat
 usr/share/doc/nettle-bin/AUTHORS			    nettle-bin
 usr/share/doc/nettle-bin/NEWS.zst			    nettle-bin
 usr/share/doc/nettle-bin/README.zst			    nettle-bin
@@ -36562,6 +36570,10 @@ usr/share/doc/nghttp2-server/AUTHORS			    nghttp2-server
 usr/share/doc/nghttp2-server/COPYING			    nghttp2-server
 usr/share/doc/nghttp2-server/NEWS.zst			    nghttp2-server
 usr/share/doc/nghttp2-server/README.zst			    nghttp2-server
+usr/share/doc/nload/AUTHORS				    nload
+usr/share/doc/nload/COPYING				    nload
+usr/share/doc/nload/NEWS.zst				    nload
+usr/share/doc/nload/README.zst				    nload
 usr/share/doc/nmap-common/LICENSE			    nmap-common
 usr/share/doc/nmap/LICENSE				    nmap
 usr/share/doc/openssh-client/README.zst			    openssh-client
@@ -39628,6 +39640,7 @@ usr/share/locale/it/LC_MESSAGES/make.mo			    make
 usr/share/locale/it/LC_MESSAGES/man-db-gnulib.mo	    man-db
 usr/share/locale/it/LC_MESSAGES/man-db.mo		    man-db
 usr/share/locale/it/LC_MESSAGES/nano.mo			    nano
+usr/share/locale/it/LC_MESSAGES/netcat.mo		    netcat
 usr/share/locale/it/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/it/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/it/LC_MESSAGES/sudoers.mo		    sudo
@@ -40270,6 +40283,7 @@ usr/share/locale/sk/LC_MESSAGES/grep.mo			    grep
 usr/share/locale/sk/LC_MESSAGES/libapt-pkg6.0.mo	    libapt-pkg6.0
 usr/share/locale/sk/LC_MESSAGES/man-db-gnulib.mo	    man-db
 usr/share/locale/sk/LC_MESSAGES/nano.mo			    nano
+usr/share/locale/sk/LC_MESSAGES/netcat.mo		    netcat
 usr/share/locale/sk/LC_MESSAGES/popt.mo			    libpopt0
 usr/share/locale/sk/LC_MESSAGES/sudo.mo			    sudo
 usr/share/locale/sk/LC_MESSAGES/sudoers.mo		    sudo
@@ -41559,6 +41573,7 @@ usr/share/man/man1/ncdu.1.zst				    ncdu
 usr/share/man/man1/ncursesw6-config.1.zst		    libncurses-dev
 usr/share/man/man1/neofetch.1.zst			    neofetch
 usr/share/man/man1/neqn.1.zst				    groff
+usr/share/man/man1/netcat.1.zst				    netcat
 usr/share/man/man1/netstat.1.zst			    network-cmds
 usr/share/man/man1/newgrp.1.zst				    system-cmds
 usr/share/man/man1/ngettext.1.zst			    gettext-base
@@ -41567,6 +41582,7 @@ usr/share/man/man1/nghttpd.1.zst			    nghttp2-server
 usr/share/man/man1/nghttpx.1.zst			    nghttp2-proxy
 usr/share/man/man1/nice.1.zst				    coreutils
 usr/share/man/man1/nl.1.zst				    coreutils
+usr/share/man/man1/nload.1.gz.zst			    nload
 usr/share/man/man1/nm-classic.1.zst			    odcctools
 usr/share/man/man1/nm.1.zst				    odcctools
 usr/share/man/man1/nmap.1.zst				    nmap

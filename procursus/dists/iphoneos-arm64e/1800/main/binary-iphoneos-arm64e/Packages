@@ -10421,6 +10421,23 @@ Description: Shows System Information with Distribution Logo
  distributions logo or any ascii art of your choice.
 Author: Dylan Araps <dylan.araps@gmail.com>
 
+Package: netcat
+Architecture: iphoneos-arm64e
+Version: 0.7.1-2
+Multi-Arch: foreign
+Priority: important
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 156
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/netcat/netcat_0.7.1-2_iphoneos-arm64e.deb
+Size: 42578
+MD5sum: 5fa9d81d505d3a2923039628e7826cb6
+SHA1: a2bae751db6a715f7bc8da17de6193e2a7c55682
+SHA256: e660cd6d3b8307da81e8ffd1c868257a34ca25dfff447ddef31aacb6dd3bfebb
+SHA512: cfa5209939781d76dad3eef0bfb085d3d591fe03e3660cf7f5232c7e96e9215155d016f83bca690af044031099ac35a17e67e5cfeb65a05808120ba6c0e72e52
+Description: simple socket manipulation tool
+
 Package: libhogweed6
 Architecture: iphoneos-arm64e
 Version: 3.8.1
@@ -10612,6 +10629,33 @@ Description: server implementing HTTP/2 protocol
  This is a standalone server implementing the HTTP/2 protocol with
  HTTP/1.1 fallback for clients that do not support it. It can be used
  to serve files from a local directory.
+
+Package: nload
+Architecture: iphoneos-arm64e
+Version: 0.7.4-1
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 180
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/nload/nload_0.7.4-1_iphoneos-arm64e.deb
+Size: 59006
+MD5sum: 149115eb8c5c09e68063beb8e1ef9aaf
+SHA1: 920125e2231e3aedb1b7c0480bbaa86edd30271e
+SHA256: b395c0d833e7efc2d2d5d5eff24d549f59d0c0d17ca3d77f4f1b0fc0324fca32
+SHA512: eb591a65859115d37da1eacf0c9f72e6caf58b7377a50da008a92716e6e9c6c3df8a966657df93d951a60a8691fe04e1cbb7f3919b50659bdb4db97177df25a8
+Homepage: http://www.roland-riegel.de/nload/
+Description: realtime console network usage monitor
+ Nload is a console application which monitors network traffic and bandwidth
+ usage in real time. It displays the total amount of data that has been
+ transferred over a network device since the last reboot, the current bandwidth
+ usage, and the minimum, maximum, and average bandwidth usage measured
+ since it started.
+ .
+ If the user wants, it is also able to display two bars, similar to progress
+ bars, presenting the current load graphically. Support for displaying several
+ devices simultaneously is included.
+Vcs-git: https://github.com/marciosouza20/nload.git
+Vcs-Browser: https://github.com/marciosouza20/nload.git
 
 Package: ncat
 Architecture: iphoneos-arm64e
