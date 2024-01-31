@@ -1342,6 +1342,27 @@ SHA256: 7d51f6a64d9ab1751d1ea237b8961d08e94294a6f55bee387ff5bae71284da3c
 SHA512: 74706b7bdcd25e3b970fe44be440f3d34e18453fb12eb7a35a6559699d010f4cd416898669814cc5600dfe6f4f5629b7ddea794875768766fafb8953c1174d56
 Description: Virtual package to keep you safe from uninstalling important packages.
 
+Package: exa
+Architecture: iphoneos-arm64e
+Version: 0.10.1
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 736
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/exa/exa_0.10.1_iphoneos-arm64e.deb
+Size: 356428
+MD5sum: 91d61a2249cdd1856efbd2b0862f536f
+SHA1: c10e34eef2e46c5dab05905600c72af4af635958
+SHA256: afc71687c4b01102b348d7c9f208dbc471fff012dfc713ce92c85adeec3df337
+SHA512: 18c6c3d2b5c36ab4ed84d60e197b12fb98533cbe31f6df0fefa4fc568af78d53bd08190950a3ff2f18c2261173768890de2dd914937d2906c5300d2ed806b63d
+Description: Modern replacement for ls.
+ Exa is a modern day replacement for the venerable file-listing command-line program
+ ls that ships with Unix and Linux operating systems, giving it more features and better
+ defaults. It uses colors to distinguish file types and metadata. It knows about symlinks,
+ extended attributes, and Git. And it's small, fast, and just one single binary.
+Author: Benjamin Sago <auto@bsago.me>
+
 Package: fakeroot
 Architecture: iphoneos-arm64e
 Version: 1.31-1
@@ -5391,6 +5412,84 @@ Description: message digest functions from BSD systems - shared library
  as found on various BSDs on a library with the same name and with a
  compatible API.
 
+Package: lua-mpack
+Architecture: iphoneos-arm64e
+Version: 1.0.10
+Priority: optional
+Section: Lua
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 392
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libmpack0, liblua5.1-0, liblua5.2-0, liblua5.3-0, libluajit-5.1-2
+Filename: pool/main/iphoneos-arm64e/1800/libmpack-lua/lua-mpack_1.0.10_iphoneos-arm64e.deb
+Size: 16186
+MD5sum: 08b7bcd2f55252bbaf10bbdfc78c434e
+SHA1: 52c9fe36802e6aed869a8276b37c6080a0a50154
+SHA256: 7ef1eaa5793b0cf3d6738d0a48fde6ccf1533b38f8ff1478282915ef006b1c04
+SHA512: 55c3bd0c56dc254f9978d65be9cc14de2330b9337802544e230e9ae2accc2349dbc37a2a450366c4e525f173f2be045d1b1bd9d517bd62d9caecaf34473476ea
+Description: libmpack binding for the Lua language
+ libmpack is a small binary serialization/RPC library that implements both the
+ msgpack and msgpack-rpc specifications.
+ .
+ This package provides the Lua bindings based on libmpack.
+
+Package: libmpack-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.5
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 120
+Depends: roothide (>= 0.0.6), libmpack0 (>= 1.0.5)
+Filename: pool/main/iphoneos-arm64e/1800/libmpack/libmpack-dev_1.0.5_iphoneos-arm64e.deb
+Size: 66898
+MD5sum: 4b793fc0c7bfeafe24562294daadac23
+SHA1: 4fc7dcc06e2a74ed4404caf4129672656bd7ced1
+SHA256: 431c7fe702a7427c8f86f8849abe217d2683e9cb2ab5be141764a118471a4962
+SHA512: 9886dba2dcafca4246f3ed2ca2686d05cd629d2046552c4fc10b8d299e74fb88bb4642b2149d4cb8a3f5dc336c332cd49fba51659928e5939acd34bf88a7f360
+Homepage: https://github.com/libmpack/libmpack
+Description: small binary serialization/RPC library (development files)
+ libmpack is a small binary serialization/RPC library that implements both the
+ msgpack and msgpack-rpc specifications.
+ .
+ Differences from msgpack-c:
+ .
+  * Callback-based API to simplify (de)serialization directly to/from
+    application-specific objects.
+  * C89 compatible code
+  * No allocation performed by the library, but helpers to simplify dynamic
+    allocation if the application needs it.
+  * Non-backtracking, incremental/iterative parse/serialization API
+ .
+ This package contains the headers files needed for developing with mpack
+
+Package: libmpack0
+Architecture: iphoneos-arm64e
+Version: 1.0.5
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 52
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libmpack/libmpack0_1.0.5_iphoneos-arm64e.deb
+Size: 9090
+MD5sum: 7a19c8ac1ca04b242fbc87b53b77dd88
+SHA1: ce2b98397d421d5c36659d8eccebb7d444955ae2
+SHA256: c38a6cb9476c71a3ff968b2eb325759760f8e83ea5a6305c1c9258cf686b59d2
+SHA512: d7d478aaf1fb049d57112e78c4e5aa185d3ff6b1bf274d74323b05da1a16332a11ab1a793c6905b6ffed0ba2bf4683d97c8b1221f9cc3ab3ee97e1c78f888828
+Homepage: https://github.com/libmpack/libmpack
+Description: small binary serialization/RPC library
+ libmpack is a small binary serialization/RPC library that implements both the
+ msgpack and msgpack-rpc specifications.
+ .
+ Differences from msgpack-c:
+ .
+  * Callback-based API to simplify (de)serialization directly to/from
+    application-specific objects.
+  * C89 compatible code
+  * No allocation performed by the library, but helpers to simplify dynamic
+    allocation if the application needs it.
+  * Non-backtracking, incremental/iterative parse/serialization API
+
 Package: libnet-dev
 Architecture: iphoneos-arm64e
 Version: 1.2
@@ -6569,6 +6668,59 @@ Description: Manage ASN.1 structures (binaries)
  This package contains programs to encode, decode and parse asn1 data
  structures.
 
+Package: libtermkey-dev
+Architecture: iphoneos-arm64e
+Version: 0.22
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 204
+Depends: roothide (>= 0.0.6), libtermkey1 (= 0.22), libunibilium-dev
+Filename: pool/main/iphoneos-arm64e/1800/libtermkey/libtermkey-dev_0.22_iphoneos-arm64e.deb
+Size: 77662
+MD5sum: de73082414b8156643b485eb2c2a93c7
+SHA1: 05c5ecfed7970c03c755dbb092ba019e3cb72c00
+SHA256: 070d5b2d14ec4e51a9a6f74810727ef0df8122a2c8828eee3ebbfe36b66ddca4
+SHA512: 38f5109c66d7297b50616913b70d5372b09b91949ec5b576984cc9f93d2e92d5d1c82dd24c09489af035d63bf53f697e45e61d0a9d7de5a6a89e954b7494aa7e
+Description: library for processing keyboard input (development files)
+ This library allows easy processing of keyboard entry from terminal-based
+ programs. It handles all the necessary logic to recognise special keys, UTF-8
+ combining, and so on, with a simple interface.
+ .
+ This package contains the header files and libraries needed for developing
+ with libtermkey.
+
+Package: libtermkey1
+Architecture: iphoneos-arm64e
+Version: 0.22
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 92
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libunibilium4
+Filename: pool/main/iphoneos-arm64e/1800/libtermkey/libtermkey1_0.22_iphoneos-arm64e.deb
+Size: 16540
+MD5sum: 9d1910deba40cf47758449295f9a4b54
+SHA1: 2a70bdec4cb25305359ecdf4e974529cf678112b
+SHA256: 602334c370f0d65ba36a16014d98e243c244406f24cfff19cf8d8354e6f2975f
+SHA512: fdc77bdd95e752ebd19c7618ed7c92e1ce8b4335226a2ffaf0d5dea9ab9a08fb6b5b12169eadb880ba8d27d4e04f76fc6d6bf48ca31c8e133facf5c6901baeb4
+Description: library for processing keyboard input
+ This library allows easy processing of keyboard entry from terminal-based
+ programs. It handles all the necessary logic to recognise special keys, UTF-8
+ combining, and so on, with a simple interface.  It provides the following
+ features:
+ .
+  * Follows terminfo for every sequence listed there, only falling back on
+    other methods to deal with unrecognised input.
+  * Recognises special keys (such as arrow and function keys), including
+    "modified" keys like Ctrl-Left.
+  * Recognises XTerm-style mouse position/button reporting.
+  * MIT licenced to allow almost all projects to use it; both Open Source
+    and Commercial.
+  * Small API - just three functions are needed in simple common cases.
+  * Both synchronous (blocking) and asynchronous (non-blocking) APIs are
+    supported.
+
 Package: libtheora-dev
 Architecture: iphoneos-arm64e
 Version: 1.1.1
@@ -7124,6 +7276,77 @@ Description: VP8 and VP9 video codec encoding/decoding tools
  on which the Theora codec was based.
  .
  This package contains the commandline tools vpxdec and vpxenc.
+
+Package: libvterm-bin
+Architecture: iphoneos-arm64e
+Version: 0.3.1
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 192
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libvterm0 (= 0.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libvterm/libvterm-bin_0.3.1_iphoneos-arm64e.deb
+Size: 11834
+MD5sum: 74267492d5646daf2b487bd1d7c0d94c
+SHA1: ac5646ab9aa313cd1e052fc06ded3ab26485f58e
+SHA256: 559d1fc28e5898e9458fa153642ca56831fba31cfd2e50d4d70853f2eb930fe8
+SHA512: 55604cbcdec2fe1a12bfb3886af337cd304c9a5734f489ea87a5379ebab59d0029dcf4adb06b7ffb9d91ee175bb1c7d9c3cc0a07995c8c428b011333f6bcc3b1
+Description: abstract terminal library (utility programs)
+ An abstract C99 library which implements a VT220 or xterm-like terminal
+ emulator. It doesn't use any particular graphics toolkit or output
+ system, instead it invokes callback function pointers that its embedding
+ program should provide it to draw on its behalf. It avoids calling
+ malloc() during normal running state, allowing it to be used in embedded
+ kernel situations.
+ .
+ This package contains utility programs that demonstrate libvterm.
+
+Package: libvterm-dev
+Architecture: iphoneos-arm64e
+Version: 0.3.1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 196
+Depends: roothide (>= 0.0.6), libvterm0 (= 0.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libvterm/libvterm-dev_0.3.1_iphoneos-arm64e.deb
+Size: 107594
+MD5sum: 8819cf2ad6f77be9cd02277a299e2484
+SHA1: c4a80f0cc5d870779b8fd9d246faee161ac53d6f
+SHA256: 5b8d72e39100763fffc69bc64202d65373a6bb57be2f0a76ae863d0a98396301
+SHA512: 1388a40d8b3e308b4bfc9566c3f21afe783b6ce66e7ad623e4491430df8c7f849222edd725f9b02f0ec956d85522b83f8e0ae58f3fac4c1982f5d367f6e313e4
+Description: abstract terminal library (development files)
+ An abstract C99 library which implements a VT220 or xterm-like terminal
+ emulator. It doesn't use any particular graphics toolkit or output
+ system, instead it invokes callback function pointers that its embedding
+ program should provide it to draw on its behalf. It avoids calling
+ malloc() during normal running state, allowing it to be used in embedded
+ kernel situations.
+ .
+ This package contains the header files and libraries needed for developing
+ with libvterm.
+
+Package: libvterm0
+Architecture: iphoneos-arm64e
+Version: 0.3.1
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 108
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libvterm/libvterm0_0.3.1_iphoneos-arm64e.deb
+Size: 31058
+MD5sum: a57950a046102e2429593f51552aa957
+SHA1: f10c45653718eb4db48f65b4063b016d1b110be3
+SHA256: 5707b05c24278d20b050687d1bb282e20cfbecbd87d9d186405c5c2f9c8145e4
+SHA512: 5c4f634d979c5d3462d0fffa5b5ce67c4cfc2b5fe4e93757632b042df6da21678e617df94f831acacc74831d0aa1a42759e1b1cff465050a73350d5fed8dcd31
+Description: abstract terminal library
+ An abstract C99 library which implements a VT220 or xterm-like terminal
+ emulator. It doesn't use any particular graphics toolkit or output
+ system, instead it invokes callback function pointers that its embedding
+ program should provide it to draw on its behalf. It avoids calling
+ malloc() during normal running state, allowing it to be used in embedded
+ kernel situations.
 
 Package: libwebp-dev
 Architecture: iphoneos-arm64e
@@ -10033,6 +10256,216 @@ SHA256: 528568b729e02702cff16843c240fd4a84182d53cf2a2d62fba040bdbbc0a0f8
 SHA512: 433b96adc47f96e0ad7820f5053849852d4a59c3bff721cf81f22dae8a74845f3d143cedd9b94ad0ff3b236722b639742490d3597229c9c19dfa59674e6614e0
 Description: shows what files programs have open
 
+Package: lua-lpeg
+Architecture: iphoneos-arm64e
+Version: 1.0.2
+Priority: optional
+Section: Lua
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 728
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblua5.1-0, liblua5.2-0, liblua5.3-0, libluajit-5.1-2
+Filename: pool/main/iphoneos-arm64e/1800/lua-lpeg/lua-lpeg_1.0.2_iphoneos-arm64e.deb
+Size: 34170
+MD5sum: 35ecef8d85d6222f3118e4f5f4d9b6de
+SHA1: 9e0f6461f8cd107ae8613bc3069cdaf40975f18a
+SHA256: fba9bc7c7e1e5cad3ffcfbbb3b247a1934bfbb4a7de99950dedfca4f91696075
+SHA512: cf01be0139e5bc83da6d9452f34584c65baa63840c0e49adef763de8db63e5635b09aaa056ca576c37cf6e9d98adf3e5654359f0e872c0fcd211c0fe8dd15b0a
+Description: LPeg library for the Lua language
+ LPeg is a new pattern-matching library for Lua, based on Parsing Expression
+ Grammars (PEGs). PEGs look similar to regular expressions or context-free
+ grammars in Backus-Naur form (BNF) notation. PEGs make a good replacement for
+ regular expressions, because they are strictly more powerful. For example, a
+ regular expression inherently cannot find matched pairs of parentheses, because
+ it is not recursive, but a PEG can.
+
+Package: lua-luv-dev
+Architecture: iphoneos-arm64e
+Version: 1.44.2-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 96
+Depends: roothide (>= 0.0.6), libuv1-dev, liblua5.1-dev, liblua5.2-dev, liblua5.3-dev
+Filename: pool/main/iphoneos-arm64e/1800/lua-luv/lua-luv-dev_1.44.2-1_iphoneos-arm64e.deb
+Size: 4386
+MD5sum: e78274a603f45d23c488ccdbc77a1d3a
+SHA1: b182582a7102f944e4cfe22e08b42d7303255bf5
+SHA256: a6fb73b27a2182174e1d9c2674cc87bced315566e0fbb9a97e0be43a3c2fd454
+SHA512: d8fb8ab47e56c95edef25cc42635627f0db116a6fe68bc37019adb7f27af2e8f04a572edafe12cddcb9e8b72f476d53ab5194be72b833a76c4bda30beb33b4e9
+Description: libuv bindings for Lua (development files)
+ This package provide the static library and headers for lua-luv
+
+Package: lua-luv
+Architecture: iphoneos-arm64e
+Version: 1.44.2-1
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1320
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libuv1, liblua5.1-0, liblua5.2-0, liblua5.3-0, libluajit-5.1-2
+Filename: pool/main/iphoneos-arm64e/1800/lua-luv/lua-luv_1.44.2-1_iphoneos-arm64e.deb
+Size: 158830
+MD5sum: 6792b2a466225a7b3fa54c7650d1a657
+SHA1: 9680c263a2f47f829c6a2ae88f546441834a4446
+SHA256: 41583ac4a04a9a99d8ce897c15afbb2a53be1d35a68bbfc12dcb5b6eb8bddfe0
+SHA512: 156411f784e109c754dd4bc13f7ae86de694f67d4a82712b84a5d4e83d19e742e80415e0de5410a76505e6582b9de72082e13d8765bf36ee761a61f4623a8bb7
+Description: libuv bindings for Lua
+ libuv is a multi-platform support library with a focus on asynchronous I/O.
+ .
+ This package provides libuv bindings for the Lua programming language.
+
+Package: liblua5.1-0
+Architecture: iphoneos-arm64e
+Version: 5.1.5-1
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 216
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.1/liblua5.1-0_5.1.5-1_iphoneos-arm64e.deb
+Size: 83216
+MD5sum: b102d716cd2a993ed6cc9eb9898155b8
+SHA1: 4fdfbee2ba96b21fb99698289223afd7e54ae364
+SHA256: 2e74a23b7d754e67702971ea70d8324044c193c2cbb1e6783284065682ee602b
+SHA512: 66e65757ea38ae74d4e0af6dea7c5443c8af7c9b0ec6da33330d10c7db0e5d4d5d8c04f736750a32ee235051ff25b339a7f0835c87759f26faf48996674eff8b
+Description: Shared library for the Lua interpreter version 5.1
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+
+Package: liblua5.1-dev
+Architecture: iphoneos-arm64e
+Version: 5.1.5-1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 56
+Depends: roothide (>= 0.0.6), liblua5.1-0 (= 5.1.5-1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.1/liblua5.1-dev_5.1.5-1_iphoneos-arm64e.deb
+Size: 15630
+MD5sum: 4ff8936e17454616261af9cc71f1f0a9
+SHA1: 5ab45eb0b02113b8fca2049bdf6611c8a7c13c9e
+SHA256: f16ae82c89b742481c89621a7598ba3e4ed00add1ee30ec6215e6a20489c96a8
+SHA512: e50fc204656cd1b598c565d29f0b8efb5d111477c9b1b2f05916bae7a63d821091efaf94d6e7faafc87e988168cabc4dfcc50b3823ccd74805b44e932538953f
+Description: Development files for the Lua language version 5.1
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains developer resources for using the Lua library.
+ Install it if you are developing programs which use the Lua C API.
+ .
+ This package also contains the official manual covering the Lua language
+ and C API.
+
+Package: lua5.1
+Architecture: iphoneos-arm64e
+Version: 5.1.5-1
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 152
+Provides: lua
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblua5.1-0 (= 5.1.5-1), libreadline8
+Filename: pool/main/iphoneos-arm64e/1800/lua5.1/lua5.1_5.1.5-1_iphoneos-arm64e.deb
+Size: 15216
+MD5sum: 0940f9274c393143660bc78f19bba677
+SHA1: 6de1e68906fade90dfc4ad595d17312b471d82ff
+SHA256: 7de5b03788ac5f1e7043605ec7a3725d36965f4c4d500c060b629a3e87ee893e
+SHA512: b227d1084d3a35bee039c97b7acd9764246daf1e9d77dd96d4876069622842368053bb82d2a394f623c8872cd32fb87a1410f3624c3d81ba454287910d2d8391
+Description: Simple, extensible, embeddable programming language
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains the Lua command line interpreter and bytecode compiler.
+ Install it if you are developing or using Lua scripts.
+
+Package: liblua5.2-0
+Architecture: iphoneos-arm64e
+Version: 5.2.4-1
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 204
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.2/liblua5.2-0_5.2.4-1_iphoneos-arm64e.deb
+Size: 83046
+MD5sum: 52593a8b05b3703f1876e40139c09f37
+SHA1: 0db610d9445df94bfcf2bd22da026cbbba0b4caa
+SHA256: 0919a0d22bebcae147f9bc04defc684c0a80524a2775eb33f0000cfa1a1851da
+SHA512: 4c12f8ff6ba206757ef787ab4b0ebe389021725630f449878f568fbed8f25f9d7771bffd4f18c57f3280ecf2ee0c99dd3471c9fb3f8fc2f83dad5df9081a28fc
+Description: Shared library for the Lua interpreter version 5.2
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+
+Package: liblua5.2-dev
+Architecture: iphoneos-arm64e
+Version: 5.2.4-1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 52
+Depends: roothide (>= 0.0.6), liblua5.2-0 (= 5.2.4-1)
+Filename: pool/main/iphoneos-arm64e/1800/lua5.2/liblua5.2-dev_5.2.4-1_iphoneos-arm64e.deb
+Size: 13332
+MD5sum: 97212adab540d45a4a820d474edaae51
+SHA1: 9ce59d66d7e4511004d461fbe03cc3e183399b5e
+SHA256: 70555c3391d0074144e78237cd95795d40d15afeef2a26b74c1283f22392b4ae
+SHA512: 63b33c8ed6a2661ff2060df2510cd811909516afb946d8c283e9c26e3accd1f6f513fff96b656e627ed89cefe8d7d8232fbf4d7072c7814fc8a9acf55fb8ed07
+Description: Development files for the Lua language version 5.2
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains developer resources for using the Lua library.
+ Install it if you are developing programs which use the Lua C API.
+ .
+ This package also contains the official manual covering the Lua language
+ and C API.
+
+Package: lua5.2
+Architecture: iphoneos-arm64e
+Version: 5.2.4-1
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 152
+Provides: lua
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblua5.2-0 (= 5.2.4-1), libreadline8
+Filename: pool/main/iphoneos-arm64e/1800/lua5.2/lua5.2_5.2.4-1_iphoneos-arm64e.deb
+Size: 13892
+MD5sum: 0200ab7c484beadca655d366fe53c74f
+SHA1: c14df0f2b867cc62de805e6988a70ac95f04591f
+SHA256: e252fda1bbfe554db10eee7c8a7cd97d77c7d4795568d7b2c5b67eb2d945b0b7
+SHA512: 1f85212cf3e78182f5667885d1503518df26427cc441650fd962669a34db655ed2ef8a72661589a384b34c124321176e02e19e01aaf1aca328fed75360518fd0
+Description: Simple, extensible, embeddable programming language
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains the Lua command line interpreter and bytecode compiler.
+ Install it if you are developing or using Lua scripts.
+
 Package: liblua5.3-0
 Architecture: iphoneos-arm64e
 Version: 5.3.3-1
@@ -10108,6 +10541,86 @@ Description: Simple, extensible, embeddable programming language
  .
  This package contains the Lua command line interpreter and bytecode compiler.
  Install it if you are developing or using Lua scripts.
+
+Package: libluajit-5.1-2
+Architecture: iphoneos-arm64e
+Version: 2.1.0~beta3+git377a848
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 292
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libluajit-5.1-common (= 2.1.0~beta3+git377a848)
+Filename: pool/main/iphoneos-arm64e/1800/luajit/libluajit-5.1-2_2.1.0~beta3+git377a848_iphoneos-arm64e.deb
+Size: 136752
+MD5sum: 85c07e16e50a26815e5766f2d25f12a2
+SHA1: e72b20a64cff7029d8c60257dd1468178157924d
+SHA256: 5e7654fa5c82e0e50d4231e47096f5dadc28617a865078a403a1af246fe78a2d
+SHA512: 21fbfbe7802b3fe995248ff4ca372a41914e18a7d3742e3204ecc8f9fb1a75e6f4b44acd79d43c521303f664adc12d8a1cf6be11ad454a858392efb4876059b5
+Description: Just in time compiler for Lua - library version
+ LuaJIT implements the full set of language features defined by Lua 5.1. The
+ virtual machine (VM) is API- and ABI-compatible to the standard Lua interpreter
+ and can be deployed as a drop-in replacement.
+ .
+ This package contains an embeddable version of LuaJIT that can be used as a
+ replacement of the standard liblua-5.1 shared library.
+
+Package: libluajit-5.1-common
+Architecture: all
+Version: 2.1.0~beta3+git377a848
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 236
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/luajit/libluajit-5.1-common_2.1.0~beta3+git377a848_all.deb
+Size: 53786
+MD5sum: 6aea5ad4fc57ee067c7202026160997f
+SHA1: dcf73044360af1c8153ad8a63bda43c0c2f228b3
+SHA256: c7bc7de3ec5fe1dc4670d357472b8704340ab0c45f3ceb94bb375da7fe1246d0
+SHA512: f3e78819c41c1c070426c1043fafcae40e0084d2cfd339d1b82632ab49a86a653ce1fa5cd52d4538f250b859e7d03b866334dd620e00e49c6f2ea8517be2ffb5
+Description: Just in time compiler for Lua - common files
+ This package contains files needed by the LuaJIT interpreter/jitter as well
+ by its embeddable (i.e. library) version.
+
+Package: libluajit-5.1-dev
+Architecture: iphoneos-arm64e
+Version: 2.1.0~beta3+git377a848
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 52
+Depends: roothide (>= 0.0.7), libluajit-5.1-2 (= 2.1.0~beta3+git377a848)
+Filename: pool/main/iphoneos-arm64e/1800/luajit/libluajit-5.1-dev_2.1.0~beta3+git377a848_iphoneos-arm64e.deb
+Size: 10308
+MD5sum: b38e94e5a16a1b70bfba432927523cc0
+SHA1: 0ac4e6d96225600cfc119ba025c1195bfdf1b01e
+SHA256: 29f8a71b6d557db254cd0fb5deea900aeba1696f88ab2db492e91d05c0742276
+SHA512: 327cb9e1ae76deb52a4fd43c65f598f740af228a991a95c6065053fbcc4d2a9b0a8991e060a50976aaa745fd32265615ed10e05000a5ca542b5b75619610d8af
+Description: Just in time compiler for Lua - development files
+ This package contains header files and a statically linkable library for
+ LuaJIT.
+
+Package: luajit
+Architecture: iphoneos-arm64e
+Version: 2.1.0~beta3+git377a848
+Priority: optional
+Section: Scripting
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libluajit-5.1-2 (= 2.1.0~beta3+git377a848), libluajit-5.1-common (= 2.1.0~beta3+git377a848)
+Filename: pool/main/iphoneos-arm64e/1800/luajit/luajit_2.1.0~beta3+git377a848_iphoneos-arm64e.deb
+Size: 9028
+MD5sum: bf770aad3dad0ba18e6bf101549d42d1
+SHA1: ed6b8c0824b34cf380615561c8044430e89154df
+SHA256: 4408c7fd1356a247098f329e9970dcac122f364b415db354fa7015e42e7ddf9e
+SHA512: be9dd0b9c5362b4a6b8fc4819bd577dc5b93dac71ab8edde005053749f802528869b4b54f84221d6209b6f9ee31e070f38963ccd1cd3fc347c098e81117825b5
+Description: Just in time compiler for Lua programming language version 5.1
+ LuaJIT implements the full set of language features defined by Lua 5.1. The
+ virtual machine (VM) is API- and ABI-compatible to the standard Lua interpreter
+ and can be deployed as a drop-in replacement.
+ .
+ This package contains the standalone interpreter/jitter that can be used
+ as a replacement for the standard lua5.1 interpreter.
 
 Package: liblz4-1
 Architecture: iphoneos-arm64e
@@ -10251,6 +10764,46 @@ Description: multiple precision floating-point computation
  well-defined semantics. It copies the good ideas from the
  ANSI/IEEE-754 standard for double-precision floating-point arithmetic
  (53-bit mantissa).
+
+Package: libmsgpack-dev
+Architecture: iphoneos-arm64e
+Version: 3.3.0
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 7320
+Depends: roothide (>= 0.0.6), libmsgpackc2 (= 3.3.0)
+Filename: pool/main/iphoneos-arm64e/1800/msgpack/libmsgpack-dev_3.3.0_iphoneos-arm64e.deb
+Size: 344540
+MD5sum: 1bd9529bd7463cc7556574422ce0ba2d
+SHA1: 9f8b449132cfe9cdbf877254a0ce45f4670747bc
+SHA256: d38af3d35293876a3fd17dbe47e63807a1f86a2a30f0bbff8e65485bb2dd4bc9
+SHA512: c0c032ffa806ae27630751db1461d44f69527909528b7cc14e059214963c840d2df16ffc63a1126a8623d7e4c6d746b4af3ced0ebc9b6676e7dcb0435b6d4079
+Description: binary-based efficient object serialization library (development files)
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.
+ .
+ This package contains the headers files needed for developing with msgpack-c.
+
+Package: libmsgpackc2
+Architecture: iphoneos-arm64e
+Version: 3.3.0
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/msgpack/libmsgpackc2_3.3.0_iphoneos-arm64e.deb
+Size: 14234
+MD5sum: 8f9ef1b2efdf04d0d0d3e53581966617
+SHA1: c7dc46728e7e2d13fc007d2177e71be912ff7c67
+SHA256: 929155e7018867ea3d3ffc079d0c12d2aa55e29b3d3975823ebe1e0d65c36889
+SHA512: 2b543013ca5b7d144934865b506937668b37f65efdf429bedba1fa11fbfd9ad1a7febdd8ae659c7d28b455969ebcc2b2461db12c132700332ba591695335b227
+Description: binary-based efficient object serialization library
+ MessagePack is a binary-based efficient object serialization library.
+ It enables to exchange structured objects between many languages like JSON.
+ But unlike JSON, it is very fast and small.
 
 Package: nano
 Architecture: iphoneos-arm64e
@@ -10420,6 +10973,32 @@ Description: Shows System Information with Distribution Logo
  and display it on the terminal next to an image, it could be your
  distributions logo or any ascii art of your choice.
 Author: Dylan Araps <dylan.araps@gmail.com>
+
+Package: neovim
+Architecture: iphoneos-arm64e
+Version: 0.9.0
+Priority: optional
+Section: Text_Editors
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 29832
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libintl8, lua-luv, libuv1, libmsgpackc2, libvterm0, libtermkey1, libunibilium4, libluajit-5.1-2, libtree-sitter0
+Filename: pool/main/iphoneos-arm64e/1800/neovim/neovim_0.9.0_iphoneos-arm64e.deb
+Size: 7881648
+MD5sum: 9a6773da4c1afda24b033a3d808ba8a6
+SHA1: 461466839ed51d2b006b2da2293efada1b6a8f5c
+SHA256: a060bbb995169209a457d633c244331a235afb484bf8bab1442ee5836f1489c7
+SHA512: 9c5ddfc7c617b80ca299ca67a974f912831171e6c74ae281185bc8aa773c9470d48366effda079e132464f6c11d132aa1b283b141a8a900e98e46050112e6f31
+Homepage: https://neovim.io/
+Description: heavily refactored vim fork
+ Neovim is a fork of Vim focused on modern code and features, rather than
+ running in legacy environments.
+ .
+ msgpack API enables structured communication to/from any programming language.
+ Remote plugins run as co-processes that communicate with Neovim safely and
+ asynchronously.
+ .
+ GUIs (or TUIs) can easily embed Neovim or communicate via TCP sockets using
+ the discoverable msgpack API.
 
 Package: netcat
 Architecture: iphoneos-arm64e
@@ -11969,6 +12548,36 @@ Description: Fastest and safest AV1 video encoder
  .
  This package contains the command line tool.
 
+Package: rclone
+Architecture: iphoneos-arm64e
+Version: 1.55.0
+Priority: optional
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 41712
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/rclone/rclone_1.55.0_iphoneos-arm64e.deb
+Size: 13977732
+MD5sum: 0d8c50953900b64e495913e733da1604
+SHA1: 4b201da8d4e3610250ff8bcd6c9cac3767c979b1
+SHA256: c4d4e7f7bd3a0d79e09915f0b57bff967ea52a3f3f6e60c4221901b836804184
+SHA512: 181ed058d6a7551e3225bd865c133ec15600b7b1e691c7ec7070abbd335af81ce09371e2559756dcd058ea433f91ee0acf9ffea33b71bbce2dab08ceeebecc69
+Homepage: https://rclone.org
+Description: rsync for commercial cloud storage
+ Rclone is a program to sync files and directories between the local
+ file system and a variety of commercial cloud storage providers:
+ .
+  - Google Drive
+  - Amazon S3
+  - Openstack Swift / Rackspace cloud files / Memset Memstore
+  - Dropbox
+  - Google Cloud Storage
+  - Amazon Drive
+  - Microsoft One Drive
+  - Hubic
+  - Backblaze B2
+  - Yandex Disk
+
 Package: libreadline-dev
 Architecture: iphoneos-arm64e
 Version: 8.2.0-1
@@ -12042,19 +12651,19 @@ Description: Recursively searches directories for a regex pattern
 
 Package: roothide
 Architecture: iphoneos-arm64e
-Version: 0.0.6
+Version: 0.0.7
 Priority: required
 Essential: yes
 Section: System
 Maintainer: roothide
 Installed-Size: 936
 Depends: libiosexec1 (>= 1.3.1)
-Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.6_iphoneos-arm64e.deb
-Size: 54534
-MD5sum: 348646b69ce6f3a3c0d98fda5efec13d
-SHA1: 90a6aa668e5f9c4def381c68e6876b478f48154b
-SHA256: 4e5b9e110c009aac1e29156fa23432a447b00423e75a0a597ddb9ae650132419
-SHA512: c93043c36cc6f5d820896d26a7f259148a9b56f7456ef35daffd31b68bea9db18568054e64cb14af13c814dfa33f4c92ebc051129773289cfba6cb4f3826bc06
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.7_iphoneos-arm64e.deb
+Size: 54682
+MD5sum: a387792be4ae0ae4a9e0e3d5b60f22d2
+SHA1: 4ec9f91b66f32a0389c16d6c1b010b86c56f8482
+SHA256: 2a72445eff9223e558fe4f4a70d6acf38168d1b0af5570f5d9feb7e4c956bbcb
+SHA512: 7277bf0b7aabfec364d25a34a74fc1858e063563196dd73a6d36f7e5f63f591fabd487fdc549cbb682ec7d883e49a6720bcc8574b894313c6306e93fd5b5a6d1
 Description: roothide core package
 Name: roothide core
 Author: roothide
@@ -12579,6 +13188,57 @@ SHA256: 90d8c9cd4dad882161bc824befaad61628815f6992d46d6b228c1d7f5ffea578
 SHA512: 7bf8f3e299d68be2bd7cf803e9e64ed3d686724f050d3777cd61b0663ce8b0306201ff59afd9313b4635a2b317033de117db2daa5c62417755d288ccbbb5aa19
 Description: multiplexes a terminal into many
 
+Package: libtree-sitter-dev
+Architecture: iphoneos-arm64e
+Version: 0.20.8
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 440
+Depends: roothide (>= 0.0.6), libtree-sitter0 (= 0.20.8)
+Filename: pool/main/iphoneos-arm64e/1800/tree-sitter/libtree-sitter-dev_0.20.8_iphoneos-arm64e.deb
+Size: 272154
+MD5sum: 661aafbb646790a3d68a89ce5672ad4e
+SHA1: 60a915355bda33bf5eea91595c5196da9315ad98
+SHA256: 9ec116a59b41d6c97dc8123e9191deafc92ea7008094539db7af24210dd8ca5e
+SHA512: ad3735e7160be79305ecc1f8a14e401af0cd33ffda7c53c94075ff65d1786f99c342f6f948000afffcef98e980d526bd0877209ceb1476f60de268b4b18227db
+Homepage: https://tree-sitter.github.io/tree-sitter/
+Description: incremental parsing system for programming tools (development files)
+ Tree-sitter is a parser generator tool and an incremental parsing library. It
+ can build a concrete syntax tree for a source file and efficiently update the
+ syntax tree as the source file is edited.
+ .
+ Tree-sitter aims to be:
+ .
+  * General enough to parse any programming language
+  * Fast enough to parse on every keystroke in a text editor
+  * Robust enough to provide useful results even in the presence of
+    syntax errors
+  * Dependency-free so that the runtime library (which is written in pure
+    C) can be embedded in any application
+ .
+ This package contains the header files and libraries needed for developing
+
+Package: libtree-sitter0
+Architecture: iphoneos-arm64e
+Version: 0.20.8
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 196
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/tree-sitter/libtree-sitter0_0.20.8_iphoneos-arm64e.deb
+Size: 78330
+MD5sum: c08da1edd3ab25e9eae7ccc09e35ca28
+SHA1: c959cbe6b14c69b0515b8239a772aede963f2448
+SHA256: 8ecca1f4c6c261947559e0fcf34813d21611b1d2e671528bf13d054b5866371a
+SHA512: a81590dd31642af04fc9ea1a8f9ec89116793656b9c5e27b46f096b932803dabccfa93282a3dd5839e855a481a2ab68a1e9a868c3d1e0359a3d48fadb412cf2a
+Homepage: https://tree-sitter.github.io/tree-sitter/
+Description: incremental parsing system for programming tools
+ Tree-sitter is a parser generator tool and an incremental parsing library. It
+ can build a concrete syntax tree for a source file and efficiently update the
+ syntax tree as the source file is edited.
+
 Package: tree
 Architecture: iphoneos-arm64e
 Version: 2.0.1
@@ -12629,6 +13289,43 @@ SHA1: 1289889654c9df23b9e606c78914ef29bf61f89f
 SHA256: 5f62d674e236f823b1060942e811d34f1f0f2ae6d01d44b0ab1e4194c7b5732a
 SHA512: 5f2d8a404d0bd18a94fc6198c761c1b71545f822c24ea4573779c9f46c655e0e61512ed476a4e1714f94c86b8d678d86b3fbbfd0ac320300dc2a80c368726af6
 Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: libunibilium-dev
+Architecture: iphoneos-arm64e
+Version: 2.1.0
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 388
+Depends: roothide (>= 0.0.6), libunibilium4 (= 2.1.0)
+Filename: pool/main/iphoneos-arm64e/1800/unibilium/libunibilium-dev_2.1.0_iphoneos-arm64e.deb
+Size: 166378
+MD5sum: f65d4d4922211a9de5050611091e217f
+SHA1: f3df7ff652ec7ac23126e57f5234a4122e975dfe
+SHA256: c192c4200a1a02f8e3d33880e6ef557c62bc549a46dcb5078ae987c0dc58b3ad
+SHA512: 6b0835498da14d7199bc31529d69a51817baac312c1b9fcd5d8a874195a578b0d0b76f05eb0acfda19d0bb5fa7079e5951a0f7711e3734b6a3ace6d428c54ea1
+Description: simple, self-contained terminfo library (development files)
+ This package contains the header files and documentation needed for developing
+ with libunibilium.
+
+Package: libunibilium4
+Architecture: iphoneos-arm64e
+Version: 2.1.0
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/unibilium/libunibilium4_2.1.0_iphoneos-arm64e.deb
+Size: 19694
+MD5sum: f780cab154f3c895af303c24e88208ae
+SHA1: 048e134196fd9b8904f6868639da170537c24acc
+SHA256: a629326d669998287f5fa230cfafc2063a3f1a865761399faf6974db9d2d70dd
+SHA512: 89be715d7edd42269cacc7ce971817e2f7f77ef6f30063f01a95a492a3f4fa9b50f5791cbe2e26965cb06bfe6839724bfbe3ae81d215e98e26c592377bdf877a
+Description: simple, self-contained terminfo library
+ Unibilium is a very basic terminfo library. It doesn't depend on curses or any
+ other library. It also doesn't use global variables, so it should be
+ thread-safe.
 
 Package: libunrar-dev
 Architecture: iphoneos-arm64e
@@ -13405,6 +14102,36 @@ Description: XZ-format compression utilities - tiny decompressors
  .
  For a full-featured xzcat command without these limitations, use
  the xz-utils package instead.
+
+Package: yt-dlp
+Architecture: all
+Version: 2023.12.30
+Priority: optional
+Section: Multimedia
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2724
+Depends: roothide (>= 0.0.6), python3
+Recommends: aria2 | wget | curl, ffmpeg, rtmpdump
+Filename: pool/main/iphoneos-arm64e/1800/yt-dlp/yt-dlp_2023.12.30_all.deb
+Size: 2592356
+MD5sum: aee39b1bc42f7e28fe10e83faec621f0
+SHA1: 5aea4cfe3566e92238c017d372dc262459b47057
+SHA256: 47d2dd6505703f985ff5fee7485109a4cae8e93983b9040eb412935c9d71f183
+SHA512: aeba18c10da368defa918c4d3f25eb224bf2638720847e70d0ff50b2fad14397711033175bda3b3044c4ead26760a2fe7e02b38a39b9ad107666eb41fe55680c
+Homepage: https://www.github.com/yt-dlp/yt-dlp
+Description: downloader of videos from YouTube and other sites
+ yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc.
+ The main focus of this project is adding new features and patches
+ while also keeping up to date with the original project.
+ .
+ yt-dlp is a small command-line program to download videos from
+ YouTube.com and other sites that don't provide direct links to the
+ videos served.
+ .
+ yt-dlp allows the user, among other things, to choose a specific video
+ quality to download (if available) or let the program automatically
+ determine the best (or worst) quality video to grab. It supports
+ downloading entire playlists and all videos from a given user.
 
 Package: zip
 Architecture: iphoneos-arm64e
