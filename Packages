@@ -798,6 +798,25 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: ellekit
+Version: 1.1.2
+Architecture: iphoneos-arm64e
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: ./debfiles/ellekit_1.1.2_iphoneos-arm64e.deb
+Size: 342740
+MD5sum: 5e1b69e73d8514655a23e5344e41ce8c
+SHA1: 9409331cc223de13564c55369fab62923d7a35da
+SHA256: 99ff7d6fe121f306840714930170de82452b4929a4521c71614432a008989590
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
 Architecture: iphoneos-arm64e
