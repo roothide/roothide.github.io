@@ -202,6 +202,38 @@ SHA512: c218386e146d53a7ff1c934be549ecd137c8056aac6e723b93df0ceae660341b177c80c6
 Homepage: http://www.arpoison.net/
 Description: Generates user-defined ARP packets
 
+Package: autoconf
+Architecture: iphoneos-arm64e
+Version: 2.71
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2164
+Depends: roothide (>= 0.0.7), perl, libtool
+Filename: pool/main/iphoneos-arm64e/1800/autoconf/autoconf_2.71_iphoneos-arm64e.deb
+Size: 477396
+MD5sum: ef7c1d6a59b0241d378bde04c316886e
+SHA1: bedff53ac1a5e3bc74dc00e0781f4b5226a3c0d1
+SHA256: edff69c9cce0f4f8b5b87d4bdd6134c4103fc6f39303004f197e7512e0c1826e
+SHA512: 793a8b0b27150723b52ebb0d3852ff743cc2acfcd580f2f8700c3f73cb62449aaa198f999b8f586776c489edbb4c5852b0885de970d8eef38d533ffd3cb25100
+Description: Automatic configure script builder
+
+Package: automake
+Architecture: iphoneos-arm64e
+Version: 1.16.5
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1668
+Depends: roothide (>= 0.0.7), perl
+Filename: pool/main/iphoneos-arm64e/1800/automake/automake_1.16.5_iphoneos-arm64e.deb
+Size: 451562
+MD5sum: 8b55e6cc3b5cd0d0105b7cbf22a7c1e5
+SHA1: 7fc212ee71fbecced463268e605df7714577098f
+SHA256: b47e623bcceb621a4ec084207d6f75fd719ef9b12827b13e8f57b0abf8028912
+SHA512: e0cd2504965c2cacf76c38e9e4de56f466750f168961c997b30bf968810b9277b262d9ea9496e17a8c4e1c79657b2b39f22fb69dd2360a34c3bbbf8884ff86bf
+Description: Tool for generating GNU Standards-compliant Makefiles
+
 Package: base
 Architecture: iphoneos-arm64e
 Version: 1-6
@@ -388,6 +420,55 @@ Homepage: http://www.oracle.com/technology/products/berkeley-db/index.html
 Description: Berkeley v18.1 Database Libraries [runtime]
  This is the runtime package for programs that use the v18.1 Berkeley
  database library.
+
+Package: bison
+Architecture: iphoneos-arm64e
+Version: 3.8.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2536
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), m4, libintl8, libreadline8, libtextstyle0v5
+Filename: pool/main/iphoneos-arm64e/1800/bison/bison_3.8.2_iphoneos-arm64e.deb
+Size: 661732
+MD5sum: c22d134bb096a66a9e76399597bd387b
+SHA1: 4e8b7ed1f7a0f30a699a49254e25f0e08ab2ffcf
+SHA256: 541c4f8339496ae3b99388127b19aeee964354eadf825e17c511c3e0f584bae8
+SHA512: 6f51ddbcdb6c7743f45c6600e6f9f63c9e474d30a022afcfa07fe80704a4212b812523a4253d026b84d54b4c88a17f3e22847efb2aa30204d3238b2650020869
+Description: YACC-compatible parser generator
+ Bison is a general-purpose parser generator that converts a
+ grammar description for an LALR(1) context-free grammar into a C
+ program to parse that grammar.  Once you are proficient with Bison, you
+ may use it to develop a wide range of language parsers, from those used
+ in simple desk calculators to complex programming languages.
+ .
+ Bison is upward compatible with Yacc: all properly-written Yacc
+ grammars ought to work with Bison with no change.  Anyone familiar with
+ Yacc should be able to use Bison with little trouble.
+
+Package: libbison-dev
+Architecture: iphoneos-arm64e
+Version: 3.8.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 120
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/bison/libbison-dev_3.8.2_iphoneos-arm64e.deb
+Size: 86644
+MD5sum: 957b814cd5da110ae590c26ba4f4c1eb
+SHA1: 39143b5c44a55ac6aaf765d04e6998a30f6851c0
+SHA256: 121ea69938eced2e6fc24168e8edacda8bab1a6eb88df107a6abc01c7cfe7f1b
+SHA512: a17478ca6d64ab5ae42715543e1335f9473445d0ce03ee25b502c094863f8e709553a22893a37746829052feddf34e62ff9733f17a013b7d5eb2a184c6a76de0
+Description: YACC-compatible parser generator - development library
+ Bison is a general-purpose parser generator that converts a
+ grammar description for an LALR(1) context-free grammar into a C
+ program to parse that grammar.  Once you are proficient with Bison, you
+ may use it to develop a wide range of language parsers, from those used
+ in simple desk calculators to complex programming languages.
+ .
+ This package provides the liby.a file including functions needed by
+ yacc parsers.
 
 Package: brotli
 Architecture: iphoneos-arm64e
@@ -1195,6 +1276,103 @@ SHA1: 4e2c570dee5202bad1069db1530e42e1ba3fe305
 SHA256: 9373945ba63556f4e63719a6976f32423f8bfea7290682881c7d69f8d7e2e98b
 SHA512: bf5e538d43fd5dd0e53997c7ecaa3d92c7efa7a10f1c2b09124041991bc7688bc0da1f2c689404ad6090da6130bf95acc7018b737f11b43a154674301610b3a5
 Description: mount, quota, fsck, fstyp, fdisk, tunefs
+
+Package: docbook-xml
+Architecture: all
+Version: 4.5
+Priority: optional
+Section: XML
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1924
+Depends: roothide (>= 0.0.7), libxml2-utils
+Suggests: docbook-xsl
+Filename: pool/main/iphoneos-arm64e/1800/docbook-xml/docbook-xml_4.5_all.deb
+Size: 112330
+MD5sum: 80be18cc46fa5314d9670777e900e21f
+SHA1: 5def151856c90e12112c452dd0fec25c359a4fda
+SHA256: 482e815a8f874103b807fbe6e8eb221a9a2fbe6a7f50527fbd0ef59d13263524
+SHA512: 36faaeed9e58d41f30b998781b24cc83d50415496265b9b30e26b77f73bf956cc4221a51fadabeb614fb25e3cdd8c16baf7f538bd1273c5ca5d7f0e474bcf0ca
+Homepage: https://github.com/docbook/wiki/wiki/DocBookXslStylesheets
+Description: standard XML documentation system for software and systems
+ DocBook is an XML document type definition (DTD).  That is, it
+ contains the "DocBook" document structure.  This is used by authors
+ or editors writing documents in the DocBook XML format.  DocBook was
+ designed for books, articles, or reference documentation about
+ technical matters or software.  It has emerged as an open, standard
+ DTD in the software industry, and is the documentation system of
+ choice for many free software projects.
+ .
+ This package contains the XML DTD for DocBook, which describes the
+ formal structure for documents following this format.  If you wish to
+ author DocBook documents using SGML rather than XML, use the
+ 'docbook' package.  You will need other packages in order to edit
+ (psgml), validate (opensp, libxml2-utils) or format (docbook-xsl,
+ docbook-dsssl) DocBook documents.
+ .
+ This package ships with the latest DocBook 4.5 XML DTD, as well as a
+ selected set of legacy DTDs for use with older documents, including
+ 4.2, 4.3 and 4.4.
+
+Package: docbook-xsl-ns
+Architecture: all
+Version: 1.79.2
+Priority: optional
+Section: XML
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 49128
+Depends: roothide (>= 0.0.7), libxml2-utils
+Recommends: docbook5-xml
+Filename: pool/main/iphoneos-arm64e/1800/docbook-xsl/docbook-xsl-ns_1.79.2_all.deb
+Size: 21783572
+MD5sum: 03654f5f221494f7762fdad33036e5c6
+SHA1: 7fef2a9f7391c2879f7d8bbb18b6a9d838870206
+SHA256: 9493df2a77f38718c9eacc481168a0742af9600f6730d860480569ca305c4faa
+SHA512: ec304d4f47e9a5da12d6ea650d6dad0d5c3b3706badd74de39d6093e7a952c93c1d2128e2f0885002efeec0a6b873bb2ed17a40e8ed92b4c91d570530785d2c6
+Homepage: https://github.com/docbook/wiki/wiki/DocBookXslStylesheets
+Description: stylesheets for processing DocBook 5 XML to various output formats
+ These are modular XSL stylesheets for processing documents composed
+ with DocBook 5 XML and its derivatives. Unlike in docbook-xsl the DocBook
+ namespace prefix has been added to element names in pattern matches and
+ expressions. However processing of DocBook 4 documents is also possible
+ with these stylesheets. For a more detailed explanation read
+ http://www.sagehill.net/docbookxsl/ProcesingDb5.html.
+ .
+ The stylesheets provide XSLT transformations for (X)HTML, WordML, HTML Help,
+ JavaHelp, Man page (nroff), Website, Eclipse Platform Help file and XSL
+ Formatting Object (XSL-FO) output. The latter can be further processed to
+ a number of print formats using FOP or TeX-based tools.
+ .
+ The stylesheets are modular in the sense that you can extend and, to some
+ extent, customize them. The documentation is included in a separate package.
+
+Package: docbook-xsl
+Architecture: all
+Version: 1.79.2
+Priority: optional
+Section: XML
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 49040
+Depends: roothide (>= 0.0.7), libxml2-utils
+Recommends: docbook-xml
+Filename: pool/main/iphoneos-arm64e/1800/docbook-xsl/docbook-xsl_1.79.2_all.deb
+Size: 21788624
+MD5sum: f8aabded943e500399e291517e8f3a9b
+SHA1: 40909027078c2a007a2d9b25b98b97f10099d510
+SHA256: 4aae8e1e12d4879df0568f042345292531b7b5326e21cd468a1688d9f6bba6ee
+SHA512: 885f5d3efa2a6b89eae75905c57f9c7d7f62c6312ddc69fc3f5531e47a30b7669a13a166c303c5eb3442ea938b40ae5610e445f5e46da115430ef9c9aff9037f
+Homepage: https://github.com/docbook/wiki/wiki/DocBookXslStylesheets
+Description: stylesheets for processing DocBook XML to various output formats
+ These are modular XSL stylesheets for processing documents composed
+ with the DocBook XML DTD and its derivatives ("Simplified" DocBook
+ XML, JRefEntry DTD, etc.).
+ .
+ The stylesheets provide XSLT transformations for (X)HTML, WordML, HTML Help,
+ JavaHelp, Man page (nroff), Website, Eclipse Platform Help file and XSL
+ Formatting Object (XSL-FO) output. The latter can be further processed to
+ a number of print formats using FOP or TeX-based tools.
+ .
+ The stylesheets are modular in the sense that you can extend and, to some
+ extent, customize them. The documentation is included in a separate package.
 
 Package: dpkg-dev
 Architecture: iphoneos-arm64e
@@ -2139,6 +2317,83 @@ Description: Free Lossless Audio Codec - runtime C library
     works)
  .
  This package contains the runtime library libFLAC.
+
+Package: flex
+Architecture: iphoneos-arm64e
+Version: 2.6.4-2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 780
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), m4
+Recommends: libfl-dev
+Filename: pool/main/iphoneos-arm64e/1800/flex/flex_2.6.4-2_iphoneos-arm64e.deb
+Size: 205714
+MD5sum: 1c6e9fb1c64844040af229fd25c89f03
+SHA1: dcc90c5bc07b946ea036bb7fa30a68e49ff7a019
+SHA256: 2c85be3e130cedb75729a1dd9526567e119234f75b0a82547ae2b914501a78c5
+SHA512: 69a6281ffaf2fb819810b727f78854d85a4d1a70e52f7726b2cbbd81f57f9dfd357c5ee38f6682a3ce715f46355b9636ecf40b7c5b688026771a132e2f80ffa4
+Description: fast lexical analyzer generator
+ Flex is a tool for generating scanners: programs which recognized lexical
+ patterns in text. It reads the given input files for a description of a
+ scanner to generate. The description is in the form of pairs of regular
+ expressions and C code, called rules. Flex generates as output a C source
+ file, lex.yy.c, which defines a routine yylex().  This file is compiled
+ and linked with the -lfl library to produce an executable. When the
+ executable is run, it analyzes its input for occurrences of the regular
+ expressions. Whenever it finds one, it executes the corresponding C code.
+
+Package: libfl-dev
+Architecture: iphoneos-arm64e
+Version: 2.6.4-2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 40
+Depends: roothide (>= 0.0.7), libfl2 (>= 2.6.4-2)
+Filename: pool/main/iphoneos-arm64e/1800/flex/libfl-dev_2.6.4-2_iphoneos-arm64e.deb
+Size: 19004
+MD5sum: c6a6b7678b54a2f815b9a93cb726de2a
+SHA1: 866d5e34dce61663e0a1cf299840375c38158fda
+SHA256: 6a519de0bc446ae5f3bb2c8dcd8cfa02de6a0d0bda6db55a94119242fff74d25
+SHA512: 4403c7f5619ef11f321a57950bd8300a6b6ec3498ed195a0d3cc142561c5601d64f7a41f51e42a19d9bde3f2d8efbbffdf38cf5dc1ae23547e92f66aec84d6a5
+Description: static library for flex (a fast lexical analyzer generator)
+ Flex is a tool for generating scanners: programs which recognized lexical
+ patterns in text. It reads the given input files for a description of a
+ scanner to generate. The description is in the form of pairs of regular
+ expressions and C code, called rules. Flex generates as output a C source
+ file, lex.yy.c, which defines a routine yylex().  This file is compiled
+ and linked with the -lfl library to produce an executable. When the
+ executable is run, it analyzes its input for occurrences of the regular
+ expressions. Whenever it finds one, it executes the corresponding C code.
+ .
+ This package contains the static library for flex.
+
+Package: libfl2
+Architecture: iphoneos-arm64e
+Version: 2.6.4-2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/flex/libfl2_2.6.4-2_iphoneos-arm64e.deb
+Size: 14492
+MD5sum: 3530443b7499efec1b9830e4c7c1a103
+SHA1: 0f41a154fea8075665046627645cb8a63908bad3
+SHA256: c63b35dc257df93f8749994975a5e70af7d6ea031e2a4d1dd3ef730e8b9d4c3a
+SHA512: dc8f762786cac4a6a4b5175238433cc288e639337c771136d30bb0ebda699866e718b55465103a2731bc499ed1634f98619a59521eaf75539626d15dcbfeb0db
+Description: SHARED library for flex (a fast lexical analyzer generator)
+ Flex is a tool for generating scanners: programs which recognized lexical
+ patterns in text. It reads the given input files for a description of a
+ scanner to generate. The description is in the form of pairs of regular
+ expressions and C code, called rules. Flex generates as output a C source
+ file, lex.yy.c, which defines a routine yylex().  This file is compiled
+ and linked with the -lfl library to produce an executable. When the
+ executable is run, it analyzes its input for occurrences of the regular
+ expressions. Whenever it finds one, it executes the corresponding C code.
+ .
+ This package contains the shared library for flex.
 
 Package: fontconfig-config
 Architecture: iphoneos-arm64e
@@ -5336,6 +5591,30 @@ Description: X.509 and CMS support library
  .
  This package contains the runtime library files.
 
+Package: liblocale-gettext-perl
+Architecture: iphoneos-arm64e
+Version: 1.07
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 72
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/liblocale-gettext-perl/liblocale-gettext-perl_1.07_iphoneos-arm64e.deb
+Size: 14850
+MD5sum: c290c01e81ca19b2ad529a19f7020ad0
+SHA1: 824c3985975bb2c4f78ed5c63bb32e2e0d91970b
+SHA256: db2ac73a4ad14dd8939994c760cdf71cb18cbf3c64758619f623b1e8854d5dfc
+SHA512: ce912f0d3c9f5863120f1f824da6dd20ce35ddb73f59b17070ba5cdab654adc66485a801a2bc8cf8d1df6468c9ed99518e5ae331185a2a0010a05ed6d0d5eda3
+Homepage: https://metacpan.org/release/gettext
+Description: module using libc functions for internationalization in Perl
+ The Locale::gettext module permits access from perl to the gettext() family of
+ functions for retrieving message strings from databases constructed
+ to internationalize software.
+ .
+ It provides gettext(), dgettext(), dcgettext(), textdomain(),
+ bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext()
+ and dngettext().
+
 Package: liblzo2-2
 Architecture: iphoneos-arm64e
 Version: 2.10
@@ -5411,6 +5690,33 @@ Description: message digest functions from BSD systems - shared library
  The libmd library provides various message digest ("hash") functions,
  as found on various BSDs on a library with the same name and with a
  compatible API.
+
+Package: libmodule-build-perl
+Architecture: all
+Version: 0.4231
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 576
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7), libtest-harness-perl
+Recommends: libmodule-signature-perl, libpod-readme-perl, libsoftware-license-perl
+Filename: pool/main/iphoneos-arm64e/1800/libmodule-build-perl/libmodule-build-perl_0.4231_all.deb
+Size: 224446
+MD5sum: d0de74879e073b769781b5dd2fcd9613
+SHA1: 3a1e16c207ed04709ecee7aa7655cd3bd14830f8
+SHA256: 4d7b4dcbcdbc3a5934465b8928d675879bcdfe78b2ab68af539307cd1af16b06
+SHA512: e419aee000e2fa240f62800d8527f19996620af1755365894f1120615734f94ae34bf005458015dd55cb01af0677b8117bc9088ca61f08c28c6ce2a6f645a042
+Homepage: https://metacpan.org/pod/Module::Build
+Description: framework for building and installing Perl modules
+ Module::Build is a framework for easily building, testing and installing Perl
+ packages. It is meant as a next-generation replacement for ExtUtils::MakeMaker
+ and offers many additional features characteristic of a more modern install
+ system, including simple subclassing for custom build actions.
+ .
+ Because it is written in Pure Perl, it has very few external dependencies. In
+ particular, it allows for installation of packages on systems without 'make'
+ and will even work without a shell. Its only prerequisites are modules that
+ are included with perl 5.6.0 and it is core as of perl 5.10.
 
 Package: lua-mpack
 Architecture: iphoneos-arm64e
@@ -6069,6 +6375,53 @@ Description: PNG library - minimal runtime library (version 1.6)
  This package provides the minimal libpng runtime library needed for
  the debian-installer.
 
+Package: libpod-parser-perl
+Architecture: all
+Version: 1.63
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 248
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/libpod-parser-perl/libpod-parser-perl_1.63_all.deb
+Size: 92910
+MD5sum: 2fa70c2538d88d955fd5980e93194402
+SHA1: 97c42bd46796b5ef55dc03b9a1de41b25bc52fe5
+SHA256: 8e0b5821b2d43e445b0b6dfd8f1bd1715fe0ce1b4ea3788564d292a661f68850
+SHA512: a3c8ce6b364673c51b3df1278c8e5da9a62cf1862e50e27350d72da8a99fd371d8b7030a73bc56730f5a300b35468522f8e54342a6c38d98d5ac0fe1c140fbc0
+Homepage: https://metacpan.org/release/Pod-Parser
+Description: modules for parsing/translating POD format documents
+ This package contains the following mdoules for using Perl5 "pod" (Plain Old
+ Documentation).
+ .
+ "Pod::Parser", which provides a base class for parsing and selecting sections
+ of POD documentation from an input stream.
+ .
+ "Pod::Select", which provides a subclass of Pod::Parser and an exported
+ function named "podselect()" to dump selected sections of raw pod
+ documentation from an input stream.
+ .
+ "Pod::PlainText", which is a replacement for "Pod::Text" and the
+ corresponding "pod2text()" function. It is derived from the Pod::Parser
+ class. As of perl 5.00_58, Pod::PlainText has been re-written by Russ
+ Allbery, and has been renamed to Pod::Text in the core Perl distribution
+ (replacing the previous implementation of Pod::Text). The Pod::PlainText
+ module is still provided with Pod::Parser solely for backward
+ compatibility.
+ .
+ "Pod::InputObjects": Some input objects needed by Pod::Parser, and for
+ advanced users of Pod::Parser that need more about a command besides its name
+ and text.
+ .
+ "Pod::ParseUtils", a module with several object-oriented helpers for POD
+ parsing and processing. Probably the most important is Pod::Hyperlink for
+ parsing and expanding POD hyperlinks L<...>.
+ .
+ This distribution is considered to be legacy - it has been superseded by
+ Pod::Simple which brings more robustness, unicode and various other benefits.
+ It has been removed from perl core after 5.31.0, and is packaged only for
+ backward compatibility.
+
 Package: libpthread-stubs0-dev
 Architecture: iphoneos-arm64e
 Version: 0.4
@@ -6152,6 +6505,46 @@ Description: Audio sample rate conversion library
  and upsampling to 256 times the original sample rate. It is also capable of
  time varying conversions for vary speed effects and synchronising of two
  unlocked sample rates.
+
+Package: libsgmls-perl
+Architecture: all
+Version: 1.1
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 96
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/libsgmls-perl/libsgmls-perl_1.1_all.deb
+Size: 32340
+MD5sum: 209c787b100f9b15a3b76c75109aca3c
+SHA1: 0576cfc90ddf0540152bfe82e0e3ffcdf6e8b11b
+SHA256: da252f6bb674eebb13278cc0f9cb36f6767d5f2d30faf8217fa63bf9e2c10fc6
+SHA512: 669d74f98c7d3d855610d09b2c3b00bde9397636fac768f73126f16ba7795e8b2eb45f07d1e3908e6d4ddc044a84c63e3f6c0dc1928faeaf7fe9bc271019e267
+Homepage: https://metacpan.org/release/SGMLSpm
+Description: Perl modules for processing SGML parser output
+ This is a set of Perl5 routines for processing the output from the onsgmls,
+ sgmls, and nsgmls SGML parsers. To make sensible use of this package you will
+ need to install a suitable SGML parser as well.
+
+Package: sgmlspl
+Architecture: all
+Version: 1.1
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 40
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7), libsgmls-perl (= 1.1)
+Filename: pool/main/iphoneos-arm64e/1800/libsgmls-perl/sgmlspl_1.1_all.deb
+Size: 13108
+MD5sum: cc53b2ecfe11422f34b51413a6c80b7c
+SHA1: 4db944b2d41b602b6967fb493c210b7cd0b60137
+SHA256: 15e75f8c121d27ba5dd186dad23769718f2bb2bdcd1dedcd89362cf35bd6ab38
+SHA512: c8bfa1e2e81d4ffd4cc4c96b0090330e1a28dac3deee46e161db1aa5bf007bad8e16a5d16a2a53bc4ce414934f47731363c3b94b5ed1746def425ff8bc9c37bf
+Homepage: https://metacpan.org/release/SGMLSpm
+Description: SGMLS-based example Perl script for processing SGML parser output
+ This is an example of a Perl script to post-process SGML parser output
+ using the SGMLS Perl modules.  To make sensible use of this package
+ you will need to install a suitable SGML parser as well.
 
 Package: libsnappy-dev
 Architecture: iphoneos-arm64e
@@ -6856,6 +7249,117 @@ Description: Tag Image File Format (TIFF) library -- C++ interface
  libtiff is a library providing support for the Tag Image File Format
  (TIFF), a widely used format for storing image data.  This package
  includes the shared library for the experimental C++ interfaces.
+
+Package: libltdl-dev
+Architecture: iphoneos-arm64e
+Version: 2.4.7
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1036
+Depends: roothide (>= 0.0.7), libltdl7 (= 2.4.7)
+Filename: pool/main/iphoneos-arm64e/1800/libtool/libltdl-dev_2.4.7_iphoneos-arm64e.deb
+Size: 269124
+MD5sum: e072d8f12755c3c6331095330a64a3f0
+SHA1: 0e5b03e8179bc47914d6bca2ad03f07cb68e6917
+SHA256: 866a9cd9d809c4d7052244ee3ea0234431eb68e267d8f761ba5419fb0856cab9
+SHA512: 19e6ed310bce3637e51c5f848673427f715522b9706457f7a63fcbeae88830eeb620e9bafe01c61c303116bd688071be8af753440fae178200a71a144a77a3bd
+Description: System independent dlopen wrapper for GNU libtool
+ This package contains the header files and static libraries for the
+ libltdl package.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+
+Package: libltdl7
+Architecture: iphoneos-arm64e
+Version: 2.4.7
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 152
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/libtool/libltdl7_2.4.7_iphoneos-arm64e.deb
+Size: 61966
+MD5sum: e0f7012f81e0c394203a297d47815ed5
+SHA1: ffb2c21a86decbb7f1fd4348d143cb8a302b0e51
+SHA256: 54fcf9d744789ab611c422515538583d038c3cd671d26633c48d75b696eb0933
+SHA512: 5f76c2834109ffc60f9c34d0f780b1253bb991589c740833d204ae6bb6f95d0f2a5218666200a1932f1c052fb94732bcb35f680bc74902ef7fd02a5750808158
+Description: System independent dlopen wrapper for GNU libtool
+ This package contains the run-time libltdl library.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+
+Package: libtool-bin
+Architecture: iphoneos-arm64e
+Version: 2.4.7
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 436
+Depends: roothide (>= 0.0.7), libtool (>= 2.4.7)
+Filename: pool/main/iphoneos-arm64e/1800/libtool/libtool-bin_2.4.7_iphoneos-arm64e.deb
+Size: 141404
+MD5sum: fbf4b21ddeaa2d55a584429d52f2357e
+SHA1: 5a72473012b87401740c8bdbf041cbb13313a186
+SHA256: 872b79f46c2d67786e35583535078c96dd20d3111c4f2b1d24e73ff82d6dbdf6
+SHA512: a0db1cff1c89f8272428d7b90fbfa9e1f946ec4c628a4edd09f03b4a8befb848eb8178566d0162955d0ad2f486030a5fe0592d991a09836331cb4252b9fa469d
+Description: Generic library support script (glibtool binary)
+ This is GNU libtool, a generic library support script.  Libtool hides
+ the complexity of generating special library types (such as shared
+ libraries) behind a consistent interface.  To use libtool, add the
+ new generic library building commands to your Makefile, Makefile.in,
+ or Makefile.am.  See the documentation for details.  Libtool supports
+ building static libraries on all platforms.
+ .
+ Libtool supports generation of C, C++, Fortran and Java libraries.
+ .
+ This package contains the glibtool binary only. It is not necessary
+ for normal development on Darwin platforms. For Apple's non-prefixed
+ libtool, install Darwin CC Tools (odcctools).
+
+Package: libtool
+Architecture: iphoneos-arm64e
+Version: 2.4.7
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1016
+Depends: roothide (>= 0.0.7), clang, file
+Filename: pool/main/iphoneos-arm64e/1800/libtool/libtool_2.4.7_iphoneos-arm64e.deb
+Size: 272394
+MD5sum: c8b3d5102456881f4c614e5ed44ac61b
+SHA1: b232d8e4fc9295cd9ddfa9ca7295e05a7918bb9a
+SHA256: cd05e17644eb0d5810161b1d77894ef13326ab7178fec1f39f82a925999fbb8f
+SHA512: 526d27eb6017495b0c72cbe22cc2d87c72f246a961d3041906257abede7107f0e22d9cf82a140e3da9816fe9a03146cd52f4fa43bb8578a49791df9a0ef1e3aa
+Description: Generic library support script
+ This is GNU libtool, a generic library support script.  Libtool hides
+ the complexity of generating special library types (such as shared
+ libraries) behind a consistent interface.  To use libtool, add the
+ new generic library building commands to your Makefile, Makefile.in,
+ or Makefile.am.  See the documentation for details.  Libtool supports
+ building static libraries on all platforms.
+ .
+ Libtool supports generation of C, C++, Fortran and Java libraries.
 
 Package: libunistring-dev
 Architecture: iphoneos-arm64e
@@ -9282,6 +9786,107 @@ Description: X11 miscellaneous extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXext
 
+Package: libxml2-dev
+Architecture: iphoneos-arm64e
+Version: 2.9.12
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 3368
+Depends: roothide (>= 0.0.7), libxml2 (= 2.9.12), liblzma-dev
+Filename: pool/main/iphoneos-arm64e/1800/libxml2/libxml2-dev_2.9.12_iphoneos-arm64e.deb
+Size: 1822478
+MD5sum: 8c44de6bf6fd3224e4cbb9022bb2b3c6
+SHA1: a92d226544dff4a092d44efe460fe21f7b27d0e3
+SHA256: bb063f2767a41c464abf5a9e4d97592b0731583bb01ed36fa169997928e89b7d
+SHA512: ccda3c76ceb0994d032ccc534b94f5f486be37d4882a5769da77d059cb40eb5e78404a188f81a851c07fd0a9a95f2dfb4b821f938c07c1cce3b6616cc4335ff0
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
+Package: libxml2-utils
+Architecture: iphoneos-arm64e
+Version: 2.9.12
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 248
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxml2 (= 2.9.12), libncursesw6, libreadline8, liblzma5
+Filename: pool/main/iphoneos-arm64e/1800/libxml2/libxml2-utils_2.9.12_iphoneos-arm64e.deb
+Size: 89970
+MD5sum: 54a853d7667804c6737b54c267224b3e
+SHA1: d4cb7e3e2314e992985adba3dccbe503782f8321
+SHA256: c8f387d57ba7d8ade38c5956a10a48b1852062e166ad3ab256e6fd03c571feb2
+SHA512: e810a31983632859b406e57ec42eeb3fb1e98c57ea0b263642e948b1333f81f9cc0003ec8d28c281966be148ef9fae4ac0524a230dc6f375e59ae9621dafebba
+Description: XML utilities
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides xmllint, a tool for validating and reformatting
+ XML documents, and xmlcatalog, a tool to parse and manipulate XML or
+ SGML catalog files.
+
+Package: libxml2
+Architecture: iphoneos-arm64e
+Version: 2.9.12
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1308
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), liblzma5
+Filename: pool/main/iphoneos-arm64e/1800/libxml2/libxml2_2.9.12_iphoneos-arm64e.deb
+Size: 612662
+MD5sum: 04859f068838fe79e9d7f6f109c24758
+SHA1: 932662c6c4e29104c4e07a946d3bea71941998f7
+SHA256: 50f08a79fcbf1b1860f9e16e381c30ec49e1df3d76182a177d27445b2480fa07
+SHA512: 6bd16d9c0d1f87cff54cc7fb8f8fc054ce2f1685d18cc69278e489ab030a81799895c422bfe4eb0f866afa6e0658bd17814a2f9d8240c70c3d67c3fa5123bce6
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+
+Package: python3-libxml2
+Architecture: iphoneos-arm64e
+Version: 2.9.12
+Priority: optional
+Section: Python
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 796
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), python3, libxml2 (= 2.9.12)
+Filename: pool/main/iphoneos-arm64e/1800/libxml2/python3-libxml2_2.9.12_iphoneos-arm64e.deb
+Size: 209614
+MD5sum: ed43279872d71bac9c98553e3cbacadf
+SHA1: 793188847dfc0720313229a823437935901a1684
+SHA256: b0b2d4f694979b47fb3b88450e80c79e24b71d38c06ad2f0791277151e409757
+SHA512: 07a89df7f7b94eb9b2659a11d0fd8031e5ae9f5cd629f4ebc1b0f4ec1ebcbbb158cc0173cf7498e47a51552ee71b6bb981428ca55d1bc5ad59ad51deadaeb52e
+Description: Python3 bindings for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package contains the files needed to use the GNOME XML library
+ in Python3 programs.
+
 Package: libxrender-dev
 Architecture: iphoneos-arm64e
 Version: 0.9.10
@@ -9341,6 +9946,27 @@ Description: X Rendering Extension client library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXrender
+
+Package: libyaml-tiny-perl
+Architecture: all
+Version: 1.73
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/libyaml-tiny-perl/libyaml-tiny-perl_1.73_all.deb
+Size: 31002
+MD5sum: 9eb119705c08400f5fbaed078c979193
+SHA1: 0433faa4011f947a76004fc1e4a7c8327003ce7e
+SHA256: 1b9d2227a4d3d31c65d6f720b434d368165d55e824255cc8d3c99818ec56eebb
+SHA512: 55bcbb867966c3b34e93c889747792b62628866261ddecf15a4a219b45cdc9c4487169af0b306e30028b3203d56fac40265c40c57f7746b76c0465692456c905
+Homepage: https://metacpan.org/release/YAML-Tiny
+Description: Perl module for reading and writing YAML files
+ YAML::Tiny is a pure Perl module that provides support for reading and
+ writing a usable subset of the full YAML specification. It aims to
+ minimize memory requirements and avoid XS while remaining relatively
+ fast.
 
 Package: libzip-dev
 Architecture: iphoneos-arm64e
@@ -10675,6 +11301,22 @@ SHA512: 9fc381c0494f94124c8093a0ea213f144c1b39b328cb806923d71819d036eeae64b7d525
 Homepage: http://tukaani.org/lzma/
 Description: Fast LZ compression algorithm library - tool
 
+Package: m4
+Architecture: iphoneos-arm64e
+Version: 1.4.19-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 540
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/m4/m4_1.4.19-1_iphoneos-arm64e.deb
+Size: 202726
+MD5sum: 2df88d9a9a449f19c1f44538b6917bde
+SHA1: 598aacaab6a90ce45fe6d5b8c9fd61a0c2c73b50
+SHA256: 4d6b8375e147c6aaaf109cd0813ae96fa4eeac0d095e89041d839a1c0c904fb4
+SHA512: 73a42022d475edaa1cec85adddb275176faa5e3318d4d663ed5ff69da6dc1fa810b80d0acc4e649494c9dd91e4cd8cff077fb1cd48358c19fabf2a09d0238b4c
+Description: Macro processing language
+
 Package: make
 Architecture: iphoneos-arm64e
 Version: 4.4.1
@@ -11782,6 +12424,23 @@ Description: Pluggable Authentication Modules for PAM
  This package completes the set of modules for PAM. It includes the
   pam_unix.so module as well as some specialty modules.
 
+Package: patch
+Architecture: iphoneos-arm64e
+Version: 2.7.6
+Multi-Arch: foreign
+Priority: important
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 284
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/patch/patch_2.7.6_iphoneos-arm64e.deb
+Size: 129508
+MD5sum: fc3a510213d83420b32bdff2016c9350
+SHA1: b2a923096b85346cdb8cffe13869b7ddc0e188f7
+SHA256: 11e54b4ccea8a61202502efb6576c58459d802cafcaf73cc22cdea9161b12d83
+SHA512: a8ff0336b86981756e1f9940905d6c9f42a54062a25ac14aa28fb8a34acefe33b277d50f6adc4ea080d13803f8e3a658a4e10e25d19fc4f5ee7df34bfd68cc7b
+Description: merge a difference onto a file
+
 Package: libpcre1-dev
 Architecture: iphoneos-arm64e
 Version: 8.45-1
@@ -12130,6 +12789,22 @@ Description: Larry Wall's Practical Extraction and Report Language
  integration, networking protocols, and encryption. Perl provides
  interfaces to C and C++ for custom extension development.
 
+Package: pinentry
+Architecture: iphoneos-arm64e
+Version: 1.2.0
+Priority: standard
+Section: Security
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 236
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libassuan0, libgpg-error0, libncursesw6
+Filename: pool/main/iphoneos-arm64e/1800/pinentry/pinentry_1.2.0_iphoneos-arm64e.deb
+Size: 48022
+MD5sum: e56d3b286890532ec74d6aea4af0264c
+SHA1: c5ce1bc4c070c18d999fba27adef24e72d7af806
+SHA256: 7535d42029a5c14538cf3cfab97e6a03f25433fb2109f594ff1e3a7cf48a5dce
+SHA512: 3681f9ebb51787143a441b15566b08004ddc76d9c7ae45399299abafafe16867845da87a9cd4c7e70a74299765165f160350e840237bf74600d71b49d92577be
+Description: Passphrase entry dialog utilizing the Assuan protocol
+
 Package: pkg-config
 Architecture: iphoneos-arm64e
 Version: 0.29.2-3
@@ -12165,6 +12840,43 @@ SHA256: 00d4465032e36a731f8c87b076316f4b9bcec41014b3fe394ee1a29edc9c2981
 SHA512: 93382318df3dbb1709e2e36971b49689953392b85b991f9328c2850c576e7603ad1e8403e8de2e3c14ac1e2580ae62caafc0f006d5e5710cf00fee2342adb4be
 Description: Utility for creating and editing Apple property list files.
 Author: Samuel Bingner
+
+Package: po4a
+Architecture: all
+Version: 0.63
+Section: Perl
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4172
+Pre-Depends: perl (>= 5.32.1)
+Depends: roothide (>= 0.0.7), gettext, libpod-parser-perl, libsgmls-perl, libyaml-tiny-perl
+Recommends: liblocale-gettext-perl, libterm-readkey-perl, libtext-wrapi18n-perl, libunicode-linebreak-perl
+Filename: pool/main/iphoneos-arm64e/1800/po4a/po4a_0.63_all.deb
+Size: 1978436
+MD5sum: 7fe1debecdb7d8e1b6db3dc67b235033
+SHA1: 71bf78904901a4c6bbde48df8039bcac68cfdafe
+SHA256: 141f14a50f3c9d9ddec9df3f485742e0c9c61c37dfa6835fe4aa96b089ec271b
+SHA512: 8bca0eb886dc9bd728f83ef05b6f5851e1d71af53c3b574af333e27257e0dc14a1b37a52c1b587d7e98622636dd9b620e44cf49b571106752ddb7860dca509f8
+Homepage: https://po4a.org/
+Description: tools to ease the translation of documentation
+ po4a eases the translation of documentation and other textual document.
+ Even more interestingly, it makes it easy to maintain these
+ translations when the original document changes. This is done by
+ using the gettext tools in this new domain.
+ .
+ This package contains the main libraries of po4a, and the necessary
+ sub-modules to handle the following formats:
+ .
+   - Dia: uncompressed Dia diagrams.
+   - INI: the INI format
+   - KernelHelp: Help messages of each kernel compilation option.
+   - LaTeX: generic TeX or LaTeX format.
+   - Man: either roff or mdoc format.
+   - POD: Perl documentation format.
+   - SGML: either DebianDoc or DocBook DTD.
+   - RubyDoc: Ruby documentation format.
+   - Texinfo: the info page format.
+   - XML: very configurable (preconfigured for DocBook, XHTML, Guide, WML).
+   - Yaml: Yaml documents.
 
 Package: libpopt-dev
 Architecture: iphoneos-arm64e
@@ -13254,6 +13966,35 @@ SHA1: 223f5af3d1dc9e768bd42b88120daccf9e35509a
 SHA256: e3247bf15ca491f186ef1352544f660c5b4c39e5c3a0f3ac64353cb41acc9d2b
 SHA512: 632154e98a7f45ada3ac8b0d590ca9c9d682720555fd4b9c03b286f30ee2f94b015d0a3651d4120aae5540f5e90653a93d32760162242c1c0a2b74a60812ee41
 Description: A directory listing program displaying a depth indented list of files
+
+Package: triehash
+Architecture: all
+Version: 0.3
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 28
+Depends: roothide (>= 0.0.7), perl
+Filename: pool/main/iphoneos-arm64e/1800/triehash/triehash_0.3_all.deb
+Size: 8882
+MD5sum: fc893d841e9e74d2be78c5a994800a2b
+SHA1: 05153f3c439a60991fed676c06b73554ea4570ee
+SHA256: 4c325fb15ef8cc7f87d21c998cd752955723522e43a334b3b1a1193bfb221a02
+SHA512: 06749982e9717e0645db2eceefc2bf7a285e585508c545483188bd0b2ec6bca2252fb904e85e280078934a5f7385ba12fee21d8a84e027397d6d2987ef98a300
+Homepage: https://github.com/julian-klode/triehash
+Description: Generates perfect hash functions as native machine code
+ TrieHash generates perfect hash functions as C code which then gets
+ compiled into optimal machine code as part of the usual program compilation.
+ .
+ TrieHash works by translating a list of strings to a trie, and then converting
+ the trie to a set of recursive switch statements; first switching by length,
+ and then switching by bytes.
+ .
+ TrieHash has various optimizations such as processing multiple bytes at once
+ (on GNU C), and shortcuts for reducing the complexity of case-insensitive
+ matching (ASCII only). Generated code performs substantially faster than
+ gperf, but is larger.
+ .
+ TrieHash was written for use in APT.
 
 Package: uikittools-extra
 Architecture: iphoneos-arm64e
