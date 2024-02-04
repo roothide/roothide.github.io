@@ -996,6 +996,23 @@ Icon: https://getsileo.app/img/icon.png
 Name: Sileo
 Sileodepiction: https://featuredpage.getsileo.app/depiction.json
 
+Package: org.coolstar.sileo
+Version: 2.5-12
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5-12_iphoneos-arm64e.deb
+Size: 4223848
+MD5sum: 2fcaea79d7fa1efdcd64338898fd5b3c
+SHA1: 845a33a75a353fbafbcb5f8d5e8811a3b596b4ec
+SHA256: b627b66efa1005b264484a19010aa8d0ee80135d3fb28c1c2991664e973cacd4
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
 Package: preferenceloader
 Version: 2.2.6-11+debug
 Architecture: iphoneos-arm64e
@@ -1313,6 +1330,26 @@ Size: 4437750
 MD5sum: 495a848e4ca041af331b7368fda2bec2
 SHA1: 7a4d93a1df613f28372320f5ea7f9624ad8dbcd4
 SHA256: 9b0763a401c5b334c1355f3f8b2607c8438677637c43585f9d3e1ad45ebcfff8
+Section: Packaging
+Description: A Useful Package Manager
+Tag: compatible::9.0-16.4
+Author: Zebra Team <team@getzbra.com>
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Name: Zebra
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+
+Package: xyz.willy.zebra
+Version: 1.1.36-1-30+debug
+Architecture: iphoneos-arm64e
+Maintainer: Zebra Team <team@getzbra.com>
+Installed-Size: 10772
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: ./debfiles/xyz.willy.zebra_1.1.36-1-30+debug_iphoneos-arm64e.deb
+Size: 4438850
+MD5sum: 6344f51280168b170c6999158b520220
+SHA1: bc7d01062fd07fb99dffb50ad3e97f51fd071b0a
+SHA256: 2c64d4c3f86f98aa16feec1c4f41c85b02f00a79d45a686201e766b5523bfd77
 Section: Packaging
 Description: A Useful Package Manager
 Tag: compatible::9.0-16.4

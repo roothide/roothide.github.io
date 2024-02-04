@@ -31,7 +31,7 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 		$FTPARCHIVE $EXTRAOPTS packages pool/${comp}/${ogdist} > \
 			dists/${dist}/${comp}/${binary}/Packages 2>/dev/null
 
-		sed -e "s|pool/${comp}/${ogdist}/llvm/|https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/${comp}/${ogdist}/llvm/|g" \
+		sed -e "s|pool/${comp}/${ogdist}/llvm/|https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/${comp}/${ogdist}/llvm/|g" \
 			dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.new
 		rm dists/${dist}/${comp}/${binary}/Packages && mv dists/${dist}/${comp}/${binary}/Packages.new dists/${dist}/${comp}/${binary}/Packages
 		

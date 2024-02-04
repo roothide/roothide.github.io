@@ -98,17 +98,17 @@ Architecture: iphoneos-arm64e
 Version: 2.6.0-1
 Priority: standard
 Section: Packaging
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 1112
 Pre-Depends: dpkg (>= 1.14.25-8)
-Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), apt (=2.6.0-1), libdb18.1
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), apt (=2.6.0-1), libdb18.1
 Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0)
 Filename: pool/main/iphoneos-arm64e/1800/apt/apt-utils_2.6.0-1_iphoneos-arm64e.deb
-Size: 317246
-MD5sum: 7baad3d797f487097c991d234f68cba7
-SHA1: b128df8b1eee5ae52a5cf8e0f4d963e9a4dadbc2
-SHA256: 28edbbe590fd1a1c668d3f96581fd723ca4e81e4e9857a0ae7fdd20c3b87cec1
-SHA512: 1646e3e9afe8886aacc253b7bbafc604421468a16710e7e7eb76b05289bd24f4847a6a9f3fac61f6a139cb92950b65b7aa5547d4b097301f54ce30326bc5722e
+Size: 317130
+MD5sum: f37272fb91d3f0930b547f6a195b88e7
+SHA1: f40759c783d551fe129857b7f8e1b9594a1a5391
+SHA256: 878d6e386f89034228d2a6f7c847fb37778a8cfef42a65dc514ed77a1a0b14a7
+SHA512: c55551481fe157c8489d40ed7b13d5fb7e7ddebc3d3c6a87658c8048b8a6297a2897c303e7390006ecaa07da96af9e2c54777f17e1493c4be86486326d2577ce
 Description: package management related utility programs
  This package contains some less used commandline utilities related
  to package management with APT.
@@ -124,19 +124,19 @@ Architecture: iphoneos-arm64e
 Version: 2.6.0-1
 Priority: required
 Section: Packaging
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 4224
 Provides: apt1.8 (= 1:0), apt-lib (= 1:0), libapt (=1:0), apt-key (= 1:0)
 Pre-Depends: dpkg (>= 1.14.25-8), system-cmds (>= 854.40.2-2)
-Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libapt-pkg6.0 (= 2.6.0-1), libgnutls30, gpgv, dpkg (>= 1.19.0), coreutils, procursus-keyring
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libapt-pkg6.0 (= 2.6.0-1), libgnutls30, gpgv, dpkg (>= 1.19.0), coreutils, procursus-keyring
 Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8, libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0)
 Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key
 Filename: pool/main/iphoneos-arm64e/1800/apt/apt_2.6.0-1_iphoneos-arm64e.deb
-Size: 1394312
-MD5sum: 88c1f416716987d3e6b6f5421673aa53
-SHA1: 1b302eca624a8b38093f89b3c8b92415b08bb643
-SHA256: 7e45c14436fb2ac27eeb40eee30c9123471f9640ecaa94944f57ec4a33912b94
-SHA512: 29709c19d8d94c7b2e141e110ee32870be1b867d2bc17c0af37c1522a3f7cb8c161d57645ae1136cec5d4ff6cffe0abeaa0d0080432e1f37ca174dadee73156f
+Size: 1394474
+MD5sum: c81f53033110e5047061de82d0726286
+SHA1: cbd53995e063a0a99df0dc3c085a5954519ad601
+SHA256: 7053cf79adc91a9cf8cc4e0338f8b95c56fd87a5039fd89a0edcb775f86743a3
+SHA512: 3f53b5833f5505cca9d6de5b63ddb1fbedde2feb51525b1d33d03d9359793a4e398d0ca1301ad095e88c3a0a7f86132b94b693fc15bbeea3d0d3d166a5da7ff6
 Description: commandline package manager
  This package provides commandline tools for searching and
  managing as well as querying information about packages
@@ -147,17 +147,17 @@ Architecture: iphoneos-arm64e
 Version: 2.6.0-1
 Priority: standard
 Section: Development
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 608
-Depends: roothide (>= 0.0.4), libapt-pkg6.0 (=2.6.0-1), libgcrypt20-dev, liblz4-dev, liblzma-dev, libxxhash-dev, libzstd-dev, libiosexec-dev
+Depends: roothide (>= 0.0.7), libapt-pkg6.0 (=2.6.0-1), libgcrypt20-dev, liblz4-dev, liblzma-dev, libxxhash-dev, libzstd-dev, libiosexec-dev
 Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0), apt-dev (<< 1:0)
 Replaces: apt-dev (<< 1:0)
 Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg-dev_2.6.0-1_iphoneos-arm64e.deb
-Size: 120604
-MD5sum: 22e5baa774a49f25ef31efba5ff0e9e2
-SHA1: 4284942c0b60bf0114eedabfba7e5cbb8c1c5136
-SHA256: 4efdd485cd2ea23096bb8d77232e34bbc9477e7d36eedf15770c80722aaab4d9
-SHA512: e262f01b7862ff823b85ed8e686a29c4c05fa3d1a3be331fed0306f45971a99c61c703458b50b9fe26828bae0e762ce2f86fe99a9bee104750c0c249f006b27b
+Size: 120582
+MD5sum: 5c201d05e19a165ee0e65ceb119871e6
+SHA1: 44a2bbfc24448443f2ca9d0acc269c5d4872e196
+SHA256: cff89887df780ea8f125aa8cb58709ff3927999d37ca5dd9213b734cbcd9f131
+SHA512: 017027bde71ab2c6de9cb5a10f29e364b54e225c4398afd70a70d794d44e5fa8cf6373b858f2bd838d357abe55de40980b799b548d9e7d8bc32e05bb78f7b58e
 Description: development files for APT's libapt-pkg and libapt-inst
  This package contains the header files and libraries for
  developing with APT's libapt-pkg Debian package manipulation
@@ -168,18 +168,18 @@ Architecture: iphoneos-arm64e
 Version: 2.6.0-1
 Priority: required
 Section: Libraries
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 2896
 Provides: libapt-pkg (=2.6.0-1)
-Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libgcrypt20, liblz4-1, liblzma5 (>= 5.2.5), libxxhash0, libzstd1
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libgcrypt20, liblz4-1, liblzma5 (>= 5.2.5), libxxhash0, libzstd1
 Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8 (<<1:0), libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0), apt (<< 2.1.10-2)
 Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key, apt (<< 2.1.10-2)
 Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg6.0_2.6.0-1_iphoneos-arm64e.deb
-Size: 1044710
-MD5sum: 257fce7a45a845ef7cbe3cc0590992a2
-SHA1: 808ce6745e13b14310fd35c24324e2b6bcc52e57
-SHA256: 00297c73103cffdf8537f1d0a9188b3ba13a7756d2c5cee5220ec25085141ea7
-SHA512: 8b88160bcf8b4e3b6edc15b018c9ba5cb5c87283e00ce78aac1ff94048e3e917a3f5aa3ae78bddac8d112696f7dca67dba3bf9b0c4de7981b4292a3458e59141
+Size: 1044378
+MD5sum: 2a753587c2067dc05e989c15dde25389
+SHA1: 1c04e60d87179fad9b21d396d9088f9485d00182
+SHA256: 4ae2301d623c310520c15fc4e700161ccd2cbcc93b40a963cf1612fa13883788
+SHA512: 32c1f555d94be8b5ff90bd626832f49d607a7f3a26da47b6d928a30c7082018be2cbead1aa6aedec787d519c350ecf18771914fa166ce14a460862697c2468b2
 Description: commandline package manager
  This package provides commandline tools for searching and
  managing as well as querying information about packages
@@ -1187,6 +1187,23 @@ SHA256: c91c5daacdb9b347bdcf8ffc9f386d02cf9a1f3f687eed64de4f9f36da1fd579
 SHA512: 2e1ec9c208befb6ae7890f842e855fd449dab1c9637d62cd989c9161c23ccb73ea77a772f22ca7c4be8128b4806be8852e034e76749218e0757403cf779a6486
 Description: Opensource re-implementation of defaults(1)
 
+Package: developer-cmds
+Architecture: iphoneos-arm64e
+Version: 66-2
+Multi-Arch: foreign
+Priority: important
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 432
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/developer-cmds/developer-cmds_66-2_iphoneos-arm64e.deb
+Size: 92536
+MD5sum: 8a62cd12736b3ee659fb5478819e8e3e
+SHA1: b5cc6b9405ea9279cdba39fa69ff6115e3690869
+SHA256: 5b3c9ce697b4d7a26325110fe0d066726ecdc69d43c3167a24beb08395e8095f
+SHA512: e697a292b5598a87e0736aa9dec1ac3a5d32ef50aa27ad4c73628433683dddc269036bef3dba6e10030771ec68b92e6f94b29661d5cb4ff67f9f2dc435db586e
+Description: ctags, rpcgen, unifdef
+
 Package: diffutils
 Architecture: iphoneos-arm64e
 Version: 3.8
@@ -1501,6 +1518,29 @@ Description: Dpkg perl modules
  .
  All the packages listed in Suggests or Recommends are used by some of the
  modules.
+
+Package: dropbear
+Architecture: iphoneos-arm64e
+Version: 2020.81
+Priority: important
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 608
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libtommath1, libtomcrypt1, libcrypt2, libpam2
+Suggests: openssh-client
+Filename: pool/main/iphoneos-arm64e/1800/dropbear/dropbear_2020.81_iphoneos-arm64e.deb
+Size: 140212
+MD5sum: 73144a8dc5869e714a8328dd545f64fc
+SHA1: 5338adfd63195f2bd59820116208876d15363ca3
+SHA256: f9e8871024c97c98f660d37d6a95de9f42f426422930ba2a41cbd9bf1fa41842
+SHA512: 76f5d990395412c81a692078d6fe5c12e43eca2badb2a27ffb00242881254cb6b75948f004f72de33d6266dc5ecee25ae32965b25b5901c96e30ac536eed073d
+Description: lightweight SSH2 server and client - command line tools
+ dropbear is a SSH 2 server and client designed to be small enough to
+ be used in small memory environments, while still being functional and
+ secure enough for general use.
+ .
+ It implements most required features of the SSH 2 protocol, and other
+ features such as authentication agent forwarding.
 
 Package: essential
 Architecture: iphoneos-arm64e
@@ -10124,7 +10164,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 448
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE), ld64 (>= 609-3), libclang-common-14-dev (= 14.0.0~5.7.2~RELEASE), libc++-14-dev (= 14.0.0~5.7.2~RELEASE), build-essential
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 73290
 MD5sum: ca3ec05dbdf23c6d63b14b9d1a971860
 SHA1: 22e41d17cc5effade6d2655949dd147fe08225e3
@@ -10141,7 +10181,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 152
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-format-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-format-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 48818
 MD5sum: 5a0d680c57858b2aad28a8bd62d720a9
 SHA1: 1419710aadd3f6c029fb665a30a7f0c7dd1029e0
@@ -10166,7 +10206,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), clang-format-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-format_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-format_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6282
 MD5sum: 88b441b3b774dba76207ae966d3efeca
 SHA1: 2837f27b1a70734f1550792ffbf2a15e4f23f250
@@ -10191,7 +10231,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 6564
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE), clang-tools-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tidy-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tidy-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 1769276
 MD5sum: d9a7eefbe65d5b4768eed6389e59ea47
 SHA1: 38da63a9171d2797eceed88266e901d4c4469998
@@ -10212,7 +10252,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), clang-tidy-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tidy_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tidy_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6112
 MD5sum: ed157edd748590dc88e2c7b34d52731b
 SHA1: e31910e0d057750c39b893e3c1e4e59a8b66d7ef
@@ -10233,7 +10273,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 29016
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), clang-14 (= 14.0.0~5.7.2~RELEASE), python3, libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE), libclang-common-14-dev (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tools-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tools-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 9328064
 MD5sum: a764d983efd0d9dc90e28873f66c629c
 SHA1: e78f3d6c9a4037261a794fc94ba6934d878e3029
@@ -10250,7 +10290,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), clang-tools-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tools_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang-tools_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6532
 MD5sum: 503823aa7b99929269a44beae5dd820c
 SHA1: fd46ee344e3f7a88e893fffe112db0fdce75c07a
@@ -10268,7 +10308,7 @@ Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Provides: c++-compiler, c-compiler, objc-compiler
 Depends: roothide (>= 0.0.2), clang-14 (= 14.0.0~5.7.2~RELEASE), libc++-dev (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clang_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6036
 MD5sum: fb80e9d71220c1b13d2aed5be8d3bb94
 SHA1: 89a9112e6967896dd03d1b5c0b2f181196300b92
@@ -10285,7 +10325,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 11220
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE), libclang-common-14-dev (= 14.0.0~5.7.2~RELEASE), build-essential
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clangd-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clangd-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 3621182
 MD5sum: 34f375b0063d63da3c78182155b922b7
 SHA1: bca8d8bac9fbbd7c6c3cd1aa0da81f293862e4a6
@@ -10310,7 +10350,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), clangd-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clangd_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/clangd_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6078
 MD5sum: 0f3233d607d02045b490bd888a907de4
 SHA1: ed0b333070fcd7d36fa20ccddfb0d8903c270c01
@@ -10335,7 +10375,7 @@ Section: Development
 Maintainer: RootHide <RootHideDev@twitter>
 Installed-Size: 512
 Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/debugserver-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/debugserver-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 219014
 MD5sum: f32ba3d85630fd00d58644fea86ede6a
 SHA1: cee1378a8e5340d3079275c191c22e42015eb2c1
@@ -10352,7 +10392,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), debugserver-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/debugserver_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/debugserver_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 5954
 MD5sum: 36a4c2862ba2f60598a99f17ec312540
 SHA1: d20adcc22252ad3919db0498b5f2821888c4f2b2
@@ -10369,7 +10409,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 6272
 Depends: roothide (>= 0.0.2), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libc++-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libc++-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 751014
 MD5sum: 73aebcf41d539d885c2aa4144bf52c3d
 SHA1: f53445103c347a5b6535f864f5f09a1d90fcab15
@@ -10385,7 +10425,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), libc++-14-dev (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libc++-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libc++-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 5926
 MD5sum: 0f1572d11dce6c4930ce1c81da7a0030
 SHA1: e96ffa44f43fc544f80fd1fd418c1ae945e9c1e4
@@ -10401,7 +10441,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 561720
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libclang1-14 (= 14.0.0~5.7.2~RELEASE), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-common-14-dev (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 183946492
 MD5sum: e86c810adba312b18ccf59b6702afc90
 SHA1: 637baabdc5467652f280b472ab71c0f0d3d8a30a
@@ -10426,7 +10466,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 225312
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-common-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-common-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 54001870
 MD5sum: b1b94f8467dc94b00d04cb2b79c34cd2
 SHA1: a1b4ccb1137c51730f1e395fae715dd2c5d29351
@@ -10442,7 +10482,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 52548
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-cpp14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang-cpp14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 15659394
 MD5sum: 3ded5929d297139e9e12e132e8e1d80a
 SHA1: f5a8e596c60d23b388a6ad95340c766dfe29bd73
@@ -10458,7 +10498,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 32920
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang1-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libclang1-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 10741364
 MD5sum: 71bcd0c77004aaef2c4d4541679a654b
 SHA1: c441fd091cfbdb36366700ab43f6c68c29ab606d
@@ -10488,7 +10528,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 204
 Depends: roothide (>= 0.0.2), liblld-14-dev (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblld-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblld-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 39340
 MD5sum: 869a1a1dc152f123c1d860747115822b
 SHA1: 57d37784ffd6149334d9b4e8f771fc97003a9e0e
@@ -10510,7 +10550,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 22168
 Depends: roothide (>= 0.0.2), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblld-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblld-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 8648380
 MD5sum: f55cdb55adeea2a9ec179ef8fa95ca97
 SHA1: 250cf14e084887a965bfc624989e423e86c0e38e
@@ -10532,7 +10572,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 4044
 Depends: roothide (>= 0.0.2), liblldb-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblldb-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblldb-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 658334
 MD5sum: 7763100498ce9546e3555f87337a5bb5
 SHA1: 0dac4fb54321de8b3d5e50b19865c22ba95a19eb
@@ -10549,7 +10589,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 120756
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE), libncursesw6, libedit0, liblzma5 (>= 5.2.5)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblldb-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/liblldb-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 44236906
 MD5sum: fbf6d7294991c6d5de54a2b575e98853
 SHA1: 1f650549dafa0fc4132b920e778c1e21dd488940
@@ -10566,7 +10606,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 65724
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libncursesw6 (>= 6.0), libedit0, libffi8
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libllvm14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/libllvm14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 23314600
 MD5sum: 6bab9d501ddcd440e96991c0fcae2380
 SHA1: 75385ad00efcdc1979b4ae7577fc1c9a77951c52
@@ -10582,7 +10622,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 4728
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), libxar1
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lld-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lld-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 1556674
 MD5sum: 808cbcf50d72328a7d74bbc91ff19803
 SHA1: 556a628db58194ece2bfacdb9550a54d92153b92
@@ -10599,7 +10639,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), lld-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lld_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lld_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 5992
 MD5sum: 3547ebd2370ea6257af3c18a526277a9
 SHA1: fc4bac4ab7372dfadf7922fd58c037a9698169b5
@@ -10616,7 +10656,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 113060
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), liblldb-14 (= 14.0.0~5.7.2~RELEASE), debugserver-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lldb-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lldb-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 41642338
 MD5sum: 1ce7ac27315e2238204f0064ce80631a
 SHA1: de0060b4f4fa30cc92827ecc2a011b8e4277a8f3
@@ -10633,7 +10673,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), lldb-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lldb_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/lldb_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6014
 MD5sum: 10d0dded14de36a9902108261950ba66
 SHA1: a03ae1007f28529dcf8fe02c20ad39298bb53f6d
@@ -10650,7 +10690,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 273600
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), llvm-14 (= 14.0.0~5.7.2~RELEASE), libclang-cpp14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 117999812
 MD5sum: c90ab4cc24e481f61a3ec66d40c5cbf8
 SHA1: 869caa7f040e98ba7e9fad2ddfef544b8ec42d67
@@ -10681,7 +10721,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 4628
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-linker-tools_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-linker-tools_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 1668642
 MD5sum: 5d4e8b1d85e65add3f1f9be4b546be54
 SHA1: f252f3cd5165bc2ee036f381f9ef455fe4172220
@@ -10703,7 +10743,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 216
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-runtime_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14-runtime_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 72826
 MD5sum: 01d147bce3804041cffcf92c766663a2
 SHA1: c3100251c41bae1a1e934e88946c7c84ff3a0191
@@ -10734,7 +10774,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 45120
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14 (= 14.0.0~5.7.2~RELEASE), llvm-14-linker-tools (= 14.0.0~5.7.2~RELEASE), llvm-14-runtime (= 14.0.0~5.7.2~RELEASE), libncursesw6, libxar1
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-14_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 16050576
 MD5sum: 2e99519375a1fb1564ae0bbcf1c9a1bf
 SHA1: 1b36af0579062d67d5783c9589f2907594874511
@@ -10775,7 +10815,7 @@ Provides: liblto
 Depends: roothide (>= 0.0.2), llvm-14-dev (= 14.0.0~5.7.2~RELEASE), llvm-14-linker-tools (= 14.0.0~5.7.2~RELEASE)
 Conflicts: libto
 Replaces: liblto
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm-dev_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6202
 MD5sum: 6acfe28a58780b516ec7f0ebaecd04da
 SHA1: e03d484787a7cab009a0b3c2048f8f8e51d76de3
@@ -10797,7 +10837,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 8
 Depends: roothide (>= 0.0.2), llvm-14 (= 14.0.0~5.7.2~RELEASE)
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/llvm_14.0.0~5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 7314
 MD5sum: 95f0fd6c136fa924d01413aa5d18de3f
 SHA1: f3bdfe99dcf0ca921b091d62f687b937c1eaca5b
@@ -10819,7 +10859,7 @@ Section: Development
 Maintainer: RootHide (@RootHideDev on twitter)
 Installed-Size: 643360
 Depends: roothide (>= 0.0.2), libiosexec1 (>= 1.3.1), libllvm14, ld64 (>= 609-3), build-essential
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/swift-5.7.2_5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/swift-5.7.2_5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 222017704
 MD5sum: d9215671dc4286728fd16a709ec19651
 SHA1: e4500a5c493cff67cabf462622d3fe05c81ecab9
@@ -10838,7 +10878,7 @@ Installed-Size: 8
 Depends: roothide (>= 0.0.2), swift-5.7.2
 Conflicts: com.kabiroberai.swift-toolchain
 Replaces: com.kabiroberai.swift-toolchain
-Filename: https://github.com/RootHide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/swift_5.7.2~RELEASE_iphoneos-arm64e.deb
+Filename: https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/main/iphoneos-arm64e/1800/llvm/swift_5.7.2~RELEASE_iphoneos-arm64e.deb
 Size: 6226
 MD5sum: 311d7ff6e9b69414cc12f5fd929e0f91
 SHA1: 938cdb90ad763854687fe693face2157ffe37bf8
@@ -13600,17 +13640,17 @@ Architecture: iphoneos-arm64e
 Version: 278-2
 Priority: important
 Section: Administration
-Maintainer: RootHide <RootHideDev@twitter>
-Installed-Size: 1036
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1040
 Provides: killall, which
-Depends: roothide (>= 0.0.4), libiosexec1 (>= 1.3.1), libpam2
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libpam2
 Conflicts: coreutils (<< 8.32-9)
 Filename: pool/main/iphoneos-arm64e/1800/shell-cmds/shell-cmds_278-2_iphoneos-arm64e.deb
-Size: 90310
-MD5sum: 1584d21ff2eff8203eb711e5226e48b2
-SHA1: 41cf0649ce9a0c7852919cf3ece53da76b453b78
-SHA256: e0b291b300cfccfce5bc37631681f25b597d67f26fe371976072579d13c37c52
-SHA512: 4b01d1e7c86d55e5f9ffac8dfb9be6a4a5061ae5b46e7e44efef0bb05a22d2a373ac8a062a59d672f4b250ee5fd51064a46173686c582b300d68f06893fb5893
+Size: 90290
+MD5sum: 5bc83a58d9dc63d47324d2421c063962
+SHA1: 2aa5c6d57c05427f04ec9dfe3eb5439ba12eae5b
+SHA256: d65378699c7627210d546f6b19e79693f9a3168647c8224e007a23e51c438044
+SHA512: 328cf871110860aba36448ec01e1cd7a1f1ccffd94be54c6d638ba49838b1bec55151bc6825eafc715e1ce4db4407aa7df7080c0d8fe38fa4aa14da17b0c4fc1
 Description: killall, renice, script, time, which, getopt, what, hexdump, su
 
 Package: shshd
