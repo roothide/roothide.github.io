@@ -945,6 +945,25 @@ Description: GNU core utilities
  tail tee test timeout touch tr true truncate tsort tty uname unexpand 
  uniq unlink users vdir wc who whoami yes
 
+Package: cpio
+Architecture: iphoneos-arm64e
+Version: 2.13
+Priority: standard
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1068
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/cpio/cpio_2.13_iphoneos-arm64e.deb
+Size: 265158
+MD5sum: 2816ee6618d0aeb9a7c36575de2d7356
+SHA1: a558b4fe50984cff219920cf9486ecb80be5864b
+SHA256: 16bdd27955f25197611ec19d5f0cd885bd7f7e118a7f0447fa54e89a31022b4f
+SHA512: 44b6ebe39a3efe3b2b9be50776702013fc5d8102a0b5f6301b07b41b5ecd44a4ad4b02e3ad74eee16a505eb0c4ea9c93f1fcbc58dc87d8eef0fa8e1abc3f9263
+Description: GNU cpio -- a program to manage archives of files
+ GNU cpio is a tool for creating and extracting archives, or copying
+ files from one place to another.  It handles a number of cpio formats
+ as well as reading and writing tar files.
+
 Package: curl
 Architecture: iphoneos-arm64e
 Version: 8.0.1
@@ -1019,6 +1038,42 @@ Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
  libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported, fast, thoroughly documented and is already used by many known, big and successful companies and numerous applications.
  . 
  SSL support is provided by OpenSSL
+
+Package: plistbuddy
+Architecture: iphoneos-arm64e
+Version: 2021.08.01
+Priority: optional
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 96
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/darling-utils/plistbuddy_2021.08.01_iphoneos-arm64e.deb
+Size: 26354
+MD5sum: 0dde16e8714ece69af448d7d538656ce
+SHA1: 40d9c0d1e91a71da96a4ed8b4e22c6d60bcef549
+SHA256: 761ded8d44c3f3b74ffd2167e3c4af2825b5a93d43fc5a237a36785cc3bc667d
+SHA512: de7030bb01e1b393025783541efe5d25a7498d6f7ac458ee8a4a41934badc0df256d5a217a001a25207be718671e4a9f4302d1717256d37642a9b9ed8221e93d
+Homepage: https://www.darlinghq.org
+Description: a property list editor
+ PlistBuddy is a property list editor in macOS. This package is a clone of 
+ PlistBuddy from Darling.
+
+Package: unxip
+Architecture: iphoneos-arm64e
+Version: 2021.08.01
+Priority: optional
+Section: Archiving
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 128
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), liblzma5, libxar1, cpio
+Filename: pool/main/iphoneos-arm64e/1800/darling-utils/unxip_2021.08.01_iphoneos-arm64e.deb
+Size: 39508
+MD5sum: 2590bf11a3c2e0ce5bb598b625d0d3cc
+SHA1: 93072403df6fc679bf10bd85ee6bef28a0f0f43a
+SHA256: a9d8f8c09f67206c6014e8d69711aba26f675c7fcc5d9322c5ec49ddfa86dce3
+SHA512: 8839d2bd062ade30e9d946456bab0091036eaa9635c7cf6b54a56c479219b2c91fc8bf3f27f71159ab4fa828bd43e1f31494073e24cfe201a1289d35111c0209
+Homepage: https://www.darlinghq.org
+Description: extract xip archives
 
 Package: darwintools
 Architecture: iphoneos-arm64e
