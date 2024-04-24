@@ -596,22 +596,6 @@ Tag: role::developer
 Author: roothide
 Name: PatchLoader
 
-Package: com.roothide.patchloader
-Version: 0.0.3-1
-Architecture: iphoneos-arm64e
-Maintainer: roothide
-Installed-Size: 148
-Filename: ./debfiles/com.roothide.patchloader_0.0.3-1_iphoneos-arm64e.deb
-Size: 3814
-MD5sum: b7b3884321f402e5bbb789bdd80cfbfc
-SHA1: 68889c2fdfb130a52610350073d2a5f34d550268
-SHA256: 516398d12f53dce6d48808a8e7f015e95c3ff47ba8e156c9e6a692f414e9e5f4
-Section: System
-Description: RootHide Dynamic Patches Loader
-Tag: role::developer
-Author: roothide
-Name: PatchLoader
-
 Package: com.simplycode.PostBox
 Version: 0.8.1-4
 Architecture: iphoneos-arm64e
@@ -833,25 +817,6 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
-Package: ellekit
-Version: 1.1.2-2
-Architecture: iphoneos-arm64e
-Maintainer: Dhinak G <dhinak@dhinak.net>
-Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
-Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
-Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
-Filename: ./debfiles/ellekit_1.1.2-2_iphoneos-arm64e.deb
-Size: 341016
-MD5sum: 429231d0e1a6047e2dabe1f5ddc0c957
-SHA1: 63d2eb67e5c355c79450a3ae6725d7669e73fd7d
-SHA256: 5b3196f7df32dc9fa087425876c9003e5266cad1ae3eef12967a53480cd4bf5e
-Section: Tweak Injection
-Priority: optional
-Description: ElleKit tweak injection libraries and loader
-Author: Evelyn
-Icon: https://ellekit.space/logos/logo.png
-Name: ElleKit
-
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
 Architecture: iphoneos-arm64e
@@ -997,21 +962,6 @@ Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
 Name: Legacy arm64e Support
 
-Package: oldabi
-Version: 0.3.1~4.f55e807
-Architecture: iphoneos-arm64e
-Maintainer: Evelyn
-Depends: mobilesubstrate, cy+cpu.arm64e, firmware (>= 15.0)
-Filename: ./debfiles/oldabi_0.3.1~4.f55e807_iphoneos-arm64e.deb
-Size: 16398
-MD5sum: 02fae35eb0bf82d5bc4dcc773ec75f25
-SHA1: 1e52d710a8e5a7e08d8dc1dd3caf1406691dd1f1
-SHA256: e95e83d3b345fec64c4fec2bd7c3cd0c4325c5a319b84cccad1a28a51491a1ff
-Section: Tweak Injection
-Description: Support for legacy arm64e ABI in iOS 15.0+
-Author: Evelyn
-Name: Legacy arm64e Support
-
 Package: org.coolstar.sileo
 Version: 2.5-10
 Architecture: iphoneos-arm64e
@@ -1052,10 +1002,10 @@ Architecture: iphoneos-arm64e
 Maintainer: Amy While <me@anamy.gay>
 Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
 Filename: ./debfiles/org.coolstar.sileo_2.5-12_iphoneos-arm64e.deb
-Size: 4219056
-MD5sum: 630e9ada57380a5ce3fd2b09ffc98904
-SHA1: 7341533b5df34771162fd9f1fac5a8faf81c32cc
-SHA256: f127fa6ee79fed2a9cd3ddf9f585dc47417debb6dd2ea9fdbdde45b253cdf23c
+Size: 4223848
+MD5sum: 2fcaea79d7fa1efdcd64338898fd5b3c
+SHA1: 845a33a75a353fbafbcb5f8d5e8811a3b596b4ec
+SHA256: b627b66efa1005b264484a19010aa8d0ee80135d3fb28c1c2991664e973cacd4
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
