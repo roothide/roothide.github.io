@@ -596,6 +596,22 @@ Tag: role::developer
 Author: roothide
 Name: PatchLoader
 
+Package: com.roothide.patchloader
+Version: 0.0.4-1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 148
+Filename: ./debfiles/com.roothide.patchloader_0.0.4-1_iphoneos-arm64e.deb
+Size: 3750
+MD5sum: 5b375f9e0676e41765035a0ea299a2f2
+SHA1: bc062ac345fc35bd9727deb9336efa975073c992
+SHA256: 6944e1fd71de9a87371a63696f27a94dde9e95690b583bb852a33bfc56709b07
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
 Package: com.simplycode.PostBox
 Version: 0.8.1-4
 Architecture: iphoneos-arm64e
@@ -817,6 +833,25 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: ellekit
+Version: 1.1.2-2
+Architecture: iphoneos-arm64e
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: ./debfiles/ellekit_1.1.2-2_iphoneos-arm64e.deb
+Size: 341224
+MD5sum: 6a64fe371146bf293dc30d190d84e1f3
+SHA1: 098bf0672f87ff0d17d74a2914ff128c8b3069f4
+SHA256: 2d58f02046135a09831b99289c8670edbad64c4b8f00ce378276cc0b44996b1e
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
 Architecture: iphoneos-arm64e
@@ -957,6 +992,21 @@ Size: 16700
 MD5sum: c2921d868048f6cf7388e7304ea8a2c9
 SHA1: 34de6f93136bea249823f5b4716c9b85c40ce3da
 SHA256: 66e919f0ab0bfc825c1d0fb92045c988b549142e1aac1602a82903f4892bdb9e
+Section: Tweak Injection
+Description: Support for legacy arm64e ABI in iOS 15.0+
+Author: Evelyn
+Name: Legacy arm64e Support
+
+Package: oldabi
+Version: 0.3.1~4.f55e807
+Architecture: iphoneos-arm64e
+Maintainer: Evelyn
+Depends: mobilesubstrate, cy+cpu.arm64e, firmware (>= 15.0)
+Filename: ./debfiles/oldabi_0.3.1~4.f55e807_iphoneos-arm64e.deb
+Size: 16400
+MD5sum: aee7cbdda4c03ed3966187a8376ccf7f
+SHA1: fc3119d11e1975cfff71cc8223856128ffbf8459
+SHA256: 9631dc0e3ba6333d771b98be7eac46c2f62171327dda453b0d77832e9000fb21
 Section: Tweak Injection
 Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
