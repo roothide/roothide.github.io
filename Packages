@@ -1246,6 +1246,38 @@ Description: Compat Layer for Rootless Tweaks
 Author: roothide
 Name: rootless-compat
 
+Package: rootless-v1-test
+Version: 0.0.1-1+debug
+Architecture: iphoneos-arm64
+Maintainer: roothide
+Installed-Size: 196
+Filename: ./debfiles/rootless-v1-test_0.0.1-1+debug_iphoneos-arm64.deb
+Size: 4206
+MD5sum: 471a4b9f446ded2bed3ba72c330e4bd1
+SHA1: 743405011b74442866ae36b7affc1fab6b87f862
+SHA256: 614dedfa5b13f083d993fc5c975dd06ca36d54b1e345107a3bf72fb75b7a6a01
+Section: System
+Description: An awesome tool of some sort!!
+Tag: role::hacker
+Author: roothide
+Name: rootless v1 test package
+
+Package: rootless-v2-test
+Version: 0.0.1-2+debug
+Architecture: iphoneos-arm64
+Maintainer: roothide
+Installed-Size: 196
+Filename: ./debfiles/rootless-v2-test_0.0.1-2+debug_iphoneos-arm64.deb
+Size: 4212
+MD5sum: 6de296287b1e04c74e975e1096bf2f4c
+SHA1: 8df47c9fa55d87d6027d82415ff25127df6ca928
+SHA256: 14fdb1e656b4449680deb77d9f91b6667250b2f895dbf7db28987dfcfa1435a8
+Section: System
+Description: An awesome tool of some sort!!
+Tag: role::hacker, supports::roothide
+Author: roothide
+Name: rootless v2 test package
+
 Package: ru.domo.cocoatop64
 Version: 2.2.3
 Architecture: iphoneos-arm64e
