@@ -12364,6 +12364,30 @@ Description: Secure Sockets Layer toolkit - cryptographic utility
   * testing SSL/TLS clients and servers;
   * handling S/MIME signed or encrypted mail.
 
+Package: libssl1.1
+Architecture: iphoneos-arm64e
+Version: 1.1.1t
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2872
+Provides: libressl, libssl1.1.1 (=1.1.1t)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), ca-certificates
+Conflicts: libressl, libssl1.1.1
+Replaces: libressl, libssl1.1.1
+Filename: pool/main/iphoneos-arm64e/1800/openssl1.1/libssl1.1_1.1.1t_iphoneos-arm64e.deb
+Size: 1348968
+MD5sum: aa18cef09e0332ec63b841128db06bde
+SHA1: 0ce0463828d2e65f3452cb10da736060d92aa640
+SHA256: c26befe46eecdf0fb840e799c371f191b61cbd904e98afe4665087a844f14852
+SHA512: d8ec8a177a4993b6059b8e5dca1107b1f153147dd6650dbdaef65bc9e533622fb9b635649d60b4feb83ef0e4ccc7fa18697a5734c3a03c18c55cc6e3c3bdf0c5
+Description: Secure Sockets Layer toolkit - shared libraries
+ This package is part of the OpenSSL project's implementation of the SSL
+ and TLS cryptographic protocols for secure communication over the
+ Internet.
+ .
+ It provides the libssl and libcrypto shared libraries.
+
 Package: libp11-kit-dev
 Architecture: iphoneos-arm64e
 Version: 0.24.1
