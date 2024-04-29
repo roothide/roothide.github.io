@@ -3954,6 +3954,54 @@ SHA256: 86017000aaa9b0258a6eb55baa58d1102016b37a3b14139da296a4762e286b96
 SHA512: aa3e93289a6ae857aa82c7c146aebb1f6bdf3ec0cca38151b3468acbc47e16d0681dd77952523ec11132316008f0e9ccc514d26a796e251b259721b835e58473
 Description: Restore/upgrade firmware of iOS devices
 
+Package: img4tool
+Architecture: iphoneos-arm64e
+Version: 197-2
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 100
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libplist3, libssl3, libgeneral0, libimg4tool0
+Filename: pool/main/iphoneos-arm64e/1900/img4tool/img4tool_197-2_iphoneos-arm64e.deb
+Size: 16816
+MD5sum: 5bc6b8cc21838d4a8dee79eae7c81cbe
+SHA1: d73d5bfe3ee8c4540551492a43448b2460c48a6d
+SHA256: dfe6a9345ac33c4b45407bc9493252dfa2f3ed18a740899f50cb96d15f77e7bb
+SHA512: 6362db51cd36c72147cd032ff41cd2456102c29d16b9762f85dba468734cbffa9176bd3c1ac1822b439e9a1d0e88d9002c566d7e6d1bd4da182b2fba6c1c53a5
+Description: A tool for manipulating IMG4, IM4M and IM4P files
+
+Package: libimg4tool-dev
+Architecture: iphoneos-arm64e
+Version: 197-2
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 24
+Depends: roothide (>= 0.0.7), libplist-dev, libssl-dev, libgeneral-dev, libimg4tool0
+Filename: pool/main/iphoneos-arm64e/1900/img4tool/libimg4tool-dev_197-2_iphoneos-arm64e.deb
+Size: 6222
+MD5sum: a2d1f6653a4fd5a118f0bc67af28ab99
+SHA1: 087318f7b79bd582a437fe9a4581e82795d11ef6
+SHA256: 53bca13c3e446a063b44ed6a66c7f73df49ea89727cc762daafb8c047af1e300
+SHA512: e7da3bb29b3659417b252275ef06dc8c003cfdf0995283c65c1f2afd8b900788f79fc5e55bc4a4f4a0d231bc2a337e083089b1d0d16c688c83ef7f3cb6aa8e89
+Description: A tool for manipulating IMG4, IM4M and IM4P files - devel
+
+Package: libimg4tool0
+Architecture: iphoneos-arm64e
+Version: 197-2
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 136
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libplist3, libssl3, libgeneral0
+Filename: pool/main/iphoneos-arm64e/1900/img4tool/libimg4tool0_197-2_iphoneos-arm64e.deb
+Size: 46100
+MD5sum: 65e6ae6e7bfa284cc5dd0f5aafac9064
+SHA1: ad1e4dabaae796f0d388e6dbcf6076a16e61042d
+SHA256: 612e6944e3b151b31c1bc2cb4d691f847fceee38535d5feda9e2476574f0afe0
+SHA512: 2c098e347554138722d6622286f4ce4903d207e0566851dda2673d7d7fc252ad5f162dfb7c6524c98dd1516b671f646efb2b2f44630902ddfb9a72fe972607ea
+Description: Development files for img4tool
+
 Package: inetutils
 Architecture: iphoneos-arm64e
 Version: 2.0-1
@@ -4963,6 +5011,42 @@ Description: GNU dbm database routines (runtime version)
  The basic use of 'gdbm' is to store key/data pairs in a data file, thus
  providing a persistent version of the 'dictionary' Abstract Data Type
  ('hash' to perl programmers).
+
+Package: libgeneral-dev
+Architecture: iphoneos-arm64e
+Version: 56-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 120
+Depends: roothide (>= 0.0.7), libgeneral0 (>= 56-1)
+Conflicts: libgeneral (<< 56-1)
+Filename: pool/main/iphoneos-arm64e/1900/libgeneral/libgeneral-dev_56-1_iphoneos-arm64e.deb
+Size: 41108
+MD5sum: 14dff132c1d24d34d9fe2a14d5c9a257
+SHA1: 953c6190bedbf25d248c4b1a703e1180cacab950
+SHA256: c05cad9e7027abcbb71c30166e456412268d89d8b6a0f8d907985d5a78f51295
+SHA512: 202a55588da20ed3e724d1b93d2ba66c4ffec20ba39091b856595a7ed68a9b79a0bcc97bbb97fc502a8411e51d66be149df04e67d1bdd42d5dbf662173466998
+Description: Common library for tihmstar tools (Development files)
+
+Package: libgeneral0
+Architecture: iphoneos-arm64e
+Version: 56-1
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 84
+Provides: libgeneral (= 56-1)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Conflicts: libgeneral (<< 1:0)
+Replaces: libgeneral (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1900/libgeneral/libgeneral0_56-1_iphoneos-arm64e.deb
+Size: 17920
+MD5sum: 12e1988354f3bf032a76736b70567e28
+SHA1: 9d56ac1f6b34d25c38f2c9eb374e599723a7fbb0
+SHA256: c31f03a012387fce27772deac85e87771634315661c6650964e1ef5fa0af07b0
+SHA512: 4fad05c8083582b755606ccfc365341b3c91009bf5e4c3c3255cf33b9af4fc94edbc6d99e313389c6a63bfb098a405d4a7b1272faa89807632c74525ef4c5540
+Description: Common library for tihmstar tools
 
 Package: giflib-tools
 Architecture: iphoneos-arm64e
