@@ -12546,15 +12546,15 @@ Version: 17.04
 Multi-Arch: foreign
 Priority: optional
 Section: Archiving
-Maintainer: RootHide <RootHideDev@twitter>
+Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 9764
-Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
 Filename: pool/main/iphoneos-arm64e/1900/p7zip/p7zip_17.04_iphoneos-arm64e.deb
-Size: 4355002
-MD5sum: 1115fb4b66a22ce47f207a0ef01b54dc
-SHA1: cfdc20dba5ab8412df513feba80c1358759ae122
-SHA256: e59050c3fc0a7b894c99985c72c87af50dd1121bd617c6c3bc1f57f1a25bd17b
-SHA512: 4541ba9fb033e23aff25df19ec19fbd4b54ce17f71f1cda815a95c303cc2164ab3551c86cf29015be1f14e1798c2f5408ec6eb5cbe79a7ffe68dcdc4ef2cc4bd
+Size: 4355376
+MD5sum: c62ba897c01a61dae0a94edfb5fc3dda
+SHA1: 703990a1f09b3153014b5d3dbc4323dcc734654e
+SHA256: 6ed84242a6eec68dcdb149c4e925fb01027f10b0a5cb544a456e71629427ba16
+SHA512: 3a31cb787c93dd6c1028666a6121680c345d126b55c493746e863b1d07a8b2236d2cb8431323fffcb188b2ff09fb5da222a767b9fbe2cdb5a26b01e69fbf8e58
 Description: 7z and 7za file archivers with high compression ratio
  .
  p7zip is the Unix command-line port of 7-Zip, a file archiver that handles the 7z format which features very high compression ratios.
