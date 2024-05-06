@@ -119,6 +119,32 @@ Description: package management related utility programs
     needed to publish an archive of Debian packages
   * apt-sortpkgs is a Packages/Sources file normalizer.
 
+Package: apt-utils
+Architecture: iphoneos-arm64e
+Version: 2.6.0-2
+Priority: standard
+Section: Packaging
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1112
+Pre-Depends: dpkg (>= 1.14.25-8)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), apt (=2.6.0-2), libdb18.1
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0)
+Filename: pool/main/iphoneos-arm64e/1800/apt/apt-utils_2.6.0-2_iphoneos-arm64e.deb
+Size: 317206
+MD5sum: 9448159745b10529db718302063145ec
+SHA1: 86b701b2de39cb00fbe7afd1c4cc0142ae34f3ed
+SHA256: 88b016d2ac16f1c11ef7a557699003fdcb7202e4eb56f90ef61d642e203bf8fc
+SHA512: 601dac9693ef14cb955c69e95368c684b96b8e920514fe36c38c4b24a85a454870760d2f1e73cb03db6b8de593c78496c160b6ce3212406ea075e555391c85e3
+Description: package management related utility programs
+ This package contains some less used commandline utilities related
+ to package management with APT.
+ .
+  * apt-extracttemplates is used by debconf to prompt for configuration
+    questions before installation.
+  * apt-ftparchive is used to create Packages and other index files
+    needed to publish an archive of Debian packages
+  * apt-sortpkgs is a Packages/Sources file normalizer.
+
 Package: apt
 Architecture: iphoneos-arm64e
 Version: 2.6.0-1
@@ -137,6 +163,29 @@ MD5sum: c81f53033110e5047061de82d0726286
 SHA1: cbd53995e063a0a99df0dc3c085a5954519ad601
 SHA256: 7053cf79adc91a9cf8cc4e0338f8b95c56fd87a5039fd89a0edcb775f86743a3
 SHA512: 3f53b5833f5505cca9d6de5b63ddb1fbedde2feb51525b1d33d03d9359793a4e398d0ca1301ad095e88c3a0a7f86132b94b693fc15bbeea3d0d3d166a5da7ff6
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: apt
+Architecture: iphoneos-arm64e
+Version: 2.6.0-2
+Priority: required
+Section: Packaging
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4224
+Provides: apt1.8 (= 1:0), apt-lib (= 1:0), libapt (=1:0), apt-key (= 1:0)
+Pre-Depends: dpkg (>= 1.14.25-8), system-cmds (>= 854.40.2-2)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libapt-pkg6.0 (= 2.6.0-2), libgnutls30, gpgv, dpkg (>= 1.19.0), coreutils, procursus-keyring
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8, libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0)
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key
+Filename: pool/main/iphoneos-arm64e/1800/apt/apt_2.6.0-2_iphoneos-arm64e.deb
+Size: 1394246
+MD5sum: c8af84420373ecd3b01c9658f100fd1a
+SHA1: 52ea4edc1a9fab8eed004f78cbdc6bac00ba0b3d
+SHA256: abf24cbf6f372f4ddc5ceca877f66c5bbdb439393adddd931ac9f6a06b6b9d04
+SHA512: 2c2924ca1a6292ce91fe62442add1392c67a7b502eca37d9cd664f6116d4450748df38fe00898873ca4e21c7324f6d3fbdb046322768b531fe1abf426b7bef0d
 Description: commandline package manager
  This package provides commandline tools for searching and
  managing as well as querying information about packages
@@ -163,6 +212,27 @@ Description: development files for APT's libapt-pkg and libapt-inst
  developing with APT's libapt-pkg Debian package manipulation
  library and the libapt-inst deb/tar/ar library.
 
+Package: libapt-pkg-dev
+Architecture: iphoneos-arm64e
+Version: 2.6.0-2
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 608
+Depends: roothide (>= 0.0.7), libapt-pkg6.0 (=2.6.0-2), libgcrypt20-dev, liblz4-dev, liblzma-dev, libxxhash-dev, libzstd-dev, libiosexec-dev
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt (<<2.0.0), apt-dev (<< 1:0)
+Replaces: apt-dev (<< 1:0)
+Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg-dev_2.6.0-2_iphoneos-arm64e.deb
+Size: 120586
+MD5sum: c9cdf88f3fc9f1579c5908bab1c7b3e2
+SHA1: 556b3cde8255f9310651fc29c707ec66e4a94cfd
+SHA256: 0610218f5886bcfaa2763e9587ef79a1b76cb715bf945506b3c721423904b423
+SHA512: 1d2151ae1c5ca6016e7dd2faa3c6b8f2f04fe13e06ef6d93459c08e5d52fc5ee6fa5653d3b504b6293fa70ff5ed19540759b32fdacbf717d63a90ce3176bb99d
+Description: development files for APT's libapt-pkg and libapt-inst
+ This package contains the header files and libraries for
+ developing with APT's libapt-pkg Debian package manipulation
+ library and the libapt-inst deb/tar/ar library.
+
 Package: libapt-pkg6.0
 Architecture: iphoneos-arm64e
 Version: 2.6.0-1
@@ -180,6 +250,28 @@ MD5sum: 2a753587c2067dc05e989c15dde25389
 SHA1: 1c04e60d87179fad9b21d396d9088f9485d00182
 SHA256: 4ae2301d623c310520c15fc4e700161ccd2cbcc93b40a963cf1612fa13883788
 SHA512: 32c1f555d94be8b5ff90bd626832f49d607a7f3a26da47b6d928a30c7082018be2cbead1aa6aedec787d519c350ecf18771914fa166ce14a460862697c2468b2
+Description: commandline package manager
+ This package provides commandline tools for searching and
+ managing as well as querying information about packages
+ as a low-level access to all features of the libapt-pkg library.
+
+Package: libapt-pkg6.0
+Architecture: iphoneos-arm64e
+Version: 2.6.0-2
+Priority: required
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2896
+Provides: libapt-pkg (=2.6.0-2)
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libgcrypt20, liblz4-1, liblzma5 (>= 5.2.5), libxxhash0, libzstd1
+Conflicts: apt7 (<<1:0), apt1.4 (<<1:0), apt1.8 (<<1:0), libapt-pkg5.0 (<<1:0), libapt (<<1:0), apt-key (<<1:0), apt (<< 2.1.10-2)
+Replaces: apt1.8, apt1.4, libapt, libapt-pkg5.0, apt-lib, apt-key, apt (<< 2.1.10-2)
+Filename: pool/main/iphoneos-arm64e/1800/apt/libapt-pkg6.0_2.6.0-2_iphoneos-arm64e.deb
+Size: 1044930
+MD5sum: e62cf004b8c25cccbe169aaed65aa94f
+SHA1: 7cf851ffb8d4b4e06468a5b0dc4e8903f276c532
+SHA256: dc397fb81b2d37444a9234987bf177a3d123eb78dd914a62ac424210d112d946
+SHA512: 7541923d150f998a87bd8667b91ee89aa61a63f234e647b344f1ff764d49280f24c3721f13324b3665874cfe9908f36a3b10364e602581b627f74354fb5106d9
 Description: commandline package manager
  This package provides commandline tools for searching and
  managing as well as querying information about packages
