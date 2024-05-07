@@ -617,6 +617,25 @@ Icon: https://github.com/RootHide/RootHidePatcher/blob/master/derootifier-2-modi
 Name: RootHide Patcher
 Support: https://github.com/RootHide/RootHidePatcher
 
+Package: com.roothide.patcher
+Version: 1.7-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: RootHide
+Installed-Size: 3124
+Depends: firmware (>= 15.0), odcctools, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
+Filename: ./debfiles/com.roothide.patcher_1.7-1+debug_iphoneos-arm64e.deb
+Size: 967420
+MD5sum: 031aa68657bf4551bd51375bf1fa6588
+SHA1: d2548880c2c0d71c6c4a327d02d61bd55e474567
+SHA256: 9ae3cfa913f9fb7ba79b1ada79eae6883ef16089430b987bbfcb9b8c46def4b3
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: RootHide
+Depiction: https://github.com/RootHide/RootHidePatcher
+Icon: https://github.com/RootHide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/RootHide/RootHidePatcher
+
 Package: com.roothide.patchloader
 Version: 0.0.2-4+debug
 Architecture: iphoneos-arm64e
@@ -1164,6 +1183,25 @@ Size: 45962
 MD5sum: c90b8af1a5f0e4298f786322e4127795
 SHA1: a04791b60f01a65cc3ed4861c3e47cca0a1d6d46
 SHA256: d1d31f1508e64ebf6d825d2af05d06464e0b489125b22a8c024d42b066d9fb1c
+Section: RootHide Patches
+Description: RootHide Dynamic Patches For Filza
+Author: roothide
+Name: Patches for Filza 64bit
+
+Package: roothide.patches.filza
+Version: 0.2-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 360
+Depends: com.roothide.patchloader
+Recommends: com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
+Conflicts: com.tigisoftware.filza64bit(>> 4.0.1-4~roothide), com.tigisoftware.filza64bit(<< 4.0.1-4~roothide)
+Provides: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
+Filename: ./debfiles/roothide.patches.filza_0.2-2+debug_iphoneos-arm64e.deb
+Size: 46028
+MD5sum: fe875ca5d58133983f15f1a0092a6cb4
+SHA1: 9c852bf63f096428a7cf1f811e5ce0c80929a409
+SHA256: 29f8fcf55226c35870a73c546d6bb0d1b01388d218155ec9d3fac99517f32c3b
 Section: RootHide Patches
 Description: RootHide Dynamic Patches For Filza
 Author: roothide
