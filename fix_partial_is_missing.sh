@@ -4,6 +4,6 @@
 mkdir /var/cache
 mkdir /var/cache/locate
 mkdir -p /var/cache/apt/archives/partial
-touch /var/cache/apt/lock
+printf "" > /var/cache/apt/archives/lock
 
 echo "done"
