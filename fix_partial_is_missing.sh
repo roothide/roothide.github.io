@@ -8,6 +8,7 @@ mkdir $JBROOT/var/cache/locate
 mkdir -p $JBROOT/var/cache/apt/archives/partial
 printf "" > $JBROOT/var/cache/apt/archives/lock
 
+unlink $JBROOT/var/lib
 mkdir $JBROOT/var/lib
 mkdir $JBROOT/var/lib/ex
 mkdir $JBROOT/var/lib/misc
