@@ -259,6 +259,22 @@ Description: Shows where you touch the screen
 Author: LonestarX
 Name: ShowTouch
 
+Package: com.lnx.showtouch
+Version: 1.0.5
+Architecture: iphoneos-arm64e
+Maintainer: LonestarX
+Installed-Size: 432
+Depends: mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
+Filename: ./debfiles/com.lnx.showtouch_1.0.5_iphoneos-arm64e.deb
+Size: 69460
+MD5sum: ca7c77481a0cd74f5ed2d93dcc58b90d
+SHA1: e6b7a6f1af12c1ce5765ad104bc0f95f53388b2e
+SHA256: cff3671c7127399bdea61ec91ce7dcbdcfb2bb56b1e3db712d6cea66022e54d1
+Section: Tweaks
+Description: Shows where you touch the screen
+Author: LonestarX
+Name: ShowTouch
+
 Package: com.mtac.uptime
 Version: 1.0.1
 Architecture: iphoneos-arm64e
