@@ -8,4 +8,11 @@ mkdir $JBROOT/var/cache/locate
 mkdir -p $JBROOT/var/cache/apt/archives/partial
 printf "" > $JBROOT/var/cache/apt/archives/lock
 
-echo "done"
+mkdir $JBROOT/var/lib
+mkdir $JBROOT/var/lib/ex
+mkdir $JBROOT/var/lib/misc
+unlink $JBROOT/var/lib/.jbroot
+ln -s ../../.jbroot $JBROOT/var/lib/.jbroot
+ln -s .jbroot/Library/dpkg $JBROOT/var/lib/dpkg
+
+echo "done(v2)"
