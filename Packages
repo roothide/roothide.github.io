@@ -703,6 +703,22 @@ Tag: role::developer
 Author: roothide
 Name: PatchLoader
 
+Package: com.roothide.patchloader
+Version: 0.0.5-2
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 148
+Filename: ./debfiles/com.roothide.patchloader_0.0.5-2_iphoneos-arm64e.deb
+Size: 3778
+MD5sum: 096a20bd2baa57b9e366d35f5f41477c
+SHA1: 8e118c543539d011a0211015e397cb2edc0e62d4
+SHA256: b96a931b39bc17709ed90985bf49d2d0af55829e1aca5b34f279052b987c5182
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
 Package: com.simplycode.PostBox
 Version: 0.8.1-4
 Architecture: iphoneos-arm64e
