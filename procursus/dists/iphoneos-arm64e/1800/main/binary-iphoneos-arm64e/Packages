@@ -2584,6 +2584,28 @@ Description: SHARED library for flex (a fast lexical analyzer generator)
 
 Package: fontconfig-config
 Architecture: iphoneos-arm64e
+Version: 2.14.0-2
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 316
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1800/fontconfig/fontconfig-config_2.14.0-2_iphoneos-arm64e.deb
+Size: 71106
+MD5sum: 48b36a3ee0665c58d36a11ce0da103c9
+SHA1: 50ce6528e121105ffcfb5edd1a9ac749c8c87c37
+SHA256: 35969015dc3177bd8f7edf80b8ee816c15afe257d634a87ae3c0aa86e25b4dbd
+SHA512: 26c05ed4ea1dd85a591e763ea9ede4a282bba8840785b0033a1cbc2a0ef1696d9ac25f06768640bf44dde27275aabe051f94a5241de85b1d56b9e1f8a6300fbf
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+
+Package: fontconfig-config
+Architecture: iphoneos-arm64e
 Version: 2.14.0
 Priority: standard
 Section: Utilities
@@ -2603,6 +2625,37 @@ Description: generic font configuration library - configuration
  specified by applications.
  .
  This package contains the configuration files and scripts for fontconfig.
+
+Package: fontconfig
+Architecture: iphoneos-arm64e
+Version: 2.14.0-2
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 568
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libuuid16, libfontconfig1, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
+Filename: pool/main/iphoneos-arm64e/1800/fontconfig/fontconfig_2.14.0-2_iphoneos-arm64e.deb
+Size: 65138
+MD5sum: 4a4efb3cb13615380bed6830f9f67118
+SHA1: 1afb8a49ed7bf2d908739da536a3c2f35cbfcb84
+SHA256: 7bc54e7115db7ff0f74f21cd8ce90e9c8c2f0f9f39e411c58afe1cd53f5e8b56
+SHA512: 5f8f357ff00f7cc12136e42b1e42f43b3fe5b3745be52e3fd28878c3e237b78cbe8203116636e439799dc13711eb7632378091015b955a4f021e4444c911c5c4
+Description: generic font configuration library - support binaries
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ Fontconfig is not a rasterization library, nor does it impose a
+ particular rasterization library on the application. The X-specific
+ library 'Xft' uses fontconfig along with freetype to specify and
+ rasterize fonts.
+ .
+ This package contains a program to maintain the fontconfig cache
+ (fc-cache), a sample program to list installed fonts (fc-list), a program
+ to test the matching rules (fc-match) and a program to dump the binary
+ cache files in string form (fc-cat). It no longer makes fonts managed by defoma
+ available to fontconfig applications.
 
 Package: fontconfig
 Architecture: iphoneos-arm64e
@@ -2637,6 +2690,29 @@ Description: generic font configuration library - support binaries
 
 Package: libfontconfig-dev
 Architecture: iphoneos-arm64e
+Version: 2.14.0-2
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 104
+Depends: roothide (>= 0.0.7), libuuid-dev, libfreetype-dev, firmware (>= 14.0) | libexpat1-dev, libfontconfig1 (= 2.14.0-2)
+Filename: pool/main/iphoneos-arm64e/1800/fontconfig/libfontconfig-dev_2.14.0-2_iphoneos-arm64e.deb
+Size: 48556
+MD5sum: b82ef5e2fee015c55cf47b6a78b5f6a0
+SHA1: f33249d76932f0774876162bdf709606b28aae34
+SHA256: f2795d2076f70cffcce25f1f196acb7c9cc6ee4b7d9881693f06ff0ac5623ee3
+SHA512: b58fd58b7787f6826c000e7ca1113e2963455a0278704cb014eb00701f29fe5a2767477cff480f5d0d3f9c9fb9f1708077e8252097b8d2fbd1188abdd5c46f05
+Description: generic font configuration library - development
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the static libraries and headers needed for the
+ development of applications using fontconfig.
+
+Package: libfontconfig-dev
+Architecture: iphoneos-arm64e
 Version: 2.14.0
 Priority: standard
 Section: Development
@@ -2657,6 +2733,29 @@ Description: generic font configuration library - development
  .
  This package contains the static libraries and headers needed for the
  development of applications using fontconfig.
+
+Package: libfontconfig1
+Architecture: iphoneos-arm64e
+Version: 2.14.0-2
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 348
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libuuid16, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
+Filename: pool/main/iphoneos-arm64e/1800/fontconfig/libfontconfig1_2.14.0-2_iphoneos-arm64e.deb
+Size: 162666
+MD5sum: 5ba30227e1a3b0cdc4f5402c0de32246
+SHA1: 5ddcd666b3f7fb5b9a47d3d204783b876fefe536
+SHA256: a7f98ab4869dbc55056cd0a6cb0c9bf38e224166f81ac8183184cf71f41fef49
+SHA512: a21b4e2bffbba9018c19fb92a208e372c70ab5b10f6aba500f2b3c8c8c4c766262c3a3d03fb6ca444badbc2107ae3c059ff440f3d9cb826c4366bd5ddfed567c
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
 
 Package: libfontconfig1
 Architecture: iphoneos-arm64e
@@ -13671,6 +13770,25 @@ MD5sum: a387792be4ae0ae4a9e0e3d5b60f22d2
 SHA1: 4ec9f91b66f32a0389c16d6c1b010b86c56f8482
 SHA256: 2a72445eff9223e558fe4f4a70d6acf38168d1b0af5570f5d9feb7e4c956bbcb
 SHA512: 7277bf0b7aabfec364d25a34a74fc1858e063563196dd73a6d36f7e5f63f591fabd487fdc549cbb682ec7d883e49a6720bcc8574b894313c6306e93fd5b5a6d1
+Description: roothide core package
+Name: roothide core
+Author: roothide
+
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.0.8
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide
+Installed-Size: 936
+Depends: libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.0.8_iphoneos-arm64e.deb
+Size: 54228
+MD5sum: 7ef4d7cd25ee89606f34cbc98856ea86
+SHA1: 88917f7cc611080c2f5c92c6a610eaa74c73e08c
+SHA256: d10042c0cea185ef6f15c918ddfd753e9ef1f748b95306ff00418ec79097e550
+SHA512: 6c0ce6c3c04ec3b2fa9ac4b293fc2e506e204eecc564eb541bb1b15e9c2510ed02e7eccf2154b25d65922b4c12baf412e3ff34d3c990725c8c140fdf4d3d260f
 Description: roothide core package
 Name: roothide core
 Author: roothide
