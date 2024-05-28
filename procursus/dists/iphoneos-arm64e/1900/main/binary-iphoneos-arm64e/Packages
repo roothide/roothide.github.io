@@ -2542,6 +2542,53 @@ Description: SHARED library for flex (a fast lexical analyzer generator)
  .
  This package contains the shared library for flex.
 
+Package: fluxbox
+Architecture: iphoneos-arm64e
+Version: 1.3.7
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 3084
+Provides: x-window-manager
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libimlib2-1, libx11-6, libxext6, libxft2, libxinerama1, libxpm4, libxrandr2, libxrender1, libfontconfig1, libfreetype6, libfribidi0
+Filename: pool/main/iphoneos-arm64e/1900/fluxbox/fluxbox_1.3.7_iphoneos-arm64e.deb
+Size: 771820
+MD5sum: 0ef3b5641c1b6648239f66917c7bf275
+SHA1: 3cf6fae7f27a3f392bb0a8925688d3cc529f7df3
+SHA256: cb17ce2c8f661863ea9fa531e5ace084b1fb373e622be60082fa03da7027f310
+SHA512: a0cdd481589384ab020524a7cf12173d15237ad9f97251c36b09c18dd8c3f8244b708c4c85fb3d6ec07ac075d7321cf3b7b87c696029d264b71d520965bb2c28
+Description: Highly configurable and low resource X11 Window manager
+ Fairly similar to blackbox, from which it is derived, but has been
+ extended with features such as pwm-style window tabs, configurable
+ key bindings, toolbar, and an iconbar. It also includes some cosmetic
+ fixes over blackbox.
+ .
+ This package doesn't currently contain support for GNOME and KDE.
+
+Package: xfonts-utils
+Architecture: iphoneos-arm64e
+Version: 1.3.2
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 340
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/font-util/xfonts-utils_1.3.2_iphoneos-arm64e.deb
+Size: 33826
+MD5sum: 0a385fe3e12c97f69c794eb4d400f82a
+SHA1: bdbbdf2412e67452d6f6ef40146c4a4f434a8ab0
+SHA256: f8db13d0a4aca0b2c7b49b21a7961a530a521d5ea400fc2a05b79bd90342a377
+SHA512: f4dbc5030a07b3f4094a07d5cf37cdbfa11c150f9fedf840ce8832b035c7e6c8079b4eed63dc71553048e825e94dfd567152412da2736e4c6f8d922c90e8cca5
+Description: X Window System font utility programs
+ xfonts-utils provides a set of utility programs shipped with the X Window
+ System that are needed for font management.
+ .
+ The programs in this package include:
+  - bdftopcf, which converts BDF fonts to PCF fonts;
+  - bdftruncate and ucs2any, tools to generate fonts with various encodings
+    from ISO 10646-encoded fonts
+  - mkfontdir, a program to generate fonts.dir files;
+  - mkfontscale, a program to generate fonts.scale files;
+  - fonttosfnt, a program to wrap bitmap fonts in a sfnt (TrueType) wrapper.
+
 Package: fontconfig-config
 Architecture: iphoneos-arm64e
 Version: 2.14.0-2
@@ -2549,13 +2596,13 @@ Priority: standard
 Section: Utilities
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 316
-Depends: roothide (>= 0.0.7)
+Depends: roothide (>= 0.0.8)
 Filename: pool/main/iphoneos-arm64e/1900/fontconfig/fontconfig-config_2.14.0-2_iphoneos-arm64e.deb
-Size: 71112
-MD5sum: 4de259a2c81a77eb763d2bc3a90568f4
-SHA1: 46cc7d2c489aa5e600283144e2bafc9c5fcff4a0
-SHA256: 3488f799094d952706d45df83e8b6805a011dac2a7a7af136f76be5adfa0ec0a
-SHA512: 12c3c0f92b3b0eec08ed3c0d0265416eb50c672b4111e6fe3d4ad6ec59180fc4810233be87740c52de5fb4cbc30182ff65c501a7280a06a76e514378de554bcc
+Size: 71076
+MD5sum: ac05bb513866e8642e8d373cb7c6d0f9
+SHA1: b0095f4a1adb5a1a8e64146a17800406770134f4
+SHA256: 74248d44a5d1a2c0bd6e49ddb60715bf644ba89875e169a52df862b774f6a1be
+SHA512: d14278b4cc29e4ccdfe99ddbe7bed9be53d33e7eb583ef3b84293a09daf7bd25229875103974445177abc9db3d87da47011e70c5f077b93745cc47d66fbe8cb4
 Description: generic font configuration library - configuration
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -2593,13 +2640,13 @@ Priority: standard
 Section: Utilities
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 568
-Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libuuid16, libfontconfig1, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1), libuuid16, libfontconfig1, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
 Filename: pool/main/iphoneos-arm64e/1900/fontconfig/fontconfig_2.14.0-2_iphoneos-arm64e.deb
-Size: 65134
-MD5sum: eca5576184649574fdd54078f58c8a85
-SHA1: 2d0a68c0761dd360d8eb1fb2beb2517cf08a7aae
-SHA256: 9b712a27d78c026e9b7e6f03684b250df9005a2540868dd5c1602a7eee77cd7b
-SHA512: 1b1a9a10f5a71096ea22444d02a2018627a47bae89c1347e6d9d562ebc5a7d6531cae6ba4058b11d0a1bb3728678049795853f98f9bbb72fdd6018b8e0133b5e
+Size: 65136
+MD5sum: e270934c78a758dd1ba9a64a1f51dfa8
+SHA1: 8ba02f772c5bfd0de7896ff6e19accdd91e08b4b
+SHA256: c7d369895be4781593d11ba4d5b01e94c5b166161ee5b75870d5300b56c9f6c9
+SHA512: a2f5671e789b9bb27db79fdd1ebcd86db4165411f90df48bb59f17b872286ec0c149a68c3b6f1ba7e5e2edd58097b7aefeb42b8ede6f7af85ca35cee4b799209
 Description: generic font configuration library - support binaries
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -2655,13 +2702,13 @@ Priority: standard
 Section: Development
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 104
-Depends: roothide (>= 0.0.7), libuuid-dev, libfreetype-dev, firmware (>= 14.0) | libexpat1-dev, libfontconfig1 (= 2.14.0-2)
+Depends: roothide (>= 0.0.8), libuuid-dev, libfreetype-dev, firmware (>= 14.0) | libexpat1-dev, libfontconfig1 (= 2.14.0-2)
 Filename: pool/main/iphoneos-arm64e/1900/fontconfig/libfontconfig-dev_2.14.0-2_iphoneos-arm64e.deb
-Size: 48544
-MD5sum: 710dc15158a848b9c783593d9f7694ad
-SHA1: 4b59ba4df69863d64a210589761c0e42367b890e
-SHA256: 6dc828a07a18c3934ea9a6dd46dd4a157b094c6a3de85acc3869b4ca2f283faf
-SHA512: 119dcb2affa048925227d9b996f2aad3412283147d76c3204164c86c94474fad7a65d3da0ad9eaa5b9a2ba516b9d9d330473e872ec56bf0a7d726f41a3100493
+Size: 48550
+MD5sum: c6e987208fec48d0e7e323d175dcfc2c
+SHA1: fd66871fd001259d64858f4441b6df91e4c6c6af
+SHA256: a7f7a7518ace728ec9b67517a5f306e5fe251040ba86f01683fcdca41290bc90
+SHA512: 1de00d2119fa447e217d74806151e9bb1bf9d1abe09fe7d290fe6ec26d586f02b41d254866ae1a32baa87524977f68a14e2274cf08793812ab84814dfa1455ac
 Description: generic font configuration library - development
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -2701,13 +2748,13 @@ Priority: standard
 Section: Libraries
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 348
-Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libuuid16, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1), libuuid16, libintl8, libfreetype6, firmware (>= 14.0) | libexpat1, fontconfig-config
 Filename: pool/main/iphoneos-arm64e/1900/fontconfig/libfontconfig1_2.14.0-2_iphoneos-arm64e.deb
-Size: 162652
-MD5sum: 1be357a86cdbbf7fd838e63ef148edce
-SHA1: 899baac958ccdfbb170cdb001e8e99ef5ff70e87
-SHA256: ee829c32acf9ff54a2711848daceeee7f5489ab44041d82a4bbd95a526142bfe
-SHA512: ea0016a07c1ab5ed9b310204e63f4d34375c9a55576adbc6d582a723d7e7c6927d326ba8ec293554c27461e14fd269a9bbd97dca93c1079814d1754df22932f3
+Size: 162662
+MD5sum: 56afc0df074dbe210f0534da86622769
+SHA1: 0d80a1751c5ebd6ec2041c89ee1a379adca9fe4a
+SHA256: 8ca54eecf98061424d62440e33f14090568f5c0ee73a55d5f80722e281ef63cf
+SHA512: 794e0ccfb0b0c31b5dcbb01237b7308ff64f72bf3d28b88741e87f87abb19ce3488542bea8c13dda5ff5662ea50f1df754c068846cf5a7a5ea695de91dd7996f
 Description: generic font configuration library - runtime
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -4193,6 +4240,55 @@ SHA256: 612e6944e3b151b31c1bc2cb4d691f847fceee38535d5feda9e2476574f0afe0
 SHA512: 2c098e347554138722d6622286f4ce4903d207e0566851dda2673d7d7fc252ad5f162dfb7c6524c98dd1516b671f646efb2b2f44630902ddfb9a72fe972607ea
 Description: Development files for img4tool
 
+Package: libimlib2-1
+Architecture: iphoneos-arm64e
+Version: 1.7.1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1252
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libfreetype6, libgif7, libjpeg62-turbo, libpng16-16, libtiff5, libwebp7, libx11-6, libx11-xcb1, libxcb-shm0, libxcb1, libxext6
+Filename: pool/main/iphoneos-arm64e/1900/imlib2/libimlib2-1_1.7.1_iphoneos-arm64e.deb
+Size: 165770
+MD5sum: a680167b67d4743dd515a1efeeefb69b
+SHA1: dae34d9e4519fe7cf82fd456a598cd6bfddd7917
+SHA256: aac09e4adbcbdf3e569e91f4a9e7106c5171a02d7142c902a71b21e4a0f8bf99
+SHA512: 6174d5c4a01b0fc7e6a4748c8435f30f140b0cd6a10fe53d5f44fcf9e426e5e0fb9176332a0554acee74f961c3f5f95eaa64c212c9c4f6421ce2af618dd22816
+Description: image loading, rendering, saving library
+ Imlib2 is a library that does image file loading and saving as well as
+ rendering, manipulation, arbitrary polygon support, etc.
+ .
+ It does ALL of these operations FAST. Imlib2 also tries to be highly
+ intelligent about doing them, so writing naive programs can be done easily,
+ without sacrificing speed.
+
+Package: libimlib2-dev
+Architecture: iphoneos-arm64e
+Version: 1.7.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1244
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libimlib2-1 (>= 1.7.1), libfreetype-dev, libgif-dev, libjpeg62-turbo-dev, libpng16-dev, libtiff-dev, libwebp-dev, libx11-dev, libxext-dev
+Filename: pool/main/iphoneos-arm64e/1900/imlib2/libimlib2-dev_1.7.1_iphoneos-arm64e.deb
+Size: 351350
+MD5sum: baa68e381fd37bf977f319fe09b81bd6
+SHA1: bc6335a210a39d0d810ab3ac1559e98bb9573764
+SHA256: 2412aab71611e35d110c2fe2c3f90d9feb26ca5c2a686675bfc0439e875dade0
+SHA512: eae8742579b49bbf1e10c1aa2480d6b5cb4fe43ea170ccacea5359140c5016c83308f769d425ce62d4e82eefb43b25365127b1987f9080fc97b349005b6387fb
+Description: image loading, rendering, saving library (development files)
+ Imlib2 is a library that does image file loading and saving as well as
+ rendering, manipulation, arbitrary polygon support, etc.
+ .
+ It does ALL of these operations FAST. Imlib2 also tries to be highly
+ intelligent about doing them, so writing naive programs can be done easily,
+ without sacrificing speed.
+ .
+ This package provides the development files (ie. includes, static library,
+ manual pages) that allow one to build software which uses imlib2.
+
 Package: inetutils
 Architecture: iphoneos-arm64e
 Version: 2.0-1
@@ -4787,6 +4883,69 @@ SHA512: 5b78736e36629c644bd84121d8c35dbf8782c12e2575c4bd234c06a2e64e2b9548662dab
 Homepage: https://c-ares.haxx.se/
 Description: Shared libraries for the c-ares asynchronous name resolver library.
 
+Package: libdmx-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 112
+Depends: roothide (>= 0.0.7), libdmx1 (= 1.1.4), libx11-dev, libxext-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libdmx/libdmx-dev_1.1.4_iphoneos-arm64e.deb
+Size: 43946
+MD5sum: ad7dd05550bd4f913a19b7fd8f0eeab8
+SHA1: 2e6fcbc2687fd22ead37f43f3734d75761829823
+SHA256: ad3f9cbefa12fa81a4414d22804574288ed875b5846d1f78dd4d42b264bb2188
+SHA512: 3ff0e582ca008ff788232ca5b36da983d037e8bc45d92fe8a9bbcfcd399fc747ea9cc8240755f29ae26d96d0e5ab8a37329e9e6b9e15c8b5465e1a91515181f7
+Description: X11 Distributed Multihead extension library (development headers)
+ libdmx is an interface to the DMX extension for X, which allows a single
+ server to be set up as a proxy spanning multiple servers -- not unlike
+ Xinerama across discrete physical machines.  It can be reconfigured
+ on the fly to change the layout, and it is presented as a single logical
+ display to clients.
+ .
+ libdmx allows clients to configure the layout of DMX servers by adding
+ and removing screens, input devices, et al.
+ .
+ This package contains the development headers for the library found in
+ libdmx1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://gitlab.freedesktop.org/xorg/lib/libdmx
+
+Package: libdmx1
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6
+Filename: pool/main/iphoneos-arm64e/1900/libdmx/libdmx1_1.1.4_iphoneos-arm64e.deb
+Size: 7542
+MD5sum: 44b83cf1eefeaa2931f8015613dd7bd9
+SHA1: 4cc8eeea424986fa849fabf1f44816c04de2513b
+SHA256: a1071d60048a59dcb34290b3d9c20086b8f9321cfa2c5077c58f1121946434a4
+SHA512: 8e5fa2dbf863f5c42047dfa764e76636f695e0260c0a260e6df4f6e061765b95e57dfec407edd5aa266064df3c1a427fd9e516f990dbdb2cd5884c09e8effa71
+Description: X11 Distributed Multihead extension library
+ libdmx is an interface to the DMX extension for X, which allows a single
+ server to be set up as a proxy spanning multiple servers -- not unlike
+ Xinerama across discrete physical machines.  It can be reconfigured
+ on the fly to change the layout, and it is presented as a single logical
+ display to clients.
+ .
+ libdmx allows clients to configure the layout of DMX servers by adding
+ and removing screens, input devices, et al.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://gitlab.freedesktop.org/xorg/lib/libdmx
+
 Package: libedit-dev
 Architecture: iphoneos-arm64e
 Version: 3.1-20221030
@@ -4826,6 +4985,49 @@ Description: BSD editline and history libraries
  history, and tokenization functions.
  .
  It slightly resembles GNU readline.
+
+Package: libepoxy-dev
+Architecture: iphoneos-arm64e
+Version: 1.5.7
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1548
+Depends: roothide (>= 0.0.7), libepoxy0
+Filename: pool/main/iphoneos-arm64e/1900/libepoxy/libepoxy-dev_1.5.7_iphoneos-arm64e.deb
+Size: 161864
+MD5sum: 246feb859b8f8fb2aa880808f5e91cf4
+SHA1: 269a80f47f778fc9677ed545933fb3487a45277b
+SHA256: c75e51bfb9adbee08c7186589141aa52453e91951083a1c18b8b536223228fbb
+SHA512: 34e779be2c266a19fb9528dc4dafd31160ed798ee69d84e64d024428868df171b0cc7e79c92962c9b1ca1cb09d357e796e359da2b83d543a9e426a66cae07a2d
+Description: OpenGL function pointer management library- development
+ It hides the complexity of dlopen(), dlsym(), glXGetProcAddress(),
+ eglGetProcAddress(), etc. from the app developer, with very little
+ knowledge needed on their part.  They get to read GL specs and write
+ code using undecorated function names like glCompileShader().
+ .
+ This package contains the development headers for the library found in
+ libepoxy0. Non-developers likely have little use for this package.
+
+Package: libepoxy0
+Architecture: iphoneos-arm64e
+Version: 1.5.7
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 800
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/libepoxy/libepoxy0_1.5.7_iphoneos-arm64e.deb
+Size: 183940
+MD5sum: abb4705b96203e3d53db1bfbb5a7f29f
+SHA1: 79c59b6a7ec6a7234c152edc499718f20514ce9f
+SHA256: 56ac317c117741573d93347719f6c33a8b00b483cf9fa0b90299aedec4f88844
+SHA512: 9cf65690c8f188185c8b6d001a2db3543816457ec565d9bab3938b6e32426c5cda6f605f9aa2cf85f3ab0ac3f04173d0da94b30fec4aeea21bd065f7f12afef0
+Description: OpenGL function pointer management library
+ It hides the complexity of dlopen(), dlsym(), glXGetProcAddress(),
+ eglGetProcAddress(), etc. from the app developer, with very little
+ knowledge needed on their part.  They get to read GL specs and write
+ code using undecorated function names like glCompileShader().
 
 Package: libevent-2.1-7
 Architecture: iphoneos-arm64e
@@ -5026,6 +5228,54 @@ Description: Foreign Function Interface library runtime
  allows code written in one language to call code written in another
  language.
 
+Package: libfontenc-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.0.7), libfontenc1
+Filename: pool/main/iphoneos-arm64e/1900/libfontenc/libfontenc-dev_1.1.4_iphoneos-arm64e.deb
+Size: 29344
+MD5sum: 9d686a7c9a3eaf16d60cc7083f650ec0
+SHA1: 175d4ddd8e1b46c5aa684db4fa3a2f1ec4404bba
+SHA256: 67569d4e19e1af03e2f2e9b77ee338dc4c27d42d1077be16cee994142257fc55
+SHA512: 8f97628590ae9a53b62e4f0e471c69d87e0f34f54a3934eac033dac8a9f7118ad3ed17409d8a613296f7273a735ed2aefc6b32ee1b3fb962a754000887d671dd
+Description: X11 font encoding library (development headers)
+ libfontenc is a library which helps font libraries portably determine
+ and deal with different encodings of fonts.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libfontenc
+
+Package: libfontenc1
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 72
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/libfontenc/libfontenc1_1.1.4_iphoneos-arm64e.deb
+Size: 11398
+MD5sum: d75341d026b1dd9c631b70354ec11f67
+SHA1: 8d53d30cb643ff86b169d2fbedd70e1da77510ee
+SHA256: 0dc0a1ef5ae45abaa72064f0ac8c579b640e2bf034402f82ac9005235a7673a0
+SHA512: 38f47ea1aa0d5e33bc8b4eed363e3948f645dd4c8c416b35132296155b05ec70bb1c6fd2ee362e225d3f1903a6b2be0631f2d593f2d7f8d88234e208820594d9
+Description: X11 font encoding library
+ libfontenc is a library which helps font libraries portably determine
+ and deal with different encodings of fonts.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libfontenc
+
 Package: libfribidi-bin
 Architecture: iphoneos-arm64e
 Version: 1.0.10
@@ -5123,6 +5373,73 @@ SHA1: c51cceb9db3d3f2f29f8d5cebab7fdd5145a6602
 SHA256: d64c8936055ee29d3fa4daa73d635773c9fbfb1a8626748146a6c180a379fac0
 SHA512: 9e6f508a42c2056c755f3bcd84c7187fd64726d0e1e9daf144ac1ca09e81f1131a657fe368351a8946a631b3b9da3bb4b94dd5ceceec7bda11c37dfd50f5ef97
 Description: LGPL cryptographic algorithm library (Libraries)
+
+Package: libgd-dev
+Architecture: iphoneos-arm64e
+Version: 2.3.2-1
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 168
+Depends: roothide (>= 0.0.7), libfontconfig-dev, libfreetype-dev, libjpeg62-turbo-dev, libpng16-dev, libtiff-dev, libwebp-dev, libvpx-dev, libxpm-dev, libxt-dev
+Filename: pool/main/iphoneos-arm64e/1900/libgd/libgd-dev_2.3.2-1_iphoneos-arm64e.deb
+Size: 33768
+MD5sum: 0a4ce5c741c51f6eb0f2658ba2b359ef
+SHA1: 0b3f771d3e10727b291b3e7b18ea6279c716ed1c
+SHA256: 98b013e0b82305509ca2ebcf22a42b559a035435ed4a159d1bd7202314528d46
+SHA512: c8947f832379cbdf9937d0f959b0c454a03aaf1dc2f756b106cf77a93c7414a0aeacf3ac83ca4edf9c173bd5db08e0aae3c8ada42dfd5bfe3832951412f16739
+Description: GD Graphics Library (development version)
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the full development version of the library.
+
+Package: libgd-tools
+Architecture: iphoneos-arm64e
+Version: 2.3.2-1
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 580
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libgd3, perl
+Filename: pool/main/iphoneos-arm64e/1900/libgd/libgd-tools_2.3.2-1_iphoneos-arm64e.deb
+Size: 16728
+MD5sum: 377c263fad16c3ad614435eac6a3319f
+SHA1: a478076f82806ca73695d8193a150d982e57d8e0
+SHA256: f84c8a87817083f1fd8bf025ac646f06a12d46dbec0ec523752970356a02efc8
+SHA512: c5a06a925cb4300c4ecca4cbed1b00f257d66d266751cbd502d0a546fd3f3759f8c8322e48caa1ad423100968dd0daca68d59bc898f58517ab4a5e4c6dcd6067
+Description: GD Graphics Library (development version)
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is some simple command line tools and example code that use the GD
+ graphics library.
+
+Package: libgd3
+Architecture: iphoneos-arm64e
+Version: 2.3.2-1
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 416
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libfontconfig1, libfreetype6, libjpeg62-turbo, libpng16-16, libtiff5, libwebp7, libxpm4
+Filename: pool/main/iphoneos-arm64e/1900/libgd/libgd3_2.3.2-1_iphoneos-arm64e.deb
+Size: 147370
+MD5sum: 1eafc1b1a1e1a335ea8cdb4ee9b9f927
+SHA1: 3f01be9cedaa403f5d2e388631693064739cb94c
+SHA256: e16644c91fb6e8306489b5fde3f097daea6bbd2f29f7a3df01d171d2c1521910
+SHA512: 5e4b29ba9378c182905ddb4a779488712bd971d9bb024bd1d10c225264f3fc9f716fa4032228b0a0a45b487a470d848e1d804f292e3caeca2db9ad48a680194a
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library.
 
 Package: gdbmtool
 Architecture: iphoneos-arm64e
@@ -5474,6 +5791,59 @@ Description: C library to access the HSTS preload list
  by Google and is utilised by Chrome, Firefox and others.
  .
  This package contains the shared library files.
+
+Package: libice-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.10
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 288
+Depends: roothide (>= 0.0.7), libice6 (= 1.0.10), x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libice/libice-dev_1.0.10_iphoneos-arm64e.deb
+Size: 114054
+MD5sum: 0e6529bf15f3fec9d34033b1bff31c76
+SHA1: 9e190b1b71fee0e7fc5cc804e2573e331425ac93
+SHA256: 0f2b706fbce9d9aafc95b78a824ae0210c0addefd859a3771b334986ae8d5155
+SHA512: 173e76aad1a48ab33c97f86b71af9d75a93d85f5d41738d2377993ace51465d4c8d83b71a66271ecb7373ba0bf36a0837d55198d67d073b5891860dbee69008b
+Description: X11 Inter-Client Exchange library (development headers)
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ This package contains the development headers for the library found in libice6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libICE
+
+Package: libice6
+Architecture: iphoneos-arm64e
+Version: 1.0.10
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 136
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/libice/libice6_1.0.10_iphoneos-arm64e.deb
+Size: 36366
+MD5sum: c5e7014c91dbb59aa493598f0360bef2
+SHA1: 961e79cd60b3baacfa7891db910686bdce42564e
+SHA256: 119a640cb167aa9f664d1302da14545afd5b23eb03b6e396c69d65a8860c9d0c
+SHA512: a1e95d7544676a7ac3a1dfa8eaf84dad88b829a494b47e1b55fb6fd5eac157326901edf549e9d6ebb6f07769dfbcc468dcce4c0f79efc8b8cfb052225694a18c
+Description: X11 Inter-Client Exchange library
+ This package provides the main interface to the X11 Inter-Client Exchange
+ library, which allows for communication of data between X clients.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libICE
 
 Package: idn2
 Architecture: iphoneos-arm64e
@@ -6875,6 +7245,124 @@ Description: SGMLS-based example Perl script for processing SGML parser output
  This is an example of a Perl script to post-process SGML parser output
  using the SGMLS Perl modules.  To make sensible use of this package
  you will need to install a suitable SGML parser as well.
+
+Package: libsixel-bin
+Architecture: iphoneos-arm64e
+Version: 1.8.6
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 128
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libsixel1 (= 1.8.6), libcurl4, libpng16-16, libjpeg62-turbo, libgd3
+Filename: pool/main/iphoneos-arm64e/1900/libsixel/libsixel-bin_1.8.6_iphoneos-arm64e.deb
+Size: 21530
+MD5sum: cec9b2c166b1d00021ed7c4b87b79acd
+SHA1: 908f635886be1789bbe5600f3c9a7445561a5779
+SHA256: 2d73f97031e6f0b47c7816c765a5a67fde9c76a644decf1c0c4bf7d730ccf67c
+SHA512: 41583ff0713ce4134a2ba3f4fb45c143f2ba1255f4bcb790da07da669af62ba81c0c3de36fd3611e00e07faba4f54bf2c7d59b194ad38d44c66b14bd37303c7d
+Homepage: https://github.com/saitoha/libsixel
+Description: DEC SIXEL graphics codec implementation (binary)
+ SIXEL is one of image formats for printer and terminal imaging
+ introduced by Digital Equipment Corp. (DEC). Its data scheme is
+ represented as a terminal-friendly escape sequence. 
+ So if you want to view a SIXEL image file, all you have to do
+ is "cat" it to your terminal.
+ .
+ The package contains execution binaries.
+
+Package: libsixel-dev
+Architecture: iphoneos-arm64e
+Version: 1.8.6
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 552
+Depends: roothide (>= 0.0.7), libsixel1 (= 1.8.6)
+Filename: pool/main/iphoneos-arm64e/1900/libsixel/libsixel-dev_1.8.6_iphoneos-arm64e.deb
+Size: 281536
+MD5sum: 457c1a4285825c4878f2eaf18941a4a4
+SHA1: d14024014a761b0d660be0e81f19e5108c8cd5f3
+SHA256: efba85bda7550902eb9ed76d582e147726056c49463ad1480c08dbaba9cfccdc
+SHA512: 29a1e6f3ceee5efe5b2afb0d1cc2c4325d8c5285f65fc5fae6013610bfa2dc327a476812134e8375aa3647264926d88971cdd81f6ede4d22482640789fd471af
+Homepage: https://github.com/saitoha/libsixel
+Description: DEC SIXEL graphics codec implementation (develop)
+ SIXEL is one of image formats for printer and terminal imaging
+ introduced by Digital Equipment Corp. (DEC). Its data scheme is
+ represented as a terminal-friendly escape sequence. 
+ So if you want to view a SIXEL image file, all you have to do
+ is "cat" it to your terminal.
+ .
+ The package is for development.
+
+Package: libsixel1
+Architecture: iphoneos-arm64e
+Version: 1.8.6
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 300
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libcurl4, libpng16-16, libjpeg62-turbo, libgd3
+Filename: pool/main/iphoneos-arm64e/1900/libsixel/libsixel1_1.8.6_iphoneos-arm64e.deb
+Size: 100644
+MD5sum: 192e32590df6fee418afd9c80b415028
+SHA1: 752a3f8363984def5c8dd175f7ff78428ffb7fbb
+SHA256: de5bcd9a6f9c2f29cc0ff8e4a6d5dd05cc8a49f684f2b0dca91f9037bb51704e
+SHA512: 877e10c70b0b58c3ecdd50d0930fe7b74b3962cd5a0cdba27d778304a1a6cbff667a19749d1761a1df4acb09a797d57c6b4a8739d3c8f3ba6442851378ec3d87
+Homepage: https://github.com/saitoha/libsixel
+Description: DEC SIXEL graphics codec implementation (runtime)
+ SIXEL is one of image formats for printer and terminal imaging
+ introduced by Digital Equipment Corp. (DEC). Its data scheme is
+ represented as a terminal-friendly escape sequence. 
+ So if you want to view a SIXEL image file, all you have to do
+ is "cat" it to your terminal.
+ .
+ The package is for runtime.
+
+Package: libsm-dev
+Architecture: iphoneos-arm64e
+Version: 1.2.3
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 112
+Depends: roothide (>= 0.0.7), libsm6 (= 1.2.3), libice-dev, x11proto-dev, libuuid-dev
+Filename: pool/main/iphoneos-arm64e/1900/libsm/libsm-dev_1.2.3_iphoneos-arm64e.deb
+Size: 42588
+MD5sum: c6fc9b395b00473f6f81f9e01261d4b8
+SHA1: de08d119fa1663443dedba4fdcfdd9e4aa54a7d2
+SHA256: 2a36d9101e39a066a67ba3e9e29d2848fa856e9339363d573259b14e9c9910d3
+SHA512: cf46703259d4d3243ab3739ef184aa84142ecc65900dd14c5dcc5e1873ddd03aa1f6e9965d9a4a96b48048af34325d4ca82028563b57c1cead22810a74be6d4a
+Description: X11 Session Management library (development headers)
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ This package contains the development headers for the library found in libsm6.
+ Non-developers likely have little use for this package.
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libSM
+
+Package: libsm6
+Architecture: iphoneos-arm64e
+Version: 1.2.3
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 84
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libice6, libuuid16
+Filename: pool/main/iphoneos-arm64e/1900/libsm/libsm6_1.2.3_iphoneos-arm64e.deb
+Size: 13614
+MD5sum: 933a1793970da0f4c2f7bd0f84f67714
+SHA1: 62d94c5694c751da595a467cbae51ab85fecf8ff
+SHA256: 2b1ee1fb128049492ce285afdf4d348b452491e294a45c110600ab801b0cb281
+SHA512: 7775b73120a3a6bcd2b4d9c6df226dcd66d5f6c84f28ad793f0e16e4d4081422f01360bd17b16ca5b5c8359fbb364b6239a7ed2c9e38dae2e7861bf85273a067
+Description: X11 Session Management library
+ This package provides the main interface to the X11 Session Management
+ library, which allows for applications to both manage sessions, and make use
+ of session managers to save and restore their state for later use.
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libSM
 
 Package: libsnappy-dev
 Architecture: iphoneos-arm64e
@@ -8495,6 +8983,63 @@ Description: X11 authorisation library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXau
 
+Package: libxaw7-dev
+Architecture: iphoneos-arm64e
+Version: 1.0.13
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1336
+Depends: roothide (>= 0.0.7), libxaw7, libx11-dev, libxmu-dev, libxpm-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxaw/libxaw7-dev_1.0.13_iphoneos-arm64e.deb
+Size: 548058
+MD5sum: a506c57ef104f69712aad242918c45ef
+SHA1: 932545ea52c657cf6521662d227b31c719aa1276
+SHA256: 153dda52f97eaac2c07848f21f742b1058c74b0aac5ffe3b1ea4fe30d4f8ab57
+SHA512: a7ad058e7c2c15c3a0a9eb0a3820dd307bc82547d67da781606577f13b64f0d816c8daf511417b632ad19e9cb5e3f06860942dbcc928ab546cbce96100cab542
+Description: X11 Athena Widget library (development headers)
+ libXaw7 provides the second version of Xaw, the Athena Widgets toolkit,
+ which is largely used by legacy X applications.  This version is the
+ most common version, as version 6 is considered deprecated, and version
+ 8, which adds Xprint support, is unsupported and not widely used.
+ In general, use of a more modern toolkit such as GTK+ is recommended.
+ .
+ This package contains the development headers for the library found in
+ libxaw7.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXaw
+
+Package: libxaw7
+Architecture: iphoneos-arm64e
+Version: 1.0.13
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 376
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6, libxmu6, libxpm4, libxt6
+Filename: pool/main/iphoneos-arm64e/1900/libxaw/libxaw7_1.0.13_iphoneos-arm64e.deb
+Size: 159204
+MD5sum: 81eb14a4e90b7a6088995b2e0b321a20
+SHA1: ec653a99726a458b3f674637dd690cb93d668309
+SHA256: 69d8edb346f5c53cfc20adcecb5fd917c1aea5ee18f2b6bf9cf6aaac53e4d886
+SHA512: fa8b5b1e7be907dbced0bb3795609761f97542fdf4e8805ed2dafec9f08bdb0909d46940443ae686bfb10138d09bdb4736d003d9968478b95ddaf30a3fe3e7a7
+Description: X11 Athena Widget library
+ libXaw7 provides the second version of Xaw, the Athena Widgets toolkit,
+ which is largely used by legacy X applications.  This version is the
+ most common version, as version 6 is considered deprecated, and version
+ 8, which adds Xprint support, is unsupported and not widely used.
+ In general, use of a more modern toolkit such as GTK+ is recommended.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXaw
+
 Package: libxcb-composite0-dev
 Architecture: iphoneos-arm64e
 Version: 1.14
@@ -9926,6 +10471,109 @@ Description: libcrypt shared library
  It provides the traditional Unix 'crypt' and 'crypt_r' interfaces,
  as well as a set of extended interfaces like 'crypt_gensalt'.
 
+Package: libxcursor-dev
+Architecture: iphoneos-arm64e
+Version: 1.2.0
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 244
+Depends: roothide (>= 0.0.7), libxcursor1 (= 1.2.0), libx11-dev, libxfixes-dev, libxrender-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxcursor/libxcursor-dev_1.2.0_iphoneos-arm64e.deb
+Size: 55612
+MD5sum: 3891b7c7e07da37c271a6d7954781f1f
+SHA1: 4fda008d19260639634963cac1d5e486c5c4e846
+SHA256: b2c7e04351c8ccf4f5fae1bf9b21dc5aadd10a4c3ae35b1a10602262b0e9e0b8
+SHA512: 1b3490043c72212838b734cdfe9f529c746c87f7716bc20329bd81112c520bcdd43623977281e3c3a1971f0c33a69753302e10a9456b0a17bc8ecaa472b91559
+Description: X cursor management library
+ Xcursor is a simple library designed to help locate and load cursors for the X Window System.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXau
+
+Package: libxcursor1
+Architecture: iphoneos-arm64e
+Version: 1.2.0
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxfixes3, libxrender1
+Filename: pool/main/iphoneos-arm64e/1900/libxcursor/libxcursor1_1.2.0_iphoneos-arm64e.deb
+Size: 17814
+MD5sum: 37991c3624dedc50149029b7f5398ac5
+SHA1: c3cc77173ee207dd42dff34fa5b9489b87b758ec
+SHA256: 90463eaf0d907805f4b651ea521e11f8936cd2b0a0d065a66029f09a83283332
+SHA512: 8f43b2b74a96d2bcd6225d426bb69d695a8818c0aa8f7211d0deba01560db2404e6de824824b95f2a4d22e35c195540f650536f8d3b53c42321f8147cbece7d8
+Description: X cursor management library
+ Xcursor is a simple library designed to help locate and load cursors for the X Window System.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXcursor
+
+Package: libxdamage-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.5
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 32
+Depends: roothide (>= 0.0.7), libxdamage1 (= 1.1.5), x11proto-dev, libxfixes-dev, libx11-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxdamage/libxdamage-dev_1.1.5_iphoneos-arm64e.deb
+Size: 11528
+MD5sum: 02226ac2141fb21d0630586e8558c33c
+SHA1: e0757c6113d80dbf096d26414bccc73a0ac1ca21
+SHA256: f5312380624f1db52604fa80777ee55d0a00f1051e281bf31573fe8815880d38
+SHA512: b8b6df82b6086ce93659da214574d0912276a12a9087ba4f72f8a5e5dff44f669e5336f4bd776baf9c49bb9d740a3716c209d34cbb527e6d4d1c05fa446b6dea
+Description: X11 damaged region extension library (development headers)
+ libXdamage provides an X Window System client interface to the DAMAGE
+ extension to the X protocol.
+ .
+ The Damage extension provides for notification of when on-screen regions have
+ been 'damaged' (altered).
+ .
+ This package contains the development headers for the library found in
+ libxdamage1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdamage
+
+Package: libxdamage1
+Architecture: iphoneos-arm64e
+Version: 1.1.5
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxfixes3, libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/libxdamage/libxdamage1_1.1.5_iphoneos-arm64e.deb
+Size: 5008
+MD5sum: b4cbce918d79a222b69ef318904f9af0
+SHA1: 888c4a425c92391e273a67cadc7b1ebbcd15d1c6
+SHA256: bfc2c43037d30f4a6618608c1a768f5022bb42346e4f4ac0b1c536cb198c2b9c
+SHA512: f6731edc0a0d1b2e29dfe15d12345416577fdf38a78c9ce8dc34d59ea8e6f759b49211280db0968f5f889949fad341b2e5633b85166dad7dbf0de2284581f5f4
+Description: X11 damaged region extension library
+ libXdamage provides an X Window System client interface to the DAMAGE
+ extension to the X protocol.
+ .
+ The Damage extension provides for notification of when on-screen regions have
+ been 'damaged' (altered).
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdamage
+
 Package: libxdmcp-dev
 Architecture: iphoneos-arm64e
 Version: 1.1.3
@@ -10116,6 +10764,316 @@ Description: X11 miscellaneous extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXext
 
+Package: libxfixes-dev
+Architecture: iphoneos-arm64e
+Version: 5.0.3
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libxfixes3 (= 5.0.3), libx11-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxfixes/libxfixes-dev_5.0.3_iphoneos-arm64e.deb
+Size: 26526
+MD5sum: f3c9736e2e0b734b95260dbae6a08a37
+SHA1: e60b4fba6deb53abe77b8805cf7b6b9953e1ffde
+SHA256: 3f8790d39e9976263157e3f9a9209d91525be80a7cf06eee329928af5dbfdc67
+SHA512: 7507c83b3088125538fcbc702d1da40ef6450da22fcf716100fef5663069d834883ea01d252fdbf6089c102f43bc5470c7b62a7a190702c0541f1d465810a8b4
+Description: X11 miscellaneous 'fixes' extension library (development headers)
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ This package contains the development headers for the library found in
+ libxfixes3.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
+
+Package: libxfixes3
+Architecture: iphoneos-arm64e
+Version: 5.0.3
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 84
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/libxfixes/libxfixes3_5.0.3_iphoneos-arm64e.deb
+Size: 9098
+MD5sum: 73d4785c0f6a41eacee557e5f52688fc
+SHA1: 7c47fdb1939675671855a38922fe685f02becfec
+SHA256: 6b612e3a3186907a848f4e431a91c0b59ca94464337a5c075ee810b59c89f232
+SHA512: 6aa20ae51c753965def45d7fbdb5fec1dfccfac8ac2ef6d57ff5ac405f3b81cd767b64093b5f12f9c53bf14117d1841ed12390fe4d3c6c1d86a346b05aa39633
+Description: X11 miscellaneous 'fixes' extension library
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
+
+Package: libxfont-dev
+Architecture: iphoneos-arm64e
+Version: 2.0.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 604
+Depends: roothide (>= 0.0.7), libxfont2 (= 2.0.4), x11proto-dev, libfreetype-dev, libfontenc-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxfont2/libxfont-dev_2.0.4_iphoneos-arm64e.deb
+Size: 291304
+MD5sum: dc251b5d1b06db54e86161e0d94fe185
+SHA1: be8e0522977f18de56e0fe8bf02231c26bebebcc
+SHA256: 86fd8cea8ca473027e34e032a7b2a06179cd56545b3f816a271e13910010c678
+SHA512: 7a46be36d65104f2ea999337f3a0aff83a9a616c928c539bcbc514ea3f8f743f2135e7b5011b5e05eb4bb75b4d80aa6a64323c325d9264b3873416ffe4960f48
+Description: X11 font rasterisation library (development headers)
+ libXfont provides various services for X servers, most notably font
+ selection and rasterisation (through external libraries).
+ .
+ This package contains the development headers for the library found in
+ libxfont2.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfont
+
+Package: libxfont2
+Architecture: iphoneos-arm64e
+Version: 2.0.4
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 224
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libfreetype6, libfontenc1
+Filename: pool/main/iphoneos-arm64e/1900/libxfont2/libxfont2_2.0.4_iphoneos-arm64e.deb
+Size: 103146
+MD5sum: ee648da3fa5f77f9476052ceb699ad70
+SHA1: 9630023816f880a47cbecc5054b8e4a6aaca8e3a
+SHA256: a18b358340e3a5507249365a2e0301b7e5031f84c8876249eb2c7e9b058d0efb
+SHA512: 6a18d1dd7f2d20060373af89ebd2d37ff284bf2b919b1c95d0298efd1fb1c968d4a4d29c720d77e9ee24e98cd4a5c1e77b28c654bca7bd65440d5f4c932fb8d5
+Description: X11 font rasterisation library
+ libXfont provides various services for X servers, most notably font
+ selection and rasterisation (through external libraries).
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfont
+
+Package: libxft-dev
+Architecture: iphoneos-arm64e
+Version: 2.3.3
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 240
+Depends: roothide (>= 0.0.7), libxft2 (= 2.3.3), libfontconfig-dev, libfreetype-dev, libx11-dev, libxrender-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxft/libxft-dev_2.3.3_iphoneos-arm64e.deb
+Size: 112710
+MD5sum: 5f65354b1169abc80aa311fe3e40d974
+SHA1: a66f52a397d8a3daa2751fa0f893c594755a1cf4
+SHA256: f83463dfa8e1978303f4275b171e68f61dc27290207e66807a7640758c9510ba
+SHA512: c2331fe651bb27d90e7f12b7d3437f24f9f2acb05c02420e92a2123a17ac15060a69d5a3f63c3b959b794fd1ad49064a0534674b51c58c087411a8bd634f47a6
+Description: FreeType-based font drawing library for X (development files)
+ Xft provides a client-side font API for X applications, making the FreeType
+ font rasterizer available to X clients.  Fontconfig is used for font
+ specification resolution.  Where available, the RENDER extension handles
+ glyph drawing; otherwise, the core X protocol is used.
+ .
+ This package provides a static library and C header files.
+
+Package: libxft2
+Architecture: iphoneos-arm64e
+Version: 2.3.3
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 124
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libfontconfig1, libfreetype6, libx11-6, libxrender1
+Filename: pool/main/iphoneos-arm64e/1900/libxft/libxft2_2.3.3_iphoneos-arm64e.deb
+Size: 35670
+MD5sum: 43de2ce736f5c3bcb64dbeea23cf8fa6
+SHA1: c7c5ca386a47f16462e2a67f5b4b369cd3f1151c
+SHA256: 57358d84434ca815f8c2bb8060fcf8c1eb578a22f27d21eebe915340c1ff9fd7
+SHA512: f7e5ca8615493846afbbe62f72fd8a2f8dfbf68d3842bb92e1b48006c5799f1e79bc0ca7874f4340ee6cb96be62c22d6b37cb1541de8524b6b0a3adee43a8f70
+Description: FreeType-based font drawing library for X
+ Xft provides a client-side font API for X applications, making the FreeType
+ font rasterizer available to X clients.  Fontconfig is used for font
+ specification resolution.  Where available, the RENDER extension handles
+ glyph drawing; otherwise, the core X protocol is used.
+
+Package: libxi-dev
+Architecture: iphoneos-arm64e
+Version: 1.7.10
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 428
+Depends: roothide (>= 0.0.7), libxi6 (= 1.7.10), libx11-dev, libxext-dev, libxfixes-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxi/libxi-dev_1.7.10_iphoneos-arm64e.deb
+Size: 109450
+MD5sum: cf6b9f443e407478747544c999326cb7
+SHA1: a396cfbd9f79693868c51eadaf3d5a9f205a5174
+SHA256: 2d7c5807b6ed406444af15da71c7d485616c457cacc4bbf9e2db796c3298e071
+SHA512: e5129564ed7b568dc5a5e97dd63c14d203ef7891277e99159cbaa98314f4d0df3ded133ae90b73aee5aeb4e3db06deadc928afae6f22d0f11e3d91ea71537777
+Description: X11 Input extension library (development headers)
+ libXi provides an X Window System client interface to the XINPUT
+ extension to the X protocol.
+ .
+ The Input extension allows setup and configuration of multiple input devices,
+ and hotplugging of input devices (to be added and removed on the fly).
+ .
+ This package contains the development headers for the library found in
+ libxi6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXi
+
+Package: libxi6
+Architecture: iphoneos-arm64e
+Version: 1.7.10
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 112
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6
+Filename: pool/main/iphoneos-arm64e/1900/libxi/libxi6_1.7.10_iphoneos-arm64e.deb
+Size: 25488
+MD5sum: 9348567cd67e2fc38ccca3700d7d6494
+SHA1: eb1bc3be63e33b5a3fb3d039b46691567ad2fab7
+SHA256: 7e66fc394de2c5b4ab1d5cea0054927f2d511dcdf9bf1398731b65a4e0555452
+SHA512: 90399b9d0d6089cd6ad31eef1e7cbc2639e671239d3768ce2beb5bbd7aa985162672e3331cc98e4e188e39a7636807857ea93f4f0bee163cdf04f62f43fcafd6
+Description: X11 Input extension library
+ libXi provides an X Window System client interface to the XINPUT
+ extension to the X protocol.
+ .
+ The Input extension allows setup and configuration of multiple input devices,
+ and hotplugging of input devices (to be added and removed on the fly).
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXi
+
+Package: libxinerama-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 52
+Depends: roothide (>= 0.0.7), libxinerama1 (= 1.1.4), libx11-dev, libxext-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxinerama/libxinerama-dev_1.1.4_iphoneos-arm64e.deb
+Size: 14604
+MD5sum: aba3f307a1e68d31193587809a836af2
+SHA1: ff49ee4e8f40b8a192db6a50213836fd85048506
+SHA256: 49f68e3fd47303921203b045ee705d4af5366fe3265bc37e93c3e6fa8b2495db
+SHA512: c2237abf083c95d7a3f201dc551e80e2a9dd490cad82ccb2fa4decee2163d67482f3184a286cacd00f92d9a72455a65e5a36d4e371710759b1dfb609b8f150ab
+Description: X11 Xinerama extension library (development headers)
+ libXinerama provides an X Window System client interface to the XINERAMA
+ extension to the X protocol.
+ .
+ The Xinerama (also known as panoramiX) extension allows for multiple screens
+ attached to a single display to be treated as belonging together, and to give
+ desktop applications a better idea of the monitor layout.
+ .
+ This package contains the development headers for the library found in
+ libxinerama1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXinerama
+
+Package: libxinerama1
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6
+Filename: pool/main/iphoneos-arm64e/1900/libxinerama/libxinerama1_1.1.4_iphoneos-arm64e.deb
+Size: 5400
+MD5sum: a2be70df15acb330228cd08757fe10b9
+SHA1: 80bc420a593c2fa1e51f872b7bac5a4aa94015fd
+SHA256: 67e215aa657af92bfb77a3e0b1687a6d62aa6625e80a1cb643a9b27ed8798f78
+SHA512: 360f516f69aa6e9b4e3c17a2900d5b2adf408c39ca57791a03ccc7efff9e01858f21e485d3c8cc96d69e21078082ada67f0bf78657621d126a571ad94d0b061c
+Description: X11 Xinerama extension library
+ libXinerama provides an X Window System client interface to the XINERAMA
+ extension to the X protocol.
+ .
+ The Xinerama (also known as panoramiX) extension allows for multiple screens
+ attached to a single display to be treated as belonging together, and to give
+ desktop applications a better idea of the monitor layout.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXinerama
+
+Package: libxkbfile-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 356
+Depends: roothide (>= 0.0.7), libxkbfile1 (= 1.1.0), libx11-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxkbfile/libxkbfile-dev_1.1.0_iphoneos-arm64e.deb
+Size: 178604
+MD5sum: 66b16973147a3d24092996f40b4a0b12
+SHA1: ee9af9487263d08933c85ccd62a7f8de4ff66820
+SHA256: f3f963743b4dc30a777ddf65a64f14fed14a3754db4f6ec511807d397c2cd6e3
+SHA512: ee6d8840e3f67b58085819dddfc239aa9ab114b4b405303243b27b4e2c2b263bd25e1cfff829878e4a49fab73e8b65c8015617141eb038c6e6d9e410359b66b9
+Description: X11 keyboard file manipulation library (development headers)
+ libxkbfile provides an interface to read and manipulate description files for XKB, 
+ the X11 keyboard configuration extension. 
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
+
+Package: libxkbfile1
+Architecture: iphoneos-arm64e
+Version: 1.1.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 176
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/libxkbfile/libxkbfile1_1.1.0_iphoneos-arm64e.deb
+Size: 61478
+MD5sum: 9cbd49c898dad00cfde675dcdfc25f04
+SHA1: 4ddb2f558057c92dfb7b823ecfeda34dc1bd577f
+SHA256: 47996002a1426a42de1844376cfa00fb3b4e15eab40e4565568a706cfc804755
+SHA512: 18c3ee64da7f3b01a106c562f79fe722767b189248ddef773625d08476af58d2b01d93058df059d3eb6e29117b2a68e05680c2fbc307ed02534330f783402449
+Description: X11 keyboard file manipulation library
+ libxkbfile provides an interface to read and manipulate description files for XKB, 
+ the X11 keyboard configuration extension. 
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
+
 Package: libxml2-dev
 Architecture: iphoneos-arm64e
 Version: 2.9.12
@@ -10217,6 +11175,215 @@ Description: Python3 bindings for the GNOME XML library
  This package contains the files needed to use the GNOME XML library
  in Python3 programs.
 
+Package: libxmu-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.3-1
+Multi-Arch: foreign
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 480
+Depends: roothide (>= 0.0.7), libxext-dev, libxt-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxmu/libxmu-dev_1.1.3-1_iphoneos-arm64e.deb
+Size: 142382
+MD5sum: a8ddfb1edba2d9c4dd00d5679d529e29
+SHA1: 50b337865434dd91c764abb9b4b476e969fb2e00
+SHA256: 4c7f5db10a783df89b68ea1bec0fb2909ba863b8401004e236f9be4f9d5c4a12
+SHA512: eba46bed73f5add4cbafd10926a34169aa7bea371315b2c03094bc211a6410472e9e21ced1c544a0b0882b0fbf27fad81a30142df68991b7cf024ac0ffa2d368
+Description: X11 miscellaneous utility library (development headers)
+ libXmu provides a set of miscellaneous utility convenience functions for
+ X libraries to use. libXmuu is a lighter-weight version that does not depend
+ on libXt or libXext; for more information, see libxmuu1. 
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/LibXmu
+
+Package: libxmu6
+Architecture: iphoneos-arm64e
+Version: 1.1.3-1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 136
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6, libxt6
+Filename: pool/main/iphoneos-arm64e/1900/libxmu/libxmu6_1.1.3-1_iphoneos-arm64e.deb
+Size: 43396
+MD5sum: 86e10b652ea53fc4aafc00c5f6169e39
+SHA1: 349dda8cd00b7ba4852a67726bed074bacbe6cff
+SHA256: a5dcc9c1379d2a56b19d14667cdcb0a812e4311c5344e0a099c65027a17baae9
+SHA512: 9a11853b804f2dbe065498d448dfcd3b48a113200ca2b8e642153d098c52c595a93a1ede047b9348031b8ca7468aca96dc6896b73a790388cb5d455145665ebc
+Description: X11 miscellaneous utility library
+ libXmu provides a set of miscellaneous utility convenience functions for
+ X libraries to use. libXmuu is a lighter-weight version that does not depend
+ on libXt or libXext; for more information, see libxmuu1. 
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/LibXmu
+
+Package: libxmuu1
+Architecture: iphoneos-arm64e
+Version: 1.1.3-1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 56
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/libxmu/libxmuu1_1.1.3-1_iphoneos-arm64e.deb
+Size: 7094
+MD5sum: 3a6c3880a443a9bda79e4becf1513b1a
+SHA1: 8b0d43c27585502eaf2b8902a8e1659de319fa69
+SHA256: 4e01b9bbdde9abba18577cfc722280fe4144b75bd773d8c2f40923504ec9df94
+SHA512: 20aa0cccd8618f28dd99f9c43cf0c7a58655f508efb1915d338c868782618088c9a32157171e069219cd82bb46baa7ff4bf90027c8245ae87479eede3196a450
+Description: X11 miscellaneous micro-utility library
+ libXmuu provides a set of miscellaneous utility convenience functions for
+ X libraries to use. It is a lighter version of libXmu that does not depend
+ on libXt or libXext; for more information on libXmu, see libxmu6.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/LibXmu
+
+Package: libxpm-dev
+Architecture: iphoneos-arm64e
+Version: 3.5.13
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 236
+Depends: roothide (>= 0.0.7), libxpm4 (= 3.5.13), libx11-dev, libintl-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxpm/libxpm-dev_3.5.13_iphoneos-arm64e.deb
+Size: 90500
+MD5sum: aca6b2c17bdd97d9f7105bb04cc8c4ec
+SHA1: 9e611e4a350563e3a45b29174dbf2df0ac431b0b
+SHA256: 54a662372657744b8b4f077e3897bf7d8dd22cb61092dc93ccef1cb5e3030d47
+SHA512: 6b4a5ba7d55312d4be39741a1724ff8d277e9df3fb8bc6de2cb7dbc0e46d27ed21e69cb92e2f469785c1ed87ce59f2825d3c7de9954838f4f4c363d5e119b960
+Description: X11 pixmap library (development headers)
+ libXpm provides support and common operation for the XPM pixmap format,
+ which is commonly used in legacy X applications. XPM is an extension
+ of the monochrome XBM bitmap specified in the X protocol.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+
+Package: libxpm4
+Architecture: iphoneos-arm64e
+Version: 3.5.13
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 116
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libintl8
+Filename: pool/main/iphoneos-arm64e/1900/libxpm/libxpm4_3.5.13_iphoneos-arm64e.deb
+Size: 30446
+MD5sum: 63c7b237057debf497048f0ede7e2f15
+SHA1: 5e47881de14c18d7b1d0f82ad97d46ab1a4e7118
+SHA256: df9a0b5740861ce9c711bd3c89609044148b1c85b668dd65b564efff7998bac7
+SHA512: be4e45567de4436ba2e5ffed0fe83e689277b209041c99c75f7899003b279283e9d8c4b85dd161274920a6648d88745a766cd6c8b420e43ce0eb9cb7fb092c26
+Description: X11 pixmap library
+ libXpm provides support and common operation for the XPM pixmap format,
+  which is commonly used in legacy X applications. XPM is an extension
+  of the monochrome XBM bitmap specified in the X protocol.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+
+Package: xpmutils
+Architecture: iphoneos-arm64e
+Version: 3.5.13
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 140
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxpm4 (= 3.5.13), libx11-6, libxt6, libxext6, libintl8
+Filename: pool/main/iphoneos-arm64e/1900/libxpm/xpmutils_3.5.13_iphoneos-arm64e.deb
+Size: 18990
+MD5sum: 147cf20cdc84ba46de00b9194e00ec23
+SHA1: e898545bd9ce7927217248fcdd957d1bc379059f
+SHA256: ac27ba58871f796687bb812874a5433b169906326d5c6cda8c12cf43570f6483
+SHA512: 8ad94ec6d8491bc2a776350fa5114b44313709243e2826c283771656fa5fed9fb93d154808f7b7a98189e8c9916aa7b7af9d694c5826dc848445a8da5404ff4d
+Description: X11 pixmap utilities
+ This package provides two tools, cxpm and sxpm. 
+ cxpm is a tool to check the integrity of an XPM file. 
+ sxpm is a tool to view XPM files, and takes a number of options. 
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXpm
+
+Package: libxrandr-dev
+Architecture: iphoneos-arm64e
+Version: 1.5.2
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 216
+Depends: roothide (>= 0.0.7), libxrandr2 (= 1.5.2), libx11-dev, libxext-dev, libxrender-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxrandr/libxrandr-dev_1.5.2_iphoneos-arm64e.deb
+Size: 64942
+MD5sum: e907d3c1e3d89cd4c19c2d64982ccb55
+SHA1: b5705a20caffc5430994340e310390024b1226e0
+SHA256: 9ba373f4efd3bfe3d1e6e7399869daa2c0c28f103d4d649e212b2e42c98ea54b
+SHA512: 69ff348abd8b1f96a4fd2cf358f6fc53022cce50dec8c73db2323fd231db3666182dedf62d0e03ce52bfa3d41bea7b0ad11be8d6a63bef8f035163bfb3a8c9c9
+Description: X11 RandR extension library (development headers)
+ libXrandr provides an X Window System client interface to the RandR
+ extension to the X protocol.
+ .
+ The RandR extension allows for run-time configuration of display attributes
+ such as resolution, rotation, and reflection.
+ .
+ This package contains the development headers for the library found in
+ libxrandr2.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
+
+Package: libxrandr2
+Architecture: iphoneos-arm64e
+Version: 1.5.2
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 96
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6, libxrender1
+Filename: pool/main/iphoneos-arm64e/1900/libxrandr/libxrandr2_1.5.2_iphoneos-arm64e.deb
+Size: 15020
+MD5sum: 8f0bd99fd99e72dc2b798ac807a7ffa0
+SHA1: edbbb457c53ce08cd73e21275834297e20d8e993
+SHA256: 6a71c3a6b61ced2757921f865b622bb22a2b0c98b2d49c5595fc83b267aa333d
+SHA512: 5e8b70d5cee668ed7b698d9b89e532e2abe5d2992a3326bed76781de8fb8ed0db3794eed321b74ca1af4dbea5acc5374efe2b2c66c7bee2486c4599e38595889
+Description: X11 RandR extension library
+ libXrandr provides an X Window System client interface to the RandR
+ extension to the X protocol.
+ .
+ The RandR extension allows for run-time configuration of display attributes
+ such as resolution, rotation, and reflection.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrandr
+
 Package: libxrender-dev
 Architecture: iphoneos-arm64e
 Version: 0.9.10
@@ -10276,6 +11443,116 @@ Description: X Rendering Extension client library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXrender
+
+Package: libxt-dev
+Architecture: iphoneos-arm64e
+Version: 1.2.1
+Multi-Arch: foreign
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2288
+Depends: roothide (>= 0.0.7), libxt6 (= 1.2.1), libx11-dev, libice-dev, libsm-dev, x11proto-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxt/libxt-dev_1.2.1_iphoneos-arm64e.deb
+Size: 685580
+MD5sum: b90fee8973457f6f269a223938e0ff52
+SHA1: c6d4ff5ed2c46e96392843e885879efbc2ddc675
+SHA256: 240fda1a77472197fabb26ec517a91e6bc10e38ace4ab33595b965e57c50f988
+SHA512: 475d3924a5d56a6a5f44cadcada13689619c1e4040efdc1fdf25fd3708da2fef8114ae1a3212f1460e1a044adbf07bc99321e92164ca0a1e970e4d892118a4da
+Description: X11 toolkit intrinsics library (development headers)
+ libXt provides the X Toolkit Intrinsics, an abstract widget library upon
+ which other toolkits are based.  Xt is the basis for many toolkits, including
+ the Athena widgets (Xaw), and LessTif (a Motif implementation).
+ .
+ This package contains the development headers for the library found in
+ libxt6.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXt
+
+Package: libxt6
+Architecture: iphoneos-arm64e
+Version: 1.2.1
+Multi-Arch: foreign
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 340
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libice6, libsm6
+Filename: pool/main/iphoneos-arm64e/1900/libxt/libxt6_1.2.1_iphoneos-arm64e.deb
+Size: 146466
+MD5sum: 6f782d90d3c391e175e99cff93a12545
+SHA1: 278b9828031bdebed27cc443e7e1aedbf8714947
+SHA256: f8bdf135ae9ad3785bcbcb482823d28f35a92b4c68ead7a3d19c0495b97d5488
+SHA512: b421fcdaa15ea826d2bc4fce0d7d619f5254509c849daca7b27e849a81dba9199c7fb6bef15aa7a11120532fc368ef50870427bded7d9167832c876075c2d1a2
+Description: X11 toolkit intrinsics library
+ libXt provides the X Toolkit Intrinsics, an abstract widget library upon
+ which other toolkits are based.  Xt is the basis for many toolkits, including
+ the Athena widgets (Xaw), and LessTif (a Motif implementation).
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXt
+
+Package: libxxf86vm-dev
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.0.7), libxxf86vm1 (= 1.1.4), x11proto-dev, libx11-dev, libxext-dev
+Filename: pool/main/iphoneos-arm64e/1900/libxxf86vm/libxxf86vm-dev_1.1.4_iphoneos-arm64e.deb
+Size: 29840
+MD5sum: db69d3aa3742c77bbabe65745056216f
+SHA1: 9093de70370bdb1dbc9ff32b80253fbd3490e1cd
+SHA256: feb66ff2a36211273ff3c98c88a7255257e6515bc30a74f7880844a0f0208ad8
+SHA512: efa3dec0ac1dbdb495104b38f24e62f4a7ae09c671cc90110d5da08daedc1253feeb2e5462d4c620be452e5953537f9252d3a8862611a3206b7210f78c3a6a4a
+Description: X11 XFree86 video mode extension library (development headers)
+ libXxf86vm provides an interface to the XFree86-VidModeExtension
+ extension, which allows client applications to get and set video mode
+ timings in extensive detail.  It is used by the xvidtune program in
+ particular.
+ .
+ This package contains the development headers for the library found in
+ libxxf86vm1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
+
+Package: libxxf86vm1
+Architecture: iphoneos-arm64e
+Version: 1.1.4
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libx11-6, libxext6
+Filename: pool/main/iphoneos-arm64e/1900/libxxf86vm/libxxf86vm1_1.1.4_iphoneos-arm64e.deb
+Size: 8196
+MD5sum: 2e4b39d9b3d0ab9bd74425edf8c9cad7
+SHA1: a52bd22be1b76cdb5dd5ec315869596f9e74d370
+SHA256: f85d544fa245a8f8247df10d35a5a9f1443ff86f68004c9aacfe3a78a5f0dd1a
+SHA512: 5baac8d1ac607b67cc07f0f24e6b5632d22d96f8f9210dd1dda5407eac6a52036bb9fe4699f0799053060a09a5656a90cb87d2d302eb9c599517bfdfda8e5cdb
+Description: X11 XFree86 video mode extension library
+ libXxf86vm provides an interface to the XFree86-VidModeExtension
+ extension, which allows client applications to get and set video mode
+ timings in extensive detail.  It is used by the xvidtune program in
+ particular.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
 
 Package: libyaml-tiny-perl
 Architecture: all
@@ -11688,6 +12965,158 @@ SHA256: 988983a75c40e98351698a9bbba86bf81eb810b8df83a544f4e6ef3fff4e37ce
 SHA512: 241faf5549666468176e7e31d53693a42d25b3ab25af532bd41fae014c3535f54498dc59b7e43d980932f8038445bd822aad08ecbd90568dfac4e4c281a8d5c4
 Homepage: https://nongnu.org/man-db/
 Description: tools for reading manual pages
+
+Package: libgl1-mesa-dev
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4
+Provides: libgl-dev
+Depends: roothide (>= 0.0.7), mesa-common-dev (= 21.0.2), libgl1-mesa-glx (= 21.0.2), libx11-dev, libx11-xcb-dev, libxcb1-dev, libxcb-glx0-dev, libxext-dev, libxxf86vm-dev, libxcb-shm0-dev
+Conflicts: libgl-dev
+Replaces: libgl-dev
+Filename: pool/main/iphoneos-arm64e/1900/mesa/libgl1-mesa-dev_21.0.2_iphoneos-arm64e.deb
+Size: 1272
+MD5sum: 1ae7c5829cf61cf15e3dc1576e9e9af3
+SHA1: e52096aebfa4625bcad9291a45d4a0359b750c62
+SHA256: 431893fe3936ed96c4a681ba9734e9f8940cf6f4b70d11325395a6d2342688e8
+SHA512: 79f8200c78095784671afd50e7d741edbd151bc4e7973182dbb9e66484dc7eb84359123e20a6b2c31eca8c51ebc9d3e4ad7d976225e253abcfa9a5cca8e32874
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL API -- GLX development files
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.  For direct rendering, it can use DRI
+ modules from the libgl1-mesa-dri package to accelerate drawing.
+ .
+ This package includes headers and static libraries for compiling
+ programs with Mesa.
+ .
+ For a complete description of Mesa, please look at the libgl1-mesa-glx
+ package.
+
+Package: libgl1-mesa-glx
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 7140
+Provides: libgl1
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libglapi-mesa (= 21.0.2), libx11-6, libxext6, libzstd1
+Conflicts: libgl1
+Replaces: libgl1
+Filename: pool/main/iphoneos-arm64e/1900/mesa/libgl1-mesa-glx_21.0.2_iphoneos-arm64e.deb
+Size: 2386864
+MD5sum: 8827ff2df4739bb785df51c627f096dc
+SHA1: 15befa040958f30f27bf6922b93749a83f7ef652
+SHA256: 9d59f9715c74a17058ddc9ff0ed7b533f9e03f4e07ed38aed7b24678ca06d649
+SHA512: 1709f5bf2decb533c9e641e9118365f18661796f4d320b43a58239205b5e8ca3b382526fb51586945f70e7bcb80dd186b71a69bda810974c567f85a2bb4a9fbe
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL API -- GLX runtime
+ Mesa is a 3-D graphics library with an API which is very similar to
+ that of OpenGL.  To the extent that Mesa utilizes the OpenGL command
+ syntax or state machine, it is being used with authorization from
+ Silicon Graphics, Inc.  However, the authors make no claim that Mesa
+ is in any way a compatible replacement for OpenGL or associated with
+ Silicon Graphics, Inc.
+ .
+ This version of Mesa provides GLX and DRI capabilities: it is capable of
+ both direct and indirect rendering.
+
+Package: libglapi-mesa
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 248
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1900/mesa/libglapi-mesa_21.0.2_iphoneos-arm64e.deb
+Size: 36008
+MD5sum: 898c1682da2912b088aaf67fc81e8264
+SHA1: 5c632f9238f9f97ccdd6e1b752cac70daff70793
+SHA256: 35a18946153edd13147c8c1360f34ef3e6c34da077e55a94152b8329fe638431
+SHA512: dde982f049ccffa84940ba3033959a96479cd7f62d5189015b12d8ccd11e63d6b9f8b96612e67a522f6f0074f83275fb0682b09261c32aca68634a74bfeb8c94
+Homepage: https://mesa3d.org/
+Description: free implementation of the GL API -- shared library
+ The Mesa GL API module is responsible for dispatching all the gl*
+ functions. It is intended to be mainly used by both the libgles1-mesa
+ and libgles2-mesa packages.Depends: libiosexec1 (>= 1.3.1)
+
+Package: libgles2-mesa-dev
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 608
+Depends: roothide (>= 0.0.7), libgles2-mesa (= 21.0.2), mesa-common-dev (= 21.0.2)
+Filename: pool/main/iphoneos-arm64e/1900/mesa/libgles2-mesa-dev_21.0.2_iphoneos-arm64e.deb
+Size: 55624
+MD5sum: 540359f061b4c6000f19b966b7b0ceaa
+SHA1: abf0c882d4127aae94ed2408bace420df83ece40
+SHA256: fa7ead8770625cc00933cc684b22e2bf6fc52025f6d696e5b8e7e5694015ad53
+SHA512: e9784676aeeec5babb15dc66ff7a0391569fe8e1d0ced303832b9ff0eca03fad9c98fc201ab04ba75a919e0b9bb9b5d853f3370512fe0e1a9816d15ffe21b7a6
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL|ES 2.x API -- development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This package provides a development environment for building applications
+ using the OpenGL|ES 2.x APIs.
+
+Package: libgles2-mesa
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 88
+Provides: libgles2
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libglapi-mesa (= 21.0.2)
+Conflicts: libgles2
+Replaces: libgles2
+Filename: pool/main/iphoneos-arm64e/1900/mesa/libgles2-mesa_21.0.2_iphoneos-arm64e.deb
+Size: 12272
+MD5sum: 7b121e5a7417b26aca5a422022b2fe8a
+SHA1: 498cdbbb95e96cc8923310fe98d18db2766a4663
+SHA256: 5b9e1b4cb03304a737c7737350b89a78d2ae5f850ff391053bc1add84054190b
+SHA512: d876701fc8b6c7f166344bb89ad114fc2dedbab69dc877605dad412c9e9a866045ea7a5e80cf215a3d5566cb5abf368047e3770037563ee78eefa654344c33ad
+Homepage: https://mesa3d.org/
+Description: free implementation of the OpenGL|ES 2.x API -- runtime
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+
+Package: mesa-common-dev
+Architecture: iphoneos-arm64e
+Version: 21.0.2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1412
+Depends: roothide (>= 0.0.7), libx11-dev
+Filename: pool/main/iphoneos-arm64e/1900/mesa/mesa-common-dev_21.0.2_iphoneos-arm64e.deb
+Size: 152478
+MD5sum: a2ce3ee7c597eefb749b02db11905b52
+SHA1: bbddb1bd85b16331b193bd676ba57830100d2e37
+SHA256: f75709f23b2429435262c89091a1a6356a024320d7f775aefcc0890b679f1828
+SHA512: 2a09fe9b277005d838513434b8b22643e7d61cc8c362d906282b846a87700a671bef434573fd07bcf14a6580ea333a6ebb1fbaf7da9a44235f0ecb75f3ba55cd
+Homepage: https://mesa3d.org/
+Description: Developer documentation for Mesa
+ This package includes the specifications for the Mesa-specific OpenGL
+ extensions, the complete set of release notes and the development header
+ files common to all Mesa packages.
 
 Package: libmpfr-dev
 Architecture: iphoneos-arm64e
@@ -14257,6 +15686,108 @@ SHA512: 5c305889eff9bd390d38d9f8a46019b71aafba1dc2d19d9d6e0dcac877ad90ed5c4e10d2
 Description: What Theos needs.
  This metapackage installs grep, rsync, unzip, git, perl, xz-utils, and the iOS Toolchain in one go.
 
+Package: tigervnc-common
+Architecture: iphoneos-arm64e
+Version: 1.11.0
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 204
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/tigervnc/tigervnc-common_1.11.0_iphoneos-arm64e.deb
+Size: 42142
+MD5sum: 0fcb03a0a5e9b52f00e9fbb60cd850f7
+SHA1: a1709332951c071047f539e43bb723a9532b3691
+SHA256: 49a625ed533436fe7c1e30b32e53348e1d2cdefd5ae51b878719798b1d46beb0
+SHA512: 57878f883e690b09ad247a370e70312103462a7c0916a0006371342df2fc58b7748a05b4ac578fdb3195cbd3d1ecc83cf9c399f761cb79847b4d32dc31271141
+Description: Virtual network computing; Common software needed by servers
+ VNC stands for Virtual Network Computing. It is, in essence, a remote
+ display system which allows you to view a computing `desktop' environment
+ not only on the machine where it is running, but from anywhere on the
+ Internet and from a wide variety of machine architectures.
+ .
+ It is implemented in a client/server model. This package provides the
+ vncpasswd and vncconfig tools as well as the common infrastructure for
+ tigervnc-scraping-server and tigervnc-standalone-server packages.
+
+Package: tigervnc-scraping-server
+Architecture: iphoneos-arm64e
+Version: 1.11.0
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 504
+Provides: vnc-server
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), xauth, libgl1, libgeneral0, libmd0, libgnutls30, libjpeg62-turbo, libpam2, libpixman-1-0, libx11-6, libxau6, libxdmcp6, libxdamage1, libxfont2, perl, xkbcomp, xkeyboard-config, tigervnc-common
+Filename: pool/main/iphoneos-arm64e/1900/tigervnc/tigervnc-scraping-server_1.11.0_iphoneos-arm64e.deb
+Size: 198708
+MD5sum: bad26205594062b09de968c61a5790e1
+SHA1: cfd1e6ad96dc241cf006f097b06adc4039531dc5
+SHA256: 2559d2b883a0e9bd9bae66b50faecde33c64e04ee59e56aece7905c49883866c
+SHA512: aa1a3585aeabecceafe3277241e3d2b791c582f31a0677f38eeda72d44dc713cab00d2c29897b81447f60f620387bd19db1ba8b70ac8c9963bab289213d80371
+Description: Virtual network computing server performing X screen scraping
+ VNC stands for Virtual Network Computing. It is, in essence, a remote
+ display system which allows you to view a computing `desktop' environment
+ not only on the machine where it is running, but from anywhere on the
+ Internet and from a wide variety of machine architectures.
+ .
+ This package provides a VNC server that perform screen scraping of an already
+ running X server to provide its VNC desktop. The VNC desktop can be viewed
+ by any VNC viewer even on other operating systems.
+ .
+ Note: If you only want to scrape your local X11 server, you should consider
+ the tigervnc-xorg-extension package. This package provides the vnc extension
+ for your local X11 server. The usage of this extension is more efficient
+ than a scraping vnc server.
+
+Package: tigervnc-standalone-server
+Architecture: iphoneos-arm64e
+Version: 1.11.0
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1624
+Provides: vnc-server, xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), xauth, libgl1, libgeneral0, libmd0, libgnutls30, libjpeg62-turbo, libpam2, libpixman-1-0, libx11-6, libxau6, libxdmcp6, libxdamage1, libxfont2, xkbcomp, xkeyboard-config, tigervnc-common, tigervnc-xorg-extension
+Filename: pool/main/iphoneos-arm64e/1900/tigervnc/tigervnc-standalone-server_1.11.0_iphoneos-arm64e.deb
+Size: 806842
+MD5sum: 16fdbf034965f7baf0917fe864d0c9f7
+SHA1: 8a86440f580b05f0894cf5f006a90ed16ca5cad3
+SHA256: 5c9a07372cbfff17889cfa77e24377a1a568e94e23c5261357995d59a442970c
+SHA512: 0275037d0259c94b873c1e5475bf6742f0f855ef3e4357f2550fb23ea9481977c7cde10f4327579aef2e5bb7889819b37d114b529c5ac911821f55ae7bae2d10
+Description: Standalone virtual network computing server
+ VNC stands for Virtual Network Computing. It is, in essence, a remote
+ display system which allows you to view a computing `desktop' environment
+ not only on the machine where it is running, but from anywhere on the
+ Internet and from a wide variety of machine architectures.
+ .
+ This package provides a standalone VNC server to which clients can connect.
+ The server generates a display that can be viewed with a vncviewer.
+ .
+ Note: This server does not need a display. You need a VNC viewer to see
+ something. This viewer may also be on a computer running other operating
+ systems.
+
+Package: tigervnc-xorg-extension
+Architecture: iphoneos-arm64e
+Version: 1.11.0
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 564
+Provides: vnc-server, vnc-xorg-extension
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), xserver-xorg-core
+Filename: pool/main/iphoneos-arm64e/1900/tigervnc/tigervnc-xorg-extension_1.11.0_iphoneos-arm64e.deb
+Size: 221922
+MD5sum: 916e7acadd7ddc5a03c4f8f338183c60
+SHA1: 692ca6b2b9619f0bb64d2c8ada70d2d0ee249652
+SHA256: ff2ae4c7935dfdd3673adaad82a7ed451f61ee423c0b37a11e26768d8d66c96f
+SHA512: 6ce58b19191e94c2472c6207180d2f812828874aa90902d1763da257561ec7371bbf69b7f0987318b0b6a8f8df32f1fcb9399001c0a8155dd6fd0c16ace1693e
+Description: Virtual network computing X server extension
+ VNC stands for Virtual Network Computing. It is, in essence, a remote
+ display system which allows you to view a computing `desktop' environment
+ not only on the machine where it is running, but from anywhere on the
+ Internet and from a wide variety of machine architectures.
+ .
+ This package contains an X server connector so VNC clients can connect to your
+ local X desktop directly.
+
 Package: tmux
 Architecture: iphoneos-arm64e
 Version: 3.3a
@@ -14566,6 +16097,22 @@ SHA256: 5dac336738ca6ec43fda2c94bc103516e544da86b585648077f39753083bb211
 SHA512: a2c1dcd90c7bfdc7e709d4cebbe56519f8848d2b9ca5c6c010ca4a94c32b4f4df4b3b0301dd2578f97ea6587ecdefe89a836f4f33f1ea23c82ef8fa4a3e45dc0
 Description: USB multiplexor daemon for iPhone and iPod Touch devices
 
+Package: xorg-util-macros
+Architecture: iphoneos-arm64e
+Version: 1.19.2
+Priority: standard
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 100
+Depends: roothide (>= 0.0.8)
+Filename: pool/main/iphoneos-arm64e/1900/util-macros/xorg-util-macros_1.19.2_iphoneos-arm64e.deb
+Size: 25962
+MD5sum: 7d2b553753d9fe9e4871136db18f08c0
+SHA1: d297263328f0189d2e5751fe90a63930c310c9ee
+SHA256: ba2747f34ce31515de9187efae4ed1c42b59f33887eb1fd5d83f56a5fca2dd65
+SHA512: 61070e49e3b6834b293d0ac41802b489f529485e44af8d2c8da8fff84a783a3be93787ae45d9f74db12e0c4cbe64c6d6dfae5c8a5c1e9b35c450285fcd448494
+Description: m4 macros used by Xorg packages
+
 Package: libuuid-dev
 Architecture: iphoneos-arm64e
 Version: 1.6.2-3
@@ -14798,6 +16345,49 @@ Description: file and recursive website downloader
  .
  GNU Wget2 is the successor of GNU Wget.
 
+Package: x11-apps
+Architecture: iphoneos-arm64e
+Version: 7.7+8
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2724
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libsm6, libx11-6, libxaw7, libxcursor1, libxext6, libxft2, libxmu6, libxmuu1, libxrender1, libxt6, libpng16-16, libxkbfile1, man-db
+Filename: pool/main/iphoneos-arm64e/1900/x11-apps/x11-apps_7.7+8_iphoneos-arm64e.deb
+Size: 589878
+MD5sum: 5500e12b26a9c73c169d6135a0dda43d
+SHA1: 4406e7620891715c124ae27c1bcd73e6a6b0d307
+SHA256: 5cd26203a3f04b185a26c55ca993d196a58e8ff6576d7f3f924d77d1ae253c3b
+SHA512: 222293d36734707cf156a1a2003abec3371c064b9f88c1477419b9fa96b89c7518156ee829c53ec72732841801960ffd08d7cbc244a41bb5ad62e61dcf922698
+Description: X applications
+ This package provides a miscellaneous assortment of X applications
+ that ship with the X Window System, including:
+  - atobm, bitmap, and bmtoa, tools for manipulating bitmap images;
+  - ico, a demo program animating polyhedrons;
+  - oclock and xclock, graphical clocks;
+  - rendercheck, a program to test render extension implementations;
+  - transset, a tool to set opacity property on a window;
+  - xbiff, a tool which tells you when you have new email;
+  - xcalc, a scientific calculator desktop accessory;
+  - xclipboard, a tool to manage cut-and-pasted text selections;
+  - xconsole, which monitors system console messages;
+  - xcursorgen, a tool for creating X cursor files from PNGs;
+  - xditview, a viewer for ditroff output;
+  - xedit, a simple text editor for X;
+  - xeyes, a demo program in which a pair of eyes track the pointer;
+  - xgc, a graphics demo;
+  - xload, a monitor for the system load average;
+  - xlogo, a demo program that displays the X logo;
+  - xmag, which magnifies parts of the X screen;
+  - xman, a manual page browser;
+  - xmore, a text pager;
+  - xwd, a utility for taking window dumps ("screenshots") of the X session;
+  - xwud, a viewer for window dumps created by xwd;
+  - Xmark, x11perf, and x11perfcomp, tools for benchmarking graphical
+    operations under the X Window System;
+ .
+ The xbiff, xcalc, xconsole, xedit and xman programs use bitmap images
+ provided by the xbitmaps package.
+
 Package: libx264-164
 Architecture: iphoneos-arm64e
 Version: 0.164.3095+gitbaee400
@@ -15012,6 +16602,625 @@ SHA512: 227885c917d593355b4eeb0390f05459ca44b91b4f9e795ced9643c5a2d651c3c7cde49d
 Homepage: https://mackyle.github.io/xar/
 Description: eXtensible ARchive format
 
+Package: xauth
+Architecture: iphoneos-arm64e
+Version: 1.1
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 100
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxau6, libxmuu1, libxext6, libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/xauth/xauth_1.1_iphoneos-arm64e.deb
+Size: 23384
+MD5sum: 2f64686036f2d9b1b7b521afab8da311
+SHA1: 06b5a6aac7b9f7bf66759e37988b7bc397348c5f
+SHA256: 33db8114a2f4243ef63d3020df35814325b4e3898d27c767e28daf65700d48a8
+SHA512: 9951c66bfed59be1f85e669c5fb5513448d1f25060b15167127028348a0b66620ebefc795ab639ce8c63559c6820c52ff05a17acd894b956e2eb62002432f060
+Description: X authentication utility
+ xauth is a small utility to read and manipulate Xauthority files, which
+ are used by servers and clients alike to control authentication and access
+ to X sessions.
+
+Package: xbitmaps
+Architecture: all
+Version: 1.1.0
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 424
+Depends: roothide (>= 0.0.7)
+Filename: pool/main/iphoneos-arm64e/1900/xbitmaps/xbitmaps_1.1.0_all.deb
+Size: 29882
+MD5sum: 2b7beae6353a1d19bfd698246794bbc8
+SHA1: 8b1dedc7fdbf1e9e9edd864216d48955feb32a58
+SHA256: 6faae9ee8736117b2101fdf6767fb4ea95bc101d65954db7510b75e18f5c4821
+SHA512: 1447a028aaddfc9f89de15dd3e1cc766864d306aedd145deece3a2b0c8b6fc4203cd4eb4cf7ed28096d8ae78f191c928f0a1ce3a4f4420a14b1b92a6917243bf
+Description: Base X bitmaps
+ This package contains the base X bitmaps, which are used in many legacy X
+ clients.
+
+Package: libxcb-image0-dev
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Priority: extra
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libxcb-image0 (= 0.4.0), libxcb1-dev, libxcb-shm0-dev
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-image/libxcb-image0-dev_0.4.0_iphoneos-arm64e.deb
+Size: 26762
+MD5sum: a394cad6c243f027a269b631791c2943
+SHA1: 9f900e351e0f8150752b769313ff1c02acb20de3
+SHA256: 9ecc6ed9d558d3de2e2bb21f0424b0e26b3bc34b48384986fbcd6a2b10c76bb0
+SHA512: 0fe56841eebb94f9bf7a4c185f522e494dd81f52ad164623c918eaaebef8f6ef11573b166afe2d052a9ba2a34b243372ecd1bf76763c5ac843660839fc5fd94b
+Description: utility libraries for X C Binding -- image, development files
+ This package contains the header and library files needed to build software
+ using libxcb-image, providing port of Xlib's XImage and XShmImage functions.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-image0
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb-shm0, libxcb-util1, libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-image/libxcb-image0_0.4.0_iphoneos-arm64e.deb
+Size: 9902
+MD5sum: 41d0b3c3cd1b1f81776739eced53428f
+SHA1: 537dcbf6dad10ef3cb1719aa61fc94aab7793b78
+SHA256: 665d79f7f957197e6cf44fa115968df95386938660a73971cdc1b4bd396c6680
+SHA512: e2f4b72c0213b8c046401e2fcc3d30aa18d9b755aa85e60cd1c15aa7a573cfab6df21af389fc0b342150fe4d7d9e2719ad7b64ce163de8ec0e9a427eebbf146d
+Description: utility libraries for X C Binding -- image
+ This package contains the library files needed to run software using
+ libxcb-image, providing port of Xlib's XImage and XShmImage functions.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-keysyms1-dev
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Priority: extra
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 28
+Depends: roothide (>= 0.0.7), libxcb-keysyms1 (= 0.4.0), libxcb1-dev
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-keysyms/libxcb-keysyms1-dev_0.4.0_iphoneos-arm64e.deb
+Size: 11028
+MD5sum: 31bb6e4b81af6653f42864302b9ef8c6
+SHA1: 7f33c132f745cf2baf62284c3dd1a5ca509ba56d
+SHA256: 0efd36b2d4151c8499c929ed2ab12e04164cd09030c030ca6c84c79a67c97311
+SHA512: 31ff7b00ba84e78230e1fb25ab1eee3d96593f234d3889fb95b623b60d215d1044f28e7f22f5261761b733063e023eee1d947854d4c9fe419f89ca222f79eb58
+Description: utility libraries for X C Binding -- keysyms, development files
+ This package contains the header and library files needed to build software
+ using libxcb-keysyms, providing standard X key constants and conversion to/from
+ keycodes.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-keysyms1
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-keysyms/libxcb-keysyms1_0.4.0_iphoneos-arm64e.deb
+Size: 5418
+MD5sum: 007b7ffbee9db35566a5e6f539b243f2
+SHA1: 2586572772a36a82467d5a70fccf0b23cf6aba25
+SHA256: 950389372c4f0671fe62acfe9040d820f127edfbf924e82bee824d4320b43778
+SHA512: aca274c74af24148a3220ddd6d4ac88ebbefd7bc92e6e11108c6929a0bd801a94ceca8d130ed81b480f1676d460b86499358123244c0d134797e29f29b7c9f41
+Homepage: http://xcb.freedesktop.org
+Description: utility libraries for X C Binding -- keysyms
+ This package contains the library files needed to run software using
+ libxcb-keysyms, providing standard X key constants and conversion to/from
+ keycodes.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-render-util0-dev
+Architecture: iphoneos-arm64e
+Version: 0.3.9
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 52
+Depends: roothide (>= 0.0.7), libxcb-render-util0 (= 0.3.9), libxcb1-dev, libxcb-render0-dev
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-renderutil/libxcb-render-util0-dev_0.3.9_iphoneos-arm64e.deb
+Size: 19822
+MD5sum: 11b8a55e5bd065b82b973cb414070f8a
+SHA1: 9f7361f31a7fda3c80e20badae857a3cb890895f
+SHA256: 5bb87102c47d6a81200c837f88e7e6093548b8ce173e9570c7752f2ebd380ddf
+SHA512: f52f7863513efdfb9d8cd50fea00b40b242c075573cde7d4bde765b391e3d538828b1290a2d83e01c38ff4359cf493bae07283ffb94049f4e8d42850dbb44711
+Description: utility libraries for X C Binding -- render-util
+ This package contains the header and library files needed to build software
+ using libxcb-render-util, providing convenience functions for the Render
+ extension.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-render-util0
+Architecture: iphoneos-arm64e
+Version: 0.3.9
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 84
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb-render0, libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-renderutil/libxcb-render-util0_0.3.9_iphoneos-arm64e.deb
+Size: 7986
+MD5sum: 78ad8b9ded4a3f0b6815e497d612bb2f
+SHA1: 86f02c4b574f1b64866d2224fe28a9241dfa40cb
+SHA256: 91e8d12a263e0952dcb0465bc6db7968cded50518bda232f1ba1ca701eaea194
+SHA512: b1a3a79f9bcc28a30a9fc4a8e28b5f828526296f2b6752c6b5981c48422e59bcc152ae174935f49460302598358a233ccb7042efccfb70cd7203a768eef9a0d2
+Description: utility libraries for X C Binding -- render-util
+ This package contains the library files needed to run software using
+ libxcb-render-util, providing convenience functions for the Render extension.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-ewmh-dev
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 188
+Depends: roothide (>= 0.0.7), libxcb-ewmh2 (= 0.4.0), libxcb1-dev
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-wm/libxcb-ewmh-dev_0.4.0_iphoneos-arm64e.deb
+Size: 42350
+MD5sum: 6eb1b75bf2b04d1c4e253c111fa18d83
+SHA1: f6ed1b6a86eddd4ac303e68add8c6c82d0ee01c8
+SHA256: b3b048775b7e514c018c6213a33a5a89c359dd7daa8e2eee164195d87ef52ae9
+SHA512: 56bbea5fbd3fe650318c69cf4225bfbb80a9cbf788a2dda155216be4c0d63bca6bb7950ced351dd82e428276c57d9413e928be948b1a02b68c5ceec2092b3f18
+Description: utility libraries for X C Binding -- ewmh, development files
+ This package contains the header and library files needed to build software
+ using libxcb-ewmh, providing client and window-manager helpers for EWMH.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-ewmh2
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-wm/libxcb-ewmh2_0.4.0_iphoneos-arm64e.deb
+Size: 13710
+MD5sum: 234c1f24d54b97658fd5d9088ff0250f
+SHA1: c6c6845cea43603dfc9341f8fbb2f8c78e312149
+SHA256: d290d05556aaa4b335efea2403b67d10c9bfba73db68154da57addc1a2c83214
+SHA512: 859d32acc7429472e9095924a2cb820bac77c5ac2377ab4694af1e30b4b8ead86d635f138962e47d4503f6a205c3884094a8661aff9678c556723b197468ee45
+Description: utility libraries for X C Binding -- ewmh
+ This package contains the library files needed to run software using
+ libxcb-ewmh, providing client and window-manager helpers for EWMH.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-icccm4-dev
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.7), libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-wm/libxcb-icccm4-dev_0.4.0_iphoneos-arm64e.deb
+Size: 19766
+MD5sum: 42df9c1355bf85c690d46b2cc9a639a7
+SHA1: af13b8158649d803845aeadce3e289a7cd4bf2f7
+SHA256: b7da1a662480ea4022b32788d51b0c45f5f21815cddd95c4faa009e7340184b5
+SHA512: 09fce64129eec62b236e8068aa5b4e9e03eb56968c9ae9a41b413d3e761fa7df42982d73d7d868825f88563706c340e1ce3bd2dce7f69eade5e920dfcc430dac
+Homepage: http://xcb.freedesktop.org
+Description: utility libraries for X C Binding -- icccm, development files
+ This package contains the header and library files needed to build software
+ using libxcb-icccm, providing client and window-manager helpers for ICCCM.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-icccm4
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util-wm/libxcb-icccm4_0.4.0_iphoneos-arm64e.deb
+Size: 6778
+MD5sum: df428f36dc2d41474679a587d389f9f3
+SHA1: 873849590f31bfccb342df37ea4c25ff6c69c49f
+SHA256: ff8ac31fc078d99235a425428f1b323b10c9ba2bed56aa70aaf43b9d4851b796
+SHA512: 31f3e6d16c3a9edee5aa008091eec364e0c1be929cdce3eb07d30d52df42f8fbd1ea49109f28a42f8efaff37b7b3d752b9934e4f4683f57f70dec715b8512c41
+Description: utility libraries for X C Binding -- icccm
+ This package contains the library files needed to run software using
+ libxcb-icccm, providing client and window-manager helpers for ICCCM.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-util-dev
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 88
+Depends: roothide (>= 0.0.7), libxcb-util1 (= 0.4.0), libxcb1-dev
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util/libxcb-util-dev_0.4.0_iphoneos-arm64e.deb
+Size: 23176
+MD5sum: 93c214db28d75ca7f7ff9f774b7e7af6
+SHA1: 177759fca34ff19844699512c54a8527a519a37a
+SHA256: e84e9a644cb78899f287ae73a99f5a8e6763e3a0a980112813d8edcb5894bba0
+SHA512: a317faa9cc344b35b0f002172b7a397e89ce2fd7aa52ff80eb7789efcbcb525070ef61ef3010a262e333841436b92668a142bf4c9aba93fd1f5dc72e57d8c375
+Description: utility libraries for X C Binding -- atom, aux and event
+ This package contains the header and library files needed to build software
+ using libxcb-util.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: libxcb-util1
+Architecture: iphoneos-arm64e
+Version: 0.4.0
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 68
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxcb1
+Filename: pool/main/iphoneos-arm64e/1900/xcb-util/libxcb-util1_0.4.0_iphoneos-arm64e.deb
+Size: 8654
+MD5sum: 1762c2fc322724bca1daa16956022785
+SHA1: 3dc7c6174cddc81d64a8fa13fc7fd216bc9a1298
+SHA256: c71e483d327e5607e8756a6178fa1036b872892b220bf44e7926e9e5f424d8ad
+SHA512: bc561129337ffe1e8ddd34529f9cb5437d37473e156cda0e3c0c88fed3c825039fad2d0ea460f7171a6ac274bb54328a8368f2ccbd7b139cd7180e7ba6867a9c
+Description: utility libraries for X C Binding -- atom, aux and event
+ This package contains the library files needed to run software using
+ libxcb-util.
+ .
+ The xcb-util module provides a number of libraries which sit on top of
+ libxcb, the core X protocol library, and some of the extension
+ libraries. These experimental libraries provide convenience functions
+ and interfaces which make the raw X protocol more usable. Some of the
+ libraries also provide client-side code which is not strictly part of
+ the X protocol but which have traditionally been provided by Xlib.
+
+Package: xclip
+Architecture: iphoneos-arm64e
+Version: 0.13
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 116
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1), libx11-6, libxmu6
+Filename: pool/main/iphoneos-arm64e/1900/xclip/xclip_0.13_iphoneos-arm64e.deb
+Size: 24560
+MD5sum: 199e2a2a641293e59d67be66bd3ff6cc
+SHA1: a2f917b780f94ad5217c28da7316c6f743cde919
+SHA256: 846e14d2b7717fc5f5c0a67402d4410ef717faea977de9362d175b786c290495
+SHA512: c55779e381a8ce6fd6ffff210954071fc4a476b7011e4492ef352bb415e9e45579b55664cc08cfa5f8f7104ff7f5c8aab6ac7c53c8c19745a246a377019dca2a
+Homepage: http://xclip.sourceforge.net
+Description: command line interface to X selections
+ xclip is a command line utility that is designed to run on any system with an
+ X11 implementation. It provides an interface to X selections ("the clipboard")
+ from the command line. It can read data from standard in or a file and place
+ it in an X selection for pasting into other X applications. xclip can also
+ print an X selection to standard out, which can then be redirected to a file
+ or another program.
+
+Package: xhost
+Architecture: iphoneos-arm64e
+Version: 1.0.8
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1), libxau6, libxmuu1, libxext6, libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/xhost/xhost_1.0.8_iphoneos-arm64e.deb
+Size: 11124
+MD5sum: 2ed6f1d70499bf65f185e6ccb35a890d
+SHA1: 045b92f5694643b00eccfe14761ccc59caa47dd0
+SHA256: c901e35e75c709df4a9260830c7ff95af5353c3aa4e2d75b06cb96cac2cd1fb4
+SHA512: 1d67455745ebed4c18c86949224adcdfe19afe42b6dd550d81332778bdd2b59887bc75e56d17dfa53fe6461da7fd252994bb97d8d526f42cb33bf9fd4da10a1c
+Description: Server access control program for X11
+ The xhost program is used to add and delete host names or user names to the list allowed to make connections to the X server.
+
+Package: xkbcomp
+Architecture: iphoneos-arm64e
+Version: 1.4.5
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 232
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libxkbfile1, libx11-6
+Filename: pool/main/iphoneos-arm64e/1900/xkbcomp/xkbcomp_1.4.5_iphoneos-arm64e.deb
+Size: 88868
+MD5sum: 0d18f676f4a071ceb474868e867c0974
+SHA1: 6d8e93cbc355008c1982b9f28f963b6866dd3e0d
+SHA256: 553bc882c744842c786fca592c3f97ad2ecb6de56941d6ff799911a6ee02254d
+SHA512: 46ad0c895a85bcffa0ec8071db974216ad5c5c27cf542d3fe604ce093d905503cf6f2e817d4e154fb7e57683535e6918b52bc390c16edf741d791b5fd3ad443c
+Description: The xkbcomp keymap compiler converts a description of an XKB keymap into one of several output formats. The most common use for xkbcomp is to create a compiled keymap file (.xkm extension) which can be read directly by XKB-capable X servers or utilities. The keymap compiler can also produce C header files or XKB source files. The C header files produced by xkbcomp can be included by X servers or utilities that need a built-in default keymap. The XKB source files produced by xkbcomp are fully resolved and can be used to verify that the files which typically make up an XKB keymap are merged correctly or to create a single file which contains a complete description of the keymap.
+
+Package: xkeyboard-config
+Architecture: all
+Version: 2.32
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 6524
+Filename: pool/main/iphoneos-arm64e/1900/xkeyboard-config/xkeyboard-config_2.32_all.deb
+Size: 990634
+MD5sum: 4b50541f42068e331cec5ec16bb6dea5
+SHA1: 9b991e08b3925f0e88d2b48f6d460aebac12be06
+SHA256: 5f76b98ef14335045b1970b619a7f851b3df028d06360b8d4502355275421bc3
+SHA512: ba4927b80ef52f945a0f0f53d658adc74007f6a23733fc22bd8666bb2867ea4265ff7c6290c56f7c29c25022d294b1bc57955b5d8ca15276ef63f4c890ca45d9
+Description: The non-arch keyboard configuration database for X WindowDepends: roothide (>= 0.0.7)
+
+Package: xdmx-tools
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 728
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), xdmx, libdmx1, libx11-6, libxaw7, libxext6, libxmu6, libxpm4, libxt6
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xdmx-tools_1.20.11_iphoneos-arm64e.deb
+Size: 56414
+MD5sum: f3734d1a6c47f08ea9eff39f4db26e95
+SHA1: 8099736cc3ca22cfdb054fe515444b029d6aac50
+SHA256: c38c9eb9160cb59399bf055a9cf9cfe453392ab3f9a5991ce435f4a6941a8ed8
+SHA512: 677cfd9e7d9601229a4f04c3c21fbbb3c360352b13237433e43365fa80b2809db3b7765ab7fe8827b07ae135387150b9ba18c56526cc148f94644dcf5577f121
+Description: Distributed Multihead X tools
+ This package provides a collection of tools used for administration of
+ the Xdmx server; see the xdmx package for more information.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xdmx
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1424
+Provides: xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libmd0, libpixman-1-0, libx11-6, libxau6, libxdmcp6, libxext6, libxfixes3, libxfont2, libxi6, libxmuu1, libxrender1, xserver-common
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xdmx_1.20.11_iphoneos-arm64e.deb
+Size: 691110
+MD5sum: 6f1c43af2e60681c441d02fa3b46c119
+SHA1: 8ef425c95a313710ac1c2f59494e88210276fa6f
+SHA256: 7cf41d517a50f29b7f0c8ba541c138083ba3ed134c031eec5cd7d611da50ecd9
+SHA512: 0440de5323e25d86000cc94479d48d37ab179dbd4b1204bcfef17a5c0f8651af3895d58114301690063330965726e8e3e58cb66da9355a7936d1de08943cbdda
+Homepage: https://www.x.org/
+Description: distributed multihead X server
+ Xdmx is a proxy X server that uses one or more other X servers as its
+ display device(s). It provides multi-head X functionality for displays that
+ might be located on different machines. Xdmx functions as a front-end X server
+ that acts as a proxy to a set of back-end X servers. All of the visible
+ rendering is passed to the back-end X servers. Clients connect to the Xdmx
+ front-end, and everything appears as it would in a regular multi-head
+ configuration. If Xinerama is enabled (e.g., with +xinerama on the command
+ line), the clients see a single large screen.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xnest
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1236
+Provides: xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libmd0, libpixman-1-0, libx11-6, libxau6, libxdmcp6, libxext6, libxfont2, xserver-common
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xnest_1.20.11_iphoneos-arm64e.deb
+Size: 577858
+MD5sum: f093a4718e284773b06b2b36b08ae141
+SHA1: e8d78fcf74844880931d71f9d7cfee2f8a6236da
+SHA256: 617a6b905d0e8aa8c8e2ce2d6a0da7d7d8c2e60a4caf6ee383c11346eeff9acd
+SHA512: fb3346a05ee7a22d4f16797a9a6993f942ff81be163f7eeac5fd87623a75d2a7fc800549d4681cde8f449fe7adbdea672c5c1e452ba460a866d8eef0c2b4e6cb
+Description: Nested X server
+ Xnest is a nested X server that simply relays all its requests to another
+ X server, where it runs as a client.  This means that it appears as another
+ window in your current X session.  Xnest relies upon its parent X server
+ for font services.
+ .
+ Use of the Xephyr X server instead of Xnest is recommended.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-common
+Architecture: all
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 128
+Depends: roothide (>= 0.0.7), xkbcomp,  xkeyboard-config
+Recommends: xauth
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xserver-common_1.20.11_all.deb
+Size: 20140
+MD5sum: a885cc8353464e8849f937b55c9a68e1
+SHA1: 2193d20b701f60245bc31c2d4fcf8793c271aeb2
+SHA256: c9bfa847c490b120b4d3ac07aec88239c23a1baf7cc0dca804ce55de2f75ade6
+SHA512: 376ba77548d797faaa5a473f73a4fa1daaec1a0e0e90a3b98d89953ffd1e4090a5c89bfa06d3573847ae30a875c91808c3b9937a2cacd0b10cd9bc68122a7d7d
+Description: common files used by various X servers
+ This package provides files necessary for all X.Org based X servers.
+
+Package: xserver-xephyr
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1476
+Provides: xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libepoxy0, libmd0, libpixman-1-0, libx11-6, libx11-xcb1, libxau6, libxcb-glx0, libxcb-icccm4, libxcb-image0, libxcb-keysyms1, libxcb-randr0, libxcb-render-util0, libxcb-render0, libxcb-shape0, libxcb-shm0, libxcb-util1, libxcb-xf86dri0, libxcb-xkb1, libxcb1, libxdmcp6, libxfont2, libxcb-xv0, xserver-common, libgl1-mesa-glx
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xserver-xephyr_1.20.11_iphoneos-arm64e.deb
+Size: 715796
+MD5sum: 46bf3d037e9cfd3b7d44a0168f3f60ad
+SHA1: a963c00ce5cedfaf9b769a9b47134bbb61255947
+SHA256: ede2101b0403c2e68407ed8e2697c69ac65e62b54fa63adb6e1efd83302dcac1
+SHA512: 9e5b762b337f722e69a6c760a09f6ddff8e358e323b2caf52bdd09ed5249fc4feac7cf68077047f76e5db14f9a63903d6f72445814ac29a93368389d51848974
+Description: nested X server
+ Xephyr is an X server that can be run inside another X server,
+ much like Xnest. It is based on the kdrive X server, and as a
+ result it supports newer extensions than Xnest, including render and
+ composite.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-xorg-core
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 3572
+Provides: xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libgl1, libepoxy0, libmd0, libpixman-1-0, libxau6, libxdmcp6, libxfont2, xserver-common
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xserver-xorg-core_1.20.11_iphoneos-arm64e.deb
+Size: 1401400
+MD5sum: 0415805fa4d42e57d16b5ad0e6154493
+SHA1: eb3adb74037648f84d9a0b771ba56e16767dbdfa
+SHA256: 6f897b3271791f28c77c39243c65354220f153c60a37adbecb3b03aaaa172dd6
+SHA512: 55a41114a6a6d7329d1fc2db9a88c0928379c79fb3b7bde1cb949e2f4d5645ea533af7ea3cd9d9fbe89656c085f54cc40551a50d31a29ed4a0943941db563cc9
+Description: Xorg X server - core server
+ The Xorg X server is an X server for several architectures and operating
+ systems, which is derived from the XFree86 4.x series of X servers.
+ .
+ The Xorg server supports most modern graphics hardware from most vendors,
+ and supersedes all XFree86 X servers.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xserver-xorg-dev
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1436
+Depends: roothide (>= 0.0.7), libpixman-1-dev, x11proto-dev, libxfont-dev, libxkbfile-dev, mesa-common-dev
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xserver-xorg-dev_1.20.11_iphoneos-arm64e.deb
+Size: 231022
+MD5sum: cb205476967292ec3de8bae400c0f2ab
+SHA1: 7070266918fea8ac54d55efe6b312f72a4727e79
+SHA256: 3ed8918afd374f4fb6fa45b19b1b03a0896d65a13b999e592eb2f00d11cd9926
+SHA512: 62a0b8716ddf5d036572af4b60faaff39331a21d3d510f395be538e0f2d4167918d65fc3baece8a93c24ef8c381556263809cab32a24a51de182fc9b813dbdd6
+Description: Xorg X server - development files
+ This package provides development files for the X.Org ('Xorg') X server.
+ This is not quite the same as the DDK (Driver Development Kit) from the
+ XFree86 4.x and X.Org 6.7, 6.8 and 6.9 series of servers; it provides
+ headers and a pkg-config file for drivers using autotools to build
+ against.
+ .
+ Unless you are developing or building a driver, you probably want
+ xserver-xorg and/or xserver-xorg-core instead.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
+Package: xvfb
+Architecture: iphoneos-arm64e
+Version: 1.20.11
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1332
+Provides: xserver
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libmd0, libpixman-1-0, libxau6, libxdmcp6, libxfont2, xserver-common
+Recommends: xauth
+Filename: pool/main/iphoneos-arm64e/1900/xorg-server/xvfb_1.20.11_iphoneos-arm64e.deb
+Size: 648468
+MD5sum: 5680de988660cda51a18543491fe2dc8
+SHA1: 331d892846ce42f47b0c2711f0f1be38b87b1154
+SHA256: d3357767701761b8271eaa1d67a8fc1892df36dcd279b23a66a4809695c0ea6b
+SHA512: 59ae5a97d29eeb1c2e9ce40a613895b3633bd39af510cc492d6063384372f653921b4080f7b8e6dbaddb65964fe007e83c1b888a24d80c2977c95ea1cb089344
+Description: Virtual Framebuffer 'fake' X server
+ Xvfb provides an X server that can run on machines with no display hardware
+ and no physical input devices. It emulates a dumb framebuffer using virtual
+ memory. The primary use of this server was intended to be server testing,
+ but other novel uses for it have been found, including testing clients
+ against unusual depths and screen configurations, doing batch processing with
+ Xvfb as a background rendering engine, load testing, as an aid to porting the
+ X server to a new platform, and providing an unobtrusive way to run
+ applications that don't really need an X server but insist on having one
+ anyway.
+ .
+ This package also contains a convenience script called xvfb-run which
+ simplifies the automated execution of X clients in a virtual server
+ environment. This convenience script requires the use of the xauth
+ program.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.x.org>
+ .
+ This package is built from the X.org xserver module.
+
 Package: x11proto-dev
 Architecture: all
 Version: 2021.5
@@ -15034,6 +17243,63 @@ Description: X11 extension protocols and auxiliary headers
  <URL:https://www.X.org>
  .
  This package is built from the X.org xorgproto module.
+
+Package: xterm
+Architecture: iphoneos-arm64e
+Version: 368
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 896
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libsixel1, libncursesw6, libpcre2-posix3, libfontconfig1, libfreetype6, libice6, libxaw7, libxext6, libxft2, libxmu6, libxpm4, libxt6, libxinerama1, xbitmaps
+Filename: pool/main/iphoneos-arm64e/1900/xterm/xterm_368_iphoneos-arm64e.deb
+Size: 392378
+MD5sum: 4b7abbbaa7a8f2fed9a362db48b97176
+SHA1: 774395d42a52de2c7125e6f916670efdc9ce624b
+SHA256: b4b7001ac439d71939d45e14a307c5d7d0e17f18ce2fce7e0f9798960d74aff9
+SHA512: 527d113ceb4aa7bd4ff15d4ed11c83caeac42fd98654593f5937158874dd58f3d9c43dadb03aecc48d0898421d2c78633407015104ec24ffa541e9417c2cd947
+Description: X terminal emulator
+ xterm is a terminal emulator for the X Window System.  It provides DEC VT102
+ and Tektronix 4014 compatible terminals for programs that cannot use the
+ window system directly.  This version implements ISO/ANSI colors and most of
+ the control sequences used by DEC VT220 terminals.
+ .
+ This package provides four commands: xterm, which is the traditional
+ terminal emulator; uxterm, which is a wrapper around xterm that is
+ intelligent about locale settings (especially those which use the UTF-8
+ character encoding), but which requires the luit program from the x11-utils
+ package; koi8rxterm, a wrapper similar to uxterm for locales that use the
+ KOI8-R character set; and lxterm, a simple wrapper that chooses which of the
+ previous commands to execute based on the user's locale settings.
+ .
+ A complete list of control sequences supported by the X terminal emulator
+ is provided in /usr/share/doc/xterm.
+ .
+ The xterm program uses bitmap images provided by the xbitmaps package.
+ .
+ Those interested in using koi8rxterm will likely want to install the
+ xfonts-cyrillic package as well.
+
+Package: xtrace
+Architecture: iphoneos-arm64e
+Version: 1.4.0
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 424
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1)
+Recommends: xauth
+Filename: pool/main/iphoneos-arm64e/1900/xtrace/xtrace_1.4.0_iphoneos-arm64e.deb
+Size: 105024
+MD5sum: c860b16406ab8e5ba36ce12fe1124533
+SHA1: 6c94e17a7e6dbd3db5e4d7d9bf5e031107f15c25
+SHA256: 4798ff5af2c98507be5aefceeb814de66003b9440f4a06973efc89a3b1562354
+SHA512: 72e8f886456a2dbbf6e7400339272f31f3d03b5381e0417a38f7cee129f3ffe5e65e69d91243cae1bf079fa89aceb47e8d678f209293cca415ec5e2c98e088d8
+Description: trace communication between X client and server
+ What strace is for system calls, xtrace is for X11 connections:
+ you hook it between one or more X11 clients and an X server and
+ it prints the requests going from client to server and the replies,
+ events and errors going the other way.
 
 Package: xtrans-dev
 Architecture: all
@@ -15062,6 +17328,29 @@ Description: X transport library (development files)
  .
  This module can be found at
  https://cgit.freedesktop.org/xorg/lib/libxtrans/
+
+Package: xwallpaper
+Architecture: iphoneos-arm64e
+Version: 0.6.6
+Priority: optional
+Section: X11
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 88
+Depends: roothide (>= 0.0.7), libiosexec1 (>= 1.3.1), libjpeg62-turbo, libpixman-1-0, libpng16-16, libx11-6, libxcb-image0, libxcb-randr0, libxcb-shm0, libxcb-util1, libxcb1, libxpm4
+Filename: pool/main/iphoneos-arm64e/1900/xwallpaper/xwallpaper_0.6.6_iphoneos-arm64e.deb
+Size: 17698
+MD5sum: 851d04d78eef3fc380f2f85f97d67855
+SHA1: 3b9782863f6be250e97fbc7a9b9e879e67c1e5a2
+SHA256: 9e97c9b03ea531562637b96ff42212ee5e3b4ce9fcb7a7a6bc599dd7811dc756
+SHA512: 567e0221b398cf9d402915c169986991e227b8ec77dc9a932f35f24ecd87f5489a4f69c64717d5d67f739bf526abee076b291680e7b722a56e7d193feb34ef80
+Homepage: https://github.com/stoeckmann/xwallpaper
+Description: utility for setting image files as X wallpaper
+ The xwallpaper utility allows you to set image files as your X wallpaper.
+ JPEG, PNG, and XPM file formats are supported, all of them being configurable
+ and therefore no fixed dependencies.
+ .
+ The wallpaper is also advertised to programs which support semi-transparent
+ backgrounds.
 
 Package: libxxhash-dev
 Architecture: iphoneos-arm64e
