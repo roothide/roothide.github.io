@@ -44,6 +44,22 @@ Author: DoranekoSystems
 Name: ceserver
 Sileodepiction: https://github.com/DoranekoSystems/ceserver-ios
 
+Package: cm90.crossoveripc
+Version: 1.1-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: @CrazyMind90
+Installed-Size: 368
+Depends: mobilesubstrate, com.opa334.libsandy
+Filename: ./debfiles/CrossOverIPC_Roothide.deb
+Size: 17484
+MD5sum: e9df193a414386b07306ba84d754fbe0
+SHA1: 23633596c9c4c9f9fb7e89031d574672276fee11
+SHA256: 1c8ea11cad2e0d6d47fb2f50d30d34bbd4ac45cd36bc35f0809138a1122027ef
+Section: Tweaks
+Description: A cross-process communication tool for sending and receiving messages on iOS 15 & 16 for rootless JBs
+Author: @CrazyMind90
+Name: CrossOverIPC
+
 Package: com.0xkuj.3dappversionspoofer
 Version: 1.3
 Architecture: iphoneos-arm64e
