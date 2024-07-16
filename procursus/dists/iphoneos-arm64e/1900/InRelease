@@ -4,52 +4,52 @@ Hash: SHA512
 Architectures: iphoneos-arm64e
 Codename: 1800
 Components: main testing
-Date: Sun, 09 Jun 2024 08:46:45 +0000
+Date: Tue, 16 Jul 2024 19:45:45 +0000
 Description: Distribution of essential tools for iPhoneOS
 Label: Procursus(roothide)
 Origin: Procursus(roothide)
 Suite: stable
 Version: 1.0a1
 MD5Sum:
- cb0140fa4b8b15ae64cf1d1821e69502              251 Release
- 94aa31ff86a2b333e69a0a7b8d6fcca8          4639858 main/Contents-iphoneos-arm64e
- 1a382f5bc9b211ff846dcfb22420ebb3           328716 main/Contents-iphoneos-arm64e.xz
- ec4315ea963ac4ad2057da2069dbc731           337869 main/Contents-iphoneos-arm64e.zst
- 1b88a5e5cd040ad3364cd02723a57043           821223 main/binary-iphoneos-arm64e/Packages
- 1bc5aa179a8b5c0ddee802a3749503d9           189496 main/binary-iphoneos-arm64e/Packages.xz
- b18fcd489c429954ba111440b4cb9852           194160 main/binary-iphoneos-arm64e/Packages.zst
- 5847bf1d4573d1b302c662924591d597             1682 main/binary-iphoneos-arm64e/Release
+ df1f1397d88ba3f6648eead9ab9815cb              251 Release
+ f35b60cebede2b5b11d01ec8c80eb689          4639983 main/Contents-iphoneos-arm64e
+ 1b9e3b9fac9007085caddcdc411bcfee           328720 main/Contents-iphoneos-arm64e.xz
+ 1ea7b7620340a65178a688e5961345a9           337833 main/Contents-iphoneos-arm64e.zst
+ 0308c26bfa14c5c5500163f79379bd8c           821981 main/binary-iphoneos-arm64e/Packages
+ e90fd116cad4306082132e08eabe206c           189764 main/binary-iphoneos-arm64e/Packages.xz
+ 7542bfc3a51476a122c9da582d42aa03           194388 main/binary-iphoneos-arm64e/Packages.zst
+ 6cef398523a8032771adc190352ea40c             1682 main/binary-iphoneos-arm64e/Release
 SHA1:
- 1fa70b6191375aa0668b5c1acf4cd400de16ae45              251 Release
- e8aaf99cc7f065d2072f8a1eb6bf3510071f9b82          4639858 main/Contents-iphoneos-arm64e
- 568dc5111fd375e00f79878305ad7e31333054fb           328716 main/Contents-iphoneos-arm64e.xz
- 6d125d6ddccaba42c4b84f3c5c281116c84460de           337869 main/Contents-iphoneos-arm64e.zst
- e5e74a0dc834052e9a8aed74265a7dcebef3c884           821223 main/binary-iphoneos-arm64e/Packages
- fdaaa452b72e8cd1561d0c8b5ea034cbed0bd328           189496 main/binary-iphoneos-arm64e/Packages.xz
- eedc82a17db19ef31d3c6604a7f7f91cad82a39c           194160 main/binary-iphoneos-arm64e/Packages.zst
- ccfb920f0c0f7b0f12e818c8e49553b68c824612             1682 main/binary-iphoneos-arm64e/Release
+ ca93e1ccd8102a847efd4f9a0a8e8d714350c61d              251 Release
+ 65e61923dd903530973f736cf931672c55f97ff9          4639983 main/Contents-iphoneos-arm64e
+ 785e672d2aa6e56e8c093c9b0f6d5e82c4aa1738           328720 main/Contents-iphoneos-arm64e.xz
+ 790dc06858ae22db6075a69fafd4311af34d15a6           337833 main/Contents-iphoneos-arm64e.zst
+ 31283dc42d6b7c07fe56370d75d67f6fd22d632d           821981 main/binary-iphoneos-arm64e/Packages
+ 8920b61c745fe05655f20782a27fe9bc07534081           189764 main/binary-iphoneos-arm64e/Packages.xz
+ 08daf5c48633f9ad1290b18de36c104608a4bfc0           194388 main/binary-iphoneos-arm64e/Packages.zst
+ 8a25d6ad52d67cbb5eaf0827bbce02a8ecc0dce0             1682 main/binary-iphoneos-arm64e/Release
 SHA256:
- 8cb3c6460d891f21e4be3a2950493f28e9aab2329ce326c48b1ae1497a1fbd5b              251 Release
- bd0b271aedfccec25ce109124d3cac40968305ade0f14f1e5a778a524b20bf07          4639858 main/Contents-iphoneos-arm64e
- 08cee741f509dc256201d608b9a8f63bd441d319601190f3e7d0034d0f371e06           328716 main/Contents-iphoneos-arm64e.xz
- 58e8309cf2d4c2c3bb7687f0e5cbf11f17f7255ea2e22165d38d23e4e646f2f9           337869 main/Contents-iphoneos-arm64e.zst
- a250dc688ea89b046835a633fabb14249ea75b87806f6897aadf6db15c1ae17a           821223 main/binary-iphoneos-arm64e/Packages
- 545d795db632043368886878e7c96b71e8893ee8104faa7b955b62be0a11c841           189496 main/binary-iphoneos-arm64e/Packages.xz
- 30b8828cb97a813aec46bf24b0f3634f51687efe5bc8723c4597646150d7f811           194160 main/binary-iphoneos-arm64e/Packages.zst
- 81997ba9713065149388c11c9f6e03be6a9bc31af750e9dd0ba2c722a58cb96c             1682 main/binary-iphoneos-arm64e/Release
+ ca18cd04c1f699d3a1f7790e0594f4aab2c1d3c753179fd80720c6f87e3407e1              251 Release
+ bd91cf417fdd6a25f8f21247928a276bbd225328ad35f0224c8c1bd4cb215fb1          4639983 main/Contents-iphoneos-arm64e
+ 0243738779cd48f6bf3320f5fe4fa2826c1c1f4f7a3f35ac08cc15ffb55f6092           328720 main/Contents-iphoneos-arm64e.xz
+ 3357a357537eb0a0e577570ecae63925fd465e4f3e574ba64cff14a81ed7a80d           337833 main/Contents-iphoneos-arm64e.zst
+ fdbf9ce352f167a2f278bfda8fe6f36d2dd48165d757d4db852fe1f7a19fd9b5           821981 main/binary-iphoneos-arm64e/Packages
+ 6c027c1c7c42d6899c843dd827e1b734a467d3517c8dbf2a27c96fbc188228c2           189764 main/binary-iphoneos-arm64e/Packages.xz
+ e20e2c4cd2e3db87c18d31b7e50b3e6cbffec266b5cff2b47eb36297af06bdf6           194388 main/binary-iphoneos-arm64e/Packages.zst
+ 8ff5817f888927214ff8e33a21fffdc629d32b5f6544a3cd4713f5313b53a2a8             1682 main/binary-iphoneos-arm64e/Release
 SHA512:
- af79cfed3eaad5433317899d6546f32f7c1f9b77bfd995cae930b763c7cd9864767a685225a04b9fed2302fa2f90e598839187e93f647dfedd5ff78c8e11b68a              251 Release
- fb8078fc81c934fe0ceec8a561e2cb7390c21d480c740f8557b181c35f680d7466be33e55111e6b45692a2a4495319438ce045273860c5e8610daf051d96f067          4639858 main/Contents-iphoneos-arm64e
- ce28ae91694280854bb8da8ea8ec43e46720e4ac1dc946776568ceff010ccec8d5df02f8e2fae69d4269282baab3393830a7773aed4cb6a7fee3e24014522e18           328716 main/Contents-iphoneos-arm64e.xz
- d72ea60a4d68b92982199e2a446a9d65b0bb37955be50413e8739afac778fa414f82604ebec17d3fc91cab1e14e9aaeeb01b3d5cc3bade2b6ed9995c889bd103           337869 main/Contents-iphoneos-arm64e.zst
- e2ef49f56f8cb358d179e8d3337942a977eb02b5732d077f6ac6877d31b596be222da155b1c3e05dcadd63770992e94c394571b945ec9debe556d8780374f981           821223 main/binary-iphoneos-arm64e/Packages
- 8450d62e9c8689b7996ab48992cf2a5bd10de591f86b553b5ee5a3574b3d8c85d50261755294fe7a384afda4b4c0ae693e185a5977f4f1f4f9acdefe3d0f7fe9           189496 main/binary-iphoneos-arm64e/Packages.xz
- b803ee4b7baa085d2dafb563d87e835603636dfec2616350e049dc13d351d165937cd94b2e0f4bb0729cd4575e880caf3c22111a7fa835023c50269f071947df           194160 main/binary-iphoneos-arm64e/Packages.zst
- f42344d2f9e425f15a6a53dd58adc8523cd64bf34928b34e1d2a728bc279b3c334163d4f4e764634f096ccb218551aeb11462bd39c33bf188f9f50e2713fd890             1682 main/binary-iphoneos-arm64e/Release
+ c3a5eae88acf6a128c4d07c0ea8bd1d0cc6ababa75610a7c8741d25b943f58e25af6052fc5893f1bcc9ff43fdfbb49cc390022e8aa05d8d36c3dcd9fa2842ca3              251 Release
+ f3f22efced7cf944aa8c7f7ac1bda61489ff21dfd6d6ae01dc3aea16604c3f3064e15b0fc69f311552f9a6c82435f84878a0c63dffd7f4f91b98e95883ec511d          4639983 main/Contents-iphoneos-arm64e
+ 5d3356f3b0afcbca3cd2d7ac28ea74ac413d6e8ea86315bdc59e1938e907ac216d0d57e72f61bc78c6fc35446cfeb3d0030e5c36c3c86a09d2b9e230d7404da9           328720 main/Contents-iphoneos-arm64e.xz
+ 8ab3d8682102a77b7784f53b890083e00e62d9b06843babff877412bde71b6e6d70e9bdd980d36ec705e0ad4e27ed97c82a15f0d89d9b14e47d09228b2996272           337833 main/Contents-iphoneos-arm64e.zst
+ 5e44947d31f9c429b89ccb0243f9f0c1efc40d32533d0e0ec87856c0e52265168b91e606b37accfca3c7e43bdcd2f5ceaf98490bf7ca10fb21e7f3a99b6f192f           821981 main/binary-iphoneos-arm64e/Packages
+ 2111fb5dd1492e1b1139be6e118465cf93e565f6ba28facd254d220971753e3fea10f47190e91b0edac0fa6d12f1d7840ae926364d99fc7ee78c7feaa750e33b           189764 main/binary-iphoneos-arm64e/Packages.xz
+ d52fc0cc3aa858bc6561ddbb7d48fc97435a1c374b37bfeadca4e1ee9ae530b126d36943be20c4c5319186e58a6ca0099b5ec8334692d72a7df8af7cf171a590           194388 main/binary-iphoneos-arm64e/Packages.zst
+ d72008fcfd6b803f70c0d6abc3dceb4678bc6e83807b3099338ec7ec1aff71f1224b41be25d771a92992a7643ce3090fbb15f5d9f63f886f46864483e347b94d             1682 main/binary-iphoneos-arm64e/Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQ4/9ceET25MJNZKPxmRCG+hDdWhQUCZmVr9QAKCRBmRCG+hDdW
-hUbWAQDuC0UGb1cXjoYL47nECk9AgEYpF+rpyUuiSqAzVLeqxgD/WcKF9htNiS0h
-ZD7q3IiAcQk1uez7ZL2+ZsTiTonaLAo=
-=1+At
+iHQEARYKAB0WIQQ4/9ceET25MJNZKPxmRCG+hDdWhQUCZpbN6QAKCRBmRCG+hDdW
+hWzXAPQP1WQGqvvO0m+0BOtQm5rWSuLzMIvDR9HZ6lPJ5BheAP0YaGZNv8X/uhTq
+IAhL38WHzf6qvRQb88FFPeYeyiZ5BQ==
+=whd2
 -----END PGP SIGNATURE-----

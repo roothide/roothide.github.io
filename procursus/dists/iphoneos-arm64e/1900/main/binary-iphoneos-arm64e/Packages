@@ -14225,6 +14225,25 @@ Description: Pluggable Authentication Modules for PAM
  This package completes the set of modules for PAM. It includes the
   pam_unix.so module as well as some specialty modules.
 
+Package: pasteboard-utils
+Architecture: iphoneos-arm64e
+Version: 1.0.0
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 208
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1)
+Conflicts: pbupload
+Replaces: pbupload
+Filename: pool/main/iphoneos-arm64e/1900/pasteboard-utils/pasteboard-utils_1.0.0_iphoneos-arm64e.deb
+Size: 7996
+MD5sum: 5575c0079acd55770334352a70a415e4
+SHA1: 17e1d460609d4bdb9e2ffbb9c4289fa922ea18ac
+SHA256: 46e04270cdeb8a5251154d40aa222099066f766c7149f7fae64eac4261da4769
+SHA512: 233f98012f2cf9a9a33ad9fb3f718a6a6a6d849fa531a7ff18de8297e1d4d53e9c9e9dc4b76f2d195795c70531c5835d3d3c5c4b1885dd9a6d44a83ecb5fbbbc
+Description: Objective-C Pasteboard Utilities
+Author: quiprr <quiprr@ametrine.dev>
+
 Package: patch
 Architecture: iphoneos-arm64e
 Version: 2.7.6
