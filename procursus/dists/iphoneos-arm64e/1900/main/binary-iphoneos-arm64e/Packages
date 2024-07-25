@@ -15493,6 +15493,74 @@ SHA512: 3eab77778e76a3dfccc13d99a26d0e7ceacc82ff531e9bf9a9c09790827d668a130b141c
 Homepage: https://github.com/ahl/apfs/
 Description: APFS Snapshot Tool.
 
+Package: lemon
+Architecture: iphoneos-arm64e
+Version: 3.34.1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 156
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/sqlite3/lemon_3.34.1_iphoneos-arm64e.deb
+Size: 46140
+MD5sum: 085c24b8d8babb00e8de09b156c18404
+SHA1: dc080d6d241bf915d2ad8ca49ce090ffc99e17fd
+SHA256: 80a1a13da621d323e8881ba999d4de5ac6c3f4d059aeaa448978ca34b05a1d91
+SHA512: b6f42f73a3c183a6014e2623f3cbf7443d2fa155d1b3b781e0cca334025928ae1f06f8841ad05f59b98e88e2010fe9eea1b2de6c31a9c00e246dedfcb5dfc125
+Homepage: https://www.sqlite.org/
+Description: LALR(1) Parser Generator for C or C++
+
+Package: libsqlite3-1
+Architecture: iphoneos-arm64e
+Version: 3.34.1
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 980
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/sqlite3/libsqlite3-1_3.34.1_iphoneos-arm64e.deb
+Size: 557178
+MD5sum: d14d2bc7737acef63e63a2ce248cfa75
+SHA1: 0c3eb82914c9e697606e8c42292164bfbccd5fd5
+SHA256: 2e97d943db11133502d5d689e40460e4d5f5dc9ff0f9a8f669f2900c27bde5dd
+SHA512: 858fafaa370a7f8a36391e967012d10b34a084eb8321d5a43aba796c9383921a86c79230e344afc4edf388155050e5da8afb41b34da0990d4822c0c6c7300667
+Homepage: https://www.sqlite.org/
+Description: SQLite 3 shared library
+
+Package: libsqlite3-dev
+Architecture: iphoneos-arm64e
+Version: 3.34.1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2932
+Depends: roothide (>= 0.0.8), libsqlite3-1 (= 3.34.1)
+Filename: pool/main/iphoneos-arm64e/1900/sqlite3/libsqlite3-dev_3.34.1_iphoneos-arm64e.deb
+Size: 1810096
+MD5sum: 8e520c42190952388b8b1ebfe2819ea7
+SHA1: 9e49714499f6300bf7c3d8c429c3af42f53deedb
+SHA256: e24d39deab8150285ec1c4adad762d337502762c031652b2863e8ddff07e12e6
+SHA512: 2ee711f7f181ec1d58081352413986cc7dbf2d613cadc6648834fae96e3af1e6c7217cf32c9249c3169778976f055e0e3cc6c38551f8f2047346e12b8762c863
+Homepage: https://www.sqlite.org/
+Description: SQLite 3 development files
+
+Package: sqlite3
+Architecture: iphoneos-arm64e
+Version: 3.34.1
+Priority: standard
+Section: Data_Storage
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 316
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1), libsqlite3-1 (= 3.34.1), libreadline8, libncursesw6
+Filename: pool/main/iphoneos-arm64e/1900/sqlite3/sqlite3_3.34.1_iphoneos-arm64e.deb
+Size: 116968
+MD5sum: 590c4f3cbf1ad777930910d27b795631
+SHA1: ba93e989bd41a0674b61949defc1babe0c7f6f09
+SHA256: 8a4bb577abfff55ee79132d6a897bce31447aa1b896f86d51f1bff09cd525846
+SHA512: efb00f5c4cfad3676fc6513442b1ce3124189fae7882940cad2d0c1cd2a63942cc93a9102a63635561264ff7129d18f8c233f6ac4bb31946de72d2e5b4446c8e
+Homepage: https://www.sqlite.org/
+Description: Command line interface for SQLite 3
+
 Package: sudo
 Architecture: iphoneos-arm64e
 Version: 1.9.12p2
