@@ -1172,6 +1172,25 @@ Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
 Name: Legacy arm64e Support
 
+Package: oldabi-stub
+Version: 0.3
+Architecture: iphoneos-arm64e
+Maintainer: alexia <me@alexia.lol>
+Installed-Size: 0
+Provides: oldabi (= 0.3)
+Filename: ./debfiles/oldabi-stub_0.3_iphoneos-arm64e.deb
+Size: 836
+MD5sum: aef44809ecb3f07eff281a226a1d789e
+SHA1: 3f6bd35ff28b593355e0b6f5cb7ced1df5e4f36c
+SHA256: ba49cd50d2c28ac964a7286224b291d8e55b1d422fa8ef1146d7ec9d7ed166c4
+Section: System
+Description: oldabi stub for arm64 devices
+ .
+ This package does nothing, it just provides a stub for oldabi on arm64 to be able to install tweaks with broken dependencies.
+Tag: role::hacker
+Author: alexia <me@alexia.lol>
+Name: oldabi-stub
+
 Package: org.coolstar.sileo
 Version: 2.5-10
 Architecture: iphoneos-arm64e
