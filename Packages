@@ -797,10 +797,10 @@ Pre-Depends: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
 Recommends: zip, unzip, gzip, p7zip, unrar, xz-utils
 Conflicts: com.tigisoftware.filza, com.tigisoftware.filza39
 Filename: ./debfiles/com.tigisoftware.filza64bit_4.0.1-4_iphoneos-arm64e.deb
-Size: 6973124
-MD5sum: 359069c8f9321284ab7b0bc358342d75
-SHA1: 7f5a3fc470aa889e37a8aa3c23fb27eb23213bd7
-SHA256: aefa0c4148a73ac1e1e082151e352979dd460fb30e23d564a81b6ef033d454cc
+Size: 6972544
+MD5sum: de133cc0a0a3c87e5216d812d4dca8a9
+SHA1: f796c848e790fcd3326f9e2c00211dcfd48cfdd6
+SHA256: aabc6ee8367d68726b269ba622a88164f92baf7923d8caf4c5deb8ae3642c650
 Section: Utilities
 Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This version only supports 64-bit devices
 Author: TIGI Software
