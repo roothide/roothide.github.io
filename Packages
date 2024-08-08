@@ -797,10 +797,10 @@ Pre-Depends: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
 Recommends: zip, unzip, gzip, p7zip, unrar, xz-utils
 Conflicts: com.tigisoftware.filza, com.tigisoftware.filza39
 Filename: ./debfiles/com.tigisoftware.filza64bit_4.0.1-4_iphoneos-arm64e.deb
-Size: 25372264
-MD5sum: 266a4673af287656199f9e713a8e2458
-SHA1: 2377c897c8dfd4b048601ccc84942714ddabad9c
-SHA256: d9866ae058765df9d38b591703255d63217c460e8e28bbded365714c51b9292d
+Size: 6973124
+MD5sum: 359069c8f9321284ab7b0bc358342d75
+SHA1: 7f5a3fc470aa889e37a8aa3c23fb27eb23213bd7
+SHA256: aefa0c4148a73ac1e1e082151e352979dd460fb30e23d564a81b6ef033d454cc
 Section: Utilities
 Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This version only supports 64-bit devices
 Author: TIGI Software
@@ -1394,6 +1394,25 @@ Size: 46028
 MD5sum: fe875ca5d58133983f15f1a0092a6cb4
 SHA1: 9c852bf63f096428a7cf1f811e5ce0c80929a409
 SHA256: 29f8fcf55226c35870a73c546d6bb0d1b01388d218155ec9d3fac99517f32c3b
+Section: RootHide Patches
+Description: RootHide Dynamic Patches For Filza
+Author: roothide
+Name: Patches for Filza 64bit
+
+Package: roothide.patches.filza
+Version: 0.3-1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 264
+Depends: com.roothide.patchloader
+Recommends: com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
+Conflicts: com.tigisoftware.filza64bit(>> 4.0.1-4~roothide), com.tigisoftware.filza64bit(<< 4.0.1-4~roothide)
+Provides: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
+Filename: ./debfiles/roothide.patches.filza_0.3-1_iphoneos-arm64e.deb
+Size: 32336
+MD5sum: 0cd6e84a3d83f6f24dc2c7866b8abe5f
+SHA1: c7b3702c725a79302c9a3ba25a6bbc3b32106009
+SHA256: c8c1624f2c39ab7358453a5ea5e50c08431ff4454bd1af0fb86d6f35445e0e86
 Section: RootHide Patches
 Description: RootHide Dynamic Patches For Filza
 Author: roothide
