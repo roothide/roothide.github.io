@@ -1400,7 +1400,7 @@ Author: roothide
 Name: Patches for Filza 64bit
 
 Package: roothide.patches.filza
-Version: 0.4-9
+Version: 0.4-15
 Architecture: iphoneos-arm64e
 Maintainer: roothide
 Installed-Size: 268
@@ -1408,11 +1408,11 @@ Depends: com.roothide.patchloader
 Recommends: com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
 Conflicts: com.tigisoftware.filza64bit(>> 4.0.1-4~roothide), com.tigisoftware.filza64bit(<< 4.0.1-4~roothide)
 Provides: patches-com.tigisoftware.filza64bit(= 4.0.1-4~roothide)
-Filename: ./debfiles/roothide.patches.filza_0.4-9_iphoneos-arm64e.deb
+Filename: ./debfiles/roothide.patches.filza_0.4-15_iphoneos-arm64e.deb
 Size: 32518
-MD5sum: 7e8866021928e1b38cd67c7d4c4d97d6
-SHA1: 26af5afc5ae2db20eea60680b385a61e5b760f89
-SHA256: 441067cfafac0c801467dea3494811adf6d0661614d04cfa9d0d36eddf607516
+MD5sum: 0d2b31c71d53ee8809d15467e71ef914
+SHA1: e8e4a732dbd7d9b95ca014daf6b39a21c7b0c3f6
+SHA256: c048a0416474326c86eefe8852c92f16eea44786a127d499a5e9a644b612aa90
 Section: RootHide Patches
 Description: RootHide Dynamic Patches For Filza
 Author: roothide
