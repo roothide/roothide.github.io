@@ -1195,12 +1195,13 @@ Version: 0.3
 Architecture: iphoneos-arm64e
 Maintainer: alexia <me@alexia.lol>
 Installed-Size: 0
+Conflicts: cy+cpu.arm64e
 Provides: oldabi (= 0.3)
 Filename: ./debfiles/oldabi-stub_0.3_iphoneos-arm64e.deb
-Size: 836
-MD5sum: aef44809ecb3f07eff281a226a1d789e
-SHA1: 3f6bd35ff28b593355e0b6f5cb7ced1df5e4f36c
-SHA256: ba49cd50d2c28ac964a7286224b291d8e55b1d422fa8ef1146d7ec9d7ed166c4
+Size: 852
+MD5sum: 6afccebad4e207ec93c9cf34b42d4518
+SHA1: c7d1710e055889fb99cd46d69ee1ec241e9fad1a
+SHA256: 4ae0b70990695194f2625fcb8cb4d03e5b2824f36b47422d9d0195de62a2a0ae
 Section: System
 Description: oldabi stub for arm64 devices
  .
