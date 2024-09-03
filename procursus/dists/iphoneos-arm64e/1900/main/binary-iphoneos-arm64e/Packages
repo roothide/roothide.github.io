@@ -4505,6 +4505,24 @@ Description: MP3 encoding library
 
 Package: launchctl
 Architecture: iphoneos-arm64e
+Version: 1:1.1.1-2
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 144
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1)
+Filename: pool/main/iphoneos-arm64e/1900/launchctl/launchctl_1:1.1.1-2_iphoneos-arm64e.deb
+Size: 46478
+MD5sum: c6a289aea9f96ef2258155a024a460a7
+SHA1: d07ea940937dba693f959fe4355dfe3d13c6f375
+SHA256: f9d2b8bb162bcfbe81fd490b0838316563387203595f14136e6a0d006630cefb
+SHA512: 026c6d92f1a4c9b89258bd50bd4bdf7747887d0a544a1fc34faa337be670838ee46776b9ad60e7fe5fcc332411701153cce4b21e394db22bd3ef60170f5e3e16
+Homepage: https://github.com/ProcursusTeam/launchctl
+Description: Tells launchd what to do
+
+Package: launchctl
+Architecture: iphoneos-arm64e
 Version: 1:1.1.1
 Priority: required
 Essential: yes
@@ -5988,6 +6006,23 @@ Description: A library for communicating with iPhone and other Apple devices
 
 Package: libiosexec-dev
 Architecture: iphoneos-arm64e
+Version: 1.3.1-2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Depends: roothide (>= 0.0.8), libiosexec1 (= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/libiosexec/libiosexec-dev_1.3.1-2_iphoneos-arm64e.deb
+Size: 31042
+MD5sum: b91f25c6d46b51c896e7c4769d3a2a32
+SHA1: 2a6e171aa5dd7834ab1f41c0e9ee188e3948845e
+SHA256: c6fb3b73e8b965c0711f0453e25bd44a0bac90900ec771c2eece9734fad0fc6e
+SHA512: 6f5385d3f4cc65f864de8797193dd94d22b4b97dfbf99411ac96c4682878cfb114a91a90c5719676dbc822d6f59f774259270ecb8681d14ee069b2293d6c0542
+Homepage: http://github.com/ProcursusTeam/libiosexec
+Description: development files for libiosexec
+
+Package: libiosexec-dev
+Architecture: iphoneos-arm64e
 Version: 1.3.1
 Priority: optional
 Section: Development
@@ -6002,6 +6037,24 @@ SHA256: e77a5e83a603c8d06e61224cbc25b36d9a7e45c03d0e385fdbbbb8d5577adbe6
 SHA512: 689643d29187d6965193d7a45e68748424d59efc4f09dc84081b029f66d1ae6a2f05a1923d962ccd1adf413770788dd8adb0f38ec58a5574e53e7c414124bd38
 Homepage: http://github.com/ProcursusTeam/libiosexec
 Description: development files for libiosexec
+
+Package: libiosexec1
+Architecture: iphoneos-arm64e
+Version: 1.3.1-2
+Priority: required
+Essential: yes
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 76
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/libiosexec/libiosexec1_1.3.1-2_iphoneos-arm64e.deb
+Size: 10422
+MD5sum: dbe885fdf9c626d995591c3dda7615f9
+SHA1: 59b1c910d4be1ca3ed271c78c0cff92fdc252dc5
+SHA256: 6e4efd819f23e286f2780f75e77ec6a821ee57fd80f867586c2d126d994f577b
+SHA512: 4aa5cb8a35a9a94bca1b3fc6167b3f846b50bd8e2db8a802454f48f06f42f1a158ca21c26cdc0d377a4ac28df42e0cfe80a9d5ae2c88fdf439869e554af7afbd
+Homepage: http://github.com/ProcursusTeam/libiosexec
+Description: shim for execve w/ shell script support
 
 Package: libiosexec1
 Architecture: iphoneos-arm64e
