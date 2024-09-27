@@ -1647,6 +1647,22 @@ Description: Compat Layer for Rootless Tweaks
 Author: roothide
 Name: rootless-compat
 
+Package: rootless-compat
+Version: 1.5-1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 268
+Depends: com.roothide.patchloader(>= 0.0.4)
+Filename: ./debfiles/rootless-compat_1.5-1_iphoneos-arm64e.deb
+Size: 37516
+MD5sum: 23057ca7df9ea6922771f460d2347398
+SHA1: 57ec679d1a65fdb37f1a8f0d14e899e8f0c504d8
+SHA256: bf0294093d446f6fe75dedce24dbf9906970c3cc4d7466aab8f865c646808aca
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
+
 Package: rootless-v1-test
 Version: 0.0.1-1+debug
 Architecture: iphoneos-arm64
