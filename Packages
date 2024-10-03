@@ -554,6 +554,24 @@ Author: P2KDev <p2kdev@gmail.com>
 Name: UnderDock (NoSettings)
 
 Package: com.pantsthief.flexing
+Version: 1.5.0-11
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 168
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex, mobilesubstrate
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debfiles/com.pantsthief.flexing_1.5.0-11_iphoneos-arm64e.deb
+Size: 7516
+MD5sum: cbfa6d82b5206687325d84a5ab47d910
+SHA1: 9734058e7c82b56bd03b048c4ffbb4233191d442
+SHA256: 2653bb5d24dc5a35124123c2ae49362993e6cc2851b0318fecec86145ed29cc5
+Section: Tweaks
+Description: Open FLEX anywhere!
+Author: Tanner Bennett <thepantsthief@me.com>
+Name: FLEXing
+
+Package: com.pantsthief.flexing
 Version: 1.5.0-9+debug
 Architecture: iphoneos-arm64e
 Maintainer: Tanner Bennett <thepantsthief@me.com>
@@ -681,6 +699,24 @@ Author: RootHide
 Depiction: https://github.com/RootHide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/RootHide/RootHideManagerApp
+
+Package: com.roothide.manager
+Version: 1.1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 896
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/com.roothide.manager_1.1_iphoneos-arm64e.deb
+Size: 731594
+MD5sum: 6d638cb99ca3cc789fd6ff4616ece7ef
+SHA1: 0853511f29dbc8312a9d2236dff80935bb53d072
+SHA256: 43d1dc6ab16d0976b643869591855f613208fe0d92e5386ff2d1c1f6c1667678
+Section: System
+Description: Configuare RootHide's Features
+Author: roothide
+Depiction: https://github.com/roothide/RootHideManagerApp
+Name: RootHide Manager
+Support: https://github.com/roothide/RootHideManagerApp
 
 Package: com.roothide.patcher
 Version: 1.4-2+debug
@@ -859,6 +895,22 @@ Section: Utilities
 Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This version only supports 64-bit devices
 Author: TIGI Software
 Name: Filza File Manager 64-bit
+
+Package: com.yourcompany.paidtest
+Version: 0.0.1-2+debug
+Architecture: iphoneos-arm64e
+Maintainer: admin
+Installed-Size: 196
+Filename: ./debfiles/com.yourcompany.paidtest_0.0.1-2+debug_iphoneos-arm64e.deb
+Size: 4090
+MD5sum: 49bb49ace19739c2f587c25415a56fa9
+SHA1: 526fc155f564bba96df09d78daa91718fc9f89dd
+SHA256: 58be5b680a5d5ca0491b9ac04740f5b15f77e4d45f6c5341c322500aa1de7dbe
+Section: System
+Description: An awesome tool of some sort!!
+Tag: cydia::commercial
+Author: admin
+Name: paidtest
 
 Package: com.yourepo.cydiageek.nodockground
 Version: 1.0.6
