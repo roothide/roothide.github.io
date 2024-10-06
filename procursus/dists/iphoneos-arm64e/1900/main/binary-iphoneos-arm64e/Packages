@@ -296,6 +296,22 @@ Description: Generates user-defined ARP packets
 
 Package: autoconf
 Architecture: iphoneos-arm64e
+Version: 2.71-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2164
+Depends: roothide (>= 0.0.8), perl, libtool
+Filename: pool/main/iphoneos-arm64e/1900/autoconf/autoconf_2.71-1_iphoneos-arm64e.deb
+Size: 477364
+MD5sum: 4dfad37a5264da82a1c11043db0d8310
+SHA1: 6b3c9eb07f21190a33a854a78ca269dff62783f7
+SHA256: 26a69796b6274b318a082e0f3e3d182a3b789e11fca2e2d9b204750c7d20dd2e
+SHA512: 2999da3b5d3498f1aedbb97a8aab2959f506736cdc1102bc6e9f113abbf4aa9429cee56bd4fdae15aff624244f9a4ba8c0d00ecd9d5d82cd4d8d1646f3cac44f
+Description: Automatic configure script builder
+
+Package: autoconf
+Architecture: iphoneos-arm64e
 Version: 2.71
 Priority: optional
 Section: Development
@@ -309,6 +325,22 @@ SHA1: 583c16e455dc7dd40e60809bf592de87881381ef
 SHA256: eb19cc707ad095cb0625729fec2aab7d309e62d1c7d7a2ced30cc586eed2d48f
 SHA512: b5620bb5fcc2e17d6f4f40a12eb6972abb8bded2398d9a703c87e600df928a33fd186b01eda184b9f39601d907bbcd48b6846eec05a245e0386eab49a4fcd021
 Description: Automatic configure script builder
+
+Package: automake
+Architecture: iphoneos-arm64e
+Version: 1.16.5-1
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1960
+Depends: roothide (>= 0.0.8), perl
+Filename: pool/main/iphoneos-arm64e/1900/automake/automake_1.16.5-1_iphoneos-arm64e.deb
+Size: 453238
+MD5sum: f462649cca6f2f451968d8805a36efa2
+SHA1: b648cea00742a0d560defc84d8a177f0a6a5125e
+SHA256: e0360b5f072e1925111acdf73c5efd1e5be3c74cfa3577b8ea3f685919c7616a
+SHA512: fda893e95b27fbdb38c42fcf359851ab9732ee70eb20d889a0947e967fa265e0d2ac8a1fe424b9ee86e0ef62a845b27f186c6ad2580e809ae83bd1909dde9d30
+Description: Tool for generating GNU Standards-compliant Makefiles
 
 Package: automake
 Architecture: iphoneos-arm64e
