@@ -3720,6 +3720,98 @@ Description: Go programming language compiler - metapackage
  package, add /usr/lib/go-1.18/bin/ to PATH, or invoke /usr/lib/go-1.18/bin/go
  directly.
 
+Package: golang-1.22-go
+Architecture: iphoneos-arm64e
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 98336
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2), golang-1.22-src (>= 1.22.4), clang
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.22-go_1.22.4_iphoneos-arm64e.deb
+Size: 38648914
+MD5sum: 04a922bdab8f76957c7dbd68a8702d24
+SHA1: 378de0d0b1aff32370d10889346e49bcc36b613a
+SHA256: d05d8ff194871ef63c527e3c8443802ae050debcfa73e31ebcf6b8db6ebe26ea
+SHA512: 80fcc17001a8e3880ea8a1b682b178aff96c1eaf33e146d0ec56af31aafda8473d8cfca580cbb9d813b0417558e03576e595fc58e79aab5f04d4c805f15d0cce
+Homepage: https://golang.org
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This package provides an assembler, compiler, linker, and compiled libraries
+ for the Go programming language.
+ .
+ To use this version, instead of the default one provided by golang-go package,
+ add /usr/lib/go-1.18/bin/ to PATH, or invoke /usr/lib/go-1.18/bin/go directly.
+
+Package: golang-1.22-src
+Architecture: iphoneos-arm64e
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 149288
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2), libiosexec-dev
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.22-src_1.22.4_iphoneos-arm64e.deb
+Size: 25243842
+MD5sum: c8c3b50390a7c4143dae84bc0c779327
+SHA1: e6c953134f8bacd9cf4c3efd1a666ede55befa69
+SHA256: ef514c7142fcad692b381734a5fb967f5db76f0ab2e2e5436152c20e4ef78fbd
+SHA512: 5a33685fa36c673b1e1afaa003cb586d07eaa2a8f12d9e69da1347ccea8aeda2862d67d3d2c39167f83ea6707bb9ec3dbc6dd0e7a3b50de1aa6a5cb17685ec88
+Homepage: https://golang.org
+Description: Go programming language - source files
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This package provides the Go programming language source files needed for
+ compilation.
+
+Package: golang-1.22
+Architecture: all
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.8), golang-1.22-go (>= 1.22.4), golang-1.22-src (>= 1.22.4)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-1.22_1.22.4_all.deb
+Size: 2076
+MD5sum: 687a7773a55008fd7902908166fbc4a2
+SHA1: 92f3b07a7e47ffe56a6ae28c4e2e08635a2f3b52
+SHA256: 93688a1fa03c1d4f764a1456faff53008c5ce35de6feddbe37807f22cd4e147d
+SHA512: 35d09a7f8e96609841b91bcf71039f372f4df15b3cbcb5efd93710f0f7ba0b812f2e626ee582bee04c27f981087c4aadc9f8060342d67d16dbfc6ba1841d8b1e
+Homepage: https://golang.org
+Description: Go programming language compiler - metapackage
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a
+ dynamically typed, interpreted language.
+ .
+ This package is a metapackage that, when installed, guarantees
+ that (most of) a full Go development environment is installed.
+ .
+ To use this version, instead of the default one provided by golang-go
+ package, add /usr/lib/go-1.18/bin/ to PATH, or invoke /usr/lib/go-1.18/bin/go
+ directly.
+
 Package: golang-go
 Architecture: all
 Version: 1.20
@@ -3734,6 +3826,38 @@ MD5sum: 6314caa22ed4e1de5519f77db95ef57a
 SHA1: a58d7c8d639bb7fff842b42c2cda341c359a5123
 SHA256: 1d832091af11396a39de6739379048c24e0074cbc1ec9f533e29e286c70928b9
 SHA512: 5f4e3a0a4bd2a0c840d05aa4b2a58c71a1ae10173961054bac8ee55efee33e3da0548211c532994f62ab614fdae6b716374f350043b7f4744037c3998a2efe7f
+Homepage: https://golang.org
+Description: Go programming language compiler, linker, compiled stdlib
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go toolchain and
+ compiled standard library. It is only built on architectures that have a
+ native toolchain ("gc compiler"). Packages that want to build with whichever
+ of gc or gccgo is available should depend on golang-any.
+
+Package: golang-go
+Architecture: all
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 140
+Depends: roothide (>= 0.0.8), golang-1.22-go (>= 1.22.4)
+Conflicts: golang-src (<< 1.22)
+Replaces: golang-src (<< 1.22)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-go_1.22.4_all.deb
+Size: 30098
+MD5sum: 88836f30f7a14fedbd7d66c23a7fa013
+SHA1: 8b09e5cb8dd2d5d303ce9639e5aba6c1e306512e
+SHA256: 71d98d189cfa753b6ca96263007949769d80f9fa5e393e069547f21fdd159258
+SHA512: c60f58d3926289097035dcc1284e89396ff6a4f74a00464cb00ba30b4f59b69b200e6fff9e120b26f48d22149e2c71a996145b74e95427dc6935cda2e0adbe6e
 Homepage: https://golang.org
 Description: Go programming language compiler, linker, compiled stdlib
  The Go programming language is an open source project to make programmers more
@@ -3778,6 +3902,34 @@ Description: Go programming language - source files
  This is a dependency package that depends on the default Go standard library
  source code, which is needed for the go build process.
 
+Package: golang-src
+Architecture: all
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.8), golang-1.22-src (>= 1.22.4)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang-src_1.22.4_all.deb
+Size: 2046
+MD5sum: ef042f798b1aeca6595eb6dd1a2c12e4
+SHA1: 2b026e26fee03ccf647f550b187978a505306654
+SHA256: f7884f16b6e279707d461707f8b9a25f6f175ff67a63cf24ccba1f77101f1a24
+SHA512: 3f7acc35e31e7a0d2938d120e5c3fbc8b33e25a238e230980a32eae6497a717e78046832c6bcba44ee493095bd0d6983011ae09487ca5637043cb6f0f313da8e
+Homepage: https://golang.org
+Description: Go programming language - source files
+ The Go programming language is an open source project to make programmers more
+ productive. Go is expressive, concise, clean, and efficient. Its concurrency
+ mechanisms make it easy to write programs that get the most out of multicore
+ and networked machines, while its novel type system enables flexible and
+ modular program construction. Go compiles quickly to machine code yet has the
+ convenience of garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a dynamically typed,
+ interpreted language.
+ .
+ This is a dependency package that depends on the default Go standard library
+ source code, which is needed for the go build process.
+
 Package: golang
 Architecture: all
 Version: 1.20
@@ -3792,6 +3944,35 @@ MD5sum: 67e0d7eb4b49b2513b34e42c86908338
 SHA1: 3d894d62ec17fead2d9cd02c8843d8d2e58396c1
 SHA256: 5dd74ec2e087b5abecd4a9764bfdfd9bea8a4f2ecaade066b12a29b1135106a7
 SHA512: cb6af4e11e89929e3f893af9464df5db9fd5b8949f5cdd4e8d937011237071438518d71047513395b623b546ba7f8c5971b093325766f12f38a20a9ea2ae58a0
+Homepage: https://golang.org
+Description: Go programming language compiler - metapackage
+ The Go programming language is an open source project to make
+ programmers more productive. Go is expressive, concise, clean, and
+ efficient. Its concurrency mechanisms make it easy to write programs
+ that get the most out of multicore and networked machines, while its
+ novel type system enables flexible and modular program construction.
+ Go compiles quickly to machine code yet has the convenience of
+ garbage collection and the power of run-time reflection. It's a
+ fast, statically typed, compiled language that feels like a
+ dynamically typed, interpreted language.
+ .
+ This package is a metapackage that, when installed, guarantees
+ that (most of) a full Go development environment is installed.
+
+Package: golang
+Architecture: all
+Version: 1.22.4
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 4
+Depends: roothide (>= 0.0.8), golang-go (>= 1.22.4), golang-src (>= 1.22.4)
+Filename: pool/main/iphoneos-arm64e/1900/golang/golang_1.22.4_all.deb
+Size: 1980
+MD5sum: d385807821e793dd57fc7e4d12d1d0e8
+SHA1: 8b7719846c79f4524845924e673f9af4cf60142c
+SHA256: 82dae60d8ad376a5e02bc6b037051b8a4aea3c2c0b5ed496a2f225730af93d4f
+SHA512: 2490f7e7ed2006684a89e34a0964b6a480520c7b047faf019aa7aeacf636de4ca6f819b6f79b625ce4ca7e400db3338c27de43bb6c5d46da5df5225eaa7c0788
 Homepage: https://golang.org
 Description: Go programming language compiler - metapackage
  The Go programming language is an open source project to make
@@ -8152,6 +8333,129 @@ Description: Tag Image File Format (TIFF) library -- C++ interface
  libtiff is a library providing support for the Tag Image File Format
  (TIFF), a widely used format for storing image data.  This package
  includes the shared library for the experimental C++ interfaces.
+
+Package: libtomcrypt-dev
+Architecture: iphoneos-arm64e
+Version: 1.18.2-1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2852
+Depends: roothide (>= 0.0.8), libtomcrypt1 (= 1.18.2-1)
+Filename: pool/main/iphoneos-arm64e/1900/libtomcrypt/libtomcrypt-dev_1.18.2-1_iphoneos-arm64e.deb
+Size: 898482
+MD5sum: ed71d65f63da3957232955a7d79beb06
+SHA1: b4afa502291f80ad32d439077a140a82b41fa694
+SHA256: 0e8a40b66d41562fc5e2a659e70b25914151f24f6c06415d18330d968110b227
+SHA512: bc8263726f58a00b36f13c6019df3dde271a4331bcc02934be183a04f0ee0359d6ba653c7ca641a89c6c830bf21898d91e3b3516803585af020f986a6cf0957c
+Description: static library, header files and documentation for libtomcrypt
+ LibTomCrypt is a well documented, public domain open source cryptographic
+ toolkit written in C. It supports lots of block ciphers (Blowfish, Twofish,
+ AES, XTEA, ...), chaining modes (ECB, CBC, OFB, CFB, CTR, ...), hash functions
+ (MD5, SHA-1, SHA-256, RIPE-MD, ...), HMAC mechanisms, pseudo-random number
+ generators and public key algorithms. It has several optimizations for the
+ i386, x86_64 and ppc32 architectures.
+ .
+ This package contains include files and a statically linked version of the
+ library.
+
+Package: libtomcrypt1
+Architecture: iphoneos-arm64e
+Version: 1.18.2-1
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 728
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2), libtommath1, libgmp10
+Filename: pool/main/iphoneos-arm64e/1900/libtomcrypt/libtomcrypt1_1.18.2-1_iphoneos-arm64e.deb
+Size: 344180
+MD5sum: 7c004b20bb051dd3918526343a85b808
+SHA1: c122240e567bfef02631aa93d8b2a9233025647b
+SHA256: 4c22e0c49c4758fd77484b0d176740eee87630e248895692adf455b0f8c5846f
+SHA512: bb5698d83b7b106efd18804c46b2a1fa8293a1d7b376ebffe6e48aabbf5380098e38a86ef82e372ce2ca38bd89319356973c19e39632e5dffa4eb36773fb04e4
+Description: public domain open source cryptographic toolkit
+ LibTomCrypt is a well documented, public domain open source cryptographic
+ toolkit written in C. It supports lots of block ciphers (Blowfish, Twofish,
+ AES, XTEA, ...), chaining modes (ECB, CBC, OFB, CFB, CTR, ...), hash functions
+ (MD5, SHA-1, SHA-256, RIPE-MD, ...), HMAC mechanisms, pseudo-random number
+ generators and public key algorithms. It has several optimizations for the
+ i386, x86_64 and ppc32 architectures.
+
+Package: libtommath-dev
+Architecture: iphoneos-arm64e
+Version: 1.2.0-1
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 600
+Depends: roothide (>= 0.0.8), libtommath1 (= 1.2.0-1)
+Filename: pool/main/iphoneos-arm64e/1900/libtommath/libtommath-dev_1.2.0-1_iphoneos-arm64e.deb
+Size: 118440
+MD5sum: 8f0e0d86a8e26e08ee2d224b506dae9a
+SHA1: 7895467455ea4c4a6ad220971667f070818d26fd
+SHA256: 8c940afd9266417ad3b906c5d0772721b6ef2dc6ceabe770149eadf13d187e17
+SHA512: fd23b7086a2624c7deb6af178f38f9634662745e68b630f536e1a61e73c59661c838900c9af71863721fe6ecdb5a26a6b07139e503433a81ae5792d622952782
+Description: multiple-precision integer library [development files]
+ LibTomMath is a C language library that provides a vast array of highly
+ optimized functions for number theory; including:
+ .
+  * Simple Algebra (Addition, Subtraction, Multiplication, Division)
+  * Digit Manipulation (shift, binary AND/OR/XOR)
+  * Modular Reduction (Barrett, Montgomery, DR, 2k)
+  * Number Theory
+    - Greatest Common Divisor
+    - Least Common Multiple
+    - Jacobi Symbol Computation
+    - Multiplicative Inverse
+    - Modular Exponentiation
+    - Fermat & Miller-Rabin Primality Tests
+  * Miscellaneous
+    - Root finding over Z
+    - Pseudo-random integers
+    - Signed & Unsigned comparisons
+    - Karatsuba and Toom-Cook multiplication algorithms
+    - Fast Comba based Multiplier, Squaring and Montgomery routines
+ .
+ This package contains the files needed to create programs that use LibTomMath.
+ It is not needed to merely execute programs that use LibTomMath.
+
+Package: libtommath1
+Architecture: iphoneos-arm64e
+Version: 1.2.0-1
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 132
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/libtommath/libtommath1_1.2.0-1_iphoneos-arm64e.deb
+Size: 40142
+MD5sum: f6ac0be3d196bb88d44db44688903d1a
+SHA1: d6343708c0a0b391e07b0feeedf806cdb47765b9
+SHA256: 0c39f698f5506d11f3a894289e95c5462138a5a1cce50ba185a5c01605ec49d7
+SHA512: acc5ce32edb0bcc691585a529dcd735cdd979bedf95cb799119bada858efe224569d90f2c57c95030c4ca09efff10a0833b0852b8815fa1253849508b8eb3c6d
+Description: multiple-precision integer library [runtime]
+ LibTomMath is a C language library that provides a vast array of highly
+ optimized functions for number theory; including:
+ .
+  * Simple Algebra (Addition, Subtraction, Multiplication, Division)
+  * Digit Manipulation (shift, binary AND/OR/XOR)
+  * Modular Reduction (Barrett, Montgomery, DR, 2k)
+  * Number Theory
+    - Greatest Common Divisor
+    - Least Common Multiple
+    - Jacobi Symbol Computation
+    - Multiplicative Inverse
+    - Modular Exponentiation
+    - Fermat & Miller-Rabin Primality Tests
+  * Miscellaneous
+    - Root finding over Z
+    - Pseudo-random integers
+    - Signed & Unsigned comparisons
+    - Karatsuba and Toom-Cook multiplication algorithms
+    - Fast Comba based Multiplier, Squaring and Montgomery routines
+ .
+ This package contains the library needed to run programs that
+ use LibTomMath.
 
 Package: libltdl-dev
 Architecture: iphoneos-arm64e
