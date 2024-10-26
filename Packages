@@ -360,6 +360,24 @@ Author: opa334
 Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
 Name: AltList
 
+Package: com.opa334.altlist
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 340
+Depends: firmware (>=7.0)
+Filename: ./debfiles/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
+Size: 27902
+MD5sum: f1cfdb97679bc2b30b2918220ee9351f
+SHA1: 9eef53971a1a30e13cfc2adf3a18b655dd2d9eb2
+SHA256: 7d145977d3fbcd5030564dc429e18f7456c29f92020c36f32e61d4a82418f737
+Section: System
+Description: A modern AppList alternative
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=altlistDp
+Name: AltList
+
 Package: com.opa334.ccsupport
 Version: 1.3.10-2-2+debug
 Architecture: iphoneos-arm64e
@@ -1933,6 +1951,22 @@ Section: Tweaks
 Description: debug any process with xcode (jailbroken required)
 Author: roothide
 Name: XcodeAnyDebug
+
+Package: xcode-any-debug
+Version: 0.0.3-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 156
+Depends: ldid, mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/xcode-any-debug_0.0.3-1+debug_iphoneos-arm64e.deb
+Size: 6072
+MD5sum: d588ef1a82711c7ce1f2afdf1fddd247
+SHA1: 9195fa560beee321c4fb5f5aaee300116a3788f1
+SHA256: 476c1bd4b26c94a258d4e401727cf8b3543b9589e6577c14238f2afb7264debd
+Section: Tweaks
+Description: debug any process with xcode (jailbroken required)
+Author: roothide
+Name: Xcode Any Debug
 
 Package: xyz.willy.zebra
 Version: 1.1.35-85+debug
