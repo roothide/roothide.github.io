@@ -1469,6 +1469,23 @@ Icon: https://getsileo.app/img/icon.png
 Name: Sileo
 Sileodepiction: https://featuredpage.getsileo.app/depiction.json
 
+Package: org.coolstar.sileo
+Version: 2.5.1-3
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5.1-3_iphoneos-arm64e.deb
+Size: 3933956
+MD5sum: f1f8f59267da7e9ae699e7c988f25c37
+SHA1: 44b2e39a40957e1be161475d6deae807f8831197
+SHA256: a970dff7b798e8dc818c2ef021b7331a202880040a4dbdca991994de9a27beaa
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
 Package: preferenceloader
 Version: 2.2.6-11+debug
 Architecture: iphoneos-arm64e
@@ -1795,6 +1812,22 @@ Size: 38144
 MD5sum: 984ae91c29226e43d2ed7a72825a0427
 SHA1: 0cdde17865131df4a883af644d3d6105410a3428
 SHA256: 94025144f3de3c470f22a05c5edd116ddeff28dc9ba2dba40d9df115aceaaeac
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
+
+Package: rootless-compat
+Version: 1.7-1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 268
+Depends: com.roothide.patchloader(>= 0.0.4)
+Filename: ./debfiles/rootless-compat_1.7-1_iphoneos-arm64e.deb
+Size: 38066
+MD5sum: 33851c411c12d866b29aa9824c9e5569
+SHA1: 25d714816c11c43767ac630fa0d23338b27b322e
+SHA256: 4efc3e7f7b5a3fbb3668d81f965c6a9bce48913f4543c9951fcb5abd99f6dae3
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
