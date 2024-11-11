@@ -14972,6 +14972,34 @@ Description: New Perl Compatible Regular Expression Library - utilities
 
 Package: perl
 Architecture: iphoneos-arm64e
+Version: 5.32.1-1
+Priority: optional
+Section: Scripting
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 50796
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/perl/perl_5.32.1-1_iphoneos-arm64e.deb
+Size: 10922764
+MD5sum: 89c5550140939672b35662f9ca8c69e9
+SHA1: 0fd3ebfe8aeef749edfaa826b2fe0e5877568af0
+SHA256: a4f44f9f6adf8314d255f4a06fcdfdeb20273a210e49ea730946d9cd842ad044
+SHA512: dbff08f76cbcf8a6e56a6e19da8712b2e9a3d1eabcc9e6aa25ce774c2f626346c6f64184a062990ae9df27c4d546be02c9fd0d4cea178b0cdc2978fee1ed767a
+Homepage: http://dev.perl.org/perl5/
+Description: Larry Wall's Practical Extraction and Report Language
+ Perl is a highly capable, feature-rich programming language with over
+ 20 years of development. Perl 5 runs on over 100 platforms from
+ portables to mainframes. Perl is suitable for both rapid prototyping
+ and large scale development projects.
+ .
+ Perl 5 supports many programming styles, including procedural,
+ functional, and object-oriented. In addition to this, it is supported
+ by an ever-growing collection of reusable modules which accelerate
+ development. Some of these modules include Web frameworks, database
+ integration, networking protocols, and encryption. Perl provides
+ interfaces to C and C++ for custom extension development.
+
+Package: perl
+Architecture: iphoneos-arm64e
 Version: 5.32.1
 Priority: optional
 Section: Scripting
@@ -16426,6 +16454,22 @@ SHA256: 56b1fee76edb1d6272714dc016911376e5d1a60c45171c250901eb53442dadb0
 SHA512: 89f55cb7dc532adcca9eb5717348c06341996bd0c85a23c13fb1b43212a0e8dc2c107aebaa13f212d8cd1746f085d05bad4f6cf6d1b9f5cfc1acf4d52e63d257
 Description: Extra Command line access for UIKit/LaunchServices/CoreServices
 
+Package: uikittools-extra
+Architecture: iphoneos-arm64e
+Version: 2.1.6-3
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 420
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2), uikittools (= 2.1.6-3)
+Enhances: uikittools
+Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools-extra_2.1.6-3_iphoneos-arm64e.deb
+Size: 33170
+MD5sum: d14945170a98a86c07ce0e0878e15fb4
+SHA1: a83a28c8d6d19984355dca0049fb5a7d7135d975
+SHA256: 8853be29c1bb78c7bef87c94a5a270f3bc431f7bd6469a4afe2ea982967cc9dc
+SHA512: c50cc2bc70ecbf7e7a0892e30d60e2d00f29115f0f530c24b20cd012451ca57eac69f688be2770e79a40fd00034d5762bcc5d4ec3e460351b41cfed8fff20b52
+Description: Extra Command line access for UIKit/LaunchServices/CoreServices
+
 Package: uikittools
 Architecture: iphoneos-arm64e
 Version: 2.1.6-1
@@ -16462,6 +16506,25 @@ MD5sum: df392f0b0f4540b9844e7a2b05da5452
 SHA1: 65e0305c5836c68e6e4fa5076c21fa4e01d53bf9
 SHA256: 591f637150f49c18b8095b3ef85c5003824218da65ce32c9c95af0261a599483
 SHA512: 74573d40fc3aa648c9e670f472137f7df15bc1c54bf20a6a810479862360cdbabf807175cc7c719535d435589fe76825e13a2f6a18b137e581b0709a339f1a89
+Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: uikittools
+Architecture: iphoneos-arm64e
+Version: 2.1.6-3
+Priority: required
+Essential: yes
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 772
+Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2)
+Suggests: uikittools-extra (= 2.1.6-3)
+Breaks: uikittools-extra (<< 2.1.6)
+Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools_2.1.6-3_iphoneos-arm64e.deb
+Size: 83346
+MD5sum: fbcd825f11327bf1639b49af0d0269b7
+SHA1: 4d2e77bf3488eea5d0759f94b953b15dd4162cbd
+SHA256: 91d3a064dfcdc767924d825699a82fa3a10cdeb1c82fb9faf5be0f7b2a08b3ce
+SHA512: 342501bff1f7583958cee3d0a64dc791a99383972d0c22a44a13d62be25be2e684eeaa87f6fb6e6aec7b6ed79ac96c4699f906a96a31f1497ff6672c00671400
 Description: Command line access for UIKit/LaunchServices/CoreServices
 
 Package: libunibilium-dev
