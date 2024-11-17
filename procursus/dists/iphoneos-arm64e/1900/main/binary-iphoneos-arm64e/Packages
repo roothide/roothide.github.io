@@ -15636,6 +15636,25 @@ Description: roothide core package
 Name: roothide core
 Author: roothide
 
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.0.9
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide
+Installed-Size: 936
+Depends: libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/roothide/roothide_0.0.9_iphoneos-arm64e.deb
+Size: 54748
+MD5sum: 3af2a7242a181f1619205be9ea182360
+SHA1: 04c22ac67693dba46edcfeeba585adfcf04f22c8
+SHA256: c4f2b82e3090822ce47643d46b2b55ee9eb3d35842c5c9d95deb1f9c15a605c8
+SHA512: 3feea482110e1715f4ffaf4d9123e859724352c71c8b52d17dbeb090d4934db7f5538b63c83e4e178f489ed83caa7edd1a8ab40ba353bf1cb50c30f06dd31c34
+Description: roothide core package
+Name: roothide core
+Author: roothide
+
 Package: rsync
 Architecture: iphoneos-arm64e
 Version: 3.2.4-1
