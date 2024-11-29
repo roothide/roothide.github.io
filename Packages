@@ -1170,6 +1170,21 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: ios-debugserver
+Version: 0.0.1
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Filename: ./debfiles/ios-debugserver.deb
+Size: 142388
+MD5sum: 0b4a8c8f420708d17b5882945e19e1cd
+SHA1: f475e9e089e53a3722ccda029f9149871f3dd4cc
+SHA256: 3865da33c4e40939bc521c3a21cce91da6a9d6016984b6063a130d91d977435a
+Section: System
+Description: An awesome tool of some sort!!
+Tag: role::hacker
+Author: roothide
+Name: ios-debugserver
+
 Package: jp.akusio.backgrounderaction15
 Version: 0.1.0
 Architecture: iphoneos-arm64e
