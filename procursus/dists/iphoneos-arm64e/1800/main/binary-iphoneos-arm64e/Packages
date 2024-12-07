@@ -277,6 +277,65 @@ Description: commandline package manager
  managing as well as querying information about packages
  as a low-level access to all features of the libapt-pkg library.
 
+Package: aria2
+Architecture: iphoneos-arm64e
+Version: 1.36.0
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1812
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libuv1, libssh2-1, libjemalloc2, libc-ares2, libintl8, libaria2-0 (= 1.36.0), libssl3
+Recommends: ca-certificates
+Filename: pool/main/iphoneos-arm64e/1800/aria2/aria2_1.36.0_iphoneos-arm64e.deb
+Size: 387932
+MD5sum: 24cf59b36eff820192a4f367f460f217
+SHA1: 217f829aaebd9f1b8b17b4a48ee91ad47bca1e55
+SHA256: 848b1f2596a3936eda51c6136344c0acc2e487a338fa933230772f775a381be3
+SHA512: 7eedd8d1ff3c04a5cbe999eed115b153d8da1eb37d59195b8c54729fd9b49435dd406429101ef31d8ea0381a9f81b9f7e7e3b6d0594f801ad2dc29c358ed86cc
+Description: High speed download utility
+ Aria2 is a command line download client with resuming and
+ segmented downloading. Supported protocols are HTTP/HTTPS/
+ SFTP/FTP/BitTorrent and it also supports Metalink.
+
+Package: libaria2-0-dev
+Architecture: iphoneos-arm64e
+Version: 1.36.0
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 64
+Depends: roothide (>= 0.0.9), libaria2-0 (= 1.36.0), libuv1-dev, libssh2-dev, libjemalloc-dev, libc-ares-dev, libintl-dev, libssl-dev
+Filename: pool/main/iphoneos-arm64e/1800/aria2/libaria2-0-dev_1.36.0_iphoneos-arm64e.deb
+Size: 17936
+MD5sum: a72e3b0cfb741133b51dffe8324699c0
+SHA1: 217eb6c080465ec6783f085337b9f6ad23265ade
+SHA256: 6bb7ad8ac1fdb092063eadd8cf665183228097a9b834ddcf8d84d023d50bd474
+SHA512: c3ccf67d2d64eb96abf49dc186d0426c5394b533e2fd017c84952bb95e10a9e2433951d9ea7d444ced3be4d9b353b3ac6185552fefb56ec29f7b44ad49233247
+Description: High speed download utility (Development files)
+ Aria2 is a command line download client with resuming and
+ segmented downloading. Supported protocols are HTTP/HTTPS/
+ SFTP/FTP/BitTorrent and it also supports Metalink.
+ .
+ This package provides development files for libaria2.
+
+Package: libaria2-0
+Architecture: iphoneos-arm64e
+Version: 1.36.0
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2808
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libuv1, libssh2-1, libjemalloc2, libc-ares2, libintl8, libssl3
+Filename: pool/main/iphoneos-arm64e/1800/aria2/libaria2-0_1.36.0_iphoneos-arm64e.deb
+Size: 971976
+MD5sum: 1ecbf7b62242f59ad1ecb8e2243f8422
+SHA1: 44376d1788352de57220763e2c9ad0f74560506e
+SHA256: d059589f5db6c5a502e85c6693cb6c12e43fcd4ef1f61a7e17823aa06d105224
+SHA512: c0fa6e8226b0abae5b5f5d841af0c40d8343060366120be85f3a8a8542f2fcdd9c7c72261b47e9864ab89c3cad30d9921d6f9e4359b7ab2bc285711f52edbbf7
+Description: C++ library interface to aria2
+ This C++ library offers interface to the core functionality
+ of aria2 like networking and downloading.
+
 Package: arpoison
 Architecture: iphoneos-arm64e
 Version: 0.7
@@ -6379,6 +6438,46 @@ SHA1: 7b8d81fd55be80ef191a01867e50f33d8d27cf3b
 SHA256: 3bbe9277ca0b6e822db79e31bee3e657c735e3f4ddf8e265629be8e588cd1552
 SHA512: d6591c9ef3280255e15c1064f20295ad39e2b2890c5a473b1d83df2fe21b57f91bcea0734d2246e01631cbbbc34c62c62294a918c01753b51fe42c7a34612431
 Description: Library allowing communication with iBoot/iBSS of iOS devices via USB
+
+Package: libjemalloc-dev
+Architecture: iphoneos-arm64e
+Version: 5.3.0
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 13028
+Depends: roothide (>= 0.0.9), libjemalloc2 (= 5.3.0)
+Filename: pool/main/iphoneos-arm64e/1800/libjemalloc/libjemalloc-dev_5.3.0_iphoneos-arm64e.deb
+Size: 5591122
+MD5sum: f0b41f80e3f808d2dd282579a419671f
+SHA1: 056878acbfb439d313aa557d481591154919e02a
+SHA256: 949e358d3611b20e6d609f227a1bd91475284d5c4a461507c860b78721c85c5f
+SHA512: c4eb710fb166e0f655cbb84d8d4f7ed92e78913b1cb07de070745cc52afb317762ee7746c288e97f679d7caadc1b674995367707b6c6d20592d3f13b36c2afdf
+Description: development files and documentation for jemalloc
+ Files used for development with jemalloc. This package contains
+ headers and documentation.
+ .
+ jemalloc is a library providing a malloc(3) implementation for
+ multi-threaded processes on multi-processor systems.
+
+Package: libjemalloc2
+Architecture: iphoneos-arm64e
+Version: 5.3.0
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 544
+Depends: roothide (>= 0.0.9)
+Filename: pool/main/iphoneos-arm64e/1800/libjemalloc/libjemalloc2_5.3.0_iphoneos-arm64e.deb
+Size: 182776
+MD5sum: f6a64bcb3ff2e843df1569f0a13781ea
+SHA1: 679e0a34ff58a9cfefe1667c3587f6b4a675aa53
+SHA256: 7a0b8b292f1dd7dbeede4b804d30f5ffb30f683f7712a19387ae21b51d9b4c1e
+SHA512: a9258aad06a5e7aaaaed956707d83521b46e4a9aeb06e6b502f9aa348f23bc53c2225ffc1d996db0daea8382db28e33a6c1023dbc04b5211dff0e8f4e9486360
+Description: general-purpose scalable concurrent malloc(3) implementation
+ A library providing a malloc(3) implementation for multi-threaded processes on
+ multi-processor systems.
+ .
+ Notable features are reduced lock contention, predictable low fragmentation,
+ and introspection with heap profiling.Depends: libiosexec1 (>= 1.3.1-2)
 
 Package: libjpeg-turbo-progs
 Architecture: iphoneos-arm64e

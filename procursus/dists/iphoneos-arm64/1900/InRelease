@@ -4,24 +4,24 @@ Hash: SHA512
 Architectures: iphoneos-arm64
 Codename: 1800
 Components: main testing
-Date: Sun, 17 Nov 2024 20:13:56 +0000
+Date: Sat, 07 Dec 2024 17:13:25 +0000
 Description: Distribution of essential tools for iPhoneOS
 Label: Procursus(roothide)
 Origin: Procursus(roothide)
 Suite: stable
 Version: 1.0a1
 MD5Sum:
- 4a08a2ff936f6fc47a7295e95fdc6b55              250 Release
+ 4d756c9af1e0ddae7e0ee3f6601ccbd4              250 Release
 SHA1:
- af9779ff6d96a3fa0d0430dfe210a9afbde088f3              250 Release
+ a299883ae0956764cbf8657cc06d27a1b7cd4a8b              250 Release
 SHA256:
- 23c587b6f7d230dffdd8302afb5bb605789bf60442d8b9b780d48119ae9a223e              250 Release
+ 553f9708e952346c7d91997440df3d2dd11a4aba65aafc3a32004f53c04d95d2              250 Release
 SHA512:
- e9fcc606a7a3b49feb821b7147bcd1c7b1ee7270b42a1e2d6e0eecc5581d52ece1a66d7ffecb8ef239c57e0f9807ee3f98e58006dfda8787d0af714c1db3b077              250 Release
+ 3652ab5912c9ef9aee9e7c3376dda13b49a961e0e7bbb34295b66bb62b08648aa99e557a226e745258e73f05b5a88def8df93ff0a0b70db14e350c4d791d071b              250 Release
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQ4/9ceET25MJNZKPxmRCG+hDdWhQUCZzpOhAAKCRBmRCG+hDdW
-hQJsAQCh3jtDK0MctMS5VNK0NqywIx3ObdawK/qjR6tfJIzN0AEA3tdvSBSqBcjC
-BWuxDJW5IWaR2grYocHhdedvOTa/5wQ=
-=tPzP
+iHUEARYKAB0WIQQ4/9ceET25MJNZKPxmRCG+hDdWhQUCZ1SCNQAKCRBmRCG+hDdW
+hSN9AP43oF2AUH3V1uZzGWS57rLEbzCdP2d08rQ10R5ogaNrMwEAl//t2YnF6+bj
+xBzhCaGRhVZN1GJgcmQVEnDDk0jhvQc=
+=fMmp
 -----END PGP SIGNATURE-----
