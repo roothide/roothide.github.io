@@ -1589,6 +1589,32 @@ Description: stylesheets for processing DocBook XML to various output formats
  The stylesheets are modular in the sense that you can extend and, to some
  extent, customize them. The documentation is included in a separate package.
 
+Package: dpkg-repack
+Architecture: iphoneos-arm64e
+Version: 1.52
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 40
+Depends: roothide (>= 0.0.9), perl, libdpkg-perl
+Suggests: fakeroot
+Filename: pool/main/iphoneos-arm64e/1900/dpkg-repack/dpkg-repack_1.52_iphoneos-arm64e.deb
+Size: 17382
+MD5sum: 549fbe16fe22c058b2208b8a05eaa55a
+SHA1: 72baf0f0af47fb3eb56b60a440796ffce8e1cc57
+SHA256: 0ee69220b915aa59fa87a23f3f08e4f10e6127d00fd33656dfbd465cc1a79ad5
+SHA512: dbaa65db816a0f2a0c8f42b27154d180c76aa41dc3b676aed8443c4eefb99714016ce13015f6dcae9dab609037220e256b8c263b60a70df2096ba95f5a2d9375
+Description: Debian package archiving tool
+ dpkg-repack creates a .deb file out of a package that has already been
+ installed. If any changes have been made to the package while it was
+ unpacked (i.e. files in /etc were modified), the new package will inherit
+ the changes.
+ .
+ This utility can make it easy to copy packages from one computer to another,
+ or to recreate packages that are installed on your system, but no longer
+ available elsewhere, or to store the current state of a package before you
+ upgrade it.
+
 Package: dpkg-dev
 Architecture: iphoneos-arm64e
 Version: 1.21.21
