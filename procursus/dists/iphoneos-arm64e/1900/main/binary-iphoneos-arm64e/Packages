@@ -16614,6 +16614,22 @@ SHA256: 8853be29c1bb78c7bef87c94a5a270f3bc431f7bd6469a4afe2ea982967cc9dc
 SHA512: c50cc2bc70ecbf7e7a0892e30d60e2d00f29115f0f530c24b20cd012451ca57eac69f688be2770e79a40fd00034d5762bcc5d4ec3e460351b41cfed8fff20b52
 Description: Extra Command line access for UIKit/LaunchServices/CoreServices
 
+Package: uikittools-extra
+Architecture: iphoneos-arm64e
+Version: 2.1.6-4
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 420
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), uikittools (= 2.1.6-4)
+Enhances: uikittools
+Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools-extra_2.1.6-4_iphoneos-arm64e.deb
+Size: 33164
+MD5sum: e3df58c4343d9850a08c93dcf94fcf40
+SHA1: f970de9f62b67c89d0d239429f0489f3c448e15a
+SHA256: 557e7baadab180ba54ec24f04ee8fc86d69e2ac2044953d8d19c07428624f1a4
+SHA512: 4be6caa548d1774f9eda9dc8d2942d542f266861b7c3932be986a7f7d34dae0690093d8ec44ca5ced409b69b97cdabf40c09c3e7f12022c00c87d224f7ce4da4
+Description: Extra Command line access for UIKit/LaunchServices/CoreServices
+
 Package: uikittools
 Architecture: iphoneos-arm64e
 Version: 2.1.6-1
@@ -16669,6 +16685,25 @@ MD5sum: fbcd825f11327bf1639b49af0d0269b7
 SHA1: 4d2e77bf3488eea5d0759f94b953b15dd4162cbd
 SHA256: 91d3a064dfcdc767924d825699a82fa3a10cdeb1c82fb9faf5be0f7b2a08b3ce
 SHA512: 342501bff1f7583958cee3d0a64dc791a99383972d0c22a44a13d62be25be2e684eeaa87f6fb6e6aec7b6ed79ac96c4699f906a96a31f1497ff6672c00671400
+Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: uikittools
+Architecture: iphoneos-arm64e
+Version: 2.1.6-4
+Priority: required
+Essential: yes
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 772
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
+Suggests: uikittools-extra (= 2.1.6-4)
+Breaks: uikittools-extra (<< 2.1.6)
+Filename: pool/main/iphoneos-arm64e/1900/uikittools/uikittools_2.1.6-4_iphoneos-arm64e.deb
+Size: 83292
+MD5sum: a0bb4328d222df9460a84a55c199f819
+SHA1: 43e57501d956fa77c78d38d0fefd8683bd5365d6
+SHA256: 4c72a42f16717ccd1c1765515d184c05c5e9930c27bab7e2a07b2bd5aefa833a
+SHA512: aaeb6c84bdb97964a61a84ebe17dd1055a791c38e7c5e9e89c8eb2c63f1c9956b5fc68e8f9bb71130f63c02e4646f08a1374d040e25d345e525c7301f6b1172c
 Description: Command line access for UIKit/LaunchServices/CoreServices
 
 Package: libunibilium-dev
