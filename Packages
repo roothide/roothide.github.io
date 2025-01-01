@@ -781,6 +781,24 @@ Depiction: https://github.com/roothide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/roothide/RootHideManagerApp
 
+Package: com.roothide.manager
+Version: 1.2
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 896
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/com.roothide.manager_1.2_iphoneos-arm64e.deb
+Size: 732532
+MD5sum: b047a963a71ca95493e2d702801d8bc5
+SHA1: 266d0513770ccbde808cfff6309f8730f9ad3114
+SHA256: 4dc42a9b11e842674f7d8006f9f73ffde6292cd64a778b7a57062c0620276b3e
+Section: System
+Description: Configuare RootHide's Features
+Author: roothide
+Depiction: https://github.com/roothide/RootHideManagerApp
+Name: RootHide Manager
+Support: https://github.com/roothide/RootHideManagerApp
+
 Package: com.roothide.patcher
 Version: 1.4-2+debug
 Architecture: iphoneos-arm64e
@@ -875,6 +893,25 @@ Depiction: https://github.com/RootHide/RootHidePatcher
 Icon: https://github.com/RootHide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
 Name: RootHide Patcher
 Support: https://github.com/RootHide/RootHidePatcher
+
+Package: com.roothide.patcher
+Version: 1.9-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4112
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), rsync
+Filename: ./debfiles/com.roothide.patcher_1.9-1+debug_iphoneos-arm64e.deb
+Size: 1201190
+MD5sum: f97cb733cca02be3af6d598e7c990109
+SHA1: 0fcf8ff761ee5c601be3cacfae1289c07cbe4c75
+SHA256: 268bd2141f7177122f4963a48beef08e37bbca60c1c541aa8e18081a9389fe67
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
 
 Package: com.roothide.patchloader
 Version: 0.0.2-4+debug
@@ -1591,6 +1628,23 @@ Size: 3936144
 MD5sum: a20853ee153ffd96233f19f7c72ee79b
 SHA1: d05fbcba1fe19e0be77945d0f79d21c754f14d1d
 SHA256: 1fff48391d4296d4561377c87d832b8cfc33685720512529f5d654dfa8cc92c9
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: org.coolstar.sileo
+Version: 2.5.1-5
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5.1-5_iphoneos-arm64e.deb
+Size: 3932712
+MD5sum: c076ada909d253c487887beed387b0db
+SHA1: 1ba940e14b7d80733d0e8b569bd8a6e1817b056d
+SHA256: 4ff785363367a4770021e16422127e24f36763c46947d4ca521795f122a7f70d
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
