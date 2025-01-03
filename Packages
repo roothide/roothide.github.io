@@ -654,6 +654,31 @@ Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
 Name: FLEXing
 Sileodepiction: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
 
+Package: com.pantsthief.flexing
+Version: 1.5.1
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 284
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex, mobilesubstrate
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debfiles/com.pantsthief.flexing_1.5.1_iphoneos-arm64e.deb
+Size: 17070
+MD5sum: e178bc5f0d2b920d1f596bafd1e7e113
+SHA1: b40a122cd08129e017111d8f0b96cee5e05b5e65
+SHA256: a3ce5254f2085b4cbc0d698f64d589ec57c7f39818ae0ce2a3e2666eebafb105
+Section: Tweaks
+Description: Open FLEX anywhere!  aka FLEXTool/FLEXList
+  .
+  Usage:
+  - long press status bar on home screen
+  - three-finger long press on app views
+  .
+Author: Tanner Bennett <thepantsthief@me.com>
+Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
+Name: FLEXing
+Sileodepiction-Unused: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
+
 Package: com.ps.cconandoff
 Version: 1.1.0
 Architecture: iphoneos-arm64e
@@ -1331,6 +1356,24 @@ Size: 1423362
 MD5sum: 851fd4cb0f9879c37d9852bf60df4e2c
 SHA1: a29bc4c17aea5a3b3b7a2ee827de7b660cc0d3c6
 SHA256: 77a4cd1be1b241c5dd35c69e3df893b1924997ea1c17afe6b5c34a8bd1e9ec12
+Section: Tweaks
+Description: A library for Flipboard Explorer.
+Author: Tanner Bennett <tannerbennett@me.com>
+Depiction: https://nscake.github.io/package.html?package=libflex
+Name: libFLEX
+Sileodepiction: https://nscake.github.io/depictions/libflex.sileo.json
+
+Package: libflex
+Version: 4.7.1
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <tannerbennett@me.com>
+Installed-Size: 5412
+Pre-Depends: firmware (>= 9.0)
+Filename: ./debfiles/libflex_4.7.1_iphoneos-arm64e.deb
+Size: 1317062
+MD5sum: 09f9fe256bcf4174c642a471d405ccd5
+SHA1: 8f0839c96f28e26ceca4a586d8636d1d89f106a2
+SHA256: b9d87d7644e7920450bbba8c4b397b139aaf41bdbfbae6365ee1fc88c580f717
 Section: Tweaks
 Description: A library for Flipboard Explorer.
 Author: Tanner Bennett <tannerbennett@me.com>
