@@ -1629,6 +1629,28 @@ Description: stylesheets for processing DocBook XML to various output formats
  The stylesheets are modular in the sense that you can extend and, to some
  extent, customize them. The documentation is included in a separate package.
 
+Package: dos2unix
+Architecture: iphoneos-arm64e
+Version: 7.4.2
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 732
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libintl8
+Filename: pool/main/iphoneos-arm64e/1800/dos2unix/dos2unix_7.4.2_iphoneos-arm64e.deb
+Size: 209416
+MD5sum: b765e84710da3ef7ec407130607c3db3
+SHA1: 39236d7416cb1e505d3fb54fc45ae8d0ecf556df
+SHA256: 3b9ecf5c90f5a4e4f985b53c537bab529b0d6afb28037f02ee6720246db3a012
+SHA512: 7a199a3b63177f70696df637dad09c344d43a8f17a452bfcad8d0e6baeab7e8ac3dfdd7100061bbe8dd8cc13e10fe065d935e90a0bdf00ce1cc6eb51fa7d0d9e
+Description: convert text file line endings between CRLF and LF
+ This package contains utilities dos2unix, unix2dos, mac2unix, and unix2mac 
+ to convert the line endings of text files between UNIX (LF), DOS (CRLF) and Mac (CR) formats.
+ Text files under Windows and DOS typically have two ASCII characters at the end 
+ of each line: CR (carriage return) followed by LF (line feed). Older Macs used just CR, while 
+ UNIX uses just LF. While most modern editors can read all these formats, 
+ there may still be a need to convert files between them.
+
 Package: dpkg-repack
 Architecture: iphoneos-arm64e
 Version: 1.52
