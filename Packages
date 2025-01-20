@@ -1396,6 +1396,25 @@ Description: Display the time as icon
 Author: 34306
 Name: iconTime
 
+Package: net.cadoth.fakepass
+Version: 0.1.5
+Architecture: iphoneos-arm64e
+Maintainer: alexia <me@alexia.lol>
+Installed-Size: 208
+Depends: com.opa334.libsandy, cy+cpu.arm64, firmware (>= 14.0), mobilesubstrate (>= 0.9.5000), preferenceloader
+Conflicts: cy+cpu.arm64e, com.foxfort.checkl0ck, com.yourepo.plat-ykor.check4round, me.krit.lockdown
+Filename: ./debfiles/net.cadoth.fakepass_0.1.5_iphoneos-arm64e.deb
+Size: 17304
+MD5sum: 804f0c634742918e3fbed91d8a941b62
+SHA1: 864d8a26438d8aa1858349d26788ebe8a450ba72
+SHA256: f2b679271e9f9b57437686f3b003fecad7ab52105369e48d86f92d2d3d9450d5
+Section: Tweaks
+Description: Fake passcode for checkm8 jailbreaks on iOS 14+ on A11
+Author: alexia <me@alexia.lol>
+Depiction: https://repo.alexia.lol/depictions/net.cadoth.fakepass
+Name: FakePass
+Sileodepiction: https://repo.alexia.lol/sileo-depictions/net.cadoth.fakepass.json
+
 Package: netskao.actionbarreborn
 Version: 1.1-2
 Architecture: iphoneos-arm64e
