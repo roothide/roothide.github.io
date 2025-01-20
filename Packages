@@ -13,27 +13,6 @@ Description: Five Icon Dock
 Author: unknown
 Name: Five Icon Dock
 
-Package: ai.akemi.appsyncunified
-Version: 116.0
-Architecture: iphoneos-arm64e
-Maintainer: Karen/あけみ <karen@akemi.ai>
-Installed-Size: 668
-Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5100), firmware (<= 18.2)
-Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178, cydia.net.angelxwind.appsyncunified, com.ifucker.appsync, com.sexyphonetech.appsyncunified, appsyncunifiedofficial, org.digbick.asufixed, cn.mingmei.asu623517234615234813, technology.goated.appsync, technology.goated.appsyncunified, vaginalfisting.appsynctool, science.xnu.substitute, akemi.appsink, akemi.appsyncunifed, akemi.appsyncunifed2, akemi.appsyncunifedpatched, appsyncpatched, appsyncrootless, weaponized.autism.technology.appsyncunified, ellekit (< 1.1)
-Replaces: us.hackulo.appsync50, net.angelxwind.appsyncunified
-Provides: appsync, net.angelxwind.appsyncunified
-Filename: ./debfiles/ai.akemi.appsyncunified_116.0_iphoneos-arm64e.deb
-Size: 53448
-MD5sum: dc5431488368e2d0c6c3361b26d3ef2f
-SHA1: e222878d30a1365dfec7cf0da7d38a5033f08bce
-SHA256: 86405de2a9d48fa293713616f38449dc79a33507bcb7cb854a87466df268a499
-Section: Tweaks
-Homepage: https://cydia.akemi.ai/
-Description: Enables the ability to install unsigned/fakesigned iOS applications.
-Author: Karen/あけみ, Linus Yang <karen@akemi.ai>
-Depiction: https://cydia.akemi.ai/?page/ai.akemi.appsyncunified
-Name: AppSync Unified
-
 Package: apt.tinyapps.Renet
 Version: 1.2.1
 Architecture: iphoneos-arm64e
@@ -2122,6 +2101,22 @@ Size: 38974
 MD5sum: ff17884bf080e18fafedcd9b4e74516e
 SHA1: 1d68e1449556a3142202432f521b2affafbbded0
 SHA256: 9b87cbe0c97f3eb9961e537a31413a93e4c1a6a8ecb28beb2e7bf43f0a7fd080
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
+
+Package: rootless-compat
+Version: 1.7.5
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 268
+Depends: com.roothide.patchloader(>= 0.0.4)
+Filename: ./debfiles/rootless-compat_1.7.5_iphoneos-arm64e.deb
+Size: 37814
+MD5sum: 9bc5492217f3932b85225ad49984365e
+SHA1: 6ece101944eb6672833f01803d3e35ef3f5d6f81
+SHA256: 214172736ae3783c0ceb911d67f1265ea41897e547a780c2cda00b327314e287
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
