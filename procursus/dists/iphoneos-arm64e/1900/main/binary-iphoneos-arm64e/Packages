@@ -15341,6 +15341,22 @@ SHA256: b231784583538cefc1f2714504bd3c261615a934f665bc15b33dd9ac8f10060c
 SHA512: a220d2694302940b1b39c1f9cb926f42ff93c77634498795f568aaf27d56c2c39b63ccca2a6764a2786e1318b0aca286034a240a2c8b4a3b7425dd48c01b6ca5
 Description: Interpreted, interactive, object-oriented programming language. Contains the header files necessary for developing.
 
+Package: libpython3.9-dev
+Architecture: iphoneos-arm64e
+Version: 3.9.9-2
+Priority: optional
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1108
+Depends: roothide (>= 0.0.9), libpython3.9 (= 3.9.9-2), libcrypt-dev, firmware (>= 14.0) | libexpat1-dev
+Filename: pool/main/iphoneos-arm64e/1900/python3/libpython3.9-dev_3.9.9-2_iphoneos-arm64e.deb
+Size: 192468
+MD5sum: 3294c425127e4f1a53df7a05e5f7a136
+SHA1: 8d099e9da2bd6501fef2e58f9a9f8698af4ec47e
+SHA256: 95a924577a47a09722fa34bdd8c7a7ed73021e7e5930da0d2058cfddeedde84e
+SHA512: 1a6f6cd9d76cc8a4433eae41ed3543ccb9cf4921c16848cf2067cd74b66797b0eb8aff74e10cc68074e2ac7d4b5f00c4911c039a75de8559576bf5469ae1df05
+Description: Interpreted, interactive, object-oriented programming language. Contains the header files necessary for developing.
+
 Package: libpython3.9
 Architecture: iphoneos-arm64e
 Version: 3.9.9-1
@@ -15359,6 +15375,24 @@ SHA256: aa80a11bb9c00bcc5d4534d8ac4bf029876903019d88f333f615c20a71247772
 SHA512: ccb294b1fb8e7f9acb7ab04f96ccb93205164c84e81a67ff7536230f1c8628181250b05bb299e45cc85ee58405f05e70e42cf00a29453029a173e502e0578469
 Description: Interpreted, interactive, object-oriented programming language. Contains the standard library and other shared libraries.
 
+Package: libpython3.9
+Architecture: iphoneos-arm64e
+Version: 3.9.9-2
+Priority: optional
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 70400
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libncursesw6 (>= 6.0), libreadline8 (>= 8.0), libssl3, libffi8, liblzma5 (>= 5.2.5), libgdbm6, libintl8, firmware (>= 14.0) | libexpat1, libcrypt2
+Conflicts: python3.9 (<< 3.9.5)
+Replaces: python3.9 (<< 3.9.5)
+Filename: pool/main/iphoneos-arm64e/1900/python3/libpython3.9_3.9.9-2_iphoneos-arm64e.deb
+Size: 21896312
+MD5sum: aa6e8940841eb4faf7dab5d46378bf27
+SHA1: 308eebc3fb7cdd851f21bdb4f98e79911d0284f2
+SHA256: 93d57020b80f510748764248eb782e27101d0df78d8a651dda9d7c99b25f8111
+SHA512: 00b34c1c4b5a0965f346903df35e7ae7884395fd9f37b3c8c373ee20d5dc1f7a8ffeabc8d47562693be3c7c1fc6c3508ad1069b38e7527dc0525b7371caeefef
+Description: Interpreted, interactive, object-oriented programming language. Contains the standard library and other shared libraries.
+
 Package: python3.9
 Architecture: iphoneos-arm64e
 Version: 3.9.9-1
@@ -15375,6 +15409,22 @@ SHA256: 9b6e8b2834dacd77afcd764d63b1dd0cb608455dbcf4d68d4e3c0db4f5136af5
 SHA512: ba606c6fdde1175ce91d02afebbfca564401a0a924494719b976db0d723cf44f0c9d2f451b6db25e7b5eba0bddde1593f3212fcc315298bff1868e40974e318c
 Description: Interpreted, interactive, object-oriented programming language.
 
+Package: python3.9
+Architecture: iphoneos-arm64e
+Version: 3.9.9-2
+Priority: optional
+Section: Scripting
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 92
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libpython3.9 (= 3.9.9-2)
+Filename: pool/main/iphoneos-arm64e/1900/python3/python3.9_3.9.9-2_iphoneos-arm64e.deb
+Size: 15604
+MD5sum: 721cfb85c74427d9ff350d6480a7a8b6
+SHA1: ac52020eb7e2edfd8927e2b8357244f8854aa48d
+SHA256: c8b2f3c238839c6aa222ace5b3a37965262f753e3ec9e4e29a52984d6008d611
+SHA512: 6d02183ff9ecc3fc6501a4d2a1611484417866f2dc5267e9bdd7f9c4af8f14cdedaff5f5b0dc4b16f31832c852c49036707cc869bce8f4e6fb930ca4d5fb1423
+Description: Interpreted, interactive, object-oriented programming language.
+
 Package: python3
 Architecture: iphoneos-arm64e
 Version: 3.9.9-1
@@ -15389,6 +15439,24 @@ MD5sum: 1f87f339ca941fd9136cff4961648077
 SHA1: 623adda877aea0f56577dfe7c94dc0b25bd7c214
 SHA256: ba0d7c684ca5a5ba13259142710670949ebdee92b831acb21e51f6e7404e7dde
 SHA512: b68cd4a1956910108c834d56003b161a7b334ee3e65b04fa3eb7984565e91b106ed379ebaafbd3026188f0066644a8c3fbef318e1b684d03d423d5c0c9336c97
+Description: Interpreted, interactive, object-oriented programming language.
+ Installing pip from the command line can be done with the `sudo python -m ensurepip` command.
+ After installing pip, place an SDK for your platform in /usr/share/SDKs. (e.g. /usr/share/SDKs/iPhoneOS.sdk)
+
+Package: python3
+Architecture: iphoneos-arm64e
+Version: 3.9.9-2
+Priority: optional
+Section: Scripting
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 16
+Depends: roothide (>= 0.0.9), python3.9
+Filename: pool/main/iphoneos-arm64e/1900/python3/python3_3.9.9-2_iphoneos-arm64e.deb
+Size: 5814
+MD5sum: 6e305e3ec49a5c87535b476d23710ce3
+SHA1: 7edf0c2e38d6b0e3b550a6dce769eac4886f6e68
+SHA256: 49c06be070c92ab83508eef3424f8bda2ebb1b92df07a92f26e224343900a84e
+SHA512: 504acf8957e8a54476f8bb18f41fe786fd69809f4c658c7c516b868af3d467feab1c76c975795fa51d5a839216dab81285f6c7017eee5c4cf6a5b70f106866aa
 Description: Interpreted, interactive, object-oriented programming language.
  Installing pip from the command line can be done with the `sudo python -m ensurepip` command.
  After installing pip, place an SDK for your platform in /usr/share/SDKs. (e.g. /usr/share/SDKs/iPhoneOS.sdk)
