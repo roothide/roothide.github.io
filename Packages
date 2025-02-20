@@ -658,6 +658,31 @@ Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
 Name: FLEXing
 Sileodepiction-Unused: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
 
+Package: com.pantsthief.flexing
+Version: 1.5.2
+Architecture: iphoneos-arm64e
+Maintainer: Tanner Bennett <thepantsthief@me.com>
+Installed-Size: 284
+Pre-Depends: firmware (>= 8.0)
+Depends: libflex, mobilesubstrate
+Conflicts: com.dgh0st.flexall, gg.gh0stbyte.flexivator, com.shmoopillic.flexible, applebetas.ios.tweak.devtools.flexgesture, com.creaturecoding.flexer, com.lacertosusrepo.flex4me, me.nepeta.flexxx, com.ipadkid.flexit, com.qiop1379.flexbar, com.leftyfl1p.reflex
+Filename: ./debfiles/com.pantsthief.flexing_1.5.2_iphoneos-arm64e.deb
+Size: 19698
+MD5sum: 2dfa9ec9e8a64fd166200e29b630bf14
+SHA1: 78c0ca739f59488f731fc45592888db4e5fa4e28
+SHA256: 9368f575e0b7bd730040d92ff0bff26b6fcffa6f562540260f9a4235fd32a693
+Section: Tweaks
+Description: Open FLEX anywhere!  aka FLEXTool/FLEXList
+  .
+  Usage:
+  - long press status bar on home screen
+  - three-finger long press on app views
+  .
+Author: Tanner Bennett <thepantsthief@me.com>
+Depiction: https://nscake.github.io/package.html?package=com.pantsthief.flexing
+Name: FLEXing
+Sileodepiction-Unused: https://nscake.github.io/depictions/com.pantsthief.flexing.sileo.json
+
 Package: com.ps.cconandoff
 Version: 1.1.0
 Architecture: iphoneos-arm64e
