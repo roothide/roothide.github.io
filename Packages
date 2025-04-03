@@ -977,6 +977,25 @@ Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modi
 Name: RootHide Patcher
 Support: https://github.com/roothide/RootHidePatcher
 
+Package: com.roothide.patcher
+Version: 2.1-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4128
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debfiles/com.roothide.patcher_2.1-1+debug_iphoneos-arm64e.deb
+Size: 1202686
+MD5sum: 40259b0ca66bff47c765a3b41b63cf59
+SHA1: 1aa5bae9ee6576f2b67a941aa291cd229b37c52e
+SHA256: 8e95be62faccec2cd7fe47de9aefb5bd551a16cddff784c67a9d4e9e4ae25b9b
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
 Package: com.roothide.patchloader
 Version: 0.0.2-4+debug
 Architecture: iphoneos-arm64e
