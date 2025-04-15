@@ -290,6 +290,24 @@ Description: Control Center module to view time since boot
 Author: MTAC
 Name: Uptime
 
+Package: com.nightwind.rootless-patcher
+Version: 0.0.1-38+debug
+Architecture: iphoneos-arm64e
+Maintainer: Nightwind
+Installed-Size: 168
+Depends: odcctools, ldid
+Filename: ./debfiles/com.nightwind.rootless-patcher_0.0.1-38+debug_iphoneos-arm64e.deb
+Size: 34208
+MD5sum: 4f9a83453faf0c24d0279de8e2654b93
+SHA1: 79c9c763c0a2d65aec6eab4262ad518cec624f2f
+SHA256: 2ba340a0659f8b1c15b8ec9a659a33b692e39b605cc50e7f0492a5d0ce4a7794
+Section: System
+Description: A CLI rootful to rootless patcher.
+ Utilizes a technique that does not require Xina-style symlinks.
+Tag: role::hacker
+Author: Nightwind and staturnz
+Name: rootless-patcher
+
 Package: com.opa334.altlist
 Version: 1.0.10
 Architecture: iphoneos-arm64
@@ -2314,6 +2332,22 @@ Size: 38920
 MD5sum: 8c626adfb76acf7e8bed1d8643f73d39
 SHA1: 65626a4ba33fc00ed41b8fe9a5b9d14c9bc9af1f
 SHA256: 99f1ef846214c2b831c70d01de73cd5a29b8be8078073323660341d0bb92322d
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
+
+Package: rootless-compat
+Version: 1.8
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 284
+Depends: com.roothide.patchloader(>= 0.0.4)
+Filename: ./debfiles/rootless-compat_1.8_iphoneos-arm64e.deb
+Size: 39322
+MD5sum: 3a2914e4a30d88904b9ee9b40d8b0331
+SHA1: b1322794f4fa674bfdba198fdcd3f047f4adc6dc
+SHA256: 0d566a31bd1bf14857d24258a89cabc6231760ebc3fc7188c3cfb85c1c89c4f4
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
