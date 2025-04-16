@@ -1,8 +1,6 @@
 # roothide.github.io
 RootHide's Repo
 
-
-
 ## about this repo
 
 
