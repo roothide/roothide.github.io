@@ -1,3 +1,20 @@
+Package: adv-cmds
+Architecture: iphoneos-arm64e
+Version: 199.0.1-1
+Multi-Arch: foreign
+Priority: important
+Section: Administration
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 744
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libncursesw6
+Filename: pool/main/iphoneos-arm64e/1900/adv-cmds/adv-cmds_199.0.1-1_iphoneos-arm64e.deb
+Size: 110104
+MD5sum: 560253c6bbce0ea0a7930d774e41b3c6
+SHA1: b193992aabe98b945399de5c7bca478125ed978f
+SHA256: f7d53704553df582542cdefcf7495af8fb92c124b9d12d59f8c34f90e6702170
+SHA512: 2a8a78b9218749a9ffd5f0a254da1ee5eb733232581a9d1886b50ca8f89370df4269f7c9c12f0d5cbcac083805e37059863ec40625125984be897e56ef713bf9
+Description: cap_mkdb, colldef, finger, gencat, last, locale, lsvfs, tabs
+
 Package: aircrack-ng
 Architecture: iphoneos-arm64e
 Version: 1.7
