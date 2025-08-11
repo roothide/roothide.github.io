@@ -13689,6 +13689,24 @@ Description: Developer documentation for Mesa
  extensions, the complete set of release notes and the development header
  files common to all Mesa packages.
 
+Package: micro
+Architecture: iphoneos-arm64e
+Version: 2.0.10
+Priority: optional
+Section: Text_Editors
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 11208
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/micro/micro_2.0.10_iphoneos-arm64e.deb
+Size: 4559252
+MD5sum: a3026a9a7dfbf2713f764533cc29ea79
+SHA1: 61eef08d91a376aaf8e67d9a0f485ae1c43c8e0c
+SHA256: ca1fbaf16f96a7e407ece32a735dab9db0ed00692e83bd59d58618d16105f0f1
+SHA512: 41a9373bd0e806467b74cf6cb71df29edb0aba3cca646f35aa4f19ef383915868366257be40596316ab4992bc6bf5d5765f3412e34c8f18bf5854e5c99cd75fc
+Description: modern and intuitive terminal-based text editor
+ micro is a terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals.
+ As the name indicates, micro aims to be somewhat of a successor to the nano editor by being easy to install and use.
+
 Package: libmpfr-dev
 Architecture: iphoneos-arm64e
 Version: 4.1.0
