@@ -1459,6 +1459,40 @@ SHA256: 5b3c9ce697b4d7a26325110fe0d066726ecdc69d43c3167a24beb08395e8095f
 SHA512: e697a292b5598a87e0736aa9dec1ac3a5d32ef50aa27ad4c73628433683dddc269036bef3dba6e10030771ec68b92e6f94b29661d5cb4ff67f9f2dc435db586e
 Description: ctags, rpcgen, unifdef
 
+Package: dialog
+Architecture: iphoneos-arm64e
+Version: 1.3-20220117
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1232
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2), libncursesw6, libintl8
+Filename: pool/main/iphoneos-arm64e/1800/dialog/dialog_1.3-20220117_iphoneos-arm64e.deb
+Size: 515468
+MD5sum: 4d9d7d118d739efadacc21a3f4515558
+SHA1: 418ba82f5f0f3f0fd40cd3a45e7b765edceaf09f
+SHA256: c0cc9ed277b2db9ccec63916662ce5f37e1088ecbe4720b9ebc10cf8827a4c46
+SHA512: 477a5074e2b7744fcd58e93fa4b3bfc4a537d0e71c00b1ada7fc5d81170d5dc5bf10752d432d8291eca83d18b7667dc059389d361c77beec004b01a915c5437a
+Homepage: http://invisible-island.net/dialog/dialog.html
+Description: Displays user-friendly dialog boxes from shell scripts
+ This application provides a method of displaying several different types
+ of dialog boxes from shell scripts.  This allows a developer of a script
+ to interact with the user in a much friendlier manner.
+ .
+ The following types of boxes are at your disposal:
+  yes/no           Typical query style box with "Yes" and "No" answer buttons
+  menu             A scrolling list of menu choices with single entry selection
+  input            Query style box with text entry field
+  message          Similar to the yes/no box, but with only an "Ok" button
+  text             A scrollable text box that works like a simple file viewer
+  info             A message display that allows asynchronous script execution
+  checklist        Similar to the menu box, but allowing multiple selections
+  radiolist        Checklist style box allowing single selections
+  gauge            Typical "progress report" style box
+  tail             Allows viewing the end of files (tail) that auto updates
+  background tail  Similar to tail but runs in the background.
+  editbox          Allows editing an existing file
+
 Package: diffutils
 Architecture: iphoneos-arm64e
 Version: 3.8
