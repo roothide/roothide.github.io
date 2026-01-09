@@ -988,6 +988,24 @@ Depiction: https://github.com/roothide/RootHideManagerApp
 Name: RootHide Manager
 Support: https://github.com/roothide/RootHideManagerApp
 
+Package: com.roothide.manager
+Version: 1.3.7
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 1108
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/com.roothide.manager_1.3.7_iphoneos-arm64e.deb
+Size: 754578
+MD5sum: d20eef9709a4c66867589ffd7d6a3dc7
+SHA1: 4ba6c59ae28b48904a67755691450521f1c31aa7
+SHA256: 78309e1f0eff89a17275c524b36a4d916ecf5e312711b651ecfd1e1ddaab7218
+Section: System
+Description: Configuare RootHide's Features
+Author: roothide
+Depiction: https://github.com/roothide/RootHideManagerApp
+Name: RootHide Manager
+Support: https://github.com/roothide/RootHideManagerApp
+
 Package: com.roothide.patcher
 Version: 1.4-2+debug
 Architecture: iphoneos-arm64e
