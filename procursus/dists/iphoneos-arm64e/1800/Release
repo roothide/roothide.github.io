@@ -1,45 +1,45 @@
 Architectures: iphoneos-arm64e
 Codename: 1800
 Components: main testing
-Date: Sun, 14 Dec 2025 09:14:03 +0000
+Date: Wed, 28 Jan 2026 04:24:29 +0000
 Description: Distribution of essential tools for iPhoneOS
 Label: Procursus(roothide)
 Origin: Procursus(roothide)
 Suite: stable
 Version: 1.0a1
 MD5Sum:
- 2f182c48be1dd885b3aff8d0a552794e              251 Release
+ b3a2c90c020d6a6548ee7e82504d6d07              251 Release
  969d78a98b0b3ae9d711427a11beca38          5602787 main/Contents-iphoneos-arm64e
  49c0ac75ccab2c4373dc66a51fa2f336           382244 main/Contents-iphoneos-arm64e.xz
  8423860f990d8762b64753aebad648eb           388756 main/Contents-iphoneos-arm64e.zst
- 543fe6cdd6db01b372133b17a30cc957           864953 main/binary-iphoneos-arm64e/Packages
- 9e212ac394e487ee9b0b6b09638a82b8           198980 main/binary-iphoneos-arm64e/Packages.xz
- 2a9b4aec1a890375161de062d23dd461           204350 main/binary-iphoneos-arm64e/Packages.zst
- 1a53a71a71c5a5223572c8907d1714de             1682 main/binary-iphoneos-arm64e/Release
+ 25008eed27434a02ef7a9b1dcb80435b           865736 main/binary-iphoneos-arm64e/Packages
+ 3cd464deccdce80bb52ac753dabee9de           199152 main/binary-iphoneos-arm64e/Packages.xz
+ b708f7fbd0108222aee60bdf282490e5           204525 main/binary-iphoneos-arm64e/Packages.zst
+ 74bf00649d7e5524d4d63e749733edcd             1682 main/binary-iphoneos-arm64e/Release
 SHA1:
- 34e31d79f0291e1f47a5ff9c3971cb1de11eab8a              251 Release
+ 970c51af8176d8e97243faf1f25ee2c9d82784fe              251 Release
  1c608614aadbe0c269868eba1dcb2f5c10455c16          5602787 main/Contents-iphoneos-arm64e
  04e4d381a13559622ac15413aed1dd05b5949f65           382244 main/Contents-iphoneos-arm64e.xz
  f4caaa74726d5e5b934842b6b7077ca7d557fc11           388756 main/Contents-iphoneos-arm64e.zst
- 7c9ca10edc8f20f823d48437e9065d8dceae3845           864953 main/binary-iphoneos-arm64e/Packages
- f694ec910ef556e00bd2fb129c4b597dc62f7965           198980 main/binary-iphoneos-arm64e/Packages.xz
- c0af46926f260dbdf8bcbe64b51d4600022d216c           204350 main/binary-iphoneos-arm64e/Packages.zst
- 4847a220bbd4097a0d28097965fc3454bdae03e0             1682 main/binary-iphoneos-arm64e/Release
+ 1a193ed6c69120f07f6a7ec5baa606b4776abaca           865736 main/binary-iphoneos-arm64e/Packages
+ 3c28d3578c7eeebe9a24c58f31006aa873d70c6e           199152 main/binary-iphoneos-arm64e/Packages.xz
+ 459daeebb34885c8cf245f88268b0ac506b87ab4           204525 main/binary-iphoneos-arm64e/Packages.zst
+ 9dc692af5eeef362569418b05371aab1ee828da9             1682 main/binary-iphoneos-arm64e/Release
 SHA256:
- 9bd7327f4688a33d5424c5f9047f22b6421f84fe7c020cc8d159e7cc5fdad9ac              251 Release
+ 30ce48fee1a41f68cb050fbae37c07011f32cb8ab864f2c0f10c655827c42c43              251 Release
  8ffcb865c8b25838adcc030e95ea80957b264fbb8f061a3ffeaa5e92c0dcca76          5602787 main/Contents-iphoneos-arm64e
  c09bfc06128094a5aa07ebe8d5bdb1688644088ff5559dc0de179dc9734bffa6           382244 main/Contents-iphoneos-arm64e.xz
  c5a9ccbdb2940664f2bf9caf0e71d8c3b3cef7260ce2280c912bc1588f1874f4           388756 main/Contents-iphoneos-arm64e.zst
- 12337fcd0aeaf9b0779378cb0648d8fe84f482953a5c17060a12f874f733d983           864953 main/binary-iphoneos-arm64e/Packages
- 9eb8e125f53b21058a15d3032b6fc6b6723db6ccd937f623c7ef584f2d18841a           198980 main/binary-iphoneos-arm64e/Packages.xz
- 74a4059ba5bc15820ea8648d5d78649eda2de5115573545eccaf2f09050bae42           204350 main/binary-iphoneos-arm64e/Packages.zst
- 568a911442a575c4defa3ef0e97380e1dda19c17dc4629066ad375b4e679d6d3             1682 main/binary-iphoneos-arm64e/Release
+ be574a35501191e3c6397f296d952089abb1824c1182078ffc6c32afae42d417           865736 main/binary-iphoneos-arm64e/Packages
+ 5d9801e45f366c66cd4183d4cb3e2c3fb78b12efe3d62f18916b2ca57516af56           199152 main/binary-iphoneos-arm64e/Packages.xz
+ 1babce39eae3c5cd040c0820865d0f88a1462944ea3019bab25ce13eb0648a8a           204525 main/binary-iphoneos-arm64e/Packages.zst
+ bf7d93bd830331f86474e6c20891dbf749f7704477c3bf553f4f784d19df742f             1682 main/binary-iphoneos-arm64e/Release
 SHA512:
- 5eb7a1841cdac355d5089007d8a2279285b2ae179867e060fdc189eb98be77a940d61502501b4fbb9d7fe3e87ea50346517cfabdc86840c5be7d84dc6c313b5d              251 Release
+ 71792cc74745bcff28ee567eb5044f633e04b181a55d4893c7161b48320d32264984e35bb9115f607a4c7594b2b2acca23f0638dbdae921a9543359cdadda979              251 Release
  fe111da733358b81e820df49e95d918eb6b943313d7a0d1c877002a87a028762a369bd5ba14193fb0594b69944578a76b9ebadeffa7f748dee0e3755e0fd04a9          5602787 main/Contents-iphoneos-arm64e
  acc9aeb47dde9bbf74e9807c8c40b04cc81eefe9a8929e36a47f4a9279af56087c9e9f68b32532c5b9fa3de976f9288ff949b8264e61cad4b83dfbf5d44e43f3           382244 main/Contents-iphoneos-arm64e.xz
  305eecd6d3575434b9b2ccf75cf6111c22135fe7482cd62228753f4823e080fc4a7a183644d24a9fda0d67e8d26a497d4718656f88dd3ddc15810f219107de4f           388756 main/Contents-iphoneos-arm64e.zst
- c0390db8abc3bc9e9de45b41a9a5cd3d0999f8f9636540bf74c79968a9a8d7cacc59e2153d4496fdb16b023424fe93e7fc35b88db5a409649400be25ac29f86f           864953 main/binary-iphoneos-arm64e/Packages
- a5021e09719aef7affc08ded09460440cb3fde8c603345863f4501a8ebffa539e323898244297c21af33578aabb9374f8e552c9a6c0560e992c98016c4368743           198980 main/binary-iphoneos-arm64e/Packages.xz
- bce277c658630182d58fbf5bc5e71fb278bb381114efbc1fc60d364e69cbc47ee51efcb66a9ce673a53ede4d36e3d142fb5cc2a79978ca324532771a253c21c1           204350 main/binary-iphoneos-arm64e/Packages.zst
- a372655eb158417d99732edd72705dc122414adb45154bd6e212a50b1a6692d6aff07d88d25f329c9e1abfa1914195304f1ee5b8c65d95e6c46cedafeb80e902             1682 main/binary-iphoneos-arm64e/Release
+ 65fec2b1014a7eef984234dc244f9551b2b4314bd992db97f71affc448bac9b5d4ae50f77a40720f648b6988d093710e3e253c4866083636acef11f869e26a5c           865736 main/binary-iphoneos-arm64e/Packages
+ 145ac6688cb082da31b335e5bb9c656f9c2c794350baf587a60c7d9ac5d5ddbdbd6643879bd102ee252807e1ead1c9448caa863e411607a6d5d283808e5024b9           199152 main/binary-iphoneos-arm64e/Packages.xz
+ 15015cc39d30330bbb3933626a886bae9a90d39aba09741a954350d71f99e497f44058affd3615db9932f7e81714cd591f3c1c8b740981c39eac59d9a9e0f13a           204525 main/binary-iphoneos-arm64e/Packages.zst
+ 64c6642066de8699714eb5bfa1b03b68001c02d9a3cc79f978d851bf3493bb4dc6dc2c3d9c0b2afe66c3139fb387e7055749fb3502c1779185fe2b336817d94c             1682 main/binary-iphoneos-arm64e/Release

@@ -15334,6 +15334,24 @@ SHA512: 93382318df3dbb1709e2e36971b49689953392b85b991f9328c2850c576e7603ad1e8403
 Description: Utility for creating and editing Apple property list files.
 Author: Samuel Bingner
 
+Package: plutil
+Architecture: iphoneos-arm64e
+Version: 0.2.2+2
+Section: System
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 124
+Provides: com.bingner.plutil (=0.2.2+2)
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
+Conflicts: com.ericasadun.utilities, com.bingner.plutil
+Filename: pool/main/iphoneos-arm64e/1800/plutil/plutil_0.2.2+2_iphoneos-arm64e.deb
+Size: 29666
+MD5sum: 4d2014ea72ecc460883553bbaa322af4
+SHA1: 42bf02337a5cfd3241acf18e1b3e80fcd1e840ab
+SHA256: 3dec94263ec60d992f12c9371b45c126b57dc292a979f876e4576c59966fed98
+SHA512: 1ef880464589cb2b6918fbf272bd72f5a061d6e9a527ca9470f3ed090175be034baccf0c907cc8301e858b485713e612dc35e874d548de6eed532bcf545462da
+Description: Utility for creating and editing Apple property list files.
+Author: Samuel Bingner
+
 Package: po4a
 Architecture: all
 Version: 0.63
