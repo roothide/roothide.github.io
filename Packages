@@ -1309,6 +1309,22 @@ Depiction: https://cydiageek.yourepo.com/pack/nodockground
 Name: NoDockGround
 Sileodepiction: https://cydiageek.yourepo.com/sileo/depiction/nodockground
 
+Package: daniel.batman
+Version: 0.0.2-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: daniel
+Installed-Size: 156
+Depends: mobilesubstrate
+Filename: ./debfiles/daniel.batman_0.0.2-1+debug_iphoneos-arm64e.deb
+Size: 5014
+MD5sum: dc8fb4da28ad6b890ccf4adb1a155d01
+SHA1: 362e15bbe4576018f0f11d51f1697529a110ec88
+SHA256: 0c79c609dc2d8f2a015ed743d4ebf2130ae34552eda9ab70f872762e19a5930d
+Section: Tweaks
+Description: Display much more battery information
+Author: daniel
+Name: Batman
+
 Package: dev.theos.orion14
 Version: 1.0.1-2+debug
 Architecture: iphoneos-arm64e
