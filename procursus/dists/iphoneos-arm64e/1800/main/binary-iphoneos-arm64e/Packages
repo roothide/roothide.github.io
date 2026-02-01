@@ -2433,6 +2433,28 @@ Description: FFmpeg library for image scaling and various conversions - runtime 
  .
  This package contains the runtime files.
 
+Package: figlet
+Architecture: iphoneos-arm64e
+Version: 2.2.5
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 888
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/figlet/figlet_2.2.5_iphoneos-arm64e.deb
+Size: 125880
+MD5sum: c9eba0e12a3b47729ecf9f30585f6b3c
+SHA1: 168d8886f301e62d6936dbb9673fbdfc6260076c
+SHA256: f61da28fe9cb57ad8b903f7769af8e9b2cbd8889f44a8a5b823640ce5c4e9eb4
+SHA512: 442d4a38e2d65fb7cb62a55a4c258979f2eb357e75df6cfd209378603b470b69d2ae0c6c31406d4f6904ea032285386eeba202253a7c201760bb2f435b8c94c0
+Description: Make large character ASCII banners out of ordinary text
+ FIGlet (Frank, Ian & Glenn's Letters) is a program that creates large
+ characters out of ordinary screen characters.
+ .
+ It can create characters in many different styles and can
+ kern and "smush" these characters together in various ways.  FIGlet
+ output is generally reminiscent of the sort of "signatures" many people
+ like to put at the end of e-mail, Usenet and MOTD messages.
+
 Package: file-cmds
 Architecture: iphoneos-arm64e
 Version: 400-1
