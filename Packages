@@ -1177,6 +1177,25 @@ Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modi
 Name: RootHide Patcher
 Support: https://github.com/roothide/RootHidePatcher
 
+Package: com.roothide.patcher
+Version: 2.1.3-1+debug
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 4124
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: ./debfiles/com.roothide.patcher_2.1.3-1+debug_iphoneos-arm64e.deb
+Size: 1202276
+MD5sum: 9d7a0aa497e2fc7851addf5bb3a05e39
+SHA1: d6ead4f3d11cee759170a39f43bebc1c5bf04bbc
+SHA256: d6d5970feee6fedcd610d8673ca8041a53d89fb9c7ce41b0c31778232c4b578d
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
 Package: com.roothide.patchloader
 Version: 0.0.2-4+debug
 Architecture: iphoneos-arm64e
@@ -1235,6 +1254,22 @@ Size: 3550
 MD5sum: 354403bb1669b034a7658c1d6d7beab3
 SHA1: fc98a79217b73de2dc63fb070cbe5bd076684087
 SHA256: 759d5a22a0f8d3d2bb9e95854cb7aacf2af5fb05233a4f4917efeee256659096
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
+Package: com.roothide.patchloader
+Version: 0.0.7
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 132
+Filename: ./debfiles/com.roothide.patchloader_0.0.7_iphoneos-arm64e.deb
+Size: 3908
+MD5sum: 0b74e254bcfae60699b91a73d0d0df8a
+SHA1: 15f27a35ed857893d9deebbe020ed4610416a89e
+SHA256: 89baec06197ec3d0a7fb09d14296fbf45abd8b2d54fe367f02eacbacbbb1e431
 Section: System
 Description: RootHide Dynamic Patches Loader
 Tag: role::developer
@@ -1544,6 +1579,25 @@ Size: 340272
 MD5sum: 1b571509cd0c0964eee597e36e14672a
 SHA1: ada5385ba6b3779925aae8aec10f8618fb4a9676
 SHA256: 4f6156fb43d34f5a305ae5347c6fa6feddf4eb05d7b19fdb71fd829692cbccfd
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
+Package: ellekit
+Version: 1.1.3-2
+Architecture: iphoneos-arm64e
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: ./debfiles/ellekit_1.1.3-2_iphoneos-arm64e.deb
+Size: 346104
+MD5sum: f7ae3d1b8f4ffa6e6ae7661771d1eb64
+SHA1: 77c2ca064f8ee76ae000fbdbe0f4fa323057ab72
+SHA256: f8d1cce1f6fda093149332a033172740d5e451d7da4f54dc61f5cee6622c87ba
 Section: Tweak Injection
 Priority: optional
 Description: ElleKit tweak injection libraries and loader
@@ -1911,6 +1965,23 @@ Size: 3942156
 MD5sum: 99810533a168bbd55d06ab58ce9bec0f
 SHA1: 1fde6244f348b9cdca2daa94c167f082b2345226
 SHA256: 10e4a42cf13f31c0243a71ed329437826865d4faaae6aac88fa337caaf43d61a
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: org.coolstar.sileo
+Version: 2.5.1-11
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5.1-11_iphoneos-arm64e.deb
+Size: 3953968
+MD5sum: b2b3abf3be4de5b5023c6249f0e4338c
+SHA1: cd031a4d50cdf3f77af08c81b3e1aa0adc1e24a0
+SHA256: 3b40e04e3d3d6248a760dc64de6694194c1ddbb91dfa40cc98c361a2c8554d84
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
