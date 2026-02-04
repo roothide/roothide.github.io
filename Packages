@@ -1276,6 +1276,22 @@ Tag: role::developer
 Author: roothide
 Name: PatchLoader
 
+Package: com.roothide.patchloader
+Version: 0.0.8
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 132
+Filename: ./debfiles/com.roothide.patchloader_0.0.8_iphoneos-arm64e.deb
+Size: 3930
+MD5sum: 50811beb07159320a3606de37b4604dc
+SHA1: a5e692536cf006f32a80be98131c546047405643
+SHA256: ed3d0c2e72865e70166752d8508006a9a32b4d76407fb838a2c485d5e6613d3a
+Section: System
+Description: RootHide Dynamic Patches Loader
+Tag: role::developer
+Author: roothide
+Name: PatchLoader
+
 Package: com.simplycode.PostBox
 Version: 0.8.1-4
 Architecture: iphoneos-arm64e
@@ -2598,6 +2614,22 @@ Size: 39322
 MD5sum: 3a2914e4a30d88904b9ee9b40d8b0331
 SHA1: b1322794f4fa674bfdba198fdcd3f047f4adc6dc
 SHA256: 0d566a31bd1bf14857d24258a89cabc6231760ebc3fc7188c3cfb85c1c89c4f4
+Section: RootHide Patches
+Description: Compat Layer for Rootless Tweaks
+Author: roothide
+Name: rootless-compat
+
+Package: rootless-compat
+Version: 1.9
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 284
+Depends: com.roothide.patchloader(>= 0.0.4)
+Filename: ./debfiles/rootless-compat_1.9_iphoneos-arm64e.deb
+Size: 39662
+MD5sum: 48fcff78af4233e2a87ca47e69a033b6
+SHA1: cefea2f9ae4942c5e70412cb329876aee3f4c176
+SHA256: 365a29692f4dcde0666ac774015adf177c9b9b5bfa60d7a43971a93515289eab
 Section: RootHide Patches
 Description: Compat Layer for Rootless Tweaks
 Author: roothide
