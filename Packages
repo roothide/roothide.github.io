@@ -523,6 +523,23 @@ Author: opa334
 Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
 Name: libSandy
 
+Package: com.opa334.libsandy
+Version: 1.1.6-3
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 468
+Filename: ./debfiles/com.opa334.libsandy_1.1.6-3_iphoneos-arm64e.deb
+Size: 19544
+MD5sum: 6d2269daa2b15e9ec9337caae4179620
+SHA1: b2ba0a2fdb56bd923b27b8610f963141ab88959c
+SHA256: f23aef52e8b351cd2a81977546ed7804ef0fd9dbf95b87bce9c551b16fcd5d58
+Section: System
+Description: Securely extend the sandbox of system processes and user applications
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+Name: libSandy
+
 Package: com.opa334.libundirect
 Version: 1.1.5-2+debug
 Architecture: iphoneos-arm64e
@@ -2035,6 +2052,23 @@ Size: 3953968
 MD5sum: b2b3abf3be4de5b5023c6249f0e4338c
 SHA1: cd031a4d50cdf3f77af08c81b3e1aa0adc1e24a0
 SHA256: 3b40e04e3d3d6248a760dc64de6694194c1ddbb91dfa40cc98c361a2c8554d84
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
+
+Package: org.coolstar.sileo
+Version: 2.5.1-12
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: ./debfiles/org.coolstar.sileo_2.5.1-12_iphoneos-arm64e.deb
+Size: 3947388
+MD5sum: 7fabc4b298eb9b1834df205163dacd05
+SHA1: 480e41f3ad9b404ae43c28a36655f5c19a42c5d3
+SHA256: e85ab12f8d98da9a5350293647266b898282b0d766df2397526ab253d84eede3
 Section: Packaging
 Description: A modern APT package manager frontend
 Author: Amy While <me@anamy.gay>
