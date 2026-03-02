@@ -14399,6 +14399,23 @@ Description: The Network Mapper
  commandline modes. Several popular handheld devices are also supported, 
  including the Sharp Zaurus and the iPAQ.
 
+Package: notifyutil
+Architecture: iphoneos-arm64e
+Version: 279.40.4
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/notifyutil/notifyutil_279.40.4_iphoneos-arm64e.deb
+Size: 10118
+MD5sum: 4f47e9ae86cbc26e9b0c41e13eb8d029
+SHA1: 536f76d009197360df6d862aaad23a2dce07dde3
+SHA256: f50152d55ac821af424f885a223c18855d6639f073b11673ad0d308d6b57f753
+SHA512: 066a5b4048145dd40064004767b9224914dddaf9040d16a4e7612455e9771253ec6560495c8f6c9163c836272955361b50a38370c5a762898a067afb17722bfa
+Homepage: https://opensource.apple.com/source/Libnotify/
+Description: notification command line utility
+
 Package: libnpth0-dev
 Architecture: iphoneos-arm64e
 Version: 1.6-2
@@ -16015,6 +16032,25 @@ MD5sum: 1070aaa7f040a8c0386c0bc434f4f9b9
 SHA1: 8280c67defe0c741f60a7a403749007815a8ce58
 SHA256: 514597208c2f18f364a60b59460f217a29ddb788e35eebcb03c2fd9bb07180a5
 SHA512: aa0363eb98fef6d72a6dcf0448615a15c2784514a8bcc79d36e1b0ec0ec8b30cb0d245e6468e94ec91d9df19480fa49f78a024543ad266332b227dfd36200bf0
+Description: roothide core package
+Name: roothide core
+Author: roothide
+
+Package: roothide
+Architecture: iphoneos-arm64e
+Version: 0.1.0
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide
+Installed-Size: 936
+Depends: libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/roothide/roothide_0.1.0_iphoneos-arm64e.deb
+Size: 54066
+MD5sum: b84ec0de12e9f9d6563e31399fa81e01
+SHA1: 75a99285d991ac0bba4bba3fa2cecc8165f78fe6
+SHA256: 09a0a7ee0849b55ba207c5adcf801fe8230e46d963c50df47a34ca8a360d75e9
+SHA512: c4bdb702fc2361eb2bf6344f3ad5a42a5959684a77054aab74757230f6aa4df3936fe26dae69f6c09c2934446f4e2129b9169ab02e381152ff57d0102d0f1fc5
 Description: roothide core package
 Name: roothide core
 Author: roothide
