@@ -505,6 +505,23 @@ Author: opa334 <opa334@protonmail.com>
 Depiction: https://opa334.github.io/depic/Choicy/index.html
 Name: Choicy
 
+Package: com.opa334.choicy
+Version: 1.5.3-2
+Architecture: iphoneos-arm64e
+Maintainer: opa334 <opa334@protonmail.com>
+Installed-Size: 1056
+Depends: mobilesubstrate, com.opa334.altlist (>=1.0.4), preferenceloader
+Filename: ./debfiles/com.opa334.choicy_1.5.3-2_iphoneos-arm64e.deb
+Size: 161430
+MD5sum: 007d95397946dc97181d900388334b1c
+SHA1: 636c4d9e47af15ad608fb8633430a4a9410a1e4a
+SHA256: 9676438bd951e4674e430498a4535fd0a0771ecaabab05d5eab0ec159bfcc4e3
+Section: Tweaks
+Description: Advanced Tweak Configuration!
+Author: opa334 <opa334@protonmail.com>
+Depiction: https://opa334.github.io/depic/Choicy/index.html
+Name: Choicy
+
 Package: com.opa334.libsandy
 Version: 1.1.3-3-1+debug
 Architecture: iphoneos-arm64e
@@ -1034,6 +1051,24 @@ Size: 754734
 MD5sum: 38f5f7f8310bd8954a5f26aec53dcbd9
 SHA1: 2a2347848b4503c716248d3c45dd351d17010a06
 SHA256: e49472d0f7001264a5423fe0bc3d6ee55b1ccf32cd1782170c347f5a5d97490f
+Section: System
+Description: Configuare RootHide's Features
+Author: roothide
+Depiction: https://github.com/roothide/RootHideManagerApp
+Name: RootHide Manager
+Support: https://github.com/roothide/RootHideManagerApp
+
+Package: com.roothide.manager
+Version: 1.3.9
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 1108
+Depends: firmware (>= 15.0)
+Filename: ./debfiles/com.roothide.manager_1.3.9_iphoneos-arm64e.deb
+Size: 754942
+MD5sum: 2aa7b4019445708e6fdaa6f1ee6f4a66
+SHA1: 513bdf4b3d83baa07b73131dd0d7877b99beb943
+SHA256: b8f075e1844709845962900b22fe71136a66369a2c35bb1201087f2fd9476b7d
 Section: System
 Description: Configuare RootHide's Features
 Author: roothide
