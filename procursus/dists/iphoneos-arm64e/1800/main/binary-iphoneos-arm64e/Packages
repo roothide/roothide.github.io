@@ -6444,13 +6444,13 @@ Priority: optional
 Section: Development
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 80
-Depends: roothide (>= 0.0.8), libiosexec1 (= 1.3.1-2)
+Depends: roothide (>= 0.1.0), libiosexec1 (= 1.3.1-2)
 Filename: pool/main/iphoneos-arm64e/1800/libiosexec/libiosexec-dev_1.3.1-2_iphoneos-arm64e.deb
-Size: 31058
-MD5sum: e0475a8e6e49c089f92b6f6bab9094c3
-SHA1: a91a1c9a3a9c365eac26182cf2ed6fff5c2248e7
-SHA256: 8012aa441825ecb99108902e3ac4d26d6424471a0fcb0f156bff8beef6344f6e
-SHA512: 0b61123a3c88c2d12b0510f18251aedcd93d39c828e7db73c1211a7352f115b2cff3e636facb0b61aae3ee32b6c307c372257cbf44401a140c228c105385eaf3
+Size: 31060
+MD5sum: 7b3735b67081f72f9de16b1a7f8a9f49
+SHA1: fa9da254feaf3c47bb88d1bd302edfbfb72df930
+SHA256: c9ce9812fd84f2d8118e3b4dbd27e06abcdf90a32925e369ff37d27994019cb0
+SHA512: 0a31a4da71e6f6fb643689e5bd888b9174453057cd3476968b67f7679dfb9234302683e4c4e68899adb0fd7733974f00752fe9f449b5ee7b2551639cee0d0fab
 Homepage: http://github.com/ProcursusTeam/libiosexec
 Description: development files for libiosexec
 
@@ -6479,13 +6479,13 @@ Essential: yes
 Section: Libraries
 Maintainer: roothide <roothideDev@twitter>
 Installed-Size: 76
-Depends: roothide (>= 0.0.8), libiosexec1 (>= 1.3.1-2)
+Depends: roothide (>= 0.1.0)
 Filename: pool/main/iphoneos-arm64e/1800/libiosexec/libiosexec1_1.3.1-2_iphoneos-arm64e.deb
-Size: 10424
-MD5sum: da44e69b56ba8f69219bf77e81faf35c
-SHA1: 6bd1a6a4fb41856d481112f242a28515998b4124
-SHA256: c13fe88558ea30a684f1b7302949fe856675e2d974d0e13ff6a9740e03f8172f
-SHA512: d58dc2bae69d5e5583ae0669d50c84342a91adae1b3d835f575d64711b7670d5df61eb329fcde48f9a333726460eb33b1b68ad4a52795f1bde5adb76dde21ba6
+Size: 10426
+MD5sum: 8d47b8db59ddba72d9c579ce4b4f652c
+SHA1: 2e8eb084452086c589d2ec9f45c99ace8b70debe
+SHA256: 959724df3cf5d599000cd05cbd092920e96818304ba1583bcf39d335a612a72e
+SHA512: ac4c60ef1a8a4a2111df18dc5c7a04ea841fe64b73142af974ee89985a04cff7e270ccd6a2e7f4df5a235a579636312223152d84f07bf27170db9ab880315ee0
 Homepage: http://github.com/ProcursusTeam/libiosexec
 Description: shim for execve w/ shell script support
 
