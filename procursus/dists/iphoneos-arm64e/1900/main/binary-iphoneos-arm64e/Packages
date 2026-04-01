@@ -16374,6 +16374,35 @@ SHA512: efb00f5c4cfad3676fc6513442b1ce3124189fae7882940cad2d0c1cd2a63942cc93a910
 Homepage: https://www.sqlite.org/
 Description: Command line interface for SQLite 3
 
+Package: sshpass
+Architecture: iphoneos-arm64e
+Version: 1.09
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 104
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/sshpass/sshpass_1.09_iphoneos-arm64e.deb
+Size: 17976
+MD5sum: 5843cb5ab98cd25229ace97f10bae602
+SHA1: b51d0b865868c2e9a120906a2de1ff4a44122ca9
+SHA256: c419772db7db07449e290bd0f930a282a9da8a15e12f4ebbcecb3168b1747a3b
+SHA512: f39c06d9f37b1db0c776bf3e32b8b1b4a3f3de549bd6c8a8faf0bc3a071ed5be1b428c76bae5d99e2bd0d1a493b209ed6fbac3279b1ebf0d21da19ea20f2e27e
+Description: Non-interactive ssh password authentication
+ SSH's (secure shell) most common authentication mode is called "interactive
+ keyboard password authentication", so called both because it is typically
+ done via keyboard, and because openssh takes active measures to make sure
+ that the password is, indeed, typed interactively by the keyboard. Sometimes,
+ however, it is necessary to fool ssh into accepting an interactive password
+ non-interactively. This is where sshpass comes in.
+ .
+ SECURITY NOTE: There is a reason openssh insists that passwords be typed
+ interactively. Passwords are harder to store securely and to pass around
+ securely between programs. If you have not looked into solving your needs
+ using SSH's "public key authentication", perhaps in conjunction with the ssh
+ agent (RTFM ssh-add), please do so before being tempted into using this
+ package.
+
 Package: sudo
 Architecture: iphoneos-arm64e
 Version: 1.9.12p2
