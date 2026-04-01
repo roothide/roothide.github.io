@@ -46,7 +46,7 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 		$FTPARCHIVE $EXTRAOPTS release -c config/${arch}-basic.conf dists/${dist}/${comp}/${binary} > dists/${dist}/${comp}/${binary}/Release 2>/dev/null
 	done
 
-	$FTPARCHIVE $EXTRAOPTS release -c config/$(echo "${dist}" | cut -f1 -d '/').conf dists/${dist} > dists/${dist}/Release 2>/dev/null
+	$FTPARCHIVE $EXTRAOPTS release -c config/${dist}.conf dists/${dist} > dists/${dist}/Release 2>/dev/null
 
 	gpg -abs -u 38FFD71E113DB930935928FC664421BE84375685 -o dists/${dist}/Release.gpg dists/${dist}/Release
 	gpg -abs -u 38FFD71E113DB930935928FC664421BE84375685 --clearsign -o dists/${dist}/InRelease dists/${dist}/Release
