@@ -786,6 +786,22 @@ Description: JSC security hardening for WebContent process. Configures JavaScrip
 Author: roothide
 Name: lockdown
 
+Package: com.roothide.lockdown
+Version: 2.0
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 136
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: ./debfiles/com.roothide.lockdown_2.0_iphoneos-arm64e.deb
+Size: 5256
+MD5sum: 6b62ffea6abd0054b8d32d3d32789c37
+SHA1: 1a5fdb1dbbf1389db596c2eb6b3aca3491a01818
+SHA256: 503928cc010c1b4c037ec31d714581ce59470837a8b6f225d3cc17509c317ac4
+Section: Tweaks
+Description: JSC security hardening for WebContent process. Configures JavaScriptCore options to eliminate exploit primitives (addrof/fakeobj, JIT type confusion, GC UAF). Enabled by default!
+Author: roothide
+Name: lockdown
+
 Package: com.roothide.manager
 Version: 0.7-1+debug
 Architecture: iphoneos-arm64e
