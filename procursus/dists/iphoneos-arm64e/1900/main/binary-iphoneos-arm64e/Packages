@@ -14714,6 +14714,24 @@ Description: Secure Sockets Layer toolkit - shared libraries
  .
  It provides the libssl and libcrypto shared libraries.
 
+Package: oslog
+Architecture: iphoneos-arm64e
+Version: 0.0.4.3
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 80
+Provides: net.limneos.oslog
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1900/oslog/oslog_0.0.4.3_iphoneos-arm64e.deb
+Size: 8592
+MD5sum: be2eb0f81eea6aecf9890b8abb7cfb42
+SHA1: d1a8008bb25b99f21ebdd867dcb41902006abc1b
+SHA256: 7129a07113725b52390d25ee2f7a56e3f0909befb20c6567c0a100f0421ec859
+SHA512: 9159beda7202d28542a811b8985ba155b3cd3c37137c499fe084456592492b8b34dc6be019e950ec9cb2bba2565364a4a31ab0035043b6e140c664379651c53e
+Description: os_log implementation for iOS
+Author: Elias Limneos
+
 Package: libp11-kit-dev
 Architecture: iphoneos-arm64e
 Version: 0.24.1
