@@ -4,6 +4,8 @@ cd $(dirname "$0")
 EXTRAOPTS='--db=/tmp/repocache.db -oAPT::FTPArchive::AlwaysStat=true'
 FTPARCHIVE='apt-ftparchive'
 
+mkdir -p alt-repo
+
 # Update ${cfver}.config for new Architectures
 for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 	if [[ "${ogdist}" == "iphoneos-arm64e"* ]]; then
@@ -17,6 +19,7 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 	binary=binary-${arch}
 	contents=Contents-${arch}
 	mkdir -p dists/${dist}
+	mkdir -p alt-repo/"$(echo ${dist} | cut -d/ -f2)"
 	rm -f dists/${dist}/{Release{,.gpg},InRelease}
 
 	cp -a CydiaIcon*.png dists/${dist}
@@ -28,16 +31,22 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 		mkdir -p dists/${dist}/${comp}/${binary}
 		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.zst},Release{,.gpg}}
 
+		if [ -d "pool/${comp}/${ogdist}"/llvm ]; then
+			rm -f alt-repo/"$(echo ${dist} | cut -d/ -f2)"/*.deb
+			cp -a "pool/${comp}/${ogdist}"/llvm/. alt-repo/"$(echo ${dist} | cut -d/ -f2)"
+			rm -rf "pool/${comp}/${ogdist}"/llvm
+		fi
+
 		$FTPARCHIVE $EXTRAOPTS packages pool/${comp}/${ogdist} > \
 			dists/${dist}/${comp}/${binary}/Packages 2>/dev/null
 
-		sed -e "s|pool/${comp}/${ogdist}/llvm/|https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/${comp}/${ogdist}/llvm/|g" \
-			dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.new
-		rm dists/${dist}/${comp}/${binary}/Packages && mv dists/${dist}/${comp}/${binary}/Packages.new dists/${dist}/${comp}/${binary}/Packages
-		
+		#sed -e "s|pool/${comp}/${ogdist}/llvm/|https://github.com/roothide/roothide.github.io/raw/main/procursus/pool/${comp}/${ogdist}/llvm/|g" \
+		#	dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.new
+		#rm dists/${dist}/${comp}/${binary}/Packages && mv dists/${dist}/${comp}/${binary}/Packages.new dists/${dist}/${comp}/${binary}/Packages
+
 		xz -c9 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.xz
 		zstd -q -c19 dists/${dist}/${comp}/${binary}/Packages > dists/${dist}/${comp}/${binary}/Packages.zst
-		
+
 		$FTPARCHIVE $EXTRAOPTS contents pool/${comp}/${ogdist} > \
 			dists/${dist}/${comp}/${contents}
 		xz -c9 dists/${dist}/${comp}/${contents} > dists/${dist}/${comp}/${contents}.xz
