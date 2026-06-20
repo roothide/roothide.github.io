@@ -574,6 +574,23 @@ Author: opa334
 Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
 Name: libSandy
 
+Package: com.opa334.libsandy
+Version: 1.1.6-4
+Architecture: iphoneos-arm64e
+Maintainer: opa334
+Installed-Size: 468
+Filename: ./debfiles/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
+Size: 19562
+MD5sum: 288946aff58fc1d2a9ec4ab4da6b0d30
+SHA1: 30a1d53cf5f8095a5fa9eacf07707aaf1d213f63
+SHA256: 81a1eeb17480b6ee200f8f4bf815892e6f58cc55f5aea6d7abe899db11da4bb5
+Section: System
+Description: Securely extend the sandbox of system processes and user applications
+Tag: role::developer
+Author: opa334
+Depiction: https://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libsandyDp
+Name: libSandy
+
 Package: com.opa334.libundirect
 Version: 1.1.5-2+debug
 Architecture: iphoneos-arm64e
@@ -1759,6 +1776,26 @@ Author: Evelyn
 Icon: https://ellekit.space/logos/logo.png
 Name: ElleKit
 
+Package: ellekit
+Version: 1.1.3-4~beta1
+Architecture: iphoneos-arm64e
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Breaks: com.opa334.libsandy (<= 1.1.6-3)
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Filename: ./debfiles/ellekit_1.1.3-4~beta1_iphoneos-arm64e.deb
+Size: 143404
+MD5sum: 797d1fa71eb90db4c9114f68de0572d3
+SHA1: 1088852f647bc01085df8d6b483bdc7d4fe63121
+SHA256: fcd4aafc94b9e8393020bb553aaa6e219d60a6c9d508382b0fa7dbc745bda196
+Section: Tweak Injection
+Priority: optional
+Description: ElleKit tweak injection libraries and loader
+Author: Evelyn
+Icon: https://ellekit.space/logos/logo.png
+Name: ElleKit
+
 Package: ios-debugserver
 Version: 0.0.1
 Architecture: iphoneos-arm64e
@@ -1951,6 +1988,22 @@ SHA256: 9631dc0e3ba6333d771b98be7eac46c2f62171327dda453b0d77832e9000fb21
 Section: Tweak Injection
 Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Evelyn
+Name: Legacy arm64e Support
+
+Package: oldabi
+Version: 2.0
+Architecture: iphoneos-arm64e
+Maintainer: Nightwind
+Installed-Size: 68
+Depends: ellekit (>= 0.4), cy+cpu.arm64e, firmware (>= 15.0)
+Filename: ./debfiles/oldabi_2.0_iphoneos-arm64e.deb
+Size: 3206
+MD5sum: badcb9d02a41d2c692b5f92d4fc174f0
+SHA1: 0af0dbb9f18de725ddbde563c4846dcb16e36b4c
+SHA256: 5ed15e9f7bb3103c51bc360d2783fbcfcfe37ec4d5dc8e7319d30ce16fdd2654
+Section: Tweaks
+Description: Support for legacy arm64e ABI in iOS 15.0+
+Author: Nightwind
 Name: Legacy arm64e Support
 
 Package: oldabi-stub
