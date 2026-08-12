@@ -1,12 +1,12 @@
-# roothide.github.io
-RootHide's Repo
+#roothide.github.io
+RootHide的回购
 
 
 
-## about this repo
+##关于此回购
 
 
-repackage some free packages to be compatible with roothide. does not contain any pirated or paid packages.
+重新包装一些免费包，使其与Roothide兼容。不包含任何盗版或付费包。
 
 
-when you updated your tweak for roothide and uploaded it to your own repo or public repo, contact us if you want to remove it from this repo.
+当您更新了您对Roothide的调整并将其上载到您自己的repo或公共repo时，如果您想将其从该repo中删除，请联系我们。
