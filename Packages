@@ -2098,6 +2098,22 @@ Description: Support for legacy arm64e ABI in iOS 15.0+
 Author: Nightwind
 Name: Legacy arm64e Support
 
+Package: oldabi
+Version: 2.0.1+roothide-1
+Architecture: iphoneos-arm64e
+Maintainer: Nightwind
+Installed-Size: 68
+Depends: ellekit (>= 0.4), cy+cpu.arm64e, firmware (>= 15.0)
+Filename: ./debfiles/oldabi_2.0.1+roothide-1_iphoneos-arm64e.deb
+Size: 3230
+MD5sum: 0921bde066ba31af91cae0c698bfe9b4
+SHA1: e00af52776e864f70735fa70d28207504ebfb737
+SHA256: 5db6b7c544b6afe1dd719ca29caf0cfb0c869d2855f33662ad7fd68097b04af1
+Section: Tweaks
+Description: Support for legacy arm64e ABI in iOS 15.0+
+Author: Nightwind
+Name: Legacy arm64e Support
+
 Package: oldabi-stub
 Version: 0.3
 Architecture: iphoneos-arm64e
