@@ -4972,6 +4972,24 @@ SHA512: d1463bebb9e733431674f9f35a78d7b8760b30e2c45fecb3d99937420dc8d7fecae7cf12
 Homepage: https://github.com/ProcursusTeam/launchctl
 Description: Tells launchd what to do
 
+Package: launchctl
+Architecture: iphoneos-arm64e
+Version: 1:1.2.0
+Priority: required
+Essential: yes
+Section: System
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 148
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/launchctl/launchctl_1:1.2.0_iphoneos-arm64e.deb
+Size: 52962
+MD5sum: 75607423d473de5858c89f9cea12cbac
+SHA1: 07ec7a30cd8df8f077c77fe11d9cc93ba0a5c008
+SHA256: c4ff40999c3b2cd743bf9ef6b25ecb5b904483a919029eff84ca11acec93bd2a
+SHA512: 34b508a8b46cada763a4d4cf4b47776111c6a88a80ef4b63eb9534352c56ebc8becb227abbbd115e461346f594a573589181b5f8a1c520c88167ac481486fb10
+Homepage: https://github.com/ProcursusTeam/launchctl
+Description: Tells launchd what to do
+
 Package: liblcms2-2
 Architecture: iphoneos-arm64e
 Version: 2.12
@@ -7647,6 +7665,102 @@ Description: modules for parsing/translating POD format documents
  Pod::Simple which brings more robustness, unicode and various other benefits.
  It has been removed from perl core after 5.31.0, and is packaged only for
  backward compatibility.
+
+Package: libprotobuf-dev
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 11740
+Depends: roothide (>= 0.1.0), libprotobuf32 (= 3.21.2), libprotobuf-lite32 (= 3.21.2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/libprotobuf-dev_3.21.2_iphoneos-arm64e.deb
+Size: 3708726
+MD5sum: 3431e04dccdedcb3550b051bc4e2f4dd
+SHA1: 34fa7b6f69d348e8e53cd0204b17bd701dc2de34
+SHA256: cd8b319a10f66ff44e3a0aa9de917053d0639ff12abc07ec2aadd9279cee24b3
+SHA512: 07b66e2c8113c27be34632268e931c376fc5528ae032d09e960e1f5005781a493323c62c4351ed6399de1b36f60872e246de7d3cecfd74868dc17dfcf60e6e18
+Description: Protocol Buffers - Google's data interchange format - devel
+
+Package: libprotobuf-lite32
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 668
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/libprotobuf-lite32_3.21.2_iphoneos-arm64e.deb
+Size: 179066
+MD5sum: e6ffab25658b55fa6d29edd25e890d35
+SHA1: 733dbd448a224977897a79917536b2ae5787112e
+SHA256: 71ed18905a3b6f0b538b5202b70567470d53d048b65ada959c27550fb113ee36
+SHA512: dc3010298decf4709545e3223511c20a8cc9e9a2452a3ada1e38e00a81ec4fdf5ef7ab35e696afa349165814b0031a29102b6fd37b7be1f00ee33be3c9693227
+Description: Protocol Buffers - Google's data interchange format (lite version)
+
+Package: libprotobuf32
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 2256
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/libprotobuf32_3.21.2_iphoneos-arm64e.deb
+Size: 719992
+MD5sum: 97d369d4900a445f9012db85ed1292ad
+SHA1: 1b8574a289dd2983fbfb81a14361a95b369e8503
+SHA256: e8c5177d7ebb2699649e5167dc0c797a91b91ad1178d1be5e02f7c2e87559bb3
+SHA512: dc10c2d88b9ad2084614085ae8c297c3aa5eb2dec469efc1164c307aac0e583e8cb6cb620c88e330c0262dfd2f518daa0b584cf5269e7b2144669f2f44859c96
+Description: Protocol Buffers - Google's data interchange format
+
+Package: libprotoc-dev
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Development
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 9412
+Depends: roothide (>= 0.1.0), libprotoc32 (= 3.21.2), libprotobuf-dev (= 3.21.2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/libprotoc-dev_3.21.2_iphoneos-arm64e.deb
+Size: 3573272
+MD5sum: 933918a57b1d0518ad6c69423c43ac05
+SHA1: cc0857c30ef5032c86974a5afe9bbe23a15640a1
+SHA256: e4c70f65caf3595a6cc8e5e695c2d61ded97f154c69cc594d94cd665951c5c7e
+SHA512: 721b363e3c893843e74c2c2766d3b6ba6f22fe53ba7b05015518abc0312e6d8dd3172c192774803f7b8c689f096a0623e5e02af7824c4ef0e0c83206f2beddaf
+Description: protocol buffers compiler library (development files)
+
+Package: libprotoc32
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Libraries
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 1924
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2), libprotobuf32 (>= 3.21.2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/libprotoc32_3.21.2_iphoneos-arm64e.deb
+Size: 621728
+MD5sum: 8c019d224979882a2b722a93b0e49241
+SHA1: 480a69a5b774720c7372d18e5d5ccf2ce95909e0
+SHA256: 2795518dd66453683a9efb86ba9701575e1441c604ece0e6a16ead5c962242b2
+SHA512: 9c4eb0917c79d9bbd7e53effcfdfbc4cfbce2030c21f06ac4a2f2774571f71998168d9e51cfea5d39f53e8474df2178218558e580d27154ad8b68a939517d098
+Description: protocol buffers compiler library
+
+Package: protobuf-compiler
+Architecture: iphoneos-arm64e
+Version: 3.21.2
+Priority: standard
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 60
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2), libprotobuf32 (>= 3.21.2), libprotoc32 (= 3.21.2)
+Filename: pool/main/iphoneos-arm64e/1800/libprotobuf/protobuf-compiler_3.21.2_iphoneos-arm64e.deb
+Size: 6046
+MD5sum: a6f90c741006f0a5db71749a6d09b11c
+SHA1: 1ba2eb531ffb00bce06950e76b9a7ea3584d3f88
+SHA256: 8d6d4b3c3a03aaa95ff2a74cc51563a00fe1848e9d9c047a2ed25fa23ec92824
+SHA512: 49586eea8cb721b70adeb512f2b1696180aacc62f290f516104bf2d8db8f99e1611414e93a7fa17d40b67ec94cf9c174d23400fbce2ef87daf0225b49b489afa
+Description: compiler for protocol buffer definition files
 
 Package: libpthread-stubs0-dev
 Architecture: iphoneos-arm64e
@@ -13072,6 +13186,22 @@ Description: modern and intuitive terminal-based text editor
  micro is a terminal-based text editor that aims to be easy to use and intuitive, while also taking advantage of the full capabilities of modern terminals.
  As the name indicates, micro aims to be somewhat of a successor to the nano editor by being easy to install and use.
 
+Package: mosh
+Architecture: iphoneos-arm64e
+Version: 1.3.2-5
+Priority: standard
+Section: Networking
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 668
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2), libncursesw6, openssh-client, libprotobuf32, gettext-localizations, libssl3, perl
+Filename: pool/main/iphoneos-arm64e/1800/mosh/mosh_1.3.2-5_iphoneos-arm64e.deb
+Size: 191324
+MD5sum: 49281ecc2084fbb0a1746c62b992f8e8
+SHA1: 1bc9f244b294a6073c0d8d1fb25815ccc2428f3d
+SHA256: 703738437d6cd73be0cafe4791e699ddd90085b8aaa0a089bf3126517e89e3c0
+SHA512: 7235bd4a78897b62f9eaee60fefa5a0bc06a5e4e9bf735d0a219e9e48c3d1b3ca5a321beeb4a0e010f10f973c711337f776997861ebefeb8437531773af687b4
+Description: Mobile shell, surviving disconnects with local echo and line editing
+
 Package: libmpfr-dev
 Architecture: iphoneos-arm64e
 Version: 4.1.0
@@ -16237,6 +16367,22 @@ SHA256: 8dd28638e6eb3bc21e755651a03769429a9cd1a29c31f3a08f45d27e9c3a5112
 SHA512: 2459dfc6895b0aadf56ed722ef7d681e23816104e464f52cc68e8172fdbd7d480c2356928cef1f786101fc1c6d055d22756f528826b03e893c31d8c9a3e6c938
 Description: Extra Command line access for UIKit/LaunchServices/CoreServices
 
+Package: uikittools-extra
+Architecture: iphoneos-arm64e
+Version: 2.1.8
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 416
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2), uikittools (= 2.1.8)
+Enhances: uikittools
+Filename: pool/main/iphoneos-arm64e/1800/uikittools/uikittools-extra_2.1.8_iphoneos-arm64e.deb
+Size: 33382
+MD5sum: 0dfdbe904f902d1c02ba24ceae541b6b
+SHA1: 88ce7b9cc957ee57a995a843fedc4c4bd3c303ea
+SHA256: 00f054c82149bb3e86a490a8ffc1a002b3dd7617e2b491296053911e6755861b
+SHA512: b047570fecf8db8c76907d01e329ede594e522705c62a5cd5d55c2dea399c95c25975580164c85c9898ec3917df834c510bdef16711114a7a6bfb3c2d7cff54b
+Description: Extra Command line access for UIKit/LaunchServices/CoreServices
+
 Package: uikittools
 Architecture: iphoneos-arm64e
 Version: 2.1.6-1
@@ -16311,6 +16457,25 @@ MD5sum: c88e1a2615f92ef70aefea5c52b8cd64
 SHA1: b1f5d355aebfc15d4918277326e1398c73b2caa5
 SHA256: 72cd236b4b2d431127bda481fbb2f9c35ad0df4e373b03c610b82031514f303e
 SHA512: d9e54ece801d8ade9502613b01fde854e1e6bfc15539a1e93260d71115726892545578eee36da2ca05529f5f1d70d42fd50e908f101945429bf6f5c9159e7a43
+Description: Command line access for UIKit/LaunchServices/CoreServices
+
+Package: uikittools
+Architecture: iphoneos-arm64e
+Version: 2.1.8
+Priority: required
+Essential: yes
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 768
+Depends: roothide (>= 0.1.0), libiosexec1 (>= 1.3.1-2)
+Suggests: uikittools-extra (= 2.1.8)
+Breaks: uikittools-extra (<< 2.1.6)
+Filename: pool/main/iphoneos-arm64e/1800/uikittools/uikittools_2.1.8_iphoneos-arm64e.deb
+Size: 83872
+MD5sum: 05fa2874e021aa08175153e9974b0d18
+SHA1: 088be6afa417f13900f30ff99679b91da9e1888c
+SHA256: de93e86678b0d8bcdb0b27508ee84dd5fd2594d407e06e88c66e35c7f5ab899b
+SHA512: 677d7c3aefee6877835f57817904cb8918e3d0783c3309238a0f67e8bc5e0d2821ced555f52e128ee50858f1f69aec81957ebd5dd8bad5fe16318f9db4bc5d1d
 Description: Command line access for UIKit/LaunchServices/CoreServices
 
 Package: libunibilium-dev
