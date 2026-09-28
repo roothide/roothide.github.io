@@ -1498,6 +1498,25 @@ Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 11+. This v
 Author: TIGI Software
 Name: Filza File Manager 64-bit
 
+Package: com.witchan.ios-mcp
+Version: 1.2.8
+Architecture: iphoneos-arm64e
+Maintainer: witchan
+Installed-Size: 40804
+Depends: mobilesubstrate, preferenceloader
+Conflicts: com.witchan.iphone-mcp
+Replaces: com.witchan.iphone-mcp
+Provides: com.witchan.iphone-mcp
+Filename: ./debfiles/com.witchan.ios-mcp_1.2.8_iphoneos-arm64e.deb
+Size: 23636120
+MD5sum: 9f5a0ced87d586efa0db0eb582ba7c97
+SHA1: 3fc3500b27742e10835674bec8528bd7bc7c645a
+SHA256: e5a99328f6454f070460204c807e0bc39a18d44426473df16157377de8ac2e30
+Section: Tweaks
+Description: MCP server for AI-driven iOS device control. Supports HID buttons, touch, screenshots, clipboard, app management, accessibility tree, and text input.
+Author: witchan
+Name: iOS MCP (RootHide)
+
 Package: com.yourcompany.paidtest
 Version: 0.0.1-2+debug
 Architecture: iphoneos-arm64e
