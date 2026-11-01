@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f8f7">
+  <meta name="description" content="Check installed Sileo packages against stable roothide repository versions.">
+  <title>Stable Package Consistency Check · roothide</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #192821;
+      --muted: #617068;
+      --line: #dce3df;
+      --green: #176345;
+      --red: #a92333;
+      --yellow: #865800;
+      font-family: "Avenir Next", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--ink);
+      background: #f6f8f7;
+      letter-spacing: 0;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: linear-gradient(180deg, #edf3ef 0, #f6f8f7 320px); }
+    button, textarea, input, select { font: inherit; }
+    button { min-height: 44px; }
+    button, summary, input[type="checkbox"] { cursor: pointer; }
+    button:disabled, textarea:disabled { cursor: wait; opacity: .65; }
+    :focus-visible { outline: 3px solid #268c68; outline-offset: 3px; }
+    [hidden] { display: none !important; }
+    a { color: var(--green); text-underline-offset: 3px; }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 20px 16px 32px; }
+    .header-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 8px; margin-top: 6px; font-size: 13px; }
+    .language-picker { display: flex; align-items: center; gap: 6px; min-width: 0; max-width: 100%; font-size: inherit; font-weight: 400; color: var(--muted); }
+    .language-picker select { width: 124px; max-width: 100%; min-width: 0; min-height: 44px; padding: 0 6px; border: 0; color: var(--muted); background: transparent; font: inherit; cursor: pointer; }
+    .language-picker span { overflow-wrap: anywhere; }
+    .brand { display: flex; gap: 8px; align-items: center; min-width: 0; font-size: 15px; font-weight: 600; }
+    .brand img { width: 28px; height: 28px; border-radius: 6px; }
+    .brand-copy { min-width: 0; }
+    h1 { margin: 0; font-size: 15px; line-height: 1.5; font-weight: 600; overflow-wrap: anywhere; }
+    .intro { margin: 16px 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    #bookmark { display: inline-flex; align-items: center; justify-content: center; gap: 4px; flex: 0 1 auto; min-height: 44px; font: inherit; }
+    #bookmark img { width: 16px; height: 16px; }
+    .environment { margin-bottom: 16px; }
+    .label-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+    label, h2, .system-label { font-size: 15px; font-weight: 600; }
+    .device { color: var(--muted); font-size: 12px; text-align: end; overflow-wrap: anywhere; }
+    .text-button { border: 0; padding: 0 5px; min-height: 32px; background: transparent; color: var(--muted); font-size: 13px; }
+    textarea { display: block; width: 100%; min-height: 200px; resize: vertical; padding: 12px; border: 1px solid #bac9c0; border-radius: 6px; background: #fff; color: var(--ink); font-size: 16px; line-height: 1.65; }
+    textarea::placeholder { color: #829087; }
+    .privacy { margin: 8px 0 12px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .primary { width: 100%; padding: 10px 16px; border: 1px solid var(--green); border-radius: 6px; background: var(--green); color: #fff; font-size: 16px; font-weight: 600; }
+    .primary:not(:disabled):hover { background: #104e35; }
+    .message { margin: 12px 0; padding: 10px; border-inline-start: 3px solid var(--green); background: #e8f1ec; font-size: 13px; line-height: 1.7; overflow-wrap: anywhere; scroll-margin-top: 16px; }
+    .message.error { color: var(--red); background: #fceef0; border-color: var(--red); }
+    #results { margin-top: 26px; scroll-margin-top: 16px; }
+    h2 { margin: 0; }
+    .result-meta { margin: 6px 0 12px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+    .counts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 11px 0; margin-bottom: 12px; }
+    .count { padding: 0 10px; border-inline-end: 1px solid var(--line); overflow-wrap: anywhere; }
+    .count:first-child { padding-inline-start: 0; }
+    .count:last-child { border-inline-end: 0; }
+    .count strong { display: block; font-size: 25px; line-height: 1.3; font-weight: 650; }
+    .count span { font-size: 12px; }
+    .higher { color: var(--red); }
+    .lower { color: var(--yellow); }
+    .equal { color: var(--green); }
+    .filter { display: inline-flex; align-items: center; gap: 7px; min-height: 36px; font-size: 13px; font-weight: 400; margin-bottom: 8px; }
+    .filter input { width: 18px; height: 18px; margin: 0; accent-color: var(--green); }
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; text-align: start; }
+    col:first-child { width: 58%; }
+    col:last-child { width: 42%; }
+    th, td { text-align: start; }
+    thead th { color: var(--muted); background: #eef2ef; font-size: 12px; font-weight: 500; padding: 8px; }
+    thead th:first-child { border-radius: 4px 0 0 4px; }
+    thead th:last-child { border-radius: 0 4px 4px 0; }
+    tbody th, tbody td { padding: 11px 8px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; line-height: 1.6; }
+    tbody th { font-size: 13px; font-weight: 600; }
+    .package-name { display: block; unicode-bidi: plaintext; }
+    .package-id { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; font-weight: 400; line-height: 1.5; direction: ltr; unicode-bidi: isolate; }
+    .status { display: flex; align-items: flex-start; gap: 6px; font-size: 13px; font-weight: 500; line-height: 1.6; }
+    .status span { min-width: 0; }
+    .status::before { content: ""; flex: 0 0 6px; width: 6px; height: 6px; margin-top: 7px; border-radius: 50%; background: currentColor; }
+    tr[data-status="higher"] { background: #fff1f2; }
+    tr[data-status="lower"] { background: #fff8df; }
+    .empty { margin: 0; padding: 16px 8px; text-align: center; color: var(--muted); font-size: 13px; }
+    .caution { margin: 14px 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
+    details { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; font-size: 12px; line-height: 1.8; }
+    summary { min-height: 32px; color: var(--muted); }
+    details ul { padding-inline-start: 20px; margin: 8px 0; overflow-wrap: anywhere; }
+    footer { margin-top: 26px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.8; }
+    footer a { white-space: nowrap; }
+    @media (min-width: 640px) {
+      .wrap { padding: 29px 32px 38px; }
+      textarea { min-height: 224px; }
+      tbody th { font-size: 14px; }
+      .package-id { font-size: 11px; }
+      tbody th, tbody td, thead th { padding-left: 12px; padding-right: 12px; }
+    }
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+      .wrap { padding-bottom: max(32px, env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="header-row">
+        <div class="brand"><img src="https://github.com/roothide.png?size=64" alt="" width="28" height="28"><div class="brand-copy"><h1 data-i18n="title">Stable Package Consistency Check</h1></div></div>
+      </div>
+      <div class="tools">
+        <label class="language-picker"><span data-i18n="language">Language</span><select id="language" dir="ltr" aria-label="Language">
+          <option value="en" lang="en">English</option>
+          <option value="zh-CN" lang="zh-CN">简体中文</option>
+          <option value="zh-TW" lang="zh-TW">繁體中文</option>
+          <option value="ja" lang="ja">日本語</option>
+          <option value="ko" lang="ko">한국어</option>
+          <option value="hi" lang="hi">हिन्दी</option>
+          <option value="id" lang="id">Bahasa Indonesia</option>
+          <option value="th" lang="th">ไทย</option>
+          <option value="vi" lang="vi">Tiếng Việt</option>
+          <option value="ar" lang="ar">العربية</option>
+          <option value="fa" lang="fa">فارسی</option>
+          <option value="he" lang="he">עברית</option>
+          <option value="tr" lang="tr">Türkçe</option>
+          <option value="ur" lang="ur">اردو</option>
+        </select></label>
+        <button id="bookmark" class="text-button" type="button" aria-haspopup="dialog"><img src="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/icons/bookmark-plus.svg" alt="" width="16" height="16"><span data-i18n="bookmark">Bookmark</span></button>
+      </div>
+      <p class="intro" data-i18n="intro">Some private builds may modify stable package versions and prevent update notifications from the roothide repository. Use this page to investigate potential jailbreak faults or instability.</p>
+    </header>
+    <p id="message" class="message" role="status" aria-live="polite" tabindex="-1" hidden></p>
+    <form id="check-form" novalidate>
+      <div class="environment">
+        <div class="label-row"><span class="system-label" data-i18n="system">System</span><span id="device" class="device"></span></div>
+      </div>
+      <div class="label-row"><label for="installed" data-i18n="installedList">Installed Sileo packages</label><button id="clear" class="text-button" type="button" data-i18n="clear">Clear</button></div>
+      <textarea id="installed" required dir="auto" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-describedby="privacy" placeholder="Export from Sileo:&#10;1. Open Sileo and go to Installed.&#10;2. Tap the export/share button at the top right.&#10;3. Choose Copy in the share sheet.&#10;4. Return here and paste the full list."></textarea>
+      <p id="privacy" class="privacy" data-i18n="privacy">Your list is processed in this browser only. It is not uploaded or saved.</p>
+      <button id="check" class="primary" type="submit" data-i18n="check">Start check</button>
+    </form>
+    <section id="results" aria-labelledby="results-title" tabindex="-1" hidden>
+      <h2 id="results-title" data-i18n="results">Results</h2>
+      <p id="result-meta" class="result-meta"></p>
+      <div class="counts">
+        <div class="count higher"><strong id="higher-count">0</strong><span data-i18n="higher">Mismatch: verify</span></div>
+        <div class="count lower"><strong id="lower-count">0</strong><span data-i18n="lower">Outdated: update</span></div>
+        <div class="count equal"><strong id="equal-count">0</strong><span data-i18n="equal">Matching</span></div>
+      </div>
+      <label class="filter"><input id="different-only" type="checkbox"><span data-i18n="differentOnly">Only show version differences</span></label>
+      <table>
+        <colgroup><col><col></colgroup>
+        <thead><tr><th scope="col" data-i18n="package">Package</th><th scope="col" data-i18n="status">Status</th></tr></thead>
+        <tbody id="result-rows"></tbody>
+      </table>
+      <p id="empty-results" class="empty" data-i18n="emptyResults" hidden>No packages to display.</p>
+      <p id="higher-note" class="caution" data-i18n="caution" hidden>A higher installed version may suppress this repo's update notifications, but does not prove modification. Verify the source and select this repo's version in Sileo. Do not bulk-downgrade system dependencies.</p>
+      <details id="skipped-details" hidden><summary id="skipped-summary"></summary><ul id="skipped-list"></ul></details>
+      <details id="invalid-details" hidden><summary id="invalid-summary"></summary><ul id="invalid-list"></ul></details>
+    </section>
+    <footer><span data-i18n="versionOrder">Version order follows</span> <a href="https://www.debian.org/doc/debian-policy/ch-controlfields.html#version" target="_blank" rel="noopener noreferrer">Debian Policy</a> · <a href="./Packages" data-i18n="mainIndex">Main index</a> · <a id="dist-link" href="./procursus/dists/iphoneos-arm64e/" data-i18n="distIndex">Procursus index</a></footer>
+    <noscript><p class="message error">JavaScript is required to check versions.</p></noscript>
+  </main>
+  <script src="./check-locales.js"></script>
+  <script>
+    const ENGLISH = {
+      title: "Stable Package Consistency Check", language: "Language", bookmark: "Bookmark",
+      intro: "Some private builds may modify stable package versions and prevent update notifications from the roothide repository. Use this page to investigate potential jailbreak faults or instability.",
+      system: "System", installedList: "Installed Sileo packages", clear: "Clear",
+      placeholder: "Export from Sileo:\n1. Open Sileo and go to Installed.\n2. Tap the export/share button at the top right.\n3. Choose Copy in the share sheet.\n4. Return here and paste the full list.",
+      privacy: "Your list is processed in this browser only. It is not uploaded or saved.", check: "Start check", results: "Results",
+      higher: "Mismatch: verify", lower: "Outdated: update", equal: "Matching", differentOnly: "Only show version differences",
+      package: "Package", status: "Status", emptyResults: "No packages to display.",
+      caution: "A higher installed version may suppress this repo's update notifications, but does not prove modification. Verify the source and select this repo's version in Sileo. Do not bulk-downgrade system dependencies.",
+      versionOrder: "Version order follows", mainIndex: "Main index", distIndex: "Procursus index", main: "Main repo",
+      unsupported: "Not supported", unknownSystem: "iOS / iPadOS version unavailable",
+      systemError: "Cannot identify a supported iOS / iPadOS version. Open this page on iOS / iPadOS 15 or later. If desktop mode hides your system version, turn it off and reload.",
+      bookmarkMobile: "In Safari, tap Share, then Add to Favorites or Add Bookmark. In other browsers, open the menu and choose bookmarks or favorites.",
+      bookmarkDesktop: "Use your browser's Add Bookmark / Favorites menu, or press {shortcut}+D.",
+      badVersion: "Invalid Debian version", badFormat: "Unrecognized line format", missingFields: "{source}: index is missing Package or Version fields.",
+      badIndex: "{source}: invalid Packages index.", emptyIndex: "{source}: no packages available for checking.",
+      downloadError: "Index download failed: {path} ({reason}). Check your network connection and select Start check to retry.", timeout: "Request timed out", network: "Network error",
+      emptyInput: "Paste the installed package list exported from Sileo.", conflicts: "Multiple installed versions found for the same package. Correct the list and retry: {ids}",
+      noValid: "No valid packages found; {count} lines could not be read. Expected format: Name:(package.id) version.",
+      localFile: "Your browser cannot read repository indices from a local file. Open this page over HTTP / HTTPS.",
+      checking: "Checking…", downloading: "Downloading indices…", waiting: "Downloading the main and dist {dist} indices. Please wait; checking will continue automatically…",
+      report: "dist {dist} · {installed} installed · {compared} checked · {date}", skippedSummary: "Not checked: {count} packages", invalidSummary: "Incomplete: {count} unreadable lines",
+      skippedItem: "{name} ({id}) {version}: not in the main allowlist or selected dist index.", invalidItem: "Line {line} · {reason}: {text}",
+      noMatch: "No packages matched the check scope. Verify the list and system version; this does not mean everything is up to date.",
+      partial: "Valid entries checked, but {count} lines could not be read. See the details below.", complete: "Check complete: {count} packages compared; {skipped} outside the check scope.",
+      unexpected: "The check could not be completed. Please retry."
+    };
+    const TRANSLATIONS = { en: ENGLISH, ...(typeof CHECK_LOCALES === "undefined" ? {} : CHECK_LOCALES) };
+    let language = "en";
+    function resolveLanguage(preferences = []) {
+      for (const preference of preferences) {
+        const locale = String(preference).replace(/_/g, "-").toLowerCase();
+        const exact = Object.keys(TRANSLATIONS).find(key => key.toLowerCase() === locale);
+        if (exact) return exact;
+        const base = locale.split("-")[0];
+        if (base === "zh") {
+          const traditional = /(?:^|-)(?:hant|tw|hk|mo)(?:-|$)/.test(locale);
+          const chinese = traditional ? "zh-TW" : "zh-CN";
+          if (TRANSLATIONS[chinese]) return chinese;
+        }
+        if (TRANSLATIONS[base]) return base;
+      }
+      return "en";
+    }
+    function systemLabel(detected) {
+      if (detected.version) return `${detected.system} ${detected.version}`;
+      if (detected.major) return `${detected.system} ${detected.major}`;
+      if (detected.dist) return `iOS/iPadOS ${detected.dist === "1800" ? "15" : "16+"}`;
+      return t("unknownSystem");
+    }
+    function t(key, values = {}) {
+      return (TRANSLATIONS[language]?.[key] ?? ENGLISH[key] ?? key).replace(/\{(\w+)\}/g, (_, name) => {
+        if (name === "source") return sourceLabel(values.source);
+        if (name === "reason" && values.reasonKey && !values.reason) return t(values.reasonKey);
+        return String(values[name] ?? "");
+      });
+    }
+    function sourceLabel(source) { return source === "main" ? t("main") : `dist ${source}`; }
+    function localizedError(key, values = {}) {
+      const error = new Error(key);
+      error.key = key;
+      error.values = values;
+      return error;
+    }
+    const BUILTIN_PACKAGES = new Set([
+
+"com.opa334.choicy",
+"com.opa334.libsandy",
+"com.opa334.libundirect",
+
+"roothide.patches.filza",
+"com.tigisoftware.filza64bit",
+
+"rootless-compat",
+"com.roothide.manager",
+"com.roothide.patcher",
+"com.roothide.patchloader",
+
+"ellekit",
+"oldabi",
+"oldabi-stub",
+
+"preferenceloader",
+"ws.hbang.common",
+"org.coolstar.sileo",
+
+    ].map(id => id.toLowerCase()));
+
+    function compareDigits(left, right) {
+      left = left.replace(/^0+/, "") || "0";
+      right = right.replace(/^0+/, "") || "0";
+      if (left.length !== right.length) return left.length < right.length ? -1 : 1;
+      return left === right ? 0 : left < right ? -1 : 1;
+    }
+
+    function splitVersion(version) {
+      let epoch = "0";
+      let upstream = version;
+      const colon = upstream.indexOf(":");
+      if (colon !== -1) {
+        epoch = upstream.slice(0, colon);
+        upstream = upstream.slice(colon + 1);
+        if (!/^\d+$/.test(epoch)) throw localizedError("badVersion");
+      }
+      let revision = "0";
+      const dash = upstream.lastIndexOf("-");
+      if (dash !== -1) {
+        revision = upstream.slice(dash + 1);
+        upstream = upstream.slice(0, dash);
+        if (!/^[A-Za-z0-9+.~]+$/.test(revision)) throw localizedError("badVersion");
+      }
+      if (!/^[0-9][A-Za-z0-9.+:~\-]*$/.test(upstream)) throw localizedError("badVersion");
+      return { epoch, upstream, revision };
+    }
+
+    function compareVersionPart(left, right) {
+      let leftIndex = 0;
+      let rightIndex = 0;
+      const isDigit = character => character >= "0" && character <= "9";
+      const order = character => {
+        if (character === "~") return -1;
+        if (!character || isDigit(character)) return 0;
+        const code = character.charCodeAt(0);
+        return /[A-Za-z]/.test(character) ? code : code + 256;
+      };
+      while (leftIndex < left.length || rightIndex < right.length) {
+        while ((left[leftIndex] && !isDigit(left[leftIndex])) || (right[rightIndex] && !isDigit(right[rightIndex]))) {
+          const difference = order(left[leftIndex]) - order(right[rightIndex]);
+          if (difference) return difference < 0 ? -1 : 1;
+          leftIndex++;
+          rightIndex++;
+        }
+        while (left[leftIndex] === "0") leftIndex++;
+        while (right[rightIndex] === "0") rightIndex++;
+        let firstDifference = 0;
+        while (isDigit(left[leftIndex]) && isDigit(right[rightIndex])) {
+          if (!firstDifference) firstDifference = left.charCodeAt(leftIndex) - right.charCodeAt(rightIndex);
+          leftIndex++;
+          rightIndex++;
+        }
+        if (isDigit(left[leftIndex])) return 1;
+        if (isDigit(right[rightIndex])) return -1;
+        if (firstDifference) return firstDifference < 0 ? -1 : 1;
+      }
+      return 0;
+    }
+
+    function compareVersions(left, right) {
+      const first = splitVersion(left);
+      const second = splitVersion(right);
+      return compareDigits(first.epoch, second.epoch)
+        || compareVersionPart(first.upstream, second.upstream)
+        || compareVersionPart(first.revision, second.revision);
+    }
+
+    function detectSystem(userAgent, maxTouchPoints = 0, supports = null) {
+      const isIPad = /iPad/i.test(userAgent);
+      const isDesktopIOS = /Macintosh/i.test(userAgent) && maxTouchPoints > 1;
+      const match = userAgent.match(/(?:CPU(?: iPhone)? OS|iPhone OS)\s+(\d+)(?:[_.](\d+))?(?:[_.](\d+))?/i);
+      if (match) {
+        const major = Number(match[1]);
+        const version = match.slice(1).filter(Boolean).join(".");
+        const dist = major === 15 ? "1800" : major >= 16 ? "1900" : "";
+        return { dist, system: isIPad ? "iPadOS" : "iOS", version };
+      }
+      const safari = userAgent.match(/Version\/(\d+)(?:\.\d+)*/i);
+      if ((isIPad || isDesktopIOS) && safari && /Safari\//i.test(userAgent) && !/(?:CriOS|FxiOS|EdgiOS|OPiOS|Chrome|Chromium|Edg)\//i.test(userAgent)) {
+        const major = Number(safari[1]);
+        const dist = major === 15 ? "1800" : major >= 16 ? "1900" : "";
+        return { dist, system: isIPad ? "iPadOS" : "iOS/iPadOS", method: "safariInferred", major };
+      }
+      if ((isIPad || isDesktopIOS) && /AppleWebKit\//i.test(userAgent) && /(?:CriOS|Chrome|Chromium)\//i.test(userAgent) && !/Android/i.test(userAgent) && supports) {
+        const dist = supports("container-type", "inline-size") ? "1900" : supports("aspect-ratio", "1 / 1") ? "1800" : "";
+        if (dist) return { dist, system: isIPad ? "iPadOS" : "iOS/iPadOS", method: "webkitInferred" };
+      }
+      return { dist: "" };
+    }
+
+    function parseExport(text) {
+      const installed = new Map();
+      const invalid = [];
+      const conflicts = new Set();
+      text.replace(/^\uFEFF/, "").split(/\r\n|\n|\r/).forEach((raw, index) => {
+        const line = raw.trim();
+        if (!line) return;
+        const match = line.match(/^(.+):\s*\(([a-z0-9][a-z0-9+.\-]*)\)\s+(\S+)$/i);
+        if (!match) { invalid.push({ line: index + 1, text: line, reasonKey: "badFormat" }); return; }
+        const [, name, identifier, version] = match;
+        try { splitVersion(version); }
+        catch { invalid.push({ line: index + 1, text: line, reasonKey: "badVersion" }); return; }
+        const id = identifier.toLowerCase();
+        if (installed.has(id) && installed.get(id).version !== version) conflicts.add(id);
+        installed.set(id, { id, name: name.trim(), version });
+      });
+      return { installed, invalid, conflicts: [...conflicts] };
+    }
+
+    function parseIndex(text, source, allowlist) {
+      const packages = new Map();
+      let fields = {};
+      let lastKey = "";
+      const flush = () => {
+        if (!Object.keys(fields).length) return;
+        if (!fields.package || !fields.version) throw localizedError("missingFields", { source });
+        const id = fields.package.toLowerCase();
+        const version = fields.version;
+        splitVersion(version);
+        if ((!allowlist || allowlist.has(id)) && (!packages.has(id) || compareVersions(version, packages.get(id).version) > 0)) {
+          packages.set(id, { id, version, name: fields.name || fields.package, source });
+        }
+        fields = {};
+        lastKey = "";
+      };
+      for (const line of text.replace(/^\uFEFF/, "").split(/\r\n|\n|\r/)) {
+        if (!line.trim()) { flush(); continue; }
+        if (/^[ \t]/.test(line) && lastKey) { fields[lastKey] += ` ${line.trim()}`; continue; }
+        const match = line.match(/^([A-Za-z0-9-]+):\s*(.*)$/);
+        if (!match) throw localizedError("badIndex", { source });
+        lastKey = match[1].toLowerCase();
+        fields[lastKey] = match[2].trim();
+      }
+      flush();
+      if (!packages.size) throw localizedError("emptyIndex", { source });
+      return packages;
+    }
+
+    function compareInstalled(installed, catalog) {
+      const rows = [];
+      const skipped = [];
+      for (const entry of installed.values()) {
+        const latest = catalog.get(entry.id);
+        if (!latest) { skipped.push(entry); continue; }
+        const comparison = compareVersions(entry.version, latest.version);
+        rows.push({ ...entry, latest: latest.version, source: latest.source, status: comparison > 0 ? "higher" : comparison < 0 ? "lower" : "equal" });
+      }
+      const priority = { higher: 0, lower: 1, equal: 2 };
+      rows.sort((left, right) => priority[left.status] - priority[right.status] || left.id.localeCompare(right.id));
+      return { rows, skipped };
+    }
+
+    async function fetchIndex(path) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 20000);
+      try {
+        const response = await fetch(path, { cache: "no-store", signal: controller.signal });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.text();
+      } catch (error) {
+        throw localizedError("downloadError", { path, reasonKey: error.name === "AbortError" ? "timeout" : "network", reason: error.message.startsWith("HTTP ") ? error.message : undefined });
+      } finally { clearTimeout(timer); }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const byId = id => document.getElementById(id);
+      const form = byId("check-form");
+      const input = byId("installed");
+      const button = byId("check");
+      const message = byId("message");
+      const results = byId("results");
+      let currentRows = [];
+      let currentMessage = null;
+      let lastReport = null;
+      const detected = detectSystem(navigator.userAgent, navigator.maxTouchPoints || 0, typeof CSS !== "undefined" ? CSS.supports.bind(CSS) : null);
+      const selectedDist = detected.dist;
+      const path = `./procursus/dists/iphoneos-arm64e/${selectedDist}/main/binary-iphoneos-arm64e/Packages`;
+      const indexCache = new Map();
+      let cachedCatalog = null;
+      let catalogTask = null;
+      const loadIndex = (indexPath, source, allowlist) => {
+        if (!indexCache.has(indexPath)) {
+          const task = fetchIndex(indexPath)
+            .then(text => parseIndex(text, source, allowlist))
+            .catch(error => { indexCache.delete(indexPath); throw error; });
+          indexCache.set(indexPath, task);
+        }
+        return indexCache.get(indexPath);
+      };
+      const loadCatalog = () => {
+        if (cachedCatalog) return Promise.resolve(cachedCatalog);
+        if (!catalogTask) {
+          catalogTask = Promise.all([
+            loadIndex("./Packages", "main", BUILTIN_PACKAGES),
+            loadIndex(path, selectedDist)
+          ]).then(([mainCatalog, distCatalog]) => {
+            const catalog = new Map(distCatalog);
+            for (const [id, entry] of mainCatalog) catalog.set(id, entry);
+            cachedCatalog = catalog;
+            return catalog;
+          }).finally(() => { catalogTask = null; });
+        }
+        return catalogTask;
+      };
+      byId("bookmark").addEventListener("click", () => {
+        input.blur();
+        const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) || (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+        alert(t(isAppleMobile ? "bookmarkMobile" : "bookmarkDesktop", { shortcut: /Macintosh/i.test(navigator.userAgent) ? "Command" : "Ctrl" }));
+      });
+      const showMessage = (key, error = false, values = {}) => {
+        currentMessage = { key, error, values };
+        message.textContent = t(key, values);
+        message.classList.toggle("error", error);
+        message.hidden = false;
+        if (error) {
+          input.blur();
+          message.focus({ preventScroll: true });
+          message.scrollIntoView({ block: "center" });
+        }
+      };
+      const invalidate = () => {
+        results.hidden = true;
+        message.hidden = Boolean(detected.dist);
+        if (detected.dist) currentMessage = null;
+      };
+      input.addEventListener("input", invalidate);
+      byId("clear").addEventListener("click", () => { input.value = ""; invalidate(); input.focus(); });
+      const renderRows = () => {
+        const fragment = document.createDocumentFragment();
+        for (const row of currentRows) {
+          if (byId("different-only").checked && row.status === "equal") continue;
+          const tr = document.createElement("tr");
+          tr.dataset.status = row.status;
+          const nameCell = document.createElement("th");
+          nameCell.scope = "row";
+          const name = document.createElement("span");
+          name.className = "package-name";
+          name.dir = "auto";
+          name.textContent = row.name;
+          const identifier = document.createElement("span");
+          identifier.className = "package-id";
+          identifier.textContent = row.id;
+          const status = document.createElement("span");
+          status.className = `status ${row.status}`;
+          const statusText = document.createElement("span");
+          statusText.textContent = t(row.status);
+          status.append(statusText);
+          nameCell.append(name, identifier);
+          const statusCell = document.createElement("td");
+          statusCell.append(status);
+          tr.append(nameCell, statusCell);
+          fragment.append(tr);
+        }
+        byId("empty-results").hidden = Boolean(fragment.childNodes.length);
+        byId("result-rows").replaceChildren(fragment);
+      };
+      byId("different-only").addEventListener("change", renderRows);
+      const renderDetails = (prefix, items, title, format) => {
+        byId(`${prefix}-details`).hidden = !items.length;
+        byId(`${prefix}-details`).open = prefix === "invalid" && Boolean(items.length);
+        byId(`${prefix}-summary`).textContent = title;
+        byId(`${prefix}-list`).replaceChildren(...items.map(item => {
+          const element = document.createElement("li");
+          element.textContent = format(item);
+          return element;
+        }));
+      };
+      const renderReport = () => {
+        if (!lastReport) return;
+        const { parsed, skipped, date } = lastReport;
+        byId("result-meta").textContent = t("report", { dist: selectedDist, installed: parsed.installed.size, compared: currentRows.length, date: date.toLocaleString(language) });
+        renderRows();
+        renderDetails("skipped", skipped, t("skippedSummary", { count: skipped.length }), item => t("skippedItem", item));
+        renderDetails("invalid", parsed.invalid, t("invalidSummary", { count: parsed.invalid.length }), item => t("invalidItem", item));
+      };
+      const applyLanguage = value => {
+        language = Object.prototype.hasOwnProperty.call(TRANSLATIONS, value) ? value : "en";
+        document.documentElement.lang = language;
+        document.documentElement.dir = ["ar", "fa", "he", "ur"].includes(language) ? "rtl" : "ltr";
+        document.title = `${t("title")} · roothide`;
+        document.querySelector('meta[name="description"]').content = t("intro");
+        document.querySelectorAll("[data-i18n]").forEach(element => { element.textContent = t(element.dataset.i18n); });
+        byId("language").value = language;
+        byId("language").setAttribute("aria-label", t("language"));
+        input.placeholder = t("placeholder");
+        byId("device").textContent = systemLabel(detected);
+        if (button.disabled) button.textContent = t(cachedCatalog ? "checking" : "downloading");
+        if (currentMessage) message.textContent = t(currentMessage.key, currentMessage.values);
+        renderReport();
+      };
+      byId("language").addEventListener("change", event => applyLanguage(event.target.value));
+      applyLanguage(resolveLanguage(navigator.languages?.length ? navigator.languages : [navigator.language || "en"]));
+      if (!detected.dist) showMessage("systemError", true);
+      form.addEventListener("submit", async event => {
+        event.preventDefault();
+        if (button.disabled) return;
+        invalidate();
+        input.blur();
+        if (!detected.dist) { showMessage("systemError", true); return; }
+        if (!input.value.trim()) { showMessage("emptyInput", true); return; }
+        const parsed = parseExport(input.value);
+        if (parsed.conflicts.length) { showMessage("conflicts", true, { ids: parsed.conflicts.join(", ") }); return; }
+        if (!parsed.installed.size) { showMessage("noValid", true, { count: parsed.invalid.length }); return; }
+        if (location.protocol === "file:") { showMessage("localFile", true); return; }
+        button.disabled = true;
+        input.disabled = true;
+        byId("clear").disabled = true;
+        button.textContent = t(cachedCatalog ? "checking" : "downloading");
+        results.setAttribute("aria-busy", "true");
+        if (!cachedCatalog) {
+          showMessage("waiting", false, { dist: selectedDist });
+          message.scrollIntoView({ block: "center" });
+        }
+        try {
+          const catalog = await loadCatalog();
+          const { rows, skipped } = compareInstalled(parsed.installed, catalog);
+          currentRows = rows;
+          const counts = { higher: 0, lower: 0, equal: 0 };
+          rows.forEach(row => counts[row.status]++);
+          Object.entries(counts).forEach(([status, count]) => { byId(`${status}-count`).textContent = count; });
+          byId("higher-note").hidden = !counts.higher;
+          byId("dist-link").href = path;
+          byId("different-only").checked = false;
+          lastReport = { parsed, skipped, date: new Date() };
+          renderReport();
+          results.hidden = false;
+          if (!rows.length) showMessage("noMatch", true);
+          else if (parsed.invalid.length) showMessage("partial", true, { count: parsed.invalid.length });
+          else showMessage("complete", false, { count: rows.length, skipped: skipped.length });
+          if (rows.length) {
+            results.focus({ preventScroll: true });
+            results.scrollIntoView({ block: "start" });
+          }
+        } catch (error) {
+          showMessage(error.key || "unexpected", true, error.values);
+        } finally {
+          button.disabled = false;
+          input.disabled = false;
+          byId("clear").disabled = false;
+          button.textContent = t("check");
+          results.removeAttribute("aria-busy");
+        }
+      });
+      if (selectedDist && location.protocol !== "file:") loadCatalog().catch(() => {});
+    });
+  </script>
+</body>
+</html>

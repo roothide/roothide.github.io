@@ -4,11 +4,11 @@
   "itemCornerRadius": 10,
   "banners": [
     {
-        "url": "http://roothide.github.io/about.png",
+        "url": "https://roothide.github.io/roothide-manager-banner.jpg",
         "title": "",
-        "package": "",
+        "package": "com.roothide.manager",
         "hideShadow": false
-    },
+    }
   ]
 }
 
