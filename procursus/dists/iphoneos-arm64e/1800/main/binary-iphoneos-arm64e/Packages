@@ -835,6 +835,26 @@ Description: Common CA certificates
  .
  Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
 
+Package: ca-certificates
+Architecture: all
+Version: 20231210
+Multi-Arch: foreign
+Priority: optional
+Section: Utilities
+Maintainer: roothide <roothideDev@twitter>
+Installed-Size: 220
+Depends: roothide (>= 0.1.0)
+Filename: pool/main/iphoneos-arm64e/1800/cacerts/ca-certificates_20231210_all.deb
+Size: 123192
+MD5sum: cf781808ce6dbe21a2e65fb851974c11
+SHA1: e429c4240105e6c5d0564c5d9634148c49bdec06
+SHA256: e63e01a79d87806beb9975dca0602081b291224521f49d6fe76e467da419cf08
+SHA512: 785eccf2501bb0f8d2d9885c48f1885b95fcfdf358745e8cc660157fe16847fcb28148b77490d59fb50ad2e964d3cdb35f25546b03492ed9f2adffaa78ad95b8
+Description: Common CA certificates
+ Contains the certificate authorities shipped with Mozilla's browser to allow SSL-based applications to check for the authenticity of SSL connections.
+ .
+ Please note that Procursus can neither confirm nor deny whether the certificate authorities whose certificates are included in this package have in any way been audited for trustworthiness or RFC 3647 compliance. Full responsibility to assess them belongs to the local system administrator.
+
 Package: libcairo-gobject2
 Architecture: iphoneos-arm64e
 Version: 1.16.0-3
