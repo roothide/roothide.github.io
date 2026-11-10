@@ -28,6 +28,7 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 		if [ ! -d pool/${comp}/${ogdist} ]; then
 			continue;
 		fi
+		echo $dist $comp
 		mkdir -p dists/${dist}/${comp}/${binary}
 		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.zst},Release{,.gpg}}
 

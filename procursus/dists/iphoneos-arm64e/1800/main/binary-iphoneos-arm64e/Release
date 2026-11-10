@@ -1,24 +1,24 @@
 Architectures: iphoneos-arm64e
-Date: Mon, 02 Nov 2026 06:04:08 +0000
+Date: Tue, 10 Nov 2026 07:06:30 +0000
 Label: Procursus(roothide)
 Origin: Procursus(roothide)
 MD5Sum:
  00973295828f77d6f0a9e46a4937f656           842790 Packages
  6b32454a23dc7f41d523c11df9a06411           195152 Packages.xz
  005bbae9717967fa24ff372eccdabe66           200524 Packages.zst
- 76e8002e6bb6a11e7254b58705c419a7              124 Release
+ 243e9e23565fc41f125812dd5e24723e              124 Release
 SHA1:
  c9a822b80da8bb8fdc4e6d20a2024b2436e0ed6e           842790 Packages
  7d7530c04eea2df2fa0de7549cf43319c8af83a8           195152 Packages.xz
  6e0ca843e405ebb9e1cbd4c8e6111dbbcfa8cbcb           200524 Packages.zst
- 6acd59499ed0402226afe102ae2949fcc1b35124              124 Release
+ cc232998faa1f9c86b67b89dff2cc3698b33dcee              124 Release
 SHA256:
  fe2c0ee8b9bd3ac18aa65f1134fe2d227c48d749cd494f32cbca9a12d51ef8ed           842790 Packages
  635df654c2f1ef8b6d9537f482be9fe89ea0cc8f8f395d72bc27e6d37aaab16b           195152 Packages.xz
  a48e924343dddcf2be02eddf539e30e4eef74bbb722dddc99ae7e3b0d96d7788           200524 Packages.zst
- 36baa9fda2846db122110eab739f3ebf739761ee10187f80e4d9d2e34e4ef2da              124 Release
+ 63fdce594b50589d963e700ca94186be3e774fe046e1f9d37f387320bc44321f              124 Release
 SHA512:
  ca6dfffbb3c9c59bf155126548ceb8acbe487e825559075c4b888211fa7a4cd68711f4facb096ff2afa5c1f826a0f7956268d51dc3c322025e5632fdf8cf23f7           842790 Packages
  d2b4f2b754021441652c6d33e07af7aba86b04916b0236d1b72e27858866e0e03c25f28d1ff3de4db65792ab6ff5a55c93f0264faf6a16cc516f3ac47a0ab428           195152 Packages.xz
  508ea8f33af7d3289efdca447333d7799b664a9ef45f58c7a8acd6af7f6330e5530c0b7310ef5caaeb0b8b150679c0bacff3158f5191b9f34a0287e333680b26           200524 Packages.zst
- 218894d9c96222d35f5a15fab28b9dc0ff48bcf17420bef0d48a9fb854980e03b1a5fac365addaea896985aa6f6a93250e5b3e056b1b815fbcc22743de141a05              124 Release
+ 88a0ce0c462abf88eb59b8f41007c2f8dac3cdbcad350e4fb8791ece3015adbd2741c2bf9f2e6dcc32599379e979138571c075f4883471ba4087bcae8795629d              124 Release

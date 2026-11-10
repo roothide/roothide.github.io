@@ -1,0 +1,24 @@
+Architectures: iphoneos-arm64e
+Date: Tue, 10 Nov 2026 07:06:31 +0000
+Label: Procursus(roothide)
+Origin: Procursus(roothide)
+MD5Sum:
+ 59254443dac8e7f9def2b69106a0dec0           301796 Packages
+ 969ef0e4ce0147bb8a28a303aa061b55            76876 Packages.xz
+ c3920163b9aacea392b274b54d38c1bd            78962 Packages.zst
+ 01a48bd9b87d9f9126ad34a202bef2b4              124 Release
+SHA1:
+ 2fba56a7fdc79598a3e827f881fb1094c9e89c1a           301796 Packages
+ 0dd6e1ec5b6d4b37ce071b1e0bcd6c8af7a52941            76876 Packages.xz
+ 7e3b04f5171cae9ab45e8562222ec0a1f94dbe73            78962 Packages.zst
+ 37718abaab6c80f7430bc6d16cedafc60f23766d              124 Release
+SHA256:
+ a9266e974dfae98e55925bb59e44e26aafe77c3d3b2b677bb3e13495a9b98e10           301796 Packages
+ 1c143e4bdca7efb5618deb7d04d1876c12899d4a4e173bd90ad88f0e4fb865df            76876 Packages.xz
+ 068294aa4692e63d3d37bf9667faaf5884f82a8198f55e5b9ab5ca02e30ddba7            78962 Packages.zst
+ f83fa3c38f24f5d933df7cc51db00cfbfd72fc758515a3f21fe47284f2a349bd              124 Release
+SHA512:
+ 365ee60e9a59b66f54e22327c5a3dc89ba3997036568bf286be6c8e824e1691860fdd5145d4b971fc07f76652d28c4f282c5bd9cb09ad81eb574d9aaef96323f           301796 Packages
+ 520d7f849509b7e834a0a94b3be765e09fbd8b2054959fddc884d505958850040fc55e146277e5828cb74f7efef214d6d4ef0d0f9b0fe1d9d1031602684507b2            76876 Packages.xz
+ d56c092554a21a6529f3b0466179ff4c2695febf9b2677d8ef248191e19a38f4e47c7acd68b11fccb85012bc97afb45fecc32627e91c8c8a83e9bb3f366d1164            78962 Packages.zst
+ a9d2e948da05601babcc11df9e25fe881e4ee0bd37e5f3b19969968b923c48711a96a29f6cf0d1f09a4911f1e27bb0b0ba4a41732603f2eed5d8637b5271df2f              124 Release
