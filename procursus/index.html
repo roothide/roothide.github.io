@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Essential Unix tools and libraries for the roothide environment, based on Procursus.">
+    <title>Procursus (roothide)</title>
+    <link rel="canonical" href="https://roothide.github.io/procursus/">
+    <link rel="icon" href="CydiaIcon.png" type="image/png">
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #24292f;
+        --muted: #57606a;
+        --link: #0969da;
+        --border: #d0d7de;
+        --surface: #f6f8fa;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        letter-spacing: 0;
+      }
+
+      main { max-width: 760px; margin: 0 auto; padding: 32px 24px 40px; }
+      a { color: var(--link); text-decoration: none; overflow-wrap: anywhere; }
+      a:hover { text-decoration: underline; }
+      a:focus-visible, pre:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+      nav { margin-bottom: 32px; font-size: 14px; }
+      header { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+      header img { width: 64px; height: 64px; flex: 0 0 64px; }
+      header div { min-width: 0; }
+      h1 { margin: 0; font-size: 30px; line-height: 1.25; }
+      header p { margin: 6px 0 0; color: var(--muted); }
+      h2 { margin: 30px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); font-size: 22px; line-height: 1.4; }
+      h3 { margin: 20px 0 10px; font-size: 17px; }
+      p { margin: 0 0 16px; }
+      code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.875em; }
+      code { padding: 2px 5px; border-radius: 4px; background: var(--surface); overflow-wrap: anywhere; }
+      pre { margin: 0 0 20px; padding: 14px; border-radius: 6px; background: var(--surface); white-space: pre; overflow-wrap: normal; overflow-x: auto; }
+      pre code { padding: 0; border-radius: 0; font-size: 13px; overflow-wrap: normal; }
+      .source-label { margin-bottom: 8px; font-size: 14px; font-weight: 600; }
+      dl { margin: 0 0 16px; }
+      dl > div { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 8px 20px; padding: 12px 0; border-bottom: 1px solid #eaeef2; }
+      dt { font-weight: 600; }
+      dd { min-width: 0; margin: 0; }
+      .notice { padding-left: 16px; border-left: 3px solid #bf8700; }
+      footer { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 14px; }
+
+      @media (max-width: 600px) {
+        main { padding: 24px 20px 32px; }
+        nav { margin-bottom: 24px; }
+        header { flex-direction: column; align-items: flex-start; gap: 14px; margin-bottom: 24px; }
+        header img { width: 48px; height: 48px; flex-basis: 48px; }
+        h1 { font-size: 26px; }
+        header p { margin-top: 10px; }
+        h2 { margin-top: 28px; font-size: 20px; }
+        dl > div { grid-template-columns: 80px minmax(0, 1fr); gap: 16px; padding: 14px 0; }
+        footer { flex-direction: column; align-items: flex-start; gap: 14px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Breadcrumb"><a href="../">roothide.github.io</a> / Procursus</nav>
+
+      <header>
+        <img src="CydiaIcon.png" srcset="CydiaIcon@2x.png 2x, CydiaIcon@3x.png 3x" width="64" height="64" alt="">
+        <div>
+          <h1>Procursus (roothide)</h1>
+          <p>Essential Unix tools and libraries for the roothide environment.</p>
+        </div>
+      </header>
+
+      <p>This repository provides packages based on <a href="https://procurs.us/">Procursus</a>, adapted for use with roothide. It includes command-line utilities, development tools, and the libraries they depend on.</p>
+
+      <h2>APT Sources</h2>
+      <p>Use <code>main</code> for standard packages. The optional <code>testing</code> component contains experimental packages and uses the same URL and suite. These sources are intended for roothide only.</p>
+
+      <h3>Main</h3>
+      <p class="source-label">iOS 15</p>
+      <pre tabindex="0" aria-label="iOS 15 main source configuration"><code>URL: https://roothide.github.io/procursus&#10;Suites: iphoneos-arm64e/1800&#10;Components: main</code></pre>
+      <p class="source-label">iOS 16+</p>
+      <pre tabindex="0" aria-label="iOS 16 and later main source configuration"><code>URL: https://roothide.github.io/procursus&#10;Suites: iphoneos-arm64e/1900&#10;Components: main</code></pre>
+
+      <h3>Testing (optional)</h3>
+      <p class="source-label">iOS 15</p>
+      <pre tabindex="0" aria-label="iOS 15 testing source configuration"><code>URL: https://roothide.github.io/procursus&#10;Suites: iphoneos-arm64e/1800&#10;Components: testing</code></pre>
+      <p class="source-label">iOS 16+</p>
+      <pre tabindex="0" aria-label="iOS 16 and later testing source configuration"><code>URL: https://roothide.github.io/procursus&#10;Suites: iphoneos-arm64e/1900&#10;Components: testing</code></pre>
+      <p class="notice">Testing packages may be less stable. Keep the source configuration managed by your roothide bootstrap unless you have a specific reason to change it.</p>
+
+      <h2>bootstraps</h2>
+      <dl>
+        <div>
+          <dt>iOS 15</dt>
+          <dd><a href="bootstraps/1800/bootstrap.tar.zst" download>bootstrap.tar.zst</a></dd>
+        </div>
+        <div>
+          <dt>iOS 16+</dt>
+          <dd><a href="bootstraps/1900/bootstrap.tar.zst" download>bootstrap.tar.zst</a></dd>
+        </div>
+      </dl>
+
+      <footer>
+        <a href="https://roothide.github.io/">roothide repository</a>
+        <a href="https://github.com/roothide/Procursus-roothide">Source on GitHub</a>
+        <a href="https://github.com/ProcursusTeam">Procursus Team</a>
+      </footer>
+    </main>
+  </body>
+</html>
