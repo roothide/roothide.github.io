@@ -35,19 +35,11 @@ jobs:
           lfs: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Archive Pages
-        run: |
-          tar --dereference --hard-dereference \
-            --exclude=.git --exclude=.github \
-            -cf "$RUNNER_TEMP/artifact.tar" .
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: ${{ runner.temp }}/artifact.tar
-          compression-level: 0
-          retention-days: 1
-          if-no-files-found: error
+          # Upload entire repository
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
