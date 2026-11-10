@@ -32,11 +32,11 @@ for ogdist in iphoneos-arm64/1{8,9}00 iphoneos-arm64e/1{8,9}00; do
 		mkdir -p dists/${dist}/${comp}/${binary}
 		rm -f dists/${dist}/${comp}/${binary}/{Packages{,.xz,.zst},Release{,.gpg}}
 
-		if [ -d "pool/${comp}/${ogdist}"/llvm ]; then
-			rm -f alt-repo/"$(echo ${dist} | cut -d/ -f2)"/*.deb
-			cp -a "pool/${comp}/${ogdist}"/llvm/. alt-repo/"$(echo ${dist} | cut -d/ -f2)"
-			rm -rf "pool/${comp}/${ogdist}"/llvm
-		fi
+		# if [ -d "pool/${comp}/${ogdist}"/llvm ]; then
+		# 	rm -f alt-repo/"$(echo ${dist} | cut -d/ -f2)"/*.deb
+		# 	cp -a "pool/${comp}/${ogdist}"/llvm/. alt-repo/"$(echo ${dist} | cut -d/ -f2)"
+		# 	rm -rf "pool/${comp}/${ogdist}"/llvm
+		# fi
 
 		$FTPARCHIVE $EXTRAOPTS packages pool/${comp}/${ogdist} > \
 			dists/${dist}/${comp}/${binary}/Packages 2>/dev/null
